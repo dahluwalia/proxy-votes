@@ -75,7 +75,8 @@ with no source for its listing.
 4. **Seat facts.**
     - *Current*: the notice's tense; for a CH appointment, its dates against each meeting's AGM date (a seat
       that starts between two AGMs counts only at the later one). The seat at the meeting itself is the seat
-      under vote and always counts (policy `count_seat_under_vote`).
+      under vote and counts (policy `count_seat_under_vote`), unless the director resigned it before
+      the AGM: Garnier left the Tesco board on 6 May 2026, so his Tesco seat doesn't count.
     - *Board seat*: a CH director appointment is one. Otherwise the role title decides (the same table as
       `pennant/classify/roles.py`); a job title alone (CEO, EVP) needs a cited board list.
     - *Chair and executive*: the role title, from the notice or a cited source.
@@ -134,7 +135,9 @@ From the repo root:
     - deferred: the pipeline said REVIEW where gold decides
 
   REVIEW is never counted as wrong, only reported, so honest deferral beats guessing.
-- **Seats:** precision and recall of countable seats. Each false positive is labelled with its cause:
+- **Seats:** precision and recall of countable seats, each seat as of the person's AGM. A missed
+  seat says why: not found in the run, a fact the run left unknown (not wrong), or a fact the run
+  says is no. Each false positive is labelled with its cause:
     - past role counted
     - non-board role counted
     - subsidiary counted

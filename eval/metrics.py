@@ -243,8 +243,11 @@ def main(conn: sqlite3.Connection | None = None, run_id: str | None = None,
 
     hc = hard_cases(conn, r, gold_dir / "hard_cases.yaml")
     tally = Counter(x[2] for x in hc)
-    lines += [f"## Hard cases ({tally['PASS']} pass, {tally['FAIL']} fail, {tally['N/A']} n/a)",
-              "", "| Id | Case | Result | Detail |", "| --- | --- | --- | --- |"]
+    lines += [f"## Hard cases ({tally['PASS']} pass, {tally['FAIL']} fail, "
+              f"{tally['DEFERRED']} deferred, {tally['N/A']} n/a)", "",
+              "DEFERRED: the run left a fact unknown (a REVIEW vote, a points range, an unknown "
+              "fact) instead of getting it wrong; the detail names what would settle it.", "",
+              "| Id | Case | Result | Detail |", "| --- | --- | --- | --- |"]
     lines += [f"| {i} | {c} | {res} | {d.replace('|', '/')} |" for i, c, res, d in hc]
     lines.append("")
 

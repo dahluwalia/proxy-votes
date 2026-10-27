@@ -1,0 +1,233 @@
+{
+ "key": "a8b9796e042f95d1308b31fcf51d839c0af162f784391dd990b73a04be04dbc7",
+ "payload": {
+  "content": [
+   {
+    "query": "petsathome.com Roger Burnley board of directors Pets at Home",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Pets at Home Group Plc AGM 2026 notice of meeting directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "2749 days ago",
+      "title": "Board of Directors",
+      "url": "https://investors.petsathome.com/our-company/our-board-of-directors/"
+     },
+     {
+      "page_age": "3106 days ago",
+      "title": "Investment Committee",
+      "url": "https://investors.petsathome.com/investors/governance/investment-committee"
+     },
+     {
+      "page_age": "480 days ago",
+      "title": "Nomination and Corporate Governance Committee - Governance - Investors - Pets at Home Group plc",
+      "url": "https://investors.petsathome.com/investors/governance/nomination-and-corporate-governance-committee/"
+     },
+     {
+      "page_age": "3911 days ago",
+      "title": "Audit and Risk Committee - Governance - Investors - Pets at Home Group plc",
+      "url": "https://investors.petsathome.com/investors/governance/audit-and-risk-committee/"
+     },
+     {
+      "page_age": "480 days ago",
+      "title": "Remuneration Committee",
+      "url": "https://investors.petsathome.com/investors/governance/remuneration-committee"
+     },
+     {
+      "page_age": "417 days ago",
+      "title": "Division of Responsibilities for the CEO and The Chairman - Governance - Investors - Pets at Home Group plc",
+      "url": "https://investors.petsathome.com/investors/governance/division-of-responsibilities-for-the-ceo-and-the-chairman/"
+     },
+     {
+      "page_age": "648 days ago",
+      "title": "About Us",
+      "url": "https://investors.petsathome.com/our-company/"
+     },
+     {
+      "page_age": "579 days ago",
+      "title": "ESG Committee - Governance - Investors - Pets at Home Group plc",
+      "url": "https://investors.petsathome.com/investors/governance/esg-committee/"
+     },
+     {
+      "page_age": "417 days ago",
+      "title": "History",
+      "url": "https://investors.petsathome.com/our-company/our-history/"
+     },
+     {
+      "page_age": "551 days ago",
+      "title": "Schedule of matters - Governance - Investors - Pets at Home Group plc",
+      "url": "https://investors.petsathome.com/investors/governance/schedule-of-matters/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "551 days ago",
+      "title": "Schedule of matters - Governance - Investors - Pets at Home Group plc",
+      "url": "https://investors.petsathome.com/investors/governance/schedule-of-matters/"
+     },
+     {
+      "page_age": "3911 days ago",
+      "title": "Audit and Risk Committee - Governance - Investors - Pets at Home Group plc",
+      "url": "https://investors.petsathome.com/investors/governance/audit-and-risk-committee/"
+     },
+     {
+      "page_age": "3106 days ago",
+      "title": "Investment Committee",
+      "url": "https://investors.petsathome.com/investors/governance/investment-committee/"
+     },
+     {
+      "page_age": "480 days ago",
+      "title": "Nomination and Corporate Governance Committee - Governance - Investors - Pets at Home Group plc",
+      "url": "https://investors.petsathome.com/investors/governance/nomination-and-corporate-governance-committee/"
+     },
+     {
+      "page_age": "480 days ago",
+      "title": "Remuneration Committee",
+      "url": "https://investors.petsathome.com/investors/governance/remuneration-committee/"
+     },
+     {
+      "page_age": "2749 days ago",
+      "title": "Board of Directors",
+      "url": "https://investors.petsathome.com/our-company/our-board-of-directors"
+     },
+     {
+      "page_age": "579 days ago",
+      "title": "ESG Committee - Governance - Investors - Pets at Home Group plc",
+      "url": "https://investors.petsathome.com/investors/governance/esg-committee/"
+     },
+     {
+      "page_age": "1979 days ago",
+      "title": "Pets at home group plc - UK's leading pet care business",
+      "url": "http://investors.petsathome.com/"
+     },
+     {
+      "page_age": "530 days ago",
+      "title": "Executive Committee",
+      "url": "https://investors.petsathome.com/our-company/our-management-team/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Pets at Home appoints Roger Burnley Non-Executive Director",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Pets at Home Roger Burnley steps down board 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "2749 days ago",
+      "title": "Board of Directors",
+      "url": "https://investors.petsathome.com/our-company/our-board-of-directors"
+     },
+     {
+      "page_age": "480 days ago",
+      "title": "Nomination and Corporate Governance Committee - Governance - Investors - Pets at Home Group plc",
+      "url": "https://investors.petsathome.com/investors/governance/nomination-and-corporate-governance-committee/"
+     },
+     {
+      "page_age": "480 days ago",
+      "title": "Remuneration Committee",
+      "url": "https://investors.petsathome.com/investors/governance/remuneration-committee"
+     },
+     {
+      "page_age": "3911 days ago",
+      "title": "Audit and Risk Committee - Governance - Investors - Pets at Home Group plc",
+      "url": "https://investors.petsathome.com/investors/governance/audit-and-risk-committee/"
+     },
+     {
+      "page_age": "579 days ago",
+      "title": "ESG Committee - Governance - Investors - Pets at Home Group plc",
+      "url": "https://investors.petsathome.com/investors/governance/esg-committee/"
+     },
+     {
+      "page_age": "551 days ago",
+      "title": "Schedule of matters - Governance - Investors - Pets at Home Group plc",
+      "url": "https://investors.petsathome.com/investors/governance/schedule-of-matters/"
+     },
+     {
+      "page_age": "3106 days ago",
+      "title": "Investment Committee",
+      "url": "https://investors.petsathome.com/investors/governance/investment-committee"
+     },
+     {
+      "page_age": "417 days ago",
+      "title": "Division of Responsibilities for the CEO and The Chairman - Governance - Investors - Pets at Home Group plc",
+      "url": "https://investors.petsathome.com/investors/governance/division-of-responsibilities-for-the-ceo-and-the-chairman/"
+     },
+     {
+      "page_age": null,
+      "title": "About Us",
+      "url": "https://www.petsathome.com/shop/en/pets/company-history"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "2749 days ago",
+      "title": "Board of Directors",
+      "url": "https://investors.petsathome.com/our-company/our-board-of-directors"
+     },
+     {
+      "page_age": null,
+      "title": "Pets at Home Burnley",
+      "url": "https://www.petsathome.com/find-us/locations/lancashire/burnley"
+     },
+     {
+      "page_age": "551 days ago",
+      "title": "Schedule of matters - Governance - Investors - Pets at Home Group plc",
+      "url": "https://investors.petsathome.com/investors/governance/schedule-of-matters/"
+     },
+     {
+      "page_age": "648 days ago",
+      "title": "News and Media",
+      "url": "https://investors.petsathome.com/media/"
+     },
+     {
+      "page_age": null,
+      "title": "Pets at Home Groom Room Burnley, Pets Grooming Burnley",
+      "url": "https://www.petsathome.com/find-us/locations/lancashire/burnley/grooming"
+     },
+     {
+      "page_age": "480 days ago",
+      "title": "Nomination and Corporate Governance Committee - Governance - Investors - Pets at Home Group plc",
+      "url": "https://investors.petsathome.com/investors/governance/nomination-and-corporate-governance-committee/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\n    \"value\": \"yes\",\n    \"url\": \"https://investors.petsathome.com/our-company/our-board-of-directors\",\n    \"quote\": \"Roger Burnley Independent Non-Executive Director +\"\n  },\n  \"capacity\": {\n    \"value\": \"non_executive_director\",\n    \"url\": \"https://investors.petsathome.com/our-company/our-board-of-directors\",\n    \"quote\": \"Roger Burnley Independent Non-Executive Director +\"\n  },\n  \"start_date\": {\n    \"value\": null,\n    \"url\": null,\n    \"quote\": null\n  },\n  \"end_date\": {\n    \"value\": null,\n    \"url\": null,\n    \"quote\": null\n  },\n  \"note\": \"The Pets at Home Group plc Board of Directors page lists Roger Burnley as an Independent Non-Executive Director. The same page says Ian Burke was Interim Executive Chair 'from September 2025 to March 2026', so this version of the page was written after March 2026 and is close to 2026-07-07. The page shows no date for this snapshot, so I can't confirm the board line-up on exactly 2026-07-07, and Roger Burnley's role may have changed since. The pages I found give no appointment or departure date for him, so start and end dates are unknown. I could not check whether his role began or ended within six months of 2026-07-07. I did not find the AGM notice or an annual report on petsathome.com.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T20:21:50+00:00",
+  "inputs": {
+   "as_of": "2026-07-07",
+   "domain": "petsathome.com",
+   "org_key": "pets-at-home-group",
+   "person": "roger-burnley"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 50373,
+   "output_tokens": 978,
+   "web_search_requests": 4
+  }
+ }
+}

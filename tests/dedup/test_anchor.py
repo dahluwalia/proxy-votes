@@ -140,7 +140,7 @@ def test_h5_only_same_dob_and_exact_name_links(patched, ctx):
     full = officer("ck2", "KENNEDY", "Christopher Michael", dob=(3, 1964), number="01234567")
     calls = patched(CHResult("ok", hits), {"ck2": CHResult("ok", full)})
     found, reviews = m42.expand(ck, ctx)
-    assert calls["search"] == ["Christopher Michael KENNEDY"]
+    assert calls["search"] == ["Christopher Michael KENNEDY", "Christopher KENNEDY"]
     assert [(o.officer_id, o.appointments[0].company_number) for o, _ in found] == \
         [("ck2", "01234567")]
     [ev] = found[0][1]
@@ -154,12 +154,53 @@ def test_dob_link_allows_a_missing_middle_name_but_not_a_different_one(patched, 
     DOB. A contradicting middle name is a conflict and is ignored."""
     ck = BOARD[2]  # KENNEDY, Christopher Michael
     hits = [hit("ck6", "KENNEDY", "Christopher", (3, 1964)),
+            hit("ck7", "KENNEDY", "Christopher M", (3, 1964))]
+    patched(CHResult("ok", hits + [hit("ck8", "KENNEDY", "Christopher Paul", (4, 1964))]))
+    found, reviews = m42.expand(ck, ctx)
+    assert sorted(o.officer_id for o, _ in found) == ["ck6", "ck7"]
+    assert not [r for r in reviews if r.kind == "possible_same_person"]
+
+
+def test_a_record_without_the_middle_name_is_ambiguous_beside_a_same_dob_namesake(patched, ctx):
+    """On CH, Christopher John, Christopher Daniel and a bare Christopher KENNEDY were all
+    born in January 1964. The bare record could be either man, so it isn't linked: it goes
+    to the analyst. "Christopher M" still links: the M contradicts Paul."""
+    ck = BOARD[2]  # KENNEDY, Christopher Michael
+    hits = [hit("ck6", "KENNEDY", "Christopher", (3, 1964)),
             hit("ck7", "KENNEDY", "Christopher M", (3, 1964)),
             hit("ck8", "KENNEDY", "Christopher Paul", (3, 1964))]
     patched(CHResult("ok", hits))
     found, reviews = m42.expand(ck, ctx)
-    assert sorted(o.officer_id for o, _ in found) == ["ck6", "ck7"]
-    assert not [r for r in reviews if r.kind == "possible_same_person"]
+    assert [o.officer_id for o, _ in found] == ["ck7"]
+    [review] = [r for r in reviews if r.kind == "possible_same_person"]
+    assert "ck6" in review.detail and "ck8" in review.detail and "could be either" in review.detail
+
+
+def test_a_record_filed_without_the_middle_name_is_found_by_the_short_search(ctx, monkeypatch):
+    """CH ranked "BURNLEY, Roger" 311th for "Roger Michael BURNLEY", past where the search
+    stops reading, and first for "Roger BURNLEY": expand searches both and links it."""
+    anchor_rec = hit("rb1", "BURNLEY", "Roger Michael", (6, 1966))
+    short = hit("rb2", "BURNLEY", "Roger", (6, 1966))
+    other = hit("rb3", "BURNLEY", "Roger", (11, 1966))  # another Roger Burnley
+    by_query = {"Roger Michael BURNLEY": CHResult("ok", [anchor_rec]),
+                "Roger BURNLEY": CHResult("ok", [short, other, anchor_rec])}
+    monkeypatch.setattr(client, "search_officers", lambda name, ctx: by_query[name])
+    monkeypatch.setattr(client, "appointments", lambda oid, ctx, since=None: CHResult(
+        "ok", officer(oid, "BURNLEY", "Roger", dob=(6, 1966), number="08885072")))
+    found, reviews = m42.expand(anchor_rec, ctx)
+    assert [o.officer_id for o, _ in found] == ["rb2"] and reviews == []
+
+
+def test_a_failed_short_search_fails_closed(ctx, monkeypatch):
+    by_query = {"Christopher Michael KENNEDY": CHResult("ok", []),
+                "Christopher KENNEDY": CHResult("unavailable", error="HTTP 503")}
+    monkeypatch.setattr(client, "search_officers", lambda name, ctx: by_query[name])
+    found, [review] = m42.expand(BOARD[2], ctx)
+    assert found == [] and review.kind == "ch_unavailable" and "503" in review.detail
+
+
+def test_a_single_forename_runs_one_search():
+    assert m42.search_names(hit("x", "SILVER", "Caroline", (12, 1962))) == ["Caroline SILVER"]
 
 
 def test_search_with_unread_hits_is_not_a_review_item(patched, ctx):

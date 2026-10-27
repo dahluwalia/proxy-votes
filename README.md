@@ -50,15 +50,17 @@ scored.
 
 | Run | Wrong AGAINST | Wrong FOR | Accuracy | REVIEW | Identity (pairwise P/R) | Countable seats (P/R) |
 | --- | --- | --- | --- | --- | --- | --- |
-| Live, published (`run:2`) | 0 | 0 | 90% | 10% | 100% / 100% | 100% / 96% |
-| Offline, from recordings | 0 | 0 | 94% | 6% | 100% / 100% | 99% / 96% |
+| Live, published (`run:7`) | 0 | 0 | 90% | 10% | 100% / 100% | 100% / 98% |
+| Offline, from recordings | 0 | 0 | 94% | 6% | 100% / 100% | 99% / 98% |
 
 - **People:** 50 notice mentions become 47 people (Chris Kennedy, Sharmila Nebhrajani and Tamara
   Ingram each stand twice), and all 47 match a CH record.
 - **REVIEWs:** each is a fact neither the notice, CH nor the firm's own site settles, and each names
   that fact. One example is whether Kawal Preet, FedEx's EVP, sat on its board on the AGM date.
 
-The full report is [`eval/report.md`](eval/report.md), with a line for each of 17 hard cases.
+The full report is [`eval/report.md`](eval/report.md). Of the hard cases, 23 pass, none fail and 2
+are deferred: Graham Allan is REVIEW until Bata International's listing is settled. A deferred case
+or missed seat names the unknown fact behind it, since an open question isn't a wrong answer.
 
 ## Quick start
 

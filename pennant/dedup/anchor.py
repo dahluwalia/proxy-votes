@@ -18,6 +18,7 @@ fetch_officer() for an officer that only an analyst's merge joined.
 
 from __future__ import annotations
 
+from dataclasses import replace
 from datetime import date
 from typing import Any
 
@@ -206,13 +207,15 @@ def _earliest_agm(ctx: RunContext) -> date | None:
 def expand(
     officer: CHOfficer, ctx: RunContext
 ) -> tuple[list[tuple[CHOfficer, list[Evidence]]], list[ReviewItem]]:
-    """The anchor's other CH officer records: an officer search on its CH name, keeping
-    hits with the same DOB month and year, the same surname and the same given names.
+    """The anchor's other CH officer records: officer searches on its CH name (and on
+    first forename + surname, see search_names), keeping hits with the same DOB month and
+    year, the same surname and the same given names.
     Each comes back as a full record (all appointments, with company types from the
     earliest AGM on).
 
-    A same-DOB hit whose name is `exact` but lacks or initials a middle name, or matches
-    only at `variant` or `initial`, becomes a `possible_same_person` review item. A
+    A same-DOB hit whose name is `exact` links, even without the middle name, unless a
+    same-DOB namesake with a different middle name could equally be it (_rival); that, or
+    a match only at `variant` or `initial`, becomes a `possible_same_person` review item. A
     different DOB is ignored. A failed search leaves the other records unknown and raises
     a `ch_unavailable` review item. The search reads on until it is past the officers
     sharing the surname and first forename; if it stops at its page cap among them, the
@@ -222,13 +225,16 @@ def expand(
             kind="no_dob", subject=officer.officer_id,
             detail=f"{officer.name} has no date of birth on CH, so no other CH records "
             "can be linked")]
-    res = client.search_officers(natural_name(officer), ctx)
-    if not res.ok:
+    results = [client.search_officers(q, ctx) for q in search_names(officer)]
+    if failed := next((r for r in results if not r.ok), None):
         return [], [ReviewItem(
             kind="ch_unavailable", subject=officer.officer_id,
-            detail=f"CH officer search for {officer.name} is {res.status}: {res.error}; "
+            detail=f"CH officer search for {officer.name} is {failed.status}: {failed.error}; "
             "their other CH records are unknown",
             suggested_command="pennant run")]
+    hits = list({h.officer_id: h for r in results for h in r.data}.values())
+    res = replace(results[0], data=hits, complete=all(r.complete for r in results),
+                  unread=max(r.unread for r in results))
     since = _earliest_agm(ctx)
     found: list[tuple[CHOfficer, list[Evidence]]] = []
     reviews: list[ReviewItem] = []
@@ -248,7 +254,17 @@ def expand(
         # "Christopher" and "Christopher John" with one DOB link (CH often files the same
         # person both ways); "Christopher John" vs "Christopher Paul" is a conflict.
         level = compare(ch_name(officer), ch_name(hit))
-        if level == "exact":
+        rival = _rival(officer, hit, res.data) if level == "exact" else None
+        if rival:
+            # A record without the middle name, when a same-DOB namesake with another
+            # middle name exists, could be either person: the analyst decides.
+            reviews.append(ReviewItem(
+                kind="possible_same_person", subject=officer.officer_id,
+                detail=f"{hit.name} ({hit.officer_id}) shares {officer.name}'s date of birth "
+                f"{_dob(officer)}, but so does {rival.name} ({rival.officer_id}), a different "
+                "person, and the record could be either",
+                suggested_command=MERGE_HINT.format(a=officer.officer_id, b=hit.officer_id)))
+        elif level == "exact":
             full = client.appointments(hit.officer_id, ctx, since)
             if not full.ok:
                 reviews.append(ReviewItem(
@@ -269,6 +285,29 @@ def expand(
                 f"{_dob(officer)}, but the names only match at {level}",
                 suggested_command=MERGE_HINT.format(a=officer.officer_id, b=hit.officer_id)))
     return found, reviews
+
+
+def _rival(officer: CHOfficer, hit: CHOfficer, hits: list[CHOfficer]) -> CHOfficer | None:
+    """A same-DOB record of a different person (its middle name contradicts the anchor's)
+    that `hit` matches just as well, e.g. a bare "Christopher KENNEDY" when "Christopher
+    John" (the anchor) and "Christopher Daniel" were both born in January 1964."""
+    dob = (officer.dob_month, officer.dob_year)
+    return next((h for h in hits if (h.dob_month, h.dob_year) == dob
+                 and h.officer_id not in (officer.officer_id, hit.officer_id)
+                 and compare(ch_name(officer), ch_name(h)) == "conflict"
+                 and compare(ch_name(hit), ch_name(h)) == "exact"), None)
+
+
+def search_names(officer: CHOfficer) -> list[str]:
+    """The officer searches expand runs: the full CH name, and, when it has middle names,
+    the first forename and surname too. CH ranks its fuzzy hits by the query, so a record
+    filed without the middle name ("Roger BURNLEY") can sit hundreds of hits down a
+    full-name search ("Roger Michael BURNLEY"), past where the search stops reading."""
+    names = [natural_name(officer)]
+    first = (officer.forenames or "").split()
+    if officer.surname and len(first) > 1:
+        names.append(f"{first[0]} {officer.surname}")
+    return names
 
 
 def fetch_officer(officer_id: str, ctx: RunContext) -> tuple[CHOfficer | None, list[ReviewItem]]:

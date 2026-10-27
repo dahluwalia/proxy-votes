@@ -1,0 +1,191 @@
+{
+ "key": "6f26377ac4307ad57f31ae0981049ec938dc6c58183696542eb6c39c8f9318a9",
+ "payload": {
+  "content": [
+   {
+    "query": "Qubit company official website",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Qubit Companies House UK limited company",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Qubit - Overview, News & Similar companies",
+      "url": "https://www.zoominfo.com/c/qubit/348675194"
+     },
+     {
+      "page_age": null,
+      "title": "Qubit (Business/Productivity Software) 2026 Company Profile: Valuation, Investors, Acquisition",
+      "url": "https://pitchbook.com/profiles/company/55717-12"
+     },
+     {
+      "page_age": "3871 days ago",
+      "title": "Coveo Qubit.",
+      "url": "https://www.linkedin.com/company/qubit-group"
+     },
+     {
+      "page_age": null,
+      "title": "Rigetti Computing",
+      "url": "https://en.wikipedia.org/wiki/Rigetti_Computing"
+     },
+     {
+      "page_age": "41 days ago",
+      "title": "Qubit Systems",
+      "url": "https://qubitsystems.com/"
+     },
+     {
+      "page_age": null,
+      "title": "Qubit IT Limited",
+      "url": "https://www.qubitit.com/"
+     },
+     {
+      "page_age": null,
+      "title": "Qubit \u2014 IT infrastructure partner & product studio",
+      "url": "https://www.qubitt.com/"
+     },
+     {
+      "page_age": null,
+      "title": "Qubit",
+      "url": "https://qubit.sa/en"
+     },
+     {
+      "page_age": null,
+      "title": "Qubit Technologies",
+      "url": "https://www.qubit-technologies.com/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "QUBIT LIMITED overview - Companies House - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/01772053"
+     },
+     {
+      "page_age": null,
+      "title": "QUBIT LONDON LTD overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/17356141"
+     },
+     {
+      "page_age": null,
+      "title": "QUBIT HOLDINGS LTD overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/15284262"
+     },
+     {
+      "page_age": null,
+      "title": "QUBIT DIGITAL LTD overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07116058"
+     },
+     {
+      "page_age": null,
+      "title": "QUBIT IT SOLUTIONS LIMITED overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/16635842"
+     },
+     {
+      "page_age": null,
+      "title": "QUBIT FURNITURE LIMITED overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/16906743"
+     },
+     {
+      "page_age": null,
+      "title": "QUBIT VENTURES I GP LIMITED overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/15361466"
+     },
+     {
+      "page_age": null,
+      "title": "QUBIT INTERIOR SOLUTIONS LIMITED overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/09535977"
+     },
+     {
+      "page_age": null,
+      "title": "QUBIT CAPITAL LABS LTD overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/14991171"
+     },
+     {
+      "page_age": null,
+      "title": "Companies House",
+      "url": "https://en.wikipedia.org/wiki/Companies_House"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Coveo acquires Qubit personalization",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "567 days ago",
+      "title": "Qubit acquired by Coveo",
+      "url": "https://www.balderton.com/news/qubit-acquired-by-coveo/"
+     },
+     {
+      "page_age": "1838 days ago",
+      "title": "Coveo Acquires Qubit",
+      "url": "https://www.coveo.com/en/pages/coveo-acquires-qubit-faq"
+     },
+     {
+      "page_age": "1838 days ago",
+      "title": "Coveo Acquires Qubit",
+      "url": "https://finance.yahoo.com/news/coveo-acquires-qubit-100000340.html"
+     },
+     {
+      "page_age": "1838 days ago",
+      "title": "AI-powered personalization provider Qubit gets acquired by Coveo",
+      "url": "https://venturebeat.com/business/ai-powered-personalization-provider-qubit-gets-acquired-by-coveo"
+     },
+     {
+      "page_age": "1838 days ago",
+      "title": "Venture-backed Coveo acquires Britain's Qubit",
+      "url": "https://www.venturecapitaljournal.com/omers-backed-coveo-buys-qubit/"
+     },
+     {
+      "page_age": "1687 days ago",
+      "title": "What Is the Impact of Coveo Acquiring Qubit?",
+      "url": "https://www.coveo.com/blog/coveo-and-qubit-better-together/"
+     },
+     {
+      "page_age": "1838 days ago",
+      "title": "Coveo acquires England\u2019s Qubit to extend European e-commerce reach",
+      "url": "https://betakit.com/coveo-acquires-englands-qubit-to-extend-european-e-commerce-reach/"
+     },
+     {
+      "page_age": "1838 days ago",
+      "title": "COVEO on X: \"\ud83c\udf89We\u2019re very excited to announce the acquisition of @qubit, a leader in AI-powered personalization technology for merchandising teams, based in London (UK). We want to offer a warm welcome to the Coveo family to all Qubit employees! Full release: https://t.co/wfJfSQfGy1\" / X",
+      "url": "https://x.com/coveo/status/1448953062798790658"
+     },
+     {
+      "page_age": "1838 days ago",
+      "title": "Coveo Acquires Qubit",
+      "url": "https://aithority.com/saas/coveo-acquires-qubit/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\"value\": \"unknown\", \"url\": \"\", \"quote\": \"\"},\n  \"note\": \"'Qubit' is not specific enough to identify one organisation. My searches found several unrelated entities with that name. They include Qubit Digital Ltd (UK, a personalisation firm that Coveo acquired in Oct 2021), Qubit Systems (Canada), Qubit Technologies Inc. (Guyana), Qubit Intelligence (Saudi Arabia), and several UK companies on Companies House. The most likely match is the UK personalisation firm, which is now part of Coveo, whose site is coveo.com. I could not confirm that is the one you mean. Coveo's own FAQ page (https://www.coveo.com/en/pages/coveo-acquires-qubit-faq) confirms the acquisition, but it does not show that Coveo's pages cover Qubit's board. Using it could let another company's pages decide a vote. A Companies House number or a parent company name would settle which Qubit this is.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T19:07:19+00:00",
+  "inputs": {
+   "org_key": "qubit"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 40124,
+   "output_tokens": 792,
+   "web_search_requests": 3
+  }
+ }
+}

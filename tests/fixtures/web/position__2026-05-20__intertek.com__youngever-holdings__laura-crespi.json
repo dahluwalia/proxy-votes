@@ -1,0 +1,145 @@
+{
+ "key": "94067c8cf4495e3ce6bd331e84147e3be7de3d5ef9cfeaa46c5d86fc08886610",
+ "payload": {
+  "content": [
+   {
+    "query": "intertek.com Laura Crespi Youngever Holdings director",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "intertek.com Youngever Holdings board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "560 days ago",
+      "title": "Board of Directors",
+      "url": "https://www.intertek.com/investors/board/"
+     },
+     {
+      "page_age": null,
+      "title": "Group Executive Committee",
+      "url": "https://www.intertek.com/about/executive-committee/"
+     },
+     {
+      "page_age": "167 days ago",
+      "title": "Intertek Group plc NOTICE OF 2026 ANNUAL GENERAL MEETING",
+      "url": "https://www.intertek.com/siteassets/investors/2026/notice-of-2026-annual-general-meeting.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Roles and Responsibilities",
+      "url": "https://www.intertek.com/investors/corporate-governance/roles-and-responsibilities/"
+     },
+     {
+      "page_age": "196 days ago",
+      "title": "Strategic Review Initiation & Trading Update 2026 Script",
+      "url": "https://www.intertek.com/siteassets/investors/2026/intertek-strategic-review-initiation--trading-update-2026-script.pdf"
+     },
+     {
+      "page_age": "2035 days ago",
+      "title": "Intertek Group plc - Directorate changes",
+      "url": "https://www.intertek.com/news/2021/04-01-directorate-changes/"
+     },
+     {
+      "page_age": "228 days ago",
+      "title": "Directors' report Contents 2.50 Chair\u2019s introduction",
+      "url": "https://www.intertek.com/siteassets/investors/2026/ara/intertek-sustainability-report-2025---directors-report.pdf"
+     },
+     {
+      "page_age": "2090 days ago",
+      "title": "Intertek Group plc - Appointment of a new Non-Executive Director and directorate changes",
+      "url": "https://www.intertek.com/news/2021/02-05-appointment-of-new-non-executive-director-and-directorate-changes/"
+     },
+     {
+      "page_age": "239 days ago",
+      "title": "intertek-financial-report-2025.pdf",
+      "url": "https://www.intertek.com/siteassets/investors/2026/ara/intertek-financial-report-2025.pdf"
+     },
+     {
+      "page_age": "585 days ago",
+      "title": "Intertek Group plc NOTICE OF 2025 ANNUAL GENERAL MEETING",
+      "url": "https://www.intertek.com/siteassets/investors/2025/notice-of-2025-annual-general-meeting.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "560 days ago",
+      "title": "Board of Directors",
+      "url": "https://www.intertek.com/investors/board/"
+     },
+     {
+      "page_age": "228 days ago",
+      "title": "Directors' report Contents 2.50 Chair\u2019s introduction",
+      "url": "https://www.intertek.com/siteassets/investors/2026/ara/intertek-sustainability-report-2025---directors-report.pdf"
+     },
+     {
+      "page_age": "2037 days ago",
+      "title": "Build Back Ever Better Helping the world to Annual Report 2020",
+      "url": "https://cdn.intertek.com/www-intertek-com/media/investors/2021/Intertek_Group_plc_Annual_Report_2020.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Roles and Responsibilities",
+      "url": "https://www.intertek.com/investors/corporate-governance/roles-and-responsibilities/"
+     },
+     {
+      "page_age": "167 days ago",
+      "title": "Intertek Group plc NOTICE OF 2026 ANNUAL GENERAL MEETING",
+      "url": "https://www.intertek.com/siteassets/investors/2026/notice-of-2026-annual-general-meeting.pdf"
+     },
+     {
+      "page_age": "585 days ago",
+      "title": "Intertek Group plc NOTICE OF 2025 ANNUAL GENERAL MEETING",
+      "url": "https://www.intertek.com/siteassets/investors/2025/notice-of-2025-annual-general-meeting.pdf"
+     },
+     {
+      "page_age": "424 days ago",
+      "title": "THE INTERTEK SUSTAINABLE PROCUREMENT POLICY",
+      "url": "https://www.intertek.com/siteassets/about-us/compliance/intertek-sustainable-procurement-policy.pdf"
+     },
+     {
+      "page_age": "239 days ago",
+      "title": "intertek-financial-report-2025.pdf",
+      "url": "https://www.intertek.com/siteassets/investors/2026/ara/intertek-financial-report-2025.pdf"
+     },
+     {
+      "page_age": "1338 days ago",
+      "title": "report financial Book three The Financial Report comprises",
+      "url": "https://cdn.intertek.com/ar2022/assets/pdf/Intertek_OAR22-Book3-Financial.pdf"
+     },
+     {
+      "page_age": "2843 days ago",
+      "title": "INTERTEK GROUP PLC",
+      "url": "https://cdn.intertek.com/www-intertek-com/dms-legacy/Intertek-Circular-and-Notice-of-2019-January-General-Meeting.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\n    \"value\": \"yes\",\n    \"url\": \"https://www.intertek.com/investors/board/\",\n    \"quote\": \"Appointed to the Board as Chief Financial Officer in April 2026.\"\n  },\n  \"capacity\": {\n    \"value\": \"executive_director\",\n    \"url\": \"https://www.intertek.com/siteassets/investors/2026/notice-of-2026-annual-general-meeting.pdf\",\n    \"quote\": \"Laura Crespi was appointed to the Board as Director and Chief Financial Officer on 10 April 2026.\"\n  },\n  \"start_date\": {\n    \"value\": \"2026-04-10\",\n    \"url\": \"https://www.intertek.com/siteassets/investors/2026/notice-of-2026-annual-general-meeting.pdf\",\n    \"quote\": \"Laura Crespi was appointed to the Board as Director and Chief Financial Officer on 10 April 2026.\"\n  },\n  \"end_date\": {\n    \"value\": null,\n    \"url\": null,\n    \"quote\": null\n  },\n  \"note\": \"The website shows no separate board for Youngever Holdings Ltd. It appears only as a Tortola, BVI entity in the Intertek Group plc Annual Report 2025 financial report. I therefore answered for the Intertek Group plc board, which I treated as the parent group. The site does not say outright that Youngever is a subsidiary, and it does not say whether Crespi sits on Youngever's own board. If the analyst needs her Youngever seat itself, the answer is unknown. Her Intertek Group plc seat began on 10 April 2026, about 40 days before the 20 May 2026 AGM, so it started within six months of that date. The 2026 AGM notice puts her election to shareholders (Resolution 5). The board page also lists her, and it appears to have been updated after May 2026, because it records Steve Mogford becoming Chairman that month. It shows no end date, and I saw nothing to suggest her role changed after 20 May 2026. The site gives her as CFO and as a Director, and I classed that as an executive director. Her page shows no external appointments, which would matter for counting her other boards.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T19:12:19+00:00",
+  "inputs": {
+   "as_of": "2026-05-20",
+   "domain": "intertek.com",
+   "org_key": "youngever-holdings",
+   "person": "laura-crespi"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 24626,
+   "output_tokens": 1489,
+   "web_search_requests": 2
+  }
+ }
+}

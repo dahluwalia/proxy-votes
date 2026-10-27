@@ -316,6 +316,9 @@ git-ignored), grades it with the gold scorer in `eval/gold/`, and writes
 [`eval/report.md`](../eval/report.md): wrong AGAINST (the headline, target 0), wrong FOR,
 vote accuracy, REVIEW rate, pairwise identity precision and recall, countable seats,
 the result under each `aim_counts_as_listed` value, and a line per hard case H1–H17.
+A hard case or a missed seat that differs from gold only because the run left a fact unknown is
+reported as DEFERRED (or "not wrong: … unknown"), with the fact that would settle it, rather than as
+a failure: REVIEW is the system saying it isn't sure, not a wrong answer.
 A meeting the gold set doesn't cover is listed, not graded. The gold set, its
 sources and the scorer are described in [`eval/gold/README.md`](../eval/gold/README.md).
 
@@ -327,13 +330,14 @@ Graded against the gold set as rebuilt from cited evidence ([`eval/gold/README.m
 
 | Run | Wrong AGAINST | Wrong FOR | Accuracy | REVIEW | Identity (pairwise P/R) | Countable seats (P/R) |
 | --- | --- | --- | --- | --- | --- | --- |
-| Live, published (`run:2` in `pennant.db`) | 0 | 0 | 90% | 10% | 100% / 100% | 100% / 96% |
-| Offline, fresh database | 0 | 0 | 94% | 6% | 100% / 100% | 99% / 96% |
+| Live, published (`run:7` in `pennant.db`) | 0 | 0 | 90% | 10% | 100% / 100% | 100% / 98% |
+| Offline, fresh database | 0 | 0 | 94% | 6% | 100% / 100% | 99% / 98% |
 
 The database was reset on 27 Oct and rebuilt live from the five PDFs. The first run from empty
 (`run:1`) scored 86%: one research answer, IG Design Group's listing, came back without the JSON
 the validator needs, and Tom Delay wasn't yet matched. `run:2` re-asked the one question and added
-the nickname list, and both were settled.
+the nickname list, and both were settled. `run:7` added the short-name officer search, which
+found Roger Burnley's Pets at Home directorship on a CH record filed as plain "Roger BURNLEY".
 
 50 roster mentions become 47 people, and all 47 anchor to Companies House: Tom Delay through the
 nickname list ("Tom" is a listed nickname of "Thomas"). Every disagreement with gold is a REVIEW,
@@ -622,6 +626,13 @@ votes don't change:
   `pennant merge nm:02366619:r9 3foiCz6Hg_2s4JTbIRFd01JBwG4 -r "..."`. Since the nickname list
   (`pennant/dedup/data/`), all 50 example mentions anchor; a nickname the list doesn't have still
   falls below the name-match bar.
+- **Seats in neither the notice nor Companies House** are not found. The M&S notice has no
+  biographies, so Fiona Dawson's chair of Kerry Group (an Irish company, not on CH) is missed; her
+  vote is FOR either way. Reading the issuer's own board page when its notice has no biographies
+  would close this.
+- **Bonds never found count as not listed.** Research found no listed bonds for Bank of Scotland,
+  so its seat isn't counted, though gold cites them. No vote changes: the Lloyds group already
+  counts for Sarah Legg.
 - **A rollback restores votes, not decisions.** Decisions recorded after the run you roll back to
   still replay on the next run; undo them with `pennant undo`. Rolling back past a run published
   after a decision shows that decision as the cause in `pennant diff`, though it is still active.

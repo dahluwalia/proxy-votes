@@ -183,15 +183,30 @@ def gold_vote(e, policy):
     return e["expected_vote"]
 
 
+def gold_seats(g, policy):
+    """person -> [(seat, facts)], each seat as of the person's AGM, as the votes are scored
+    (a seat resigned before the AGM doesn't count); for someone standing at two meetings, a
+    seat counts if it counts at either."""
+    meetings = {x["meeting_id"]: m_agm(x) for x in g["meetings"]}
+    org_of = {x["seat_id"]: x["org_id"] for x in g["seats"]}
+    stands = defaultdict(list)
+    for r in g["roster"]:
+        stands[r["person"]].append((meetings[r["meeting_id"]], org_of.get(r.get("issuer_seat_id"))))
+    by_person = defaultdict(list)
+    for s in g["seats"]:
+        facts = [seat_facts(s, policy, agm, issuer) for agm, issuer in stands[s["person"]]] or \
+            [seat_facts(s, policy)]
+        by_person[s["person"]].append((s, next((f for f in facts if f["counted"] == "yes"), facts[0])))
+    return by_person
+
+
 def score_seats(g, seats, pred_person, policy, m):
     # map pipeline person ids -> gold person by majority over shared mentions
     votes_for = defaultdict(Counter)
     for k, pid in pred_person.items():
         votes_for[pid][g["by_key"][k]["person"]] += 1
     to_gold = {pid: c.most_common(1)[0][0] for pid, c in votes_for.items()}
-    gold_by_person = defaultdict(list)
-    for s in g["seats"]:
-        gold_by_person[s["person"]].append((s, seat_facts(s, policy)))
+    gold_by_person = gold_seats(g, policy)
     standing = {r["person"] for r in g["roster"]}
     gold_counted = {(s["person"], s["seat_id"]) for p in standing for s, f in gold_by_person[p] if f["counted"] == "yes"}
 
@@ -209,7 +224,9 @@ def score_seats(g, seats, pred_person, policy, m):
             tp += 1
             matched_gold.add((person, hit[0]["seat_id"]))
             if tri(s.get("chair")) != hit[1]["chair"] and hit[1]["chair"] != "unknown":
-                errs["chair wrong"].append(f'{person}: {hit[0]["org"]}')
+                key = ("chair unknown in the run (not wrong; gold: " + hit[1]["chair"] + ")"
+                       if tri(s.get("chair")) == "unknown" else "chair wrong")
+                errs[key].append(f'{person}: {hit[0]["org"]}')
             continue
         why = "seat not in gold"
         if cands:
@@ -227,8 +244,24 @@ def score_seats(g, seats, pred_person, policy, m):
     missed = sorted(gold_counted - matched_gold)
     if missed:
         names = {s["seat_id"]: s["org"] for s in g["seats"]}
-        out += [f"- missed: {len(missed)}"] + [f"    - {p_}: {names[sid]}" for p_, sid in missed]
+        out += [f"- missed: {len(missed)}"] + [
+            f"    - {p_}: {names[sid]} ({_why_missed(p_, names[sid], seats, to_gold)})"
+            for p_, sid in missed]
     return out
+
+
+def _why_missed(person, org, seats, to_gold):
+    """Why a gold countable seat isn't counted in the run: not found at all, or which facts
+    the run left unknown (not wrong: an open question) or decided no (a disagreement)."""
+    mine = [s for s in seats if to_gold.get(s["person_id"]) == person and org_match(s["org"], org)]
+    if not mine:
+        return "not found in the run"
+    facts = {f: tri(mine[0].get(f)) for f in ("current", "board_seat", "listed")}
+    no = [f for f, v in facts.items() if v == "no"]
+    if no:
+        return "the run says " + ", ".join(f"{f} no" for f in no)
+    unknown = [f for f, v in facts.items() if v == "unknown"]
+    return ("not wrong: " + ", ".join(unknown) + " unknown in the run") if unknown else "counted no"
 
 
 # ---------------------------------------------------------------- self-test
@@ -248,8 +281,9 @@ def write_perfect(dirpath: Path):
     with (dirpath / "seats.csv").open("w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["person_id", "org", "current", "board_seat", "chair", "listed", "counted"])
-        for s in g["seats"]:
-            w.writerow(["P-" + s["person"], s["org"], s["tense"], s["board_seat"], s["chair"], s["listed"], s["counted"]])
+        for s, f in (x for seats in gold_seats(g, DEFAULT_POLICY).values() for x in seats):
+            w.writerow(["P-" + s["person"], s["org"], s["tense"], s["board_seat"], f["chair"], s["listed"],
+                        f["counted"]])
 
 
 def selftest():

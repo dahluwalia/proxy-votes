@@ -1,0 +1,243 @@
+{
+ "key": "1f54228be32f216dc27d3bab284b41c82509774348f796a6d37d86f5ef7f58c7",
+ "payload": {
+  "content": [
+   {
+    "query": "hsbc.co.uk HSBC UK Bank plc board of directors Carolyn Fairbairn",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Management team - About HSBC",
+      "url": "https://www.about.hsbc.co.uk/management-team"
+     },
+     {
+      "page_age": "611 days ago",
+      "title": "About HSBC",
+      "url": "https://www.about.hsbc.co.uk/"
+     },
+     {
+      "page_age": "1511 days ago",
+      "title": "Our governance - HSBC Asset Management - UK",
+      "url": "https://www.assetmanagement.hsbc.co.uk/en/institutional-investor/about-us/our-governance"
+     },
+     {
+      "page_age": "371 days ago",
+      "title": "David Lindberg appointed as CEO of HSBC UK - About HSBC",
+      "url": "https://www.about.hsbc.co.uk/news-and-media/david-lindberg-appointed-as-ceo-of-hsbc-uk"
+     },
+     {
+      "page_age": null,
+      "title": "History timeline - About HSBC",
+      "url": "https://www.about.hsbc.co.uk/history-timeline"
+     },
+     {
+      "page_age": "1807 days ago",
+      "title": "HSBC UK announces Commercial Banking leadership change - About HSBC",
+      "url": "https://www.about.hsbc.co.uk/news-and-media/hsbc-uk-announces-commercial-banking-leadership-change"
+     },
+     {
+      "page_age": "602 days ago",
+      "title": "HSBC announces appointment of Group Customer and Culture Director- About HSBC",
+      "url": "https://www.about.hsbc.co.uk/news-and-media/hsbc-announces-appointment-of-group-customer-and-culture-director"
+     },
+     {
+      "page_age": null,
+      "title": "PUBLIC",
+      "url": "https://www.assetmanagement.hsbc.co.uk/api/v1/download/document/ie000u679it9/gb/en/prospectus"
+     },
+     {
+      "page_age": "2027 days ago",
+      "title": "HSBC Future Focus",
+      "url": "https://futurefocus.staff.hsbc.co.uk/active-hybrid/information-centre/announcements/changes-to-the-trustee-board"
+     },
+     {
+      "page_age": "848 days ago",
+      "title": "HSBC Bank (UK) Pension Scheme Annual Report & Financial Statements for",
+      "url": "https://futurefocus.staff.hsbc.co.uk/-/media/project/futurefocus/information-centre/other-information/annual-report--financial-statements-for-the-year-31-december-2023.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "HSBC UK Bank plc board directors non-executive chair governance",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Carolyn Fairbairn HSBC UK Bank non-executive director appointed",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "1511 days ago",
+      "title": "Our governance - HSBC Asset Management - UK",
+      "url": "https://www.assetmanagement.hsbc.co.uk/en/institutional-investor/about-us/our-governance"
+     },
+     {
+      "page_age": null,
+      "title": "12 PUBLIC 4. Our Core Themes for Engagement (cont\u2019d)",
+      "url": "https://www.assetmanagement.hsbc.co.uk/en/institutional-investor/about-us/responsible-investing/-/media/files/attachments/common/resource-documents/stewardship-resources/stewardship-corporate-governance"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC Future Focus",
+      "url": "https://futurefocus.staff.hsbc.co.uk/trustees"
+     },
+     {
+      "page_age": null,
+      "title": "Our governance at HSBC Asset Management - Intermediary",
+      "url": "https://www.assetmanagement.hsbc.co.uk/en/intermediary/about-us/our-governance"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC Future Focus",
+      "url": "https://futurefocus.staff.hsbc.co.uk/active-hybrid/the-scheme-trustee"
+     },
+     {
+      "page_age": "2791 days ago",
+      "title": "HSBC Future Focus",
+      "url": "https://futurefocus.staff.hsbc.co.uk/active-hybrid/information-centre/announcements/governance-arrangements"
+     },
+     {
+      "page_age": "2027 days ago",
+      "title": "HSBC Future Focus",
+      "url": "https://futurefocus.staff.hsbc.co.uk/active-hybrid/information-centre/announcements/changes-to-the-trustee-board"
+     },
+     {
+      "page_age": "848 days ago",
+      "title": "HSBC Bank (UK) Pension Scheme DC governance statement for the year",
+      "url": "https://futurefocus.staff.hsbc.co.uk/-/media/files/hsbc-bank-uk-pension-scheme-dc-sip-november-2025-final.pdf"
+     },
+     {
+      "page_age": "848 days ago",
+      "title": "HSBC Bank (UK) Pension Scheme Annual Report & Financial Statements for",
+      "url": "https://futurefocus.staff.hsbc.co.uk/-/media/project/futurefocus/information-centre/other-information/annual-report--financial-statements-for-the-year-31-december-2023.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Management team - About HSBC",
+      "url": "https://www.about.hsbc.co.uk/management-team"
+     },
+     {
+      "page_age": "611 days ago",
+      "title": "About HSBC",
+      "url": "https://www.about.hsbc.co.uk/"
+     },
+     {
+      "page_age": "1511 days ago",
+      "title": "Our governance - HSBC Asset Management - UK",
+      "url": "https://www.assetmanagement.hsbc.co.uk/en/institutional-investor/about-us/our-governance"
+     },
+     {
+      "page_age": "602 days ago",
+      "title": "HSBC announces appointment of Group Customer and Culture Director- About HSBC",
+      "url": "https://www.about.hsbc.co.uk/news-and-media/hsbc-announces-appointment-of-group-customer-and-culture-director"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC Future Focus",
+      "url": "https://futurefocus.staff.hsbc.co.uk/deferred-db/information-centre/announcements/member-nominated-director---august-2022"
+     },
+     {
+      "page_age": "497 days ago",
+      "title": "HSBC Asset Management appoints UK CEO",
+      "url": "https://www.assetmanagement.hsbc.co.uk/en/institutional-investor/news-and-insights/hsbc-am-appoints-uk-ceo"
+     },
+     {
+      "page_age": "1656 days ago",
+      "title": "15 April 2026 HSBC OpenFunds Annual Report and Accounts",
+      "url": "https://www.assetmanagement.hsbc.co.uk/api/v1/download/document/gb00blkqch53/gb/en/annual%20report"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "HSBC UK Bank plc Annual Report and Accounts 2025 directors Fairbairn",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "319 days ago",
+      "title": "31 August 2025 HSBC Universal Investment Funds Annual Report and Accounts",
+      "url": "https://www.assetmanagement.hsbc.co.uk/api/v1/download/document/gb00b3cgfm36/gb/en/annual%20report"
+     },
+     {
+      "page_age": "532 days ago",
+      "title": "HSBC Investment Funds Annual Report and Accounts 15 January 2025",
+      "url": "https://www.assetmanagement.hsbc.co.uk/api/v1/download/document/gb00b3k7sr40/gb/en/annual%20report"
+     },
+     {
+      "page_age": "848 days ago",
+      "title": "HSBC Bank (UK) Pension Scheme Annual Report & Financial Statements for",
+      "url": "https://futurefocus.staff.hsbc.co.uk/-/media/project/futurefocus/information-centre/other-information/annual-report--financial-statements-for-the-year-31-december-2023.pdf"
+     },
+     {
+      "page_age": "572 days ago",
+      "title": "HSBC Portfolios Unaudited Semi-Annual Report for the",
+      "url": "https://www.assetmanagement.hsbc.co.uk/api/v1/download/document/lu0447611145/gb/en/semi%20annual%20report"
+     },
+     {
+      "page_age": "1140 days ago",
+      "title": "15 May 2025 HSBC Index Tracker Investment Funds Annual Report and Accounts",
+      "url": "https://www.assetmanagement.hsbc.co.uk/api/v1/download/document/gb0000438233/gb/en/annual%20report"
+     },
+     {
+      "page_age": "1523 days ago",
+      "title": "HSBC Global Liquidity Funds plc Annual Report and Financial Statements",
+      "url": "https://www.assetmanagement.hsbc.co.uk/api/v1/download/document/ie00bd4h6767/gb/en/annual%20report"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC UCITS AdvantEdge PLC Annual Report and Financial Statements\u0003",
+      "url": "https://www.assetmanagement.hsbc.co.uk/api/v1/download/document/ie00b95kgd26/gb/en/annual%20report"
+     },
+     {
+      "page_age": null,
+      "title": "15 May 2026 HSBC Index Tracker Investment Funds Annual Report and Accounts",
+      "url": "https://www.assetmanagement.hsbc.co.uk/api/v1/download/document/gb00b80qfz35/gb/en/annual%20report"
+     },
+     {
+      "page_age": "545 days ago",
+      "title": "HSBC Universal Investment Funds Interim Report and Accounts 28 February 2025",
+      "url": "https://www.assetmanagement.hsbc.co.uk/api/v1/download/document/gb00bmvjrt73/gb/en/semi%20annual%20report"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC Global Investment Funds",
+      "url": "https://www.assetmanagement.hsbc.co.uk/api/v1/download/document/lu1711226354/gb/en/annual%20report"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"capacity\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"start_date\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"end_date\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"note\": \"My searches of hsbc.co.uk found no page listing the HSBC UK Bank plc board, and none that mentions Dame Carolyn Fairbairn. The pages returned were the about.hsbc.co.uk management-team and news pages, the HSBC Asset Management fund reports and the HSBC pension scheme trustee pages. None of them is a board list for HSBC UK Bank plc or for HSBC Holdings plc. A management-team page naming a CEO is not evidence of a board seat. Because no board list current on or near 2026-06-18 turned up, I cannot answer 'no' either. Check the HSBC UK Bank plc annual report or Companies House directly.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T19:13:33+00:00",
+  "inputs": {
+   "as_of": "2026-06-18",
+   "domain": "hsbc.co.uk",
+   "org_key": "hsbc-uk-bank",
+   "person": "dame-carolyn-fairbairn"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 62700,
+   "output_tokens": 687,
+   "web_search_requests": 4
+  }
+ }
+}

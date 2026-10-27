@@ -205,12 +205,15 @@ def build_seats(ov, rows):
 
 def seat_facts(s, policy, agm=None, issuer=None):
     """Policy-relevant facts for one seat under a policy setting. With an AGM date, a seat whose
-    Companies House dates put it outside that date is not current there; the seat under vote
-    (the issuer's own, `issuer`) is exempt: policy flag count_seat_under_vote counts it."""
+    Companies House dates put it outside that date is not current there. The seat under vote
+    (the issuer's own, `issuer`) counts even if it starts after the AGM (policy flag
+    count_seat_under_vote), but not if the director resigned it before the AGM (Garnier)."""
     current = {"current": "yes", "past": "no"}.get(s["tense"], "unknown")
-    if agm and s["org_id"] != issuer and current != "no":
+    if agm and current != "no":
         start, end = s.get("ch_from"), s.get("ch_until")
-        if (start and date.fromisoformat(start) > agm) or (end and date.fromisoformat(end) <= agm):
+        if end and date.fromisoformat(end) <= agm:
+            current = "no"
+        elif s["org_id"] != issuer and start and date.fromisoformat(start) > agm:
             current = "no"
     listed = s["listed"] if s["listed"] is not None else "unknown"  # its shares
     if s["market"] and "AIM" in s["market"]:

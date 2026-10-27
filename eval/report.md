@@ -1,14 +1,14 @@
-# Evaluation report — run:2
+# Evaluation report — run:7
 
-Generated 2026-10-27 19:19 UTC under `config/policy.yaml`.
+Generated 2026-10-27 20:22 UTC under `config/policy.yaml`.
 
 ## Headline
 
 - **Wrong AGAINST votes: 0** (target 0)
 - Wrong FOR votes: 0
-- Vote accuracy: 90% on 49 gold-scored entries; REVIEW rate 10%; points interval exact 82%
+- Vote accuracy: 90% on 49 gold-scored entries; REVIEW rate 10%; points interval exact 84%
 - People, pairwise: precision 100%, recall 100%
-- Countable seats: precision 100%, recall 96%
+- Countable seats: precision 100%, recall 98%
 - Gold covers 50 of 50 roster entries in this run
 - 50 roster mentions → 47 people; 47 anchored to Companies House
 
@@ -67,7 +67,7 @@ Policy flags: {'aim_counts_as_listed': 'yes', 'chair_designate_counts_as_chair':
 
 ### Votes
 - **wrong AGAINST: 0** (target 0) · wrong FOR: 0
-- exact vote accuracy 89.8% on 49 scored entries; REVIEW rate 10.2%; points interval exact 81.6%
+- exact vote accuracy 89.8% on 49 scored entries; REVIEW rate 10.2%; points interval exact 83.7%
 - policy: aim_counts_as_listed=yes, chair_designate_counts_as_chair=no
 
 | gold \ predicted | FOR | AGAINST | REVIEW | MISSING |
@@ -84,14 +84,12 @@ Policy flags: {'aim_counts_as_listed': 'yes', 'chair_designate_counts_as_chair':
 - Tesco#6 Carolyn Fairbairn (gold FOR)
 
 ### Countable seats
-- precision 100.0%, recall 96.0% (98 gold countable seats)
-- chair wrong: 1
+- precision 100.0%, recall 98.0% (97 gold countable seats)
+- chair unknown in the run (not wrong; gold: yes): 1
     - carolyn-fairbairn: HSBC UK Bank plc
-- missed: 4
-    - fiona-dawson: Kerry Group plc
-    - roger-burnley: Pets at Home Group plc
-    - sarah-legg: Bank of Scotland plc
-    - thierry-garnier: Tesco PLC
+- missed: 2
+    - fiona-dawson: Kerry Group plc (not found in the run)
+    - sarah-legg: Bank of Scotland plc (the run says listed no)
 
 ## Gold-graded under each AIM value
 
@@ -101,7 +99,9 @@ Policy flags: {'aim_counts_as_listed': 'yes', 'chair_designate_counts_as_chair':
 | yes | 0 | 0 | 90% | 10% |
 | no | 0 | 0 | 90% | 10% |
 
-## Hard cases (21 pass, 4 fail, 1 n/a)
+## Hard cases (23 pass, 0 fail, 2 deferred, 1 n/a)
+
+DEFERRED: the run left a fact unknown (a REVIEW vote, a points range, an unknown fact) instead of getting it wrong; the detail names what would settle it.
 
 | Id | Case | Result | Detail |
 | --- | --- | --- | --- |
@@ -114,15 +114,15 @@ Policy flags: {'aim_counts_as_listed': 'yes', 'chair_designate_counts_as_chair':
 | H6 | Past roles are not current | PASS | Christine Hodgson at Standard Chartered: current=no; André Lacroix at Reckitt: current=no; Nick Hampton at Great Portland Estates: current=no; Robin Freestone at Aston Martin: current=no; Robin Freestone at Mony: current=no; Jean-Michel Valette at Boston Beer: current=no; Sarah Legg at Hang Seng: current=no |
 | H7 | Advisers and committee chairs are not board seats | PASS | Gerry Murphy at Perella Weinberg: board_seat=no; Melissa Bethell at Atairos: board_seat=no; Caroline Silver at Adobe: board_seat=no; Caroline Silver at National Film and Television School: board_seat=no |
 | H7 | Kawal Preet: an EVP title is not a FedEx board seat (FOR, or REVIEW) | PASS | Kawal Preet (intertek): REVIEW |
-| H8 | ICE Clear Europe belongs to the Intercontinental Exchange group | FAIL | ICE Clear Europe: None |
-| H8 | Hafren Dyfrdwy belongs to the Severn Trent group | FAIL | Hafren Dyfrdwy: None |
+| H8 | ICE Clear Europe belongs to the Intercontinental Exchange group | PASS | ICE Clear Europe: Intercontinental Exchange, Inc |
+| H8 | Hafren Dyfrdwy belongs to the Severn Trent group | PASS | Hafren Dyfrdwy: Severn Trent Plc |
 | H8 | Burberry Group and The Burberry Foundation stay apart | PASS | Burberry Group: burberry-group; Burberry Foundation: burberry-foundation |
 | H9 | Taken private: no equity listing | PASS | Ocean Outdoor: no; Keywords Studios: no |
 | H9 | Listed though not (or not only) on CH | PASS | Magnum Ice Cream: yes; Capri Holdings: yes; Americana Restaurants: yes; Man Group: yes |
 | H10 | Compound appointment lists split into one seat each | PASS | Caroline Silver at Barratt Redrow: current=yes; Caroline Silver at ICE Clear Europe: current=yes; Melissa Bethell at Diageo: current=yes; Melissa Bethell at Exor: current=yes; Melissa Bethell at Brillio: current=yes; Melissa Bethell at Magnum Ice Cream: current=yes; Karen Whitworth at Rank Group: current=yes; Karen Whitworth at Tritax Big Box: current=yes |
 | H11 | M&S notice has no biographies | PASS | none: 9 |
-| H12 | Exactly 4 points | FAIL | Gerry Murphy (tesco): 4; Christine Hodgson (severn-trent): 4; Melissa Bethell (tesco): 4; Graham Allan (intertek): 4–6; Tamara Ingram (marks-and-spencer): 4; Tamara Ingram (intertek): 4 |
-| H12 | Exactly 4 points is FOR | FAIL | Gerry Murphy (tesco): FOR; Christine Hodgson (severn-trent): FOR; Melissa Bethell (tesco): FOR; Graham Allan (intertek): REVIEW; Tamara Ingram (marks-and-spencer): FOR; Tamara Ingram (intertek): FOR |
+| H12 | Exactly 4 points | DEFERRED | Gerry Murphy (tesco): 4; Christine Hodgson (severn-trent): 4; Melissa Bethell (tesco): 4; Graham Allan (intertek): 4–6 (not wrong: waiting on Bata International listed (`seat:04267576:r7:10`)); Tamara Ingram (marks-and-spencer): 4; Tamara Ingram (intertek): 4 |
+| H12 | Exactly 4 points is FOR | DEFERRED | Gerry Murphy (tesco): FOR; Christine Hodgson (severn-trent): FOR; Melissa Bethell (tesco): FOR; Graham Allan (intertek): REVIEW (not wrong: waiting on Bata International listed (`seat:04267576:r7:10`)); Tamara Ingram (marks-and-spencer): FOR; Tamara Ingram (intertek): FOR |
 | H12 | Caroline Silver is FOR at 4 (Moelis is an adviser role), or REVIEW | PASS | Caroline Silver (tesco): FOR |
 | H13 | Stewart Gilliland follows the AIM flag | PASS | unknown: REVIEW, yes: AGAINST, no: FOR |
 | H13 | Steve Mogford (chair-designate) is FOR | PASS | Steve Mogford (intertek): FOR |
@@ -134,7 +134,7 @@ Policy flags: {'aim_counts_as_listed': 'yes', 'chair_designate_counts_as_chair':
 
 ## Counts
 
-- Seats by status: {'undisclosed': 29, 'confirmed': 87, 'ch_invisible': 36, 'stale': 1, 'past': 106}
-- Review items by kind: {'not_in_office': 1, 'possible_same_person': 6, 'site_not_found': 3, 'stale': 1, 'undisclosed': 30, 'web_unsourced': 3}
-- Organisations with cited web research: 77 of 287
-- Evidence behind the votes, by source: {'notice': 134, 'ch': 96, 'web': 60}
+- Seats by status: {'undisclosed': 30, 'confirmed': 87, 'ch_invisible': 36, 'stale': 1, 'past': 106}
+- Review items by kind: {'not_in_office': 1, 'possible_same_person': 12, 'site_not_found': 3, 'stale': 1, 'undisclosed': 31, 'web_unsourced': 3}
+- Organisations with cited web research: 78 of 291
+- Evidence behind the votes, by source: {'notice': 134, 'ch': 97, 'web': 62}

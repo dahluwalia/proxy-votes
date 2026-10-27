@@ -1,0 +1,204 @@
+{
+ "key": "8355b61841d619304bcd94bf6b1b42606d3e5b01ebbbfa90168e1234cb2f7208",
+ "payload": {
+  "content": [
+   {
+    "query": "lloydsbankinggroup.com Sarah Legg HBOS board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "243 days ago",
+      "title": "HBOS plc Report and Accounts 2025 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q4/2025-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "607 days ago",
+      "title": "HBOS plc Report and Accounts 2024 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2024/q4/2024-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "971 days ago",
+      "title": "HBOS plc Report and Accounts 2023 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2023/q4/2023-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "460 days ago",
+      "title": "HBOS plc 2025 Half-Year Results 24 July 2025 Member of the Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q2/2025-hbos-hy-results.pdf"
+     },
+     {
+      "page_age": "1330 days ago",
+      "title": "HBOS plc Report and Accounts 2022 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2022/full-year/2022-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "1707 days ago",
+      "title": "HBOS plc Report and Accounts 2021 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2021/full-year/2021-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Bank of Scotland plc 2026 half year results 30 July 2026",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/bank-of-scotland-plc/2026/q2/2026-bos-hy-results.pdf"
+     },
+     {
+      "page_age": "2409 days ago",
+      "title": "Bank of Scotland plc Report and Accounts 2019 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/bank-of-scotland-plc/2019/2019-bos-annual-report.pdf"
+     },
+     {
+      "page_age": "2056 days ago",
+      "title": "HBOS plc Report and Accounts 2020 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2020/2020-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "971 days ago",
+      "title": "Bank of Scotland plc Annual Report and Accounts 2023",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/bank-of-scotland-plc/2023/q4/2023-bos-annual-report.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "HBOS plc 2026 half-year results Board of Directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "460 days ago",
+      "title": "HBOS plc 2025 Half-Year Results 24 July 2025 Member of the Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q2/2025-hbos-hy-results.pdf"
+     },
+     {
+      "page_age": "90 days ago",
+      "title": "2026 half year results News release",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/lloyds-banking-group-plc/2026/q2/2026-lbg-hy-results.pdf"
+     },
+     {
+      "page_age": "34 days ago",
+      "title": "Financial downloads - Lloyds Banking Group plc",
+      "url": "https://www.lloydsbankinggroup.com/investors/financial-downloads.html"
+     },
+     {
+      "page_age": "243 days ago",
+      "title": "HBOS plc Report and Accounts 2025 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q4/2025-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "607 days ago",
+      "title": "HBOS plc Report and Accounts 2024 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2024/q4/2024-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "2409 days ago",
+      "title": "Investors - Lloyds Banking Group plc",
+      "url": "https://www.lloydsbankinggroup.com/globalassets/documents/investors/2019/2019_hbos_annual_report.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "1 of 8",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/lloyds-banking-group-plc/2026/q2/2026-lbg-hy-sellside-transcript.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Bank of Scotland plc 2026 half year results 30 July 2026",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/bank-of-scotland-plc/2026/q2/2026-bos-hy-results.pdf"
+     },
+     {
+      "page_age": "4107 days ago",
+      "title": "HBOS plc Half-Year Management Report For the half-year to 30 June 2015",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/archive/2015/2015-hbos-hy-results.pdf"
+     },
+     {
+      "page_age": "637 days ago",
+      "title": "HBOS Investment Fund Managers Limited Annual Report and Accounts 2024",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/other-subsidiaries/2024/q4/2024-hifml-annual-report.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "HBOS plc 2026 half-year results statement of directors' responsibilities non-executive directors Sarah Legg",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "460 days ago",
+      "title": "HBOS plc 2025 Half-Year Results 24 July 2025 Member of the Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q2/2025-hbos-hy-results.pdf"
+     },
+     {
+      "page_age": "243 days ago",
+      "title": "HBOS plc Report and Accounts 2025 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q4/2025-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "607 days ago",
+      "title": "HBOS plc Report and Accounts 2024 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2024/q4/2024-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "971 days ago",
+      "title": "HBOS plc Report and Accounts 2023 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2023/q4/2023-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "34 days ago",
+      "title": "Financial downloads - Lloyds Banking Group plc",
+      "url": "https://www.lloydsbankinggroup.com/investors/financial-downloads.html"
+     },
+     {
+      "page_age": "1330 days ago",
+      "title": "HBOS plc Report and Accounts 2022 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2022/full-year/2022-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Bank of Scotland plc 2026 half year results 30 July 2026",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/bank-of-scotland-plc/2026/q2/2026-bos-hy-results.pdf"
+     },
+     {
+      "page_age": "2056 days ago",
+      "title": "HBOS plc Report and Accounts 2020 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2020/2020-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "243 days ago",
+      "title": "Bank of Scotland plc - Annual Report and Accounts 2025 ...",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/bank-of-scotland-plc/2025/q4/2025-bos-annual-report.pdf"
+     },
+     {
+      "page_age": "5360 days ago",
+      "title": "HBOS plc Report and Accounts 2011 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/archive/2011/2011-hbos-ra.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\n    \"value\": \"yes\",\n    \"url\": \"https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q4/2025-hbos-annual-report.pdf\",\n    \"quote\": \"Non-executive directors: Sir Robin Budenberg CBE, Chair Nathan Bostock Sarah Legg Amanda Mackenzie LVO OBE\"\n  },\n  \"capacity\": {\n    \"value\": \"non_executive_director\",\n    \"url\": \"https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q4/2025-hbos-annual-report.pdf\",\n    \"quote\": \"Non-executive directors: Sir Robin Budenberg CBE, Chair Nathan Bostock Sarah Legg\"\n  },\n  \"start_date\": {\n    \"value\": null,\n    \"url\": null,\n    \"quote\": null\n  },\n  \"end_date\": {\n    \"value\": null,\n    \"url\": null,\n    \"quote\": null\n  },\n  \"note\": \"Board of HBOS plc itself. The HBOS plc Annual Report and Accounts 2025 was approved on 26 February 2026, about 4.5 months before the 2026-07-09 AGM. Its list of directors includes Sarah Legg as a non-executive director, and she is not the Chair or the Senior Independent Director. The 2025 half-year results (July 2025) and earlier annual reports (2020 to 2024) also list her on the HBOS plc board, so she has served continuously since at least 2020. I found no page stating when she joined or left the HBOS plc board, so both dates are null. The 1 December 2019 joining date on the website is for Bank of Scotland plc, a different company. I did not find the HBOS plc 2026 half-year results text or a board page dated after 26 February 2026. The Bank of Scotland plc 2026 half-year results (30 July 2026) list her on that subsidiary's board, which is a different entity. A change between the February 2026 list and 2026-07-09, or between then and today, cannot be ruled out from these pages. No such change is shown.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T19:09:47+00:00",
+  "inputs": {
+   "as_of": "2026-07-09",
+   "domain": "lloydsbankinggroup.com",
+   "org_key": "hbos",
+   "person": "sarah-legg"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 66314,
+   "output_tokens": 1409,
+   "web_search_requests": 3
+  }
+ }
+}

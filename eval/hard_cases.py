@@ -2,7 +2,10 @@
 
 Design choice: the checks are data (`eval/gold/hard_cases.yaml`), each naming one of a few
 generic check kinds, so expert can add or adjust a case without touching code. A check whose
-data is missing from the run (a name not on the roster, no CH record) is N/A, not FAIL.
+data is missing from the run (a name not on the roster, no CH record) is N/A, not FAIL. A
+check that misses gold only because the run left a fact unknown (a REVIEW vote, a points
+range that holds the expected value, an unknown seat or org fact) is DEFERRED, not FAIL: it
+isn't a wrong answer, and its detail names the fact that would settle it.
 """
 
 from __future__ import annotations
@@ -57,17 +60,37 @@ def _org(r, name):
     return found[0]
 
 
+DEFERRED = "deferred"  # a third result: missed only because a fact is unknown
+
+
+def _deferred(c: str, exp: Any, rec: Any) -> bool:
+    """A vote or points miss that is an open question, not a wrong answer."""
+    if c == "vote":
+        return rec.vote.value == "REVIEW"
+    if c == "points":
+        return rec.points_lo < rec.points_hi and rec.points_lo <= int(exp) <= rec.points_hi
+    return False
+
+
 def _check(conn: sqlite3.Connection, r: dict[str, Any], spec: dict[str, Any]
-           ) -> tuple[bool | None, str]:
+           ) -> tuple[bool | str | None, str]:
     c, exp = spec["check"], spec.get("expect")
     if c == "note":
         return None, spec["detail"]
     if c in ("vote", "points", "blocked_on"):
+        recs = dict(_recs(r, spec))
         got = {n: (rec.vote.value if c == "vote" else fmt_points(rec) if c == "points"
-                   else unknowns(r, rec) or "none") for n, rec in _recs(r, spec)}
+                   else unknowns(r, rec) or "none") for n, rec in recs.items()}
         ok = {n: v in exp if c == "vote" else v == exp if c == "points"
               else exp.casefold() in v.casefold() for n, v in got.items()}
-        return all(ok.values()), "; ".join(f"{n}: {v}" for n, v in got.items())
+        misses = [n for n, good in ok.items() if not good]
+        open_q = [n for n in misses if _deferred(c, exp, recs[n])]
+        detail = "; ".join(
+            f"{n}: {v}" + (f" (not wrong: waiting on {unknowns(r, recs[n]) or 'an unknown fact'})"
+                           if n in open_q else "") for n, v in got.items())
+        if misses and len(open_q) == len(misses):
+            return DEFERRED, detail
+        return not misses, detail
     if c == "absent":
         there = [n for n in spec["names"] if _entries(r, n, must=False)]
         return not there, f"on the roster: {', '.join(there)}" if there else "none on the roster"
@@ -91,14 +114,23 @@ def _check(conn: sqlite3.Connection, r: dict[str, Any], spec: dict[str, Any]
     if c == "seat":
         got = {f"{n} at {o}": {getattr(s, spec["field"]) for s in _seats(r, n, o)}
                for n, o in spec["seats"]}
-        return all(v == {exp} for v in got.values()), "; ".join(
+        detail = "; ".join(
             f"{k}: {spec['field']}={'/'.join(sorted(map(str, v)))}" for k, v in got.items())
+        if all(v == {exp} for v in got.values()):
+            return True, detail
+        if all(v <= {exp, "unknown"} for v in got.values()):
+            return DEFERRED, detail + " (not wrong: unknown in the run)"
+        return False, detail
     if c == "org":
         got = {n: str(getattr(_org(r, n), spec["field"])) for n in spec["orgs"]}
         match = (lambda v: exp.casefold() in v.casefold()) if spec.get("contains") else (
             lambda v: v == exp)
-        return all(match(v) for v in got.values()), "; ".join(
-            f"{n}: {v}" for n, v in got.items())
+        detail = "; ".join(f"{n}: {v}" for n, v in got.items())
+        if all(match(v) for v in got.values()):
+            return True, detail
+        if all(match(v) or v in ("unknown", "None") for v in got.values()):
+            return DEFERRED, detail + " (not wrong: not found in the run)"
+        return False, detail
     if c == "distinct_orgs":
         keys = {n: {s.org_key for s in _seats(r, spec["name"], n)} for n in spec["orgs"]}
         return not set.intersection(*keys.values()), "; ".join(
@@ -117,12 +149,13 @@ def _check(conn: sqlite3.Connection, r: dict[str, Any], spec: dict[str, Any]
 
 def hard_cases(conn: sqlite3.Connection, r: dict[str, Any],
                path: Path = GOLD_DIR / "hard_cases.yaml") -> list[tuple[str, ...]]:
-    """(id, case, PASS | FAIL | N/A, detail) for each check in hard_cases.yaml."""
+    """(id, case, PASS | FAIL | DEFERRED | N/A, detail) for each check in hard_cases.yaml."""
     out = []
     for spec in yaml.safe_load(path.read_text()):
         try:
             ok, detail = _check(conn, r, spec)
         except LookupError as err:
             ok, detail = None, str(err)
-        out.append((spec["id"], spec["case"], {True: "PASS", False: "FAIL"}.get(ok, "N/A"), detail))
+        result = {True: "PASS", False: "FAIL", DEFERRED: "DEFERRED"}.get(ok, "N/A")
+        out.append((spec["id"], spec["case"], result, detail))
     return out

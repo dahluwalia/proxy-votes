@@ -2011,6 +2011,63 @@
   "fetched_at": "2026-10-26T21:22:59+00:00",
   "status": 200
  },
+ "https://api.company-information.service.gov.uk/officers/1JSnRQObA7f4tqqnxqWXJFWUYRI/appointments?items_per_page=50&start_index=0": {
+  "body": {
+   "active_count": 1,
+   "date_of_birth": {
+    "month": 11,
+    "year": 1955
+   },
+   "etag": "f3bc03c34c4cde06570cc5e773ef34b95e51d030",
+   "inactive_count": 0,
+   "is_corporate_officer": false,
+   "items": [
+    {
+     "address": {
+      "address_line_1": "The Club House",
+      "address_line_2": "Elmfield Rd",
+      "locality": "Consett",
+      "postal_code": "DH8 5NN",
+      "region": "Co Durham"
+     },
+     "appointed_on": "2019-12-01",
+     "appointed_to": {
+      "company_name": "CONSETT & DISTRICT GOLF CLUB,LIMITED(THE)",
+      "company_number": "00940631",
+      "company_status": "active"
+     },
+     "country_of_residence": "England",
+     "identity_verification_details": {
+      "appointment_verification_end_on": "9999-12-31",
+      "appointment_verification_start_on": "2026-03-16"
+     },
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/00940631"
+     },
+     "name": "Gerard MURPHY",
+     "name_elements": {
+      "forename": "Gerard",
+      "surname": "MURPHY",
+      "title": "Mr"
+     },
+     "nationality": "British",
+     "officer_role": "director"
+    }
+   ],
+   "items_per_page": 50,
+   "kind": "personal-appointment",
+   "links": {
+    "self": "/officers/1JSnRQObA7f4tqqnxqWXJFWUYRI/appointments"
+   },
+   "name": "Gerard MURPHY",
+   "resigned_count": 0,
+   "start_index": 0,
+   "total_results": 1
+  },
+  "fetched_at": "2026-10-27T20:14:26+00:00",
+  "status": 200
+ },
  "https://api.company-information.service.gov.uk/officers/1YbMwTHC8npxMpdmfuCe29IVCHc/appointments?items_per_page=50&start_index=0": {
   "body": {
    "active_count": 0,
@@ -4414,6 +4471,63 @@
   "fetched_at": "2026-10-26T21:23:06+00:00",
   "status": 200
  },
+ "https://api.company-information.service.gov.uk/officers/46Pl0mYmux3X61THDVgtz0ctvEs/appointments?items_per_page=50&start_index=0": {
+  "body": {
+   "active_count": 1,
+   "date_of_birth": {
+    "month": 10,
+    "year": 1963
+   },
+   "etag": "8377f5d680eb0e951f979631d1d549063995ac38",
+   "inactive_count": 0,
+   "is_corporate_officer": false,
+   "items": [
+    {
+     "address": {
+      "address_line_1": "City Road",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "EC1V 2NX",
+      "premises": "128"
+     },
+     "appointed_on": "2025-10-23",
+     "appointed_to": {
+      "company_name": "KULDEA LIMITED",
+      "company_number": "10945183",
+      "company_status": "active"
+     },
+     "country_of_residence": "England",
+     "identity_verification_details": {
+      "appointment_verification_end_on": "9999-12-31",
+      "appointment_verification_start_on": "2026-06-04"
+     },
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/10945183"
+     },
+     "name": "Ronan DUNNE",
+     "name_elements": {
+      "forename": "Ronan",
+      "surname": "DUNNE",
+      "title": "Mr"
+     },
+     "nationality": "Irish",
+     "officer_role": "director"
+    }
+   ],
+   "items_per_page": 50,
+   "kind": "personal-appointment",
+   "links": {
+    "self": "/officers/46Pl0mYmux3X61THDVgtz0ctvEs/appointments"
+   },
+   "name": "Ronan DUNNE",
+   "resigned_count": 0,
+   "start_index": 0,
+   "total_results": 1
+  },
+  "fetched_at": "2026-10-27T20:14:34+00:00",
+  "status": 200
+ },
  "https://api.company-information.service.gov.uk/officers/4NNIfzYxvElCIWSyyKHlzm7W6io/appointments?items_per_page=50&start_index=0": {
   "body": {
    "active_count": 0,
@@ -4523,6 +4637,117 @@
    "total_results": 3
   },
   "fetched_at": "2026-10-26T21:17:36+00:00",
+  "status": 200
+ },
+ "https://api.company-information.service.gov.uk/officers/4h4G-3XAIGdwD6BH31WYONfgsRg/appointments?items_per_page=50&start_index=0": {
+  "body": {
+   "active_count": 0,
+   "date_of_birth": {
+    "month": 6,
+    "year": 1966
+   },
+   "etag": "c7160ff7929323f13377f157d837475c14bde452",
+   "inactive_count": 0,
+   "is_corporate_officer": false,
+   "items": [
+    {
+     "address": {
+      "address_line_1": "29-31 Killyleagh Road",
+      "country": "United Kingdom",
+      "locality": "Downpatrick",
+      "postal_code": "BT30 9BL",
+      "premises": "Gatelodge Cottage"
+     },
+     "appointed_on": "2023-10-02",
+     "appointed_to": {
+      "company_name": "FINNEBROGUE VEGETARIAN COMPANY LIMITED",
+      "company_number": "NI661682",
+      "company_status": "active"
+     },
+     "country_of_residence": "England",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/NI661682"
+     },
+     "name": "Roger BURNLEY",
+     "name_elements": {
+      "forename": "Roger",
+      "surname": "BURNLEY",
+      "title": "Mr"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2025-06-27"
+    },
+    {
+     "address": {
+      "address_line_1": "Gatelodge Cottage",
+      "address_line_2": "29 Killyleagh Road",
+      "locality": "Downpatrick",
+      "postal_code": "BT30 9BL"
+     },
+     "appointed_on": "2023-10-02",
+     "appointed_to": {
+      "company_name": "LYNN'S COUNTRY FOODS LIMITED",
+      "company_number": "NI020172",
+      "company_status": "active"
+     },
+     "country_of_residence": "England",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/NI020172"
+     },
+     "name": "Roger BURNLEY",
+     "name_elements": {
+      "forename": "Roger",
+      "surname": "BURNLEY",
+      "title": "Mr"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2025-06-27"
+    },
+    {
+     "address": {
+      "address_line_1": "29-31 Killyleagh Road",
+      "country": "United Kingdom",
+      "locality": "Downpatrick",
+      "postal_code": "BT30 9BL",
+      "premises": "Gatelodge Cottage"
+     },
+     "appointed_on": "2023-10-02",
+     "appointed_to": {
+      "company_name": "THE FINNEBROGUE BACON COMPANY LTD",
+      "company_number": "NI644437",
+      "company_status": "active"
+     },
+     "country_of_residence": "England",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/NI644437"
+     },
+     "name": "Roger BURNLEY",
+     "name_elements": {
+      "forename": "Roger",
+      "surname": "BURNLEY",
+      "title": "Mr"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2025-06-27"
+    }
+   ],
+   "items_per_page": 50,
+   "kind": "personal-appointment",
+   "links": {
+    "self": "/officers/4h4G-3XAIGdwD6BH31WYONfgsRg/appointments"
+   },
+   "name": "Roger BURNLEY",
+   "resigned_count": 3,
+   "start_index": 0,
+   "total_results": 3
+  },
+  "fetched_at": "2026-10-27T20:14:54+00:00",
   "status": 200
  },
  "https://api.company-information.service.gov.uk/officers/7J_5OJEvBoOqyzGVMVrAySr4d8s/appointments?items_per_page=50&start_index=0": {
@@ -10059,6 +10284,60 @@
   "fetched_at": "2026-10-26T21:17:49+00:00",
   "status": 200
  },
+ "https://api.company-information.service.gov.uk/officers/FKI0ajjbJf1YRMNOox7LElo8VJ8/appointments?items_per_page=50&start_index=0": {
+  "body": {
+   "active_count": 0,
+   "date_of_birth": {
+    "month": 6,
+    "year": 1966
+   },
+   "etag": "f41e227c8c6402868837795a745f837f21eb58b4",
+   "inactive_count": 0,
+   "is_corporate_officer": false,
+   "items": [
+    {
+     "address": {
+      "address_line_1": "2 Station Avenue",
+      "locality": "Bridlington",
+      "postal_code": "YO16 4LZ",
+      "premises": "Medina House",
+      "region": "East Riding Of Yorkshire"
+     },
+     "appointed_on": "2022-07-05",
+     "appointed_to": {
+      "company_name": "PLATE-UP LIMITED",
+      "company_number": "11394741",
+      "company_status": "active"
+     },
+     "country_of_residence": "England",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/11394741"
+     },
+     "name": "Roger BURNLEY",
+     "name_elements": {
+      "forename": "Roger",
+      "surname": "BURNLEY",
+      "title": "Mr"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2025-11-04"
+    }
+   ],
+   "items_per_page": 50,
+   "kind": "personal-appointment",
+   "links": {
+    "self": "/officers/FKI0ajjbJf1YRMNOox7LElo8VJ8/appointments"
+   },
+   "name": "Roger BURNLEY",
+   "resigned_count": 1,
+   "start_index": 0,
+   "total_results": 1
+  },
+  "fetched_at": "2026-10-27T20:14:52+00:00",
+  "status": 200
+ },
  "https://api.company-information.service.gov.uk/officers/Fov5EJaCr_3OcPXLrnlsuGY2D5A/appointments?items_per_page=50&start_index=0": {
   "body": {
    "active_count": 1,
@@ -12817,6 +13096,59 @@
   "fetched_at": "2026-10-26T21:16:25+00:00",
   "status": 200
  },
+ "https://api.company-information.service.gov.uk/officers/J9dLMx9bCzSRE7FbFdIkuYQewFc/appointments?items_per_page=50&start_index=0": {
+  "body": {
+   "active_count": 0,
+   "date_of_birth": {
+    "month": 5,
+    "year": 1960
+   },
+   "etag": "723d3f6b99dac163dcd9d119219a3f738925e426",
+   "inactive_count": 1,
+   "is_corporate_officer": false,
+   "items": [
+    {
+     "address": {
+      "address_line_1": "Cedarne Road",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "SW6 2DF",
+      "premises": "48c"
+     },
+     "appointed_on": "2012-09-07",
+     "appointed_to": {
+      "company_name": "EDWARD BONHAM CARTER TRADING LTD",
+      "company_number": "08206081",
+      "company_status": "dissolved"
+     },
+     "country_of_residence": "United Kingdom ",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/08206081"
+     },
+     "name": "Edward BONHAM CARTER",
+     "name_elements": {
+      "forename": "Edward",
+      "surname": "BONHAM CARTER",
+      "title": "Mr"
+     },
+     "nationality": "British ",
+     "officer_role": "director"
+    }
+   ],
+   "items_per_page": 50,
+   "kind": "personal-appointment",
+   "links": {
+    "self": "/officers/J9dLMx9bCzSRE7FbFdIkuYQewFc/appointments"
+   },
+   "name": "Edward BONHAM CARTER",
+   "resigned_count": 0,
+   "start_index": 0,
+   "total_results": 1
+  },
+  "fetched_at": "2026-10-27T20:13:10+00:00",
+  "status": 200
+ },
  "https://api.company-information.service.gov.uk/officers/JJA9wjeJcbOU12tdXYJOMbjpBjk/appointments?items_per_page=50&start_index=0": {
   "body": {
    "active_count": 0,
@@ -13789,6 +14121,57 @@
    "total_results": 24
   },
   "fetched_at": "2026-10-26T21:15:04+00:00",
+  "status": 200
+ },
+ "https://api.company-information.service.gov.uk/officers/LX5lj89DZSXYou9fGze0eMl4cZ8/appointments?items_per_page=50&start_index=0": {
+  "body": {
+   "active_count": 0,
+   "date_of_birth": {
+    "month": 1,
+    "year": 1971
+   },
+   "etag": "76030ba70e6067eff954512e692e0af4d496a280",
+   "inactive_count": 0,
+   "is_corporate_officer": false,
+   "items": [
+    {
+     "address": {
+      "address_line_1": "Cable Drive",
+      "address_line_2": "Walsall",
+      "postal_code": "WS2 7BN"
+     },
+     "appointed_on": "2013-10-22",
+     "appointed_to": {
+      "company_name": "HOMESERVE MEMBERSHIP LIMITED",
+      "company_number": "02770612",
+      "company_status": "active"
+     },
+     "country_of_residence": "England",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/02770612"
+     },
+     "name": "Helen MILES",
+     "name_elements": {
+      "forename": "Helen",
+      "surname": "MILES"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2014-10-31"
+    }
+   ],
+   "items_per_page": 50,
+   "kind": "personal-appointment",
+   "links": {
+    "self": "/officers/LX5lj89DZSXYou9fGze0eMl4cZ8/appointments"
+   },
+   "name": "Helen MILES",
+   "resigned_count": 1,
+   "start_index": 0,
+   "total_results": 1
+  },
+  "fetched_at": "2026-10-27T20:13:44+00:00",
   "status": 200
  },
  "https://api.company-information.service.gov.uk/officers/M6oS_adMTykf5Z6XZmUCP6OYq1I/appointments?items_per_page=50&start_index=0": {
@@ -17889,6 +18272,58 @@
   "fetched_at": "2026-10-26T21:20:23+00:00",
   "status": 200
  },
+ "https://api.company-information.service.gov.uk/officers/OlJbLF9XknggtMrsvceHGtYAUEk/appointments?items_per_page=50&start_index=0": {
+  "body": {
+   "active_count": 0,
+   "date_of_birth": {
+    "month": 9,
+    "year": 1982
+   },
+   "etag": "d850e0976fa40b4423e056537f18736f816aaf49",
+   "inactive_count": 0,
+   "is_corporate_officer": false,
+   "items": [
+    {
+     "address": {
+      "address_line_1": "Jubilee Place",
+      "locality": "London",
+      "postal_code": "SW3 3TJ",
+      "premises": "12 Arundel Court"
+     },
+     "appointed_on": "2008-11-03",
+     "appointed_to": {
+      "company_name": "SHIFT.MS",
+      "company_number": "06000961",
+      "company_status": "active"
+     },
+     "country_of_residence": "England",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/06000961"
+     },
+     "name": "Graham COOKE",
+     "name_elements": {
+      "forename": "Graham",
+      "surname": "COOKE"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2012-08-17"
+    }
+   ],
+   "items_per_page": 50,
+   "kind": "personal-appointment",
+   "links": {
+    "self": "/officers/OlJbLF9XknggtMrsvceHGtYAUEk/appointments"
+   },
+   "name": "Graham COOKE",
+   "resigned_count": 1,
+   "start_index": 0,
+   "total_results": 1
+  },
+  "fetched_at": "2026-10-27T20:14:07+00:00",
+  "status": 200
+ },
  "https://api.company-information.service.gov.uk/officers/P-QbCKgaHCcuVkosTlfnVlJLFBQ/appointments?items_per_page=50&start_index=0": {
   "body": {
    "active_count": 2,
@@ -21052,6 +21487,61 @@
   "fetched_at": "2026-10-26T21:17:23+00:00",
   "status": 200
  },
+ "https://api.company-information.service.gov.uk/officers/SrdAfaBcCit3y98aauaKqnAdFVY/appointments?items_per_page=50&start_index=0": {
+  "body": {
+   "active_count": 0,
+   "date_of_birth": {
+    "month": 6,
+    "year": 1972
+   },
+   "etag": "d923758ef69ffa67c1762a5052271ff616cf3430",
+   "inactive_count": 0,
+   "is_corporate_officer": false,
+   "items": [
+    {
+     "address": {
+      "address_line_1": "Hollinsbrook Way",
+      "address_line_2": "Pilsworth",
+      "country": "United Kingdom",
+      "locality": "Bury",
+      "postal_code": "BL9 8RR",
+      "premises": "Edinburgh House",
+      "region": "Lancashire"
+     },
+     "appointed_on": "2021-11-15",
+     "appointed_to": {
+      "company_name": "JD SPORTS FASHION PLC",
+      "company_number": "01888425",
+      "company_status": "active"
+     },
+     "country_of_residence": "United Kingdom",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/01888425"
+     },
+     "name": "Helen ASHTON",
+     "name_elements": {
+      "forename": "Helen",
+      "surname": "ASHTON"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2025-07-14"
+    }
+   ],
+   "items_per_page": 50,
+   "kind": "personal-appointment",
+   "links": {
+    "self": "/officers/SrdAfaBcCit3y98aauaKqnAdFVY/appointments"
+   },
+   "name": "Helen ASHTON",
+   "resigned_count": 1,
+   "start_index": 0,
+   "total_results": 1
+  },
+  "fetched_at": "2026-10-27T20:14:40+00:00",
+  "status": 200
+ },
  "https://api.company-information.service.gov.uk/officers/SuTYqBlQ883wciizqu8ppueT7AY/appointments?items_per_page=50&start_index=0": {
   "body": {
    "active_count": 0,
@@ -21272,6 +21762,68 @@
    "total_results": 1
   },
   "fetched_at": "2026-10-26T21:18:49+00:00",
+  "status": 200
+ },
+ "https://api.company-information.service.gov.uk/officers/UlIXVJpfpxyDYZpY1mYWsZTZBlw/appointments?items_per_page=50&start_index=0": {
+  "body": {
+   "active_count": 1,
+   "date_of_birth": {
+    "month": 1,
+    "year": 1964
+   },
+   "etag": "c82fa44322524937142458d528dd384666c27136",
+   "inactive_count": 0,
+   "is_corporate_officer": false,
+   "items": [
+    {
+     "address": {
+      "address_line_1": "61 Mosley Street",
+      "country": "United Kingdom",
+      "locality": "Manchester",
+      "postal_code": "M2 3HZ",
+      "premises": "International House"
+     },
+     "appointed_on": "2024-09-20",
+     "appointed_to": {
+      "company_name": "CK FUTURE HOMES LTD",
+      "company_number": "15968787",
+      "company_status": "active"
+     },
+     "country_of_residence": "United Kingdom",
+     "identity_verification_details": {
+      "anti_money_laundering_supervisory_bodies": [
+       "Association of Chartered Certified Accountants (ACCA)"
+      ],
+      "appointment_verification_end_on": "9999-12-31",
+      "appointment_verification_start_on": "2026-10-19",
+      "authorised_corporate_service_provider_name": "JKS ACCOUNTANTS LTD ACSP",
+      "identity_verified_on": "2026-10-13",
+      "preferred_name": "Christopher Gerard Kennedy"
+     },
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/15968787"
+     },
+     "name": "Christopher KENNEDY",
+     "name_elements": {
+      "forename": "Christopher",
+      "surname": "KENNEDY"
+     },
+     "nationality": "British",
+     "officer_role": "director"
+    }
+   ],
+   "items_per_page": 50,
+   "kind": "personal-appointment",
+   "links": {
+    "self": "/officers/UlIXVJpfpxyDYZpY1mYWsZTZBlw/appointments"
+   },
+   "name": "Christopher KENNEDY",
+   "resigned_count": 0,
+   "start_index": 0,
+   "total_results": 1
+  },
+  "fetched_at": "2026-10-27T20:14:31+00:00",
   "status": 200
  },
  "https://api.company-information.service.gov.uk/officers/UmWKB0_FPKILZ5VYhewNAUc63gY/appointments?items_per_page=50&start_index=0": {
@@ -21535,6 +22087,112 @@
    "total_results": 1
   },
   "fetched_at": "2026-10-26T21:22:58+00:00",
+  "status": 200
+ },
+ "https://api.company-information.service.gov.uk/officers/VSSzJTLkrbPMf5H48d8kT_KfHf0/appointments?items_per_page=50&start_index=0": {
+  "body": {
+   "active_count": 0,
+   "date_of_birth": {
+    "month": 7,
+    "year": 1965
+   },
+   "etag": "4cf2d7e2e1fc23417c6008cf2df2ab093a5d9aaa",
+   "inactive_count": 1,
+   "is_corporate_officer": false,
+   "items": [
+    {
+     "address": {
+      "address_line_1": "Stuarts Way",
+      "address_line_2": "Hatt",
+      "locality": "Saltash",
+      "postal_code": "PL12 6PN",
+      "premises": "12",
+      "region": "Cornwall"
+     },
+     "appointed_on": "2009-05-06",
+     "appointed_to": {
+      "company_name": "TGT ENTERPRISES LIMITED",
+      "company_number": "06897132",
+      "company_status": "dissolved"
+     },
+     "country_of_residence": "United Kingdom",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/06897132"
+     },
+     "name": "Richard TAYLOR",
+     "name_elements": {
+      "forename": "Richard",
+      "surname": "TAYLOR"
+     },
+     "nationality": "British",
+     "officer_role": "director"
+    }
+   ],
+   "items_per_page": 50,
+   "kind": "personal-appointment",
+   "links": {
+    "self": "/officers/VSSzJTLkrbPMf5H48d8kT_KfHf0/appointments"
+   },
+   "name": "Richard TAYLOR",
+   "resigned_count": 0,
+   "start_index": 0,
+   "total_results": 1
+  },
+  "fetched_at": "2026-10-27T20:13:37+00:00",
+  "status": 200
+ },
+ "https://api.company-information.service.gov.uk/officers/WAS_xr7r0LTIplmaYBdUdtXx56g/appointments?items_per_page=50&start_index=0": {
+  "body": {
+   "active_count": 0,
+   "date_of_birth": {
+    "month": 1,
+    "year": 1971
+   },
+   "etag": "d4361deb96dfd9db988556c5f76a95bda713d7b7",
+   "inactive_count": 0,
+   "is_corporate_officer": false,
+   "items": [
+    {
+     "address": {
+      "address_line_1": "123 Judd Street",
+      "country": "United Kingdom",
+      "locality": "London",
+      "postal_code": "WC1H 9NP",
+      "premises": "Kelvin House"
+     },
+     "appointed_on": "2011-01-31",
+     "appointed_to": {
+      "company_name": "RIVUS FLEET SOLUTIONS LIMITED",
+      "company_number": "04383521",
+      "company_status": "liquidation"
+     },
+     "country_of_residence": "United Kingdom",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/04383521"
+     },
+     "name": "Helen MILES",
+     "name_elements": {
+      "forename": "Helen",
+      "surname": "MILES"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2011-04-05"
+    }
+   ],
+   "items_per_page": 50,
+   "kind": "personal-appointment",
+   "links": {
+    "self": "/officers/WAS_xr7r0LTIplmaYBdUdtXx56g/appointments"
+   },
+   "name": "Helen MILES",
+   "resigned_count": 1,
+   "start_index": 0,
+   "total_results": 1
+  },
+  "fetched_at": "2026-10-27T20:13:44+00:00",
   "status": 200
  },
  "https://api.company-information.service.gov.uk/officers/WDWU3bzP7PVQoDAgeG88Pn43UP8/appointments?items_per_page=50&start_index=0": {
@@ -28135,6 +28793,57 @@
    "total_results": 6
   },
   "fetched_at": "2026-10-26T21:14:28+00:00",
+  "status": 200
+ },
+ "https://api.company-information.service.gov.uk/officers/iE1vUIm9z0s0Oz84tMH_OM1pOoU/appointments?items_per_page=50&start_index=0": {
+  "body": {
+   "active_count": 0,
+   "date_of_birth": {
+    "month": 7,
+    "year": 1965
+   },
+   "etag": "dbe38a2e77cb5fd367f8a5394ca0b2a444fbc9fe",
+   "inactive_count": 0,
+   "is_corporate_officer": false,
+   "items": [
+    {
+     "address": {
+      "address_line_1": "11 Garnett Terrace",
+      "locality": "Tadcaster",
+      "postal_code": "LS24 9BB",
+      "region": "North Yorkshire"
+     },
+     "appointed_on": "2006-09-12",
+     "appointed_to": {
+      "company_name": "YORKSHIRE YOUTH AND MUSIC LIMITED",
+      "company_number": "01601451",
+      "company_status": "active"
+     },
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/01601451"
+     },
+     "name": "Richard TAYLOR",
+     "name_elements": {
+      "forename": "Richard",
+      "surname": "TAYLOR"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2008-06-14"
+    }
+   ],
+   "items_per_page": 50,
+   "kind": "personal-appointment",
+   "links": {
+    "self": "/officers/iE1vUIm9z0s0Oz84tMH_OM1pOoU/appointments"
+   },
+   "name": "Richard TAYLOR",
+   "resigned_count": 1,
+   "start_index": 0,
+   "total_results": 1
+  },
+  "fetched_at": "2026-10-27T20:13:38+00:00",
   "status": 200
  },
  "https://api.company-information.service.gov.uk/officers/i_2cpOEemXCQd9zh8kRvbCGjZMI/appointments?items_per_page=50&start_index=0": {
@@ -43765,6 +44474,408 @@
   "fetched_at": "2026-10-26T21:18:13+00:00",
   "status": 200
  },
+ "https://api.company-information.service.gov.uk/officers/r0ZoaOCeM51D7zUcofWWdWoA4yg/appointments?items_per_page=50&start_index=0": {
+  "body": {
+   "active_count": 0,
+   "date_of_birth": {
+    "month": 6,
+    "year": 1972
+   },
+   "etag": "89b11ad761f978c62368a4d51abfddd7b2e57f47",
+   "inactive_count": 0,
+   "is_corporate_officer": false,
+   "items": [
+    {
+     "address": {
+      "address_line_1": "Hampstead Road",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "NW1 7FB",
+      "premises": "Greater London House",
+      "region": "England"
+     },
+     "appointed_on": "2015-09-01",
+     "appointed_to": {
+      "company_name": "ASOS PROJECTS LIMITED",
+      "company_number": "08218702",
+      "company_status": "active"
+     },
+     "country_of_residence": "United Kingdom",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/08218702"
+     },
+     "name": "Helen ASHTON",
+     "name_elements": {
+      "forename": "Helen",
+      "surname": "ASHTON"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2018-04-30"
+    },
+    {
+     "address": {
+      "address_line_1": "Hampstead Road",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "NW1 7FB",
+      "premises": "Greater London House",
+      "region": "England"
+     },
+     "appointed_on": "2015-09-01",
+     "appointed_to": {
+      "company_name": "ASOS MARKETPLACE LIMITED",
+      "company_number": "07289272",
+      "company_status": "active"
+     },
+     "country_of_residence": "United Kingdom",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/07289272"
+     },
+     "name": "Helen ASHTON",
+     "name_elements": {
+      "forename": "Helen",
+      "surname": "ASHTON"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2018-04-30"
+    },
+    {
+     "address": {
+      "address_line_1": "Hampstead Road",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "NW1 7FB",
+      "premises": "Greater London House",
+      "region": "England"
+     },
+     "appointed_on": "2015-09-01",
+     "appointed_to": {
+      "company_name": "ASOS GLOBAL LIMITED",
+      "company_number": "07817472",
+      "company_status": "active"
+     },
+     "country_of_residence": "United Kingdom",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/07817472"
+     },
+     "name": "Helen ASHTON",
+     "name_elements": {
+      "forename": "Helen",
+      "surname": "ASHTON"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2018-04-30"
+    },
+    {
+     "address": {
+      "address_line_1": "Hampstead Road",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "NW1 7FB",
+      "premises": "Greater London House",
+      "region": "England"
+     },
+     "appointed_on": "2015-09-01",
+     "appointed_to": {
+      "company_name": "ASOS PLC",
+      "company_number": "04006623",
+      "company_status": "active"
+     },
+     "country_of_residence": "United Kingdom",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/04006623"
+     },
+     "name": "Helen ASHTON",
+     "name_elements": {
+      "forename": "Helen",
+      "surname": "ASHTON"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2018-04-30"
+    },
+    {
+     "address": {
+      "address_line_1": "Hampstead Road",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "NW1 7FB",
+      "premises": "Greater London House",
+      "region": "England"
+     },
+     "appointed_on": "2015-09-01",
+     "appointed_to": {
+      "company_name": "CROOKED TONGUES LIMITED",
+      "company_number": "06579850",
+      "company_status": "active"
+     },
+     "country_of_residence": "United Kingdom",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/06579850"
+     },
+     "name": "Helen ASHTON",
+     "name_elements": {
+      "forename": "Helen",
+      "surname": "ASHTON"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2018-04-30"
+    },
+    {
+     "address": {
+      "address_line_1": "Hampstead Road",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "NW1 7FB",
+      "premises": "Greater London House",
+      "region": "England"
+     },
+     "appointed_on": "2015-09-01",
+     "appointed_to": {
+      "company_name": "COVETIQUE LTD",
+      "company_number": "07491491",
+      "company_status": "active"
+     },
+     "country_of_residence": "United Kingdom",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/07491491"
+     },
+     "name": "Helen ASHTON",
+     "name_elements": {
+      "forename": "Helen",
+      "surname": "ASHTON"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2018-04-30"
+    },
+    {
+     "address": {
+      "address_line_1": "Hampstead Road",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "NW1 7FB",
+      "premises": "Greater London House",
+      "region": "England"
+     },
+     "appointed_on": "2015-09-01",
+     "appointed_to": {
+      "company_name": "MORNINGTON & CO (NO. 1) LIMITED",
+      "company_number": "08506761",
+      "company_status": "active"
+     },
+     "country_of_residence": "United Kingdom",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/08506761"
+     },
+     "name": "Helen ASHTON",
+     "name_elements": {
+      "forename": "Helen",
+      "surname": "ASHTON"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2018-04-30"
+    },
+    {
+     "address": {
+      "address_line_1": "Hampstead Road",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "NW1 7FB",
+      "premises": "Greater London House",
+      "region": "England"
+     },
+     "appointed_on": "2015-09-01",
+     "appointed_to": {
+      "company_name": "EIGHT PAW PROJECTS LIMITED",
+      "company_number": "07990751",
+      "company_status": "active"
+     },
+     "country_of_residence": "United Kingdom",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/07990751"
+     },
+     "name": "Helen ASHTON",
+     "name_elements": {
+      "forename": "Helen",
+      "surname": "ASHTON"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2018-04-30"
+    },
+    {
+     "address": {
+      "address_line_1": "Hampstead Road",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "NW1 7FB",
+      "premises": "Greater London House",
+      "region": "England"
+     },
+     "appointed_on": "2015-09-01",
+     "appointed_to": {
+      "company_name": "ASOS.COM LIMITED",
+      "company_number": "03584121",
+      "company_status": "active"
+     },
+     "country_of_residence": "United Kingdom",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/03584121"
+     },
+     "name": "Helen ASHTON",
+     "name_elements": {
+      "forename": "Helen",
+      "surname": "ASHTON"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2018-04-30"
+    },
+    {
+     "address": {
+      "address_line_1": "Hampstead Road",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "NW1 7FB",
+      "premises": "Greater London House",
+      "region": "England"
+     },
+     "appointed_on": "2015-09-01",
+     "appointed_to": {
+      "company_name": "MORNINGTON & CO (NO. 2) LIMITED",
+      "company_number": "08506877",
+      "company_status": "active"
+     },
+     "country_of_residence": "United Kingdom",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/08506877"
+     },
+     "name": "Helen ASHTON",
+     "name_elements": {
+      "forename": "Helen",
+      "surname": "ASHTON"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2018-04-30"
+    },
+    {
+     "address": {
+      "address_line_1": "Hampstead Road",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "NW1 7FB",
+      "premises": "Greater London House",
+      "region": "England"
+     },
+     "appointed_on": "2015-09-01",
+     "appointed_to": {
+      "company_name": "ASOS VENTURES LIMITED",
+      "company_number": "09356546",
+      "company_status": "active"
+     },
+     "country_of_residence": "United Kingdom",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/09356546"
+     },
+     "name": "Helen ASHTON",
+     "name_elements": {
+      "forename": "Helen",
+      "surname": "ASHTON"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2018-04-30"
+    },
+    {
+     "address": {
+      "address_line_1": "Hampstead Road",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "NW1 7FB",
+      "premises": "Greater London House",
+      "region": "England"
+     },
+     "appointed_on": "2015-09-01",
+     "appointed_to": {
+      "company_name": "ASOS INTERMEDIATE HOLDINGS LIMITED",
+      "company_number": "08492269",
+      "company_status": "active"
+     },
+     "country_of_residence": "United Kingdom",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/08492269"
+     },
+     "name": "Helen ASHTON",
+     "name_elements": {
+      "forename": "Helen",
+      "surname": "ASHTON"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2018-04-30"
+    },
+    {
+     "address": {
+      "address_line_1": "Hampstead Road",
+      "country": "England",
+      "locality": "London",
+      "postal_code": "NW1 7FB",
+      "premises": "Greater London House",
+      "region": "England"
+     },
+     "appointed_on": "2015-09-01",
+     "appointed_to": {
+      "company_name": "ASOS TRANSACTION SERVICES LIMITED",
+      "company_number": "08207408",
+      "company_status": "active"
+     },
+     "country_of_residence": "United Kingdom",
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/08207408"
+     },
+     "name": "Helen ASHTON",
+     "name_elements": {
+      "forename": "Helen",
+      "surname": "ASHTON"
+     },
+     "nationality": "British",
+     "officer_role": "director",
+     "resigned_on": "2018-04-30"
+    }
+   ],
+   "items_per_page": 50,
+   "kind": "personal-appointment",
+   "links": {
+    "self": "/officers/r0ZoaOCeM51D7zUcofWWdWoA4yg/appointments"
+   },
+   "name": "Helen ASHTON",
+   "resigned_count": 13,
+   "start_index": 0,
+   "total_results": 13
+  },
+  "fetched_at": "2026-10-27T20:14:40+00:00",
+  "status": 200
+ },
  "https://api.company-information.service.gov.uk/officers/rRdZrn-uoX36HrJgtPeNv0shsGU/appointments?items_per_page=50&start_index=0": {
   "body": {
    "active_count": 1,
@@ -45708,6 +46819,63 @@
    "total_results": 1
   },
   "fetched_at": "2026-10-26T21:16:44+00:00",
+  "status": 200
+ },
+ "https://api.company-information.service.gov.uk/officers/uWM1wSUdKeheC9MUKEFK-RjzkKc/appointments?items_per_page=50&start_index=0": {
+  "body": {
+   "active_count": 1,
+   "date_of_birth": {
+    "month": 6,
+    "year": 1966
+   },
+   "etag": "11adc7a3402c4686a86e1c71af0c2fd4e8307cd1",
+   "inactive_count": 0,
+   "is_corporate_officer": false,
+   "items": [
+    {
+     "address": {
+      "address_line_1": "Stanley Green Trading Estate",
+      "country": "United Kingdom",
+      "locality": "Handforth",
+      "postal_code": "SK9 3RN",
+      "premises": "Pets At Home, Epsom Avenue",
+      "region": "Cheshire"
+     },
+     "appointed_on": "2023-02-14",
+     "appointed_to": {
+      "company_name": "PETS AT HOME GROUP PLC",
+      "company_number": "08885072",
+      "company_status": "active"
+     },
+     "country_of_residence": "United Kingdom",
+     "identity_verification_details": {
+      "appointment_verification_end_on": "9999-12-31",
+      "appointment_verification_start_on": "2026-03-11"
+     },
+     "is_pre_1992_appointment": false,
+     "links": {
+      "company": "/company/08885072"
+     },
+     "name": "Roger BURNLEY",
+     "name_elements": {
+      "forename": "Roger",
+      "surname": "BURNLEY"
+     },
+     "nationality": "British",
+     "officer_role": "director"
+    }
+   ],
+   "items_per_page": 50,
+   "kind": "personal-appointment",
+   "links": {
+    "self": "/officers/uWM1wSUdKeheC9MUKEFK-RjzkKc/appointments"
+   },
+   "name": "Roger BURNLEY",
+   "resigned_count": 0,
+   "start_index": 0,
+   "total_results": 1
+  },
+  "fetched_at": "2026-10-27T20:14:53+00:00",
   "status": 200
  },
  "https://api.company-information.service.gov.uk/officers/upwViKH8Qig5x6SP_yUZm3S5Rdg/appointments?items_per_page=50&start_index=0": {

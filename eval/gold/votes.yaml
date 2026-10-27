@@ -677,27 +677,17 @@
   meeting_id: mtg:00445790:2026-06-18
   role_at_meeting: non_executive_director
   expected_vote: null
-  points_lo: 2
-  points_hi: 2
+  points_lo: 1
+  points_hi: 1
   points_rule: 'no'
-  exec_rule: 'yes'
+  exec_rule: 'no'
   counted_seats:
-  - seat_id: S080
-    org: Tesco PLC
-    points:
-    - 1
-    - 1
   - seat_id: S081
     org: Kingfisher plc
     points:
     - 1
     - 1
-  reason: 2 points (non executive director); executive director of Kingfisher plc (listed) with another listed seat
-    -> executive rule
-  fragile_facts:
-  - 'S081 Kingfisher plc: board seat yes->no gives FOR'
-  - 'S081 Kingfisher plc: current yes->no gives FOR'
-  - 'S081 Kingfisher plc: listed yes->no gives FOR'
+  reason: 1 point (non executive director)
   withdrawn: 'Tesco withdrew resolution 7 on 6 May 2026: Thierry Garnier resigned as a director with immediate effect'
   withdrawn_evidence:
   - source: web
@@ -717,7 +707,7 @@
     url: https://www.ticker.app/lse/TSCO/rns/2026-06-18/result-of-agm/8998I
     quote: To re-elect Thierry Garnier as a Director - RESOLUTION WITHDRAWN
     page_date: '2026-06-18'
-  vote_had_it_been_held: AGAINST
+  vote_had_it_been_held: FOR
 - key: Tesco#8
   mention_id: nm:00445790:r8
   person: stewart-gilliland

@@ -5094,6 +5094,71 @@
   "fetched_at": "2026-10-26T21:19:40+00:00",
   "status": 200
  },
+ "https://api.company-information.service.gov.uk/company/00940631": {
+  "body": {
+   "accounts": {
+    "accounting_reference_date": {
+     "day": "28",
+     "month": "02"
+    },
+    "last_accounts": {
+     "made_up_to": "2026-02-28",
+     "period_end_on": "2026-02-28",
+     "period_start_on": "2025-03-01",
+     "type": "micro-entity"
+    },
+    "next_accounts": {
+     "due_on": "2027-11-30",
+     "overdue": false,
+     "period_end_on": "2027-02-28",
+     "period_start_on": "2026-03-01"
+    },
+    "next_due": "2027-11-30",
+    "next_made_up_to": "2027-02-28",
+    "overdue": false
+   },
+   "can_file": true,
+   "company_name": "CONSETT & DISTRICT GOLF CLUB,LIMITED(THE)",
+   "company_number": "00940631",
+   "company_status": "active",
+   "confirmation_statement": {
+    "last_made_up_to": "2026-03-01",
+    "next_due": "2027-03-15",
+    "next_made_up_to": "2027-03-01",
+    "overdue": false
+   },
+   "date_of_creation": "1968-10-16",
+   "etag": "0970660ae118a86958fea5bec13c9c63aaffe962",
+   "has_been_liquidated": false,
+   "has_charges": false,
+   "has_insolvency_history": false,
+   "has_super_secure_pscs": false,
+   "jurisdiction": "england-wales",
+   "links": {
+    "charges": "/company/00940631/charges",
+    "filing_history": "/company/00940631/filing-history",
+    "officers": "/company/00940631/officers",
+    "persons_with_significant_control": "/company/00940631/persons-with-significant-control",
+    "persons_with_significant_control_statements": "/company/00940631/persons-with-significant-control-statements",
+    "self": "/company/00940631"
+   },
+   "registered_office_address": {
+    "address_line_1": "The Club House",
+    "address_line_2": "Elmfield Rd",
+    "locality": "Consett",
+    "postal_code": "DH8 5NN",
+    "region": "Co Durham"
+   },
+   "registered_office_is_in_dispute": false,
+   "sic_codes": [
+    "93110"
+   ],
+   "type": "private-limited-guarant-nsc",
+   "undeliverable_registered_office_address": false
+  },
+  "fetched_at": "2026-10-27T20:14:26+00:00",
+  "status": 200
+ },
  "https://api.company-information.service.gov.uk/company/00948153": {
   "body": {
    "accounts": {
@@ -11262,6 +11327,97 @@
   "fetched_at": "2026-10-26T21:15:41+00:00",
   "status": 200
  },
+ "https://api.company-information.service.gov.uk/company/02770612": {
+  "body": {
+   "accounts": {
+    "accounting_reference_date": {
+     "day": "31",
+     "month": "12"
+    },
+    "last_accounts": {
+     "made_up_to": "2025-12-31",
+     "period_end_on": "2025-12-31",
+     "period_start_on": "2025-01-01",
+     "type": "full"
+    },
+    "next_accounts": {
+     "due_on": "2027-09-30",
+     "overdue": false,
+     "period_end_on": "2026-12-31",
+     "period_start_on": "2026-01-01"
+    },
+    "next_due": "2027-09-30",
+    "next_made_up_to": "2026-12-31",
+    "overdue": false
+   },
+   "can_file": true,
+   "company_name": "HOMESERVE MEMBERSHIP LIMITED",
+   "company_number": "02770612",
+   "company_status": "active",
+   "confirmation_statement": {
+    "last_made_up_to": "2026-08-02",
+    "next_due": "2027-08-16",
+    "next_made_up_to": "2027-08-02",
+    "overdue": false
+   },
+   "date_of_creation": "1992-12-03",
+   "etag": "5a0238a7c8174c8f36de64a05bab5489b2af8eb7",
+   "has_been_liquidated": false,
+   "has_charges": false,
+   "has_insolvency_history": false,
+   "has_super_secure_pscs": false,
+   "jurisdiction": "england-wales",
+   "last_full_members_list_date": "2015-07-13",
+   "links": {
+    "charges": "/company/02770612/charges",
+    "filing_history": "/company/02770612/filing-history",
+    "officers": "/company/02770612/officers",
+    "persons_with_significant_control": "/company/02770612/persons-with-significant-control",
+    "self": "/company/02770612"
+   },
+   "previous_company_names": [
+    {
+     "ceased_on": "2008-04-01",
+     "effective_from": "2005-04-18",
+     "name": "HOMESERVE GB LIMITED"
+    },
+    {
+     "ceased_on": "2005-04-18",
+     "effective_from": "1999-04-01",
+     "name": "HOME SERVICE (GB) LIMITED"
+    },
+    {
+     "ceased_on": "1999-04-01",
+     "effective_from": "1996-04-11",
+     "name": "FASTFIX (HOLDINGS) LIMITED"
+    },
+    {
+     "ceased_on": "1996-04-11",
+     "effective_from": "1993-02-24",
+     "name": "FASTFIX PLUMBING AND HEATING LIMITED"
+    },
+    {
+     "ceased_on": "1993-02-24",
+     "effective_from": "1992-12-03",
+     "name": "MEAUJO (181) LIMITED"
+    }
+   ],
+   "registered_office_address": {
+    "address_line_1": "Cable Drive",
+    "address_line_2": "Walsall",
+    "postal_code": "WS2 7BN"
+   },
+   "registered_office_is_in_dispute": false,
+   "sic_codes": [
+    "43220",
+    "65120"
+   ],
+   "type": "ltd",
+   "undeliverable_registered_office_address": false
+  },
+  "fetched_at": "2026-10-27T20:13:45+00:00",
+  "status": 200
+ },
  "https://api.company-information.service.gov.uk/company/02792015": {
   "body": {
    "accounts": {
@@ -12125,6 +12281,77 @@
    "undeliverable_registered_office_address": false
   },
   "fetched_at": "2026-10-26T21:16:37+00:00",
+  "status": 200
+ },
+ "https://api.company-information.service.gov.uk/company/03102371": {
+  "body": {
+   "accounts": {
+    "accounting_reference_date": {
+     "day": "31",
+     "month": "12"
+    },
+    "last_accounts": {
+     "made_up_to": "2025-12-31",
+     "period_end_on": "2025-12-31",
+     "period_start_on": "2025-01-01",
+     "type": "group"
+    },
+    "next_accounts": {
+     "due_on": "2027-09-30",
+     "overdue": false,
+     "period_end_on": "2026-12-31",
+     "period_start_on": "2026-01-01"
+    },
+    "next_due": "2027-09-30",
+    "next_made_up_to": "2026-12-31",
+    "overdue": false
+   },
+   "can_file": true,
+   "company_name": "BMJ PUBLISHING GROUP LIMITED",
+   "company_number": "03102371",
+   "company_status": "active",
+   "confirmation_statement": {
+    "last_made_up_to": "2026-08-31",
+    "next_due": "2027-09-14",
+    "next_made_up_to": "2027-08-31",
+    "overdue": false
+   },
+   "date_of_creation": "1995-09-15",
+   "etag": "a1f8d01a99887d00d7fcd23091c2967ae7b6723e",
+   "has_been_liquidated": false,
+   "has_charges": false,
+   "has_insolvency_history": false,
+   "has_super_secure_pscs": false,
+   "jurisdiction": "england-wales",
+   "last_full_members_list_date": "2015-08-31",
+   "links": {
+    "filing_history": "/company/03102371/filing-history",
+    "officers": "/company/03102371/officers",
+    "persons_with_significant_control": "/company/03102371/persons-with-significant-control",
+    "self": "/company/03102371"
+   },
+   "previous_company_names": [
+    {
+     "ceased_on": "2002-10-02",
+     "effective_from": "1995-09-15",
+     "name": "BMA PROFESSIONAL SERVICES LIMITED"
+    }
+   ],
+   "registered_office_address": {
+    "address_line_1": "Bma House",
+    "address_line_2": "Tavistock Square",
+    "locality": "London",
+    "postal_code": "WC1H 9JR"
+   },
+   "registered_office_is_in_dispute": false,
+   "sic_codes": [
+    "58141",
+    "58190"
+   ],
+   "type": "ltd",
+   "undeliverable_registered_office_address": false
+  },
+  "fetched_at": "2026-10-27T20:13:46+00:00",
   "status": 200
  },
  "https://api.company-information.service.gov.uk/company/03106525": {
@@ -16856,6 +17083,79 @@
   "fetched_at": "2026-10-26T21:16:33+00:00",
   "status": 200
  },
+ "https://api.company-information.service.gov.uk/company/04383521": {
+  "body": {
+   "accounts": {
+    "accounting_reference_date": {
+     "day": "31",
+     "month": "12"
+    },
+    "last_accounts": {
+     "made_up_to": "2022-12-31",
+     "period_end_on": "2022-12-31",
+     "period_start_on": "2022-01-01",
+     "type": "full"
+    },
+    "next_accounts": {
+     "due_on": "2024-09-30",
+     "overdue": true,
+     "period_end_on": "2023-12-31",
+     "period_start_on": "2023-01-01"
+    },
+    "next_due": "2024-09-30",
+    "next_made_up_to": "2023-12-31",
+    "overdue": true
+   },
+   "can_file": true,
+   "company_name": "RIVUS FLEET SOLUTIONS LIMITED",
+   "company_number": "04383521",
+   "company_status": "liquidation",
+   "confirmation_statement": {
+    "last_made_up_to": "2023-08-18",
+    "next_due": "2024-09-01",
+    "next_made_up_to": "2024-08-18",
+    "overdue": true
+   },
+   "date_of_creation": "2002-02-27",
+   "etag": "a032d85a33422e90c243f9bf1ab1fc91ae67f93c",
+   "has_been_liquidated": false,
+   "has_charges": false,
+   "has_insolvency_history": true,
+   "has_super_secure_pscs": false,
+   "jurisdiction": "england-wales",
+   "last_full_members_list_date": "2016-02-27",
+   "links": {
+    "charges": "/company/04383521/charges",
+    "filing_history": "/company/04383521/filing-history",
+    "insolvency": "/company/04383521/insolvency",
+    "officers": "/company/04383521/officers",
+    "persons_with_significant_control": "/company/04383521/persons-with-significant-control",
+    "self": "/company/04383521"
+   },
+   "previous_company_names": [
+    {
+     "ceased_on": "2019-10-14",
+     "effective_from": "2002-02-27",
+     "name": "BT FLEET LIMITED"
+    }
+   ],
+   "registered_office_address": {
+    "address_line_1": "8th Floor, Central Square",
+    "address_line_2": "29 Wellington Street",
+    "locality": "Leeds",
+    "postal_code": "LS1 4DL",
+    "region": "West Yorkshire"
+   },
+   "registered_office_is_in_dispute": false,
+   "sic_codes": [
+    "45200"
+   ],
+   "type": "ltd",
+   "undeliverable_registered_office_address": false
+  },
+  "fetched_at": "2026-10-27T20:13:45+00:00",
+  "status": 200
+ },
  "https://api.company-information.service.gov.uk/company/04456158": {
   "body": {
    "accounts": {
@@ -21086,6 +21386,55 @@
   "fetched_at": "2026-10-26T21:18:33+00:00",
   "status": 200
  },
+ "https://api.company-information.service.gov.uk/company/06897132": {
+  "body": {
+   "accounts": {
+    "accounting_reference_date": {
+     "day": "31",
+     "month": "05"
+    },
+    "last_accounts": {
+     "made_up_to": "2014-05-31",
+     "type": "total-exemption-small"
+    }
+   },
+   "annual_return": {
+    "last_made_up_to": "2015-05-06"
+   },
+   "can_file": false,
+   "company_name": "TGT ENTERPRISES LIMITED",
+   "company_number": "06897132",
+   "company_status": "dissolved",
+   "date_of_cessation": "2015-11-17",
+   "date_of_creation": "2009-05-06",
+   "etag": "9d8b9adc590eda34740e40f96c4a6922bfc8b6a7",
+   "has_been_liquidated": false,
+   "has_charges": false,
+   "has_insolvency_history": false,
+   "jurisdiction": "england-wales",
+   "last_full_members_list_date": "2015-05-06",
+   "links": {
+    "filing_history": "/company/06897132/filing-history",
+    "officers": "/company/06897132/officers",
+    "self": "/company/06897132"
+   },
+   "registered_office_address": {
+    "address_line_1": "12 Stuarts Way",
+    "address_line_2": "Hatt",
+    "locality": "Saltash",
+    "postal_code": "PL12 6PN",
+    "region": "Cornwall"
+   },
+   "sic_codes": [
+    "47710"
+   ],
+   "status": "active",
+   "type": "ltd",
+   "undeliverable_registered_office_address": false
+  },
+  "fetched_at": "2026-10-27T20:13:38+00:00",
+  "status": 200
+ },
  "https://api.company-information.service.gov.uk/company/06908850": {
   "body": {
    "accounts": {
@@ -22535,6 +22884,43 @@
   "fetched_at": "2026-10-26T21:20:34+00:00",
   "status": 200
  },
+ "https://api.company-information.service.gov.uk/company/08206081": {
+  "body": {
+   "accounts": {
+    "accounting_reference_date": {
+     "day": "30",
+     "month": "09"
+    },
+    "last_accounts": {
+     "type": "null"
+    }
+   },
+   "can_file": false,
+   "company_name": "EDWARD BONHAM CARTER TRADING LTD",
+   "company_number": "08206081",
+   "company_status": "dissolved",
+   "date_of_cessation": "2014-05-06",
+   "date_of_creation": "2012-09-07",
+   "etag": "9edad42c9841699ad5a654ff24acaf549b9af8fb",
+   "has_been_liquidated": false,
+   "jurisdiction": "england-wales",
+   "links": {
+    "filing_history": "/company/08206081/filing-history",
+    "officers": "/company/08206081/officers",
+    "self": "/company/08206081"
+   },
+   "registered_office_address": {
+    "address_line_1": "48c Cedarne Road",
+    "country": "England",
+    "locality": "London",
+    "postal_code": "SW6 2DF"
+   },
+   "type": "ltd",
+   "undeliverable_registered_office_address": false
+  },
+  "fetched_at": "2026-10-27T20:13:11+00:00",
+  "status": 200
+ },
  "https://api.company-information.service.gov.uk/company/08215888": {
   "body": {
    "accounts": {
@@ -23156,6 +23542,72 @@
   "fetched_at": "2026-10-26T21:18:43+00:00",
   "status": 200
  },
+ "https://api.company-information.service.gov.uk/company/08885072": {
+  "body": {
+   "accounts": {
+    "accounting_reference_date": {
+     "day": "31",
+     "month": "03"
+    },
+    "last_accounts": {
+     "made_up_to": "2026-03-26",
+     "period_end_on": "2026-03-26",
+     "period_start_on": "2025-03-28",
+     "type": "group"
+    },
+    "next_accounts": {
+     "due_on": "2027-09-30",
+     "overdue": false,
+     "period_end_on": "2027-03-31",
+     "period_start_on": "2026-03-27"
+    },
+    "next_due": "2027-09-30",
+    "next_made_up_to": "2027-03-31",
+    "overdue": false
+   },
+   "can_file": true,
+   "company_name": "PETS AT HOME GROUP PLC",
+   "company_number": "08885072",
+   "company_status": "active",
+   "confirmation_statement": {
+    "last_made_up_to": "2026-02-01",
+    "next_due": "2027-02-15",
+    "next_made_up_to": "2027-02-01",
+    "overdue": false
+   },
+   "date_of_creation": "2014-02-10",
+   "etag": "b2b7fe548b6bb852cbd21e6abc08cc4abbdbc3f7",
+   "has_been_liquidated": false,
+   "has_charges": false,
+   "has_insolvency_history": false,
+   "has_super_secure_pscs": false,
+   "jurisdiction": "england-wales",
+   "last_full_members_list_date": "2015-02-10",
+   "links": {
+    "charges": "/company/08885072/charges",
+    "exemptions": "/company/08885072/exemptions",
+    "filing_history": "/company/08885072/filing-history",
+    "officers": "/company/08885072/officers",
+    "self": "/company/08885072"
+   },
+   "registered_office_address": {
+    "address_line_1": "Epsom Avenue",
+    "address_line_2": "Stanley Green Trading Estate",
+    "country": "United Kingdom",
+    "locality": "Handforth",
+    "postal_code": "SK9 3RN",
+    "region": "Cheshire"
+   },
+   "registered_office_is_in_dispute": false,
+   "sic_codes": [
+    "70100"
+   ],
+   "type": "plc",
+   "undeliverable_registered_office_address": false
+  },
+  "fetched_at": "2026-10-27T20:14:53+00:00",
+  "status": 200
+ },
  "https://api.company-information.service.gov.uk/company/08978892": {
   "body": {
    "accounts": {
@@ -23449,6 +23901,76 @@
    "undeliverable_registered_office_address": false
   },
   "fetched_at": "2026-10-26T21:18:35+00:00",
+  "status": 200
+ },
+ "https://api.company-information.service.gov.uk/company/09374407": {
+  "body": {
+   "accounts": {
+    "accounting_reference_date": {
+     "day": "30",
+     "month": "06"
+    },
+    "last_accounts": {
+     "made_up_to": "2026-06-30",
+     "period_end_on": "2026-06-30",
+     "period_start_on": "2025-07-01",
+     "type": "dormant"
+    },
+    "next_accounts": {
+     "due_on": "2028-03-31",
+     "overdue": false,
+     "period_end_on": "2027-06-30",
+     "period_start_on": "2026-07-01"
+    },
+    "next_due": "2028-03-31",
+    "next_made_up_to": "2027-06-30",
+    "overdue": false
+   },
+   "can_file": true,
+   "company_name": "LIFESIGHT LIMITED",
+   "company_number": "09374407",
+   "company_status": "active",
+   "confirmation_statement": {
+    "last_made_up_to": "2025-12-18",
+    "next_due": "2027-01-01",
+    "next_made_up_to": "2026-12-18",
+    "overdue": false
+   },
+   "date_of_creation": "2015-01-05",
+   "etag": "f47e9db77f50706f1ce1d3e868490b68813b7a96",
+   "has_charges": false,
+   "has_insolvency_history": false,
+   "has_super_secure_pscs": false,
+   "jurisdiction": "england-wales",
+   "last_full_members_list_date": "2016-01-05",
+   "links": {
+    "filing_history": "/company/09374407/filing-history",
+    "officers": "/company/09374407/officers",
+    "persons_with_significant_control": "/company/09374407/persons-with-significant-control",
+    "self": "/company/09374407"
+   },
+   "previous_company_names": [
+    {
+     "ceased_on": "2015-05-06",
+     "effective_from": "2015-01-05",
+     "name": "TWBT LIMITED"
+    }
+   ],
+   "registered_office_address": {
+    "address_line_1": "4 Falcon Way",
+    "address_line_2": "Shire Park",
+    "country": "England",
+    "locality": "Welwyn Garden City",
+    "postal_code": "AL7 1TW"
+   },
+   "registered_office_is_in_dispute": false,
+   "sic_codes": [
+    "65300"
+   ],
+   "type": "ltd",
+   "undeliverable_registered_office_address": false
+  },
+  "fetched_at": "2026-10-27T20:13:46+00:00",
   "status": 200
  },
  "https://api.company-information.service.gov.uk/company/09493628": {
@@ -24661,6 +25183,67 @@
    "undeliverable_registered_office_address": false
   },
   "fetched_at": "2026-10-26T21:15:55+00:00",
+  "status": 200
+ },
+ "https://api.company-information.service.gov.uk/company/10945183": {
+  "body": {
+   "accounts": {
+    "accounting_reference_date": {
+     "day": "31",
+     "month": "12"
+    },
+    "last_accounts": {
+     "made_up_to": "2025-12-31",
+     "period_end_on": "2025-12-31",
+     "period_start_on": "2025-01-01",
+     "type": "total-exemption-full"
+    },
+    "next_accounts": {
+     "due_on": "2027-09-30",
+     "overdue": false,
+     "period_end_on": "2026-12-31",
+     "period_start_on": "2026-01-01"
+    },
+    "next_due": "2027-09-30",
+    "next_made_up_to": "2026-12-31",
+    "overdue": false
+   },
+   "can_file": true,
+   "company_name": "KULDEA LIMITED",
+   "company_number": "10945183",
+   "company_status": "active",
+   "confirmation_statement": {
+    "last_made_up_to": "2026-05-03",
+    "next_due": "2027-05-17",
+    "next_made_up_to": "2027-05-03",
+    "overdue": false
+   },
+   "date_of_creation": "2017-09-04",
+   "etag": "4d652c51593294193f64505008f82032ff036752",
+   "has_charges": false,
+   "has_insolvency_history": false,
+   "has_super_secure_pscs": false,
+   "jurisdiction": "england-wales",
+   "links": {
+    "filing_history": "/company/10945183/filing-history",
+    "officers": "/company/10945183/officers",
+    "persons_with_significant_control": "/company/10945183/persons-with-significant-control",
+    "self": "/company/10945183"
+   },
+   "registered_office_address": {
+    "address_line_1": "128 City Road",
+    "country": "England",
+    "locality": "London",
+    "postal_code": "EC1V 2NX"
+   },
+   "registered_office_is_in_dispute": false,
+   "sic_codes": [
+    "63990"
+   ],
+   "type": "ltd",
+   "undeliverable_registered_office_address": false
+  },
+  "fetched_at": "2026-10-27T20:14:34+00:00",
   "status": 200
  },
  "https://api.company-information.service.gov.uk/company/11421481": {
@@ -27437,6 +28020,69 @@
    "undeliverable_registered_office_address": false
   },
   "fetched_at": "2026-10-26T21:15:27+00:00",
+  "status": 200
+ },
+ "https://api.company-information.service.gov.uk/company/15968787": {
+  "body": {
+   "accounts": {
+    "accounting_reference_date": {
+     "day": "30",
+     "month": "09"
+    },
+    "last_accounts": {
+     "made_up_to": "2025-09-30",
+     "period_end_on": "2025-09-30",
+     "period_start_on": "2024-09-20",
+     "type": "micro-entity"
+    },
+    "next_accounts": {
+     "due_on": "2027-06-30",
+     "overdue": false,
+     "period_end_on": "2026-09-30",
+     "period_start_on": "2025-10-01"
+    },
+    "next_due": "2027-06-30",
+    "next_made_up_to": "2026-09-30",
+    "overdue": false
+   },
+   "can_file": true,
+   "company_name": "CK FUTURE HOMES LTD",
+   "company_number": "15968787",
+   "company_status": "active",
+   "confirmation_statement": {
+    "last_made_up_to": "2026-09-19",
+    "next_due": "2027-10-03",
+    "next_made_up_to": "2027-09-19",
+    "overdue": false
+   },
+   "date_of_creation": "2024-09-20",
+   "etag": "b1e5545483d4a67c2dfefa2843d080bc968ef63b",
+   "has_charges": false,
+   "has_insolvency_history": false,
+   "has_super_secure_pscs": false,
+   "jurisdiction": "england-wales",
+   "links": {
+    "charges": "/company/15968787/charges",
+    "filing_history": "/company/15968787/filing-history",
+    "officers": "/company/15968787/officers",
+    "persons_with_significant_control": "/company/15968787/persons-with-significant-control",
+    "self": "/company/15968787"
+   },
+   "registered_office_address": {
+    "address_line_1": "International House",
+    "address_line_2": "61 Mosley Street",
+    "country": "United Kingdom",
+    "locality": "Manchester",
+    "postal_code": "M2 3HZ"
+   },
+   "registered_office_is_in_dispute": false,
+   "sic_codes": [
+    "82990"
+   ],
+   "type": "ltd",
+   "undeliverable_registered_office_address": false
+  },
+  "fetched_at": "2026-10-27T20:14:32+00:00",
   "status": 200
  },
  "https://api.company-information.service.gov.uk/company/17066976": {

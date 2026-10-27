@@ -1,0 +1,132 @@
+{
+ "key": "bb8fab4f8322fd482951aedb9f800a6b5a647a0bd35b484d4383b425a9cdef45",
+ "payload": {
+  "content": [
+   {
+    "query": "Pets at Home Group Plc corporate investor relations board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "613 days ago",
+      "title": "Pets at Home Group Plc: Governance, Directors and Executives & Committees - MarketScreener UK",
+      "url": "https://uk.marketscreener.com/quote/stock/PETS-AT-HOME-GROUP-PLC-16000950/company-governance/"
+     },
+     {
+      "page_age": null,
+      "title": "Pets at Home Group Plc: Governance, Directors and Executives & Committees - MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/PETS-AT-HOME-GROUP-PLC-56171690/company-governance/"
+     },
+     {
+      "page_age": "210 days ago",
+      "title": "Pets at Home Group Plc: FY26 pre-close statement - FCA",
+      "url": "https://data.fca.org.uk/artefacts/NSM/RNS/94a8b153-ba38-4c07-a539-553b6ad389fa.html"
+     },
+     {
+      "page_age": "404 days ago",
+      "title": "Board changes and profit downgrade",
+      "url": "https://www.investegate.co.uk/announcement/rns/pets-at-home-group--pets/board-changes-and-profit-downgrade/9116151"
+     },
+     {
+      "page_age": "153 days ago",
+      "title": "FY26 Preliminary Results",
+      "url": "https://www.investegate.co.uk/announcement/rns/pets-at-home-group--pets/fy26-preliminary-results-/9586476"
+     },
+     {
+      "page_age": "600 days ago",
+      "title": "Pets at Home Group PLC: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/PETS-AT-HOME-GROUP-PLC-16000951/company/"
+     },
+     {
+      "page_age": "725 days ago",
+      "title": "Pets at Home Group Plc (PETS.L) company profile and facts - Yahoo Finance",
+      "url": "https://uk.finance.yahoo.com/quote/PETS.L/profile/"
+     },
+     {
+      "page_age": null,
+      "title": "Tony De Nunzio",
+      "url": "https://en.wikipedia.org/wiki/Tony_De_Nunzio"
+     },
+     {
+      "page_age": "357 days ago",
+      "title": "Who Owns Pets at Home Group Company?",
+      "url": "https://matrixbcg.com/blogs/owners/petsathome"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "petsathomegroup.com board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "2749 days ago",
+      "title": "Board of Directors",
+      "url": "https://investors.petsathome.com/our-company/our-board-of-directors/"
+     },
+     {
+      "page_age": null,
+      "title": "Pets at Home Group Plc: Governance, Directors and Executives & Committees - MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/PETS-AT-HOME-GROUP-PLC-16000950/company-governance/"
+     },
+     {
+      "page_age": "838 days ago",
+      "title": "Pets at Home Group Plc Annual General Meeting Thursday, 11 July 2024",
+      "url": "https://www.petsathomeplc.com/media/22eatq3x/44783-pets-ar24_nom_art_040624.pdf"
+     },
+     {
+      "page_age": "600 days ago",
+      "title": "Pets at Home Group PLC: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/PETS-AT-HOME-GROUP-PLC-16000951/company/"
+     },
+     {
+      "page_age": null,
+      "title": "Pets at Home Group PLC Company Profile",
+      "url": "https://www.fidelity.co.uk/factsheet-data/factsheet/GB00BJ62K685-pets-at-home-group-plc/profile"
+     },
+     {
+      "page_age": null,
+      "title": "Pets at Home Group Plc (PHGP.Y) Leadership & Management Team Analysis - Simply Wall St",
+      "url": "https://simplywall.st/stocks/us/retail/otc-phgp.y/pets-at-home-group/management"
+     },
+     {
+      "page_age": "144 days ago",
+      "title": "1 Pets at Home Annual Report and Financial Statements 2026 Contents",
+      "url": "https://www.directorstalkinterviews.com/wp-content/uploads/2026/06/pets-at-home-ar26-final-signed.pdf"
+     },
+     {
+      "page_age": "387 days ago",
+      "title": "Who Owns Pets at Home Group Company?",
+      "url": "https://pestel-analysis.com/blogs/owners/petsathome"
+     },
+     {
+      "page_age": "357 days ago",
+      "title": "Who Owns Pets at Home Group Company?",
+      "url": "https://matrixbcg.com/blogs/owners/petsathome"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\"value\": \"https://investors.petsathome.com\", \"url\": \"https://investors.petsathome.com/our-company/our-board-of-directors/\", \"quote\": \"Ian joined the Pets at Home board in 2020.\"},\n  \"note\": \"This is the investor-relations site and its board of directors page. A Fidelity profile lists investors.petsathome.com as the company website. An older AGM document from the company points to petsathomeplc.com/investors, which looks like a previous address for the same site. The page text names 'Pets at Home' but not the full legal name 'Pets at Home Group Plc'. I did not verify the Companies House number against the site itself. It does appear in the FY26 results announcement.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T20:21:39+00:00",
+  "inputs": {
+   "org_key": "pets-at-home-group"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 30809,
+   "output_tokens": 468,
+   "web_search_requests": 2
+  }
+ }
+}
