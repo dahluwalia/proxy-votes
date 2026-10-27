@@ -96,7 +96,7 @@ python3.12 -m venv .venv
 .venv/bin/pytest -m "not live"
 .venv/bin/pennant run --offline --publish
 .venv/bin/pennant votes --meeting tesco
-.venv/bin/pennant show "Caroline Silver"
+#.venv/bin/pennant show "Caroline Silver"
 ```
 
 For a live run, copy `.env.example` to `.env`, add the CH, LlamaCloud and Anthropic keys, then run
