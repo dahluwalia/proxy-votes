@@ -41,32 +41,6 @@ How the policy's grey areas are read (each is a flag in `config/policy.yaml`):
 Runs are snapshots: `pennant runs`, `pennant diff`, `pennant rollback run:N`. The
 [user guide](docs/user-guide.md#demo) walks through all of this on the five notices.
 
-## Note
-
-**How I know the matches are right.** A Claude agent with web search built a gold set for all 50
-resolutions; hand-labelling would have taken the whole 3–4 hours. I set the rules first (what a seat
-is, what counts as listed, that a role ended before the AGM doesn't count). The build fails unless
-every label cites a notice quote, a CH record or a web page, and I checked two directors per notice
-against that evidence by hand. The published run has 0 wrong AGAINST and 0 wrong FOR, 90% vote
-accuracy with 10% REVIEW, and 100% identity precision and recall. REVIEW isn't scored as wrong: the
-gold had the open web; the pipeline deliberately doesn't.
-
-**The mistakes I worried about most.** (1) Merging two people: at a 4-point limit, one borrowed
-chair seat is a wrong AGAINST. So CH records join only on the same birth month and year plus
-the exact name, and two similar names on one board must clearly separate, or the analyst decides.
-(2) Nicknames: character matching can't see that "Tom" is "Thomas" (my one miss), so a pinned
-nickname list treats such pairs as equal. (3) So I favoured precision over recall: an analyst merges
-two records in seconds, but undoing a wrong merge means re-reading both people's evidence.
-
-**What I cut.** Heavier fuzzy matching and embedding-based name matching. The names were clean; n-gram
-scoring plus the nickname list fixes the real failures without extra cost or upkeep.
-
-**What stops one bad run corrupting every record.** A run never edits an earlier one. Votes
-come from one published run, and a run publishes only if four gates pass: quotes behind every AGAINST
-are still in the PDF, CH didn't fail, no vote flips between FOR and AGAINST without a changed input,
-and every director has a vote. Errors become unknown, never a silent "no".
-If a bad run still gets through, `pennant rollback` restores the last good one and holds later runs
-until someone checks the diff.
 
 ## Results
 
