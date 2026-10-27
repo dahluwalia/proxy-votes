@@ -1,12 +1,12 @@
 # Evaluation report — run:7
 
-Generated 2026-10-27 20:22 UTC under `config/policy.yaml`.
+Generated 2026-10-27 20:27 UTC under `config/policy.yaml`.
 
 ## Headline
 
 - **Wrong AGAINST votes: 0** (target 0)
 - Wrong FOR votes: 0
-- Vote accuracy: 90% on 49 gold-scored entries; REVIEW rate 10%; points interval exact 84%
+- Votes, of 49 gold-scored entries: 44 (90%) correct, 5 (10%) deferred (REVIEW where gold decides), 0 wrong; points interval exact 84%
 - People, pairwise: precision 100%, recall 100%
 - Countable seats: precision 100%, recall 98%
 - Gold covers 50 of 50 roster entries in this run
@@ -93,11 +93,13 @@ Policy flags: {'aim_counts_as_listed': 'yes', 'chair_designate_counts_as_chair':
 
 ## Gold-graded under each AIM value
 
-| aim_counts_as_listed | Wrong AGAINST | Wrong FOR | Accuracy | REVIEW rate |
-| --- | --- | --- | --- | --- |
-| unknown | 0 | 0 | 90% | 12% |
-| yes | 0 | 0 | 90% | 10% |
-| no | 0 | 0 | 90% | 10% |
+Each row adds up to the scored votes. Correct includes a REVIEW where gold is also REVIEW (under `unknown`, gold itself can't decide Gilliland); deferred is REVIEW where gold decides; overconfident is a FOR or AGAINST where gold is REVIEW.
+
+| aim_counts_as_listed | Correct | Deferred | Wrong AGAINST | Wrong FOR | Overconfident |
+| --- | --- | --- | --- | --- | --- |
+| unknown | 44 (90%) | 5 (10%) | 0 (0%) | 0 (0%) | 0 (0%) |
+| yes | 44 (90%) | 5 (10%) | 0 (0%) | 0 (0%) | 0 (0%) |
+| no | 44 (90%) | 5 (10%) | 0 (0%) | 0 (0%) | 0 (0%) |
 
 ## Hard cases (23 pass, 0 fail, 2 deferred, 1 n/a)
 

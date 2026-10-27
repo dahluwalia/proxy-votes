@@ -314,7 +314,8 @@ Kinds, by where they come from:
 Exports the published run to `eval/out/` (`roster.csv`, `votes.csv`, `seats.csv`,
 git-ignored), grades it with the gold scorer in `eval/gold/`, and writes
 [`eval/report.md`](../eval/report.md): wrong AGAINST (the headline, target 0), wrong FOR,
-vote accuracy, REVIEW rate, pairwise identity precision and recall, countable seats,
+votes split into correct, deferred (REVIEW where gold decides) and wrong, which add up to the scored
+votes; pairwise identity precision and recall, countable seats,
 the result under each `aim_counts_as_listed` value, and a line per hard case H1–H17.
 A hard case or a missed seat that differs from gold only because the run left a fact unknown is
 reported as DEFERRED (or "not wrong: … unknown"), with the fact that would settle it, rather than as

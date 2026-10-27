@@ -153,6 +153,19 @@ def aim_changes(conn: sqlite3.Connection, r: dict[str, Any]) -> list[dict[str, s
 
 # --- report --------------------------------------------------------------------
 
+def _n(m: dict[str, Any], key: str) -> str:
+    """'44 (90%)': a count of scored votes and its share."""
+    n, total = m.get(key, 0), m.get("votes_scored") or 0
+    return f"{n} ({n / total:.0%})" if total else str(n)
+
+
+def _split(m: dict[str, Any]) -> str:
+    """Correct, deferred and wrong votes, which add up to the scored votes."""
+    wrong = m.get("wrong_against", 0) + m.get("wrong_for", 0) + m.get("overconfident", 0)
+    return (f"{_n(m, 'correct')} correct, {_n(m, 'deferred')} deferred (REVIEW where gold "
+            f"decides), {wrong} wrong")
+
+
 def _pct(x: float | None) -> str:
     return "n/a" if x is None else f"{x:.0%}"
 
@@ -183,9 +196,8 @@ def main(conn: sqlite3.Connection | None = None, run_id: str | None = None,
         g = graded
         lines += [f"- **Wrong AGAINST votes: {g['wrong_against']}** (target 0)",
                   f"- Wrong FOR votes: {g['wrong_for']}",
-                  f"- Vote accuracy: {_pct(g['vote_accuracy'])} on {g['votes_scored']} "
-                  f"gold-scored entries; REVIEW rate {_pct(g['review_rate'])}; points interval "
-                  f"exact {_pct(g['points_exact'])}",
+                  f"- Votes, of {g['votes_scored']} gold-scored entries: {_split(g)}; points "
+                  f"interval exact {_pct(g['points_exact'])}",
                   f"- People, pairwise: precision {_pct(g['identity_precision'])}, recall "
                   f"{_pct(g['identity_recall'])}",
                   f"- Countable seats: precision {_pct(g.get('seat_precision'))}, recall "
@@ -233,10 +245,15 @@ def main(conn: sqlite3.Connection | None = None, run_id: str | None = None,
                   "reported as deferred.", ""]
         lines += [("#" + x) if x.startswith("## ") else x for x in gold_lines] + [""]
         lines += ["## Gold-graded under each AIM value", "",
-                  "| aim_counts_as_listed | Wrong AGAINST | Wrong FOR | Accuracy | REVIEW rate |",
-                  "| --- | --- | --- | --- | --- |"]
-        lines += [f"| {f} | {x['wrong_against']} | {x['wrong_for']} | "
-                  f"{_pct(x['vote_accuracy'])} | {_pct(x['review_rate'])} |" for f, x in by_flag]
+                  "Each row adds up to the scored votes. Correct includes a REVIEW where gold is "
+                  "also REVIEW (under `unknown`, gold itself can't decide Gilliland); deferred is "
+                  "REVIEW where gold decides; overconfident is a FOR or AGAINST where gold is "
+                  "REVIEW.", "",
+                  "| aim_counts_as_listed | Correct | Deferred | Wrong AGAINST | Wrong FOR "
+                  "| Overconfident |", "| --- | --- | --- | --- | --- | --- |"]
+        lines += [f"| {f} | {_n(x, 'correct')} | {_n(x, 'deferred')} | "
+                  f"{_n(x, 'wrong_against')} | {_n(x, 'wrong_for')} | {_n(x, 'overconfident')} |"
+                  for f, x in by_flag]
         lines.append("")
 
     from eval.hard_cases import hard_cases

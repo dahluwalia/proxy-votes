@@ -137,6 +137,11 @@ def score(pred_dir: Path, policy: dict) -> tuple[dict, list[str]]:
         wrong_against=len(issues["WRONG AGAINST"]), wrong_for=len(issues["wrong FOR"]),
         vote_accuracy=correct / scored if scored else 0.0,
         review_rate=sum(n for (_, pv_), n in conf.items() if pv_ == "REVIEW") / scored if scored else 0.0,
+        # These four counts add up to the scored votes (with missing votes, if any): a REVIEW
+        # that matches gold's REVIEW is correct, so it isn't also counted as deferred.
+        correct=correct, deferred=len(issues["deferred (REVIEW where gold decides)"]),
+        overconfident=len(issues["overconfident (gold is REVIEW)"]),
+        missing=len(issues["missing vote"]),
         points_exact=exact_points / scored if scored else 0.0, votes_scored=scored,
     )
     lines += ["", "## Votes",
