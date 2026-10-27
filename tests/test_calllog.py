@@ -120,7 +120,8 @@ def test_pennant_calls_summarises_shows_and_exports(tmp_path, monkeypatch):
     conn.close()
     run = CliRunner()
     out = run.invoke(cli_mod.app, ["calls"]).output
-    assert "site_v1" in out and "     3    2    1" in out
+    row = next(ln for ln in out.splitlines() if "site_v1" in ln)
+    assert row.split()[3:6] == ["3", "2", "1"]  # calls, ok, rejected
     shown = run.invoke(cli_mod.app, ["calls", "--show", "1"]).output
     assert "Find the site" in shown and "the answer" in shown
     run.invoke(cli_mod.app, ["calls", "--export", str(tmp_path / "c.jsonl")])

@@ -17,15 +17,17 @@ from pathlib import Path
 from typing import Any
 
 import typer
+from rich.text import Text
 
 from pennant.cli_changes import confirm, node_label, print_history, set_fact_preview, who
 from pennant.cli_log import print_calls, print_log, work_line
+from pennant.cli_show import print_person
+from pennant.cli_style import changes, out
 from pennant.cli_view import (
     fail,
     load_view,
     node_id,
     print_gate_report,
-    print_person,
     print_reviews,
     print_votes,
     resolve_person,
@@ -71,12 +73,15 @@ def votes(meeting: str | None = typer.Option(
 
 
 @app.command()
-def show(name: str, run: str | None = typer.Option(None, help="Run id (default: published).")
+def show(name: str, run: str | None = typer.Option(None, help="Run id (default: published)."),
+         evidence: bool = typer.Option(False, "--evidence", "-e",
+                                       help="List every source, organisations' listings too.")
          ) -> None:
-    """A person's mentions, CH records, cited seats, votes and the facts that could flip them."""
+    """A director's vote and what would change it, then their mentions, CH records, seats and
+    the sources behind each fact."""
     with _open() as conn:
         view = load_view(conn, run)
-    print_person(view, resolve_person(view, name))
+    print_person(view, resolve_person(view, name), evidence)
 
 
 @app.command()
@@ -84,7 +89,9 @@ def review(run: str | None = typer.Option(None, help="Run id (default: published
     """Open review items, each with a suggested command."""
     with _open() as conn:
         view = load_view(conn, run)
-    typer.echo(f"{len(view.reviews)} review items  {view.tag()}")
+    kinds = sorted({i.kind for i in view.reviews})
+    out(Text.assemble((f"{len(view.reviews)} review items", "bold"), f"  {view.tag()}",
+                      (f"   {len(kinds)} kinds: " + ", ".join(kinds) if kinds else "", "dim")))
     print_reviews(view.reviews)
 
 
@@ -118,7 +125,8 @@ def diff_cmd(run_a: str | None = typer.Argument(None), run_b: str | None = typer
 
 
 def _print_diff(conn: sqlite3.Connection, run_a: str, run_b: str) -> None:
-    typer.echo(f"\nDiff: {diff_text(conn, run_a, run_b)}")
+    out("")
+    out(changes(f"Diff: {diff_text(conn, run_a, run_b)}"), soft_wrap=True)
 
 
 # --- write commands ------------------------------------------------------------

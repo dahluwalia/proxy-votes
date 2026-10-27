@@ -12,8 +12,10 @@ from __future__ import annotations
 import sqlite3
 
 import typer
+from rich.text import Text
 
-from pennant.cli_view import View, fail, print_table, rule_label
+from pennant.cli_style import changes, console, dim, vote
+from pennant.cli_view import View, fail, print_table, rule_text
 from pennant.core import db
 from pennant.core.models import Decision, Person
 from pennant.state.history import decision_history, record_changes, vote_history
@@ -86,32 +88,34 @@ def describe(d: Decision) -> str:
 def print_history(conn: sqlite3.Connection, view: View, p: Person, every_run: bool) -> None:
     """One director's votes across runs (changes only, unless `every_run`) and the decisions
     about them, oldest first."""
-    typer.echo(f"{view.name(p)}  ({p.person_id})\n")
+    c = console()
+    c.print(Text.assemble((view.name(p), "bold"), f"  ({p.person_id})"))
     entries = vote_history(conn, sorted(p.mention_ids))
     now = db.published_run_id(conn)
     for m in sorted(p.mention_ids):
         rows = [[e.run_id + (" *" if e.run_id == now else ""), e.status,
-                 (e.finished_at or "")[:16].replace("T", " "), e.rec.vote,
-                 f"{e.rec.points_lo}–{e.rec.points_hi}", rule_label(e.rec),
-                 ", ".join(e.causes) if e.changed else ""]
+                 (e.finished_at or "")[:16].replace("T", " "), vote(e.rec.vote),
+                 f"{e.rec.points_lo}–{e.rec.points_hi}", rule_text(e.rec),
+                 changes(", ".join(e.causes)) if e.changed else ""]
                 for e in entries if e.mention_id == m and (e.changed or every_run)]
         label = view.mention_label(m) if m in view.roster else m
-        typer.echo(f"Votes at {label}" + ("" if every_run else " (runs where it changed)"))
-        print_table(["Run", "Status", "Finished", "Vote", "Points", "Rule", "Why"], rows)
-        typer.echo("")
+        c.print()
+        print_table(["Run", "Status", "Finished", "Vote", "Points", "Rule", "Why"], rows,
+                    title=f"Votes at {label}" + ("" if every_run else
+                                                 " (runs where it changed)"))
     if now:
-        typer.echo(f"* the published run ({now})\n")
+        c.print(dim(f"* the published run ({now})"))
     seats = [s for s in view.seats if s.mention_id in p.mention_ids
              or (s.officer_id and s.officer_id in p.officer_ids)]
     ids = {*p.mention_ids, *p.officer_ids, p.person_id, *(s.seat_id for s in seats),
            *(s.org_key for s in seats)}
-    typer.echo("Changes to their records (person, seats, organisations)")
-    changes = record_changes(conn, ids)
-    for a, b, ch in changes:
-        typer.echo(f"  {a} → {b}  {ch.detail}  ({', '.join(ch.causes)})")
-    if not changes:
-        typer.echo("  (none)")
-    typer.echo("\nDecisions about this director")
+    c.print(Text("\nChanges to their records (person, seats, organisations)", style="bold"))
+    found = record_changes(conn, ids)
+    for a, b, ch in found:
+        c.print(changes(f"  {a} → {b}  {ch.detail}  ({', '.join(ch.causes)})"), soft_wrap=True)
+    if not found:
+        c.print(dim("  (none)"))
+    c.print(Text("\nDecisions about this director", style="bold"))
     rows = [[d.decision.decision_id, str(d.decision.created_at)[:16].replace("T", " "),
              d.decision.author, describe(d.decision), d.decision.reason,
              f"revoked by {', '.join(d.revoked_by)}" if d.revoked_by else ""]
@@ -119,4 +123,4 @@ def print_history(conn: sqlite3.Connection, view: View, p: Person, every_run: bo
     if rows:
         print_table(["Id", "Made", "By", "Decision", "Reason", ""], rows)
     else:
-        typer.echo("  (none)")
+        c.print(dim("  (none)"))

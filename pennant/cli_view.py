@@ -14,12 +14,20 @@ import unicodedata
 from typing import Any, NoReturn
 
 import typer
+from rich.text import Text
 
+from pennant.cli_style import (
+    GATE_STYLE,
+    RUN_STYLE,
+    console,
+    counts,
+    dim,
+    table,
+    vote,
+)
 from pennant.core import db
 from pennant.core.config import slug
 from pennant.core.models import Meeting, Person, Recommendation, RosterEntry, person_id
-from pennant.evidence.cite import cite
-from pennant.evidence.freshness import flagged
 
 _LEGAL = re.compile(r"(\s+group)?\s+(plc|p\.l\.c\.|limited|ltd|inc\.?|n\.v\.|s\.a\.|ag)$", re.I)
 
@@ -149,10 +157,11 @@ def rule_label(rec: Recommendation) -> str:
         f"{n}?" for n, v in rules if v == "unknown") or "-"
 
 
-def print_table(headers: list[str], rows: list[list[str]]) -> None:
-    widths = [max(len(str(r[i])) for r in [headers, *rows]) for i in range(len(headers))]
-    for row in [headers, *rows]:
-        typer.echo("  ".join(str(c).ljust(w) for c, w in zip(row, widths, strict=True)).rstrip())
+def print_table(headers: list[str], rows: list[list[Any]], title: str | None = None) -> None:
+    t = table(title, *headers)
+    for r in rows:
+        t.add_row(*r)
+    console().print(t)
 
 
 OFFICER_ID = re.compile(r"[A-Za-z0-9_-]{20,40}")  # CH officer ids, e.g. 3foiCz6Hg_2s4JTbIRFd01JBwG4
@@ -171,8 +180,9 @@ def node_id(view: View, query: str) -> tuple[str, str]:
 
 # --- printing --------------------------------------------------------------------
 
-SEAT_FIELDS = ("board_seat", "chair", "executive", "current", "listed", "identity")
 MAX_PROBLEMS = 10  # per gate in the printed report; the full list stays in runs.gate_report
+GATE_NAMES = {"G1": "extraction", "G2": "Companies House", "G3": "churn",
+              "G4": "completeness"}
 ROLE_LABELS = {"executive_director": "Executive director", "executive_chair": "Executive chair",
                "chair": "Chair", "deputy_chair": "Deputy chair", "non_executive_director": "NED",
                "director_unspecified": "Director", "officer_title": "Officer (board unknown)",
@@ -180,113 +190,85 @@ ROLE_LABELS = {"executive_director": "Executive director", "executive_chair": "E
                "trustee": "Trustee", "other": "Other", None: "(not stated)"}
 
 
+def rule_text(rec: Recommendation) -> Text:
+    """Which rule decides the vote: red when it applies, yellow when it might."""
+    rules = (("exec rule", rec.exec_rule), ("points rule", rec.points_rule))
+    hit = [n for n, v in rules if v == "yes"]
+    maybe = [f"{n}?" for n, v in rules if v == "unknown"]
+    if hit:
+        return Text(" + ".join(hit), style="red")
+    return Text(" ".join(maybe), style="yellow") if maybe else dim("-")
+
+
 def print_votes(view: View, meetings: list[Meeting]) -> None:
     """Role, points lo-hi, rule, vote and coverage per director, a table per meeting."""
+    c = console()
     for m in meetings:
-        typer.echo(f"\n{m.company_name} — AGM {m.agm_date}  {view.tag()}")
-        rows = []
-        for e in sorted((e for e in view.roster.values() if e.meeting_id == m.meeting_id),
-                        key=lambda e: e.resolution_no):
+        entries = sorted((e for e in view.roster.values() if e.meeting_id == m.meeting_id),
+                         key=lambda e: e.resolution_no)
+        c.print()
+        c.print(Text.assemble((f"{m.company_name} — AGM {m.agm_date}", "bold"),
+                              f"  {view.tag()}"), soft_wrap=True)
+        t = table(None, "Res", "Director", "Role", "Points", "Rule", "Vote", "Coverage")
+        t.columns[0].justify = t.columns[3].justify = "right"
+        for i in (1, 3, 4, 5, 6):  # everything but the role stays on one line
+            t.columns[i].no_wrap = True
+        t.columns[2].min_width = 7  # "Officer", "Chair": the role wraps between words
+        shown = []
+        for e in entries:
             p = view.person_of.get(e.mention_id)
             rec = view.recs.get((p.person_id, m.meeting_id)) if p else None
             if rec is None:
-                rows.append([str(e.resolution_no), e.name, "", "", "", "MISSING", e.coverage])
+                t.add_row(str(e.resolution_no), e.name, "", "", "", vote("MISSING"), e.coverage)
+                shown.append("MISSING")
                 continue
-            rows.append([str(e.resolution_no), e.name, ROLE_LABELS.get(rec.role_at_meeting,
-                         str(rec.role_at_meeting)), f"{rec.points_lo}–{rec.points_hi}",
-                         rule_label(rec), rec.vote, rec.coverage])
-        print_table(["Res", "Director", "Role", "Points", "Rule", "Vote", "Coverage"], rows)
-
-
-def _facts(obj: Any, fields: tuple[str, ...]) -> str:
-    return " · ".join(f"{f} {getattr(obj, f)}" for f in fields)
-
-
-def print_person(view: View, p: Person) -> None:
-    """Mentions, CH records, seats with citations, votes and the facts that could flip them."""
-    echo = typer.echo
-    echo(f"{view.name(p)}  ({p.person_id})  {view.tag()}\n\nMentions")
-    for mid in sorted(p.mention_ids):
-        e = view.roster.get(mid)
-        if e:
-            role = e.role_text_at_issuer or "(role not stated)"
-            echo(f"  {view.mention_label(mid)}: {e.name}, {role}; coverage {e.coverage}  [{mid}]")
-            for ev in e.evidence:
-                echo(f"      {cite(ev)}")
-    stale = flagged(view.reviews)
-
-    def cited(ev: Any, *subjects: str) -> str:
-        return cite(ev) + ("  [STALE]" if any((s, ev.ref) in stale for s in subjects) else "")
-
-    echo("Companies House records")
-    for oid in p.officer_ids:
-        o = view.officers.get(oid)
-        born = f", born {o.dob_month}/{o.dob_year}" if o and o.dob_year else ""
-        echo(f"  {oid}" + (f"  {o.name}{born}" if o else ""))
-    if not p.officer_ids:
-        echo("  (none linked)")
-    for ev in p.evidence:  # why the mentions were joined
-        echo(f"      {cited(ev, p.person_id)}")
-    seats = [s for s in view.seats if s.mention_id in p.mention_ids
-             or (s.officer_id and s.officer_id in p.officer_ids)]
-    echo("Seats")
-    for s in sorted(seats, key=lambda s: (s.org_name.casefold(), s.seat_id)):
-        echo(f"  {s.org_name} — {s.role_text or s.role_type}  [{s.status or 'unreconciled'}]"
-             f"  {s.seat_id}")
-        echo(f"      {_facts(s, SEAT_FIELDS)}")
-        for ev in s.evidence:
-            echo(f"      {cited(ev, p.person_id, s.seat_id)}")
-        org = view.orgs.get(s.org_key)
-        if org:
-            market = f" ({org.market})" if org.market else ""
-            parent = f"; parent {org.parent_name}" if org.parent_name else ""
-            echo(f"      org {org.org_key}: listed {org.listed}{market}{parent}")
-            for ev in org.evidence:
-                echo(f"        {cited(ev, org.org_key)}")
-    for (pid, mtg), rec in sorted(view.recs.items()):
-        if pid != p.person_id:
-            continue
-        echo(f"Vote at {view.meeting_label(mtg)}: {rec.vote}  "
-             + ("" if view.published else f"(NOT PUBLISHED: {view.run_id} is {view.status})  ")
-             + "points "
-             f"{rec.points_lo}–{rec.points_hi}  points_rule {rec.points_rule}  "
-             f"exec_rule {rec.exec_rule}")
-        for r in rec.reasons:
-            echo(f"  - {r}")
-        if rec.unknown_facts:
-            echo("  Would flip the vote: " + ", ".join(rec.unknown_facts))
-    subjects = {p.person_id, *p.mention_ids, *p.officer_ids, *(s.seat_id for s in seats),
-                *(s.org_key for s in seats)}
-    items = [i for i in view.reviews if i.subject in subjects]
-    if items:
-        echo("Review items")
-        print_reviews(items)
+            pts = (f"{rec.points_lo}" if rec.points_lo == rec.points_hi
+                   else f"{rec.points_lo}–{rec.points_hi}")
+            t.add_row(str(e.resolution_no), e.name,
+                      ROLE_LABELS.get(rec.role_at_meeting, str(rec.role_at_meeting)), pts,
+                      rule_text(rec), vote(rec.vote), e.coverage)
+            shown.append(rec.vote)
+        c.print(t)
+        c.print(Text("  ").append_text(counts(shown)),
+                dim("   pennant show <name> explains any vote"))
 
 
 def print_reviews(items: list[Any]) -> None:
+    """Review items grouped by kind, each with the command that would settle it."""
+    c = console()
+    by_kind: dict[str, list[Any]] = {}
     for i in sorted(items, key=lambda i: (i.kind, i.subject, i.detail)):
-        typer.echo(f"  [{i.kind}] {i.subject}: {i.detail}")
-        typer.echo(f"      -> {i.suggested_command or '(no suggested command)'}")
+        by_kind.setdefault(i.kind, []).append(i)
+    for kind, group in by_kind.items():
+        c.print(Text.assemble((f"  {kind}", "bold cyan"), (f"  ({len(group)})", "dim")))
+        for i in group:
+            c.print(Text.assemble(f"    [{i.kind}] ", (i.subject, "bold"), f": {i.detail}"),
+                    soft_wrap=True)
+            c.print(Text(f"        -> {i.suggested_command or '(no suggested command)'}",
+                         style="green" if i.suggested_command else "dim"), soft_wrap=True)
 
 
 def print_gate_report(conn: sqlite3.Connection, run_id: str) -> str:
     """The stored gate report: {"gates": {G1: {ok, skipped, problems}}, "error": ...}."""
+    c = console()
     run = db.get_run(conn, run_id) or {}
     status, report = run.get("status", "unknown"), run.get("gate_report") or {}
-    typer.echo(f"{run_id}: {status}")
+    c.print(Text.assemble((f"{run_id}: ", "bold"), (status, RUN_STYLE.get(status, "bold"))))
     if report.get("error"):
-        typer.echo(f"  error: {report['error']}")
+        c.print(Text(f"  error: {report['error']}", style="red"), soft_wrap=True)
     for name, g in sorted((report.get("gates") or {}).items()):
         state = "skipped" if g.get("skipped") else "pass" if g.get("ok") else "FAIL"
-        typer.echo(f"  {name} {state}")
+        c.print(Text.assemble(f"  {name} ", (state, GATE_STYLE[state]),
+                              ("" if state != "pass" else f"   {GATE_NAMES.get(name, '')}",
+                               "dim")))
         problems = g.get("problems") or []
         for problem in problems[:MAX_PROBLEMS]:
-            typer.echo(f"    - {problem}")
+            c.print(Text(f"    - {problem}", style="red"), soft_wrap=True)
         if len(problems) > MAX_PROBLEMS:
-            typer.echo(f"    … and {len(problems) - MAX_PROBLEMS} more")
+            c.print(dim(f"    … and {len(problems) - MAX_PROBLEMS} more"))
     if status != "published":
         pub = db.published_run_id(conn)
-        typer.echo(f"  Not published; votes still come from {pub}." if pub else
-                   "  Not published, and no run is published yet: `pennant votes` shows the "
-                   "latest run marked NOT PUBLISHED.")
+        c.print(Text(f"  Not published; votes still come from {pub}." if pub else
+                     "  Not published, and no run is published yet: `pennant votes` shows the "
+                     "latest run marked NOT PUBLISHED.", style="yellow"))
     return status

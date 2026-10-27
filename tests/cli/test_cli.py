@@ -23,7 +23,7 @@ def published(path, kind):
 
 
 def table_rows(output):
-    return [ln for ln in output.splitlines() if re.match(r"^\d+\s{2}", ln)]
+    return [ln for ln in output.splitlines() if re.match(r"^\s*\d+\s{2,}\S", ln)]
 
 
 def test_votes_for_tesco_shows_11_rows(cli_db):
@@ -35,7 +35,7 @@ def test_votes_for_tesco_shows_11_rows(cli_db):
     garnier = next(r for r in rows if "Thierry Garnier" in r)
     assert "AGAINST" in garnier and "exec" in garnier
     silver = next(r for r in rows if "Caroline Silver" in r)
-    assert "4–5" in silver and "REVIEW" in silver and "points?" in silver
+    assert "4–5" in silver and "REVIEW" in silver and "points rule?" in silver
 
 
 def test_votes_without_meeting_shows_every_meeting_and_falls_back_on_number(cli_db):
@@ -122,7 +122,10 @@ def test_show_lists_mentions_seats_citations_and_flip_facts(cli_db):
     out = res.output
     assert "Caroline Silver  (p:nm:00445790:r13)" in out
     assert 'Tesco notice p.10: "Chair: Barratt Redrow plc and ICE Clear Europe"' in out
-    assert "Web: ICE investors https://ir.theice.com/" in out
+    assert "Web: ICE investors https://ir.theice.com/" not in out  # a listing source: collapsed
+    assert "+ 1 source for this listing" in out
+    assert "Web: ICE investors https://ir.theice.com/" in cli("show", "caroline silver",
+                                                              "--evidence").output
     assert "Vote at Tesco: REVIEW" in out
     assert "Would flip the vote: seat:silver:moelis.board_seat" in out
     assert "pennant set-fact seat:silver:moelis board_seat no" in out  # its review item
@@ -131,7 +134,8 @@ def test_show_lists_mentions_seats_citations_and_flip_facts(cli_db):
 def test_show_one_person_across_two_notices(cli_db):
     out = cli("show", "Chris Kennedy").output
     assert "Tesco r9" in out and "ITV r12" in out
-    assert "off-kennedy  KENNEDY, Christopher, born 3/1964" in out
+    record = next(ln for ln in out.splitlines() if ln.startswith("off-kennedy"))
+    assert "KENNEDY, Christopher" in record and "3/1964" in record
 
 
 def test_show_marks_the_citations_the_run_flagged_as_stale(cli_db):
@@ -268,7 +272,7 @@ def test_end_to_end_with_lane_g_pipeline_gates_and_diff(lane_g_db):
     assert res.exit_code == 0, res.output
     assert "dec:3" in res.output.split("Diff:")[1]
     silver = next(r for r in table_rows(cli("votes", "-m", "tesco").output) if "Silver" in r)
-    assert "4–4" in silver and "FOR" in silver
+    assert re.search(r"\s4\s", silver) and "FOR" in silver  # 4 points exactly
 
     res = cli("set-fact", "nm:04967001:r13", "role_type_at_issuer", "chair", "-r", "AR p.51", "-y")
     assert res.exit_code == 0, res.output
@@ -387,7 +391,7 @@ def test_history_follows_one_director_across_runs_with_causes(lane_g_db):
     cli("undo", "dec:1", "-y")
     cli("split", "Chris Kennedy", "--move", "itv", "-r", "test", "-y")
     out = cli("history", "Caroline Silver").output
-    lines = [ln for ln in out.splitlines() if ln.startswith("run:")]
+    lines = [ln.rstrip() for ln in out.splitlines() if ln.startswith("run:")]
     assert [ln.split()[0] for ln in lines] == ["run:1", "run:2", "run:3"]  # changes only
     assert "first run" in lines[0] and "FOR" in lines[1] and lines[1].endswith("dec:1")
     assert "REVIEW" in lines[2] and lines[2].endswith("dec:2")

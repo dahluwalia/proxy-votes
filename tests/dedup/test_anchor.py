@@ -89,7 +89,7 @@ def test_not_in_office_detail_gives_the_directorship_dates():
                              appointed=date(2021, 4, 30), resigned=date(2026, 5, 6))]
     found, [review] = m42.anchor(entry("Thierry Garnier"), board)
     assert found.officer_id == "tg" and review.kind == "not_in_office"
-    assert "GARNIER, Thierry Dominique Gerard (tg) was a director 2021-04-30 to 2026-05-06" \
+    assert "a director of 00445790 2021-04-30 to 2026-05-06 but not on the AGM date" \
         in review.detail
 
 

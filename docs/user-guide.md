@@ -70,16 +70,34 @@ also keeps the counters, so `pennant log` works for any run:
 ```text
 $ pennant log run:20
 run:20: published  by system  started 2026-10-27T14:12:27+00:00  finished 2026-10-27T14:12:28+00:00
-  stage extract   ok        1.1s  meeting=5, review=0, roster=50, seat=230, ungrounded=0
-  …
-  cache: ch.hit=509, llamaextract.hit=5, web.hit=144
-  LlamaExtract: credits_cached=1775, jobs_cached=5
-  PDF: pages_read=130
-  AI (research model)   calls  input tokens  output tokens  searches
-    org (cached)            81     5,519,976        229,955       342
-    position (cached)       33     1,455,062         45,929        73
-    site (cached)           30       825,026         16,277        55
-    total (cached)         144     7,800,064        292,161       470
+
+Stages
+Stage           Result  Time  Counts
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+stage extract   ok      1.1s  meeting=5, review=0, roster=50, seat=230, ungrounded=0
+stage ch        ok      0.0s  appointments_unavailable=0, issuers=5, issuers_ok=5, officers=49, recently_resigned=5
+stage dedup     ok      0.1s  links=152, mentions=50, people=47, reviews=8, skipped_ch_unavailable=0
+stage classify  ok      0.1s  listed_by_rule=117, org_research=81, orgs=285, position_research=33, position_targets=37, seats=230
+stage score     ok      0.1s  AGAINST=8, FOR=36, REVIEW=6, recommendations=50, review_items=31, seats=259
+
+Work
+Source        Counts
+─────────────────────────────────────────────────────────
+cache         ch.hit=509, llamaextract.hit=5, web.hit=144
+LlamaExtract  credits_cached=1775, jobs_cached=5
+PDF           pages_read=130
+
+AI usage (research model)
+Question           Calls  Input tokens  Output tokens  Searches
+───────────────────────────────────────────────────────────────
+org (cached)          81     5,519,976        229,955       342
+position (cached)     33     1,455,062         45,929        73
+site (cached)         30       825,026         16,277        55
+total (cached)       144     7,800,064        292,161       470
+live = spent by this run; cached = what the reused answers cost
+when they were fetched
+
+  log file: logs/pennant-run-20.log
 ```
 
 - **Counted:** PDF pages read; Companies House requests, retries and outages; cache hits,
@@ -151,10 +169,12 @@ an exception) and the last published votes stand.
 ```text
 $ pennant run --offline --publish
 run:1: published
-  G1 pass
-  G2 pass
-  G3 pass
-  G4 pass
+  G1 pass   extraction
+  G2 pass   Companies House
+  G3 pass   churn
+  G4 pass   completeness
+  Work this run: 130 PDF pages read; 0 CH requests; 0 LlamaExtract jobs (0 credits); 0 research calls (0 in / 0 out tokens, 0 searches)
+  Log: logs/pennant-run-1.log  (details: pennant log run:1)
 ```
 
 A held run lists each failing gate's problems; demo step 5 shows one.
@@ -173,7 +193,7 @@ every later run until undone.
 | --- | --- |
 | `pennant run [--offline] [--publish]` | run the pipeline; print the gate report and the diff against the published run |
 | `pennant votes [--meeting M]` | per director: role, points `lo–hi`, rule fired, vote, coverage. `M` is a meeting key, company number or part of the name |
-| `pennant show <name>` | mentions, CH records, every seat with its citations and status, the vote, reasons, and the facts that would flip it |
+| `pennant show <name> [--evidence]` | the vote first (points, rules, the facts that would flip it), then mentions, CH records, a ✓ / ✗ / ? table of every seat's facts, and each seat's citations; organisations' listing sources are counted unless stale or `--evidence` lists them |
 | `pennant calls [--run] [--kind] [--show id] [--export file] [--backfill]` | recorded live model calls: per prompt version and model (calls by outcome, latency, tokens, facts kept and dropped), one call in full, or all as JSONL |
 | `pennant log [run] [--full]` | what a run did: stage times and counts, errors, pages read, CH requests, cache use, AI tokens and LlamaExtract credits (latest run by default) |
 | `pennant history <name> [--all]` | the director's vote at each run where it changed (or every run), why it changed, the changes to their seats and organisations, and every decision about them |
@@ -184,6 +204,10 @@ every later run until undone.
 | `pennant undo <dec:N>` | revoke a decision |
 | `pennant diff [run_a] [run_b]` | compare two runs (default: published vs latest) |
 | `pennant eval` | grade the published run against `eval/gold/`, write `eval/report.md` |
+
+**Output.** Tables fit the terminal width; votes are coloured (FOR green, AGAINST red, REVIEW
+yellow) and facts show as ✓ yes, ✗ no, ? unknown. Piped or redirected output (`> file`) is plain
+text, 160 columns wide.
 
 Names are matched case- and accent-insensitively (`pennant show "andre lacroix"`). An
 ambiguous name lists the candidates:
@@ -205,13 +229,13 @@ exactly this form (`seat:00445790:r7:1.board_seat`).
 
 ```text
 $ pennant review
-36 review items  [run:1]
+41 review items  [run:1]   7 kinds: not_in_office, possible_same_person, site_not_found, stale, unanchored, undisclosed, web_unsourced
+  not_in_office  (1)
+    [not_in_office] nm:00445790:r7: Thierry Garnier matches GARNIER, Thierry Dominique Gerard (WnytyEoBEEno7UhOqQ-tsXfC5zk), who was not a director of 00445790 on 2026-06-18 GARNIER, Thierry Dominique Gerard (WnytyEoBEEno7UhOqQ-tsXfC5zk) was a director 2021-04-30 to 2026-05-06; the notice's seat is checked against those dates
+        -> pennant show "Thierry Garnier"
   …
-  [unanchored] nm:02366619:r9: Tom Delay CBE: no director of 02366619 in office on 2026-07-09 shares the surname with a name score of 0.3 or more; closest: Thomas Auguste Read DELAY (3foiCz6Hg_2s4JTbIRFd01JBwG4, score 0.19)
-      -> pennant merge nm:02366619:r9 <officer_id> --reason "..."
-  …
-  [undisclosed] seat:NtEjRLqBMJFlrhE0-U3mm8wh_C8:00053723: p:nm:04256886:r7: CH shows director of PEARSON PLC on 2026-07-07; not in the notice
-      -> pennant set-fact seat:NtEjRLqBMJFlrhE0-U3mm8wh_C8:00053723 board_seat <yes|no> --reason "..."
+    [undisclosed] seat:NtEjRLqBMJFlrhE0-U3mm8wh_C8:00053723: p:nm:04256886:r7: CH shows director of PEARSON PLC on 2026-07-07; not in the notice
+        -> pennant set-fact seat:NtEjRLqBMJFlrhE0-U3mm8wh_C8:00053723 board_seat <yes|no> --reason "..."
   …
 ```
 
@@ -281,18 +305,20 @@ Stewart Gilliland is REVIEW on the AIM flag.
 $ pennant votes --meeting tesco
 
 Tesco PLC — AGM 2026-06-18  [run:1]
-Res  Director                Role                     Points  Rule   Vote     Coverage
-4    Melissa Bethell         NED                      4–4     -      FOR      structured
-5    Bertrand Bodson         NED                      1–1     -      FOR      structured
-6    Dame Carolyn Fairbairn  NED                      2–2     -      FOR      structured
-7    Thierry Garnier         NED                      1–2     exec?  REVIEW   structured
-8    Stewart Gilliland       NED                      1–3     exec?  REVIEW   structured
-9    Chris Kennedy           NED                      2–2     exec   AGAINST  structured
-10   Dr Gerry Murphy         Chair                    4–4     -      FOR      structured
-11   Ken Murphy              Officer (board unknown)  1–1     -      FOR      structured
-12   Imran Nawaz             Officer (board unknown)  1–1     -      FOR      structured
-13   Caroline Silver         NED                      4–4     -      FOR      structured
-14   Karen Whitworth         NED                      3–3     -      FOR      structured
+Res  Director                Role                     Points  Rule        Vote     Coverage
+─────────────────────────────────────────────────────────────────────────────────────────────
+  4  Melissa Bethell         NED                           4  -           FOR      structured
+  5  Bertrand Bodson         NED                           1  -           FOR      structured
+  6  Dame Carolyn Fairbairn  NED                           3  -           FOR      structured
+  7  Thierry Garnier         NED                         1–2  exec rule?  REVIEW   structured
+  8  Stewart Gilliland       NED                           3  exec rule   AGAINST  structured
+  9  Chris Kennedy           NED                           2  exec rule   AGAINST  structured
+ 10  Dr Gerry Murphy         Chair                         4  -           FOR      structured
+ 11  Ken Murphy              Officer (board unknown)       1  -           FOR      structured
+ 12  Imran Nawaz             Officer (board unknown)       1  -           FOR      structured
+ 13  Caroline Silver         NED                           4  -           FOR      structured
+ 14  Karen Whitworth         NED                           3  -           FOR      structured
+  8 FOR · 2 AGAINST · 1 REVIEW    pennant show <name> explains any vote
 ```
 
 **2. Caroline Silver.** `show` lists each seat with its notice citation, the CH appointment that
@@ -301,17 +327,35 @@ leaves open, the firm's own page:
 
 ```text
 $ pennant show "Caroline Silver"
+Caroline Silver  (p:nm:00445790:r13)  [run:1]
+
+Vote at Tesco: FOR   4 points   points rule no · executive rule no
+  • Tesco PLC (Independent Non-executive Director): 1 pt [confirmed]
+  • Barratt Redrow plc (Chair): 2 pt [confirmed]
+  • Intercontinental Exchange, Inc. (Non-executive director): 1 pt [ch_invisible]
+  • points 4 > 4: no; non-executive here: yes
+  • executive rule: no
+
 …
-  Moelis & Company — Other  [ch_invisible]  seat:00445790:r13:7
-      Tesco notice p.10: "Other: International Advisory Board of Adobe Inc, board of trustees of V&A Foundation, Moelis & Company"
-      Web: Moelis & Company - Governance - Executive Officers & Directors https://investors.moelis.com/governance/executive-officer-directors/default.aspx — …
+Seats
+Organisation                               Role                                Status        Board  Chair  Exec  Current  Listed  ID
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Barratt Redrow plc                         Chair                               confirmed     ✓      ✓      ✗     ✓        ✓       ✓
+board of trustees of V&A Foundation        Other                               ch_invisible  ✗      ✗      ✗     ✓        ?       ✓
+ICE Clear Europe                           Chair                               confirmed     ✓      ✓      ✗     ✓        ✗       ✓
+Intercontinental Exchange, Inc.            Non-executive director              ch_invisible  ✓      ✗      ✗     ✓        ✓       ✓
+International Advisory Board of Adobe Inc  Other                               ch_invisible  ✗      ✗      ✗     ✓        ?       ✓
+Moelis & Company                           Other                               ch_invisible  ✗      ✗      ?     ✓        ✓       ✓
+National Film and Television School        Chair of audit committee            ch_invisible  ✗      ✗      ✗     ✓        ?       ✓
+Tesco PLC                                  Independent Non-executive Director  confirmed     ✓      ✗      ✗     ✓        ✓       ✓
+✓ yes   ✗ no   ? unknown
+
+Sources
+  Barratt Redrow plc   seat:00445790:r13:1
+    Tesco notice p.10: "Chair: Barratt Redrow plc and ICE Clear Europe"
+    Companies House: https://find-and-update.company-information.service.gov.uk/officers/sYzrAgP05-XBMuExY4hjznwnRxc/appointments — "BARRATT REDROW PLC: director, appointed 2023-06-01" (updated 2026-10-26)
+    Barratt Redrow plc: listed yes on London Stock Exchange (BTRW)
 …
-Vote at Tesco: FOR  points 4–4  points_rule no  exec_rule no
-  - Tesco PLC (Independent Non-executive Director): 1 pt [confirmed]
-  - Barratt Redrow plc (Chair): 2 pt [confirmed]
-  - Intercontinental Exchange, Inc. (Non-executive director): 1 pt [ch_invisible]
-  - points 4 > 4: no; non-executive here: yes
-  - executive rule: no
 ```
 
 ICE Clear Europe scores nothing: CH says it is a private company, and research names
@@ -347,11 +391,11 @@ $ pennant history "Kawal Preet"
 Kawal Preet  (p:nm:04267576:r13)
 
 Votes at Intertek r13 (runs where it changed)
-Run      Status     Finished          Vote    Points  Rule   Why
-run:1    published  2026-10-27 13:03  REVIEW  1–2     exec?  first run
-run:2    published  2026-10-27 13:03  FOR     1–1     -      dec:1
-run:3 *  published  2026-10-27 13:03  REVIEW  1–2     exec?  dec:2
-
+Run      Status     Finished          Vote    Points  Rule        Why
+───────────────────────────────────────────────────────────────────────────
+run:1    published  2026-10-27 16:41  REVIEW  1–2     exec rule?  first run
+run:2    published  2026-10-27 16:41  FOR     1–1     -           dec:1
+run:3 *  published  2026-10-27 16:42  REVIEW  1–2     exec rule?  dec:2
 * the published run (run:3)
 
 Changes to their records (person, seats, organisations)
@@ -360,8 +404,9 @@ Changes to their records (person, seats, organisations)
 
 Decisions about this director
 Id     Made              By       Decision                                      Reason
-dec:1  2026-10-27 13:03  analyst  set seat seat:04267576:r13:5 board_seat = no  FedEx's board page doesn't list her: an EVP, not a director  revoked by dec:2
-dec:2  2026-10-27 13:03  analyst  undo dec:1                                    undo
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+dec:1  2026-10-27 16:41  analyst  set seat seat:04267576:r13:5 board_seat = no  FedEx's board page doesn't list her: an EVP, not a director  revoked by dec:2
+dec:2  2026-10-27 16:41  analyst  undo dec:1                                    undo
 ```
 
 **5. Chris Kennedy, one person across two notices.** Both mentions anchor to the same CH officer

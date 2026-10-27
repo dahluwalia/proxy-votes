@@ -124,10 +124,16 @@ def _former(entry: RosterEntry, officers: list[CHOfficer], number: str, agm: dat
     o = top[1]
     return o, [ReviewItem(
         kind="not_in_office", subject=entry.mention_id,
-        detail=f"{entry.name} matches {o.name} ({o.officer_id}), who was not a director of "
-        f"{number} on {agm}{_not_in_office(entry, [o], number, agm).split(':', 1)[1]}; the "
-        "notice's seat is checked against those dates",
+        detail=f"{entry.name} matches {o.name} ({o.officer_id}), a director of {number} "
+        f"{_spans(o, number)} but not on the AGM date {agm}; the notice's seat is checked "
+        "against those dates",
         suggested_command=f'pennant show "{entry.name}"')]
+
+
+def _spans(o: CHOfficer, number: str) -> str:
+    """'2021-04-30 to 2026-05-06': the officer's directorships at the issuer."""
+    return ", ".join(f"{a.appointed_on} to {a.resigned_on or 'now'}" for a in o.appointments
+                     if a.company_number == number and "director" in a.role)
 
 
 def rank(name: str, officers: list[CHOfficer]) -> list[tuple[float, CHOfficer]]:

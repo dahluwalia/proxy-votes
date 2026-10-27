@@ -197,7 +197,7 @@ fails a run.
 | `pennant/ch`, `dedup` | CH client; anchor, date-of-birth expansion and clustering into people |
 | `pennant/classify`, `policy` | role rules, research backends and prompts; reconciliation, scoring and the score stage |
 | `pennant/state` | pipeline and gates, decisions, run inputs, diff, history |
-| `pennant/cli.py`, `cli_view.py`, `cli_changes.py`, `cli_log.py` | the `pennant` commands; reading and printing a run; previewing and confirming changes; `log` and `calls` |
+| `pennant/cli.py`, `cli_view.py`, `cli_show.py`, `cli_changes.py`, `cli_log.py`, `cli_style.py` | the `pennant` commands; reading a run and printing votes and review items; `show`; previewing and confirming changes, `history`; `log` and `calls`; shared tables and colours (`rich`) |
 | `pennant/logs.py`, `calllog.py` | per-run log and counters; the model call record |
 | `pennant/prompts.py` | loads a package's `prompts.md` |
 | `eval/` | export, metrics, hard cases; `eval/gold/` is the evidence-built answer key |
