@@ -149,9 +149,23 @@ def add_decision(
     if kind in LINK_KINDS:
         draft = Decision(decision_id="(new)", kind=kind, payload=payload, author=author,
                          reason=reason, created_at=datetime.now(UTC))
-        if bad := conflicts([*db.active_decisions(conn), draft]):
+        active = db.active_decisions(conn)
+        if same := duplicate_of(active, draft):
+            raise DecisionError(f"already recorded as {same}: a run that was held still "
+                                f"replays it (`pennant undo {same}` to withdraw it)")
+        if bad := conflicts([*active, draft]):
             raise DecisionError("contradicts active decisions: " + "; ".join(bad))
     return db.insert_decision(conn, kind, payload, author, reason)
+
+
+def duplicate_of(active: Sequence[Decision], draft: Decision) -> str | None:
+    """The active link decision of the same kind already covering every pair `draft`
+    speaks about, if any: recording it twice would take two undos to reverse."""
+    want = {frozenset(pair) for pair in link_pairs(draft)}
+    for d in sorted(active, key=decision_no):
+        if d.kind == draft.kind and want <= {frozenset(pair) for pair in link_pairs(d)}:
+            return d.decision_id
+    return None
 
 
 def revoke(conn: sqlite3.Connection, decision_id: str, author: str, reason: str) -> Decision:

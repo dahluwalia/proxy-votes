@@ -5,8 +5,9 @@ Design choice: Sparkly runs TF-IDF on Spark and Lucene to find top-k candidates 
 tables. Here the candidates are one issuer's directors in office, about a dozen, so a few
 lines of Python do the same job with no JVM. It ranks; it never decides alone. Character
 overlap can't tell a nickname from a different name (andre/andrew scores above
-tom/thomas), so callers rank only names that already share a surname, and accept the
-top one only with a clear score and margin.
+tom/thomas), so callers rank only names that already share a surname, score listed
+nicknames separately (dedup/nicknames.py), and accept the top one only with a clear
+score and margin.
 
 Each token is padded ('##ken#') so short given names still get several grams; IDF comes
 from the candidates themselves, so a gram every candidate shares counts for little.

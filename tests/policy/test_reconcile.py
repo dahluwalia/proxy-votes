@@ -13,7 +13,7 @@ from pennant.core.models import (
     Seat,
     SeatStatus,
 )
-from pennant.policy.reconcile import group_key, norm_org, org_index, reconcile
+from pennant.policy.reconcile import group_key, norm_org, not_counted, org_index, reconcile
 
 TESCO = Meeting(meeting_id="mtg:00445790:2026-06-18", company_name="Tesco PLC",
                 company_number="00445790", agm_date=date(2026, 6, 18), doc_sha="x", key="tesco")
@@ -122,6 +122,27 @@ def test_undisclosed_skips_an_org_research_found_unlisted():
     orgs = [OrgFacts(org_key="bos", canonical_name="Bank of Scotland plc", listed="no")]
     seats, _ = run([], officer(("SC327000", "BANK OF SCOTLAND PLC", "plc", None, None)), orgs)
     assert seats == {}
+
+
+def test_appointments_that_never_become_seats_say_why():
+    """Everything reconcile drops is listed with its reason; seats are not repeated."""
+    ch = officer(
+        ISSUER,
+        ("00002065", "LLOYDS BANK PLC", "plc", date(2019, 3, 1), None),  # undisclosed seat
+        ("04155426", "NATURE'S WAY FOODS LIMITED", "ltd", date(2019, 1, 1), None),
+        ("05000001", "THE IRELAND FUND", "private-limited-guarant-nsc-limited-exemption",
+         date(2025, 7, 16), None),
+        ("00596137", "OLD CO PLC", "plc", date(2010, 1, 1), date(2020, 1, 1)),
+        ("SC327000", "BANK OF SCOTLAND PLC", "plc", None, None))
+    orgs = [OrgFacts(org_key="bos", canonical_name="Bank of Scotland plc", listed="no")]
+    seats, _ = reconcile(PERSON, TESCO, [seat("Tesco PLC")], ch, orgs)
+    why = {a.company_name: w for _, a, w in not_counted(seats, ch, [TESCO.agm_date], orgs)}
+    assert why == {
+        "NATURE'S WAY FOODS LIMITED": "UK private company: can't be listed",
+        "THE IRELAND FUND": "UK company limited by guarantee (often a charity): can't be listed",
+        "OLD CO PLC": "ended 2020-01-01, before the AGM",
+        "BANK OF SCOTLAND PLC": "not listed",
+    }
 
 
 def test_unknown_role_facts_fill_from_another_notice_about_the_same_seat():

@@ -147,11 +147,27 @@ def test_two_mentions_in_one_notice_are_never_one_person():
     assert groups(cluster([r4, r5], links, [])[0]) == [[r4], [r5]]
 
 
-def test_must_link_inside_one_notice_is_a_decision_conflict():
+def test_analyst_must_link_overrides_the_same_notice_rule():
+    """The same-notice rule only keeps the matcher apart; an analyst's merge wins."""
     r4, r5 = "nm:00000009:r4", "nm:00000009:r5"
-    people, [review] = cluster([r4, r5], [], [dec(1, "must_link", a=r4, b=r5)])
+    people, reviews = cluster([r4, r5], [], [dec(1, "must_link", a=r4, b=r5)])
+    assert groups(people) == [[r4, r5]] and reviews == []
+
+
+def test_analyst_cannot_link_still_beats_a_later_must_link_in_one_notice():
+    r4, r5 = "nm:00000009:r4", "nm:00000009:r5"
+    decisions = [dec(1, "cannot_link", a=[r4], b=[r5]), dec(2, "must_link", a=r4, b=r5)]
+    people, [review] = cluster([r4, r5], [], decisions)
     assert groups(people) == [[r4], [r5]]
     assert (review.kind, review.suggested_command) == ("decision_conflict", "pennant undo dec:1")
+
+
+def test_must_link_across_notices_does_not_unlock_matcher_links_inside_one():
+    """Merging r4 with another notice's mention leaves r4 and r5 (same notice) apart."""
+    r4, r5 = "nm:00000009:r4", "nm:00000009:r5"
+    links = [Link(r4, "andrea"), Link(r5, "andrea")]
+    people, [review] = cluster([r4, r5, A], links, [dec(1, "must_link", a=r4, b=A)])
+    assert groups(people) == [[A, r4], [r5]] and review.kind == "link_refused"
 
 
 def ev(ref):

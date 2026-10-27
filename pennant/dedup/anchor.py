@@ -4,7 +4,8 @@ Design choice: identity is anchored on companies, not names. A notice name is on
 compared with the directors of the company that issued the notice who were in office
 on its AGM date. Among those with the same surname, the notice's
 first name is ranked by character 3-gram TF-IDF against each director's forenames
-(dedup/tfidf.py, Sparkly's scoring, in-process; no name dictionary). The top director is
+(dedup/tfidf.py, Sparkly's scoring, in-process); a listed nickname ("Tom" for Thomas,
+dedup/nicknames.py) scores like the exact name, since 3-grams can't see it. The top director is
 the anchor only with a score of at least MIN_SCORE and a lead of at least MARGIN over the
 next; otherwise it is a review item. The anchor's date of birth then links the person's
 other CH records, and only when every given name is the same: a missing or initialled
@@ -33,11 +34,13 @@ from pennant.core.models import (
 )
 from pennant.dedup import tfidf
 from pennant.dedup.names import aligned, at_least, compare, parse
+from pennant.dedup.nicknames import is_nickname
 
 MERGE_HINT = 'pennant merge {a} {b} --reason "..."'
 # Checked on the example notices' 50 names: every true match scores and leads by 0.38
-# or more (Jez/Jeremy is lowest; Gerry beats Ken Murphy 0.46 to 0). A first name that
-# shares only its initial (Tom/Thomas, 0.19) falls below MIN_SCORE and goes to the analyst.
+# or more (Gerry beats Ken Murphy 0.46 to 0). A listed nickname scores 1.0 (Tom/Thomas
+# would get 0.19 from 3-grams alone); an unlisted one that shares only its initial falls
+# below MIN_SCORE and goes to the analyst.
 MIN_SCORE = 0.3
 MARGIN = 0.25
 
@@ -148,9 +151,22 @@ def rank(name: str, officers: list[CHOfficer]) -> list[tuple[float, CHOfficer]]:
             given, ch_given = aligned(parsed, ch_name(o))
             pairs.append((given[:1], ch_given, o))
     weights = tfidf.idf(t for _, ch_given, _ in pairs for t in ch_given)
-    scored = [(tfidf.best_match(g[0], ch_given, weights) if g else 0.0, o)
-              for g, ch_given, o in pairs]
+    scored = [(_score(g[0], ch_given, weights) if g else 0.0, o) for g, ch_given, o in pairs]
     return sorted(scored, key=lambda x: (-x[0], x[1].officer_id))
+
+
+def _score(first: str, ch_given: tuple[str, ...], weights: dict[str, float]) -> float:
+    """1.0 for a listed nickname of any CH forename, else the TF-IDF score."""
+    if any(is_nickname(first, n) for n in ch_given):
+        return 1.0
+    return tfidf.best_match(first, ch_given, weights)
+
+
+def _nickname_note(name: str, officer: CHOfficer) -> str:
+    """'; Tom is a listed nickname of Thomas' when that is how the names matched."""
+    given, ch_given = aligned(name, ch_name(officer))
+    hit = next((n for n in ch_given if given and is_nickname(given[0], n)), None)
+    return f"; {given[0].title()} is a listed nickname of {hit.title()}" if hit else ""
 
 
 def _not_in_office(entry: RosterEntry, officers: list[CHOfficer], number: str, agm: date) -> str:
@@ -178,7 +194,8 @@ def anchor_evidence(entry: RosterEntry, officer: CHOfficer) -> list[Evidence]:
         role, since = f"director of {number}", f", {', '.join(spans)}" if spans else ""
     return [Evidence(
         source="ch", ref=f"{client.WEB_URL}/company/{number}/officers",
-        quote=f"{officer.name}, born {_dob(officer)}: {role}{since}")]
+        quote=f"{officer.name}, born {_dob(officer)}: {role}{since}"
+        f"{_nickname_note(entry.name, officer)}")]
 
 
 def _earliest_agm(ctx: RunContext) -> date | None:

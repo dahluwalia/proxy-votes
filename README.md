@@ -14,15 +14,17 @@ every fact (notice page, Companies House URL or web page).
   firm's own website; plain code scores the policy. Both models can be swapped (see
   [the technical guide](docs/technical-guide.md#swapping-a-model)). Anything that could
   flip a vote goes to REVIEW, with the facts that would settle it.
+- **Unattended:** a nightly job runs it live. A run never edits an earlier one, publishes only
+  when its gates pass, and can be rolled back (`pennant rollback run:N`); see
+  [what stops one bad run from corrupting every record](docs/user-guide.md#what-stops-one-bad-run-from-corrupting-every-record).
 
 ## Documentation
 
 | Read | For |
 | --- | --- |
-| [User guide](docs/user-guide.md) | setup, running, commands, the nightly job, logs, evaluation, the demo, known gaps |
-| [Technical guide](docs/technical-guide.md) | architecture, data model, stage interface, caching, logging, testing, extending, layout |
-| [Pipeline diagrams](docs/pipeline.html) | an overview and one diagram per stage (open in a browser) |
-| [`CLAUDE.md`](CLAUDE.md) | the build spec, step cards and hard-case catalog |
+| [User guide](docs/user-guide.md) | setup, running, commands, the nightly job and rollback, logs, evaluation, the demo, known gaps |
+| [Technical guide](docs/technical-guide.md) | architecture, data model and database schema, stage interface, caching, logging, testing, extending, layout |
+| [Pipeline diagrams](docs/pipeline.html) | an overview, one diagram per stage, and the database schema (open in a browser) |
 | [`eval/gold/README.md`](eval/gold/README.md) | how the gold set was built from cited evidence |
 
 ## Quick start
@@ -49,18 +51,24 @@ Graded against the gold set as rebuilt from cited evidence ([`eval/gold/README.m
 
 | Run | Wrong AGAINST | Wrong FOR | Accuracy | REVIEW | Identity (pairwise P/R) | Countable seats (P/R) |
 | --- | --- | --- | --- | --- | --- | --- |
-| Live, published (`run:19` in `pennant.db`) | 0 | 0 | 90% | 10% | 100% / 100% | 99% / 96% |
-| Offline, fresh database | 0 | 0 | 92% | 8% | 100% / 100% | 99% / 96% |
+| Live, published (`run:2` in `pennant.db`) | 0 | 0 | 90% | 10% | 100% / 100% | 100% / 96% |
+| Offline, fresh database | 0 | 0 | 94% | 6% | 100% / 100% | 99% / 96% |
 
-50 roster mentions become 47 people; 46 anchor to Companies House. Every disagreement with gold is a
-REVIEW, never a wrong vote. Companies House records every seat as plain "director", so the capacity
+The database was reset on 27 Oct and rebuilt live from the five PDFs. The first run from empty
+(`run:1`) scored 86%: one research answer, IG Design Group's listing, came back without the JSON
+the validator needs, and Tom Delay wasn't yet matched. `run:2` re-asked the one question and added
+the nickname list, and both were settled.
+
+50 roster mentions become 47 people, and all 47 anchor to Companies House: Tom Delay through the
+nickname list ("Tom" is a listed nickname of "Thomas"). Every disagreement with gold is a REVIEW,
+never a wrong vote. Companies House records every seat as plain "director", so the capacity
 (chair or not, executive or not) comes from the notice or, failing that, the firm's own website: the
 M&S roles (its notice has no biographies), and the CH-only seats of Ashton, Cooke, Cosslett, Ewing and
 Nebhrajani, are settled that way. Banks and a group's finance company often list only bonds (Lloyds
 Bank, Bank of Scotland, HSBC UK Bank, Tesco Corporate Treasury Services); with bond-only listings counting
 they are listed seats, but each shares a group with another seat of the same director, so it adds no
 points. The REVIEWs left: Kawal Preet (FedEx's site doesn't say whether she was on its board on the AGM
-date), Tom Delay ("Tom" vs CH "Thomas" is below the name-match bar), Graham Allan (Bata's listing
-unsourced), Laura Crespi (no own website found for Youngever) and, live only, Sarah Legg (HBOS's bonds
-count, but no HBOS site of its own was found to give her role there). Each REVIEW names the fact that
-would settle it, ready for `pennant set-fact`.
+date), Graham Allan (Bata's listing unsourced), Laura Crespi (no own website found for Youngever) and,
+live only, Dame Carolyn Fairbairn (whether her HSBC UK Bank seat is executive) and Graham Cooke
+(Qubit's board seat, role and listing). Each REVIEW names the fact that would settle it, ready for
+`pennant set-fact`.

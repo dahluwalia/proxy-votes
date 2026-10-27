@@ -1,6 +1,6 @@
-# Evaluation report — run:19
+# Evaluation report — run:2
 
-Generated 2026-10-27 13:54 UTC under `config/policy.yaml`.
+Generated 2026-10-27 19:19 UTC under `config/policy.yaml`.
 
 ## Headline
 
@@ -8,19 +8,19 @@ Generated 2026-10-27 13:54 UTC under `config/policy.yaml`.
 - Wrong FOR votes: 0
 - Vote accuracy: 90% on 49 gold-scored entries; REVIEW rate 10%; points interval exact 82%
 - People, pairwise: precision 100%, recall 100%
-- Countable seats: precision 99%, recall 96%
+- Countable seats: precision 100%, recall 96%
 - Gold covers 50 of 50 roster entries in this run
-- 50 roster mentions → 47 people; 46 anchored to Companies House
+- 50 roster mentions → 47 people; 47 anchored to Companies House
 
 ## Votes by meeting
 
 | Meeting | Directors | FOR | AGAINST | REVIEW |
 | --- | --- | --- | --- | --- |
 | intertek | 11 | 8 | 0 | 3 |
-| itv | 11 | 8 | 3 | 0 |
+| itv | 11 | 7 | 3 | 1 |
 | marks-and-spencer | 9 | 8 | 1 | 0 |
-| severn-trent | 8 | 4 | 2 | 2 |
-| tesco | 11 | 8 | 2 | 1 |
+| severn-trent | 8 | 6 | 2 | 0 |
+| tesco | 11 | 7 | 2 | 2 |
 | all | 50 | 36 | 8 | 6 |
 
 ## At the threshold (4 points; more is AGAINST for a non-executive)
@@ -30,22 +30,22 @@ Generated 2026-10-27 13:54 UTC under `config/policy.yaml`.
 | Dr Gerry Murphy (tesco) | 4 | FOR | — |
 | Caroline Silver (tesco) | 4 | FOR | — |
 | Melissa Bethell (tesco) | 4 | FOR | — |
-| Sarah Legg (severn-trent) | 3–4 | REVIEW | HBOS PLC executive (`seat:QfBR3NmISzEusrexrXk9m8SLYMY:SC218813`) |
 | Sharmila Nebhrajani OBE (severn-trent) | 4 | FOR | — |
 | Christine Hodgson CBE (severn-trent) | 4 | FOR | — |
 | Tamara Ingram (marks-and-spencer) | 4 | FOR | — |
 | Tamara Ingram (intertek) | 4 | FOR | — |
 | Graham Allan (intertek) | 4–6 | REVIEW | Bata International listed (`seat:04267576:r7:10`) |
+| Graham Cooke (itv) | 2–4 | REVIEW | Qubit board_seat (`seat:04967001:r7:1`), Qubit executive (`seat:04967001:r7:1`), Qubit listed (`seat:04967001:r7:1`) |
 | Andrew Cosslett (itv) | 4 | FOR | — |
 
 ## REVIEW votes
 
+- Dame Carolyn Fairbairn (tesco): 2–3 pts; settle HSBC UK BANK PLC executive (`seat:qGYPZxoTQydJzxo2tvm5REqiQdc:09928412`)
 - Thierry Garnier (tesco): 1–2 pts; settle Tesco PLC current (`seat:00445790:r7:0`)
-- Sarah Legg (severn-trent): 3–4 pts; settle HBOS PLC executive (`seat:QfBR3NmISzEusrexrXk9m8SLYMY:SC218813`)
-- Tom Delay CBE (severn-trent): 1–3 pts; settle ch_record (`p:nm:02366619:r9`)
 - Kawal Preet (intertek): 1–2 pts; settle FedEx board_seat (`seat:04267576:r13:5`)
-- Laura Crespi (intertek): 1–3 pts; settle YOUNGEVER HOLDINGS LTD. listed (`seat:hGs3juQ1t790y6wp6RI6BFlibvs:FC032164`)
+- Laura Crespi (intertek): 1–2 pts; settle YOUNGEVER HOLDINGS LTD. listed (`seat:hGs3juQ1t790y6wp6RI6BFlibvs:FC032164`)
 - Graham Allan (intertek): 4–6 pts; settle Bata International listed (`seat:04267576:r7:10`)
+- Graham Cooke (itv): 2–4 pts; settle Qubit board_seat (`seat:04967001:r7:1`), Qubit executive (`seat:04967001:r7:1`), Qubit listed (`seat:04967001:r7:1`)
 
 ## Votes that depend on the AIM flag
 
@@ -54,7 +54,6 @@ Generated 2026-10-27 13:54 UTC under `config/policy.yaml`.
 | Director | unknown | yes | no |
 | --- | --- | --- | --- |
 | Stewart Gilliland (tesco) | REVIEW | AGAINST | FOR |
-| Dawn Allen (itv) | REVIEW | AGAINST | REVIEW |
 
 ## Graded against the gold set
 
@@ -78,16 +77,16 @@ Policy flags: {'aim_counts_as_listed': 'yes', 'chair_designate_counts_as_chair':
 | REVIEW | 0 | 0 | 0 | 0 |
 
 **deferred (REVIEW where gold decides)**
+- ITV#7 Graham Cooke (gold FOR)
 - Intertek#5 Laura Crespi (gold FOR)
 - Intertek#7 Graham Allan (gold FOR)
 - Intertek#13 Kawal Preet (gold FOR)
-- Severn Trent#9 Tom Delay (gold FOR)
-- Severn Trent#10 Sarah Legg (gold FOR)
+- Tesco#6 Carolyn Fairbairn (gold FOR)
 
 ### Countable seats
-- precision 99.0%, recall 96.0% (98 gold countable seats)
-- counted where gold is undecided: 1
-    - sarah-legg: HBOS PLC
+- precision 100.0%, recall 96.0% (98 gold countable seats)
+- chair wrong: 1
+    - carolyn-fairbairn: HSBC UK Bank plc
 - missed: 4
     - fiona-dawson: Kerry Group plc
     - roger-burnley: Pets at Home Group plc
@@ -98,11 +97,11 @@ Policy flags: {'aim_counts_as_listed': 'yes', 'chair_designate_counts_as_chair':
 
 | aim_counts_as_listed | Wrong AGAINST | Wrong FOR | Accuracy | REVIEW rate |
 | --- | --- | --- | --- | --- |
-| unknown | 0 | 0 | 88% | 14% |
+| unknown | 0 | 0 | 90% | 12% |
 | yes | 0 | 0 | 90% | 10% |
-| no | 0 | 0 | 88% | 12% |
+| no | 0 | 0 | 90% | 10% |
 
-## Hard cases (22 pass, 3 fail, 1 n/a)
+## Hard cases (21 pass, 4 fail, 1 n/a)
 
 | Id | Case | Result | Detail |
 | --- | --- | --- | --- |
@@ -115,8 +114,8 @@ Policy flags: {'aim_counts_as_listed': 'yes', 'chair_designate_counts_as_chair':
 | H6 | Past roles are not current | PASS | Christine Hodgson at Standard Chartered: current=no; André Lacroix at Reckitt: current=no; Nick Hampton at Great Portland Estates: current=no; Robin Freestone at Aston Martin: current=no; Robin Freestone at Mony: current=no; Jean-Michel Valette at Boston Beer: current=no; Sarah Legg at Hang Seng: current=no |
 | H7 | Advisers and committee chairs are not board seats | PASS | Gerry Murphy at Perella Weinberg: board_seat=no; Melissa Bethell at Atairos: board_seat=no; Caroline Silver at Adobe: board_seat=no; Caroline Silver at National Film and Television School: board_seat=no |
 | H7 | Kawal Preet: an EVP title is not a FedEx board seat (FOR, or REVIEW) | PASS | Kawal Preet (intertek): REVIEW |
-| H8 | ICE Clear Europe belongs to the Intercontinental Exchange group | PASS | ICE Clear Europe: Intercontinental Exchange, Inc |
-| H8 | Hafren Dyfrdwy belongs to the Severn Trent group | PASS | Hafren Dyfrdwy: Severn Trent Plc |
+| H8 | ICE Clear Europe belongs to the Intercontinental Exchange group | FAIL | ICE Clear Europe: None |
+| H8 | Hafren Dyfrdwy belongs to the Severn Trent group | FAIL | Hafren Dyfrdwy: None |
 | H8 | Burberry Group and The Burberry Foundation stay apart | PASS | Burberry Group: burberry-group; Burberry Foundation: burberry-foundation |
 | H9 | Taken private: no equity listing | PASS | Ocean Outdoor: no; Keywords Studios: no |
 | H9 | Listed though not (or not only) on CH | PASS | Magnum Ice Cream: yes; Capri Holdings: yes; Americana Restaurants: yes; Man Group: yes |
@@ -131,11 +130,11 @@ Policy flags: {'aim_counts_as_listed': 'yes', 'chair_designate_counts_as_chair':
 | H14 | Thierry Garnier's resolution was withdrawn: never AGAINST | PASS | Thierry Garnier (tesco): REVIEW |
 | H15 | Named but not standing | PASS | none on the roster |
 | H16 | CH outage during a nightly run | N/A | Tested, not measured on a run: `.venv/bin/pytest -k h16` |
-| H17 | Lloyds group boards count once: Sarah Legg stays at 3 | FAIL | Sarah Legg (severn-trent): 3–4 |
+| H17 | Lloyds group boards count once: Sarah Legg stays at 3 | PASS | Sarah Legg (severn-trent): 3 |
 
 ## Counts
 
-- Seats by status: {'undisclosed': 29, 'confirmed': 84, 'ch_invisible': 36, 'stale': 1, 'past': 106, 'ch_unavailable': 3}
-- Review items by kind: {'not_in_office': 1, 'possible_same_person': 6, 'site_not_found': 3, 'stale': 1, 'unanchored': 1, 'undisclosed': 30, 'web_unsourced': 2}
-- Organisations with cited web research: 79 of 285
-- Evidence behind the votes, by source: {'notice': 133, 'ch': 96, 'web': 60}
+- Seats by status: {'undisclosed': 29, 'confirmed': 87, 'ch_invisible': 36, 'stale': 1, 'past': 106}
+- Review items by kind: {'not_in_office': 1, 'possible_same_person': 6, 'site_not_found': 3, 'stale': 1, 'undisclosed': 30, 'web_unsourced': 3}
+- Organisations with cited web research: 77 of 287
+- Evidence behind the votes, by source: {'notice': 134, 'ch': 96, 'web': 60}

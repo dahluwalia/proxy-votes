@@ -233,6 +233,16 @@ def published_run_id(conn: sqlite3.Connection) -> str | None:
     return row["run_id"] if row else None
 
 
+def rolled_back_from(conn: sqlite3.Connection) -> str | None:
+    """While a rollback is in effect, the newest run ever published (the one rolled back
+    from); otherwise None. A rollback ends when a run newer than that one is published."""
+    row = conn.execute(
+        "SELECT run_id FROM runs WHERE published_seq IS NOT NULL ORDER BY id DESC LIMIT 1"
+    ).fetchone()
+    pub = published_run_id(conn)
+    return row["run_id"] if row and pub and row["run_id"] != pub else None
+
+
 def get_run(conn: sqlite3.Connection, run_id: str) -> dict[str, Any] | None:
     row = conn.execute("SELECT * FROM runs WHERE run_id = ?", (run_id,)).fetchone()
     if row is None:

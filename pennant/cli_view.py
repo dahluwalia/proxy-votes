@@ -16,6 +16,7 @@ from typing import Any, NoReturn
 import typer
 from rich.text import Text
 
+from pennant.cli_keys import COVERAGE, POINTS_KEY, REVIEW, VOTE_KEY
 from pennant.cli_style import (
     GATE_STYLE,
     RUN_STYLE,
@@ -28,6 +29,7 @@ from pennant.cli_style import (
 from pennant.core import db
 from pennant.core.config import slug
 from pennant.core.models import Meeting, Person, Recommendation, RosterEntry, person_id
+from pennant.state.identity import absorbed, identity_order
 
 _LEGAL = re.compile(r"(\s+group)?\s+(plc|p\.l\.c\.|limited|ltd|inc\.?|n\.v\.|s\.a\.|ag)$", re.I)
 
@@ -53,7 +55,9 @@ class View:
             return db.get_outputs(conn, run_id, kind)
 
         self.run_id = run_id
-        self.status = (db.get_run(conn, run_id) or {}).get("status", "unknown")
+        run = db.get_run(conn, run_id) or {}
+        self.status = run.get("status", "unknown")
+        self.run_day = str(run.get("started_at") or "")[:10]  # notice quotes re-found then
         self.published = run_id == db.published_run_id(conn)
         self.meetings = {m.meeting_id: m for m in get("meeting")}
         self.roster: dict[str, RosterEntry] = {r.mention_id: r for r in get("roster")}
@@ -66,6 +70,8 @@ class View:
         self.recs: dict[tuple[str, str], Recommendation] = {
             (r.person_id, r.meeting_id): r for r in get("recommendation")}
         self.reviews = get("review")
+        self.decisions = {d.decision_id: d for d in db.all_decisions(conn)}
+        self.shown_as = absorbed(self.persons, self.roster, self.decisions)  # B -> A
 
     def meeting_key(self, meeting_id: str) -> str:
         """The key from the notice's filename, else one made from the company name."""
@@ -95,8 +101,14 @@ class View:
         return f"{self.meeting_label(e.meeting_id)} r{e.resolution_no}"
 
     def name(self, person: Person) -> str:
-        return next((self.roster[m].name for m in sorted(person.mention_ids) if m in self.roster),
-                    person.person_id)
+        """A merged person carries A's name (state/identity.py)."""
+        return next((self.roster[m].name for m in identity_order(person, self.decisions)
+                     if m in self.roster), person.person_id)
+
+    def merges(self, person: Person) -> list[str]:
+        """The analyst merges (decision ids) that joined this person."""
+        return sorted({e.ref for e in person.evidence if e.source == "analyst"
+                       and getattr(self.decisions.get(e.ref), "kind", "") == "must_link"})
 
 
 def load_view(conn: sqlite3.Connection, run_id: str | None = None) -> View:
@@ -214,9 +226,16 @@ def print_votes(view: View, meetings: list[Meeting]) -> None:
         for i in (1, 3, 4, 5, 6):  # everything but the role stays on one line
             t.columns[i].no_wrap = True
         t.columns[2].min_width = 7  # "Officer", "Chair": the role wraps between words
-        shown = []
+        shown, notes = [], []
         for e in entries:
             p = view.person_of.get(e.mention_id)
+            if (lead := view.shown_as.get(e.mention_id)) and p:
+                decs = view.merges(p)
+                undo = f"; `pennant undo {decs[-1]}` reverses it" if decs else ""
+                notes.append(f"  r{e.resolution_no} {e.name} is shown as "
+                             f"{view.roster[lead].name} (merged by {', '.join(decs) or 'analyst'}"
+                             f"{undo})")
+                continue
             rec = view.recs.get((p.person_id, m.meeting_id)) if p else None
             if rec is None:
                 t.add_row(str(e.resolution_no), e.name, "", "", "", vote("MISSING"), e.coverage)
@@ -229,8 +248,18 @@ def print_votes(view: View, meetings: list[Meeting]) -> None:
                       rule_text(rec), vote(rec.vote), e.coverage)
             shown.append(rec.vote)
         c.print(t)
+        for line in notes:
+            c.print(dim(line), soft_wrap=True)
         c.print(Text("  ").append_text(counts(shown)),
                 dim("   pennant show <name> explains any vote"))
+    if meetings:
+        c.print()
+        for line in (f"Key: {VOTE_KEY}", POINTS_KEY,
+                     "Rule: the rule that decides the vote; '?' means it might apply",
+                     "Officer (board unknown): an executive title such as CEO; the notice "
+                     "doesn't say whether it is a board seat",
+                     *(f"Coverage {k}: {v}" for k, v in COVERAGE.items())):
+            c.print(dim(f"  {line}"), soft_wrap=True)
 
 
 def print_reviews(items: list[Any]) -> None:
@@ -240,7 +269,9 @@ def print_reviews(items: list[Any]) -> None:
     for i in sorted(items, key=lambda i: (i.kind, i.subject, i.detail)):
         by_kind.setdefault(i.kind, []).append(i)
     for kind, group in by_kind.items():
-        c.print(Text.assemble((f"  {kind}", "bold cyan"), (f"  ({len(group)})", "dim")))
+        c.print(Text.assemble((f"  {kind}", "bold cyan"), (f"  ({len(group)})", "dim"),
+                              (f"  {REVIEW[kind]}" if kind in REVIEW else "", "dim")),
+                soft_wrap=True)
         for i in group:
             c.print(Text.assemble(f"    [{i.kind}] ", (i.subject, "bold"), f": {i.detail}"),
                     soft_wrap=True)

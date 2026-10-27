@@ -22,6 +22,7 @@ from pydantic import BaseModel
 from pennant.core import db
 from pennant.core.models import Recommendation
 from pennant.state.decisions import touched
+from pennant.state.identity import absorbed
 from pennant.state.inputs import (
     input_changes,
     load_outputs,
@@ -62,7 +63,7 @@ def diff(conn: sqlite3.Connection, run_a: str | None, run_b: str) -> list[Change
         return [d.decision_id for d in between if touched(d, by_id) & ids] or general
 
     people = _people_changes(a, b, causes)
-    recs = _rec_changes(a, b, causes)
+    recs = _rec_changes(a, b, causes, by_id)
     for change in people:  # a vote change sits under the merge or split behind it
         change.children = [recs.pop(m) for m in _mentions_of(change) if m in recs]
     return [
@@ -145,9 +146,14 @@ def _rec_view(r: Recommendation | None) -> dict[str, Any]:
     return r.model_dump(mode="json") | {"points": f"{r.points_lo}–{r.points_hi}"}
 
 
-def _rec_changes(a, b, causes) -> dict[str, Change]:
+def _shown_as(out: dict[str, list[Any]], by_id: dict[str, Any]) -> dict[str, str]:
+    return absorbed(out["person"], {r.mention_id: r for r in out["roster"]}, by_id)
+
+
+def _rec_changes(a, b, causes, by_id) -> dict[str, Change]:
     ra, rb = recs_by_mention(a), recs_by_mention(b)
     names = {r.mention_id: r.name for r in [*a["roster"], *b["roster"]]}
+    was, now = _shown_as(a, by_id), _shown_as(b, by_id)  # merged B -> A, per run
     keys = {m.meeting_id: m.key or m.company_name for m in [*a["meeting"], *b["meeting"]]}
     out = {}
     for m in sorted(ra.keys() | rb.keys()):
@@ -155,6 +161,12 @@ def _rec_changes(a, b, causes) -> dict[str, Change]:
         if not x or not y:
             v = x or y
             diffs = f"{'new' if not x else 'removed'}: {v['vote']} at {v['points']} points"
+        elif was.get(m) != now.get(m):  # B took on A's identity, or got its own back
+            lead = now.get(m) or was[m]
+            diffs = (f"now shown as {names.get(lead, lead)}" if m in now
+                     else f"no longer shown as {names.get(lead, lead)}")
+            if more := _diffs(REC_FIELDS, x, y):
+                diffs += f" ({more})"
         elif not (diffs := _diffs(REC_FIELDS, x, y)):
             continue
         rec = rb.get(m) or ra[m]

@@ -179,3 +179,15 @@ def test_superseded_set_fact_is_not_unhonoured(conn):
     revoke(conn, new.decision_id, "expert", "back to the first answer")
     assert unhonoured(db.active_decisions(conn), [], [stale], []) == []
     assert old.decision_id == "dec:1"
+
+
+def test_repeating_an_active_link_decision_is_refused(conn):
+    """A held run doesn't drop a decision, so recording it again would only need two undos."""
+    m = link(conn, "must_link", "a", "b")
+    with pytest.raises(DecisionError, match="already recorded as dec:1"):
+        link(conn, "must_link", "b", "a")
+    link(conn, "cannot_link", ["c"], ["d", "e"])
+    with pytest.raises(DecisionError, match="already recorded as dec:2"):
+        link(conn, "cannot_link", ["e"], ["c"])
+    revoke(conn, m.decision_id, "expert", "wrong")
+    assert link(conn, "must_link", "a", "b").decision_id == "dec:4"

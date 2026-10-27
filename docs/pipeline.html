@@ -89,12 +89,6 @@
   <body>
     <main>
       <h1 id="the-pipeline-in-diagrams">The pipeline in diagrams</h1>
-      <p>
-        One overview, then a zoomed-in diagram per stage. Each diagram says
-        where its code is. The diagrams are drawn with
-        <a href="https://mermaid.js.org/">Mermaid</a> when the page opens in a
-        browser.
-      </p>
       <p>Conventions in every diagram:</p>
       <ul>
         <li>
@@ -152,6 +146,7 @@
             >Caching, logging and the nightly run</a
           >
         </li>
+        <li><a href="#12-database-schema">Database schema</a></li>
       </ol>
       <hr />
       <h2 id="1-overview">1. Overview</h2>
@@ -280,13 +275,13 @@ flowchart TD
       <p>
         Code: <code>dedup/cluster.py</code> (stage),
         <code>dedup/anchor.py</code> (anchor and expand),
-        <code>dedup/names.py</code>, <code>dedup/tfidf.py</code>. Card M4.
+        <code>dedup/names.py</code>, <code>dedup/tfidf.py</code>, <code>dedup/nicknames.py</code>. Card M4.
         Target: 50 notice mentions become 47 people.
       </p>
       <div class="diagram">
         <pre class="mermaid">
 flowchart TD
-    m([&quot;Each roster entry: a name in one notice&quot;]) --&gt; rank(&quot;Rank the issuer&#x27;s directors in office on the AGM date&lt;br/&gt;same surname, titles and honours stripped,&lt;br/&gt;first names scored by 3-gram TF-IDF&quot;)
+    m([&quot;Each roster entry: a name in one notice&quot;]) --&gt; rank(&quot;Rank the issuer&#x27;s directors in office on the AGM date&lt;br/&gt;same surname, titles and honours stripped,&lt;br/&gt;first names scored by 3-gram TF-IDF,&lt;br/&gt;a listed nickname scores like the full name&quot;)
     rank --&gt; win{&quot;Clear winner?&lt;br/&gt;score and margin&quot;}
     win --&gt;|&quot;yes&quot;| anchor[&quot;Anchor: mention to CH officer&lt;br/&gt;with CH evidence&quot;]
     win --&gt;|&quot;close race&quot;| psp[&quot;Review item&lt;br/&gt;possible_same_person&quot;]
@@ -473,7 +468,11 @@ flowchart TD
     g4 --&gt; all{&quot;All pass?&quot;}
     all --&gt;|&quot;yes&quot;| staged[&quot;staged&quot;]
     all --&gt;|&quot;no&quot;| held[&quot;held&quot;]
-    staged --&gt;|&quot;--publish&quot;| pub[(&quot;Published pointer moves&quot;)]
+    staged --&gt;|&quot;--publish&quot;| rb{&quot;A rollback in effect?&lt;br/&gt;an earlier run was published again&quot;}
+    rb --&gt;|&quot;no&quot;| pub[(&quot;Published pointer moves&quot;)]
+    rb --&gt;|&quot;yes&quot;| wait[&quot;Stays staged:&lt;br/&gt;check it with pennant diff,&lt;br/&gt;then pennant publish run:N&quot;]
+    wait --&gt;|&quot;analyst publishes it&quot;| pub
+    an([&quot;Analyst: pennant rollback run:N&lt;br/&gt;an earlier run that passed its gates&quot;]) --&gt; pub
     held --&gt; keep[&quot;Pointer stays:&lt;br/&gt;yesterday&#x27;s votes stand&quot;]
     failed --&gt; keep
     pub --&gt; diff(&quot;Diff against the previous published run:&lt;br/&gt;each change tagged with its cause:&lt;br/&gt;a decision, a cache entry, a policy change&quot;)</pre
@@ -482,7 +481,9 @@ flowchart TD
       <p>
         A run's status is set once. Only a staged run, or an earlier published
         one for a rollback, can be published; database triggers refuse anything
-        else.
+        else. After a rollback, later runs (nightly or after a decision) read the
+        same cache that may hold what went wrong, so they stay staged until an
+        analyst publishes one (<code>cli_runs.py</code>).
       </p>
       <hr />
       <h2 id="10-modifications">10. Modifications</h2>
@@ -502,8 +503,8 @@ flowchart TD
     chk --&gt;|&quot;no&quot;| app[(&quot;Append the decision&lt;br/&gt;with author and reason&quot;)]
     app --&gt; rerun(&quot;Re-run offline from the cache, in seconds&lt;br/&gt;author = analyst, so G3 is skipped&quot;)
     rerun --&gt; gates{&quot;Gates pass?&quot;}
-    gates --&gt;|&quot;yes&quot;| pub[&quot;Published, diff printed:&lt;br/&gt;names the decision&quot;]
-    gates --&gt;|&quot;no&quot;| held[&quot;held: the decision can&#x27;t be honoured&lt;br/&gt;e.g. merging two people standing at one AGM&quot;]
+    gates --&gt;|&quot;yes, and no rollback in effect&quot;| pub[&quot;Published, diff printed:&lt;br/&gt;names the decision&quot;]
+    gates --&gt;|&quot;no&quot;| held[&quot;held: e.g. a decision that can&#x27;t be honoured;&lt;br/&gt;after a rollback, staged instead&quot;]
     pub --&gt; undo(&quot;pennant undo appends a revoke;&lt;br/&gt;nothing is ever deleted&quot;)
     undo --&gt; app
     pub --&gt; hist(&quot;pennant history: every vote change&lt;br/&gt;for one director and why&quot;)</pre
@@ -546,6 +547,78 @@ flowchart LR
         <code>last_fetched</code> date, so an unchanged night adds no rows and
         publishes an identical snapshot.
       </p>
+      <h2 id="12-database-schema">12. Database schema</h2>
+      <p>
+        One SQLite file (<code>PENNANT_DB</code>, default
+        <code>pennant.db</code>). Every table is append-only, enforced by
+        triggers: a decision is undone by a <code>revoke</code> row, a cache
+        entry is superseded by a newer row, and a run's results are never
+        edited. Links between tables are by id text, not foreign-key
+        constraints. Full column notes: <code>docs/technical-guide.md</code>.
+      </p>
+      <div class="diagram">
+        <pre class="mermaid">
+erDiagram
+    runs ||--o{ run_outputs : "writes"
+    runs ||--o{ model_calls : "made during"
+    cache ||--o{ model_calls : "answer cached as"
+    decisions }o--o{ runs : "replayed by every"
+    runs {
+        INTEGER id PK
+        TEXT run_id UK "run:N, generated"
+        TEXT status "running, staged, held, published, failed"
+        TEXT config_hash "hash of the policy and model name"
+        TEXT author "system or analyst"
+        TEXT gate_report "JSON: inputs, stages, gates, timings, counters, log path"
+        TEXT started_at
+        TEXT finished_at
+        TEXT published_at
+        INTEGER published_seq "highest is the published run"
+    }
+    run_outputs {
+        INTEGER id PK
+        TEXT run_id FK
+        TEXT kind "meeting, roster, seat, person, officer, org, position, recommendation, review"
+        TEXT key "natural key of the kind"
+        TEXT payload "the model as JSON"
+    }
+    decisions {
+        INTEGER id PK
+        TEXT decision_id UK "dec:N, generated"
+        TEXT kind "must_link, cannot_link, set_fact, revoke"
+        TEXT payload "JSON"
+        TEXT author
+        TEXT reason
+        TEXT created_at
+    }
+    cache {
+        INTEGER id PK
+        TEXT namespace "llamaextract, ch, web"
+        TEXT key "URL or hash of the inputs"
+        TEXT payload "the answer as JSON"
+        TEXT fetched_at "when this answer first arrived"
+        TEXT last_fetched "latest fetch with the same answer"
+    }
+    model_calls {
+        INTEGER id PK
+        TEXT run_id FK
+        TEXT called_at
+        TEXT provider "anthropic or llamaextract"
+        TEXT kind "org, site, position, extract"
+        TEXT prompt_version
+        TEXT model
+        TEXT inputs "JSON"
+        TEXT prompt
+        TEXT response "JSON"
+        TEXT outcome "ok, rejected, unavailable, error"
+        TEXT error
+        REAL latency_s
+        TEXT usage "JSON: tokens, searches, credits"
+        TEXT validation "JSON: facts kept and dropped"
+        TEXT cache_key FK
+    }</pre
+        >
+      </div>
       <p class="note">
         Generated from the pipeline's code layout; diagrams drawn by Mermaid 11
         when the page opens (needs internet the first time).

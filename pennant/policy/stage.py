@@ -38,6 +38,7 @@ from pennant.core.tri import UNKNOWN, YES
 from pennant.policy.reconcile import reconcile
 from pennant.policy.score import orgs_with_overrides, score
 from pennant.state.decisions import apply_set_facts
+from pennant.state.identity import absorbed
 
 
 @dataclass
@@ -89,11 +90,14 @@ def load_inputs(conn: sqlite3.Connection, run_id: str) -> Inputs:
 def score_inputs(inp: Inputs, policy: Policy, decisions: Sequence[Decision] = ()):
     """(recommendations, seats, orgs, review items, errors) for every roster entry. Seats
     and orgs carry analyst set-facts, which gate G4 checks. A roster entry no person
-    covers is scored alone; an error becomes a REVIEW plus a review item."""
+    covers is scored alone; an error becomes a REVIEW plus a review item. Where an
+    analyst merged two people standing at one meeting, only A's entry is scored there
+    (state/identity.py): B's resolution takes that vote."""
     entries = {e.mention_id: e for e in inp.roster}
     covered = {m for p in inp.persons for m in p.mention_ids}
     persons = [*inp.persons, *(Person(person_id=person_id([m]), mention_ids=[m])
                                for m in entries if m not in covered)]
+    shown_as = absorbed(persons, entries, {d.decision_id: d for d in decisions})
     sets = [d for d in decisions if d.kind == "set_fact"]
     recs, seats, items, errors = [], {}, [], []
     for p in sorted(persons, key=lambda p: p.person_id):
@@ -101,7 +105,7 @@ def score_inputs(inp: Inputs, policy: Policy, decisions: Sequence[Decision] = ()
         ok = ids and all(i in inp.officers and i not in inp.unavailable for i in ids)
         ch = [inp.officers[i] for i in ids] if ok else None
         mine = [x for x in inp.seats if x.mention_id in p.mention_ids]
-        todo = [entries[m] for m in p.mention_ids if m in entries]
+        todo = [entries[m] for m in p.mention_ids if m in entries and m not in shown_as]
         for e in sorted(todo, key=lambda e: (str(getattr(inp.meetings.get(e.meeting_id),
                                                          "agm_date", "")), e.mention_id)):
             try:

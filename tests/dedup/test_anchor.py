@@ -217,10 +217,8 @@ NOTICES = [
         "Sarah Legg", "Sharmila Nebhrajani OBE", "Richard Taylor"]),
 ]
 # Roster entries the CH fixtures can't anchor, and why. Each one becomes a review item.
-EXCEPTIONS: dict[str, str] = {
-    # "Tom" shares only its initial with CH's "Thomas" (score 0.19): the analyst confirms.
-    "Tom Delay CBE": "Thomas Auguste Read DELAY",
-}
+# None now: "Tom Delay" anchors to "DELAY, Thomas" through the nickname list.
+EXCEPTIONS: dict[str, str] = {}
 
 needs_fixtures = pytest.mark.skipif(
     not any((FIXTURES_DIR / "ch").glob("*.json")), reason="CH fixtures not recorded yet")
@@ -332,15 +330,32 @@ def test_ranker_scores_a_middle_name_and_ignores_other_surnames():
     assert o.officer_id == "h" and score >= m42.MIN_SCORE
 
 
-def test_initial_only_overlap_is_a_review_item_not_an_anchor():
-    """Tom/Thomas share only the first letter: below MIN_SCORE, so the analyst decides."""
+def test_listed_nickname_anchors_and_its_evidence_says_so():
+    """Tom/Thomas share only the first letter (3-gram score 0.19), but the nickname list
+    pairs them; Bob/Robert share no letters at all."""
     board = [officer("td", "DELAY", "Thomas Auguste Read")]
-    found, [review] = m42.anchor(entry("Tom Delay CBE"), board)
+    found, reviews = m42.anchor(entry("Tom Delay CBE"), board)
+    assert found.officer_id == "td" and reviews == []
+    [ev] = m42.anchor_evidence(entry("Tom Delay CBE"), found)
+    assert ev.quote.endswith("; Tom is a listed nickname of Thomas")
+    found, _ = m42.anchor(entry("Bob Smith"), [officer("r", "SMITH", "Robert")])
+    assert found.officer_id == "r"
+
+
+def test_initial_only_overlap_that_is_not_a_listed_nickname_is_a_review_item():
+    found, [review] = m42.anchor(entry("Tor Delay"), [officer("td", "DELAY", "Thomas")])
     assert found is None and review.kind == "unanchored" and "DELAY, Thomas" in review.detail
 
 
-def test_names_with_no_shared_letters_never_anchor():
-    found, [review] = m42.anchor(entry("Bob Smith"), [officer("r", "SMITH", "Robert")])
+def test_a_nickname_still_needs_its_margin():
+    """Two same-surname directors that both fit 'Tom' are a review item, not a guess."""
+    board = [officer("a", "DELAY", "Thomas"), officer("b", "DELAY", "Tom")]
+    found, [review] = m42.anchor(entry("Tom Delay"), board)
+    assert found is None and review.kind == "possible_same_person"
+
+
+def test_names_with_no_shared_letters_and_no_listed_nickname_never_anchor():
+    found, [review] = m42.anchor(entry("Zed Smith"), [officer("r", "SMITH", "Robert")])
     assert found is None and review.kind == "unanchored"
 
 

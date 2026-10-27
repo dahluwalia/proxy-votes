@@ -1,6 +1,6 @@
 """Name parsing and comparison for matching notice names to Companies House records.
 
-Design choice: no similarity scores and no name dictionary here. A pair of names gets
+Design choice: no similarity scores and no nickname list here. A pair of names gets
 one of five levels from explicit rules, so every level can be explained in one sentence:
 
     exact > variant > initial > surname_only > conflict
@@ -14,8 +14,9 @@ one of five levels from explicit rules, so every level can be explained in one s
   different stated middle names are a conflict); a missing one never hurts.
 - `variant`: same surname, and the first given names are different full names
   ("Gerry" vs "Gerard", "Nick" vs "Anthony Nicholas", but also "Ken" vs "Gerard"). It
-  says the names could be one person, not that they are: `dedup/tfidf.py` ranks the
-  variants among one issuer's directors and anchor.py accepts only a clear winner.
+  says the names could be one person, not that they are: anchor.py ranks the variants
+  among one issuer's directors (3-gram TF-IDF, or a listed nickname from
+  `dedup/nicknames.py`) and accepts only a clear winner.
 - Middle names can only veto: two stated middle names that are neither equal nor an
   initial of each other are a conflict.
 """

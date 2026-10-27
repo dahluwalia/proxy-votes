@@ -29,7 +29,7 @@ pennant = "pennant.cli:app"
 include = ["pennant*"]
 
 [tool.setuptools.package-data]
-pennant = ["classify/prompts/*.md"]
+pennant = ["classify/prompts/*.md", "dedup/data/*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

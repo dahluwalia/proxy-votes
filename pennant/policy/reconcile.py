@@ -186,3 +186,51 @@ def reconcile(
     return out, items
 
 
+
+
+# --- appointments that never become seats ---------------------------------------
+
+def _type_label(company_type: str | None) -> str:
+    t = (company_type or "").lower()
+    if "guarant" in t:
+        return "UK company limited by guarantee (often a charity)"
+    if t == "llp":
+        return "UK limited liability partnership"
+    return "UK private company" + (f" ({company_type})" if t and t != "ltd" else "")
+
+
+def not_counted(
+    seats: Sequence[Seat], ch: Sequence[CHOfficer], agm_dates: Sequence[date],
+    orgs: Sequence[OrgFacts] = (),
+) -> list[tuple[CHOfficer, CHAppointment, str]]:
+    """The person's CH appointments that reconcile turned into no seat, each with why:
+    not a directorship, not held on any of their AGM dates, or at an organisation that
+    can't be listed (a UK private company type, or one research found unlisted). None of
+    them can change a vote. Appointments behind a notice seat or an `undisclosed` seat
+    are left out: those show as seats."""
+    idx = org_index(orgs)
+    shown = {s.seat_id for s in seats}
+    notice = [s for s in seats if s.mention_id]
+    out = []
+    for o in ch:
+        for a in o.appointments:
+            n = _num(a.company_number) or a.company_number
+            if f"seat:{o.officer_id}:{n}" in shown or any(_same_org(s, a) for s in notice):
+                continue
+            org = find_org(idx, a.company_name)
+            if "director" not in a.role.lower() and "member" not in a.role.lower():
+                why = f"not a directorship ({a.role})"
+            elif not any(_active(a, d) for d in agm_dates):
+                why = (f"ended {a.resigned_on}, before the AGM" if a.resigned_on
+                       else f"appointed {a.appointed_on}, after the AGM")
+            elif listed_by_rule(a.company_type) == NO:
+                why = f"{_type_label(a.company_type)}: can't be listed"
+            elif org and org.listed == NO:
+                web = any(e.source == "web" for e in org.evidence)
+                why = "not listed" + (" (web research)" if web else "")
+            else:
+                why = "not used for this vote"
+            out.append((o, a, why))
+    return sorted(out, key=lambda x: (x[1].resigned_on is not None,
+                                      -(x[1].appointed_on or date.min).toordinal(),
+                                      x[1].company_name))

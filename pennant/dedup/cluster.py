@@ -5,9 +5,11 @@ scores. Analyst must-links are applied first, then matcher links in a fixed orde
 (anchor links before date-of-birth links, then by id), so shuffled input gives the
 same people. Any union that would put a cannot-link pair in one person is refused
 and becomes a review item; cannot-links always win, because a wrong merge adds
-seats and can cause a wrong AGAINST. Two mentions in one notice are always a
-cannot-link pair: a notice never proposes one person twice. A person is `p:` plus its
-smallest mention id, and carries the evidence of every link that joined it.
+seats and can cause a wrong AGAINST. Two mentions in one notice are an implicit
+cannot-link pair (a notice never proposes one person twice), which keeps the matcher
+apart but yields to an analyst's must-link: the analyst has the last word. A person is
+`p:` plus its smallest mention id, and carries the evidence of every link that joined it, an
+analyst's merge cited as its decision (state/identity.py reads which side was A).
 """
 
 from __future__ import annotations
@@ -92,16 +94,18 @@ class _UnionFind:
         self.apart.setdefault(a, {})[b] = decision_id
         self.apart.setdefault(b, {})[a] = decision_id
 
-    def blocker(self, a: str, b: str) -> str | None:
-        """The cannot-link decision that forbids joining a's and b's groups, if any."""
+    def blocker(self, a: str, b: str, implicit: bool = True) -> str | None:
+        """The cannot-link that forbids joining a's and b's groups, if any. With
+        `implicit=False` (an analyst's must-link) the same-notice rule doesn't block."""
         ra, rb = self.find(a), self.find(b)
         if ra == rb:
             return None
         other = self.members[rb]
         for x in sorted(self.members[ra]):
-            hits = sorted(y for y in self.apart.get(x, {}) if y in other)
-            if hits:
-                return self.apart[x][hits[0]]
+            for y in sorted(y for y in self.apart.get(x, {}) if y in other):
+                why = self.apart[x][y]
+                if implicit or not why.startswith(SAME_NOTICE):
+                    return why
         return None
 
     def union(self, a: str, b: str) -> None:
@@ -167,6 +171,7 @@ def cluster(
                     uf.keep_apart(x, y, d.decision_id)
 
     refused: list[tuple[Link, str]] = []
+    merges: list[tuple[str, Evidence]] = []  # (node, analyst evidence) per applied must-link
     for d in decisions:
         if d.kind != "must_link":
             continue
@@ -174,7 +179,7 @@ def cluster(
         if stale(d, [a, b]):
             continue
         uf.add(a, b)
-        if blocker := uf.blocker(a, b):
+        if blocker := uf.blocker(a, b, implicit=False):
             why, undo = _apart(blocker)
             reviews.append(ReviewItem(
                 kind="decision_conflict", subject=d.decision_id,
@@ -183,6 +188,8 @@ def cluster(
             ))
         else:
             uf.union(a, b)
+            merges.append((a, Evidence(source="analyst", ref=d.decision_id, quote=d.reason,
+                                       fetched_at=d.created_at)))
 
     applied: list[Link] = []
     for link in links:
@@ -204,6 +211,8 @@ def cluster(
         ))
 
     evidence: dict[str, dict[str, Evidence]] = defaultdict(dict)  # root -> {json: ev}
+    for node, e in merges:  # the analyst's merges first: state/identity.py reads them
+        evidence[uf.find(node)].setdefault(e.model_dump_json(), e)
     for link in applied:  # in link order, so a person's evidence order is fixed
         for e in link.evidence:
             evidence[uf.find(link.a)].setdefault(e.model_dump_json(), e)

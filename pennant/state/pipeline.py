@@ -20,6 +20,12 @@ ch G2, the rest G4):
 - G4 completeness: every roster entry has a recommendation, every active
   decision is honoured.
 
+Rollback: `pennant rollback run:N` moves the pointer back to an earlier good run. While
+that rollback is in effect (db.rolled_back_from), every run is staged, not published, so
+neither the next nightly run nor a re-run after an analyst decision (both read the cache,
+which may still hold what went wrong) can undo it; it ends when an analyst publishes a
+newer run.
+
 A gate that raises fails the run. Offline runs first seed the CH and web caches
 from the committed fixtures, for keys the cache doesn't hold yet. Each run writes its
 own log file (pennant/logs.py: stage times and counts, errors with tracebacks, the work
@@ -179,8 +185,17 @@ def _stages_and_gates(conn, settings, policy, offline, publish, author, stages, 
     for gate, g in result.gates.items():
         (log.info if g.ok else log.warning)("gate %s: %s%s", gate, "pass" if g.ok else "FAIL",
                                             "".join(f"; {x}" for x in g.problems))
+    # After a rollback, runs are staged but not published until someone publishes one
+    # explicitly (`pennant publish`): the next night, or a re-run from cached answers that
+    # may hold what went wrong, can't undo the rollback.
+    paused = db.rolled_back_from(conn) if publish else None
+    if paused and result.status == "staged":
+        log.warning("not publishing: %s was rolled back to %s; check this run with "
+                    "`pennant diff`, then `pennant publish %s`", paused, previous, run_id)
     metrics = logs.snapshot()
     db.finish_run(conn, run_id, result.status, {
+        "paused": (f"rolled back from {paused} to {previous}; runs are staged, not published, "
+                   "until one is published with `pennant publish`") if paused else None,
         "inputs": inputs,
         "stages": [r.model_dump() for r in result.stages],
         "gates": {k: g.model_dump() for k, g in result.gates.items()},
@@ -189,7 +204,7 @@ def _stages_and_gates(conn, settings, policy, offline, publish, author, stages, 
         "metrics": metrics,
         "log": str(log_path),
     })
-    if publish and result.status == "staged":
+    if publish and result.status == "staged" and not paused:
         db.publish(conn, run_id)
         result.status = "published"
     ai = logs.ai_totals(metrics)

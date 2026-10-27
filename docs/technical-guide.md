@@ -2,8 +2,8 @@
 
 For developers and reviewers: how the pipeline is built, where each piece lives, and how to
 test and extend it. Running it is in the [user guide](user-guide.md); the
-[pipeline diagrams](pipeline.html) draw each stage. The build spec is
-[`CLAUDE.md`](../CLAUDE.md), and each module's docstring states its design choice.
+[pipeline diagrams](pipeline.html) draw each stage and the database. Each module's docstring
+states its design choice.
 
 - [Architecture](#architecture)
 - [Data model and database](#data-model-and-database)
@@ -25,7 +25,7 @@ rows to `run_outputs`, so every run is a snapshot and any two can be diffed.
 | --- | --- | --- | --- |
 | extract | `extract/validate.py` | reads each notice; checks the company number, AGM date and resolution numbers against the PDF text; grounds every quote on its cited page | extract model (LlamaExtract), once per notice |
 | ch | `ch/client.py` | each issuer's officer list, then the full appointments of every director in office on the AGM date | Companies House |
-| dedup | `dedup/cluster.py` | anchors each name among the issuer's same-surname directors (3-gram TF-IDF on first names; a former director only if no one in office matches), links other CH records by date of birth, clusters under analyst decisions | CH officer search |
+| dedup | `dedup/cluster.py` | anchors each name among the issuer's same-surname directors (3-gram TF-IDF on first names, with a bundled nickname list so "Tom" scores like "Thomas"; a former director only if no one in office matches), links other CH records by date of birth, clusters under analyst decisions | CH officer search |
 | classify | `classify/stage.py` | role rules from the notice's titles; CH company type rules out listing; web research on organisations (listing, market, parent); roles still unknown asked of the firm's own website (`classify/positions.py`) | research model (Claude with web search) |
 | score | `policy/stage.py` | reconciles notice seats with CH on the AGM date; points interval, executive rule, vote | none |
 | evidence | `evidence/freshness.py` | dates every CH and web citation by when it was last confirmed; flags one checked before the day its vote needs (`stale_evidence`); never changes a vote | none |
@@ -56,6 +56,11 @@ The four gates then decide whether the run publishes.
   run (gates passed) or an earlier published one (a rollback) can be published. So every
   past answer stays readable: `pennant diff` compares any two runs, and `pennant history`
   follows one director across all of them.
+- **Rollback holds.** `pennant rollback run:N` publishes an earlier run again
+  (`cli_runs.py`). While it is in effect (`db.rolled_back_from`: the newest run ever published
+  is not the published one), `state/pipeline.py` stages every run without publishing it,
+  system or analyst, because later runs read the same cache that may hold what went wrong. It
+  ends when an analyst publishes a newer run with `pennant publish`.
 
 ### Swapping a model
 
@@ -94,6 +99,90 @@ unknown, Kleene logic, points intervals).
 Database triggers refuse any UPDATE or DELETE the rules above don't allow, so no command,
 stage or bug can rewrite history. Results are never updated in place: every run writes its
 own rows, which is what makes `pennant diff`, `pennant history` and rollback possible.
+
+### Schema
+
+Tables link by id text (`run_id`, `cache_key`), not foreign-key constraints. JSON columns
+hold pydantic models or raw API responses. A diagram of the tables is section 12 of
+[pipeline.html](pipeline.html).
+
+**`runs`**: one row per pipeline run.
+
+| Column | Type | Notes |
+| --- | --- | --- |
+| `id` | INTEGER PK | autoincrement |
+| `run_id` | TEXT | generated: `run:<id>` |
+| `status` | TEXT | `running`, `staged`, `held`, `published` or `failed`; set once when the run finishes, and only `staged` (or an earlier `published`) can become `published` |
+| `config_hash` | TEXT | hash of the policy and the model name; never changes |
+| `author` | TEXT | `system` or the analyst; never changes |
+| `gate_report` | TEXT (JSON) | inputs seen, stage reports, gate results, timings, counters, log path |
+| `started_at`, `finished_at` | TEXT | ISO 8601, UTC |
+| `published_at` | TEXT | when it was last published |
+| `published_seq` | INTEGER | stamped on publishing; the highest is the published run, so publishing an older run is a rollback |
+
+**`run_outputs`**: every result a run produced. Index on (`run_id`, `kind`, `key`, `id`).
+
+| Column | Type | Notes |
+| --- | --- | --- |
+| `id` | INTEGER PK | autoincrement; within a run, the highest id for a (kind, key) wins |
+| `run_id` | TEXT | the run that wrote it |
+| `kind` | TEXT | see the next table |
+| `key` | TEXT | the kind's natural key |
+| `payload` | TEXT (JSON) | the model |
+
+| Kind | Model (`core/models.py`) | Key |
+| --- | --- | --- |
+| `meeting` | `Meeting` | `mtg:<company_number>:<agm_date>` |
+| `roster` | `RosterEntry` | `nm:<company_number>:r<resolution_no>` |
+| `seat` | `Seat` | seat id |
+| `officer` | `CHOfficer` | CH officer id |
+| `person` | `Person` | `p:<smallest mention id>` |
+| `org` | `OrgFacts` | org key |
+| `position` | `PositionFacts` | seat id |
+| `recommendation` | `Recommendation` | `<meeting_id>\|<person_id>` |
+| `review` | `ReviewItem` | `<kind>\|<subject>\|<detail>` |
+
+**`decisions`**: analyst decisions, replayed by every run.
+
+| Column | Type | Notes |
+| --- | --- | --- |
+| `id` | INTEGER PK | autoincrement |
+| `decision_id` | TEXT | generated: `dec:<id>` |
+| `kind` | TEXT | `must_link`, `cannot_link`, `set_fact` or `revoke` |
+| `payload` | TEXT (JSON) | e.g. `{"a": mention, "b": mention}`, `{"kind", "target", "field", "value"}`, `{"decision_id"}` |
+| `author`, `reason`, `created_at` | TEXT | required |
+
+**`cache`**: every external answer. Index on (`namespace`, `key`, `id`).
+
+| Column | Type | Notes |
+| --- | --- | --- |
+| `id` | INTEGER PK | autoincrement; the highest id for a (namespace, key) wins |
+| `namespace` | TEXT | `llamaextract`, `ch` or `web` |
+| `key` | TEXT | CH: the URL; LlamaExtract and web: a hash of the inputs (see Caching) |
+| `payload` | TEXT (JSON) | the answer as returned |
+| `fetched_at` | TEXT | when this answer first arrived |
+| `last_fetched` | TEXT | the latest fetch that returned the same answer; the only column that may change |
+
+**`model_calls`**: every live model call (`calllog.py`; created on first use). Index on
+(`kind`, `prompt_version`, `model`).
+
+| Column | Type | Notes |
+| --- | --- | --- |
+| `id` | INTEGER PK | autoincrement |
+| `run_id` | TEXT | the run that made it; empty for answers backfilled from the cache |
+| `called_at` | TEXT | ISO 8601, UTC |
+| `provider` | TEXT | `anthropic` or `llamaextract` |
+| `kind` | TEXT | `org`, `site`, `position` or `extract` |
+| `prompt_version`, `model` | TEXT | e.g. `org_v1`, `claude-sonnet-5-5` |
+| `inputs` | TEXT (JSON) | what the prompt was filled with |
+| `prompt` | TEXT | the prompt as sent |
+| `response` | TEXT (JSON) | the raw response |
+| `outcome` | TEXT | `ok`, `rejected`, `unavailable` or `error` |
+| `error` | TEXT | why, when not `ok` |
+| `latency_s` | REAL | seconds |
+| `usage` | TEXT (JSON) | tokens and web searches, or LlamaExtract credits |
+| `validation` | TEXT (JSON) | facts kept, and facts dropped with the reason |
+| `cache_key` | TEXT | the `cache.key` the answer was stored under |
 
 ## Stage interface
 
@@ -159,7 +248,7 @@ fails a run.
   hand-written seat cases for scoring (`seats/`). Each folder's README says what it holds.
 - `tests/conftest.py` gives a `ctx` fixture (in-memory database, offline) and sends run logs
   to a temporary folder. Anything that calls an outside service is marked `live`.
-- The hard cases H1–H17 in `CLAUDE.md` are test oracles; `eval/hard_cases.py` reports them on
+- The hard cases H1–H17 (`eval/gold/hard_cases.yaml`) are test oracles; `eval/hard_cases.py` reports them on
   any run.
 
 ## Extending it
@@ -190,14 +279,14 @@ fails a run.
 
 | Path | What |
 | --- | --- |
-| `docs/` | this guide, the [user guide](user-guide.md) and the [pipeline diagrams](pipeline.html) |
+| `docs/` | this guide, the [user guide](user-guide.md) and the [pipeline diagrams](pipeline.html), with the database schema |
 | `config/policy.yaml` | threshold (4 points) and the policy flags (AIM, debt-only, chair-designate, group dedupe) |
 | `pennant/core` | settings and policy, models, three-valued logic, database, cache |
 | `pennant/extract`, `evidence` | extract backends and prompts, meeting and quote checks against the PDF, citations, evidence freshness |
-| `pennant/ch`, `dedup` | CH client; anchor, date-of-birth expansion and clustering into people |
+| `pennant/ch`, `dedup` | CH client; names and nicknames (`dedup/data/`: the pinned nickname list, its licence and source), anchor, date-of-birth expansion and clustering into people |
 | `pennant/classify`, `policy` | role rules, research backends and prompts; reconciliation, scoring and the score stage |
-| `pennant/state` | pipeline and gates, decisions, run inputs, diff, history |
-| `pennant/cli.py`, `cli_view.py`, `cli_show.py`, `cli_changes.py`, `cli_log.py`, `cli_style.py` | the `pennant` commands; reading a run and printing votes and review items; `show`; previewing and confirming changes, `history`; `log` and `calls`; shared tables and colours (`rich`) |
+| `pennant/state` | pipeline, gates and the rollback hold, decisions, merged identities, run inputs, diff, history |
+| `pennant/cli.py`, `cli_view.py`, `cli_show.py`, `cli_changes.py`, `cli_runs.py`, `cli_log.py`, `cli_keys.py`, `cli_style.py` | the `pennant` commands; reading a run and printing votes and review items; `show`; previewing and confirming changes, `history`; `runs`, `rollback` and `publish`; `log` and `calls`; the plain-language key each screen prints; shared tables and colours (`rich`) |
 | `pennant/logs.py`, `calllog.py` | per-run log and counters; the model call record |
 | `pennant/prompts.py` | loads a package's `prompts.md` |
 | `eval/` | export, metrics, hard cases; `eval/gold/` is the evidence-built answer key |
@@ -207,7 +296,6 @@ fails a run.
 
 ## Further reading
 
-- [`CLAUDE.md`](../CLAUDE.md): the build spec, step cards and hard-case catalog.
 - [`eval/gold/README.md`](../eval/gold/README.md): how the gold set was built from cited evidence.
 - `tests/fixtures/*/README.md`: what each recording holds and how it was made.
 - Module docstrings: each states its design choice.

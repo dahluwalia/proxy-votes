@@ -100,7 +100,8 @@ def test_set_fact_moves_silver_to_for_and_undo_restores_review(cli_db):
     assert "REVIEW -> FOR" in res.output
     rows = table_rows(cli("votes", "--meeting", "tesco").output)
     assert "FOR" in next(r for r in rows if "Caroline Silver" in r)
-    assert 'Analyst (dec:1): "adviser only"' in cli("show", "Caroline Silver").output
+    show = cli("show", "Caroline Silver").output
+    assert re.search(r'Analyst \(dec:1\)\s+"adviser only"', show)
     res = cli("undo", "dec:1", "-y")
     assert "FOR -> REVIEW" in res.output
 
@@ -121,13 +122,20 @@ def test_show_lists_mentions_seats_citations_and_flip_facts(cli_db):
     assert res.exit_code == 0, res.output
     out = res.output
     assert "Caroline Silver  (p:nm:00445790:r13)" in out
-    assert 'Tesco notice p.10: "Chair: Barratt Redrow plc and ICE Clear Europe"' in out
-    assert "Web: ICE investors https://ir.theice.com/" not in out  # a listing source: collapsed
-    assert "+ 1 source for this listing" in out
-    assert "Web: ICE investors https://ir.theice.com/" in cli("show", "caroline silver",
-                                                              "--evidence").output
-    assert "Vote at Tesco: REVIEW" in out
-    assert "Would flip the vote: seat:silver:moelis.board_seat" in out
+    # every source row has a last-checked date; a notice quote is re-found on every run
+    assert re.search(r'Tesco notice p\.10\s+"Chair: Barratt Redrow plc and ICE Clear Europe"'
+                     r'\s+\d{4}-\d{2}-\d{2}', out)
+    assert "ICE investors https://ir.theice.com/" not in out  # a listing source: collapsed
+    assert "(1 web source; `pennant show --evidence` lists them)" in out
+    assert "ICE investors https://ir.theice.com/" in cli("show", "caroline silver",
+                                                         "--evidence").output
+    assert "Vote at Tesco: REVIEW" in out and "REVIEW because a rule might apply" in out
+    assert "Unknown facts that decide this vote" in out
+    assert "Moelis" in out and "is it a seat on the board?" in out
+    assert 'pennant set-fact seat:silver:moelis board_seat <yes|no> --reason "..."' in out
+    for key in ("Key: FOR: neither rule applies", "Coverage structured:", "✓ yes   ✗ no",
+                "Board: a seat on the board", "Where each fact comes from"):
+        assert key in out
     assert "pennant set-fact seat:silver:moelis board_seat no" in out  # its review item
 
 
@@ -148,10 +156,11 @@ def test_show_marks_the_citations_the_run_flagged_as_stale(cli_db):
         "2026-06-18; facts from it may be out of date", suggested_command="pennant run")])
     conn.close()
     out = cli("show", "caroline silver").output
-    ice = next(ln for ln in out.splitlines() if "Web: ICE investors https://ir.theice.com/" in ln)
-    assert ice.endswith("[STALE]")
+    rows = [ln for ln in out.splitlines() if ln.rstrip().endswith("  STALE")]
+    assert len(rows) == 1 and "Web [" in rows[0]  # the flagged listing source, and only it
+    link = rows[0].split("Web [", 1)[1].split("]", 1)[0]
+    assert f"[{link}] ICE investors https://ir.theice.com/" in out  # its link, on one line
     assert "[stale_evidence] ice: Web https://ir.theice.com/ last checked 2026-05-01" in out
-    assert out.count("[STALE]") == 1
 
 
 def test_name_lookup_is_accent_insensitive_and_lists_ambiguous_candidates(cli_db):
@@ -164,12 +173,24 @@ def test_name_lookup_is_accent_insensitive_and_lists_ambiguous_candidates(cli_db
     assert cli("show", "Nobody Here").exit_code == 1
 
 
-def test_merge_refuses_same_person_and_contradicting_cannot_link(cli_db):
+def test_merge_warns_when_both_stand_at_one_meeting(cli_db):
+    res = cli("merge", "Ken Murphy", "Gerry Murphy", "--reason", "test", "-y")
+    assert res.exit_code == 0, res.output
+    assert "Warning: both stand for election at tesco" in res.output
+    again = cli("merge", "Ken Murphy", "Gerry Murphy", "--reason", "test", "-y")
+    assert "already" in again.output
+
+
+def test_merge_refuses_same_person_and_replaces_an_earlier_split(cli_db):
     assert "already one person" in cli("merge", "nm:00445790:r9", "nm:04967001:r12",
                                        "-r", "x").output
     cli("split", "Chris Kennedy", "--move", "itv", "-r", "x", "-y")
-    res = cli("merge", "nm:00445790:r9", "nm:04967001:r12", "-r", "x", "-y")
-    assert res.exit_code == 1 and "Refused" in res.output
+    res = cli("merge", "nm:00445790:r9", "nm:04967001:r12", "-r", "y", "-y")
+    assert res.exit_code == 0, res.output
+    assert "This replaces dec:1, your split of Chris Kennedy (ITV r12) from Chris Kennedy " \
+        "(Tesco r9) ('x'," in res.output
+    assert "Recorded dec:2: revoke dec:1 (replaced)" in res.output
+    assert "Recorded dec:3: must_link" in res.output
 
 
 def test_undo_rejects_unknown_or_already_revoked(cli_db):
@@ -242,11 +263,32 @@ def test_with_lane_g_decisions(cli_db, monkeypatch):
     assert cli("undo", "dec:1", "-y").exit_code == 0
     assert published(cli_db, "recommendation") == before
     assert cli("split", "Chris Kennedy", "--move", "itv", "-r", "x", "-y").exit_code == 0
-    res = cli("merge", "nm:00445790:r9", "nm:04967001:r12", "-r", "x", "-y")
-    assert res.exit_code == 1 and "Refused" in res.output
+    res = cli("merge", "nm:00445790:r9", "nm:04967001:r12", "-r", "x", "-y")  # newest wins
+    assert res.exit_code == 0 and "revoke dec:3 (replaced)" in res.output, res.output
+    assert [d.decision_id for d in db.active_decisions(db.connect(cli_db))] == ["dec:5"]
     res = cli("set-fact", "seat:silver:moelis", "board_seat", "no", "-r", "adviser only", "-y")
     assert res.exit_code == 0 and "REVIEW -> FOR" in res.output
     assert "already revoked" in cli("undo", "dec:1", "-y").output
+
+
+def test_split_replaces_the_merge_it_contradicts(cli_db, monkeypatch):
+    """Merge two Tesco directors, then split them again: the split undoes the merge."""
+    import pennant.cli as cli_mod
+    from pennant.state import decisions
+
+    monkeypatch.setattr(cli_mod, "add_decision", decisions.add_decision)
+    monkeypatch.setattr(cli_mod, "revoke", decisions.revoke)
+    before = published(cli_db, "recommendation")
+    assert cli("merge", "Ken Murphy", "Gerry Murphy", "-r", "test", "-y").exit_code == 0
+    res = cli("split", "Ken Murphy", "--move", "nm:00445790:r11", "-r", "testing", "-y")
+    assert res.exit_code == 0, res.output
+    assert "This replaces dec:1, your merge of Ken Murphy (Tesco r11) and Dr Gerry Murphy " \
+        "(Tesco r10) ('test'," in res.output
+    assert "Recorded dec:2: revoke dec:1 (replaced)" in res.output
+    assert "Recorded dec:3: cannot_link" in res.output
+    active = db.active_decisions(db.connect(cli_db))
+    assert [(d.decision_id, d.kind) for d in active] == [("dec:3", "cannot_link")]
+    assert published(cli_db, "recommendation") == before  # two people again
 
 
 def test_end_to_end_with_lane_g_pipeline_gates_and_diff(lane_g_db):
@@ -402,3 +444,25 @@ def test_history_follows_one_director_across_runs_with_causes(lane_g_db):
     assert len([ln for ln in every.splitlines() if ln.startswith("run:")]) == 4
     kennedy = cli("history", "nm:04967001:r12").output
     assert "split nm:04967001:r12 from nm:00445790:r9" in kennedy
+
+
+def test_decisions_lists_every_decision_with_its_status(cli_db, monkeypatch):
+    import pennant.cli as cli_mod
+    from pennant.state import decisions
+
+    monkeypatch.setattr(cli_mod, "add_decision", decisions.add_decision)
+    monkeypatch.setattr(cli_mod, "revoke", decisions.revoke)
+    assert "No decisions yet" in cli("decisions").output
+    cli("merge", "Ken Murphy", "Gerry Murphy", "-r", "test", "-y")                  # dec:1
+    cli("split", "Ken Murphy", "--move", "nm:00445790:r11", "-r", "testing", "-y")  # dec:2-3
+    cli("set-fact", "seat:silver:moelis", "board_seat", "no", "-r", "adviser", "-y")  # dec:4
+    cli("undo", "dec:4", "-y")                                                       # dec:5
+    out = cli("decisions").output
+    rows = {ln.split()[0]: ln for ln in out.splitlines() if ln.startswith("dec:")}
+    assert set(rows) == {"dec:1", "dec:2", "dec:3", "dec:4", "dec:5"}
+    assert "merge Ken Murphy (Tesco r11) +" in rows["dec:1"]
+    assert "replaced by dec:3 (split; undone by dec:2)" in rows["dec:1"]
+    assert rows["dec:3"].rstrip().endswith("active") and "undone by dec:5" in rows["dec:4"]
+    assert "1 active · 1 undone · 1 replaced" in out
+    active = cli("decisions", "--active").output
+    assert "dec:3" in active and "dec:1 " not in active and "dec:4 " not in active

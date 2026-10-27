@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import importlib.util
 import sqlite3
+from collections.abc import Sequence
 from contextlib import closing
 from pathlib import Path
 from typing import Any
@@ -19,8 +20,18 @@ from typing import Any
 import typer
 from rich.text import Text
 
-from pennant.cli_changes import confirm, node_label, print_history, set_fact_preview, who
+from pennant.cli_changes import (
+    confirm,
+    node_label,
+    print_decisions,
+    print_history,
+    replacing,
+    same_meetings,
+    set_fact_preview,
+    who,
+)
 from pennant.cli_log import print_calls, print_log, work_line
+from pennant.cli_runs import print_runs, publish_run
 from pennant.cli_show import print_person
 from pennant.cli_style import changes, out
 from pennant.cli_view import (
@@ -105,6 +116,14 @@ def history(name: str, every_run: bool = typer.Option(
         print_history(conn, view, resolve_person(view, name), every_run)
 
 
+@app.command("decisions")
+def decisions_cmd(active: bool = typer.Option(False, "--active",
+                                              help="Only decisions that still apply.")) -> None:
+    """Every analyst decision in one place: what, who, why, and whether it still applies."""
+    with _open() as conn:
+        print_decisions(conn, load_view(conn), active)
+
+
 @app.command("diff")
 def diff_cmd(run_a: str | None = typer.Argument(None), run_b: str | None = typer.Argument(None)
              ) -> None:
@@ -132,7 +151,12 @@ def _print_diff(conn: sqlite3.Connection, run_a: str, run_b: str) -> None:
 # --- write commands ------------------------------------------------------------
 
 def _record_and_rerun(conn: sqlite3.Connection, kind: str, payloads: list[dict[str, Any]],
-                      author: str, reason: str) -> None:
+                      author: str, reason: str, replaces: Sequence[Decision] = ()) -> None:
+    """Undo the decisions this one replaces (the newest decision wins), record it, re-run."""
+    for old in replaces:
+        verb = {"must_link": "merge", "cannot_link": "split"}.get(kind, kind)
+        undone = revoke(conn, old.decision_id, author, f"replaced by a newer {verb}: {reason}")
+        typer.echo(f"Recorded {undone.decision_id}: revoke {old.decision_id} (replaced)")
     try:
         made = [add_decision(conn, kind, pl, author, reason) for pl in payloads]
     except ValueError as err:  # e.g. a must-link that contradicts a cannot-link
@@ -166,10 +190,37 @@ def run_cmd(offline: bool = typer.Option(False, help="Use only cached responses.
             typer.echo(f"  {work_line(report['metrics'])}")
         if report.get("log"):
             typer.echo(f"  Log: {report['log']}  (details: pennant log {run_id})")
+        if report.get("paused") and status == "staged":
+            out(Text(f"  Not published: {report['paused']}. Check it with `pennant diff`, "
+                     f"then `pennant publish {run_id}`.", style="yellow"), soft_wrap=True)
         if before and before != run_id:
             _print_diff(conn, before, run_id)
     if status in ("held", "failed"):
         raise typer.Exit(1)
+
+
+@app.command("runs")
+def runs_cmd(limit: int = typer.Option(20, "--limit", "-n", help="How many runs to list.")
+             ) -> None:
+    """Recent runs: status, who ran it, vote counts, and which one is published."""
+    with _open() as conn:
+        print_runs(conn, limit)
+
+
+@app.command("rollback")
+def rollback_cmd(run_id: str, yes: bool = YES) -> None:
+    """Publish an earlier run's votes again; later runs wait until you publish one."""
+    with _open() as conn:
+        before = publish_run(conn, run_id, yes, rollback=True)
+        _print_diff(conn, before, run_id)
+
+
+@app.command("publish")
+def publish_cmd(run_id: str, yes: bool = YES) -> None:
+    """Publish a staged run (e.g. to end a rollback once its diff looks right)."""
+    with _open() as conn:
+        before = publish_run(conn, run_id, yes, rollback=False)
+        _print_diff(conn, before, run_id)
 
 
 @app.command("log")
@@ -207,9 +258,13 @@ def merge(a: str, b: str, reason: str = REASON, author: str = AUTHOR, yes: bool 
         (na, pa), (nb, pb) = node_id(view, a), node_id(view, b)
         if na == nb or (pa and pa == pb):
             fail(f"{a!r} and {b!r} are already one person ({pa or na}).")
-        confirm([f"Merge into one person: {node_label(view, na)} and {node_label(view, nb)}"],
-                 yes)
-        _record_and_rerun(conn, "must_link", [{"a": na, "b": nb}], author, reason)
+        preview = [f"Merge into one person: {node_label(view, na)} and {node_label(view, nb)}"]
+        if both := same_meetings(view, pa, pb):
+            preview.append(f"Warning: both stand for election at {both}. A notice names each "
+                           "director once, so these are normally two people.")
+        lines, old = replacing(conn, view, "must_link", {"a": na, "b": nb})
+        confirm(preview + lines, yes)
+        _record_and_rerun(conn, "must_link", [{"a": na, "b": nb}], author, reason, old)
 
 
 @app.command()
@@ -231,11 +286,12 @@ def split(person: str, move: list[str] = typer.Option(..., "--move", help="Menti
         stay = sorted(m for m in p.mention_ids if not picked(m))
         if not moved or not stay:
             fail(f"--move must pick some but not all of {sorted(p.mention_ids)}.")
+        lines, old = replacing(conn, view, "cannot_link", {"a": moved, "b": stay})
         confirm([f"Split {who(view, p)}: {', '.join(view.mention_label(m) for m in moved)} "
-                  f"becomes someone else; {', '.join(view.mention_label(m) for m in stay)} stays"],
-                 yes)
+                  f"becomes someone else; {', '.join(view.mention_label(m) for m in stay)} stays",
+                 *lines], yes)
         # One decision per split (CONTRACT_CHANGES D1), so one undo reverses it.
-        _record_and_rerun(conn, "cannot_link", [{"a": moved, "b": stay}], author, reason)
+        _record_and_rerun(conn, "cannot_link", [{"a": moved, "b": stay}], author, reason, old)
 
 
 @app.command("set-fact")
