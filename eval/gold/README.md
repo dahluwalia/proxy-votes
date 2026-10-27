@@ -1,7 +1,8 @@
 # Gold set: board commitments, five 2026 AGMs
 
-Hand-labelled truth for every director standing at the ITV, Intertek, Tesco, M&S and Severn Trent
-2026 AGMs, plus a scorer that grades pipeline output against it. The headline metric is
+Evidence-backed answers for every director standing at the ITV, Intertek, Tesco, M&S and Severn Trent
+2026 AGMs, plus a scorer that grades pipeline output against it. The labels were gathered by a Claude
+agent with web search, not typed in by hand; see [How it was built](#how-it-was-built). The headline metric is
 **wrong AGAINST votes** (target 0).
 
 ## What's in it
@@ -18,7 +19,7 @@ Hand-labelled truth for every director standing at the ITV, Intertek, Tesco, M&S
 | `evidence.yaml` | | the source behind every label: CH records per person, notice quotes, role and organisation sources |
 | `build_gold.py`, `evidence.py` | | rebuild everything above; the build fails if any label lacks evidence or a hard case moves |
 | `score.py` | | grades a pipeline's CSV export; `--selftest` proves it catches injected errors |
-| `hard_cases.yaml` | 17 cases | the CLAUDE.md H1–H17 checks, run by `eval/hard_cases.py` against a stored run |
+| `hard_cases.yaml` | 17 cases | the H1–H17 hard cases, run by `eval/hard_cases.py` against a stored run |
 
 Expected votes: **41 FOR, 7 AGAINST, 1 REVIEW**, and one resolution withdrawn before its AGM (49 scored).
 
@@ -38,6 +39,21 @@ both meetings), Melissa Bethell, Gerry Murphy, Caroline Silver, Fiona Dawson, Ch
 Nebhrajani. One false positive on any of their seats is a wrong AGAINST.
 
 ## How it was built
+
+**Who did what.** Hand-labelling 50 directors and about 350 seats would have taken the whole 3–4 hours
+of the project. So the rules came first, decided by a person: what the evaluation needs (who stands,
+their roles and organisations, which roles are chairs), what counts as a seat, what counts as listed,
+and that a role ending before the AGM doesn't count. A Claude agent with web search then gathered the
+labels under those rules, quoting a source for every one. Judgment calls that came up along the way
+were made by the person, not the agent, and recorded in `overrides.yaml`. Finally two directors per
+notice were checked by hand against the quoted evidence: reviewing a cited label is much faster than
+producing it.
+
+**Why it can be trusted anyway.** No label stands on the agent's word. Every label carries the quote it
+came from (a notice line, a Companies House record or a web page), and the build refuses to run if one
+is missing. Votes aren't labelled at all; the build computes them from the seat labels (step 5). The
+gold had the open web and unlimited reasoning; the pipeline deliberately has neither, so where the gold
+decides and the pipeline says REVIEW, that is scored as deferred, not wrong.
 
 The same steps for every director. Each label in `seats.yaml` carries the evidence it was read from, and
 `build_gold.py` refuses to build if a seat has none, or if a seat that could count rests on an organisation
@@ -60,8 +76,8 @@ with no source for its listing.
     - *Current*: the notice's tense; for a CH appointment, its dates against each meeting's AGM date (a seat
       that starts between two AGMs counts only at the later one). The seat at the meeting itself is the seat
       under vote and always counts (policy `count_seat_under_vote`).
-    - *Board seat*: a CH director appointment is one. Otherwise the role title decides (the CLAUDE.md M5.1
-      table); a job title alone (CEO, EVP) needs a cited board list.
+    - *Board seat*: a CH director appointment is one. Otherwise the role title decides (the same table as
+      `pennant/classify/roles.py`); a job title alone (CEO, EVP) needs a cited board list.
     - *Chair and executive*: the role title, from the notice or a cited source.
     - *Listed*: a private company type on CH settles "no". Anything else needs a cited exchange, company or
       regulator page showing its shares traded on the AGM date (`listed`).
@@ -131,7 +147,8 @@ From the repo root:
   outside roles, and Companies House seats such as McCall's Bridgepoint and Dolan's Pearson directorships.
   A notice-only pipeline should say REVIEW for those people, which scores as deferred, not wrong.
 - **Roles the notice and CH don't state** (all M&S titles, Kawal Preet at FedEx, Caroline Silver at Moelis)
-  come from cited company sources. The pipeline doesn't research people's roles, so it defers these.
+  come from cited company sources. The pipeline looks up a role only on the firm's own website, so where
+  that site doesn't say (FedEx), it defers.
 - **Org matching.** The scorer matches org names fuzzily within each person, so Burberry Group and The
   Burberry Foundation stay apart. Abbreviations such as "ICE" for Intercontinental Exchange won't match.
 
@@ -146,7 +163,8 @@ From the repo root:
 - **Policy sensitivity.** The report re-scores the run under each `aim_counts_as_listed` value (without
   writing) and grades each against gold's answer for that value.
 - **Hard cases** (`hard_cases.yaml`) follow gold where they overlap. Where gold needed a role source the
-  pipeline doesn't use (Silver at Moelis, Preet at FedEx), REVIEW is accepted as a deferral; Garnier's
+  pipeline may not reach (a firm's site that doesn't state the role, such as Preet at FedEx), REVIEW is
+  accepted as a deferral; Garnier's
   withdrawn resolution must never be AGAINST.
 - **Rebuilding** needs `openpyxl` (in the dev extra) and the recorded CH responses in `tests/fixtures/ch/`;
   scoring needs only PyYAML. Rebuilding reproduces the shipped YAML byte for byte.
