@@ -1,0 +1,142 @@
+{
+ "key": "e68456021cf90c3e34d769bb4591ebb87f67c32e3732567536e38f9e65cb5220",
+ "payload": {
+  "content": [
+   {
+    "query": "Atoll Holdco Ltd FC040033",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "\"Atoll Holdco\" Limited",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Atoll Holdco Ltd - Company Profile - Endole",
+      "url": "https://open.endole.co.uk/insight/company/FC040033-atoll-holdco-ltd"
+     },
+     {
+      "page_age": null,
+      "title": "ATOLL HOLDCO LTD. overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC040033"
+     },
+     {
+      "page_age": null,
+      "title": "ATOLL HOLDCO LTD. persons with significant control - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC040033/persons-with-significant-control"
+     },
+     {
+      "page_age": null,
+      "title": "ATOLL HOLDCO LTD. - UK Establishments - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC040033/ukestablishments"
+     },
+     {
+      "page_age": null,
+      "title": "ATOLL HOLDCO LTD. people - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC040033/officers"
+     },
+     {
+      "page_age": null,
+      "title": "Matt FELDMAN personal appointments - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/officers/R0iiAF0KAV111V1AhJKqBjnJJ-U/appointments"
+     },
+     {
+      "page_age": null,
+      "title": "OGIER GLOBAL (CAYMAN) LIMITED personal appointments - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/officers/0prEtcObhOiaI2rt-iZ3DdzfzOM/appointments"
+     },
+     {
+      "page_age": null,
+      "title": "primary_doc.xml",
+      "url": "https://www.sec.gov/Archives/edgar/data/1928511/000095010322011250/primary_doc.xml"
+     },
+     {
+      "page_age": "573 days ago",
+      "title": "89 NEXUS WAY, CAMANA BAY, GRAND CAYMAN, KY1-9009, CAYMAN ISLANDS",
+      "url": "https://ukcompanies.lursoft.lv/en/address/89-nexus-way-camana-bay-ky1-9009-cayman-islands-grand-cayman/companies"
+     },
+     {
+      "page_age": null,
+      "title": "Atoll Holdco Ltd. Company Info",
+      "url": "https://www.greatbusinessexchange.co.uk/company/ATOLL-HOLDCO-LTD./FC040033/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Atoll Holdco Ltd - Company Profile - Endole",
+      "url": "https://open.endole.co.uk/insight/company/FC040033-atoll-holdco-ltd"
+     },
+     {
+      "page_age": null,
+      "title": "ATOLL HOLDCO LTD. overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC040033"
+     },
+     {
+      "page_age": null,
+      "title": "ATOLL HOLDCO LTD. persons with significant control - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC040033/persons-with-significant-control"
+     },
+     {
+      "page_age": null,
+      "title": "primary_doc.xml",
+      "url": "https://www.sec.gov/Archives/edgar/data/1928511/000095010322011250/primary_doc.xml"
+     },
+     {
+      "page_age": null,
+      "title": "ATOLL HOLDCO LTD. - UK Establishments - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC040033/ukestablishments"
+     },
+     {
+      "page_age": null,
+      "title": "ATOLL HOLDCO LTD. people - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC040033/officers"
+     },
+     {
+      "page_age": "776 days ago",
+      "title": "Modern Slavery Statement",
+      "url": "https://oceanoutdoor.com/modern-slavery-statement/"
+     },
+     {
+      "page_age": "1624 days ago",
+      "title": "Merger-Circular-Online-Publication.pdf",
+      "url": "https://aws.oceanoutdoor.com/website/wp-content/uploads/2022/08/Merger-Circular-Online-Publication.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Atoll Holdco Ltd. Company Info",
+      "url": "https://www.greatbusinessexchange.co.uk/company/ATOLL-HOLDCO-LTD./FC040033/"
+     },
+     {
+      "page_age": null,
+      "title": "BVI Holdco definition",
+      "url": "https://www.lawinsider.com/dictionary/bvi-holdco"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://oceanoutdoor.com\",\n    \"url\": \"https://oceanoutdoor.com/modern-slavery-statement/\",\n    \"quote\": \"This statement is made on behalf of Atoll Holdco Limited\"\n  },\n  \"note\": \"Atoll Holdco Ltd is the Cayman-incorporated top company of the Ocean Outdoor group, which was formed for the Ocean Outdoor Limited merger. The group's own site, oceanoutdoor.com, has a Modern Slavery Statement made on behalf of Atoll Holdco Limited and its subsidiaries. I did not open any board or governance pages there. Endole lists a different site, Kenyoninternational.com. I did not use it because it is a third-party directory entry and I could not confirm it.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:49:46+00:00",
+  "inputs": {
+   "org_key": "atoll-holdco"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 20558,
+   "output_tokens": 643,
+   "web_search_requests": 2
+  }
+ }
+}

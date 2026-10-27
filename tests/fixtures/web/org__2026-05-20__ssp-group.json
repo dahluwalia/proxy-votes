@@ -1,0 +1,305 @@
+{
+ "key": "81c5519b4dce16719dac8e933bedba399cdaae7b4a65445e9117beb9f9b7e563",
+ "payload": {
+  "content": [
+   {
+    "query": "SSP Group plc London Stock Exchange SSPG main market",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "SSP Group plc annual general meeting 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "SSP Group listing Australia ASX secondary listing 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "SSP Group (LON:SSPG) Stock Price & Overview",
+      "url": "https://stockanalysis.com/quote/lon/SSPG/"
+     },
+     {
+      "page_age": "1267 days ago",
+      "title": "SSP Group Share Price. SSPG - Stock Quote, Charts, Trade History, Share Chat, SSPG Values. Ssp Group Plc Ord 1 17/200p",
+      "url": "https://www.lse.co.uk/SharePrice.html?shareprice=SSPG&share=Ssp-Group"
+     },
+     {
+      "page_age": "619 days ago",
+      "title": "SSP Group plc Stock (SSPG) - Quote London S.E.- MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/SSP-GROUP-PLC-57195142/"
+     },
+     {
+      "page_age": null,
+      "title": "SSP Group",
+      "url": "https://en.wikipedia.org/wiki/SSP_Group"
+     },
+     {
+      "page_age": "160 days ago",
+      "title": "SSP Group PLC Stock Price Today",
+      "url": "https://www.investing.com/equities/ssp-grp"
+     },
+     {
+      "page_age": "166 days ago",
+      "title": "SSPG Stock Price and Chart \u2014 LSE:SSPG \u2014 TradingView",
+      "url": "https://www.tradingview.com/symbols/LSE-SSPG/"
+     },
+     {
+      "page_age": "0 days ago",
+      "title": "SSP Group PLC Transaction in Own Shares - ADVFN",
+      "url": "https://uk.advfn.com/stock-market/london/ssp-SSPG/share-news/SSP-Group-PLC-Transaction-in-Own-Shares/99552297"
+     },
+     {
+      "page_age": null,
+      "title": "stock analysis",
+      "url": "https://www.tipranks.com/stocks/gb:sspg/stock-analysis"
+     },
+     {
+      "page_age": null,
+      "title": "ai stock analysis",
+      "url": "https://www.tipranks.com/stocks/gb:sspg/ai-stock-analysis"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "704 days ago",
+      "title": "SSP Group plc: Company Events Publications and Financial Calendar",
+      "url": "https://www.marketscreener.com/quote/stock/SSP-GROUP-PLC-57195142/calendar/"
+     },
+     {
+      "page_age": "314 days ago",
+      "title": "Publication of Annual Report and Accounts",
+      "url": "https://www.investegate.co.uk/announcement/rns/ssp-group--sspg/publication-of-annual-report-and-accounts/9300829"
+     },
+     {
+      "page_age": null,
+      "title": "SSP Group plc Notice of 2026 Annual General Meeting",
+      "url": "https://www.foodtravelexperts.com/media/n4hjdybo/ssp_agm-2026-notice-of-meeting.pdf"
+     },
+     {
+      "page_age": "129 days ago",
+      "title": "SSP Group PLC Share News, Key Dates and Documents",
+      "url": "https://www.fidelity.co.uk/factsheet-data/factsheet/GB00BGBN7C04-ssp-group-plc/news-key-dates-and-documents"
+     },
+     {
+      "page_age": null,
+      "title": "Shareholder centre - 2025 Annual General Meeting",
+      "url": "https://www.foodtravelexperts.com/investors/shareholder-centre/"
+     },
+     {
+      "page_age": "17 days ago",
+      "title": "SSP Group launches further \u00a350 million share buyback",
+      "url": "https://uk.finance.yahoo.com/news/ssp-group-launches-further-50-062300216.html"
+     },
+     {
+      "page_age": "314 days ago",
+      "title": "Posting of 2025 Annual Report and Accounts and Notice of Annual General Meeting",
+      "url": "https://www.foodtravelexperts.com/news-and-insights/2025/posting-of-2025-annual-report-and-accounts-and-notice-of-annual-general-meeting/"
+     },
+     {
+      "page_age": null,
+      "title": "ssp group posting of 2025 annual report and accounts and notice of annual general meeting ce7d50dfdf88f722",
+      "url": "https://www.marketscreener.com/news/ssp-group-posting-of-2025-annual-report-and-accounts-and-notice-of-annual-general-meeting-ce7d50dfdf88f722"
+     },
+     {
+      "page_age": null,
+      "title": "Press Releases",
+      "url": "https://in.marketscreener.com/quote/stock/SSP-GROUP-PLC-57195142/news-press-releases/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Australian Securities Exchange",
+      "url": "https://en.wikipedia.org/wiki/Australian_Securities_Exchange"
+     },
+     {
+      "page_age": "32 days ago",
+      "title": "Expected ASX secondary listing date",
+      "url": "https://www.glencore.com/media-and-insights/news/expected-asx-secondary-listing-date"
+     },
+     {
+      "page_age": "93 days ago",
+      "title": "ASX Listings FY26 year in review",
+      "url": "https://www.asx.com.au/blog/listed-at-asx/asx-listings-fy26-year-in-review"
+     },
+     {
+      "page_age": "32 days ago",
+      "title": "Expected ASX secondary listing date - 10:00:00 24 Sep 2026 - GLEN News article",
+      "url": "https://www.londonstockexchange.com/news-article/GLEN/expected-asx-secondary-listing-date/17803341"
+     },
+     {
+      "page_age": "1095 days ago",
+      "title": "Follow us @ ASX Follow us on LinkedIn Follow us on Facebook",
+      "url": "https://www.asx.com.au/content/dam/asx/documents/listings/listings-presentation.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Credit Corp Group",
+      "url": "https://en.wikipedia.org/wiki/Credit_Corp_Group"
+     },
+     {
+      "page_age": "52 days ago",
+      "title": "ASX Group Monthly Activity Report for August 2026",
+      "url": "https://www.asx.com.au/content/dam/asx/about/media-releases/2026/65-04-september-2026-asx-group-monthly-activity-report-august-2026.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "ASX 20",
+      "url": "https://en.wikipedia.org/wiki/S%26P/ASX_20"
+     },
+     {
+      "page_age": null,
+      "title": "Endeavour Group",
+      "url": "https://en.wikipedia.org/wiki/Endeavour_Group"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "SSP Group plc \"Main Market\" London Stock Exchange admitted to trading annual report 2025",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "SSP Group Travel Food Services IPO India listing SSP stake 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "SSP Group",
+      "url": "https://en.wikipedia.org/wiki/SSP_Group"
+     },
+     {
+      "page_age": "326 days ago",
+      "title": "2025 FULL YEAR RESULTS ANNOUNCEMENT - 07:00:12 04 Dec 2025 - SSPG News article",
+      "url": "https://www.londonstockexchange.com/news-article/SSPG/2025-full-year-results-announcement/17357572"
+     },
+     {
+      "page_age": "524 days ago",
+      "title": "2025 HALF YEAR RESULTS - 07:00:09 20 May 2025 - SSPG News article",
+      "url": "https://www.londonstockexchange.com/news-article/SSPG/2025-HALF-YEAR-RESULTS-/17044229"
+     },
+     {
+      "page_age": "87 days ago",
+      "title": "SSP Group share price",
+      "url": "https://research-centre.barclays.co.uk/shares/ssp-group/company-information/"
+     },
+     {
+      "page_age": null,
+      "title": "SSP GROUP PLC SSPG Trade recap - Stock",
+      "url": "https://www.londonstockexchange.com/stock/SSPG/ssp-group-plc/trade-recap?lang=en"
+     },
+     {
+      "page_age": "160 days ago",
+      "title": "2026 HALF YEAR RESULTS ANNOUNCEMENT - 07:00:05 19 May 2026 - SSPG News article",
+      "url": "https://www.londonstockexchange.com/news-article/SSPG/2026-half-year-results-announcement/17597658"
+     },
+     {
+      "page_age": null,
+      "title": "SSP GROUP PLC SSPG Our story - Stock",
+      "url": "https://www.londonstockexchange.com/stock/SSPG/ssp-group-plc/our-story"
+     },
+     {
+      "page_age": "2751 days ago",
+      "title": "SSP GROUP PLC SSPG Stock",
+      "url": "https://www.londonstockexchange.com/stock/SSPG/ssp-group-plc/company-page"
+     },
+     {
+      "page_age": null,
+      "title": "ssp group posting of 2025 annual report and accounts and notice of annual general meeting ce7d50dfdf88f722",
+      "url": "https://www.marketscreener.com/news/ssp-group-posting-of-2025-annual-report-and-accounts-and-notice-of-annual-general-meeting-ce7d50dfdf88f722"
+     },
+     {
+      "page_age": null,
+      "title": "SSP Group PlcSSP Group PlcSSP Group Plc",
+      "url": "https://in.tradingview.com/symbols/FWB-83S2"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "685 days ago",
+      "title": "SSP Group announces IPO of Travel Food Services in India",
+      "url": "https://uk.marketscreener.com/quote/stock/SSP-GROUP-PLC-57195142/news/SSP-Group-announces-IPO-of-Travel-Food-Services-in-India-48563395/"
+     },
+     {
+      "page_age": "473 days ago",
+      "title": "Travel Food Services IPO priced at top end of range By Investing.com",
+      "url": "https://www.investing.com/news/company-news/travel-food-services-ipo-priced-at-top-end-of-range-93CH-4129233"
+     },
+     {
+      "page_age": "684 days ago",
+      "title": "SSP: Planned Initial Public Offering in India of Travel Food Services Limited",
+      "url": "https://www.marketscreener.com/quote/stock/SSP-GROUP-PLC-57195142/news/SSP-Planned-Initial-Public-Offering-in-India-of-Travel-Food-Services-Limited-48571738/"
+     },
+     {
+      "page_age": "685 days ago",
+      "title": "ssp-group-planned-ipo-of-tfs-in-india.pdf",
+      "url": "https://www.foodtravelexperts.com/media/h0tkaxzu/ssp-group-planned-ipo-of-tfs-in-india.pdf"
+     },
+     {
+      "page_age": "481 days ago",
+      "title": "SSP Group Sets Travel Food Services IPO Price Range",
+      "url": "https://www.rttnews.com/3550309/ssp-group-sets-travel-food-services-ipo-price-range.aspx"
+     },
+     {
+      "page_age": "17 days ago",
+      "title": "SSP prices TPS IPO at top-end of guided range - Sharecast.com",
+      "url": "https://www.sharecast.com/news/news-and-announcements/ssp-prices-tps-ipo-at-top-end-of-guided-range--20261156.html"
+     },
+     {
+      "page_age": "481 days ago",
+      "title": "SSP Group and K Hospitality Launch IPO for India-Based Travel Food Services",
+      "url": "https://uk.advfn.com/market-news/article/1298/ssp-group-and-k-hospitality-launch-ipo-for-india-based-travel-food-services"
+     },
+     {
+      "page_age": null,
+      "title": "Update on Proposed TFS IPO, 02 July 2025 07:00",
+      "url": "https://www.investormeetcompany.com/companies/ssp-group-plc/rns/4228374/view"
+     },
+     {
+      "page_age": "476 days ago",
+      "title": "SSP Group notes IPO of Indian joint venture, Travel Food Services",
+      "url": "https://shareprices.com/news/ssp-group-notes-ipo-of-indian-joint-venture-travel-food-services-157szi9n3lle9ee/"
+     },
+     {
+      "page_age": "469 days ago",
+      "title": "Travel Food Retailer SSP Sees Debut Indian IPO Decline In Value",
+      "url": "https://bitcoinethereumnews.com/finance/travel-food-retailer-ssp-sees-debut-indian-ipo-decline-in-value/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"SSP Group plc\", \"url\": \"https://www.foodtravelexperts.com/media/n4hjdybo/ssp_agm-2026-notice-of-meeting.pdf\", \"quote\": \"SSP Group plc (Incorporated and registered in England and Wales under number 5735966)\"},\n  \"country\": {\"value\": \"United Kingdom\", \"url\": \"https://www.foodtravelexperts.com/media/n4hjdybo/ssp_agm-2026-notice-of-meeting.pdf\", \"quote\": \"Incorporated and registered in England and Wales under number 5735966\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://www.foodtravelexperts.com/media/n4hjdybo/ssp_agm-2026-notice-of-meeting.pdf\", \"quote\": \"SSP Group plc (Incorporated and registered in England and Wales under number 5735966)\"},\n  \"equity_listed\": {\"value\": \"yes\", \"url\": \"https://www.londonstockexchange.com/stock/SSPG/ssp-group-plc/trade-recap?lang=en\", \"quote\": \"Listing / Admission to trading 15 July 2014 Market Main Market\"},\n  \"exchange\": {\"value\": \"London Stock Exchange\", \"url\": \"https://www.londonstockexchange.com/stock/SSPG/ssp-group-plc/trade-recap?lang=en\", \"quote\": \"Market identifier code (MIC) XLON\"},\n  \"ticker\": {\"value\": \"SSPG\", \"url\": \"https://www.londonstockexchange.com/stock/SSPG/ssp-group-plc/trade-recap?lang=en\", \"quote\": \"SSPG ORD 1 17/200P\"},\n  \"market_segment\": {\"value\": \"main\", \"url\": \"https://www.londonstockexchange.com/stock/SSPG/ssp-group-plc/trade-recap?lang=en\", \"quote\": \"Market Main Market\"},\n  \"debt_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"is_subsidiary\": {\"value\": \"no\", \"url\": \"https://www.marketscreener.com/quote/stock/SSP-GROUP-PLC-57195142/\", \"quote\": \"Free-Float | 99.22%\"},\n  \"parent_name\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"parent_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"events\": [\n    {\"date\": \"2025-07-14\", \"event\": \"IPO and listing on Indian exchanges (NSE/BSE) of Travel Food Services Ltd, SSP's 50.01%-owned consolidated subsidiary (not SSP's own shares). Date is the expected first trading day; a later article says it debuted on two Indian exchanges.\", \"url\": \"https://www.rttnews.com/3550309/ssp-group-sets-travel-food-services-ipo-price-range.aspx\", \"quote\": \"TFS shares are expected to trade on the Indian stock exchange on July 14.\"}\n  ],\n  \"note\": \"I searched for SSP Group plc, the London Main Market company. The LSE page lists it on the Main Market with the FCA category 'Equity shares (commercial companies)'. I found no SSP delisting, demerger or takeover of SSP itself in the three years before 2026-05-20, and the only event listed is the TFS IPO. The ordinary shares were listed on the Main Market from 15 July 2014, which is outside the three-year window. SSP's 2026 AGM was held on 23 January 2026, not on 2026-05-20. H1 results came out on 19 May 2026, and the LSE results page confirms that release date. The LSE pages I found are undated, and I found no page dated exactly 2026-05-20. The shares were still trading in October 2026, so no delisting is indicated. 'is_subsidiary: no' rests on the 99.22% free float shown on MarketScreener, and I found no explicit statement that SSP has no parent. I found no source on whether any SSP bonds or notes are admitted to trading, so debt_listed is unknown.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:24:41+00:00",
+  "inputs": {
+   "as_of": "2026-05-20",
+   "org_key": "ssp-group"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 67260,
+   "output_tokens": 2840,
+   "web_search_requests": 5
+  }
+ }
+}

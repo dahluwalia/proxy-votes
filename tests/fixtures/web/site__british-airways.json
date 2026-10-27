@@ -1,0 +1,132 @@
+{
+ "key": "1ef84d7bdf1df7707ae4a40da43bbc738ae353d387edd2ce23fe4c1b6900f631",
+ "payload": {
+  "content": [
+   {
+    "query": "British Airways Plc company number 01777777 board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "British Airways corporate website board of directors IAG",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "967 days ago",
+      "title": "British Airways Plc Annual Report and Accounts Year ended 31 December 2023",
+      "url": "https://www.iairgroup.com/media/2h0hgqdq/british-airways-annual-report-and-accounts-2023.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "British Airways Plc - Company Profile - Endole",
+      "url": "https://open.endole.co.uk/insight/company/01777777-british-airways-plc"
+     },
+     {
+      "page_age": null,
+      "title": "BRITISH AIRWAYS PLC",
+      "url": "http://companycheck.co.uk/company/01777777/BRITISH-AIRWAYS-PLC"
+     },
+     {
+      "page_age": null,
+      "title": "British Airways PLC",
+      "url": "https://www.creditsafe.com/business-index/en-lu/company/british-airways-plc-uk01444641"
+     },
+     {
+      "page_age": null,
+      "title": "British Airways PLC (01777777): Directors, Owners, Financials & Properties",
+      "url": "https://www.formationdata.co.uk/company/british-airways-plc-01777777"
+     },
+     {
+      "page_age": null,
+      "title": "BRITISH AIRWAYS PLC - Companies House directors, PSC & filings",
+      "url": "https://registrum.co.uk/company/01777777"
+     },
+     {
+      "page_age": null,
+      "title": "British Airways Plc \u00b7 Waterside, Speedbird Way, Harmondsworth, UB7 0GB, UNITED KINGDOM",
+      "url": "https://opencorpdata.com/uk/01777777"
+     },
+     {
+      "page_age": null,
+      "title": "- Company Overview for BRITISH AIRWAYS PLC (01777777)",
+      "url": "https://find-and-update.company-information.service.gov.uk:443/company/01777777/officers?page=2"
+     },
+     {
+      "page_age": null,
+      "title": "- Company Overview for BRITISH AIRWAYS PLC (01777777)",
+      "url": "https://find-and-update.company-information.service.gov.uk:443/company/01777777/persons-with-significant-control"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "2427 days ago",
+      "title": "86 Chairman\u2019s introduction to corporate governance 88 Board of Directors 90",
+      "url": "https://www.iairgroup.com/media/vnupwdvf/uk-corporate-governance-english.pdf"
+     },
+     {
+      "page_age": "531 days ago",
+      "title": "Board of Directors",
+      "url": "https://www.iairgroup.com/governance/board-of-directors/"
+     },
+     {
+      "page_age": "1328 days ago",
+      "title": "INTERNATIONAL AIRLINES GROUP ANNUAL CORPORATE GOVERNANCE REPORT 2022",
+      "url": "https://www.iairgroup.com/media/3gai2odz/uk_corporate_governance_report.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Martin Broughton",
+      "url": "https://en.wikipedia.org/wiki/Martin_Broughton"
+     },
+     {
+      "page_age": "1396 days ago",
+      "title": "British Airways Plc Annual Report and Accounts Year ended 31 December 2022",
+      "url": "https://www.iairgroup.com/media/v32fsxl4/british-airways-annual-report-and-accounts-2022.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "INTERNATIONAL CONSOLIDATED AIRLINES GROUP, S.A. BOARD OF DIRECTORS",
+      "url": "http://media.corporate-ir.net/media_files/irol/24/240949/boardofdirectors.pdf"
+     },
+     {
+      "page_age": "5755 days ago",
+      "title": "Homepage",
+      "url": "https://www.iairgroup.com/"
+     },
+     {
+      "page_age": null,
+      "title": "%C3%81lex Cruz (businessman)",
+      "url": "https://en.wikipedia.org/wiki/%C3%81lex_Cruz_(businessman)"
+     },
+     {
+      "page_age": null,
+      "title": "Governance",
+      "url": "https://www.iairgroup.com/governance/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.iairgroup.com\",\n    \"url\": \"https://www.iairgroup.com/media/2h0hgqdq/british-airways-annual-report-and-accounts-2023.pdf\",\n    \"quote\": \"British Airways Plc (\u2018British Airways\u2019, \u2018BA\u2019, \u2018the airline\u2019 or \u2018the Group\u2019) is the UK\u2019s flag carrier airline\"\n  },\n  \"note\": \"British Airways Plc is a subsidiary of International Consolidated Airlines Group (IAG). IAG's site, iairgroup.com, covers it. Its homepage says IAG is the parent company of British Airways, and it hosts British Airways Plc's own annual reports, which list the company's directors and board. Companies House shows IAG as a person with significant control. The airline's consumer site (britishairways.com) was not used because I did not find a page on it about the board. The quoted page is the 2023 annual report, so check the IAG board and governance pages for current directors.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:51:34+00:00",
+  "inputs": {
+   "org_key": "british-airways"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 19781,
+   "output_tokens": 922,
+   "web_search_requests": 2
+  }
+ }
+}

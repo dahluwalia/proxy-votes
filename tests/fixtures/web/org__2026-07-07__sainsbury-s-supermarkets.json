@@ -1,0 +1,251 @@
+{
+ "key": "07892662b37a98e30ff47e269280f2da2c0a332934b619e63143b0f41274d13a",
+ "payload": {
+  "content": [
+   {
+    "query": "Sainsbury's Supermarkets Ltd company registered number subsidiary of J Sainsbury plc",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "J Sainsbury plc AGM 2026 results of annual general meeting 7 July 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Sainsbury's Store Support Centre 33 Holborn London EC1N 2HT",
+      "url": "https://committees.parliament.uk/publications/40839/documents/198985/default/"
+     },
+     {
+      "page_age": null,
+      "title": "Sainsbury%27s",
+      "url": "https://en.wikipedia.org/wiki/Sainsbury%27s"
+     },
+     {
+      "page_age": null,
+      "title": "SAINSBURY'S SUPERMARKETS LTD filing history - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03261722/filing-history"
+     },
+     {
+      "page_age": "3043 days ago",
+      "title": "J Sainsbury Plc",
+      "url": "https://www.encyclopedia.com/social-sciences-and-law/economics-business-and-labor/businesses-and-occupations/j-sainsbury-plc"
+     },
+     {
+      "page_age": "126 days ago",
+      "title": "Sainsbury's - Overview, News & Similar companies",
+      "url": "https://www.zoominfo.com/c/sainsburys/244105590"
+     },
+     {
+      "page_age": null,
+      "title": "Sainsbury's - Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q152096"
+     },
+     {
+      "page_age": null,
+      "title": "SAINSBURY'S SUPERMARKETS LTD",
+      "url": "https://companycheck.co.uk/company/03261722/SAINSBURYS-SUPERMARKETS-LTD/companies-house-data"
+     },
+     {
+      "page_age": "27 days ago",
+      "title": "SAINSBURY'S SUPERMARKETS LTD (London, Reg. 03261722): UBO, Shareholders & Group Structure (United Kingdom)",
+      "url": "https://zavia.ai/companies/sainsburys-supermarkets-ltd-gb-21497475/"
+     },
+     {
+      "page_age": "10973 days ago",
+      "title": "SAINSBURY'S SUPERMARKETS LTD \u2014 The Accounts",
+      "url": "https://theaccounts.uk/company/03261722/sainsbury-s-supermarkets-ltd/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "AGM",
+      "url": "https://corporate.sainsburys.co.uk/investors/shareholder-information/agm2026/"
+     },
+     {
+      "page_age": "116 days ago",
+      "title": "REG - Sainsbury(J) PLC - Result of AGM \u2014 TradingView News",
+      "url": "https://www.tradingview.com/news/reuters.com,2026-07-02:newsml_RSB8584Ka:0-reg-sainsbury-j-plc-result-of-agm/"
+     },
+     {
+      "page_age": "118 days ago",
+      "title": "Notice of Annual General Meeting 2026 - J Sainsbury plc",
+      "url": "https://corporate.sainsburys.co.uk/media/uirpwmtd/2026-js-agm-notice-of-meeting.pdf"
+     },
+     {
+      "page_age": "116 days ago",
+      "title": "Result of AGM",
+      "url": "https://www.investegate.co.uk/announcement/rns/sainsbury-j---sbry/result-of-agm/9650456"
+     },
+     {
+      "page_age": "116 days ago",
+      "title": "J Sainsbury : AGM 2026 Voting Results (?ID=8090013&lang=en GB&companycode=uk sbry&v=)",
+      "url": "https://www.marketscreener.com/news/j-sainsbury-agm-2026-voting-results-id-8090013-lang-en-gb-companycode-uk-sbry-v--ce7f5fd3dd88f420"
+     },
+     {
+      "page_age": "146 days ago",
+      "title": "J SAINSBURY",
+      "url": "https://www.stockopedia.com/share-prices/j-sainsbury-LON:SBRY/news/annual-report-and-notice-of-agm-2026-019e88b1-0bb7-730b-b735-2de6a6291915/"
+     },
+     {
+      "page_age": "116 days ago",
+      "title": "Sainsbury\u2019s shareholders back all AGM resolutions, approve dividend and board mandates - TipRanks.com",
+      "url": "https://www.tipranks.com/news/company-announcements/sainsburys-shareholders-back-all-agm-resolutions-approve-dividend-and-board-mandates"
+     },
+     {
+      "page_age": "146 days ago",
+      "title": "J Sainsbury publishes annual report, sets July AGM date By Investing.com",
+      "url": "https://www.investing.com/news/company-news/j-sainsbury-publishes-annual-report-sets-july-agm-date-93CH-4722339"
+     },
+     {
+      "page_age": null,
+      "title": "J Sainsbury plc (JSNSF) Q1 2025/2026 Sales/Trading Call Transcript",
+      "url": "https://seekingalpha.com/article/4798589-j-sainsbury-plc-jsnsf-q1-2025-2026-sales-trading-statement-call-transcript"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "J Sainsbury plc London Stock Exchange main market FTSE 100 SBRY bonds admitted to trading",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Sainsbury's Bank sale to NatWest completion 2025",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Sainsbury%27s",
+      "url": "https://en.wikipedia.org/wiki/Sainsbury%27s"
+     },
+     {
+      "page_age": "321 days ago",
+      "title": "SAINSBURY (J) PLC SBRY Stock",
+      "url": "https://www.londonstockexchange.com/stock/SBRY/sainsbury-j-plc"
+     },
+     {
+      "page_age": "119 days ago",
+      "title": "J Sainsbury PLC Share Price",
+      "url": "https://uk.investing.com/equities/sainsbury"
+     },
+     {
+      "page_age": "327 days ago",
+      "title": "Sainsbury's Share Price. SBRY - Stock Quote, Charts, Trade History, Share Chat, SBRY Values. Sainsbury (j) Plc Ord 28 4/7p",
+      "url": "https://www.lse.co.uk/SharePrice.html?shareprice=SBRY&share=sainsburys"
+     },
+     {
+      "page_age": "99 days ago",
+      "title": "J Sainsbury plc (SBRY.L) stock price, news, quote and history - Yahoo Finance",
+      "url": "https://uk.finance.yahoo.com/quote/SBRY.L/"
+     },
+     {
+      "page_age": "552 days ago",
+      "title": "SAINSBURY (J) PLC YO00 Stock",
+      "url": "https://www.londonstockexchange.com/stock/YO00/sainsbury-j-plc"
+     },
+     {
+      "page_age": null,
+      "title": "LSE:SBRY - J Sainsbury Plc",
+      "url": "https://www.tradingview.com/symbols/LSE-SBRY/"
+     },
+     {
+      "page_age": "623 days ago",
+      "title": "J Sainsbury plc Stock (SBRY) - Quote London S.E.- MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/J-SAINSBURY-PLC-9590189/"
+     },
+     {
+      "page_age": "164 days ago",
+      "title": "J Sainsbury plc (SBRY) Stock Price & News - Google Finance",
+      "url": "https://www.google.com/finance/beta/quote/SBRY:LON"
+     },
+     {
+      "page_age": "4 days ago",
+      "title": "Sainsbury's lifts profit guidance for Sainsbury's stock",
+      "url": "https://ad-hoc-news.de/boerse/news/corporate-news/sainsbury-s-lifts-profit-guidance-for-sainsbury-s-stock/70393550"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "858 days ago",
+      "title": "Purchase of Sainsbury\u2019s Bank assets & liabilities",
+      "url": "https://www.investegate.co.uk/announcement/rns/natwest-group--nwg/purchase-of-sainsbury-s-bank-assets-liabilities/8268962"
+     },
+     {
+      "page_age": "318 days ago",
+      "title": "Purchase of Sainsbury\u2019s Bank assets & liabilities",
+      "url": "https://www.natwestgroup.com/news-and-insights/news-room/press-releases/our-updates/2024/jun/purchase-of-sainsburys-bank-assets-and-liabilities.html"
+     },
+     {
+      "page_age": "858 days ago",
+      "title": "Sale of Core Banking Business to Natwest Group",
+      "url": "https://corporate.sainsburys.co.uk/news/press-releases/sale-of-core-banking-business-to-natwest-group/"
+     },
+     {
+      "page_age": "151 days ago",
+      "title": "A&O Shearman advises NatWest on Sainsbury\u2019s deal",
+      "url": "https://www.aoshearman.com/en/news/ao-shearman-is-advising-natwest-group-on-the-acquisition-of-sainsbury"
+     },
+     {
+      "page_age": null,
+      "title": "Sainsbury%27s Bank",
+      "url": "https://en.wikipedia.org/wiki/Sainsbury%27s_Bank"
+     },
+     {
+      "page_age": "542 days ago",
+      "title": "NatWest issues major update as 1.8 million Sainsbury's Bank customers to be impacted by takeover",
+      "url": "https://www.gbnews.com/money/natwest-update-sainsburys-bank-takeover"
+     },
+     {
+      "page_age": "491 days ago",
+      "title": "Purchase of Sainsbury\u2019s Bank assets & liabilities, 20 June 2024 07:01",
+      "url": "https://www.investormeetcompany.com/companies/natwest-group-plc/rns/3672064/view"
+     },
+     {
+      "page_age": "858 days ago",
+      "title": "Sainsbury\u2019s to Sell Banking Division to NatWest",
+      "url": "https://fintechmagazine.com/articles/sainsburys-to-sell-banking-division-to-uk-bank-natwest"
+     },
+     {
+      "page_age": "858 days ago",
+      "title": "NatWest to Acquire Sainsbury's Banking Business for \u00a32.5 Billion - CTOL Digital Solutions",
+      "url": "https://www.ctol.digital/news/natwest-acquires-sainsburys-banking-business-2-5-billion/"
+     },
+     {
+      "page_age": null,
+      "title": "6-K 1 a2008t.htm PURCHASE OF SAINSBURYS BANK ASSETS & LIABILITIES a2008t",
+      "url": "https://www.sec.gov/Archives/edgar/data/844150/000165495424007951/a2008t.htm"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"Sainsbury's Supermarkets Ltd\", \"url\": \"https://find-and-update.company-information.service.gov.uk/company/03261722/filing-history\", \"quote\": \"SAINSBURY'S SUPERMARKETS LTD - Free company information from Companies House including registered office address, filing history, accounts\"},\n  \"country\": {\"value\": \"United Kingdom\", \"url\": \"https://zavia.ai/companies/sainsburys-supermarkets-ltd-gb-21497475/\", \"quote\": \"Sainsbury\u2019s Supermarkets Ltd is a private limited company registered in England and Wales under company number 03261722.\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://zavia.ai/companies/sainsburys-supermarkets-ltd-gb-21497475/\", \"quote\": \"Sainsbury\u2019s Supermarkets Ltd is a private limited company registered in England and Wales under company number 03261722.\"},\n  \"equity_listed\": {\"value\": \"no\", \"url\": \"https://zavia.ai/companies/sainsburys-supermarkets-ltd-gb-21497475/\", \"quote\": \"Sainsbury\u2019s Supermarkets Ltd is a private limited company registered in England and Wales under company number 03261722.\"},\n  \"exchange\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"ticker\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"market_segment\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"debt_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"is_subsidiary\": {\"value\": \"yes\", \"url\": \"https://committees.parliament.uk/publications/40839/documents/198985/default/\", \"quote\": \"A subsidiary of J Sainsbury plc.\"},\n  \"parent_name\": {\"value\": \"J Sainsbury plc\", \"url\": \"https://committees.parliament.uk/publications/40839/documents/198985/default/\", \"quote\": \"A subsidiary of J Sainsbury plc.\"},\n  \"parent_listed\": {\"value\": \"yes\", \"url\": \"https://www.londonstockexchange.com/stock/SBRY/sainsbury-j-plc\", \"quote\": \"Trading Status: Normal - Regular Trading\"},\n  \"events\": [],\n  \"note\": \"I chose the operating company Sainsbury's Supermarkets Ltd (Companies House no. 03261722), not its ultimate parent J Sainsbury plc. The Ltd's own shares are not listed. J Sainsbury plc is on the LSE Main Market (ticker SBRY, FTSE 100) and has two listed bonds, which are the parent's debt, not the Ltd's. I found no source on whether the Ltd has its own listed debt, so debt_listed is unknown. The parent held its AGM on 2 July 2026, not 7 July, and its RNS that day carries the SBRY tag. An aggregator (zavia.ai) says the immediate parent became Sainsbury's Holdings Limited on 12 September 2025, so J Sainsbury plc is the ultimate parent per the group filing. I found no listing, delisting, demerger or takeover of the Ltd itself in the three years before 2026-07-07. Group-level events, such as the sale of Sainsbury's Bank's core banking business to NatWest (legal effect 1 May 2025), did not involve the Ltd's shares, so they are not listed.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:32:35+00:00",
+  "inputs": {
+   "as_of": "2026-07-07",
+   "org_key": "sainsbury-s-supermarkets"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 60583,
+   "output_tokens": 2472,
+   "web_search_requests": 4
+  }
+ }
+}

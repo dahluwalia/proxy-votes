@@ -1,0 +1,255 @@
+{
+ "key": "7fd35c8e20a0ebc2252892699b6db36b0a8083e22510232298be1b98cb0edf15",
+ "payload": {
+  "content": [
+   {
+    "query": "Sainsbury's Supermarkets Ltd NF003339",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Sainsbury's Supermarkets Ltd subsidiary J Sainsbury plc corporate site board",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "SAINSBURY'S SUPERMARKETS LTD overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/NF003339"
+     },
+     {
+      "page_age": null,
+      "title": "SAINSBURY'S SUPERMARKETS LTD people - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/NF003339/officers"
+     },
+     {
+      "page_age": null,
+      "title": "SAINSBURY'S SUPERMARKETS LTD filing history - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/NF003339/filing-history?page=2"
+     },
+     {
+      "page_age": null,
+      "title": "SAINSBURY'S SUPERMARKETS LTD",
+      "url": "https://www.dnb.com/business-directory/company-profiles/sainsburys-supermarkets-ltd.19adbe238b5327c74c61680ed6b47dc3"
+     },
+     {
+      "page_age": null,
+      "title": "Sainsbury's Supermarkets Ltd - Company Profile and News - Bloomberg Markets",
+      "url": "https://www.bloomberg.com/profile/company/1745528Z:LN"
+     },
+     {
+      "page_age": null,
+      "title": "Sainsbury%27s",
+      "url": "https://en.wikipedia.org/wiki/Sainsbury%27s"
+     },
+     {
+      "page_age": "460 days ago",
+      "title": "Sainsbury\u2019s - Crunchbase Company Profile & Funding",
+      "url": "https://www.crunchbase.com/organization/sainsburys-supermarkets-ltd"
+     },
+     {
+      "page_age": "127 days ago",
+      "title": "Sainsbury's - Overview, News & Similar companies",
+      "url": "https://www.zoominfo.com/c/sainsburys/244105590"
+     },
+     {
+      "page_age": null,
+      "title": "Sainsbury%27s Local",
+      "url": "https://en.wikipedia.org/wiki/Sainsbury%27s_Local"
+     },
+     {
+      "page_age": "8 days ago",
+      "title": "Sainsbury's",
+      "url": "https://en.wikipedia.org/wiki/Sainsbury's"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "591 days ago",
+      "title": "J Sainsbury plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/J-SAINSBURY-PLC-9590189/company/"
+     },
+     {
+      "page_age": null,
+      "title": "Sainsbury%27s",
+      "url": "https://en.wikipedia.org/wiki/Sainsbury%27s"
+     },
+     {
+      "page_age": "3044 days ago",
+      "title": "J Sainsbury Plc",
+      "url": "https://www.encyclopedia.com/social-sciences-and-law/economics-business-and-labor/businesses-and-occupations/j-sainsbury-plc"
+     },
+     {
+      "page_age": null,
+      "title": "Peter Davis (businessman)",
+      "url": "https://en.wikipedia.org/wiki/Peter_Davis_(businessman)"
+     },
+     {
+      "page_age": null,
+      "title": "Sainsbury's - Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q152096"
+     },
+     {
+      "page_age": "1314 days ago",
+      "title": "SAINSBURY (J) PLC SBRY Our story - Stock",
+      "url": "https://www.londonstockexchange.com/stock/SBRY/sainsbury-j-plc/our-story"
+     },
+     {
+      "page_age": "127 days ago",
+      "title": "Sainsbury's - Overview, News & Similar companies",
+      "url": "https://www.zoominfo.com/c/sainsburys/244105590"
+     },
+     {
+      "page_age": null,
+      "title": "Sainsbury's",
+      "url": "https://samplecontents.library.ph/wikipedia/wp/s/Sainsbury%2527s.htm"
+     },
+     {
+      "page_age": null,
+      "title": "J Sainsbury 2026 Company Profile: Stock Performance & Earnings",
+      "url": "https://pitchbook.com/profiles/company/10335-52"
+     },
+     {
+      "page_age": null,
+      "title": "J Sainsbury plc \u2014 Company History",
+      "url": "https://www.company-histories.com/J-Sainsbury-plc-Company-History.html"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "about.sainsburys.co.uk \"Sainsbury's Supermarkets Ltd\" annual report board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Sainsbury's - Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q152096"
+     },
+     {
+      "page_age": "1485 days ago",
+      "title": "Corporate governance",
+      "url": "https://www.about.sainsburys.co.uk/~/media/Files/S/Sainsburys/documents/corporate-governance/s172/Accounts%20FY21_22/Sainsburys%20Supermarkets%20Ltd%20Accounts%20FY21_22.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Sainsbury%27s",
+      "url": "https://en.wikipedia.org/wiki/Sainsbury%27s"
+     },
+     {
+      "page_age": null,
+      "title": "SAINSBURY'S SUPERMARKETS LTD",
+      "url": "https://www.dnb.com/business-directory/company-profiles/sainsburys-supermarkets-ltd.19adbe238b5327c74c61680ed6b47dc3"
+     },
+     {
+      "page_age": "28 days ago",
+      "title": "SAINSBURY'S SUPERMARKETS LTD (London, Reg. 03261722): UBO, Shareholders & Group Structure (United Kingdom)",
+      "url": "https://zavia.ai/companies/sainsburys-supermarkets-ltd-gb-21497475/"
+     },
+     {
+      "page_age": null,
+      "title": "Dino Adriano",
+      "url": "https://en.wikipedia.org/wiki/Dino_Adriano"
+     },
+     {
+      "page_age": null,
+      "title": "SAINSBURY'S SUPERMARKETS LTD filing history - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03261722/filing-history"
+     },
+     {
+      "page_age": "89 days ago",
+      "title": "Sainsbury's",
+      "url": "https://culture.fandom.com/wiki/Sainsbury's"
+     },
+     {
+      "page_age": "8 days ago",
+      "title": "Sainsbury's",
+      "url": "https://en.wikipedia.org/wiki/Sainsbury's"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Sainsbury's corporate governance section 172 statements subsidiary companies Sainsbury's Supermarkets Ltd about.sainsburys.co.uk",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "634 days ago",
+      "title": "Registered Company number: 05644620 Sainsbury Propco A Limited",
+      "url": "https://corporate.sainsburys.co.uk/media/r2beosoz/sainsburys-propco-a-financials.pdf"
+     },
+     {
+      "page_age": "2008 days ago",
+      "title": "Annual Report and Financial Statements 2021 Driven by our passion for food,",
+      "url": "https://corporate.sainsburys.co.uk/media/xtjbqjqz/sainsburys-ar2021.pdf"
+     },
+     {
+      "page_age": "1236 days ago",
+      "title": "Annual Report and Financial Statements 2023 Helping everyone eat better",
+      "url": "https://corporate.sainsburys.co.uk/media/5qrb3jud/annual-report-and-financial-statements-2023.pdf"
+     },
+     {
+      "page_age": "559 days ago",
+      "title": "Annual Report and Financial Statements 2025 - J Sainsbury plc",
+      "url": "https://corporate.sainsburys.co.uk/media/paffrc3t/sainsbury-annual-report-and-financial-statements-2025-accessible.pdf"
+     },
+     {
+      "page_age": "481 days ago",
+      "title": "J Sainsbury plc Annual Report and Financial Statements 2025",
+      "url": "https://corporate.sainsburys.co.uk/media/e1lfnybd/sainsbury-annual-report-and-financial-statements-2025.pdf"
+     },
+     {
+      "page_age": "818 days ago",
+      "title": "Sainsbury Annual Report and Financial Statements",
+      "url": "https://corporate.sainsburys.co.uk/media/sfxlxnoi/2024-sainsburys-tyne-property-holdings-limited-annual-accounts.pdf"
+     },
+     {
+      "page_age": "446 days ago",
+      "title": "Corporate governance",
+      "url": "https://corporate.sainsburys.co.uk/investors/corporate-governance/"
+     },
+     {
+      "page_age": "916 days ago",
+      "title": "J Sainsbury plc Annual Report and Financial Statements 2024",
+      "url": "https://corporate.sainsburys.co.uk/media/n3bdgevz/sainsbury-annual-report-and-financial-statements-2024.pdf"
+     },
+     {
+      "page_age": "188 days ago",
+      "title": "Annual Report and Financial Statements 2026 - J Sainsbury plc",
+      "url": "https://corporate.sainsburys.co.uk/media/1i3j15jo/j-sainsbury-plc-annual-report-and-financial-statements-2026-accessible.pdf"
+     },
+     {
+      "page_age": "188 days ago",
+      "title": "J Sainsbury plc Annual Report and Financial Statements 2026",
+      "url": "https://corporate.sainsburys.co.uk/media/sx2bk5c5/j-sainsbury-plc-annual-report-and-financial-statements-2026-interactive.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://corporate.sainsburys.co.uk\",\n    \"url\": \"https://corporate.sainsburys.co.uk/investors/corporate-governance/\",\n    \"quote\": \"Sainsbury's Supermarkets Ltd View PDF\"\n  },\n  \"note\": \"Sainsbury's Supermarkets Ltd is a subsidiary of J Sainsbury plc. The group's corporate site lists it on its corporate governance page, which links to its annual report and Section 172 statement. That page's text lists it among 'applicable UK subsidiaries'. The quote is the entry as it appears in that list. Companies House shows NF003339 as a closed overseas-company (Northern Ireland) registration, with the main company number 03261722. The group has also used about.sainsburys.co.uk, and corporate.sainsburys.co.uk is the domain in the search results for the current group pages.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:46:46+00:00",
+  "inputs": {
+   "org_key": "sainsbury-s-supermarkets"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 78905,
+   "output_tokens": 761,
+   "web_search_requests": 4
+  }
+ }
+}

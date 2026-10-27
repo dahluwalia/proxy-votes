@@ -1,0 +1,78 @@
+{
+ "key": "f15c12eb613bd65c53369bac8c4180573bc5e7f5c85360c44d2be15785bc73f7",
+ "payload": {
+  "content": [
+   {
+    "query": "Intertek Finance plc 03226960",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Intertek Finance Plc - Company Profile - Endole",
+      "url": "https://open.endole.co.uk/insight/company/03226960-intertek-finance-plc"
+     },
+     {
+      "page_age": null,
+      "title": "INTERTEK FINANCE PLC overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03226960"
+     },
+     {
+      "page_age": null,
+      "title": "INTERTEK FINANCE PLC people - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03226960/officers"
+     },
+     {
+      "page_age": null,
+      "title": "Intertek Finance Plc - to BRENTWOOD, United Kingdom",
+      "url": "https://gb.kompass.com/c/intertek-finance-plc/gbcs2885628/"
+     },
+     {
+      "page_age": null,
+      "title": "INTERTEK FINANCE PLC. Free business summary taken from official companies house information. Free alerts. Registered as 03226960",
+      "url": "http://companycheck.co.uk/company/03226960/INTERTEK-FINANCE-PLC"
+     },
+     {
+      "page_age": null,
+      "title": "Intertek Finance PLC - Company Profile and News - Bloomberg Markets",
+      "url": "https://www.bloomberg.com/profile/company/92687Z:LN"
+     },
+     {
+      "page_age": null,
+      "title": "INTERTEK FINANCE PLC",
+      "url": "https://credit-guru.co.uk/company/03226960/detrimental-data"
+     },
+     {
+      "page_age": "239 days ago",
+      "title": "intertek-financial-report-2025.pdf",
+      "url": "https://www.intertek.com/siteassets/investors/2026/ara/intertek-financial-report-2025.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Legal Entity Identifier (LEI)",
+      "url": "https://lei.bloomberg.com/leis/view/549300600XU7KLWWU512"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.intertek.com\",\n    \"url\": \"https://www.intertek.com/siteassets/investors/2026/ara/intertek-financial-report-2025.pdf\",\n    \"quote\": \"Intertek Finance plc | England | Finance\"\n  },\n  \"note\": \"Intertek Finance plc is a wholly owned indirect subsidiary of Intertek Group plc. The group's investor site, intertek.com, lists it in the subsidiaries table of the 2025 financial report. The company has no separate website of its own in the results. Companies House (registered office Academy Place, Brentwood) and aggregator sites were not used as the website. The group site covers the company only as a listed subsidiary, so board information on it is likely to be at group level.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:50:32+00:00",
+  "inputs": {
+   "org_key": "intertek-finance"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 13350,
+   "output_tokens": 425,
+   "web_search_requests": 1
+  }
+ }
+}

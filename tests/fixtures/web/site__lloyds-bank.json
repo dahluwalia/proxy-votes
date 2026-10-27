@@ -1,0 +1,132 @@
+{
+ "key": "570dc2221ec3b3263a4aeabed4521459e4676730053cea859e3a6280e37ea1f1",
+ "payload": {
+  "content": [
+   {
+    "query": "Lloyds Bank plc board of directors Lloyds Banking Group",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group plc - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001160106/000165495426006988/a4589o.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group plc - Form 20-F - FY2017",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001160106/000093041318000875/c90223_20f.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group plc - Form 20-F - FY2018",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160106/000093041319000675/c92465_20f.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group plc - Form 20-F - FY2014",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001160106/000093041315001178/c79666_20f.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group plc: Governance, Directors and Executives & Committees - MarketScreener UK",
+      "url": "https://uk.marketscreener.com/quote/stock/LLOYDS-BANKING-GROUP-PLC-111323388/company-governance/"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group plc - Form 6-K - FY2018",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001160106/000165495418009792/a6105z.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group plc - Form 20-F - FY2024",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160106/000116010625000005/lbgexhibit1512024.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group plc - Form 6-K - FY2015",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001160106/000119163815001402/lloy201511276k.htm"
+     },
+     {
+      "page_age": "591 days ago",
+      "title": "Lloyds Banking Group plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/LLOYDS-BANKING-GROUP-PLC-4000786/company/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "lloydsbankinggroup.com Lloyds Bank plc ring-fenced bank governance",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "5 days ago",
+      "title": "Board Change",
+      "url": "https://www.investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/board-change/9836547"
+     },
+     {
+      "page_age": "355 days ago",
+      "title": "Ringfencing",
+      "url": "https://www.lloydsbank.com/international/ringfencing.html"
+     },
+     {
+      "page_age": "4 days ago",
+      "title": "Lloyds Banking Group plc Announce Board and Committee Changes",
+      "url": "https://www.marketscreener.com/news/lloyds-banking-group-plc-announce-board-and-committee-changes-ce785cdedd8bf327"
+     },
+     {
+      "page_age": "259 days ago",
+      "title": "Company Information",
+      "url": "https://www.lloydsbank.com/islands/commercial/important-information/company.html"
+     },
+     {
+      "page_age": "1579 days ago",
+      "title": "Classification: Public Lloyds Banking Group plc U.S. Resolution Plan",
+      "url": "https://www.fdic.gov/system/files/2024-07/lloyds-165-2207.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Bank Corporate Markets",
+      "url": "https://en.wikipedia.org/wiki/Lloyds_Bank_Corporate_Markets"
+     },
+     {
+      "page_age": "5 days ago",
+      "title": "Lloyds Banking Group appoints Hinshelwood to board By Investing.com",
+      "url": "https://www.investing.com/news/company-news/lloyds-banking-group-appoints-hinshelwood-to-board-93CH-4965140"
+     },
+     {
+      "page_age": "19 days ago",
+      "title": "Directors - Lloyds Banking Group plc",
+      "url": "https://www.lloydsbankinggroup.com/who-we-are/group-overview/directors-and-governance.html"
+     },
+     {
+      "page_age": "188 days ago",
+      "title": "Ring-fencing - Lloyds Banking Group plc",
+      "url": "https://www.lloydsbankinggroup.com/who-we-are/group-overview/ring-fencing.html"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.lloydsbankinggroup.com\",\n    \"url\": \"https://www.lloydsbankinggroup.com/who-we-are/group-overview/directors-and-governance.html\",\n    \"quote\": \"Lloyds Banking Group conducts its business through a number of subsidiaries including Lloyds Bank plc and Bank of Scotland plc.\"\n  },\n  \"note\": \"Lloyds Bank plc is a wholly-owned subsidiary of Lloyds Banking Group plc. The group's own site has a Directors page that covers the Lloyds Bank plc board, including the directors who sit only on the ring-fenced banks' boards. I did not check the Companies House number against any search result. The match to Lloyds Bank plc rests on the name and the group's description of it as a ring-fenced bank.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:48:33+00:00",
+  "inputs": {
+   "org_key": "lloyds-bank"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 32394,
+   "output_tokens": 468,
+   "web_search_requests": 2
+  }
+ }
+}

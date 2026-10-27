@@ -1,0 +1,138 @@
+{
+ "key": "fdca828d5c6574b7e6af4346ffba19088a78c96f22257241beee1f8e3cefcab6",
+ "payload": {
+  "content": [
+   {
+    "query": "British American Business Inc. of New York and London",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "British American Business Inc. BABC annual general meeting 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "British American Business INC. Of New York And London - Company Profile - Endole",
+      "url": "https://open.endole.co.uk/insight/company/FC022630-british-american-business-inc-of-new-york-and-london"
+     },
+     {
+      "page_age": null,
+      "title": "BRITISH AMERICAN BUSINESS INC. OF NEW YORK AND LONDON - UK Establishments - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC022630/ukestablishments"
+     },
+     {
+      "page_age": null,
+      "title": "BritishAmerican Business - Brand Profile - Endole",
+      "url": "https://open.endole.co.uk/insight/brand/58770-britishamerican-business"
+     },
+     {
+      "page_age": null,
+      "title": "British American Business Inc. of New York And London Company Profile",
+      "url": "https://www.dnb.com/business-directory/company-profiles.british_american_business_inc_of_new_york_and_london.6134ed7dd3da815b7fc15d79786acd15.html"
+     },
+     {
+      "page_age": null,
+      "title": "BritishAmerican Business, Inc. of New York & London (A Not-For- ...",
+      "url": "https://www.babinc.org/wp-content/uploads/2025-British-American-Business-FS-FINAL.pdf"
+     },
+     {
+      "page_age": "35 days ago",
+      "title": "BritishAmerican Business",
+      "url": "https://www.babinc.org/"
+     },
+     {
+      "page_age": "382 days ago",
+      "title": "US Membership - BritishAmerican Business",
+      "url": "https://www.babinc.org/us-membership/"
+     },
+     {
+      "page_age": "105 days ago",
+      "title": "Our Team - BritishAmerican Business",
+      "url": "https://www.babinc.org/our-team/"
+     },
+     {
+      "page_age": "904 days ago",
+      "title": "BRITISH AMERICAN BUSINESS INC. OF NEW YORK AND LONDON (FC022630) - UK Business Directory",
+      "url": "https://www.gbrbusiness.com/company/British-American-Business-Inc-Of-New-York-And-London"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "367 days ago",
+      "title": "David Pattillo - British-American Business Council of Georgia",
+      "url": "https://www.linkedin.com/in/david-pattillo-1bb9842/"
+     },
+     {
+      "page_age": "189 days ago",
+      "title": "British-American Business Council Annual General Meeting and Member Networking Reception - Global Atlanta",
+      "url": "https://www.globalatlanta.com/event/british-american-business-council-annual-general-meeting-and-member-networking-reception/"
+     },
+     {
+      "page_age": "277 days ago",
+      "title": "British-American Group of Lawyers (BAGOL) Sessions - BritishAmerican Business",
+      "url": "https://www.babinc.org/british-american-group-of-lawyers-bagol-sessions/"
+     },
+     {
+      "page_age": "928 days ago",
+      "title": "BABC - Northern California & The United Kingdom.",
+      "url": "https://babcsf.org/"
+     },
+     {
+      "page_age": "134 days ago",
+      "title": "New Date! BABA 2026 Association General Meeting - British-American Business Association, Washington, D.C.",
+      "url": "https://babawashington.org/events/baba-2026-association-general-meeting/"
+     },
+     {
+      "page_age": "524 days ago",
+      "title": "Events - British-American Business Association, Washington, D.C.",
+      "url": "https://babawashington.org/events-calendar/"
+     },
+     {
+      "page_age": "53 days ago",
+      "title": "BAB Events - BritishAmerican Business",
+      "url": "https://www.babinc.org/babevents/"
+     },
+     {
+      "page_age": "2074 days ago",
+      "title": "British American Business Council (BABC) Orange County",
+      "url": "https://babcoc.org/"
+     },
+     {
+      "page_age": null,
+      "title": "BABC-Georgia - Events",
+      "url": "https://www.babcga.org/events"
+     },
+     {
+      "page_age": "872 days ago",
+      "title": "Annual General Meeting and New Member Reception",
+      "url": "https://babcoc.org/babcoc-events/annual-general-meeting-and-new-member-reception/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"BRITISH AMERICAN BUSINESS INC. OF NEW YORK AND LONDON\", \"url\": \"https://find-and-update.company-information.service.gov.uk/company/FC022630/ukestablishments\", \"quote\": \"BRITISH AMERICAN BUSINESS INC. OF NEW YORK AND LONDON\"},\n  \"country\": {\"value\": \"United States\", \"url\": \"https://www.gbrbusiness.com/company/British-American-Business-Inc-Of-New-York-And-London\", \"quote\": \"Country of Origin\"},\n  \"org_type\": {\"value\": \"other\", \"url\": \"https://www.babinc.org/wp-content/uploads/2025-British-American-Business-FS-FINAL.pdf\", \"quote\": \"(A Not-For-Profit Organization)\"},\n  \"equity_listed\": {\"value\": \"no\", \"url\": \"https://www.babinc.org/wp-content/uploads/2025-British-American-Business-FS-FINAL.pdf\", \"quote\": \"(A Not-For-Profit Organization)\"},\n  \"exchange\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"ticker\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"market_segment\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"debt_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"is_subsidiary\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"parent_name\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"parent_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"events\": [],\n  \"note\": \"The entity is BritishAmerican Business, Inc. of New York & London (trading as BritishAmerican Business, or BAB). It is a US-based not-for-profit transatlantic trade organisation with a registered UK establishment (Companies House overseas company FC022630, UK establishment BR005624). The Companies House-derived directory lists its country of origin as United States, but the page text I retrieved does not name the state of incorporation. It is probably New York, but I did not verify that. I treated equity_listed as 'no' because it is a not-for-profit membership body, so it has no listed shares. I found no source that explicitly states there is no stock exchange listing, and no ticker. The AGM dates shown for BAB (28 October) are not 7 July 2026. I found no source on bonds, parent ownership, or any listing, delisting, demerger or takeover events, so those fields are unknown or empty. The name is not the same as the unrelated regional British-American Business Council (BABC) chapters.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:30:40+00:00",
+  "inputs": {
+   "as_of": "2026-07-07",
+   "org_key": "british-american-business-inc-of-new-york-and-london"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 21889,
+   "output_tokens": 1621,
+   "web_search_requests": 2
+  }
+ }
+}

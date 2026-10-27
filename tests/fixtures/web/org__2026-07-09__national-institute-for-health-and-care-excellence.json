@@ -1,0 +1,143 @@
+{
+ "key": "19a43e2a8fe1415b1de19ebebf630a4dbebe7ce26ef69847e1cb37860c023471",
+ "payload": {
+  "content": [
+   {
+    "query": "National Institute for Health and Care Excellence NICE non-departmental public body about us",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "National Institute for Health and Care Excellence",
+      "url": "https://en.wikipedia.org/wiki/National_Institute_for_Health_and_Care_Excellence"
+     },
+     {
+      "page_age": null,
+      "title": "National Institute for Health and Care Excellence - Overview, News & Similar companies",
+      "url": "https://www.zoominfo.com/c/national-institute-for-health-and-care-excellence/81332173"
+     },
+     {
+      "page_age": "255 days ago",
+      "title": "NICE - National Institute for Health and Care Excellence - INAHTA",
+      "url": "https://www.inahta.org/members/nice/"
+     },
+     {
+      "page_age": null,
+      "title": "National Institute for Health and Care Excellence - Executive Bio, Top Executies, and Transitions - Equilar ExecAtlas",
+      "url": "https://people.equilar.com/bio/org/national-institute-for-health-and-care-excellence/5325940"
+     },
+     {
+      "page_age": "2148 days ago",
+      "title": "National Institute for Health & Care Excellence - WikiCorporates",
+      "url": "https://www.wikicorporates.org/wiki/National_Institute_for_Health_&_Care_Excellence"
+     },
+     {
+      "page_age": "796 days ago",
+      "title": "National Institute for Health and Care Excellence (NICE) Definition & Meaning in Stock Market with Example",
+      "url": "https://kalkinemedia.com/definition/n/national-institute-for-health-and-care-excellence-nice"
+     },
+     {
+      "page_age": null,
+      "title": "national institute health and care excellence nice",
+      "url": "https://www.health-ni.gov.uk/topics/national-institute-health-and-care-excellence-nice"
+     },
+     {
+      "page_age": null,
+      "title": "apply-for-public-appointment.service.gov.uk",
+      "url": "https://apply-for-public-appointment.service.gov.uk/announcements/7937?page=22"
+     },
+     {
+      "page_age": null,
+      "title": "58b9b000 4aaa 4f53 85e4 5ed6d5e6530b",
+      "url": "https://www.westnorthants.gov.uk/directory/local-offer/58b9b000-4aaa-4f53-85e4-5ed6d5e6530b"
+     },
+     {
+      "page_age": null,
+      "title": "NICE definition",
+      "url": "https://www.lawinsider.com/dictionary/nice"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "NICE National Institute for Health and Care Excellence 2026 merger abolished or changes status",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "236 days ago",
+      "title": "The National Institute for Health and Care Excellence (Amendment) Regulations 2026",
+      "url": "https://www.legislation.gov.uk/uksi/2026/202/made"
+     },
+     {
+      "page_age": null,
+      "title": "National Institute for Health and Care Excellence",
+      "url": "https://en.wikipedia.org/wiki/National_Institute_for_Health_and_Care_Excellence"
+     },
+     {
+      "page_age": "255 days ago",
+      "title": "NICE - National Institute for Health and Care Excellence - INAHTA",
+      "url": "https://www.inahta.org/members/nice/"
+     },
+     {
+      "page_age": "4998 days ago",
+      "title": "Professional Issues What's happening at NICE?",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1470211824020463"
+     },
+     {
+      "page_age": null,
+      "title": "National Institute for Health and Care Excellence (NICE) - Crunchbase Company Profile & Funding",
+      "url": "https://www.crunchbase.com/organization/national-institute-for-health-and-care-excellence-nice"
+     },
+     {
+      "page_age": "10070 days ago",
+      "title": "National Institute for Clinical Excellence",
+      "url": "https://navigator.health.org.uk/theme/national-institute-clinical-excellence"
+     },
+     {
+      "page_age": "252 days ago",
+      "title": "NICE Gets Change of Name and Authority as it Announces Plans to Expand its Scope of Work",
+      "url": "https://www.raps.org/resource/nice-gets-change-of-name-and-authority-as-it-annou.html"
+     },
+     {
+      "page_age": "209 days ago",
+      "title": "NICE Methods Changes: What, When, Why, and the Expected Impact on Patient Access to Medicines",
+      "url": "https://globalforum.diaglobal.org/issue/april-2026/nice-methods-changes-what-when-why-and-the-expected-impact-on-patient-access-to-medicines/"
+     },
+     {
+      "page_age": "5002 days ago",
+      "title": "What's happening at NICE? - PMC - NIH",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5873696/"
+     },
+     {
+      "page_age": null,
+      "title": "national institute health and care excellence nice",
+      "url": "https://www.health-ni.gov.uk/topics/national-institute-health-and-care-excellence-nice"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"National Institute for Health and Care Excellence\", \"url\": \"https://www.health-ni.gov.uk/topics/national-institute-health-and-care-excellence-nice\", \"quote\": \"The National Institute for Health and Care Excellence (NICE) provides national guidance and advice to improve health and social care.\"},\n  \"country\": {\"value\": \"United Kingdom\", \"url\": \"https://en.wikipedia.org/wiki/National_Institute_for_Health_and_Care_Excellence\", \"quote\": \"Headquarters: 3 Piccadilly Plaza, Manchester M1 United Kingdom\"},\n  \"org_type\": {\"value\": \"public_body\", \"url\": \"https://apply-for-public-appointment.service.gov.uk/announcements/7937?page=22\", \"quote\": \"executive non-departmental public body\"},\n  \"equity_listed\": {\"value\": \"no\", \"url\": \"https://apply-for-public-appointment.service.gov.uk/announcements/7937?page=22\", \"quote\": \"executive non-departmental public body\"},\n  \"exchange\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"ticker\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"market_segment\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"debt_listed\": {\"value\": \"no\", \"url\": \"https://apply-for-public-appointment.service.gov.uk/announcements/7937?page=22\", \"quote\": \"executive non-departmental public body\"},\n  \"is_subsidiary\": {\"value\": \"no\", \"url\": \"https://www.inahta.org/members/nice/\", \"quote\": \"from April 2013 we became a Non-Departmental Public Body\"},\n  \"parent_name\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"parent_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"events\": [],\n  \"note\": \"NICE is a statutory executive non-departmental public body, sponsored by the Department of Health and Social Care. It was established in primary legislation by the Health and Social Care Act 2012. No source I found states outright that it has no shares or listed bonds. The 'no' answers for equity_listed and debt_listed are inferred from its statutory public-body status, and no exchange listing was found. The Department of Health and Social Care is its sponsor department, not a corporate parent, so I answered is_subsidiary 'no' and left the parent fields empty. I found no listing, delisting, demerger or takeover events in the three years before 2026-07-09. The only 2026 change I found is the National Institute for Health and Care Excellence (Amendment) Regulations 2026, in force 24 March 2026. These add a power to direct the cost-effectiveness threshold, so they are not a corporate event.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:23:24+00:00",
+  "inputs": {
+   "as_of": "2026-07-09",
+   "org_key": "national-institute-for-health-and-care-excellence"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 35131,
+   "output_tokens": 1693,
+   "web_search_requests": 2
+  }
+ }
+}

@@ -1,0 +1,320 @@
+{
+ "key": "3b646ef55a50f1cec0d783590e7dae687dc9bf5ab3b0751e8636f44e21cdee9c",
+ "payload": {
+  "content": [
+   {
+    "query": "Diageo plc ordinary shares London Stock Exchange DGE NYSE ADS DEO",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Diageo annual general meeting 2026 results of AGM",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Diageo disposal agreement 2025 2026 sale announcement completion",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Diageo Annual Report 2026 registered in England and Wales bonds listed",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 20-F - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000835403/000162828026057529/deo-20260630.htm"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 20-F - FY2023",
+      "url": "https://www.sec.gov/Archives/edgar/data/835403/000083540323000016/deo-20230630.htm"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 20-F - FY2021",
+      "url": "https://www.sec.gov/Archives/edgar/data/835403/000083540321000011/deo-20210630.htm"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 20-F - FY2022",
+      "url": "https://www.sec.gov/Archives/edgar/data/835403/000083540322000008/deo-20220630.htm"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 20-F - FY2019",
+      "url": "https://www.sec.gov/Archives/edgar/data/835403/000083540319000005/exhibit24final.htm"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 20-F - FY2019",
+      "url": "https://www.sec.gov/Archives/edgar/data/835403/000083540319000005/a20-ff19p12.htm"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 20-F - FY2020",
+      "url": "https://www.sec.gov/Archives/edgar/data/835403/000083540320000006/exhibit24_descriptionxofxs.htm"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 424B5 - FY2023",
+      "url": "https://www.sec.gov/Archives/edgar/data/835403/000119312523250351/d553808d424b5.htm"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 424B5 - FY2023",
+      "url": "https://www.sec.gov/Archives/edgar/data/835403/000119312523248663/d553808d424b5.htm"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 424B5 - FY2022",
+      "url": "https://www.sec.gov/Archives/edgar/data/835403/000119312522265166/d263930d424b5.htm"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "602 days ago",
+      "title": "Result of Annual General Meeting",
+      "url": "https://www.diageo.com/en/news-and-media/press-releases/2024/result-of-annual-general-meeting"
+     },
+     {
+      "page_age": "26 days ago",
+      "title": "Diageo : Notice of AGM",
+      "url": "https://www.marketscreener.com/news/diageo-notice-of-agm-ce785ad2d181f025"
+     },
+     {
+      "page_age": "26 days ago",
+      "title": "Notice of AGM",
+      "url": "https://www.investegate.co.uk/announcement/rns/diageo--dge/notice-of-agm/9799497"
+     },
+     {
+      "page_age": "17 days ago",
+      "title": "Investor Relations",
+      "url": "https://www.diageo.com/en/investors"
+     },
+     {
+      "page_age": "69 days ago",
+      "title": "Diageo Publishes 2026 Annual Report and U.S. Form 20-F Filings - TipRanks.com",
+      "url": "https://www.tipranks.com/news/company-announcements/diageo-publishes-2026-annual-report-and-u-s-form-20-f-filings"
+     },
+     {
+      "page_age": "25 days ago",
+      "title": "Diageo plc : Annual General Meeting 2026",
+      "url": "https://www.marketscreener.com/news/diageo-plc-annual-general-meeting-2026-ce785ddad981fe2d"
+     },
+     {
+      "page_age": "286 days ago",
+      "title": "Notice Board",
+      "url": "https://www.diageoindia.com/en/investors/shareholder-centre/notice-board"
+     },
+     {
+      "page_age": "81 days ago",
+      "title": "a6068p",
+      "url": "https://www.sec.gov/Archives/edgar/data/835403/000165495426007321/a6068p.htm"
+     },
+     {
+      "page_age": "69 days ago",
+      "title": "Diageo posts 2026 annual report and Form 20-F",
+      "url": "https://www.stocktitan.net/sec-filings/DEO/6-k-diageo-plc-current-report-foreign-issuer-2d9e55cd6945.html"
+     },
+     {
+      "page_age": "13 days ago",
+      "title": "Diageo set AGM date. Jefferies kept Buy on Diageo stock",
+      "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/diageo-set-agm-date-jefferies-kept-buy-on-diageo-stock/70308573"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 6-K - FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/835403/000083540326000010/deo-20251231.htm"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 6-K - FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/835403/000083540325000017/dia033_fullarapdfdpsa.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000835403/000162828026057527/dia045-arax2026annualrep.htm"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 20-F - FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000835403/000083540325000021/deo-20250630.htm"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 6-K - FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/835403/000165495425014035/a8411l.htm"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 20-F - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000835403/000162828026057529/deo-20260630.htm"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 6-K - FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/835403/000165495425005834/a1316j.htm"
+     },
+     {
+      "page_age": "391 days ago",
+      "title": "Diageo completes the sale of Diageo Operations Italy S.p.A., inclusive of the Santa Vittoria production facility, to NewPrinces S.p.A.",
+      "url": "https://www.diageo.com/en/news-and-media/press-releases/2025/diageo-completes-the-sale-of-diageo-operations-italy-s-p-a-inclusive-of-the-santa-vittoria-production-facility-to-newprinces-s-p-a"
+     },
+     {
+      "page_age": "313 days ago",
+      "title": "Diageo enters into agreement to sell its shareholding in East African Breweries plc (\u201cEABL\u201d) to Asahi Group Holdings, Ltd (\u201cAsahi\u201d)",
+      "url": "https://www.diageo.com/en/news-and-media/press-releases/2025/diageo-enters-into-agreement-to-sell-its-shareholding-in-eabl-to-asahi-group-holdings-ltd"
+     },
+     {
+      "page_age": "474 days ago",
+      "title": "Diageo plc sells its 54.4% shareholding in Seychelles Breweries Limited to Phoenix Beverages Ltd, a subsidiary of IBL Group, for approximately $80 million",
+      "url": "https://www.diageo.com/en/news-and-media/press-releases/2025/diageo-plc-sells-its-54-percent-shareholding-in-seychelles-breweries-limited"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC (Form: 6-K, Received: 08/18/2026 06:07:26)",
+      "url": "https://www.otcmarkets.com/filing/html?id=19709762&guid=99kXknmVG-nBB3h"
+     },
+     {
+      "page_age": "69 days ago",
+      "title": "Diageo Publishes 2026 Annual Report and U.S. Form 20-F Filings - TipRanks.com",
+      "url": "https://www.tipranks.com/news/company-announcements/diageo-publishes-2026-annual-report-and-u-s-form-20-f-filings"
+     },
+     {
+      "page_age": null,
+      "title": "a1774r",
+      "url": "https://www.sec.gov/Archives/edgar/data/835403/000165495426007713/a1774r.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Diageo",
+      "url": "https://en.wikipedia.org/wiki/Diageo"
+     },
+     {
+      "page_age": "69 days ago",
+      "title": "Publication of 2026 Annual Report and Form 20-F",
+      "url": "https://www.investegate.co.uk/announcement/rns/diageo--dge/publication-of-2026-annual-report-and-form-20-f/9727927"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC (Form: 6-K, Received: 08/18/2026 09:41:29)",
+      "url": "https://www.otcmarkets.com/filing/html?id=19710056&guid=99kXknmVG-nBB3h"
+     },
+     {
+      "page_age": "629 days ago",
+      "title": "Diageo plc (via Public) / Consolidated Financial Statements (Form 6-K)",
+      "url": "https://www.publicnow.com/view/7603B90ABE43C298742F73603AD97472838A117D"
+     },
+     {
+      "page_age": null,
+      "title": "a3582o",
+      "url": "https://www.sec.gov/Archives/edgar/data/835403/000165495426006966/a3582o.htm"
+     },
+     {
+      "page_age": "1916 days ago",
+      "title": "Diageo plc - AnnualReports.com",
+      "url": "https://www.annualreports.com/Company/diageo-plc"
+     },
+     {
+      "page_age": "208 days ago",
+      "title": "Our Financial Results Archive",
+      "url": "https://www.diageo.com/en/investors/results-reports-and-events/results"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Diageo Finance plc EMTN notes admitted to trading London Stock Exchange main market prospectus 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form F-3ASR - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/835403/000095010326003219/dp241928_f3asr.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Prospectus dated 7 September 2026 DIAGEO plc (Incorporated with ...",
+      "url": "https://www.rns-pdf.londonstockexchange.com/rns/7405T_1-2026-9-7.pdf"
+     },
+     {
+      "page_age": "1022 days ago",
+      "title": "583917073 DIAGEO CAPITAL PLC (INCORPORATED WITH LIMITED LIABILITY IN SCOTLAND",
+      "url": "https://www.rns-pdf.londonstockexchange.com/rns/9922Y_1-2024-1-8.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000835403/000165495426007105/diageoplc.htm"
+     },
+     {
+      "page_age": "801 days ago",
+      "title": "Prospectus dated 16 August 2024 DIAGEO plc (Incorporated ...",
+      "url": "https://www.rns-pdf.londonstockexchange.com/rns/8155A_1-2024-8-16.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000835403/000165495426008715/sept.htm"
+     },
+     {
+      "page_age": "432 days ago",
+      "title": "Prospectus dated 20 August 2025 DIAGEO plc (Incorporated ...",
+      "url": "https://www.rns-pdf.londonstockexchange.com/rns/1308W_1-2025-8-20.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Publication Of Prospectus 2026",
+      "url": "https://www.diageo.com/en/news-and-media/press-releases/2026/publication-of-prospectus-2026"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO FINANCE PLC SN02 Stock",
+      "url": "https://www.londonstockexchange.com/stock/SN02/diageo-finance-plc/company-page"
+     },
+     {
+      "page_age": null,
+      "title": "DIAGEO FINANCE PLC SN02 Trade recap - Stock",
+      "url": "https://www.londonstockexchange.com/stock/SN02/diageo-finance-plc/trade-recap"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"Diageo plc\", \"url\": \"https://www.otcmarkets.com/filing/html?id=19709762&guid=99kXknmVG-nBB3h\", \"quote\": \"The company is incorporated under the name Diageo plc, and is registered in England and Wales under registered number 23307.\"},\n  \"country\": {\"value\": \"United Kingdom\", \"url\": \"https://www.otcmarkets.com/filing/html?id=19709762&guid=99kXknmVG-nBB3h\", \"quote\": \"is registered in England and Wales under registered number 23307\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://www.publicnow.com/view/7603B90ABE43C298742F73603AD97472838A117D\", \"quote\": \"Diageo plc is a public limited company incorporated under the laws of England and Wales.\"},\n  \"equity_listed\": {\"value\": \"yes\", \"url\": \"https://www.sec.gov/Archives/edgar/data/0000835403/000162828026057529/deo-20260630.htm\", \"quote\": \"Diageo plc ordinary shares are listed on the London Stock Exchange (LSE).\"},\n  \"exchange\": {\"value\": \"London Stock Exchange\", \"url\": \"https://www.sec.gov/Archives/edgar/data/0000835403/000162828026057529/deo-20260630.htm\", \"quote\": \"The principal trading market for the ordinary shares is the LSE.\"},\n  \"ticker\": {\"value\": \"DGE\", \"url\": \"https://www.sec.gov/Archives/edgar/data/835403/000165495426007713/a1774r.htm\", \"quote\": \"The company is listed on both the London Stock Exchange (DGE) and the New York Stock Exchange (DEO).\"},\n  \"market_segment\": {\"value\": \"main\", \"url\": \"https://en.wikipedia.org/wiki/Diageo\", \"quote\": \"Traded as: LSE: DGE; NYSE: DEO; FTSE 100 Component;\"},\n  \"debt_listed\": {\"value\": \"yes\", \"url\": \"https://www.rns-pdf.londonstockexchange.com/rns/7405T_1-2026-9-7.pdf\", \"quote\": \"to be admitted to trading on the London Stock Exchange\u2019s Main Market (the \u201cMarket\u201d)\"},\n  \"is_subsidiary\": {\"value\": \"no\", \"url\": \"https://www.rns-pdf.londonstockexchange.com/rns/8155A_1-2024-8-16.pdf\", \"quote\": \"It is the holding company of the Diageo group (as defined below).\"},\n  \"parent_name\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"parent_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"events\": [\n    {\"date\": \"2023-05-26\", \"event\": \"Completed sale of wholly owned subsidiary Guinness Cameroun S.A. to Castel Group (disposal)\", \"url\": \"https://www.sec.gov/Archives/edgar/data/835403/000083540326000010/deo-20251231.htm\", \"quote\": \"On 26 May 2023, Diageo completed the sale of its wholly owned subsidiary, Guinness Cameroun S.A.\"},\n    {\"date\": \"2024-09-30\", \"event\": \"Completed sale of shareholding in listed subsidiary Guinness Nigeria PLC to Tolaram (disposal)\", \"url\": \"https://www.sec.gov/Archives/edgar/data/0000835403/000162828026057527/dia045-arax2026annualrep.htm\", \"quote\": \"On 30 September 2024, Diageo completed the sale of its shareholding in Guinness Nigeria PLC\"},\n    {\"date\": \"2025-07-03\", \"event\": \"Completed sale of 80.4% of Guinness Ghana Breweries PLC to Castel Group (disposal)\", \"url\": \"https://www.sec.gov/Archives/edgar/data/835403/000083540326000010/deo-20251231.htm\", \"quote\": \"On 3 July 2025, Diageo completed the sale of its 80.4% shareholding in Guinness Ghana Breweries PLC to Castel Group.\"},\n    {\"date\": \"2025-12-17\", \"event\": \"Agreement announced to sell 65% of East African Breweries PLC (listed in Kenya, Uganda, Tanzania) to Asahi; completion expected by 31 Dec 2026, so not completed by 2026-05-20\", \"url\": \"https://www.sec.gov/Archives/edgar/data/835403/000165495425014035/a8411l.htm\", \"quote\": \"Diageo enters into agreement to sell its shareholding in East African Breweries plc\"},\n    {\"date\": \"2026-03-24\", \"event\": \"Announced sale of United Spirits Limited's stake in Royal Challengers Sports Pvt Ltd (disposal by listed subsidiary USL; completion expected in FY ending 30 June 2027)\", \"url\": \"https://www.sec.gov/Archives/edgar/data/0000835403/000162828026057529/deo-20260630.htm\", \"quote\": \"On 24 March 2026, Diageo announced the sale of United Spirits Limited's shareholding in Royal Challengers Sports Pvt Ltd\"}\n  ],\n  \"note\": \"Entity chosen: Diageo plc, the parent holding company (not subsidiaries such as Diageo Finance plc). Found no listing, delisting, demerger or takeover of Diageo plc itself in the 3 years to 2026-05-20; the events listed are disposals only. Diageo's 2026 AGM was on 5 Nov 2026, not 20 May 2026, so that date does not match a Diageo AGM. The shares were still listed in London on that date. Market segment 'main' is inferred from FTSE 100 membership and the Main Market debt prospectus. I found no source that says 'Main Market' for the equity itself. Other listings: ADSs on NYSE (DEO). The FY2026 20-F lists only the LSE and NYSE. A March 2026 F-3 shelf prospectus still mentions Euronext Paris and Irish Stock Exchange, and I could not resolve this conflict. Debt: the prospectus is dated 7 Sept 2026. The 2025 and 2024 programme prospectuses also cite the Main Market, and Diageo Finance plc bonds were on the LSE Main Market, so I infer debt was listed on 2026-05-20. parent_name is null because Diageo plc has no parent. parent_listed is 'unknown' because it is not applicable.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:22:09+00:00",
+  "inputs": {
+   "as_of": "2026-05-20",
+   "org_key": "diageo"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 82136,
+   "output_tokens": 4759,
+   "web_search_requests": 5
+  }
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "key": "1a21e89cf91d599b2789e6ebe0e1cdd39633ccf95d24ade66af3d38aae897007",
+ "payload": {
+  "content": [
+   {
+    "query": "sjp.co.uk Evelyn Bourke board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "482 days ago",
+      "title": "Directors",
+      "url": "https://www.sjp.co.uk/shareholders/about-us/directors"
+     },
+     {
+      "page_age": null,
+      "title": "Find out more about SJP\u2019s corporate governance at sjp.co.uk/corporate-",
+      "url": "https://www.sjp.co.uk/sites/sjp-corp/files/SJP/shareholders/2025-in-review/SJP_AR_2025_Governance.pdf"
+     },
+     {
+      "page_age": "244 days ago",
+      "title": "1 PRESS RELEASE 25 February 2026 A YEAR OF STRONG DELIVERY AND EXECUTION",
+      "url": "https://www.sjp.co.uk/sites/sjp-corp/files/SJP/shareholders/reports-presentations-webcasts/2026/Press_Release_Full_Year_Report_and_Accounts_2025.pdf"
+     },
+     {
+      "page_age": "245 days ago",
+      "title": "Real lives, real advice St. James\u2019s Place Annual Report and Accounts 2025",
+      "url": "https://www.sjp.co.uk/sites/sjp-corp/files/SJP/shareholders/reports-presentations-webcasts/2026/SJP_AR_2025.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Corporate governance",
+      "url": "https://www.sjp.co.uk/shareholders/about-us/corporate-governance"
+     },
+     {
+      "page_age": "608 days ago",
+      "title": "Governance Corporate governance report 54 Board of Directors 55",
+      "url": "https://www.sjp.co.uk/sites/sjp-corp/files/SJP/shareholders/2024-in-review/SJP_AR_2024_Governance.pdf"
+     },
+     {
+      "page_age": "1338 days ago",
+      "title": "Governance Board of Directors 102 Corporate governance report",
+      "url": "https://www.sjp.co.uk/sites/sjp-corp/files/SJP/shareholders/2022-in-review/SJP_AR2022_Governance.pdf"
+     },
+     {
+      "page_age": "608 days ago",
+      "title": "Invaluable advice Annual Report and Accounts 2024",
+      "url": "https://www.sjp.co.uk/sites/sjp-corp/files/SJP/shareholders/2024-in-review/SJP_AR_2024_Strategic_Report.pdf"
+     },
+     {
+      "page_age": "973 days ago",
+      "title": "Annual Report and Accounts 2023 Providing trusted",
+      "url": "https://www.sjp.co.uk/sites/sjp-corp/files/SJP/reports-presentation/2024/SJP_AR_2023.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "ANNUAL REPORT AND ACCOUNTS 2019",
+      "url": "https://www.sjp.co.uk/sites/sjp-corp/files/SJP/reports-presentation/2020/sjp-annual-report-and-accounts-2019-april2020.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\"value\": \"yes\", \"url\": \"https://www.sjp.co.uk/shareholders/about-us/directors\", \"quote\": \"Evelyn Bourke Independent Non-executive Director\"},\n  \"capacity\": {\"value\": \"non_executive_director\", \"url\": \"https://www.sjp.co.uk/shareholders/about-us/directors\", \"quote\": \"Independent Non-executive Director\"},\n  \"start_date\": {\"value\": \"2026-03-01\", \"url\": \"https://www.sjp.co.uk/sites/sjp-corp/files/SJP/shareholders/2025-in-review/SJP_AR_2025_Governance.pdf\", \"quote\": \"With the appointment of Evelyn Bourke on 1 March 2026\"},\n  \"end_date\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"note\": \"The directors page lists her as an Independent Non-executive Director, appointed March 2026. It also shows her on the Group Audit and Group Remuneration Committees. This is the board of St. James's Place plc itself. Her start date, 1 March 2026, is about 4 months before the 2026-07-07 AGM, so it falls within six months. The pages found show no end date and no sign of a departure, but the directors page is undated, so I cannot confirm she was still on the board on 2026-07-07 or is today.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:53:23+00:00",
+  "inputs": {
+   "as_of": "2026-07-07",
+   "domain": "sjp.co.uk",
+   "org_key": "st-james-s-place",
+   "person": "evelyn-bourke"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 17332,
+   "output_tokens": 516,
+   "web_search_requests": 1
+  }
+ }
+}

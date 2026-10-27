@@ -1,0 +1,142 @@
+{
+ "key": "5daaa21a4212d997af8525a666025692531fc52ad3d72817027469f502746bfa",
+ "payload": {
+  "content": [
+   {
+    "query": "Midas Topco Limited FC041696",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "MIDAS TOPCO LIMITED overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC041696"
+     },
+     {
+      "page_age": null,
+      "title": "Midas Topco Limited - Company Profile - Endole",
+      "url": "https://open.endole.co.uk/insight/company/FC041696-midas-topco-limited"
+     },
+     {
+      "page_age": null,
+      "title": "MIDAS TOPCO LIMITED filing history - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC041696/filing-history"
+     },
+     {
+      "page_age": null,
+      "title": "Ajaykapoor Harrissing GOLAM personal appointments - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/officers/2SWNGd0moCOKiFovWcx0d1vN3Kw/appointments"
+     },
+     {
+      "page_age": null,
+      "title": "Andrew Robert FINDLAY personal appointments - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/officers/_vNu2AcmmiELqq4F1-Ag_sR-Goo/appointments"
+     },
+     {
+      "page_age": null,
+      "title": "Archibald John NORMAN personal appointments - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/officers/xmp_PS9vUuXFEQI6UhhIfdzlhmM/appointments"
+     },
+     {
+      "page_age": "575 days ago",
+      "title": "M Group Limited (formerly Midas Midco Limited)",
+      "url": "https://mgroupltd.com/media/jdnfqgr2/midas-midco-limited-31-march-2025-signed-v2.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "AP WIMBLEDON TOPCO LIMITED - company information - registration 16582425 - financial data - 192.com",
+      "url": "https://www.192.com/atoz/financial/business/16582425/"
+     },
+     {
+      "page_age": null,
+      "title": "Gyasiwah Financial Services Ltd - company information - registration 16113596 - financial data - 192.com",
+      "url": "https://www.192.com/atoz/financial/business/16113596/"
+     },
+     {
+      "page_age": null,
+      "title": "SABLE CAPITAL PARTNERS LLP - company information - registration OC442052 - financial data - 192.com",
+      "url": "https://www.192.com/atoz/financial/business/OC442052/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "M Group Services official website about us board",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "46 days ago",
+      "title": "M Group Services - Overview, News & Similar companies",
+      "url": "https://www.zoominfo.com/c/m-group-services-ltd/355426202"
+     },
+     {
+      "page_age": null,
+      "title": "M Group Services",
+      "url": "https://www.mgroupservices.com/"
+     },
+     {
+      "page_age": "852 days ago",
+      "title": "M Group Services - Crunchbase Company Profile & Funding",
+      "url": "https://www.crunchbase.com/organization/m-group-services"
+     },
+     {
+      "page_age": null,
+      "title": "M Financial Group",
+      "url": "https://en.wikipedia.org/wiki/M_Financial_Group"
+     },
+     {
+      "page_age": "848 days ago",
+      "title": "M Group Services 2026 Company Profile: Valuation, Funding & Investors",
+      "url": "https://pitchbook.com/profiles/company/11902-87"
+     },
+     {
+      "page_age": null,
+      "title": "M-Brain Group",
+      "url": "https://en.wikipedia.org/wiki/M-Brain_Group"
+     },
+     {
+      "page_age": null,
+      "title": "About Us - Work With Us",
+      "url": "https://www.mgsworkwithus.com/about-us"
+     },
+     {
+      "page_age": null,
+      "title": "Work With Us",
+      "url": "https://www.mgsworkwithus.com/"
+     },
+     {
+      "page_age": null,
+      "title": "M Group - about-us",
+      "url": "https://www.mgroup.am/en/about-us/mgroup"
+     },
+     {
+      "page_age": "78 days ago",
+      "title": "M Group Services - EverybodyWiki Bios & Wiki",
+      "url": "https://en.everybodywiki.com/M_Group_Services"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://mgroupltd.com\",\n    \"url\": \"https://mgroupltd.com/media/jdnfqgr2/midas-midco-limited-31-march-2025-signed-v2.pdf\",\n    \"quote\": \"M Group Limited (formerly Midas Midco Limited) is a UK incorporated company which is owned by Midas Topco Limited.\"\n  },\n  \"note\": \"Midas Topco Limited is a Jersey-incorporated holding company, registered as an overseas company in the UK. It sits above M Group Services, so I used the group's site. The cited PDF is on mgroupltd.com and names Midas Topco as the owner of M Group Limited. The group also appears under mgroupservices.com, but I did not find Midas Topco named there. I found no separate site for Midas Topco itself.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:52:51+00:00",
+  "inputs": {
+   "org_key": "midas-topco"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 31253,
+   "output_tokens": 756,
+   "web_search_requests": 2
+  }
+ }
+}

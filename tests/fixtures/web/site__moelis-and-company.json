@@ -1,0 +1,78 @@
+{
+ "key": "8c7aa9d6d9a4ca5180c1c811036b5629f8bd03f76d00ee724b0d8ac7b6af11f3",
+ "payload": {
+  "content": [
+   {
+    "query": "Moelis & Company investor relations board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Moelis & Company: Governance, Directors and Executives & Committees - MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/MOELIS-COMPANY-127770724/company-governance/"
+     },
+     {
+      "page_age": null,
+      "title": "Moelis & Company - Governance - Executive Officers & Directors",
+      "url": "https://investors.moelis.com/governance/executive-officer-directors/default.aspx"
+     },
+     {
+      "page_age": "128 days ago",
+      "title": "Senior Team",
+      "url": "https://www.moelis.com/team/"
+     },
+     {
+      "page_age": "621 days ago",
+      "title": "Moelis & Company: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/MOELIS-COMPANY-16279164/company/"
+     },
+     {
+      "page_age": null,
+      "title": "mc-8k_20180723.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1596967/000156459018017199/mc-8k_20180723.htm"
+     },
+     {
+      "page_age": "146 days ago",
+      "title": "News",
+      "url": "https://www.moelis.com/news/"
+     },
+     {
+      "page_age": "13 days ago",
+      "title": "Moelis & Company - Investor Relations",
+      "url": "https://investors.moelis.com/overview/default.aspx"
+     },
+     {
+      "page_age": null,
+      "title": "Moelis & Company - Press Releases",
+      "url": "https://investors.moelis.com/press-releases/default.aspx"
+     },
+     {
+      "page_age": "90 days ago",
+      "title": "Moelis & Company (MC) Q2 FY2026 earnings call transcript",
+      "url": "https://finance.yahoo.com/quote/MC/earnings/MC-Q2-2026-earnings_call-657342.html"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://investors.moelis.com\",\n    \"url\": \"https://investors.moelis.com/governance/executive-officer-directors/default.aspx\",\n    \"quote\": \"Eric Cantor is the Vice Chairman of Moelis & Company and serves as a member of its Board of Directors.\"\n  },\n  \"note\": \"This is the investor-relations site of Moelis & Company (NYSE: MC), and it has a governance page listing executive officers and directors. The company's corporate site is https://www.moelis.com, and it links to the same investor-relations contacts.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:43:43+00:00",
+  "inputs": {
+   "org_key": "moelis-and-company"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 13236,
+   "output_tokens": 505,
+   "web_search_requests": 1
+  }
+ }
+}

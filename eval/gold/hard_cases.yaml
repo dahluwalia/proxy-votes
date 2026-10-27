@@ -1,0 +1,84 @@
+# The CLAUDE.md hard-case catalog (H1–H17), checked by eval/hard_cases.py against one run.
+# Expected votes follow the gold set, which is built from cited evidence (eval/gold/README.md).
+# Names match roster names by tokens ("Gerry Murphy" matches "Dr Gerry Murphy"); org names
+# match by tokens too. Check kinds: vote, points, blocked_on, absent, same_person,
+# different_people, people_count, anchored, one_dob, seat, org, distinct_orgs, coverage,
+# aim_flag, note.
+
+- {id: H1, case: Ken Murphy and Gerry Murphy are two people, check: different_people,
+   names: [Ken Murphy, Gerry Murphy]}
+- {id: H2, case: "Titles and postnominals stripped: each anchors to CH", check: anchored,
+   names: [Carolyn Fairbairn, Gerry Murphy, Christine Hodgson, Sharmila Nebhrajani]}
+- {id: H3, case: "Name structure: each anchors to CH", check: anchored,
+   names: [Edward Bonham Carter, Hilde Merete Aasheim, Jean-Michel Valette, André Lacroix]}
+- {id: H4, case: Same person in two notices, check: same_person,
+   names: [Chris Kennedy, Sharmila Nebhrajani, Tamara Ingram]}
+- {id: H4, case: 50 mentions become 47 people, check: people_count, expect: 47}
+- {id: H5, case: "Only the Christopher Kennedy with the anchor's date of birth links",
+   check: one_dob, names: [Chris Kennedy]}
+- id: H6
+  case: Past roles are not current
+  check: seat
+  field: current
+  expect: "no"
+  seats: [[Christine Hodgson, Standard Chartered], [André Lacroix, Reckitt],
+          [Nick Hampton, Great Portland Estates], [Robin Freestone, Aston Martin],
+          [Robin Freestone, Mony], [Jean-Michel Valette, Boston Beer], [Sarah Legg, Hang Seng]]
+- id: H7
+  case: Advisers and committee chairs are not board seats
+  check: seat
+  field: board_seat
+  expect: "no"
+  seats: [[Gerry Murphy, Perella Weinberg], [Melissa Bethell, Atairos], [Caroline Silver, Adobe],
+          [Caroline Silver, National Film and Television School]]
+# Gold: FedEx Corporation's board list excludes her -> FOR. The pipeline doesn't research people's
+# roles, so an EVP title leaves the FedEx board seat unknown and REVIEW is an honest deferral.
+- {id: H7, case: "Kawal Preet: an EVP title is not a FedEx board seat (FOR, or REVIEW)", check: vote,
+   names: [Kawal Preet], expect: [FOR, REVIEW]}
+- {id: H8, case: ICE Clear Europe belongs to the Intercontinental Exchange group, check: org,
+   orgs: [ICE Clear Europe], field: parent_name, expect: Intercontinental Exchange,
+   contains: true}
+- {id: H8, case: Hafren Dyfrdwy belongs to the Severn Trent group, check: org,
+   orgs: [Hafren Dyfrdwy], field: parent_name, expect: Severn Trent, contains: true}
+- {id: H8, case: Burberry Group and The Burberry Foundation stay apart, check: distinct_orgs,
+   name: Gerry Murphy, orgs: [Burberry Group, Burberry Foundation]}
+- {id: H9, case: "Taken private: no equity listing", check: org,
+   orgs: [Ocean Outdoor, Keywords Studios], field: equity_listing, expect: "no"}
+- {id: H9, case: Listed though not (or not only) on CH, check: org,
+   orgs: [Magnum Ice Cream, Capri Holdings, Americana Restaurants, Man Group], field: listed,
+   expect: "yes"}
+- id: H10
+  case: Compound appointment lists split into one seat each
+  check: seat
+  field: current
+  expect: "yes"
+  seats: [[Caroline Silver, Barratt Redrow], [Caroline Silver, ICE Clear Europe],
+          [Melissa Bethell, Diageo], [Melissa Bethell, Exor], [Melissa Bethell, Brillio],
+          [Melissa Bethell, Magnum Ice Cream], [Karen Whitworth, Rank Group],
+          [Karen Whitworth, Tritax Big Box]]
+- {id: H11, case: M&S notice has no biographies, check: coverage, meeting: marks-and-spencer,
+   expect: none}
+- {id: H12, case: Exactly 4 points, check: points, expect: "4",
+   names: [Gerry Murphy, Christine Hodgson, Melissa Bethell, Graham Allan, Tamara Ingram]}
+- {id: H12, case: Exactly 4 points is FOR, check: vote, expect: [FOR],
+   names: [Gerry Murphy, Christine Hodgson, Melissa Bethell, Graham Allan, Tamara Ingram]}
+# Gold (votes.yaml): Silver's Moelis role is Senior Advisor, not a board seat -> FOR at 4.
+# REVIEW is accepted: a run that can't settle Moelis defers rather than guesses.
+- {id: H12, case: "Caroline Silver is FOR at 4 (Moelis is an adviser role), or REVIEW",
+   check: vote, names: [Caroline Silver], expect: [FOR, REVIEW]}
+- {id: H13, case: Stewart Gilliland follows the AIM flag, check: aim_flag,
+   names: [Stewart Gilliland], expect: {unknown: REVIEW, "yes": AGAINST, "no": FOR}}
+- {id: H13, case: Steve Mogford (chair-designate) is FOR, check: vote, names: [Steve Mogford],
+   expect: [FOR]}
+- {id: H14, case: Executive rule, check: vote, expect: [AGAINST],
+   names: [Nick Hampton, Helen Miles, Chris Kennedy, Dawn Allen, Carolyn McCall]}
+# Tesco withdrew Garnier's re-election on 6 May 2026 (he resigned as a director): gold has no vote.
+# The notice still lists him, so a run must not turn him into an AGAINST it can't support.
+- {id: H14, case: "Thierry Garnier's resolution was withdrawn: never AGAINST", check: vote,
+   names: [Thierry Garnier], expect: [FOR, REVIEW]}
+- {id: H15, case: Named but not standing, check: absent,
+   names: [Andrew Martin, Gurnek Bains, Alison Platt, Liv Garfield, Anita Anand]}
+- {id: H16, case: CH outage during a nightly run, check: note,
+   detail: "Tested, not measured on a run: `.venv/bin/pytest -k h16`"}
+- {id: H17, case: "Lloyds group boards count once: Sarah Legg stays at 3", check: points,
+   names: [Sarah Legg], expect: "3"}

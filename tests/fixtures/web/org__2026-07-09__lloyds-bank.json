@@ -1,0 +1,246 @@
+{
+ "key": "f6510c85bdadb167401f732794d80572bacde455fca95f7581b2f96845fdb76a",
+ "payload": {
+  "content": [
+   {
+    "query": "Lloyds Bank plc annual report 2025 wholly owned subsidiary of Lloyds Banking Group plc",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Lloyds Bank plc debt securities admitted to trading London Stock Exchange",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "lbk-20251231_d2",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167831/000116783126000007/lbk-20251231_d2.htm"
+     },
+     {
+      "page_age": null,
+      "title": "lbk-20241231_d2",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167831/000116010625000012/lbk-20241231_d2.htm"
+     },
+     {
+      "page_age": "242 days ago",
+      "title": "Lloyds Bank PLC: 2025 Annual Report and Accounts",
+      "url": "https://www.investegate.co.uk/announcement/gnw/lloyds-bank-plc--94wp/lloyds-bank-plc-2025-annual-report-and-accou-/9449279"
+     },
+     {
+      "page_age": null,
+      "title": "Document",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160106/000116010626000010/lbgexhibit812025.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Bank Corporate Markets",
+      "url": "https://en.wikipedia.org/wiki/Lloyds_Bank_Corporate_Markets"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group",
+      "url": "https://en.wikipedia.org/wiki/Lloyds_Banking_Group"
+     },
+     {
+      "page_age": "1706 days ago",
+      "title": "Lloyds Banking Group PLC - AnnualReports.com",
+      "url": "https://www.annualreports.com/Company/Lloyds-Banking"
+     },
+     {
+      "page_age": null,
+      "title": "HBOS",
+      "url": "https://en.wikipedia.org/wiki/HBOS"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Bank California",
+      "url": "https://en.wikipedia.org/wiki/Lloyds_Bank_California"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "193 days ago",
+      "title": "Admission to Trading",
+      "url": "https://www.investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/admission-to-trading/9523586"
+     },
+     {
+      "page_age": "62 days ago",
+      "title": "Lloyds Bank admits $1.5bn covered bonds to London trading By Investing.com",
+      "url": "https://uk.investing.com/news/stock-market-news/lloyds-bank-admits-15bn-covered-bonds-to-london-trading-93CH-4846287"
+     },
+     {
+      "page_age": "62 days ago",
+      "title": "Lloyds Bank admits $1.5bn covered bonds to London trading By Investing.com",
+      "url": "https://www.investing.com/news/company-news/lloyds-bank-admits-15bn-covered-bonds-to-london-trading-93CH-4875391"
+     },
+     {
+      "page_age": "62 days ago",
+      "title": "Admission of Covered Bonds to Trading",
+      "url": "https://www.investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/admission-of-covered-bonds-to-trading/9739433"
+     },
+     {
+      "page_age": "62 days ago",
+      "title": "REG - Lloyds Bank Plc Lloyds Banking Group - Admission of Covered Bonds to Trading \u2014 TradingView News",
+      "url": "https://www.tradingview.com/news/reuters.com,2026-08-25:newsml_RSY1101Sa:0-reg-lloyds-bank-plc-lloyds-banking-group-admission-of-covered-bonds-to-trading/"
+     },
+     {
+      "page_age": "165 days ago",
+      "title": "Lloyds Banking Group Lists \u20ac750 Million Callable Notes on London Stock Exchange - TipRanks.com",
+      "url": "https://www.tipranks.com/news/company-announcements/lloyds-banking-group-lists-e750-million-callable-notes-on-london-stock-exchange"
+     },
+     {
+      "page_age": "62 days ago",
+      "title": "Lloyds Bank admits $1.5bn covered bonds to London trading By Investing.com",
+      "url": "https://in.investing.com/news/stock-market-news/lloyds-bank-admits-15bn-covered-bonds-to-london-trading-93CH-5570680"
+     },
+     {
+      "page_age": "2075 days ago",
+      "title": "LLOYDS BANKING GROUP PLC LLOY Stock",
+      "url": "https://www.londonstockexchange.com/stock/LLOY/lloyds-banking-group-plc/company-page?lang=en"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Bank plc - Form 20-F - FY2023",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167831/000116010624000016/lloydsbankplcexhibit2d2023.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Bank plc - Form 20-F - FY2024",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167831/000116010625000012/lloydsbankplcexhibit2d2024.htm"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Lloyds Bank plc incorporated in England and Wales registered number 2065 ordinary shares held by Lloyds Banking Group plc",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Lloyds Banking Group 2026 AGM 9 July OR Bank of Scotland transfer into Lloyds Bank",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "lbk-20251231_d2",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167831/000116783126000007/lbk-20251231_d2.htm"
+     },
+     {
+      "page_age": "3798 days ago",
+      "title": "PROSPECTUS LLOYDS BANKING GROUP plc DEBT SECURITIES CAPITAL SECURITIES",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160106/000095010316013906/crt_dp65916-f3asr.pdf"
+     },
+     {
+      "page_age": "110 days ago",
+      "title": "Lloyds brands and legal entities",
+      "url": "https://www.lloydsbank.com/help-guidance/legal-information/legal-entities.html"
+     },
+     {
+      "page_age": "476 days ago",
+      "title": "Lloyds Bank plc Definition",
+      "url": "https://www.lawinsider.com/dictionary/lloyds-bank-plc"
+     },
+     {
+      "page_age": null,
+      "title": "LLOYDS BANKING GROUP plc",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160106/000093041312001599/c68854_20f.htm"
+     },
+     {
+      "page_age": "136 days ago",
+      "title": "Legal information - Business Resource Centre",
+      "url": "https://www.lloydsbank.com/business/resource-centre/legal.html"
+     },
+     {
+      "page_age": "49 days ago",
+      "title": "Lloyds Bank - Buy Shares - Investments",
+      "url": "https://www.investments.lloydsbank.com/share-centre/details/?csid=10056"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group",
+      "url": "https://en.wikipedia.org/wiki/Lloyds_Banking_Group"
+     },
+     {
+      "page_age": null,
+      "title": "Document",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167831/000116010622000022/lloydsbankplcexhibit12021.htm"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "88 days ago",
+      "title": "REG - Bank of Scotland Plc Lloyds Banking Group Bank of Scotland Halifax PLC HBOS Treas Serv - 2026 half year results \u2014 TradingView News",
+      "url": "https://www.tradingview.com/news/reuters.com,2026-07-30:newsml_RSd5720Oa:0-reg-bank-of-scotland-plc-lloyds-banking-group-bank-of-scotland-halifax-plc-hbos-treas-serv-2026-half-year-results/"
+     },
+     {
+      "page_age": null,
+      "title": "HBOS",
+      "url": "https://en.wikipedia.org/wiki/HBOS"
+     },
+     {
+      "page_age": null,
+      "title": "Sainsbury%27s Bank",
+      "url": "https://en.wikipedia.org/wiki/Sainsbury%27s_Bank"
+     },
+     {
+      "page_age": null,
+      "title": "Scottish Widows",
+      "url": "https://en.wikipedia.org/wiki/Scottish_Widows"
+     },
+     {
+      "page_age": "87 days ago",
+      "title": "Lloyds Banking Group RNS Announcements",
+      "url": "https://www.investegate.co.uk/company/LLOY"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds TSB Act 1998",
+      "url": "https://en.wikipedia.org/wiki/Lloyds_TSB_Act_1998"
+     },
+     {
+      "page_age": null,
+      "title": "TSB Bank (United Kingdom)",
+      "url": "https://en.wikipedia.org/wiki/TSB_Bank_(United_Kingdom)"
+     },
+     {
+      "page_age": "89 days ago",
+      "title": "Halifax bank brand to be replaced by Lloyds",
+      "url": "https://www.moneysavingexpert.com/news/2026/07/halifax-brand-scrapped-lloyds/"
+     },
+     {
+      "page_age": "1 days ago",
+      "title": "Lloyds Banking Group share price",
+      "url": "https://research-centre.barclays.co.uk/shares/lloyds-banking-group/company-information/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"Lloyds Bank plc\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1167831/000116783126000007/lbk-20251231_d2.htm\", \"quote\": \"references to the \u201cBank\u201d are to Lloyds Bank plc\"},\n  \"country\": {\"value\": \"United Kingdom\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1167831/000116783126000007/lbk-20251231_d2.htm\", \"quote\": \"The Bank is a public limited company incorporated under the laws of England.\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1167831/000116783126000007/lbk-20251231_d2.htm\", \"quote\": \"Lloyds Bank plc was incorporated as a public limited company and registered in England under the UK Companies Act on 20 April 1865\"},\n  \"equity_listed\": {\"value\": \"no\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1167831/000116783126000007/lbk-20251231_d2.htm\", \"quote\": \"the Bank is a wholly owned subsidiary of Lloyds Banking Group plc\"},\n  \"exchange\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"ticker\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"market_segment\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"debt_listed\": {\"value\": \"yes\", \"url\": \"https://www.investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/admission-of-covered-bonds-to-trading/9739433\", \"quote\": \"admitted to the Official List of the Financial Conduct Authority and to trading on the regulated market of the London Stock Exchange on 25 August 2026\"},\n  \"is_subsidiary\": {\"value\": \"yes\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1167831/000116010625000012/lbk-20241231_d2.htm\", \"quote\": \"The Bank is a wholly-owned subsidiary of Lloyds Banking Group plc.\"},\n  \"parent_name\": {\"value\": \"Lloyds Banking Group plc\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1167831/000116783126000007/lbk-20251231_d2.htm\", \"quote\": \"References to \u201cLloyds Banking Group\u201d and \u201cParent Group\u201d are to Lloyds Banking Group plc, the parent company of Lloyds Bank plc\"},\n  \"parent_listed\": {\"value\": \"yes\", \"url\": \"https://www.investegate.co.uk/company/LLOY\", \"quote\": \"Lloyds Banking Group is listed on the London Stock Exchange (LSE) and is a constituent of the FTSE 100 Index.\"},\n  \"events\": [],\n  \"note\": \"Entity chosen: Lloyds Bank plc (England and Wales company no. 2065), not its parent Lloyds Banking Group plc (LSE: LLOY). Its ordinary shares are wholly owned by the parent and are not traded, so there are no exchange or ticker details for its equity. Its market_segment is 'unknown' because it has no listed equity. Debt_listed is 'yes' based on the covered-bond admission to the LSE regulated market on 25 August 2026, issued under a programme with a prospectus dated 4 August 2026. I found no source dated on or before 2026-07-09 that confirms a specific listed bond, so this is inferred from the programme's ongoing LSE listing. I found no listing, delisting, demerger or takeover event for Lloyds Bank plc's own shares in the three years before 2026-07-09. The events list is empty.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:31:57+00:00",
+  "inputs": {
+   "as_of": "2026-07-09",
+   "org_key": "lloyds-bank"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 53740,
+   "output_tokens": 2342,
+   "web_search_requests": 4
+  }
+ }
+}

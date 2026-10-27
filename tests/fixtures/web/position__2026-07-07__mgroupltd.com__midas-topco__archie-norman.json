@@ -1,0 +1,76 @@
+{
+ "key": "17f9fc0bacb31e894555d9864d4c1cd88f547619b1c3b641b24488b076cc916e",
+ "payload": {
+  "content": [
+   {
+    "query": "mgroupltd.com Archie Norman board of directors Midas Topco",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "575 days ago",
+      "title": "M Group Limited (formerly Midas Midco Limited)",
+      "url": "https://mgroupltd.com/media/jdnfqgr2/midas-midco-limited-31-march-2025-signed-v2.pdf"
+     },
+     {
+      "page_age": "573 days ago",
+      "title": "Our leadership team",
+      "url": "https://mgroupltd.com/who-we-are/leadership/"
+     },
+     {
+      "page_age": "558 days ago",
+      "title": "M Group Services appoints Archie Norman as Non-Executive Chairman",
+      "url": "https://mgroupltd.com/news-insights/m-group-services-announces-appointment-of-archie-norman-as-non-executive-chairman/"
+     },
+     {
+      "page_age": "120 days ago",
+      "title": "A letter from our Chairman",
+      "url": "https://mgroupltd.com/news-insights/a-letter-from-our-chairman/"
+     },
+     {
+      "page_age": null,
+      "title": "Annual Report 2026",
+      "url": "https://mgroupltd.com/who-we-are/investors/annual-report/"
+     },
+     {
+      "page_age": "575 days ago",
+      "title": "Minerva Equity Limited Annual report and financial statements",
+      "url": "https://mgroupltd.com/media/jzohgeqv/minerva-equity-limited-31-march-2025-signed.pdf"
+     },
+     {
+      "page_age": "573 days ago",
+      "title": "Our History",
+      "url": "https://mgroupltd.com/who-we-are/our-history/"
+     },
+     {
+      "page_age": "940 days ago",
+      "title": "M Group Services Limited Annual report and financial statements",
+      "url": "https://mgroupltd.com/media/jsxktra2/m-group-services-limited-31-march-2024-final.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\"value\": \"yes\", \"url\": \"https://mgroupltd.com/who-we-are/leadership/\", \"quote\": \"Archie Norman, Non-Executive Chair at M Group\"},\n  \"capacity\": {\"value\": \"chair\", \"url\": \"https://mgroupltd.com/media/jdnfqgr2/midas-midco-limited-31-march-2025-signed-v2.pdf\", \"quote\": \"Archie was appointed as non-executive chairman in March 2025\"},\n  \"start_date\": {\"value\": \"2025-03-04\", \"url\": \"https://mgroupltd.com/media/jdnfqgr2/midas-midco-limited-31-march-2025-signed-v2.pdf\", \"quote\": \"Chairman A J Norman (appointed 4 March 2025)\"},\n  \"end_date\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"note\": \"The site does not show a board for MIDAS TOPCO LIMITED itself. It shows the board of M Group Limited (formerly Midas Midco Limited), a subsidiary owned by Midas Topco Limited, and this answer is for that board. The directors list in the FY to 31 March 2025 accounts includes A J Norman as non-executive chairman. The undated leadership page lists him as Non-Executive Chair on the Board, and the Annual Report 2026 page names him as Chairman. I found no dated board list for 2026-07-07 and no end date. The leadership page says he became Chairman in 2024, which conflicts with the March 2025 appointment date in the accounts, possibly because it refers to a different group entity. The 2025-03-04 start is more than six months before 2026-07-07. The website does not show whether he sits on the Midas Topco Limited board, so the analyst should check Companies House for that. A change after 2026-07-07 cannot be ruled out, but nothing found suggests one.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:52:59+00:00",
+  "inputs": {
+   "as_of": "2026-07-07",
+   "domain": "mgroupltd.com",
+   "org_key": "midas-topco",
+   "person": "archie-norman"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 13843,
+   "output_tokens": 1088,
+   "web_search_requests": 1
+  }
+ }
+}

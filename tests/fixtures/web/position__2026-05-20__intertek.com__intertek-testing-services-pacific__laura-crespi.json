@@ -1,0 +1,86 @@
+{
+ "key": "f371fd49902eed63b441e266b7d3fcb30a2775eb849c035113ebc211646ed884",
+ "payload": {
+  "content": [
+   {
+    "query": "intertek.com Laura Crespi Intertek Testing Services Pacific Limited director",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "560 days ago",
+      "title": "Board of Directors",
+      "url": "https://www.intertek.com/investors/board/"
+     },
+     {
+      "page_age": null,
+      "title": "Group Executive Committee",
+      "url": "https://www.intertek.com/about/executive-committee/"
+     },
+     {
+      "page_age": "167 days ago",
+      "title": "Intertek Group plc NOTICE OF 2026 ANNUAL GENERAL MEETING",
+      "url": "https://www.intertek.com/siteassets/investors/2026/notice-of-2026-annual-general-meeting.pdf"
+     },
+     {
+      "page_age": "196 days ago",
+      "title": "Strategic Review Initiation & Trading Update 2026 Script",
+      "url": "https://www.intertek.com/siteassets/investors/2026/intertek-strategic-review-initiation--trading-update-2026-script.pdf"
+     },
+     {
+      "page_age": "88 days ago",
+      "title": "Intertek",
+      "url": "https://www.intertek.com/siteassets/investors/2026/intertek-2026-half-year-results-announcement.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Roles and Responsibilities",
+      "url": "https://www.intertek.com/investors/corporate-governance/roles-and-responsibilities/"
+     },
+     {
+      "page_age": "239 days ago",
+      "title": "intertek-financial-report-2025.pdf",
+      "url": "https://www.intertek.com/siteassets/investors/2026/ara/intertek-financial-report-2025.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Intertek PSI California",
+      "url": "https://www.intertek.com/building/psi/locations/california/"
+     },
+     {
+      "page_age": "585 days ago",
+      "title": "ISSUED: 21.03.2025 GTS-PM-DRC-EIG-ICD-02 GOVERNMENT AND TRADE SERVICES",
+      "url": "https://www.intertek.com/siteassets/gts/drc/drc-eco-levy-intertek-offices-contact-details_21032025.pdf"
+     },
+     {
+      "page_age": "585 days ago",
+      "title": "ISSUED: 21.03.2025 GTS-PM-LBY-EIG-ICD-68 GOVERNMENT AND TRADE SERVICES",
+      "url": "https://www.intertek.com/siteassets/gts/libya/libya-cs-intertek-offices-contact-details_21032025.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\n    \"value\": \"yes\",\n    \"url\": \"https://www.intertek.com/investors/board/\",\n    \"quote\": \"Appointed to the Board as Chief Financial Officer in April 2026.\"\n  },\n  \"capacity\": {\n    \"value\": \"executive_director\",\n    \"url\": \"https://www.intertek.com/investors/board/\",\n    \"quote\": \"Chief Financial Officer Appointed to the Board as Chief Financial Officer in April 2026.\"\n  },\n  \"start_date\": {\n    \"value\": \"2026-04-10\",\n    \"url\": \"https://www.intertek.com/siteassets/investors/2026/notice-of-2026-annual-general-meeting.pdf\",\n    \"quote\": \"Laura Crespi was appointed to the Board as Director and Chief Financial Officer on 10 April 2026.\"\n  },\n  \"end_date\": {\n    \"value\": null,\n    \"url\": null,\n    \"quote\": null\n  },\n  \"note\": \"The website does not show a board list for INTERTEK TESTING SERVICES PACIFIC LIMITED, a Hong Kong subsidiary. It only names the company as a subsidiary in the 2025 financial report. These answers are for the board of the parent, Intertek Group plc, and do not confirm a seat on the Pacific Limited board. Capacity is inferred from her position as Chief Financial Officer on the Board. The pages do not use the words 'executive director'. The role began on 10 April 2026, about 40 days before the 2026-05-20 AGM. Her election as a director was Resolution 5 at that AGM. The pages give no end date. The board page is undated, so I can't rule out a change after 2026-05-20, but nothing I found suggests one.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:50:55+00:00",
+  "inputs": {
+   "as_of": "2026-05-20",
+   "domain": "intertek.com",
+   "org_key": "intertek-testing-services-pacific",
+   "person": "laura-crespi"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 14307,
+   "output_tokens": 1038,
+   "web_search_requests": 1
+  }
+ }
+}

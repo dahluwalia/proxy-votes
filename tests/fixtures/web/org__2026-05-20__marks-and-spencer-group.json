@@ -1,0 +1,300 @@
+{
+ "key": "1fa01230980f13882d97136fc6b9626cb4f8d8954347ed3f040060245ba0cca8",
+ "payload": {
+  "content": [
+   {
+    "query": "Marks and Spencer Group plc London Stock Exchange main market ticker MKS",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Marks and Spencer Group plc annual general meeting 2026 notice",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Marks and Spencer Group plc bonds admitted to trading London Stock Exchange notes",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "67 days ago",
+      "title": "Marks & Spencer Share Price. MKS - Stock Quote, Charts, Trade History, Share Chat, MKS Values. Marks And Spencer Group Plc Ord 1p",
+      "url": "https://www.lse.co.uk/SharePrice.html?shareprice=MKS&share=Marks--Spencer"
+     },
+     {
+      "page_age": "158 days ago",
+      "title": "Marks and Spencer Group (LON:MKS) Stock Price & Overview",
+      "url": "https://stockanalysis.com/quote/lon/MKS/"
+     },
+     {
+      "page_age": "615 days ago",
+      "title": "Marks & Spencer Group plc Stock (MKS) - Quote London S.E.- MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/MARKS-SPENCER-GROUP-PLC-9590119/"
+     },
+     {
+      "page_age": null,
+      "title": "Marks & Spencer Group PLC (MKS) Stock Price Quote Today & Current Price Chart",
+      "url": "https://capital.com/en-int/markets/shares/marks-spencer-group-plc-share-price"
+     },
+     {
+      "page_age": "444 days ago",
+      "title": "MKS: Marks & Spencer Group PLC Stock Price Quote - London - Bloomberg",
+      "url": "https://www.bloomberg.com/quote/MKS:LN"
+     },
+     {
+      "page_age": "61 days ago",
+      "title": "Marks and Spencer Group Plc (MKS) Stock Price & News - Google Finance",
+      "url": "https://www.google.com/finance/quote/MKS:LON"
+     },
+     {
+      "page_age": "307 days ago",
+      "title": "Marks & Spencer Stock Price Today",
+      "url": "https://www.investing.com/equities/marks---spencer-group"
+     },
+     {
+      "page_age": null,
+      "title": "Marks %26 Spencer",
+      "url": "https://en.wikipedia.org/wiki/Marks_%26_Spencer"
+     },
+     {
+      "page_age": null,
+      "title": "ai stock analysis",
+      "url": "https://www.tipranks.com/stocks/gb:mks/ai-stock-analysis"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "147 days ago",
+      "title": "Annual Financial Report",
+      "url": "https://www.investegate.co.uk/announcement/rns/marks-spencer-group--mks/annual-financial-report/9594621"
+     },
+     {
+      "page_age": null,
+      "title": "Tuesday 7 July 2026 at 11am Held at, and broadcast from: Waterside House",
+      "url": "https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-notice-of-meeting-2026.pdf"
+     },
+     {
+      "page_age": "160 days ago",
+      "title": "Marks and Spencer Group plc Annual Report and Financial Statements 2026",
+      "url": "https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf"
+     },
+     {
+      "page_age": "111 days ago",
+      "title": "REG - Marks and Spencer Gp - Result of AGM \u2014 TradingView News",
+      "url": "https://www.tradingview.com/news/reuters.com,2026-07-07:newsml_RSG3639La:0-reg-marks-and-spencer-gp-result-of-agm/"
+     },
+     {
+      "page_age": "1369 days ago",
+      "title": "Annual General Meeting (AGM) - Marks & Spencer - M&S",
+      "url": "https://corporate.marksandspencer.com/investors/shareholder-centre/annual-general-meeting-agm"
+     },
+     {
+      "page_age": "147 days ago",
+      "title": "Marks and Spencer Files 2026 Annual Report and Sets Date for AGM - TipRanks.com",
+      "url": "https://www.tipranks.com/news/company-announcements/marks-and-spencer-files-2026-annual-report-and-sets-date-for-agm"
+     },
+     {
+      "page_age": "150 days ago",
+      "title": "Marks & Spencer : Full Annual Report (m and s annual report and financial statements 2026)",
+      "url": "https://uk.marketscreener.com/news/marks-spencer-full-annual-report-m-and-s-annual-report-and-financial-statements-2026-ce7f5dd8d18ffe2d"
+     },
+     {
+      "page_age": null,
+      "title": "2026 Annual Report - Marks & Spencer - M&S",
+      "url": "https://corporate.marksandspencer.com/investors/our-performance-updates/2026-annual-report"
+     },
+     {
+      "page_age": null,
+      "title": "Tuesday 7 July 2026 at 11am Held at, and broadcast from: Waterside House",
+      "url": "https://docs.publicnow.com/viewDoc?filename=33746\\EXT\\FA788859201BAA22B554EAFC173241C6E996B0AA_34F7A197B67588CB1208383923B87C60AAD20B38.PDF"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "3269 days ago",
+      "title": "MARKS AND SPENCER plc - RNS Submit",
+      "url": "https://www.rns-pdf.londonstockexchange.com/rns/3416W_-2017-11-13.pdf"
+     },
+     {
+      "page_age": "10367 days ago",
+      "title": "1 MARKS AND SPENCER plc",
+      "url": "https://corporate.marksandspencer.com/sites/marksandspencer/files/marks-spencer/dept/offering-circular-m-and-s-update-2025.pdf"
+     },
+     {
+      "page_age": "25 days ago",
+      "title": "REG - Marks and Spencer Gp - Admission to Trading \u2014 TradingView News",
+      "url": "https://www.tradingview.com/news/reuters.com,2026-10-01:newsml_RSA9833Wa:0-reg-marks-and-spencer-gp-admission-to-trading/"
+     },
+     {
+      "page_age": "25 days ago",
+      "title": "Admission to Trading - 09:00:01 01 Oct 2026 - MKS News article",
+      "url": "https://www.londonstockexchange.com/news-article/MKS/admission-to-trading/17815016"
+     },
+     {
+      "page_age": "25 days ago",
+      "title": "Marks and Spencer Admits Additional Shares to LSE Under Employee Scheme - TipRanks.com",
+      "url": "https://www.tipranks.com/news/company-announcements/marks-and-spencer-admits-additional-shares-to-lse-under-employee-scheme"
+     },
+     {
+      "page_age": null,
+      "title": "MARKS AND SPENCER GROUP PLC MKS Stock",
+      "url": "https://www.londonstockexchange.com/stock/MKS/marks-and-spencer-group-plc"
+     },
+     {
+      "page_age": null,
+      "title": "MARKS AND SPENCER GROUP PLC MKS Trade recap - Stock",
+      "url": "https://www.londonstockexchange.com/stock/MKS/marks-and-spencer-group-plc/trade-recap"
+     },
+     {
+      "page_age": null,
+      "title": "International bonds: Marks&Spencer, 4.75% 12jun2025, GBP (FIGI BBG003PFYYH2, XS0863523030, WKN A1HDU1)",
+      "url": "https://cbonds.com/bonds/50581/"
+     },
+     {
+      "page_age": "25 days ago",
+      "title": "Marks and Spencer Group PLC Admission to Trading - ADVFN",
+      "url": "https://uk.advfn.com/stock-market/london/marks-and-spencer-MKS/share-news/Marks-and-Spencer-Group-PLC-Admission-to-Trading/99408865"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "M&S Ocado Retail acquisition Ocado 50% completed 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Marks and Spencer Group plc registered in England and Wales No. 4256886 FTSE 100 return",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Ocado",
+      "url": "https://en.wikipedia.org/wiki/Ocado"
+     },
+     {
+      "page_age": "90 days ago",
+      "title": "Ocado drops \u00a3191m M&S payout fight as warehouse talks continue - Retail Gazette",
+      "url": "https://www.retailgazette.co.uk/blog/2026/07/ocado-drops-191m-ms-payout-fight-as-warehouse-talks-continue/"
+     },
+     {
+      "page_age": "2798 days ago",
+      "title": "m-and-s-ocado-jv-rns-final.pdf - Marks & Spencer",
+      "url": "https://corporate.marksandspencer.com/sites/marksandspencer/files/marks-spencer/results-reports-webcasts-and-presentation/m-and-s-ocado-jv-rns-final.pdf"
+     },
+     {
+      "page_age": "2639 days ago",
+      "title": "M&S Ocado Retail: Retailers announce acquisition",
+      "url": "https://www.retail-insight-network.com/news/ms-ocado-retail-acquisition/"
+     },
+     {
+      "page_age": "2639 days ago",
+      "title": "BRINGING THE BEST TOGETHER MARKS AND SPENCER GROUP PLC ESTABLISHES ITS JOINT VENTURE WITH OCADO GROUP PLC",
+      "url": "https://corporate.marksandspencer.com/newsroom/press-releases/bringing-best-together-marks-and-spencer-group-plc-establishes-its-joint"
+     },
+     {
+      "page_age": "796 days ago",
+      "title": "Ocado Retail",
+      "url": "https://www.ocadogroup.com/about-us/osp-partners/ocado"
+     },
+     {
+      "page_age": "138 days ago",
+      "title": "Ocado M&S - Joint Venture Explained Amid 2024 Dispute - Public Journal",
+      "url": "https://publicjournal.co.uk/business/ocado-m-s-joint-venture/"
+     },
+     {
+      "page_age": "233 days ago",
+      "title": "M&S buys 50% stake in Ocado.com - Sharecast.com",
+      "url": "https://www.sharecast.com/news/news-and-announcements/ms-buys-50-stake-in-ocadocom--3764810.html"
+     },
+     {
+      "page_age": "355 days ago",
+      "title": "M&S has not discussed buying all of Ocado Retail, CEO says",
+      "url": "https://www.lse.co.uk/news/mamps-has-not-discussed-buying-all-of-ocado-retail-ceo-says-deifrhv8p6vx2eb.html"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "425 days ago",
+      "title": "Contact",
+      "url": "https://corporate.marksandspencer.com/contact"
+     },
+     {
+      "page_age": "160 days ago",
+      "title": "Marks & Spencer Share Price",
+      "url": "https://uk.investing.com/equities/marks---spencer-group"
+     },
+     {
+      "page_age": "31 days ago",
+      "title": "MARKS AND SPENCER GROUP P.L.C. (London, Reg. 04256886): UBO, Shareholders & Group Structure (United Kingdom)",
+      "url": "https://zavia.ai/companies/marks-and-spencer-group-p-l-c-gb-22894572/"
+     },
+     {
+      "page_age": "67 days ago",
+      "title": "Marks And Spencer Group PLC Share Price (LSE:MKS)",
+      "url": "https://www.ajbell.co.uk/market-research/LSE:MKS"
+     },
+     {
+      "page_age": "2 days ago",
+      "title": "Marks and Spencer Group plc (MKS.L) stock price, news, quote and history - Yahoo Finance",
+      "url": "https://uk.finance.yahoo.com/quote/MKS.L/"
+     },
+     {
+      "page_age": "157 days ago",
+      "title": "Marks and Spencer Group Plc (MKS) Stock Price & News - Google Finance",
+      "url": "https://www.google.com/finance/beta/quote/MKS:LON"
+     },
+     {
+      "page_age": null,
+      "title": "Marks %26 Spencer",
+      "url": "https://en.wikipedia.org/wiki/Marks_%26_Spencer"
+     },
+     {
+      "page_age": null,
+      "title": "Marks & Spencer Group PLC MKS",
+      "url": "https://lt.morningstar.com/1c6qh1t6k9/stockreport/default.aspx?SecurityToken=0P00007OL2%5D3%5D0%5DE0EXG%24XLON"
+     },
+     {
+      "page_age": null,
+      "title": "sg.finance.yahoo.com",
+      "url": "https://sg.finance.yahoo.com/quote/MAKSF"
+     },
+     {
+      "page_age": null,
+      "title": "uk.finance.yahoo.com",
+      "url": "https://uk.finance.yahoo.com/quote/MAKSY"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"Marks and Spencer Group plc\", \"url\": \"https://www.tradingview.com/news/reuters.com,2026-10-01:newsml_RSA9833Wa:0-reg-marks-and-spencer-gp-admission-to-trading/\", \"quote\": \"Name of issuer \u00b7 Marks and Spencer Group plc\"},\n  \"country\": {\"value\": \"United Kingdom\", \"url\": \"https://corporate.marksandspencer.com/contact\", \"quote\": \"Place of registration: England and Wales\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://zavia.ai/companies/marks-and-spencer-group-p-l-c-gb-22894572/\", \"quote\": \"is a public limited company registered in England and Wales under company number 04256886\"},\n  \"equity_listed\": {\"value\": \"yes\", \"url\": \"https://www.tradingview.com/news/reuters.com,2026-10-01:newsml_RSA9833Wa:0-reg-marks-and-spencer-gp-admission-to-trading/\", \"quote\": \"Ordinary shares of 1p each ISIN: GB0031274896\"},\n  \"exchange\": {\"value\": \"London Stock Exchange\", \"url\": \"https://www.tradingview.com/news/reuters.com,2026-10-01:newsml_RSA9833Wa:0-reg-marks-and-spencer-gp-admission-to-trading/\", \"quote\": \"London Stock Exchange (XLON); Main Market\"},\n  \"ticker\": {\"value\": \"MKS\", \"url\": \"https://www.lse.co.uk/SharePrice.html?shareprice=MKS&share=Marks--Spencer\", \"quote\": \"Marks And Spencer Group Plc Ord 1p is listed on the London Stock Exchange trading with ticker code MKS.L.\"},\n  \"market_segment\": {\"value\": \"main\", \"url\": \"https://www.tradingview.com/news/reuters.com,2026-10-01:newsml_RSA9833Wa:0-reg-marks-and-spencer-gp-admission-to-trading/\", \"quote\": \"London Stock Exchange (XLON); Main Market\"},\n  \"debt_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"is_subsidiary\": {\"value\": \"no\", \"url\": \"https://zavia.ai/companies/marks-and-spencer-group-p-l-c-gb-22894572/\", \"quote\": \"was introduced as the new ultimate holding company of the Marks & Spencer retail group in March 2002\"},\n  \"parent_name\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"parent_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"events\": [],\n  \"note\": \"I chose Marks and Spencer Group plc (company no. 4256886), the listed holding company. It is not the operating subsidiary Marks and Spencer plc (no. 214436), which issues the EMTN notes. Debt: the EMTN programme (\u00a33bn, issuer Marks and Spencer plc) is for admission to the LSE main market, but I found no source showing listed debt issued by Group plc itself, so debt_listed is unknown. Equity listing on 2026-05-20: my sources are dated shortly after that date. They are the 1 Oct 2026 RNS naming the Main Market and the AGM notice referring to issued share capital at 19 May 2026. They show continuous listing, and I found no delisting. The LSE page gives the original admission date as 19 March 2002. The 2026 AGM was held on 7 July 2026, not 20 May 2026 (notice dated 1 June 2026). Please check the date you were given. Events: I found no listing, delisting, demerger or takeover of M&S itself in the 3 years before 2026-05-20. The 2026 annual report mentions consolidating Ocado Retail into M&S, but I could not verify the date or the nature of the transaction. I have not listed it as an event. Nothing found shows a parent company; parent_listed is unknown because there is no parent.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:23:08+00:00",
+  "inputs": {
+   "as_of": "2026-05-20",
+   "org_key": "marks-and-spencer-group"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 72836,
+   "output_tokens": 3009,
+   "web_search_requests": 5
+  }
+ }
+}

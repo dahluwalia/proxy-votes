@@ -1,0 +1,52 @@
+# Tesco NED (1) + Barratt Redrow chair (2) + the ICE group (ICE Clear Europe chair and the
+# Intercontinental Exchange board count once; ICE Clear Europe itself is unlisted) (1) = 4,
+# plus Moelis & Company, listed under "Other" with no title: board seat unknown -> 4-5.
+# The Adobe advisory board, NFTS audit-committee chair and V&A trusteeship score 0.
+name: Caroline Silver
+case: [H7, H8, H10, H12]
+roster:
+  - {meeting: tesco, resolution_no: 13, name: Caroline Silver,
+     role_text_at_issuer: Independent Non-executive Director,
+     role_type_at_issuer: non_executive_director, coverage: structured}
+seats:
+  - {meeting: tesco, org_name: Tesco PLC, role_text: Independent Non-executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: tesco, org_name: Barratt Redrow plc, role_text: Chair, role_type: chair,
+     board_seat: "yes", chair: "yes", executive: "no", current: "yes"}
+  - {meeting: tesco, org_name: ICE Clear Europe, role_text: Chair, role_type: chair,
+     board_seat: "yes", chair: "yes", executive: "no", current: "yes"}
+  - {meeting: tesco, org_name: "Intercontinental Exchange, Inc.", role_text: Non-executive director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: tesco, org_name: Moelis & Company, role_text: null, role_type: other,
+     board_seat: unknown, chair: "no", executive: unknown, current: "yes"}
+  - {meeting: tesco, org_name: Adobe Inc., role_text: Member of the International Advisory Board,
+     role_type: adviser, board_seat: "no", chair: "no", executive: "no", current: "yes"}
+  - {meeting: tesco, org_name: National Film and Television School,
+     role_text: Chair of the Audit Committee, role_type: committee_chair, board_seat: "no",
+     chair: "no", executive: "no", current: "yes"}
+  - {meeting: tesco, org_name: V&A Foundation, role_text: Member of the Board of Trustees,
+     role_type: trustee, board_seat: "no", chair: "no", executive: "no", current: "yes"}
+ch:
+  - officer_id: fx-silver
+    name: SILVER, Caroline Louise
+    appointments:
+      - {company_number: "00445790", company_name: TESCO PLC, company_type: plc, role: director,
+         appointed_on: 2025-03-01}
+      - {company_number: "00604574", company_name: BARRATT REDROW PLC, company_type: plc,
+         role: director, appointed_on: 2022-07-01}
+      - {company_number: "05248745", company_name: ICE CLEAR EUROPE LIMITED, company_type: ltd,
+         role: director, appointed_on: 2017-11-01}
+orgs:
+  - {canonical_name: Barratt Redrow plc, org_type: company, listed: "yes", equity_listing: "yes", market: LSE Main Market}
+  - {canonical_name: ICE Clear Europe Limited, org_key: ice-clear-europe, org_type: company,
+     listed: "no", equity_listing: "no", parent_name: "Intercontinental Exchange, Inc."}
+  - {canonical_name: "Intercontinental Exchange, Inc.", org_type: company, listed: "yes", equity_listing: "yes",
+     market: NYSE}
+  - {canonical_name: Moelis & Company, org_type: company, listed: "yes", equity_listing: "yes", market: NYSE}
+  - {canonical_name: Adobe Inc., org_type: company, listed: "yes", equity_listing: "yes", market: Nasdaq}
+  - {canonical_name: National Film and Television School, org_type: education, listed: "no", equity_listing: "no"}
+  - {canonical_name: V&A Foundation, org_type: charity, listed: "no", equity_listing: "no"}
+expect:
+  tesco: {vote: REVIEW, points: [4, 5], blocked_on: [moelis-and-company.board_seat]}

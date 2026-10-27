@@ -1,0 +1,12 @@
+# The five 2026 AGMs (CLAUDE.md M1 oracle table), keyed by meeting key.
+itv: {meeting_id: "mtg:04967001:2026-05-07", company_name: ITV plc, company_number: "04967001",
+      agm_date: 2026-05-07, doc_sha: fixture, key: itv}
+intertek: {meeting_id: "mtg:04267576:2026-05-20", company_name: Intertek Group plc,
+           company_number: "04267576", agm_date: 2026-05-20, doc_sha: fixture, key: intertek}
+tesco: {meeting_id: "mtg:00445790:2026-06-18", company_name: Tesco PLC, company_number: "00445790",
+        agm_date: 2026-06-18, doc_sha: fixture, key: tesco}
+ms: {meeting_id: "mtg:04256886:2026-07-07", company_name: Marks and Spencer Group plc,
+     company_number: "04256886", agm_date: 2026-07-07, doc_sha: fixture, key: ms}
+severn-trent: {meeting_id: "mtg:02366619:2026-07-09", company_name: Severn Trent Plc,
+               company_number: "02366619", agm_date: 2026-07-09, doc_sha: fixture,
+               key: severn-trent}

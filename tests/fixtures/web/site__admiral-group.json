@@ -1,0 +1,78 @@
+{
+ "key": "f016c0676899b626dbbc5f0d6cc605a10d9ae5e3a677472f037130dfbb2cc9d2",
+ "payload": {
+  "content": [
+   {
+    "query": "Admiral Group plc board of directors investor relations",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Our Board and Management",
+      "url": "https://admiralgroup.co.uk/who-we-are/our-board-and-management"
+     },
+     {
+      "page_age": null,
+      "title": "Admiral Group plc: Governance, Directors and Executives & Committees - MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/ADMIRAL-GROUP-PLC-120792049/company-governance/"
+     },
+     {
+      "page_age": null,
+      "title": "ADM Investor Relations - Admiral Group PLC - Alpha Spread",
+      "url": "https://www.alphaspread.com/security/lse/adm/investor-relations"
+     },
+     {
+      "page_age": "810 days ago",
+      "title": "Media library",
+      "url": "https://admiralgroupplc.gcs-web.com/media/media-library"
+     },
+     {
+      "page_age": null,
+      "title": "Financial calendar",
+      "url": "https://www.admiralgroup.co.uk/investor-relations/financial-calendar"
+     },
+     {
+      "page_age": "593 days ago",
+      "title": "Admiral Group plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/ADMIRAL-GROUP-PLC-9677065/company/"
+     },
+     {
+      "page_age": "600 days ago",
+      "title": "Investor relations",
+      "url": "https://www.admiralgroup.co.uk/investor-relations/overview"
+     },
+     {
+      "page_age": "3459 days ago",
+      "title": "Admiral Group plc (ADM.L) Company Profile & Facts - Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/ADM.L/profile/"
+     },
+     {
+      "page_age": null,
+      "title": "Admiral Group plc (AMIG.Y) Leadership & Management Team Analysis - Simply Wall St",
+      "url": "https://simplywall.st/stocks/us/insurance/otc-amig.y/admiral-group/management"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.admiralgroup.co.uk\",\n    \"url\": \"https://www.admiralgroup.co.uk/investor-relations/overview\",\n    \"quote\": \"Admiral Group plc is an established financial services provider offering\"\n  },\n  \"note\": \"This is Admiral Group's own corporate and investor-relations site. Its board page is https://admiralgroup.co.uk/who-we-are/our-board-and-management. I did not check the Companies House number against the site. The quote is cut off at the end of the search snippet, so it is a verbatim fragment and not a full sentence.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:47:05+00:00",
+  "inputs": {
+   "org_key": "admiral-group"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 12656,
+   "output_tokens": 270,
+   "web_search_requests": 1
+  }
+ }
+}

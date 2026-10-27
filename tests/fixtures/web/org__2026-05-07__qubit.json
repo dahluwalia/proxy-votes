@@ -1,0 +1,251 @@
+{
+ "key": "6a883a4b557440a2bf3af9ad983eea38eb1c4cdca878c8bc63fc7b8c2a3b4a4b",
+ "payload": {
+  "content": [
+   {
+    "query": "Qubit company annual general meeting 7 May 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Qubit Digital Ltd Companies House",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "308 days ago",
+      "title": "Qubits 2026 - Qureca",
+      "url": "https://www.qureca.com/calendar/qubits-2026/"
+     },
+     {
+      "page_age": "214 days ago",
+      "title": "First Quantum Minerals Provides Notice of Annual General Meeting of Shareholders and Filing of Management Information Circular and Supporting Documents",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/first-quantum-minerals-provides-notice-110000487.html"
+     },
+     {
+      "page_age": "587 days ago",
+      "title": "Quantum Computing Inc.: Company Events Publications and Financial Calendar",
+      "url": "https://www.marketscreener.com/quote/stock/QUANTUM-COMPUTING-INC-120790471/calendar/"
+     },
+     {
+      "page_age": "287 days ago",
+      "title": "The Complete List of Quantum Computing Conferences in 2026 - Column",
+      "url": "https://columncontent.com/quantum-computing-conferences/"
+     },
+     {
+      "page_age": null,
+      "title": "Annual general meeting",
+      "url": "https://en.wikipedia.org/wiki/Annual_general_meeting"
+     },
+     {
+      "page_age": null,
+      "title": "QUANTUM COMPUTING INC (QUBT) Annual Meeting Analysis",
+      "url": "https://proxyanalyst.com/companies/qubt/annual-meeting"
+     },
+     {
+      "page_age": "343 days ago",
+      "title": "Qubits Ventures Events",
+      "url": "https://www.qubitsventures.com/events"
+     },
+     {
+      "page_age": "179 days ago",
+      "title": "Quantum Computing Inc. (NASDAQ: QUBT) details 2026 meeting, share and pay proposals",
+      "url": "https://www.stocktitan.net/sec-filings/QUBT/def-14a-quantum-computing-inc-definitive-proxy-statement-f426be9073ac.html"
+     },
+     {
+      "page_age": "118 days ago",
+      "title": "Quantum Computing Inc. (QUBT) expands authorized stock and equity plan at 2026 meeting",
+      "url": "https://www.stocktitan.net/sec-filings/QUBT/8-k-quantum-computing-inc-reports-material-event-04fb6a563d17.html"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "QUBIT DIGITAL LTD overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07116058"
+     },
+     {
+      "page_age": null,
+      "title": "QUBIT DIGITAL LTD filing history - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07116058/filing-history"
+     },
+     {
+      "page_age": null,
+      "title": "QUBIT DIGITAL LTD Company Profile",
+      "url": "https://www.dnb.com/business-directory/company-profiles.qubit_digital_ltd.1e349ee7b0ea7cd1f953a6b519d8edd7.html"
+     },
+     {
+      "page_age": null,
+      "title": "Qubit Digital Ltd - Company Profile and News - Bloomberg Markets",
+      "url": "https://www.bloomberg.com/profile/company/0626045D:LN"
+     },
+     {
+      "page_age": null,
+      "title": "QUBIT DIGITAL LTD. Free business summary taken from official companies house information. Free alerts. Registered as 07116058",
+      "url": "https://companycheck.co.uk/company/07116058/QUBIT-DIGITAL-LTD/companies-house-data"
+     },
+     {
+      "page_age": null,
+      "title": "Qubit Digital Technology Ltd",
+      "url": "https://www.solocheck.ie/Irish-Company/Qubit-Digital-Technology-Limited-803144"
+     },
+     {
+      "page_age": "111 days ago",
+      "title": "Qubit - 2026 Company Profile, Team, Funding, Competitors & Financials - Tracxn",
+      "url": "https://tracxn.com/d/companies/qubit/__0qZ8Q2muy30HSWvKQnKuubfEQ_ThXWUAImbCkSbCcWg#founders-and-board-of-directors"
+     },
+     {
+      "page_age": null,
+      "title": "Qubit - Crunchbase Company Profile & Funding",
+      "url": "https://www.crunchbase.com/organization/qubit"
+     },
+     {
+      "page_age": null,
+      "title": "QuBit Digital Ltd. Company Profile: Financials, Valuation, and Growth",
+      "url": "https://www.privco.com/company/qubit-digital-ltd"
+     },
+     {
+      "page_age": null,
+      "title": "Where is Qubit Located? HQ & Global Offices (2025)",
+      "url": "https://www.highperformr.ai/company/qubit-tv"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Coveo completes acquisition of Qubit",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Coveo Solutions Inc. TSX CVO annual general meeting 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Qubit acquired by Coveo - Crunchbase Acquisition Profile",
+      "url": "https://www.crunchbase.com/acquisition/coveo-acquires-qubit--4e93f119"
+     },
+     {
+      "page_age": "1837 days ago",
+      "title": "Coveo Acquires Qubit",
+      "url": "https://www.coveo.com/en/company/news-releases/2021/coveo-acquires-qubit"
+     },
+     {
+      "page_age": "1837 days ago",
+      "title": "Coveo Acquires Qubit",
+      "url": "https://www.coveo.com/en/pages/coveo-acquires-qubit-faq"
+     },
+     {
+      "page_age": "1837 days ago",
+      "title": "Coveo acquires Qubit - The Gilbane Advisor",
+      "url": "https://gilbane.com/2021/10/coveo-acquires-qubit/"
+     },
+     {
+      "page_age": "1837 days ago",
+      "title": "AI-powered personalization provider Qubit gets acquired by Coveo",
+      "url": "https://venturebeat.com/ai/ai-powered-personalization-provider-qubit-gets-acquired-by-coveo"
+     },
+     {
+      "page_age": "566 days ago",
+      "title": "Qubit acquired by Coveo",
+      "url": "https://www.balderton.com/news/qubit-acquired-by-coveo/"
+     },
+     {
+      "page_age": "1489 days ago",
+      "title": "Coveo acquires Qubit to improve personalization tools, expand into Europe",
+      "url": "https://aibusiness.com/verticals/coveo-acquires-qubit-to-improve-personalization-tools-expand-into-europe"
+     },
+     {
+      "page_age": "1837 days ago",
+      "title": "Coveo acquires England\u2019s Qubit to extend European e-commerce reach",
+      "url": "https://betakit.com/coveo-acquires-englands-qubit-to-extend-european-e-commerce-reach/"
+     },
+     {
+      "page_age": "1256 days ago",
+      "title": "Qubit Acquisition by Coveo - GrowthPoint",
+      "url": "https://growthpoint.com/transactions/growthpoint-acted-as-exclusive-financial-advisor-to-qubit-on-its-acquisition-by-coveo/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "34 days ago",
+      "title": "Coveo Announces Voting Results for 2026 Annual General Meeting of Shareholders :: Coveo Solutions Inc. (CVO)",
+      "url": "https://ir.coveo.com/en/news-events/press-releases/detail/496/coveo-announces-voting-results-for-2026-annual-general"
+     },
+     {
+      "page_age": "33 days ago",
+      "title": "Coveo Announces Voting Results for 2026 Annual General Meeting of Shareholders",
+      "url": "https://tucson.com/online_features/press_releases/article_7e08e524-f2df-5905-967c-444b4dd1d373.html"
+     },
+     {
+      "page_age": "33 days ago",
+      "title": "Coveo Announces Voting Results for 2026 Annual General Meeting of Shareholders",
+      "url": "https://money.tmx.com/quote/CVO:LQN/news/8215660490223894"
+     },
+     {
+      "page_age": "172 days ago",
+      "title": "News & Events :: Coveo Solutions Inc. (CVO)",
+      "url": "https://ir.coveo.com/en/news-events"
+     },
+     {
+      "page_age": "33 days ago",
+      "title": "Coveo Announces Voting Results for 2026 Annual General Meeting of Shareholders \u2014 TradingView News",
+      "url": "https://www.tradingview.com/news/prnewswire:330e6e9623bb6:0-coveo-announces-voting-results-for-2026-annual-general-meeting-of-shareholders/"
+     },
+     {
+      "page_age": "655 days ago",
+      "title": "Coveo Solutions Inc.: Company Events Publications and Financial Calendar",
+      "url": "https://www.marketscreener.com/quote/stock/COVEO-SOLUTIONS-INC-129457863/calendar/"
+     },
+     {
+      "page_age": "32 days ago",
+      "title": "Coveo Announces Voting Results for 2026 Annual General Meeting of Shareholders - CanadianSME Small Business Magazine",
+      "url": "https://canadiansme.ca/coveo-announces-voting-results-for-2026-annual-general-meeting-of-shareholders/"
+     },
+     {
+      "page_age": "33 days ago",
+      "title": "Coveo Announces Voting Results for 2026 Annual General Meeting of Shareholders",
+      "url": "https://www.prnewswire.com/news-releases/coveo-announces-voting-results-for-2026-annual-general-meeting-of-shareholders-302886782.html"
+     },
+     {
+      "page_age": "33 days ago",
+      "title": "2026-09-22",
+      "url": "https://stockhouse.com/news/press-releases/2026/09/22/coveo-announces-voting-results-for-2026-annual-general-meeting-of-shareholders"
+     },
+     {
+      "page_age": null,
+      "title": "Coveo",
+      "url": "https://en.wikipedia.org/wiki/Coveo"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"QUBIT DIGITAL LTD\", \"url\": \"https://find-and-update.company-information.service.gov.uk/company/07116058\", \"quote\": \"QUBIT DIGITAL LTD - Free company information from Companies House\"},\n  \"country\": {\"value\": \"United Kingdom\", \"url\": \"https://find-and-update.company-information.service.gov.uk/company/07116058\", \"quote\": \"10 Bloomsbury Way, Holborn, London, United Kingdom, WC1A 2SL\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://find-and-update.company-information.service.gov.uk/company/07116058\", \"quote\": \"Company type: Private limited Company\"},\n  \"equity_listed\": {\"value\": \"no\", \"url\": \"https://find-and-update.company-information.service.gov.uk/company/07116058\", \"quote\": \"Company type: Private limited Company\"},\n  \"exchange\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"ticker\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"market_segment\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"debt_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"is_subsidiary\": {\"value\": \"yes\", \"url\": \"https://www.coveo.com/en/pages/coveo-acquires-qubit-faq\", \"quote\": \"In October 2021, Coveo acquired Qubit, a leader in AI-powered personalization technology for merchandising teams.\"},\n  \"parent_name\": {\"value\": \"Coveo Solutions Inc.\", \"url\": \"https://find-and-update.company-information.service.gov.uk/company/07116058/filing-history\", \"quote\": \"Change of details for Coveo Solutions Uk Limited as a person with significant control on 15 October 2025\"},\n  \"parent_listed\": {\"value\": \"yes\", \"url\": \"https://ir.coveo.com/en/news-events/press-releases/detail/496/coveo-announces-voting-results-for-2026-annual-general\", \"quote\": \"Coveo (TSX: CVO), the leader in AI-Relevance, delivering best-in-class search and generative experiences\"},\n  \"events\": [],\n  \"note\": \"I chose Qubit Digital Ltd (England & Wales company no. 07116058, the Qubit personalisation business). Other entities have similar names: Quantum Computing Inc. (QUBT) is unrelated, and a Qubit Digital Technology Ltd was incorporated in Ireland in December 2025. The Companies House page I saw was a cached version from about October 2025, and I did not find a copy dated 2026-05-07. It shows Coveo Solutions UK Limited as a person with significant control. I did not find a source that names Coveo Solutions Inc. as the ultimate parent, so that link is inferred from Coveo acquiring Qubit in October 2021. The parent's TSX listing is confirmed by a September 2026 release, and I did not check a source dated 2026-05-07. Coveo's acquisition of Qubit was in October 2021, which is outside the three-year window before 2026-05-07, so no events are listed. I found no source on whether Qubit has listed debt, so that is unknown. Exchange, ticker and market segment are null because the company is private.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:23:58+00:00",
+  "inputs": {
+   "as_of": "2026-05-07",
+   "org_key": "qubit"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 54708,
+   "output_tokens": 2386,
+   "web_search_requests": 4
+  }
+ }
+}

@@ -1,0 +1,251 @@
+{
+ "key": "4bfdae286ad27fcad602ad374d3dd6ab0058d7724396aec9c526a631ccbcc74a",
+ "payload": {
+  "content": [
+   {
+    "query": "Haleon PLC London Stock Exchange HLN main market ticker",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Haleon Pfizer stake sale 2025 shares placing",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Haleon AGM 7 May 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Haleon Finance plc bonds admitted to trading London Stock Exchange notes",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "1561 days ago",
+      "title": "London Stock Exchange welcomes Haleon plc to the Premium Segment of the Main Market - Welcome Story At London Stock Exchange",
+      "url": "https://www.londonstockexchange.com/discover/news-and-insights/london-stock-exchange-welcomes-haleon-plc-premium-segment-main-market"
+     },
+     {
+      "page_age": "661 days ago",
+      "title": "Haleon Share Price. HLN - Stock Quote, Charts, Trade History, Share Chat, HLN Values. Haleon Plc Ord Gbp0.01",
+      "url": "https://www.lse.co.uk/SharePrice.html?shareprice=HLN&share=Haleon"
+     },
+     {
+      "page_age": "118 days ago",
+      "title": "Haleon (LON:HLN) Stock Price & Overview",
+      "url": "https://stockanalysis.com/quote/lon/HLN/"
+     },
+     {
+      "page_age": "41 days ago",
+      "title": "Haleon (HLN) Stock Price & Overview",
+      "url": "https://stockanalysis.com/stocks/hln/"
+     },
+     {
+      "page_age": "668 days ago",
+      "title": "Haleon plc Stock (HLN) - Quote London S.E.- MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/HALEON-PLC-139248469/"
+     },
+     {
+      "page_age": "117 days ago",
+      "title": "HALEON PLC Stock Price Today",
+      "url": "https://www.investing.com/equities/haleon"
+     },
+     {
+      "page_age": "395 days ago",
+      "title": "HLN: Haleon PLC Stock Price Quote - London - Bloomberg",
+      "url": "https://www.bloomberg.com/quote/HLN:LN"
+     },
+     {
+      "page_age": "18 days ago",
+      "title": "HLN Stock Price and Chart \u2014 LSE:HLN - Haleon PLC",
+      "url": "https://www.tradingview.com/symbols/LSE-HLN/"
+     },
+     {
+      "page_age": null,
+      "title": "Haleon plc - Form POS AM - FY2023",
+      "url": "https://www.sec.gov/Archives/edgar/data/1900304/000110465923034471/tm239817-1_posam.htm"
+     },
+     {
+      "page_age": "1 days ago",
+      "title": "Zacks downgrades Haleon stock from Hold to Strong Sell",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/zacks-downgrades-haleon-stock-from-hold-to-strong-sell/70408604"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Haleon plc - Form SCHEDULE 13D/A - FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001900304/000007800325000074/primary_doc.xml"
+     },
+     {
+      "page_age": null,
+      "title": "Haleon plc - Form SCHEDULE 13D/A - FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001900304/000007800325000005/primary_doc.xml"
+     },
+     {
+      "page_age": "586 days ago",
+      "title": "Pfizer sells entire Haleon stake for $3.24 billion By Reuters",
+      "url": "https://www.investing.com/news/stock-market-news/pfizer-sells-entire-haleon-stake-for-324-billion-3935957"
+     },
+     {
+      "page_age": "586 days ago",
+      "title": "UPDATE: Pfizer completes GBP2.5 billion sale of last stake in Haleon",
+      "url": "https://www.lse.co.uk/news/update-pfizer-completes-gbp25-billion-sale-of-last-stake-in-haleon-cwzse29s5m8jz5m.html"
+     },
+     {
+      "page_age": "586 days ago",
+      "title": "Pfizer (PFE) Looks to Exit Haleon (HLN LN) With Final Stake Sale - Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-03-18/pfizer-looks-to-exit-haleon-with-final-stake-sale"
+     },
+     {
+      "page_age": "586 days ago",
+      "title": "Pfizer completes GBP2.5 billion sale of last stake in Haleon",
+      "url": "https://www.marketscreener.com/quote/stock/PFIZER-INC-23365019/news/Pfizer-completes-GBP2-5-billion-sale-of-last-stake-in-Haleon-49373307/"
+     },
+     {
+      "page_age": "586 days ago",
+      "title": "Pfizer Sells Final Haleon Shares for $3.2B, Ends Stake in Consumer Healthcare Giant",
+      "url": "https://finance.yahoo.com/news/pfizer-sells-final-haleon-shares-133919948.html"
+     },
+     {
+      "page_age": "649 days ago",
+      "title": "UPDATE: Pfizer cuts stake in Haleon to 7% in GBP2.5 billion share sale",
+      "url": "https://www.morningstar.co.uk/uk/news/AN_1736930629954874200/update-pfizer-cuts-stake-in-haleon-to-7-in-gbp25-billion-share-sale.aspx"
+     },
+     {
+      "page_age": "586 days ago",
+      "title": "Pfizer pockets roughly \u00a32.5B as it shaves off final stake in consumer health spinoff Haleon",
+      "url": "https://www.fiercepharma.com/pharma/pfizer-pockets-roughly-ps25b-it-shaves-final-stake-consumer-health-spinoff-haleon"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Haleon plc - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001900304/000110465926088450/hln-20260630xex99d1.htm"
+     },
+     {
+      "page_age": "227 days ago",
+      "title": "Haleon : Notice of Meeting 2026",
+      "url": "https://in.marketscreener.com/news/haleon-notice-of-meeting-2026-ce7e5fd3db8bf327"
+     },
+     {
+      "page_age": "180 days ago",
+      "title": "Haleon : 2026 AGM Resolutions",
+      "url": "https://www.marketscreener.com/news/haleon-2026-agm-resolutions-ce7f58dadd8afe26"
+     },
+     {
+      "page_age": null,
+      "title": "Haleon plc - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001900304/000165495426004034/a260429q12026pressrelease.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Notice of 2026 Annual General Meeting",
+      "url": "https://www.haleon.com/content/dam/haleon/corporate/documents/investors/agm/Haleon-notice-of-meeting-2026.pdf.downloadasset.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Haleon RNS Announcements",
+      "url": "https://www.investegate.co.uk/company/HLN"
+     },
+     {
+      "page_age": "180 days ago",
+      "title": "Haleon shareholders approve all resolutions at 2026 AGM By Investing.com",
+      "url": "https://www.investing.com/news/company-news/haleon-shareholders-approve-all-resolutions-at-2026-agm-93CH-4646078"
+     },
+     {
+      "page_age": null,
+      "title": "Haleon plc - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001900304/000165495426007001/a4443o.htm"
+     },
+     {
+      "page_age": "291 days ago",
+      "title": "Haleon PLC Share News, Key Dates and Documents",
+      "url": "https://www.fidelity.co.uk/factsheet-data/factsheet/GB00BMX86B70-haleon-plc/news-key-dates-and-documents"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Haleon plc - Form 6-K - FY2024",
+      "url": "https://www.sec.gov/Archives/edgar/data/1900304/000165495424011770/a8577d.htm"
+     },
+     {
+      "page_age": "1264 days ago",
+      "title": "BASE LISTING PARTICULARS Haleon UK Capital plc",
+      "url": "https://www.haleon.com/content/dam/haleon/corporate/documents/investors/Haleon%202023%20EMTN%20-%20Listing%20Particulars.pdf"
+     },
+     {
+      "page_age": "906 days ago",
+      "title": "Haleon UK Capital plc",
+      "url": "https://www.haleon.com/content/dam/haleon/corporate/documents/investors/debt-2024/Haleon%202024%20EMTN%20Update%20Listing%20Particulars%203%20May%202024.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Haleon plc - Form 424B5 - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001900304/000110465926095880/tm2622443-3_424b5.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Haleon plc - Form 424B5 - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001900304/000110465926093822/tm2622443-1_424b5.htm"
+     },
+     {
+      "page_age": "1561 days ago",
+      "title": "London Stock Exchange welcomes Haleon plc to the Premium Segment of the Main Market - Welcome Story At London Stock Exchange",
+      "url": "https://www.londonstockexchange.com/discover/news-and-insights/london-stock-exchange-welcomes-haleon-plc-premium-segment-main-market"
+     },
+     {
+      "page_age": "1561 days ago",
+      "title": "Completion of the demerger and admission of shares in Haleon - Haleon",
+      "url": "https://www.haleon.com/news/press-releases/esg/2022/Completion-of-the-demerger-and-admission-of-shares-in-Haleon"
+     },
+     {
+      "page_age": null,
+      "title": "Haleon plc - Form 424B3 - FY2023",
+      "url": "https://www.sec.gov/Archives/edgar/data/1900304/000110465923047417/tm2313250d2_424b3.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Haleon plc - Form F-3ASR - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001900304/000110465926088132/tm2619661-1_f3asr.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Haleon plc - Form 20-F - FY2024",
+      "url": "https://www.sec.gov/Archives/edgar/data/1900304/000155837025003368/hln-20241231xex2d4.htm"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"Haleon plc\", \"url\": \"https://www.sec.gov/Archives/edgar/data/0001900304/000110465926095880/tm2622443-3_424b5.htm\", \"quote\": \"Haleon plc may use this prospectus to offer from time to time ordinary shares\"},\n  \"country\": {\"value\": \"United Kingdom\", \"url\": \"https://in.marketscreener.com/news/haleon-notice-of-meeting-2026-ce7e5fd3db8bf327\", \"quote\": \"Haleon plc is registered in England & Wales under company number 13691224.\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://in.marketscreener.com/news/haleon-notice-of-meeting-2026-ce7e5fd3db8bf327\", \"quote\": \"Haleon plc is registered in England & Wales under company number 13691224.\"},\n  \"equity_listed\": {\"value\": \"yes\", \"url\": \"https://www.sec.gov/Archives/edgar/data/0001900304/000110465926095880/tm2622443-3_424b5.htm\", \"quote\": \"Haleon\u2019s Ordinary Shares are admitted to trading on the London Stock Exchange\"},\n  \"exchange\": {\"value\": \"London Stock Exchange (primary listing); ADSs also listed on the New York Stock Exchange\", \"url\": \"https://www.sec.gov/Archives/edgar/data/0001900304/000110465926095880/tm2622443-3_424b5.htm\", \"quote\": \"Haleon\u2019s ADSs, each representing two Ordinary Shares, are listed on the New York Stock Exchange\"},\n  \"ticker\": {\"value\": \"HLN\", \"url\": \"https://www.sec.gov/Archives/edgar/data/0001900304/000110465926095880/tm2622443-3_424b5.htm\", \"quote\": \"Haleon\u2019s Ordinary Shares are admitted to trading on the London Stock Exchange\"},\n  \"market_segment\": {\"value\": \"main\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1900304/000155837025003368/hln-20241231xex2d4.htm\", \"quote\": \"trading on the main market for listed securities of the London Stock Exchange plc\"},\n  \"debt_listed\": {\"value\": \"yes\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1900304/000165495424011770/a8577d.htm\", \"quote\": \"admitted to trading on the International Securities Market of the London Stock Exchange.\"},\n  \"is_subsidiary\": {\"value\": \"no\", \"url\": \"https://www.lse.co.uk/news/update-pfizer-completes-gbp25-billion-sale-of-last-stake-in-haleon-cwzse29s5m8jz5m.html\", \"quote\": \"marks Pfizer's full exit from its holding in the company.\"},\n  \"parent_name\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"parent_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"events\": [\n    {\"date\": \"2025-03-19\", \"event\": \"Pfizer sold its entire remaining 7.3% stake in Haleon (placing plus buyback), leaving no controlling or significant corporate shareholder. This is a shareholder sell-down, not a listing, delisting, demerger or takeover.\", \"url\": \"https://www.lse.co.uk/news/update-pfizer-completes-gbp25-billion-sale-of-last-stake-in-haleon-cwzse29s5m8jz5m.html\", \"quote\": \"marks Pfizer's full exit from its holding in the company.\"}\n  ],\n  \"note\": \"Haleon plc (company no. 13691224) is the entity chosen. The search results show no listing, delisting, demerger or takeover of Haleon in the three years before 2026-05-07. Its demerger from GSK and London listing were on 2022-07-18, which is outside that window. GSK sold its last 4.2% stake in May 2024 (exact day not found). Haleon's 2026 AGM was held on 29 April 2026 (results RNS dated 29 Apr 2026), not 7 May 2026. An RNS dated 7 May 2026 concerned EMTN programme listing particulars. The shares were on the LSE Main Market (premium segment) per Haleon's 2024 Form 20-F; I found no 2026 source that repeats the segment, and the 2026 sources confirm LSE trading and the HLN ticker. Debt: EMTN notes are admitted to the LSE International Securities Market (issuer Haleon UK Capital plc, guaranteed by Haleon plc). Senior notes are listed on the NYSE. Parent: Haleon has no parent, so parent_listed is unknown (not applicable).\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:22:24+00:00",
+  "inputs": {
+   "as_of": "2026-05-07",
+   "org_key": "haleon"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 40641,
+   "output_tokens": 2977,
+   "web_search_requests": 4
+  }
+ }
+}

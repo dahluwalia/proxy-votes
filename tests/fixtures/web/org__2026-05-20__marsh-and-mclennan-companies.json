@@ -1,0 +1,310 @@
+{
+ "key": "4ba34006b929fafe9849fb52ed78ce32c8559850c3b2374143561c51074feab9",
+ "payload": {
+  "content": [
+   {
+    "query": "Marsh & McLennan Companies 10-K 2025 common stock New York Stock Exchange MMC ticker",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Marsh McLennan annual meeting of stockholders May 20, 2026 results",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Marsh McLennan ticker symbol change MRSH",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "MARSH & MCLENNAN COMPANIES, INC. - Form 10-K - FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/62709/000006270926000022/mrsh-20251231.htm"
+     },
+     {
+      "page_age": "285 days ago",
+      "title": "Marsh & McLennan Companies, Inc. will Change its Ticker to MRSH from MMC",
+      "url": "https://www.marketscreener.com/news/marsh-mclennan-companies-inc-will-change-its-ticker-to-mrsh-from-mmc-ce7e58d8db8aff26"
+     },
+     {
+      "page_age": "285 days ago",
+      "title": "Marsh NYSE ticker switch from MMC to MRSH goes live",
+      "url": "https://www.theinsurer.com/ti/news/marsh-nyse-ticker-switch-from-mmc-to-mrsh-goes-live-2026-01-14/"
+     },
+     {
+      "page_age": "634 days ago",
+      "title": "Marsh & McLennan Companies - MMC - Stock Price & News",
+      "url": "https://www.fool.com/quote/nyse/mmc/"
+     },
+     {
+      "page_age": "301 days ago",
+      "title": "Marsh McLennan to Change Its NYSE Symbol to \u201cMRSH\u201d on January 14; Hosts Fourth Quarter Earnings Investor Call on January 29",
+      "url": "https://www.businesswire.com/news/home/20251229129065/en/Marsh-McLennan-to-Change-Its-NYSE-Symbol-to-MRSH-on-January-14-Hosts-Fourth-Quarter-Earnings-Investor-Call-on-January-29"
+     },
+     {
+      "page_age": "259 days ago",
+      "title": "Marsh & McLennan outlines 2025 business and risks",
+      "url": "https://www.stocktitan.net/sec-filings/MMC/10-k-marsh-mclennan-companies-inc-files-annual-report-03b6103cf9f6.html"
+     },
+     {
+      "page_age": "434 days ago",
+      "title": "MMC SEC Filings - Marsh & Mclennan 10-K, 10-Q, 8-K Forms",
+      "url": "https://www.stocktitan.net/sec-filings/MMC/page-9.html"
+     },
+     {
+      "page_age": "3 days ago",
+      "title": "Marsh & McLennan Companies (MRSH) Stock Price, News & Analysis $MRSH",
+      "url": "https://www.marketbeat.com/stocks/NYSE/MRSH/"
+     },
+     {
+      "page_age": "145 days ago",
+      "title": "MMC SEC Filings - MARSH & MCLENNAN COMPANIES, INC. 10-K, 10-Q, 8-K Forms",
+      "url": "https://www.stocktitan.net/sec-filings/MMC/"
+     },
+     {
+      "page_age": "11 days ago",
+      "title": "Marsh & McLennan Companies Inc (MMC) stock price, financials and news - Finzer",
+      "url": "https://finzer.io/en/stocks/xnys.mmc"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "MARSH & MCLENNAN COMPANIES, INC. - Form DEF 14A - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/62709/000119312526133303/d94896ddef14a1.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "MARSH & MCLENNAN COMPANIES, INC. - Form 8-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000062709/000006270926000128/a2026mmcagmresultsform8-k.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Notice of Annual Meeting of Stockholders and Proxy Statement 2026",
+      "url": "https://www.corporate.marsh.com/web-assets/files-for-download/investors/2026/pdf-marsh-investors-proxy-statement-2026.pdf"
+     },
+     {
+      "page_age": "178 days ago",
+      "title": "Marsh 2026 Annual Meeting of Stockholders",
+      "url": "https://www.corporate.marsh.com/news-events/2026/may/marsh-stockholders-re-elect-board-of-directors-during-2026-meeting.html"
+     },
+     {
+      "page_age": "157 days ago",
+      "title": "Marsh & McLennan Shareholders Back Board, Pay and Auditor - TipRanks.com",
+      "url": "https://www.tipranks.com/news/company-announcements/marsh-mclennan-shareholders-back-board-pay-and-auditor"
+     },
+     {
+      "page_age": null,
+      "title": "Marsh & McLennan Companies (MRSH) FY 2026 Earnings Call Transcript & Audio",
+      "url": "https://stockanalysis.com/stocks/mrsh/transcripts/674490-agm-2026/"
+     },
+     {
+      "page_age": "193 days ago",
+      "title": "Investor Events & Presentations",
+      "url": "https://www.corporate.marsh.com/investors/events-presentations.html"
+     },
+     {
+      "page_age": "158 days ago",
+      "title": "Marsh shareholders elect 13 directors at annual meeting By Investing.com",
+      "url": "https://www.investing.com/news/company-news/marsh-shareholders-elect-13-directors-at-annual-meeting-93CH-4704614"
+     },
+     {
+      "page_age": "270 days ago",
+      "title": "Marsh Reports Solid Fourth Quarter and Full-Year 2025 Results",
+      "url": "https://www.businesswire.com/news/home/20260128020560/en/Marsh-Reports-Solid-Fourth-Quarter-and-Full-Year-2025-Results"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "301 days ago",
+      "title": "Marsh McLennan (MMC) to Change Ticker Symbol to MRSH in 2026",
+      "url": "https://www.gurufocus.com/news/4088419/marsh-mclennan-mmc-to-change-ticker-symbol-to-mrsh-in-2026"
+     },
+     {
+      "page_age": "301 days ago",
+      "title": "Marsh McLennan to change NYSE ticker symbol to MRSH next month By Investing.com",
+      "url": "https://www.investing.com/news/company-news/marsh-mclennan-to-change-nyse-ticker-symbol-to-mrsh-next-month-93CH-4424176"
+     },
+     {
+      "page_age": "302 days ago",
+      "title": "Marsh McLennan to change its NYSE symbol to \u201cMRSH\u201d on January 14; hosts fourth quarter earnings investor call on January 29",
+      "url": "https://www.corporate.marsh.com/news-events/2025/december/marsh-mclennan-to-change-nyse-symbol-to-mrsh.html"
+     },
+     {
+      "page_age": "301 days ago",
+      "title": "Marsh McLennan to Change Its NYSE Symbol to \u201cMRSH\u201d on January 14; Hosts Fourth Quarter Earnings Investor Call on January 29",
+      "url": "https://cbonds.com/news/3736209/"
+     },
+     {
+      "page_age": "285 days ago",
+      "title": "Marsh & McLennan Companies, Inc. will Change its Ticker to MRSH from MMC",
+      "url": "https://www.marketscreener.com/news/marsh-mclennan-companies-inc-will-change-its-ticker-to-mrsh-from-mmc-ce7e58d8db8aff26"
+     },
+     {
+      "page_age": "301 days ago",
+      "title": "Marsh McLennan to Change Its NYSE Symbol to \"MRSH\" on January 14; Hosts Fourth Quarter Earnings Investor Call on January 29",
+      "url": "https://finance.yahoo.com/news/marsh-mclennan-change-nyse-symbol-150000637.html"
+     },
+     {
+      "page_age": "285 days ago",
+      "title": "Marsh NYSE ticker switch from MMC to MRSH goes live",
+      "url": "https://www.theinsurer.com/ti/news/marsh-nyse-ticker-switch-from-mmc-to-mrsh-goes-live-2026-01-14/"
+     },
+     {
+      "page_age": "377 days ago",
+      "title": "Marsh McLennan announces rebranding - Business Insurance",
+      "url": "https://www.businessinsurance.com/marsh-mclennan-announces-rebranding/"
+     },
+     {
+      "page_age": null,
+      "title": "Marsh McLennan and its businesses will brand as Marsh",
+      "url": "https://www.marsh.com/en/corp/about/news/marshmclennan-and-its-businesses-will-brand-as-marsh.html"
+     },
+     {
+      "page_age": "377 days ago",
+      "title": "Marsh McLennan and its businesses will brand as Marsh",
+      "url": "https://www.mercer.com/about/newsroom/marsh-mclennan-and-its-businesses-will-brand-as-marsh/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Marsh McLennan dual list NYSE Texas common stock announcement",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Marsh & McLennan Companies, Inc. a Delaware corporation 10-K cover page securities registered Section 12(b) senior notes",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Sec",
+      "url": "https://www.sec.gov/Archives/edgar/data/62709/000095010326005674/dp245126_8k.htm"
+     },
+     {
+      "page_age": "348 days ago",
+      "title": "Nasdaq Joins NYSE and TXSE With Launch of New Texas-Based Dual Listings Venue - D CEO Magazine",
+      "url": "https://www.dmagazine.com/business-economy/2025/11/nasdaq-joins-nyse-and-txse-with-launch-of-new-texas-based-dual-listings-venue/"
+     },
+     {
+      "page_age": "301 days ago",
+      "title": "Marsh McLennan to change its NYSE symbol to \u201cMRSH\u201d on January 14; hosts fourth quarter earnings investor call on January 29",
+      "url": "https://www.marsh.com/en/corp/about/news/marsh-mclennan-to-change-nyse-symbol-to-mrsh.html"
+     },
+     {
+      "page_age": "145 days ago",
+      "title": "MMC SEC Filings - MARSH & MCLENNAN COMPANIES, INC. 10-K, 10-Q, 8-K Forms",
+      "url": "https://www.stocktitan.net/sec-filings/MMC/"
+     },
+     {
+      "page_age": "3 days ago",
+      "title": "An officer proposes selling 1,215 shares worth $243K in Marsh & McLennan (NYSE: MRSH).",
+      "url": "https://www.stocktitan.net/sec-filings/MRSH/144-marsh-mclennan-companies-inc-sec-filing-64c3d33c8fe9.html"
+     },
+     {
+      "page_age": "31 days ago",
+      "title": "MMC Stock Price, News & Analysis",
+      "url": "https://www.stocktitan.net/overview/MMC/"
+     },
+     {
+      "page_age": "35 days ago",
+      "title": "Marsh & McLennan delists 2026 senior notes",
+      "url": "https://www.stocktitan.net/sec-filings/MRSH/25-nse-marsh-mclennan-companies-inc-sec-filing-e004727bd2c4.html"
+     },
+     {
+      "page_age": "2 days ago",
+      "title": "Marsh & McLennan reports third-quarter results as Marsh & McLennan stock trades EUR 176.25",
+      "url": "https://ad-hoc-news.de/boerse/news/corporate-news/marsh-und-mclennan-reports-third-quarter-results-as-marsh-und-mclennan-stock-trades-eur-176-25/70402955"
+     },
+     {
+      "page_age": "0 days ago",
+      "title": "Analysts set USD 204.42 target for Marsh & McLennan stock",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/analysts-set-usd-204-42-target-for-marsh-und-mclennan-stock/70415446"
+     },
+     {
+      "page_age": null,
+      "title": "Marsh McLennan UK Regulatory Announcement Delisting and Cancellation of Trading From the London Stock Exchange",
+      "url": "https://www.businesswire.com/news/home/20231127879900/en/Marsh-McLennan-UK-Regulatory-Announcement-Delisting-and-Cancellation-of-Trading-From-the-London-Stock-Exchange"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "MARSH & MCLENNAN COMPANIES INC - Form 10-K - FY2001",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000062709/000093041302001103/c23478_10k-.txt"
+     },
+     {
+      "page_age": null,
+      "title": "MARSH & MCLENNAN COMPANIES INC - Form 10-K - FY1999",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000062709/000091205700014263/0000912057-00-014263.txt"
+     },
+     {
+      "page_age": null,
+      "title": "MARSH & MCLENNAN COMPANIES, INC. - Form 10-K - FY2010",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000062709/000119312511047795/d10k.htm"
+     },
+     {
+      "page_age": null,
+      "title": "MARSH & MCLENNAN COMPANIES INC - Form 10-K - FY2000",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000062709/000091205701505365/a2041744z10-k.txt"
+     },
+     {
+      "page_age": null,
+      "title": "MARSH & MCLENNAN COMPANIES, INC. (Form: 10-K, Received: 02/27/2009 15:34:06)",
+      "url": "https://content.edgar-online.com/ExternalLink/EDGAR/0001193125-09-040859.html?hash=18ce394dea3c9738bb575536883faff8388e0e400fbd6b5db0c32fa8be184135&amp=&dest=DEX1021_HTM"
+     },
+     {
+      "page_age": null,
+      "title": "MARSH & MCLENNAN COMPANIES INC (Form: 10-K, Received: 03/29/2002 09:48:23)",
+      "url": "https://content.edgar-online.com/ExternalLink/EDGAR/0000930413-02-001103.html?hash=e58dddfffad9994bcaf0d9071aa42a6016bfb017d15102039d1eb768c4c022ad&amp=&dest=C23478_EX10-21_TXT"
+     },
+     {
+      "page_age": "987 days ago",
+      "title": "Marsh & McLennan Companies, Inc. - 10K - Annual Report - February 12, 2024",
+      "url": "https://fintel.io/doc/sec-marsh-mclennan-companies-inc-62709-10k-2024-february-12-19765-1658"
+     },
+     {
+      "page_age": "193 days ago",
+      "title": "Form 10-Q for Marsh Mclennan Companies INC filed 04/16/2026",
+      "url": "https://api.kscope.io/downloadDoc?key=080d2833-569b-47aa-b5ca-c129f84b85a6&docid=0000062709-26-000098&content=sec&format=pdf&inline=true"
+     },
+     {
+      "page_age": "375 days ago",
+      "title": "Form 10-Q for Marsh Mclennan Companies INC filed 10/16/2025",
+      "url": "https://api.kscope.io/downloadDoc?key=ebdcc5b9-0c65-11ee-acee-0ed29589fc89&docid=0000062709-25-000125&content=sec&format=pdf&inline=true"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"Marsh & McLennan Companies, Inc.\", \"url\": \"https://www.sec.gov/Archives/edgar/data/62709/000095010326005674/dp245126_8k.htm\", \"quote\": \"Marsh & McLennan Companies, Inc. (Exact Name of Registrant as Specified in its Charter)\"},\n  \"country\": {\"value\": \"United States\", \"url\": \"https://www.stocktitan.net/overview/MMC/\", \"quote\": \"Marsh & McLennan Companies, Inc. is incorporated in Delaware, as indicated in its SEC filings.\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://www.stocktitan.net/sec-filings/MMC/page-9.html\", \"quote\": \"files reports with the US Securities and Exchange Commission as a public company with common stock listed on the New York Stock Exchange.\"},\n  \"equity_listed\": {\"value\": \"yes\", \"url\": \"https://www.sec.gov/Archives/edgar/data/62709/000006270926000022/mrsh-20251231.htm\", \"quote\": \"The Company\u2019s common stock is listed on the New York Stock Exchange and NYSE Texas.\"},\n  \"exchange\": {\"value\": \"New York Stock Exchange (also dual-listed on NYSE Texas)\", \"url\": \"https://www.sec.gov/Archives/edgar/data/62709/000006270926000022/mrsh-20251231.htm\", \"quote\": \"The Company\u2019s common stock is listed on the New York Stock Exchange and NYSE Texas.\"},\n  \"ticker\": {\"value\": \"MRSH\", \"url\": \"https://www.sec.gov/Archives/edgar/data/62709/000006270926000022/mrsh-20251231.htm\", \"quote\": \"On January 14, the Company's stock ticker symbol on the NYSE changed to MRSH.\"},\n  \"market_segment\": {\"value\": \"main\", \"url\": \"https://www.sec.gov/Archives/edgar/data/62709/000006270926000022/mrsh-20251231.htm\", \"quote\": \"The Company\u2019s common stock is listed on the New York Stock Exchange and NYSE Texas.\"},\n  \"debt_listed\": {\"value\": \"yes\", \"url\": \"https://www.stocktitan.net/sec-filings/MRSH/25-nse-marsh-mclennan-companies-inc-sec-filing-e004727bd2c4.html\", \"quote\": \"1.349% Senior Notes due 2026 removed from listing and registration on the New York Stock Exchange\"},\n  \"is_subsidiary\": {\"value\": \"no\", \"url\": \"https://www.sec.gov/Archives/edgar/data/0000062709/000006270926000128/a2026mmcagmresultsform8-k.htm\", \"quote\": \"Represented at the meeting were 436,451,305 or 90.34% of the Company's 483,095,948 shared of common stock outstanding\"},\n  \"parent_name\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"parent_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"events\": [\n    {\"date\": \"2023-11-27\", \"event\": \"Listing of ordinary shares on the LSE Main Market (FCA Official List Standard Segment) cancelled; primary NYSE listing retained\", \"url\": \"https://www.businesswire.com/news/home/20231127879900/en/Marsh-McLennan-UK-Regulatory-Announcement-Delisting-and-Cancellation-of-Trading-From-the-London-Stock-Exchange\", \"quote\": \"The Company continues to maintain its primary listing on the New York Stock Exchange.\"},\n    {\"date\": \"2026-01-14\", \"event\": \"NYSE ticker changed from MMC to MRSH (rebrand to Marsh); not a new listing, legal name and CUSIP unchanged\", \"url\": \"https://www.corporate.marsh.com/news-events/2025/december/marsh-mclennan-to-change-nyse-symbol-to-mrsh.html\", \"quote\": \"announced today that it will be changing its New York Stock Exchange (NYSE) ticker symbol from \u201cMMC\u201d to \u201cMRSH\u201d\"}\n  ],\n  \"note\": \"Chose Marsh & McLennan Companies, Inc. (the listed parent company, rebranded 'Marsh'). The 2026 AGM was held on 21 May 2026, not 20 May; the press release was dated 20 May. The common stock was listed on 20 May 2026 in either case. Ticker was MRSH on that date. No sources found for the date of the NYSE Texas dual listing or for the end of the Chicago Stock Exchange listing, so those are omitted from events. The 1.349% senior notes due 2026 were NYSE-listed, and the Form 25 delisting was filed about September 2026, so they were still listed on 20 May 2026 (inferred from the filing date). No takeover of the company itself was found in the three-year window. is_subsidiary 'no' is inferred: it is a widely held public company, and no source names a parent.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:23:26+00:00",
+  "inputs": {
+   "as_of": "2026-05-20",
+   "org_key": "marsh-and-mclennan-companies"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 76831,
+   "output_tokens": 3675,
+   "web_search_requests": 5
+  }
+ }
+}

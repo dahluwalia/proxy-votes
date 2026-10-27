@@ -1,0 +1,199 @@
+{
+ "key": "64bb4da56f641b1b8328c2f62858b78cb676d96b78e9de90e9c2fd072c2b884b",
+ "payload": {
+  "content": [
+   {
+    "query": "pearson.com Alison Dolan board of directors Pearson plc",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "579 days ago",
+      "title": "Notice of Annual General Meeting - Pearson plc",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/2025-03/Pearson%20plc%20Notice%20of%20Meeting%202025.pdf"
+     },
+     {
+      "page_age": "593 days ago",
+      "title": "Chair's letter - Pearson plc",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/pearson/annual-report-2024/governance-and-remuneration-2024.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2023",
+      "url": "https://www.sec.gov/Archives/edgar/data/938323/000165495423006039/a9636y.htm"
+     },
+     {
+      "page_age": "215 days ago",
+      "title": "Notice of Annual General Meeting 2026 - Pearson plc",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/2026-03/Pearson-plc-Notice-of-Meeting-2026.pdf"
+     },
+     {
+      "page_age": "957 days ago",
+      "title": "AS FILED WITH THE SECURITIES AND EXCHANGE COMMISSION ON MARCH 14, 2024 \u0002\u0002",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/2024-03/2023-20-f.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 20-F - FY2023",
+      "url": "https://www.sec.gov/Archives/edgar/data/938323/000119312524067358/d605808d20f.htm"
+     },
+     {
+      "page_age": "229 days ago",
+      "title": "Governance & Remuneration - Pearson",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/annual-reports/2025/governance-and-remuneration-2025.pdf"
+     },
+     {
+      "page_age": "229 days ago",
+      "title": "Directors\u2019 Remuneration Report Key messages from the Remuneration Committee \u2022",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/annual-reports/2025/directors-remuneration-report-2025.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/938323/000119312525054446/d852367dex991.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Pearson plc board changes Alison Dolan step down 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "229 days ago",
+      "title": "Directors\u2019 Remuneration Report Key messages from the Remuneration Committee \u2022",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/annual-reports/2025/directors-remuneration-report-2025.pdf"
+     },
+     {
+      "page_age": "229 days ago",
+      "title": "Governance & Remuneration - Pearson",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/annual-reports/2025/governance-and-remuneration-2025.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/938323/000165495426001615/a6205u.htm"
+     },
+     {
+      "page_age": "579 days ago",
+      "title": "Notice of Annual General Meeting - Pearson plc",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/2025-03/Pearson%20plc%20Notice%20of%20Meeting%202025.pdf"
+     },
+     {
+      "page_age": "215 days ago",
+      "title": "Notice of Annual General Meeting 2026 - Pearson plc",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/2026-03/Pearson-plc-Notice-of-Meeting-2026.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Our Board of Directors",
+      "url": "https://plc.pearson.com/en-GB/company/governance/the-board"
+     },
+     {
+      "page_age": "593 days ago",
+      "title": "Chair's letter - Pearson plc",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/pearson/annual-report-2024/governance-and-remuneration-2024.pdf"
+     },
+     {
+      "page_age": "958 days ago",
+      "title": "2023 Annual report and accounts",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/pearson/annual-report-2023/2023-annual-report-and-accounts.pdf"
+     },
+     {
+      "page_age": "360 days ago",
+      "title": "Board of Directors",
+      "url": "https://plc.pearson.com/en-GB/taxonomy/term/28"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000938323/000165495426008527/a8720v.htm"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "plc.pearson.com Our Board of Directors Alison Dolan Non-Executive Director",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "593 days ago",
+      "title": "Chair's letter - Pearson plc",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/pearson/annual-report-2024/governance-and-remuneration-2024.pdf"
+     },
+     {
+      "page_age": "1686 days ago",
+      "title": "Leadership Team: Board of Directors & Executives",
+      "url": "https://plc.pearson.com/en-GB/company/leadership"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 20-F - FY2023",
+      "url": "https://www.sec.gov/Archives/edgar/data/938323/000119312524067358/d605808d20f.htm"
+     },
+     {
+      "page_age": "229 days ago",
+      "title": "Governance & Remuneration - Pearson",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/annual-reports/2025/governance-and-remuneration-2025.pdf"
+     },
+     {
+      "page_age": "215 days ago",
+      "title": "Notice of Annual General Meeting 2026 - Pearson plc",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/2026-03/Pearson-plc-Notice-of-Meeting-2026.pdf"
+     },
+     {
+      "page_age": "1244 days ago",
+      "title": "Alison Dolan",
+      "url": "https://plc.pearson.com/en-GB/node/2531"
+     },
+     {
+      "page_age": "579 days ago",
+      "title": "Notice of Annual General Meeting - Pearson plc",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/2025-03/Pearson%20plc%20Notice%20of%20Meeting%202025.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Downloads: Image & Video Library",
+      "url": "https://plc.pearson.com/en-GB/news-and-insights/downloads"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2023",
+      "url": "https://www.sec.gov/Archives/edgar/data/938323/000165495423006039/a9636y.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Our Board of Directors",
+      "url": "https://plc.pearson.com/en-GB/company/governance/the-board"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\n    \"value\": \"yes\",\n    \"url\": \"https://plc.pearson.com/sites/pearson-corp/files/2026-03/Pearson-plc-Notice-of-Meeting-2026.pdf\",\n    \"quote\": \"To re-elect Alison Dolan as a Director.\"\n  },\n  \"capacity\": {\n    \"value\": \"non_executive_director\",\n    \"url\": \"https://plc.pearson.com/en-GB/company/leadership\",\n    \"quote\": \"Alison Dolan Non-Executive Director\"\n  },\n  \"start_date\": {\n    \"value\": \"2023-06-01\",\n    \"url\": \"https://plc.pearson.com/en-GB/company/leadership\",\n    \"quote\": \"Member of the Audit and Remuneration Committees Appointed 1 June 2023\"\n  },\n  \"end_date\": {\n    \"value\": null,\n    \"url\": null,\n    \"quote\": null\n  },\n  \"note\": \"The start date (1 June 2023) is well outside the six-month window, and no end date appears on pearson.com. Pearson's own pages give the 2026 AGM as 1 May 2026, not 7 July 2026, so I could not confirm a 7 July meeting. The 2026 AGM notice (March 2026) lists her as a Non-Executive Director standing for re-election, and the current leadership page still lists her as a Non-Executive Director. That page also lists Michael Barkin, appointed 1 October 2026, so it is current. I found no pearson.com page showing she left the board between 7 July 2026 and today. I did not find a board list dated exactly 7 July 2026. The answer rests on the March 2026 notice and the current leadership page.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:47:49+00:00",
+  "inputs": {
+   "as_of": "2026-07-07",
+   "domain": "pearson.com",
+   "org_key": "pearson",
+   "person": "alison-dolan"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 66043,
+   "output_tokens": 1426,
+   "web_search_requests": 3
+  }
+ }
+}

@@ -1,0 +1,53 @@
+# Intertek SID (1) + Associated British Foods (1) + InterContinental Hotels Group (1) +
+# Americana Restaurants (1, listed on ADX and Tadawul, not on CH) = 4: FOR. Bata, Ikano
+# and Nando's are private.
+name: Graham Allan
+case: [H9, H12]
+roster:
+  - {meeting: intertek, resolution_no: 7, name: Graham Allan,
+     role_text_at_issuer: Senior Independent Non-Executive Director,
+     role_type_at_issuer: non_executive_director, coverage: structured}
+seats:
+  - {meeting: intertek, org_name: Intertek Group plc,
+     role_text: Senior Independent Non-Executive Director, role_type: non_executive_director,
+     board_seat: "yes", chair: "no", executive: "no", current: "yes"}
+  - {meeting: intertek, org_name: Americana Restaurants International plc,
+     role_text: Non-Executive Director, role_type: non_executive_director, board_seat: "yes",
+     chair: "no", executive: "no", current: "yes"}
+  - {meeting: intertek, org_name: Associated British Foods plc, role_text: Non-Executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: intertek, org_name: InterContinental Hotels Group PLC,
+     role_text: Senior Independent Non-Executive Director, role_type: non_executive_director,
+     board_seat: "yes", chair: "no", executive: "no", current: "yes"}
+  - {meeting: intertek, org_name: Bata International, role_text: Chair, role_type: chair,
+     board_seat: "yes", chair: "yes", executive: "no", current: "yes"}
+  - {meeting: intertek, org_name: Ikano Retail Pte Ltd, role_text: Director,
+     role_type: director_unspecified, board_seat: "yes", chair: "no", executive: unknown,
+     current: "yes"}
+  - {meeting: intertek, org_name: Nando's Group Holdings Limited, role_text: Chair,
+     role_type: chair, board_seat: "yes", chair: "yes", executive: "no", current: "yes"}
+ch:
+  - officer_id: fx-allan
+    name: ALLAN, Graham Dransfield
+    appointments:
+      - {company_number: "04267576", company_name: INTERTEK GROUP PLC, company_type: plc,
+         role: director, appointed_on: 2017-01-01}
+      - {company_number: "00293262", company_name: ASSOCIATED BRITISH FOODS PLC,
+         company_type: plc, role: director, appointed_on: 2018-09-05}
+      - {company_number: "05134420", company_name: INTERCONTINENTAL HOTELS GROUP PLC,
+         company_type: plc, role: director, appointed_on: 2020-09-01}
+      - {company_number: "05932306", company_name: NANDO'S GROUP HOLDINGS LIMITED,
+         company_type: ltd, role: director, appointed_on: 2021-01-01}
+orgs:
+  - {canonical_name: Americana Restaurants International plc, org_type: company, listed: "yes", equity_listing: "yes",
+     market: "ADX; Tadawul"}
+  - {canonical_name: Associated British Foods plc, org_type: company, listed: "yes", equity_listing: "yes",
+     market: LSE Main Market}
+  - {canonical_name: InterContinental Hotels Group PLC, org_type: company, listed: "yes", equity_listing: "yes",
+     market: LSE Main Market}
+  - {canonical_name: Bata International, org_type: company, listed: "no", equity_listing: "no"}
+  - {canonical_name: Ikano Retail Pte Ltd, org_type: company, listed: "no", equity_listing: "no"}
+  - {canonical_name: Nando's Group Holdings Limited, org_type: company, listed: "no", equity_listing: "no"}
+expect:
+  intertek: {vote: FOR, points: [4, 4]}

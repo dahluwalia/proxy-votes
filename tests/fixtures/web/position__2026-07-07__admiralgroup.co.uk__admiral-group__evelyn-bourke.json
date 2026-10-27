@@ -1,0 +1,86 @@
+{
+ "key": "b7a234f8a3f07eed445ad9b8e5fc9673accd55de67ae55fa0c9a72803f7d8cc4",
+ "payload": {
+  "content": [
+   {
+    "query": "admiralgroup.co.uk Evelyn Bourke board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Our Board and Management",
+      "url": "https://admiralgroup.co.uk/who-we-are/our-board-and-management"
+     },
+     {
+      "page_age": "264 days ago",
+      "title": "Director Declaration",
+      "url": "https://admiralgroup.co.uk/news-releases/news-release-details/director-declaration-1"
+     },
+     {
+      "page_age": "183 days ago",
+      "title": "ADMIRAL GROUP PLC NOTICE OF ANNUAL GENERAL ...",
+      "url": "https://www.admiralgroup.co.uk/static-files/62ea0c6e-f19f-42d0-8078-c61e50872cc3"
+     },
+     {
+      "page_age": null,
+      "title": "Milena Mondini de Focatiis",
+      "url": "https://www.admiralgroup.co.uk/board-member/milena-mondini-de-focatiis"
+     },
+     {
+      "page_age": null,
+      "title": "Page 1 of 2 Admiral Group plc 2026 Annual General Meeting Result",
+      "url": "https://admiralgroup.co.uk/static-files/9099cc70-89bb-4112-ae6c-bf385749da7d"
+     },
+     {
+      "page_age": "914 days ago",
+      "title": "Board Committee Changes",
+      "url": "https://admiralgroup.co.uk/news-releases/news-release-details/board-committee-changes"
+     },
+     {
+      "page_age": null,
+      "title": "Media library",
+      "url": "https://www.admiralgroup.co.uk/media/media-library"
+     },
+     {
+      "page_age": "180 days ago",
+      "title": "Result of AGM",
+      "url": "https://www.admiralgroup.co.uk/news-releases/news-release-details/result-agm-5"
+     },
+     {
+      "page_age": "1365 days ago",
+      "title": "Admiralgroup",
+      "url": "https://admiralgroup.co.uk/static-files/e5e74b63-f99f-4eb4-86ce-c20d7a7b8b19"
+     },
+     {
+      "page_age": "914 days ago",
+      "title": "Result of AGM",
+      "url": "https://admiralgroup.co.uk/news-releases/news-release-details/result-agm-3"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\n    \"value\": \"yes\",\n    \"url\": \"https://admiralgroup.co.uk/who-we-are/our-board-and-management\",\n    \"quote\": \"Evelyn Bourke Non-Executive Director\"\n  },\n  \"capacity\": {\n    \"value\": \"non_executive_director\",\n    \"url\": \"https://www.admiralgroup.co.uk/news-releases/news-release-details/result-agm-5\",\n    \"quote\": \"To re-appoint Evelyn Bourke (Non-Executive Director) as a Director of the Company.\"\n  },\n  \"start_date\": {\n    \"value\": \"2021-04-30\",\n    \"url\": \"https://admiralgroup.co.uk/static-files/e5e74b63-f99f-4eb4-86ce-c20d7a7b8b19\",\n    \"quote\": \"applicable from 30 April 2021 as a Non-Executive Director of\"\n  },\n  \"end_date\": {\n    \"value\": null,\n    \"url\": null,\n    \"quote\": null\n  },\n  \"note\": \"Admiral's own site shows the 2026 AGM was held on 29 April 2026, not 7 July 2026. Evelyn Bourke was re-appointed as a Non-Executive Director at that meeting, with 99.83% of votes cast in favour. The board page lists her among the current directors, but it is undated, so it does not itself show the 7 July 2026 board. I found no resignation or departure notice on the site. Her start date is 30 April 2021 (the AGM notice says April 2021), which is well outside six months of 7 July 2026. No end date is stated. A 5 February 2026 notice says she was appointed to the board of St. James's Place plc from 1 March 2026. That is an outside directorship and does not change her Admiral role. Treat the answer for 7 July 2026 as an inference from the 29 April 2026 re-appointment and the current board page.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:47:15+00:00",
+  "inputs": {
+   "as_of": "2026-07-07",
+   "domain": "admiralgroup.co.uk",
+   "org_key": "admiral-group",
+   "person": "evelyn-bourke"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 14244,
+   "output_tokens": 1047,
+   "web_search_requests": 1
+  }
+ }
+}

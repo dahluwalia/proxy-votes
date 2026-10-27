@@ -1,0 +1,86 @@
+{
+ "key": "cf273162073a9f6ad6bf4e157b06991c711c60798aeff15a384e95d64d2d75db",
+ "payload": {
+  "content": [
+   {
+    "query": "babinc.org Sean Doyle board of directors British American Business",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "116 days ago",
+      "title": "Board of Directors - BritishAmerican Business",
+      "url": "https://www.babinc.org/board-of-directors/"
+     },
+     {
+      "page_age": null,
+      "title": "2025 ANNUAL REPORT BritishAmerican Business London New York Washington D.C.",
+      "url": "https://www.babinc.org/wp-content/uploads/BritishAmerican-Business-2025-Annual-Report-Web.pdf"
+     },
+     {
+      "page_age": "643 days ago",
+      "title": "Meet the Speaker: Sean Doyle - BritishAmerican Business",
+      "url": "https://www.babinc.org/sean-doyle/"
+     },
+     {
+      "page_age": "53 days ago",
+      "title": "About Us - BritishAmerican Business",
+      "url": "https://www.babinc.org/about-us/"
+     },
+     {
+      "page_age": "24 days ago",
+      "title": "About Us Sandbox - BritishAmerican Business",
+      "url": "https://www.babinc.org/about-us-sandbox/"
+     },
+     {
+      "page_age": "733 days ago",
+      "title": "BritishAmerican Business Appoints Alastair Borthwick as Chair and Sean Doyle as Vice Chair - BritishAmerican Business",
+      "url": "https://www.babinc.org/britishamerican-business-appoints-alastair-borthwick-as-chair-and-sean-doyle-as-vice-chair/"
+     },
+     {
+      "page_age": "651 days ago",
+      "title": "Annual Report 2024",
+      "url": "https://www.babinc.org/wp-content/uploads/BAB-Annual-Report-2024-Web.pdf"
+     },
+     {
+      "page_age": "901 days ago",
+      "title": "Past Speakers - BritishAmerican Business",
+      "url": "https://www.babinc.org/past-speakers/"
+     },
+     {
+      "page_age": "33 days ago",
+      "title": "International Advisory Board - BritishAmerican Business",
+      "url": "https://www.babinc.org/international-advisory-board/"
+     },
+     {
+      "page_age": "994 days ago",
+      "title": "Annual Report 2023",
+      "url": "https://www.babinc.org/wp-content/uploads/BritishAmerican-Business-Annual-Report-2023.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\n    \"value\": \"yes\",\n    \"url\": \"https://www.babinc.org/board-of-directors/\",\n    \"quote\": \"Vice-Chair Sean Doyle Chairman and Chief Executive British Airways\"\n  },\n  \"capacity\": {\n    \"value\": \"non_executive_director\",\n    \"url\": \"https://www.babinc.org/britishamerican-business-appoints-alastair-borthwick-as-chair-and-sean-doyle-as-vice-chair/\",\n    \"quote\": \"Sean Doyle, Chairman and CEO of British Airways, as its Vice Chair.\"\n  },\n  \"start_date\": {\n    \"value\": null,\n    \"url\": null,\n    \"quote\": null\n  },\n  \"end_date\": {\n    \"value\": null,\n    \"url\": null,\n    \"quote\": null\n  },\n  \"note\": \"The Board of Directors page, which appears to have been captured around early July 2026, lists Sean Doyle as Vice-Chair. The 2025 Annual Report also shows him as Vice-Chair of the BAB Board of Directors. The board is that of BritishAmerican Business itself, a transatlantic trade association. The site does not use the words 'non-executive'. I classed him as non-executive because he is Chairman and CEO of British Airways, is not on BAB's Executive Team, and Vice-Chair is not the Chair. The Chair is Alastair Borthwick. The press release dated 24 October 2024 announces his appointment as Vice Chair, and the 2023 annual report already lists him on the board, so his board seat began earlier than the Vice-Chair role. The site gives no start date for the board seat itself, so start_date is null. The site gives no end date, and another babinc.org page, about-us-sandbox, still lists him as Vice-chair about 24 days before today (2026-10-27). So I found no start or end within six months of 2026-07-07. I found no sign of a change since then.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:52:10+00:00",
+  "inputs": {
+   "as_of": "2026-07-07",
+   "domain": "babinc.org",
+   "org_key": "british-american-business-inc-of-new-york-and-london",
+   "person": "sean-doyle"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 15807,
+   "output_tokens": 1908,
+   "web_search_requests": 1
+  }
+ }
+}

@@ -1,0 +1,132 @@
+{
+ "key": "fe8c5a904f01bdd2798e9b6c51f28c36305a1cd379d7b12a20f2d5cd6c40280d",
+ "payload": {
+  "content": [
+   {
+    "query": "Johnson Matthey Plc board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Johnson Matthey PLC: Governance, Directors and Executives & Committees - MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/JOHNSON-MATTHEY-PLC-4000606/company-governance/"
+     },
+     {
+      "page_age": null,
+      "title": "Johnson Matthey Plc: Governance, Directors and Executives & Committees - MarketScreener UK",
+      "url": "https://uk.marketscreener.com/quote/stock/JOHNSON-MATTHEY-PLC-25600218/company-governance/"
+     },
+     {
+      "page_age": "465 days ago",
+      "title": "Johnson Matthey plc Announces Board Changes - Hydrogen Central",
+      "url": "https://hydrogen-central.com/johnson-matthey-plc-announces-board-changes/"
+     },
+     {
+      "page_age": "619 days ago",
+      "title": "Johnson Matthey Plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/JOHNSON-MATTHEY-PLC-25600218/company/"
+     },
+     {
+      "page_age": null,
+      "title": "Tim Stevenson (Lord Lieutenant)",
+      "url": "https://en.wikipedia.org/wiki/Tim_Stevenson_(Lord_Lieutenant)"
+     },
+     {
+      "page_age": null,
+      "title": "Johnson Matthey Plc (JMPL.D) Leadership & Management Team Analysis - Simply Wall St",
+      "url": "https://simplywall.st/stocks/us/materials/otc-jmpl.d/johnson-matthey/management"
+     },
+     {
+      "page_age": null,
+      "title": "Johnson Matthey Plc (JMPL.F) Leadership & Management Team Analysis - Simply Wall St",
+      "url": "https://simplywall.st/stocks/us/materials/otc-jmpl.f/johnson-matthey/management"
+     },
+     {
+      "page_age": null,
+      "title": "Board of Directors",
+      "url": "https://matthey.com/about-us/our-leadership/board-of-directors"
+     },
+     {
+      "page_age": null,
+      "title": "Neil Carson (businessman)",
+      "url": "https://en.wikipedia.org/wiki/Neil_Carson_(businessman)"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "matthey.com Johnson Matthey about us",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "About us",
+      "url": "https://matthey.com/about-us"
+     },
+     {
+      "page_age": "166 days ago",
+      "title": "Johnson Matthey",
+      "url": "https://www.linkedin.com/company/johnson-matthey"
+     },
+     {
+      "page_age": "2370 days ago",
+      "title": "Our heritage",
+      "url": "https://matthey.com/about-us/our-heritage"
+     },
+     {
+      "page_age": null,
+      "title": "Johnson Matthey",
+      "url": "https://en.wikipedia.org/wiki/Johnson_Matthey"
+     },
+     {
+      "page_age": "530 days ago",
+      "title": "Our strategy",
+      "url": "https://matthey.com/about-us/our-strategy"
+     },
+     {
+      "page_age": "7 days ago",
+      "title": "Home",
+      "url": "https://matthey.com/"
+     },
+     {
+      "page_age": null,
+      "title": "Our behaviours",
+      "url": "https://matthey.com/about-us/our-behaviours"
+     },
+     {
+      "page_age": null,
+      "title": "Our values",
+      "url": "https://matthey.com/about-us/our-values"
+     },
+     {
+      "page_age": "502 days ago",
+      "title": "Johnson Matthey",
+      "url": "https://www.forbes.com/companies/johnson-matthey/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://matthey.com\",\n    \"url\": \"https://matthey.com/about-us/our-leadership/board-of-directors\",\n    \"quote\": \"Johnson Matthey is a global leader in platinum group metals (PGMs).\"\n  },\n  \"note\": \"The quote is from the matthey.com home page (https://matthey.com/), not from the board page. The board page names the board members and the chair but does not name the company in the text I retrieved. The Wikipedia entry and the company's LinkedIn page both list matthey.com as the company's website. I did not check the Companies House number against the site itself.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:51:14+00:00",
+  "inputs": {
+   "org_key": "johnson-matthey"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 31277,
+   "output_tokens": 422,
+   "web_search_requests": 2
+  }
+ }
+}

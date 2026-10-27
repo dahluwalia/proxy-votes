@@ -1,0 +1,83 @@
+{
+ "key": "aea86551108d567a0a698a5be9bd6f06cff5bdfff838d8976f4c30ce623f1ac4",
+ "payload": {
+  "content": [
+   {
+    "query": "HBOS plc Lloyds Banking Group subsidiary SC218813",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "HBOS",
+      "url": "https://en.wikipedia.org/wiki/HBOS"
+     },
+     {
+      "page_age": null,
+      "title": "HBOS PLC",
+      "url": "https://lei.report/LEI/213800RS21X7UUH5QU25/"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group",
+      "url": "https://en.wikipedia.org/wiki/Lloyds_Banking_Group"
+     },
+     {
+      "page_age": null,
+      "title": "Capital Bank plc",
+      "url": "https://en.wikipedia.org/wiki/Capital_Bank_plc"
+     },
+     {
+      "page_age": "4 days ago",
+      "title": "Who Owns Which UK Bank? Banking Groups, Brands and Owners (2026)",
+      "url": "https://bankcreditratings.co.uk/guides/who-owns-uk-banks"
+     },
+     {
+      "page_age": null,
+      "title": "Company Name Registered Office Address Country of Incorporation Company Number",
+      "url": "http://test-pages.menlotest.com/safedocs/xls/lloyds_banking_group_subsidiaries_dec_09.xls_safe.pdf"
+     },
+     {
+      "page_age": "375 days ago",
+      "title": "HBOS facts for kids",
+      "url": "https://kids.kiddle.co/HBOS"
+     },
+     {
+      "page_age": "1330 days ago",
+      "title": "HBOS plc Report and Accounts 2022 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2022/full-year/2022-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "1707 days ago",
+      "title": "HBOS plc Report and Accounts 2021 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2021/full-year/2021-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "2056 days ago",
+      "title": "HBOS plc Report and Accounts 2020 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2020/2020-hbos-annual-report.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.lloydsbankinggroup.com\",\n    \"url\": \"https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2022/full-year/2022-hbos-annual-report.pdf\",\n    \"quote\": \"The Company is a wholly owned subsidiary within the Lloyds Banking Group group of companies.\"\n  },\n  \"note\": \"HBOS plc has been a wholly owned subsidiary of Lloyds Banking Group since 2009 and has no site of its own that I found. The group site hosts HBOS plc's annual reports, which carry company number SC218813 and list its directors. The quote comes from the 2022 report. That report's heading is 'HBOS plc Report and Accounts 2022 Member of Lloyds Banking Group'.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:48:50+00:00",
+  "inputs": {
+   "org_key": "hbos"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 15491,
+   "output_tokens": 361,
+   "web_search_requests": 1
+  }
+ }
+}

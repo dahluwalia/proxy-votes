@@ -1,0 +1,137 @@
+{
+ "key": "cf624d88aab2665259168185d0f97635025525b1167c3f67c80e8ad10753db9d",
+ "payload": {
+  "content": [
+   {
+    "query": "International Consolidated Airlines Group IAG corporate website board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "International Consolidated Airlines Group, S.A.: Governance, Directors and Executives & Committees - MarketScreener India",
+      "url": "https://in.marketscreener.com/quote/stock/INTERNATIONAL-CONSOLIDATE-7233512/company-governance/"
+     },
+     {
+      "page_age": null,
+      "title": "International Consolidated Airlines Group S.A.: Governance, Directors and Executives & Committees - MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/INTERNATIONAL-CONSOLIDATE-111325804/company-governance/"
+     },
+     {
+      "page_age": null,
+      "title": "International Consolidated Airlines Group (LON:IAG) Company Profile & Description",
+      "url": "https://stockanalysis.com/quote/lon/IAG/company/"
+     },
+     {
+      "page_age": "597 days ago",
+      "title": "International Consolidated Airlines Group S.A. (IAG.L) Company Profile & Facts - Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/IAG.L/profile/"
+     },
+     {
+      "page_age": "592 days ago",
+      "title": "International Consolidated Airlines Group, S.A.: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/INTERNATIONAL-CONSOLIDATE-7233512/company/"
+     },
+     {
+      "page_age": "113 days ago",
+      "title": "International Airlines Group - Overview, News & Similar companies",
+      "url": "https://www.zoominfo.com/c/international-consolidated-airlines-group-sa/346892760"
+     },
+     {
+      "page_age": null,
+      "title": "International Consolidated Airlines Group SA (IAG.L)",
+      "url": "https://www.voxmarkets.com/listings/IAG:LN"
+     },
+     {
+      "page_age": "531 days ago",
+      "title": "Board of Directors",
+      "url": "https://www.iairgroup.com/governance/board-of-directors/"
+     },
+     {
+      "page_age": null,
+      "title": "uk.marketscreener.com",
+      "url": "https://uk.marketscreener.com/quote/stock/INTERNATIONAL-CONSOLIDATE-7233512/company/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "iairgroup.com \"International Consolidated Airlines Group, S.A.\" annual general meeting",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "853 days ago",
+      "title": "INTERNATIONAL CONSOLIDATED AIRLINES GROUP, S.A. 2024 ANNUAL GENERAL MEETING",
+      "url": "https://www.iairgroup.com/media/pbthk0xe/agm-quorum.pdf"
+     },
+     {
+      "page_age": "497 days ago",
+      "title": "INTERNATIONAL CONSOLIDATED AIRLINES GROUP, S.A. Shareholders\u2019 Meeting",
+      "url": "https://www.iairgroup.com/media/evdfgauc/notice-of-agm-2025.pdf"
+     },
+     {
+      "page_age": "533 days ago",
+      "title": "INTERNATIONAL CONSOLIDATED AIRLINES GROUP, S.A.",
+      "url": "https://www.cnmv.es/webservices/verdocumento/ver?t=%7B337ca42c-188c-486e-b7f7-a58fe81b9666%7D"
+     },
+     {
+      "page_age": "169 days ago",
+      "title": "Notice of AGM - Euroland.Com",
+      "url": "https://tools.eurolandir.com/tools/Pressreleases/GetPressRelease/?ID=7961732&lang=en-GB&companycode=es-inr&v="
+     },
+     {
+      "page_age": "168 days ago",
+      "title": "Notice of AGM",
+      "url": "https://www.investegate.co.uk/index.php/announcement/rns/international-consolidated-airlines-group-sa-cdi---iag/notice-of-agm/9562496"
+     },
+     {
+      "page_age": "131 days ago",
+      "title": "INTERNATIONAL CONSOLIDATED AIRLINES GROUP, S.A.",
+      "url": "https://www.iairgroup.com/media/dbrlttms/iag-agm-2026-resolutions-approved.pdf"
+     },
+     {
+      "page_age": "173 days ago",
+      "title": "2026 Annual Shareholders\u2019 Meeting Call Notice International Consolidated",
+      "url": "https://www.iairgroup.com/media/erodtaa5/call-notice-agm-2026.pdf"
+     },
+     {
+      "page_age": "537 days ago",
+      "title": "RESOLUTIONS PROPOSED BY THE BOARD OF DIRECTORS OF INTERNATIONAL CONSOLIDATED",
+      "url": "https://www.iairgroup.com/media/o3jn3n3n/proposed-resolutions-agm-2025.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "International Consolidated Airlines Group Publishes 2026 AGM Notice and Resolutions - The Globe and Mail",
+      "url": "https://www.theglobeandmail.com/investing/markets/markets-news/Tipranks/1881187/international-consolidated-airlines-group-publishes-2026-agm-notice-and-resolutions/"
+     },
+     {
+      "page_age": "630 days ago",
+      "title": "International Consolidated Airlines Group, S.A. Stock (IAG) - Quote London S.E.- MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/INTERNATIONAL-CONSOLIDATE-7233512/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.iairgroup.com\",\n    \"url\": \"https://www.iairgroup.com/media/evdfgauc/notice-of-agm-2025.pdf\",\n    \"quote\": \"Shareholders\u2019 Meeting of International Consolidated Airlines Group, S.A. (the \u201cCompany\u201d) is called to be held in Madrid\"\n  },\n  \"note\": \"iairgroup.com is IAG's own corporate and investor site. IAG's AGM call notice refers to it as the corporate website (www.iairgroup.com). The company's board page is https://www.iairgroup.com/governance/board-of-directors/. I did not check the Companies House number FC029884 against any source.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:50:02+00:00",
+  "inputs": {
+   "org_key": "international-consolidated-airlines-group"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 31697,
+   "output_tokens": 448,
+   "web_search_requests": 2
+  }
+ }
+}

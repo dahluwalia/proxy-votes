@@ -1,0 +1,86 @@
+{
+ "key": "a642bba3026bfa1be376a78d0550a77a881dda6dcd327f96849114d7b9f4a194",
+ "payload": {
+  "content": [
+   {
+    "query": "matthey.com Andrew Cosslett Johnson Matthey board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "139 days ago",
+      "title": "Notice of Annual General Meeting 2026 Thursday 16th July 2026 at 11.00 am",
+      "url": "https://matthey.com/documents/d/guest/jma019_nom-260609-1"
+     },
+     {
+      "page_age": "467 days ago",
+      "title": "Appointment of Andrew Cosslett as Chair",
+      "url": "https://matthey.com/media/2025/appointment-of-andrew-cosslett-as-chair"
+     },
+     {
+      "page_age": "153 days ago",
+      "title": "Metals that matter, for a healthier world Annual Report and Accounts 2026",
+      "url": "https://matthey.com/documents/161599/7603892/JMA017_Interactive-260608.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Governance In this section 62 Chair\u2019s introduction to governance 64",
+      "url": "https://matthey.com/documents/161599/7603892/JMA017_Governance-260608.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Matthey",
+      "url": "https://matthey.com/documents/161599/8169327/Circular+and+Notice+of+General+Meeting.pdf/056b582d-3069-43a4-49f3-b60a38e067a6?t=1785088023333"
+     },
+     {
+      "page_age": "341 days ago",
+      "title": "Issued by: Johnson Matthey Plc 5th Floor, 2 Gresham Street, EC2V 7AD 1",
+      "url": "https://matthey.com/documents/d/guest/johnson-matthey-1h-2526-results-announcement"
+     },
+     {
+      "page_age": null,
+      "title": "Delivering on our commitments 2025/26 was a pivotal year for",
+      "url": "https://matthey.com/documents/161599/7603892/JMA017_Chair%E2%80%99s%20statement-260608.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Johnson Matthey Plc Corporate Governance Framework Version 12.0",
+      "url": "https://matthey.com/documents/161599/3521007/JMPLC+Corporate+Governance+Framework+%28final%29.pdf/83f939f9-012f-dc57-7118-c395668c436e?t=1717579617874"
+     },
+     {
+      "page_age": null,
+      "title": "Andrew Cosslett",
+      "url": "https://matthey.com/about-us/our-leadership/board-of-directors/andrew-cosslett"
+     },
+     {
+      "page_age": "152 days ago",
+      "title": "Appointment of Julie Southern as a Non Executive Director and Senior Independent Director and other Board changes",
+      "url": "https://matthey.com/media/2026/appointment-of-julie-southern-as-a-non-executive-director-and-senior-independent-director-and-other-board-changes"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\n    \"value\": \"yes\",\n    \"url\": \"https://matthey.com/documents/161599/7603892/JMA017_Governance-260608.pdf\",\n    \"quote\": \"Andrew Cosslett was appointed to the Board as Non-Executive Chair on\"\n  },\n  \"capacity\": {\n    \"value\": \"chair\",\n    \"url\": \"https://matthey.com/media/2025/appointment-of-andrew-cosslett-as-chair\",\n    \"quote\": \"the appointment of Andrew Cosslett as Non-Executive Chair of the Board\"\n  },\n  \"start_date\": {\n    \"value\": \"2025-07-17\",\n    \"url\": \"https://matthey.com/media/2025/appointment-of-andrew-cosslett-as-chair\",\n    \"quote\": \"with effect from the conclusion of today\u2019s Annual General Meeting\"\n  },\n  \"end_date\": {\n    \"value\": null,\n    \"url\": null,\n    \"quote\": null\n  },\n  \"note\": \"He is the Non-Executive Chair of the Johnson Matthey Plc board. The 2026 Annual Report lists him on the board 'as at 31st March 2026'. The 17 July 2025 appointment is more than six months before 2026-05-07, so the role did not begin within that window. No end date is stated on the website. A circular dated 27 July 2026 still lists him as Chair, so the role appears unchanged to today. Johnson Matthey's 2026 AGM was on 16 July 2026, not 7 May 2026. The AGM notice has a resolution 'To elect Andrew Cosslett as a director'. The board list I relied on is as at 31 March 2026, not 7 May 2026 itself.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:51:25+00:00",
+  "inputs": {
+   "as_of": "2026-05-07",
+   "domain": "matthey.com",
+   "org_key": "johnson-matthey",
+   "person": "andrew-cosslett"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 15615,
+   "output_tokens": 1430,
+   "web_search_requests": 1
+  }
+ }
+}

@@ -1,0 +1,288 @@
+# Hand-curated facts that the spreadsheet does not carry.
+# build_gold.py merges these with source/director_positions.xlsx.
+#
+# Why this file exists:
+#   - The policy counts listed-company seats "anywhere in the world"; the sheet only has
+#     "UK-listed company?". `orgs` below gives listed-anywhere status for every organisation
+#     where a director holds a CURRENT role (the only rows that move votes).
+#   - Roster keys (notice + resolution number) and PDF pages, so gold joins onto pipeline output.
+#   - A few row-level corrections where a fact was checked outside the notices.
+#
+# Sources for every fact are in evidence.yaml, not here.
+
+meetings:
+  - notice: ITV
+    company_name: ITV plc
+    company_number: "04967001"
+    agm_date: 2026-05-07
+    resolution_page: 3
+  - notice: Intertek
+    company_name: Intertek Group plc
+    company_number: "04267576"
+    agm_date: 2026-05-20
+    resolution_page: 8
+  - notice: Tesco
+    company_name: Tesco PLC
+    company_number: "00445790"
+    agm_date: 2026-06-18
+    resolution_page: 4
+  - notice: M&S
+    company_name: Marks and Spencer Group plc
+    company_number: "04256886"
+    agm_date: 2026-07-07
+    resolution_page: 7
+  - notice: Severn Trent
+    company_name: Severn Trent Plc
+    company_number: "02366619"
+    agm_date: 2026-07-09
+    resolution_page: 4
+
+# Roster: [resolution_no, director (as in the sheet), name as written in the resolution,
+#          election | re-election, bio PDF page or null, coverage]
+# coverage: structured = a current/other-appointments list; prose = narrative only; none = no bio.
+roster:
+  ITV:
+    - [4, Dawn Allen, Dawn Allen, re-election, 10, prose]
+    - [5, Helen Ashton, Helen Ashton, election, 10, prose]
+    - [6, Edward Bonham Carter, Edward Bonham Carter, re-election, 10, prose]
+    - [7, Graham Cooke, Graham Cooke, re-election, 10, prose]
+    - [8, Andrew Cosslett, Andrew Cosslett, re-election, 10, prose]
+    - [9, Margaret Ewing, Margaret Ewing, re-election, 10, prose]
+    - [10, Marjorie Kaplan, Marjorie Kaplan, re-election, 10, prose]
+    - [11, Gidon Katz, Gidon Katz, re-election, 10, prose]
+    - [12, Chris Kennedy, Chris Kennedy, re-election, 11, prose]
+    - [13, Carolyn McCall, Carolyn McCall, re-election, 11, prose]
+    - [14, Sharmila Nebhrajani, Sharmila Nebhrajani, re-election, 11, prose]
+  Intertek:
+    - [5, Laura Crespi, Laura Crespi, election, 3, structured]
+    - [6, André Lacroix, André Lacroix, re-election, 3, structured]
+    - [7, Graham Allan, Graham Allan, re-election, 4, structured]
+    - [8, Hilde Merete Aasheim, Hilde Merete Aasheim, re-election, 4, structured]
+    - [9, Robin Freestone, Robin Freestone, re-election, 4, structured]
+    - [10, Tamara Ingram, Tamara Ingram, re-election, 4, structured]
+    - [11, Jez Maiden, Jez Maiden, re-election, 4, structured]
+    - [12, Steve Mogford, Steve Mogford, re-election, 5, structured]
+    - [13, Kawal Preet, Kawal Preet, re-election, 5, structured]
+    - [14, Apurvi Sheth, Apurvi Sheth, re-election, 5, structured]
+    - [15, Jean-Michel Valette, Jean-Michel Valette, re-election, 5, structured]
+  Tesco:
+    - [4, Melissa Bethell, Melissa Bethell, re-election, 9, structured]
+    - [5, Bertrand Bodson, Bertrand Bodson, re-election, 9, structured]
+    - [6, Carolyn Fairbairn, Dame Carolyn Fairbairn, re-election, 8, structured]
+    - [7, Thierry Garnier, Thierry Garnier, re-election, 9, structured]
+    - [8, Stewart Gilliland, Stewart Gilliland, re-election, 9, structured]
+    - [9, Chris Kennedy, Chris Kennedy, re-election, 10, structured]
+    - [10, Gerry Murphy, Dr Gerry Murphy, re-election, 8, structured]
+    - [11, Ken Murphy, Ken Murphy, re-election, 8, structured]
+    - [12, Imran Nawaz, Imran Nawaz, re-election, 8, structured]
+    - [13, Caroline Silver, Caroline Silver, re-election, 10, structured]
+    - [14, Karen Whitworth, Karen Whitworth, re-election, 10, structured]
+  M&S:
+    - [5, Archie Norman, Archie Norman, re-election, null, none]
+    - [6, Stuart Machin, Stuart Machin, re-election, null, none]
+    - [7, Alison Dolan, Alison Dolan, re-election, null, none]
+    - [8, Fiona Dawson, Fiona Dawson, re-election, null, none]
+    - [9, Evelyn Bourke, Evelyn Bourke, re-election, null, none]
+    - [10, Tamara Ingram, Tamara Ingram, re-election, null, none]
+    - [11, Sapna Sood, Sapna Sood, re-election, null, none]
+    - [12, Roger Burnley, Roger Burnley, election, null, none]
+    - [13, Sean Doyle, Sean Doyle, election, null, none]
+  Severn Trent:
+    - [5, Christine Hodgson, Christine Hodgson CBE, re-election, 11, structured]
+    - [6, James Jesic, James Jesic, election, 11, structured]
+    - [7, Helen Miles, Helen Miles, re-election, 12, structured]
+    - [8, Nick Hampton, Nick Hampton, re-election, 13, structured]
+    - [9, Tom Delay, Tom Delay CBE, re-election, 12, structured]
+    - [10, Sarah Legg, Sarah Legg, re-election, 13, structured]
+    - [11, Sharmila Nebhrajani, Sharmila Nebhrajani OBE, re-election, 14, structured]
+    - [12, Richard Taylor, Richard Taylor, re-election, 14, structured]
+
+# Directors named in the notices who are NOT standing (from the sheet's Notes tab).
+not_standing: [Andrew Martin, Gurnek Bains, Alison Platt, Liv Garfield]
+
+# Org facts for every organisation with a CURRENT role in the sheet.
+# listed = equity listed on any exchange at the 2026 AGM dates (the policy's test).
+# market AIM -> the vote follows policy flag aim_counts_as_listed.
+orgs:
+  Intertek Group plc: {id: intertek, type: company, listed: yes, market: LSE}
+  ITV plc: {id: itv, type: company, listed: yes, market: LSE}
+  Tesco PLC: {id: tesco, type: company, listed: yes, market: LSE}
+  Marks and Spencer Group plc: {id: marks-and-spencer, type: company, listed: yes, market: LSE}
+  Severn Trent Plc: {id: severn-trent, type: company, listed: yes, market: LSE}
+  ECOnnect Energy AS: {id: econnect-energy, type: company, listed: no}
+  Outokumpu Oyj: {id: outokumpu, type: company, listed: yes, market: Nasdaq Helsinki}
+  Americana Restaurants International plc: {id: americana-restaurants, type: company, listed: yes, market: ADX; Tadawul}
+  Associated British Foods plc: {id: associated-british-foods, type: company, listed: yes, market: LSE}
+  Bata International: {id: bata, type: company, listed: no}
+  Ikano Retail Pte Ltd: {id: ikano-retail, type: company, listed: no, parent: ikano, note: Ikano Group is privately held}
+  InterContinental Hotels Group plc: {id: ihg, type: company, listed: yes, market: LSE; NYSE}
+  Nando's Group Holdings Limited: {id: nandos, type: company, listed: no}
+  Haleon PLC: {id: haleon, type: company, listed: yes, market: LSE; NYSE}
+  Atairos: {id: atairos, type: company, listed: no}
+  Brillio LLC: {id: brillio, type: company, listed: no}
+  Diageo PLC: {id: diageo, type: company, listed: yes, market: LSE; NYSE}
+  Exor N.V.: {id: exor, type: company, listed: yes, market: Euronext Amsterdam}
+  Ocean Outdoor: {id: ocean-outdoor, type: company, listed: no, parent: atairos, note: taken private by Atairos 2022}
+  The Magnum Ice Cream Company N.V.: {id: magnum-ice-cream, type: company, listed: yes, market: Euronext Amsterdam; LSE; NYSE}
+  Keywords Studios Ltd: {id: keywords-studios, type: company, listed: no, note: taken private 2024}
+  Qubit: {id: qubit, type: company, listed: no, parent: coveo, note: acquired by Coveo 2021}
+  Chapter Zero: {id: chapter-zero, type: other, listed: no, note: not-for-profit}
+  Frontier Economics: {id: frontier-economics, type: company, listed: no}
+  "Gonville and Caius College, Cambridge": {id: gonville-and-caius, type: education, listed: no}
+  HSBC Holdings plc: {id: hsbc, type: company, listed: yes, market: LSE; HKEX}
+  "Nuffield College, Oxford": {id: nuffield-college, type: education, listed: no}
+  Capri Holdings Limited: {id: capri-holdings, type: company, listed: yes, market: NYSE, note: "BVI company; 'Limited' does not mean private"}
+  Kingfisher plc: {id: kingfisher, type: company, listed: yes, market: LSE}
+  IG Design Group plc: {id: ig-design, type: company, listed: yes, market: AIM}
+  Nature's Way Foods Ltd: {id: natures-way-foods, type: company, listed: no}
+  Tate & Lyle Plc: {id: tate-and-lyle, type: company, listed: yes, market: LSE}
+  Newton Group Holdings Limited: {id: newton-group, type: company, listed: no}
+  Spencer Stuart: {id: spencer-stuart, type: company, listed: no}
+  Whitbread Plc: {id: whitbread, type: company, listed: yes, market: LSE}
+  Almeida Theatre: {id: almeida-theatre, type: charity, listed: no}
+  Asthma + Lung UK: {id: asthma-lung-uk, type: charity, listed: no}
+  "Marsh & McLennan Companies, Inc.": {id: marsh-mclennan, type: company, listed: yes, market: NYSE}
+  Ofcom: {id: ofcom, type: public_body, listed: no}
+  Reckitt Benckiser Group plc: {id: reckitt, type: company, listed: yes, market: LSE}
+  The 10 Group: {id: the-10-group, type: company, listed: no, note: "described as an integrated content agency; no listing found - verify"}
+  Hafren Dyfrdwy: {id: hafren-dyfrdwy, type: company, listed: no, parent: severn-trent, note: Severn Trent subsidiary}
+  EMI Group Archive Trust: {id: emi-archive-trust, type: charity, listed: no}
+  Lloyds Banking Group Plc: {id: lloyds-banking-group, type: company, listed: yes, market: LSE}
+  Man Group Plc: {id: man-group, type: company, listed: yes, market: LSE, note: Jersey company; not on Companies House}
+  Smith & Nephew plc: {id: smith-and-nephew, type: company, listed: yes, market: LSE; NYSE}
+  Travis Perkins plc: {id: travis-perkins, type: company, listed: yes, market: LSE}
+  Breedon Group Plc: {id: breedon, type: company, listed: yes, market: LSE}
+  Water Plus Limited: {id: water-plus, type: company, listed: no, note: joint venture}
+  Costain Group plc: {id: costain, type: company, listed: yes, market: LSE}
+  QinetiQ Group plc: {id: qinetiq, type: company, listed: yes, market: LSE}
+  Burberry Group plc: {id: burberry, type: company, listed: yes, market: LSE}
+  Chair Mentors International: {id: chair-mentors, type: company, listed: no}
+  Perella Weinberg Partners: {id: perella-weinberg, type: company, listed: yes, market: Nasdaq}
+  The Burberry Foundation: {id: burberry-foundation, type: charity, listed: no, note: "not Burberry Group plc"}
+  Halma Plc: {id: halma, type: company, listed: yes, market: LSE}
+  National Institute for Health and Care Excellence (NICE): {id: nice, type: public_body, listed: no}
+  FedEx: {id: fedex, type: company, listed: yes, market: NYSE}
+  SSP Group plc: {id: ssp, type: company, listed: yes, market: LSE}
+  Various companies (SE Asia & India, unnamed): {id: unnamed-sheth-advisory, type: other, listed: unknown}
+  Adobe Inc.: {id: adobe, type: company, listed: yes, market: Nasdaq}
+  Barratt Redrow plc: {id: barratt-redrow, type: company, listed: yes, market: LSE}
+  ICE Clear Europe: {id: ice-clear-europe, type: company, listed: no, parent: intercontinental-exchange, note: "subsidiary of ICE; not listed itself"}
+  "Intercontinental Exchange, Inc.": {id: intercontinental-exchange, type: company, listed: yes, market: NYSE}
+  Moelis & Company: {id: moelis, type: company, listed: yes, market: NYSE}
+  National Film and Television School: {id: nfts, type: charity, listed: no}
+  V&A Foundation: {id: va-foundation, type: charity, listed: no}
+  Greenhill & Co. International LLP: {id: greenhill-international, type: partnership, listed: no, parent: mizuho, note: part of Mizuho group since 2023}
+  DripDrop Hydration Inc: {id: dripdrop, type: company, listed: no}
+  Huneeus Vintners: {id: huneeus-vintners, type: company, listed: no}
+  Select US branded consumer companies (not named): {id: unnamed-valette-advisory, type: other, listed: unknown}
+  Nuffield Health: {id: nuffield-health, type: charity, listed: no}
+  The Rank Group plc: {id: rank-group, type: company, listed: yes, market: LSE}
+  Tritax Big Box REIT plc: {id: tritax-big-box, type: company, listed: yes, market: LSE}
+  # orgs for the researched seats (extra_seats below)
+  M Group: {id: m-group, type: company, listed: no, note: private (M Group Services)}
+  Bridgepoint Group plc: {id: bridgepoint, type: company, listed: yes, market: LSE, ch_number: "11443992"}
+  Coles Group: {id: coles, type: company, listed: yes, market: ASX}
+  Ocado Retail Limited: {id: ocado-retail, type: company, listed: no, note: "M&S / Ocado Group joint venture; not listed"}
+  Pearson plc: {id: pearson, type: company, listed: yes, market: LSE; NYSE}
+  Kerry Group plc: {id: kerry-group, type: company, listed: yes, market: Euronext Dublin}
+  LEGO Group A/S: {id: lego, type: company, listed: no, parent: kirkbi, note: privately owned (KIRKBI and the LEGO Foundation)}
+  Chartered Management Institute: {id: cmi, type: charity, listed: no, note: royal charter body and registered charity}
+  Social Mobility Foundation: {id: social-mobility-foundation, type: charity, listed: no}
+  St. James's Place plc: {id: st-jamess-place, type: company, listed: yes, market: LSE}
+  Admiral Group plc: {id: admiral, type: company, listed: yes, market: LSE}
+  GenesisCare (UK board): {id: genesiscare-uk, type: company, listed: no, ch_number: "09605635", note: "private; CH: Genesis Specialist Care Holding UK Limited"}
+  GenesisCare Cayman: {id: genesiscare-cayman, type: company, listed: unknown, note: "GenesisCare group company after its 2024 Chapter 11 reorganisation; no listing found"}
+  The Adecco Group (APAC): {id: adecco-apac, type: company, listed: no, parent: adecco-group, note: "a regional business unit of Adecco Group AG (SIX: ADEN)"}
+  Pets at Home Group plc: {id: pets-at-home, type: company, listed: yes, market: LSE}
+  Accenture: {id: accenture, type: company, listed: yes, market: NYSE}
+  British Airways Plc: {id: british-airways, type: company, listed: no, parent: iag, note: "IAG subsidiary; not listed itself"}
+  BritishAmerican Business: {id: britishamerican-business, type: other, listed: no, ch_number: FC022630, note: not-for-profit}
+  The Ireland Fund of Great Britain: {id: ireland-fund-gb, type: charity, listed: no}
+  Convatec Group plc: {id: convatec, type: company, listed: yes, market: LSE}
+  "International Consolidated Airlines Group, S.A.": {id: iag, type: company, listed: yes, market: LSE; BME Madrid}
+  # organisations found on Companies House (directorships no notice mentions); ch_number joins them
+  HSBC UK Bank plc: {id: hsbc-uk-bank, type: company, listed: no, debt_listed: yes, parent: hsbc, ch_number: "09928412"}
+  Lloyds Bank plc: {id: lloyds-bank, type: company, listed: no, debt_listed: yes, parent: lloyds-banking-group, ch_number: "00002065"}
+  HBOS plc: {id: hbos, type: company, listed: no, debt_listed: unknown, parent: lloyds-banking-group, ch_number: SC218813}
+  Bank of Scotland plc: {id: bank-of-scotland, type: company, listed: no, debt_listed: yes, parent: lloyds-banking-group, ch_number: SC327000}
+  Tesco Corporate Treasury Services PLC: {id: tesco-treasury, type: company, listed: no, debt_listed: yes, parent: tesco, ch_number: "08629715"}
+  Intertek Finance plc: {id: intertek-finance, type: company, listed: no, parent: intertek, ch_number: "03226960"}
+  Intertek Testing Services Pacific Limited: {id: intertek-pacific, type: company, listed: no, parent: intertek, ch_number: FC028088, note: "Hong Kong company; its directors' CH service address is c/o Intertek Group plc"}
+  Johnson Matthey plc: {id: johnson-matthey, type: company, listed: yes, market: LSE, ch_number: "00033774"}
+  Entain plc: {id: entain, type: company, listed: yes, market: LSE, ch_number: FC037925, note: "Isle of Man company; CH name ENTAIN LIMITED"}
+  RWS Holdings plc: {id: rws, type: company, listed: yes, market: AIM, ch_number: "03002645"}
+  Essentra plc: {id: essentra, type: company, listed: yes, market: LSE, ch_number: "05444653"}
+  Federal Express Corporation: {id: federal-express, type: company, listed: no, parent: fedex, ch_number: FC015149, note: FedEx Corporation's operating company}
+  Youngever Holdings Ltd.: {id: youngever, type: company, listed: no, parent: intertek, ch_number: FC032164, note: BVI investment company in the Intertek group}
+  Midas Topco Limited: {id: midas-topco, type: company, listed: no, ch_number: FC041696, note: "Jersey holding company of M Group, owned by CVC Fund IX"}
+  Atoll Holdco Ltd.: {id: atoll-holdco, type: company, listed: no, ch_number: FC040033, note: "Cayman private company (Ocean Outdoor's owner group)"}
+
+# Seats the notices don't disclose, from the company's own published board biographies (M&S has
+# none in its notice) or, for Margaret Ewing, the issuers' reports. Sources: evidence.yaml `roles`.
+extra_seats:
+  # M&S: the notice has no bios (they're in the Annual Report pp.51-52). Source for all M&S rows:
+  - {director: Archie Norman, org: M Group, position: Chairman, tense: current, board: yes, chair: yes}
+  - {director: Archie Norman, org: Bridgepoint Group plc, position: Senior Independent Director, tense: current, board: yes, chair: no}
+  - {director: Archie Norman, org: Coles Group, position: Adviser, tense: current, board: no, chair: no}
+  - {director: Stuart Machin, org: Ocado Retail Limited, position: Director, tense: current, board: yes, chair: no}
+  - {director: Alison Dolan, org: Pearson plc, position: Non-Executive Director, tense: current, board: yes, chair: no}
+  - {director: Fiona Dawson, org: Kerry Group plc, position: Chair (from 30 April 2026), tense: current, board: yes, chair: yes}
+  - {director: Fiona Dawson, org: Reckitt Benckiser Group plc, position: Non-Executive Director, tense: current, board: yes, chair: no}
+  - {director: Fiona Dawson, org: LEGO Group A/S, position: Non-Executive Director, tense: past, board: yes, chair: no}
+  - {director: Fiona Dawson, org: Chartered Management Institute, position: President, tense: current, board: unknown, chair: no}
+  - {director: Fiona Dawson, org: Social Mobility Foundation, position: Trustee, tense: current, board: yes, chair: no}
+  - {director: Evelyn Bourke, org: St. James's Place plc, position: Non-Executive Director, tense: current, board: yes, chair: no}
+  - {director: Evelyn Bourke, org: Admiral Group plc, position: Non-Executive Director, tense: current, board: yes, chair: no}
+  - {director: Evelyn Bourke, org: GenesisCare (UK board), position: Chair of the UK board, tense: current, board: yes, chair: yes}
+  - {director: Evelyn Bourke, org: GenesisCare Cayman, position: Non-Executive Director, tense: current, board: yes, chair: no}
+  - {director: Sapna Sood, org: The Adecco Group (APAC), position: President, Adecco APAC, tense: current, board: no, chair: no}
+  - {director: Roger Burnley, org: Pets at Home Group plc, position: Non-Executive Director, tense: current, board: yes, chair: no}
+  - {director: Roger Burnley, org: Accenture, position: Adviser, tense: current, board: no, chair: no}
+  - {director: Sean Doyle, org: British Airways Plc, position: Chairman and Chief Executive, tense: current, board: yes, chair: yes,
+     note: "IAG operating-company CEOs left the IAG board in 2014"}
+  - {director: Sean Doyle, org: BritishAmerican Business, position: Vice Chair, tense: current, board: yes, chair: no}
+  - {director: Sean Doyle, org: The Ireland Fund of Great Britain, position: Director, tense: current, board: yes, chair: no}
+  # ITV: Margaret Ewing's outside roles (the ITV bio names none)
+  - {director: Margaret Ewing, org: Convatec Group plc, position: Senior Independent Director; Chair of Audit and Risk Committee, tense: current, board: yes, chair: no,
+     note: "still on the Convatec board July 2026 (audit chair handover to Tobias Hestler)"}
+  - {director: Margaret Ewing, org: "International Consolidated Airlines Group, S.A.", position: Non-Executive Director, tense: current, board: yes, chair: no}
+
+
+# Resolutions the company withdrew before the AGM: no vote is expected (sources: evidence.yaml, withdrawn).
+withdrawn:
+  "Tesco#7": "Tesco withdrew resolution 7 on 6 May 2026: Thierry Garnier resigned as a director with immediate effect"
+
+# Mentions whose gold is still incomplete: key -> reason (none after the Oct 2026 research pass).
+incomplete: {}
+
+# Row-level corrections and additions, keyed by spreadsheet row number (Positions tab).
+row_fixes:
+  24:   # Dawn Allen, Haleon CFO - board seat not stated in the ITV notice
+    note: "Haleon announcement: joins the board on becoming CFO (Nov 2024)"
+  171:  # Steve Mogford, Intertek Chair from the conclusion of the 20 May 2026 AGM
+    chair_designate: true
+  217:  # Caroline Silver, Moelis & Company - no title in the Tesco notice
+    board_seat: "no"
+    role_type: adviser
+    notice_board_seat: unknown
+    note: "Moelis lists her as Senior Advisor (MD until 2020), not a director"
+  224:  # Richard Taylor, Greenhill - MD and Chairman is an executive role
+    role_type: executive_chair
+  81:   # Thierry Garnier, Kingfisher CEO
+    note: "CH: Kingfisher director since 2019-09-25; his Tesco re-election was withdrawn (see withdrawn)"
+  90:   # Nick Hampton, Tate & Lyle CEO
+    note: "Tate & Lyle FY2026 results (22 May 2026) name him chief executive"
+  200:  # Kawal Preet, FedEx EVP - executive committee, not the board
+    board_seat: "no"
+    note: "FedEx Corporation's board (2025 proxy and later changes) does not include her"
+  57:   # Margaret Ewing, ITV NED - "other Board roles" in ITV's wording means her other ITV board roles
+    note: "ITV Jan 2026: continues 'as a member of the Committee and in her other Board roles' (ITV roles); outside seats are rows W20-W21"
+  167:  # Helen Miles, Breedon NED
+    note: "CH: Breedon Group director since 2023-04-26; listed as current in the 2026 Severn Trent notice"
+  # M&S issuer rows: titles from the M&S Annual Report 2026 board pages (the notice gives none)
+  36:  {role_type: non_executive_director, chair: "no"}    # Evelyn Bourke
+  48:  {role_type: non_executive_director, chair: "no", note: Senior Independent Director}  # Fiona Dawson
+  55:  {role_type: executive_director, chair: "no", note: Chief Financial Officer}  # Alison Dolan
+  149: {role_type: executive_director, chair: "no", note: Chief Executive Officer}  # Stuart Machin
+  196: {role_type: chair, chair: "yes", note: Chairman}   # Archie Norman
+  220: {role_type: non_executive_director, chair: "no"}   # Sapna Sood

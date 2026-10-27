@@ -1,0 +1,132 @@
+{
+ "key": "c12371fb417e18f6f50792d976db104fd8a9dcfad9edb9eaa5a386334af931db",
+ "payload": {
+  "content": [
+   {
+    "query": "Intertek Testing Services Pacific Limited FC028088",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Intertek Group plc board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "INTERTEK TESTING SERVICES PACIFIC LIMITED filing history - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC028088/filing-history"
+     },
+     {
+      "page_age": null,
+      "title": "INTERTEK TESTING SERVICES PACIFIC LIMITED overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC028088"
+     },
+     {
+      "page_age": null,
+      "title": "Intertek Testing Services Ltd., Shanghai (Business Assurance",
+      "url": "https://www.iecq.org/who-we-are/certification-bodies/intertek-testing-services-ltd-shanghai"
+     },
+     {
+      "page_age": "239 days ago",
+      "title": "intertek-financial-report-2025.pdf",
+      "url": "https://www.intertek.com/siteassets/investors/2026/ara/intertek-financial-report-2025.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Touchstone:Accreditation & Assessment Management System - Customer Portal",
+      "url": "https://customer.a2la.org/index.cfm?event=directory.detail&labPID=B79AEABE-B7C2-45DE-82E1-27E44ED0BC14"
+     },
+     {
+      "page_age": "667 days ago",
+      "title": "Credit Rating \u00a3: INTERTEK TESTING SERVICES PACIFIC LIMITED",
+      "url": "https://www.firstreport.co.uk/Company/FC028088/INTERTEK-TESTING-SERVICES-PACIFIC-LIMITED"
+     },
+     {
+      "page_age": "426 days ago",
+      "title": "Intertek Testing and Certification Services Guide: An Overview",
+      "url": "https://www.compliancegate.com/intertek-guide/"
+     },
+     {
+      "page_age": null,
+      "title": "INTERTEK TESTING SERVICES PACIFIC LIMITED (0056110) - Hong Kong Business Directory",
+      "url": "https://www.hkgbusiness.com/en/company/Intertek-Testing-Services-Pacific-Limited"
+     },
+     {
+      "page_age": null,
+      "title": "INTERTEK TESTING & CERTIFICATION LIMITED",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/03272281"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Intertek Group plc: Governance, Directors and Executives & Committees - MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/INTERTEK-GROUP-PLC-4003872/company-governance/"
+     },
+     {
+      "page_age": "756 days ago",
+      "title": "Intertek Group plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://in.marketscreener.com/quote/stock/INTERTEK-GROUP-PLC-4003872/company/"
+     },
+     {
+      "page_age": null,
+      "title": "Intertek Group plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/INTERTEK-GROUP-PLC-120960957/company/"
+     },
+     {
+      "page_age": null,
+      "title": "INTERTEK GROUP PLC (ITRK:London): Board of Directors - Bloomberg",
+      "url": "http://www.investing.businessweek.wallst.com/research/stocks/people/board.asp?ticker=ITRK%3ALN"
+     },
+     {
+      "page_age": "1442 days ago",
+      "title": "Intertek Group plc (IKTS.F) Leadership & Management Team Analysis - Simply Wall St",
+      "url": "https://simplywall.st/stocks/us/commercial-services/otc-ikts.f/intertek-group/management"
+     },
+     {
+      "page_age": "31 days ago",
+      "title": "Intertek Group PLC: Directors, Shareholders & Company Details",
+      "url": "https://zavia.ai/companies/intertek-group-plc-gb-22924792/"
+     },
+     {
+      "page_age": null,
+      "title": "Intertek Group plc (ITRK) Board of Directors",
+      "url": "https://www.ticker.app/lse/ITRK/directors"
+     },
+     {
+      "page_age": null,
+      "title": "news insiders",
+      "url": "https://www.marketscreener.com/quote/stock/INTERTEK-GROUP-PLC-4003872/news-insiders/"
+     },
+     {
+      "page_age": null,
+      "title": "Intertek Group plc",
+      "url": "https://simplywall.st/stocks/gb/commercial-services/lse-itrk/intertek-group-shares/management"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.intertek.com\",\n    \"url\": \"https://www.intertek.com/siteassets/investors/2026/ara/intertek-financial-report-2025.pdf\",\n    \"quote\": \"Intertek Testing Services Pacific Limited 2/F, Garment Centre, 576 Castle Peak Road, Kowloon, Hong Kong\"\n  },\n  \"note\": \"The organisation is a Hong Kong-incorporated subsidiary of Intertek Group plc. Its registered address matches the Companies House record for FC028088. The page is Intertek Group's own 2025 financial report, hosted on intertek.com. It lists the company among the group's subsidiaries. I did not open the group's board or governance pages, so I haven't confirmed they cover this subsidiary's own board.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:50:46+00:00",
+  "inputs": {
+   "org_key": "intertek-testing-services-pacific"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 20571,
+   "output_tokens": 529,
+   "web_search_requests": 2
+  }
+ }
+}

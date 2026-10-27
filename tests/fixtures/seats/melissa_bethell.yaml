@@ -1,0 +1,48 @@
+# Tesco (1) + Diageo (1) + Exor (1, Euronext Amsterdam) + The Magnum Ice Cream Company
+# (1, listed since the Unilever demerger) = 4: FOR. Brillio and Ocean Outdoor (taken private
+# in 2022) are unlisted; the Atairos senior-adviser role is not a board seat.
+name: Melissa Bethell
+case: [H7, H9, H10, H12]
+roster:
+  - {meeting: tesco, resolution_no: 4, name: Melissa Bethell,
+     role_text_at_issuer: Independent Non-executive Director,
+     role_type_at_issuer: non_executive_director, coverage: structured}
+seats:
+  - {meeting: tesco, org_name: Tesco PLC, role_text: Independent Non-executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: tesco, org_name: Diageo PLC, role_text: Non-executive director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: tesco, org_name: Exor N.V., role_text: Non-executive director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: tesco, org_name: Brillio LLC, role_text: Non-executive director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: tesco, org_name: The Magnum Ice Cream Company N.V., role_text: Non-executive director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: tesco, org_name: Ocean Outdoor, role_text: Director, role_type: director_unspecified,
+     board_seat: "yes", chair: "no", executive: unknown, current: "yes"}
+  - {meeting: tesco, org_name: Atairos, role_text: Senior Advisor, role_type: adviser,
+     board_seat: "no", chair: "no", executive: "no", current: "yes"}
+ch:
+  - officer_id: fx-bethell
+    name: BETHELL, Melissa
+    appointments:
+      - {company_number: "00445790", company_name: TESCO PLC, company_type: plc, role: director,
+         appointed_on: 2018-09-01}
+      - {company_number: "00023307", company_name: DIAGEO PLC, company_type: plc, role: director,
+         appointed_on: 2020-06-30}
+orgs:
+  - {canonical_name: Diageo PLC, org_type: company, listed: "yes", equity_listing: "yes", market: LSE Main Market}
+  - {canonical_name: Exor N.V., org_type: company, listed: "yes", equity_listing: "yes", market: Euronext Amsterdam}
+  - {canonical_name: Brillio LLC, org_type: company, listed: "no", equity_listing: "no"}
+  - {canonical_name: The Magnum Ice Cream Company N.V., org_type: company, listed: "yes", equity_listing: "yes",
+     market: Euronext Amsterdam, events: ["2025-12-08: listed after demerger from Unilever"]}
+  - {canonical_name: Ocean Outdoor, org_type: company, listed: "no", equity_listing: "no",
+     events: ["2022: taken private"]}
+  - {canonical_name: Atairos, org_type: company, listed: "no", equity_listing: "no"}
+expect:
+  tesco: {vote: FOR, points: [4, 4]}

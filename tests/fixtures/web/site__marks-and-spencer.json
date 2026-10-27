@@ -1,0 +1,78 @@
+{
+ "key": "806b05ecd9aa1320c4935d0f83cbc2fb09cb734883ca014c0416724dfce92b4b",
+ "payload": {
+  "content": [
+   {
+    "query": "Marks and Spencer Group plc corporate website board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "495 days ago",
+      "title": "Marks & Spencer Group plc: Governance, Directors and Executives & Committees - MarketScreener UK",
+      "url": "https://uk.marketscreener.com/quote/stock/MARKS-SPENCER-GROUP-PLC-9590119/company-governance/"
+     },
+     {
+      "page_age": null,
+      "title": "Marks & Spencer Group plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/MARKS-SPENCER-GROUP-PLC-120788262/company/"
+     },
+     {
+      "page_age": "615 days ago",
+      "title": "Marks & Spencer Group: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/MARKS-SPENCER-GROUP-29422737/company/"
+     },
+     {
+      "page_age": null,
+      "title": "Marks & Spencer Group: Governance, Directors and Executives & Committees - MarketScreener UK",
+      "url": "https://uk.marketscreener.com/quote/stock/MARKS-SPENCER-GROUP-29422737/company-governance/"
+     },
+     {
+      "page_age": "403 days ago",
+      "title": "MARKS AND SPENCER PLC FINANCIAL STATEMENTS 2025 REGISTERED NUMBER 00214436",
+      "url": "https://corporate.marksandspencer.com/sites/marksandspencer/files/09-2025/SIGNED%20Financial%20Statements%20-%20Marks%20and%20Spencer%20plc%20FY25.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Marks and Spencer Group plc (MAKS.Y) Leadership & Management Team Analysis - Simply Wall St",
+      "url": "https://simplywall.st/stocks/us/consumer-retailing/otc-maks.y/marks-and-spencer-group/management"
+     },
+     {
+      "page_age": "344 days ago",
+      "title": "Our Leadership - Marks & Spencer - M&S",
+      "url": "https://corporate.marksandspencer.com/about-us/our-leadership"
+     },
+     {
+      "page_age": "23 days ago",
+      "title": "Marks & Spencer",
+      "url": "https://en.wikipedia.org/wiki/Marks_&_Spencer"
+     },
+     {
+      "page_age": "348 days ago",
+      "title": "Who Owns Marks & Spencer Group Company?",
+      "url": "https://matrixbcg.com/blogs/owners/marksandspencer"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://corporate.marksandspencer.com\",\n    \"url\": \"https://corporate.marksandspencer.com/sites/marksandspencer/files/09-2025/SIGNED%20Financial%20Statements%20-%20Marks%20and%20Spencer%20plc%20FY25.pdf\",\n    \"quote\": \"MARKS AND SPENCER PLC FINANCIAL STATEMENTS 2025 REGISTERED NUMBER 00214436\"\n  },\n  \"note\": \"Marks and Spencer plc (00214436) is a subsidiary of Marks and Spencer Group plc. The M&S corporate site hosts its statutory financial statements. Those statements refer to the Group's governance statement on the M&S corporate website (corporate.marksandspencer.com). The Group's board is listed at https://corporate.marksandspencer.com/about-us/our-leadership. The board and governance pages on that site describe the Group plc board. The subsidiary's own directors (e.g. Nick Folland, Alison Dolan) are named only in the financial statements.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:47:56+00:00",
+  "inputs": {
+   "org_key": "marks-and-spencer"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 13747,
+   "output_tokens": 835,
+   "web_search_requests": 1
+  }
+ }
+}

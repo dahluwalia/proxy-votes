@@ -1,0 +1,6 @@
+ned_points_threshold: 4 # NEDs: vote against if points > 4
+count_seat_under_vote: "yes" # count seats at the organization which is holding the vote
+aim_counts_as_listed: "yes" # AIM seats are counted as listed
+debt_only_listing_counts: "yes" # a board seat at a company with only bonds listed still counts
+chair_designate_counts_as_chair: "no" # roles are measured on the AGM date; a chair-designate is not yet chair
+group_dedupe: "yes" # seats in one corporate group count once

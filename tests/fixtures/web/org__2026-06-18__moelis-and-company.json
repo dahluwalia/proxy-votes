@@ -1,0 +1,241 @@
+{
+ "key": "5ec8af423df47e6bb1f211dcd95cfa8534b15c9125643a8cd054cfdd5186c567",
+ "payload": {
+  "content": [
+   {
+    "query": "Moelis & Company NYSE MC annual meeting 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Moelis & Company 10-K 2025 Delaware Class A common stock New York Stock Exchange",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "703 days ago",
+      "title": "Moelis & Company: Company Events Publications and Financial Calendar",
+      "url": "https://in.marketscreener.com/quote/stock/MOELIS-COMPANY-16279164/calendar/"
+     },
+     {
+      "page_age": null,
+      "title": "Moelis & Company: Company Events Publications and Financial Calendar",
+      "url": "https://ca.marketscreener.com/quote/stock/MOELIS-COMPANY-16279164/calendar/"
+     },
+     {
+      "page_age": "141 days ago",
+      "title": "Moelis CEO Conference Remarks May Clarify Deal Pipeline And Margin Outlook",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/moelis-ceo-conference-remarks-may-170634372.html"
+     },
+     {
+      "page_age": null,
+      "title": "Moelis & Company",
+      "url": "https://www.bamsec.com/companies/1596967/moelis-company"
+     },
+     {
+      "page_age": "11 days ago",
+      "title": "2026-10-15",
+      "url": "https://stockhouse.com/news/press-releases/2026/10/15/moelis-company-to-announce-third-quarter-2026-financial-results-and-host-a"
+     },
+     {
+      "page_age": null,
+      "title": "Moelis (NYSE:MC) Stock Price News",
+      "url": "https://stocklight.com/stocks/us/nyse-mc/moelis"
+     },
+     {
+      "page_age": "179 days ago",
+      "title": "Moelis & Company (NYSE: MC) details CEO succession, strong 2025 growth and major equity awards",
+      "url": "https://www.stocktitan.net/sec-filings/MC/def-14a-moelis-co-definitive-proxy-statement-5f8f3ed53bdf.html"
+     },
+     {
+      "page_age": "122 days ago",
+      "title": "Shareholders back Moelis & Company (NYSE: MC) board, pay and auditor",
+      "url": "https://www.stocktitan.net/sec-filings/MC/8-k-moelis-co-reports-material-event-dd839d411d0b.html"
+     },
+     {
+      "page_age": null,
+      "title": "moelis company to announce fourth quarter and full year 2025 financial results and host a conference call on february 4 2026",
+      "url": "https://www.barchart.com/story/news/37048314/moelis-company-to-announce-fourth-quarter-and-full-year-2025-financial-results-and-host-a-conference-call-on-february-4-2026"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Moelis & Co (Form: 10-K, Received: 02/22/2024 16:17:47)",
+      "url": "https://content.edgar-online.com/ExternalLink/EDGAR/0000950170-24-018791.html?hash=818c49325118398a0ab19e16d291479d4c39cfb09493449fbd0ab076bc8abe23&dest=mc-ex10_23_htm"
+     },
+     {
+      "page_age": null,
+      "title": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1596967/000119312526076747/mc-20251231.htm"
+     },
+     {
+      "page_age": null,
+      "title": "MOELIS & CO FORM 10-K (Annual Report)",
+      "url": "https://www.otcmarkets.com/filing/conv_pdf?id=19191232&guid=3ex-kqpnMvGvJth"
+     },
+     {
+      "page_age": "606 days ago",
+      "title": "Moelis Annual Report 2025 Form 10-K (NYSE:MC) Published",
+      "url": "https://stocklight.com/stocks/us/nyse-mc/moelis/annual-reports/nyse-mc-2025-10K-25679007.pdf"
+     },
+     {
+      "page_age": "242 days ago",
+      "title": "UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549",
+      "url": "https://s23.q4cdn.com/118425265/files/doc_financials/2025/q4/eadd2be9-fc9d-4ab4-8b25-6a5b1a368ecd.pdf"
+     },
+     {
+      "page_age": "2376 days ago",
+      "title": "MC Stock Price Quote",
+      "url": "https://www.morningstar.com/stocks/xnys/mc/quote"
+     },
+     {
+      "page_age": "591 days ago",
+      "title": "MC: Moelis & Co Stock Price Quote - New York - Bloomberg",
+      "url": "https://www.bloomberg.com/quote/MC:US"
+     },
+     {
+      "page_age": "109 days ago",
+      "title": "MOELIS & COMPANY (MC) Stock Price, News & Analysis",
+      "url": "https://www.stocktitan.net/overview/MC/"
+     },
+     {
+      "page_age": null,
+      "title": "Frequently Asked Questions about Moelis & Company Class A Common Stock (NYSE:MC)",
+      "url": "https://wyow.marketminute.com/quote/NY:MC/faq"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Moelis & Company senior notes listed debt securities registered 10-K 2025 revolving credit",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1596967/000119312526076747/mc-20251231.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Moelis & Co (Form: 10-K, Received: 02/22/2024 16:17:47)",
+      "url": "https://content.edgar-online.com/ExternalLink/EDGAR/0000950170-24-018791.html?hash=818c49325118398a0ab19e16d291479d4c39cfb09493449fbd0ab076bc8abe23&dest=mc-ex10_23_htm"
+     },
+     {
+      "page_age": null,
+      "title": "MOELIS & COMPANY LLC - Form X-17A-5 - FY2023",
+      "url": "https://www.sec.gov/Archives/edgar/data/1411263/000141126324000002/moelisllcpublicfinal.pdf"
+     },
+     {
+      "page_age": "241 days ago",
+      "title": "Moelis & Co SEC 10-K Report \u2014 TradingView News",
+      "url": "https://www.tradingview.com/news/tradingview:e0bd3e1ed72e4:0-moelis-co-sec-10-k-report/"
+     },
+     {
+      "page_age": null,
+      "title": "MOELIS & CO FORM 10-K (Annual Report)",
+      "url": "https://www.otcmarkets.com/filing/conv_pdf?id=19191232&guid=3ex-kqpnMvGvJth"
+     },
+     {
+      "page_age": "242 days ago",
+      "title": "UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549",
+      "url": "https://www.sec.gov/Archives/edgar/data/1596967/000119312526192153/2025_ars_filing.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "MOELIS & COMPANY LLC - Form X-17A-5 - FY2022",
+      "url": "https://www.sec.gov/Archives/edgar/data/1411263/000141126323000002/moelisllcpublicfinal2.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "MOELIS & COMPANY LLC - Form X-17A-5 - FY2021",
+      "url": "https://www.sec.gov/Archives/edgar/data/1411263/000141126322000001/moelisllcpublic1.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "senior notes payable and other debt",
+      "url": "https://www.sec.gov/Archives/edgar/data/740260/000074026025000231/R18.htm"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Moelis & Company proxy statement 2026 \"controlled company\" NYSE Partner Holdings voting power",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "schedule 14a",
+      "url": "https://www.sec.gov/Archives/edgar/data/1596967/000104746915004044/a2224453zdef14a.htm"
+     },
+     {
+      "page_age": "179 days ago",
+      "title": "DEF 14A",
+      "url": "https://www.sec.gov/Archives/edgar/data/1596967/000119312526193242/d79640ddef14a.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Dealpointdata",
+      "url": "https://www.dealpointdata.com/corp/docf/000119/000119312521122985/index1.html"
+     },
+     {
+      "page_age": "185 days ago",
+      "title": "Mobileye (NASDAQ: MBLY) 2026 proxy highlights Intel control and $900M Mentee deal",
+      "url": "https://www.stocktitan.net/sec-filings/MBLY/def-14a-mobileye-global-inc-definitive-proxy-statement-393ca6d9f08f.html"
+     },
+     {
+      "page_age": null,
+      "title": "DEFA14A 1 d145653ddefa14a.htm DEFA14A DEFA14A",
+      "url": "https://www.sec.gov/Archives/edgar/data/1596967/000119312523160366/d145653ddefa14a.htm"
+     },
+     {
+      "page_age": null,
+      "title": "SC 13G/A 1 d117573dsc13ga.htm SC 13G/A SC 13G/A",
+      "url": "https://www.sec.gov/Archives/edgar/data/1596967/000119312521039219/d117573dsc13ga.htm"
+     },
+     {
+      "page_age": null,
+      "title": "DEFA14A 1 d528867ddefa14a.htm DEFA14A DEFA14A",
+      "url": "https://www.sec.gov/Archives/edgar/data/1596967/000119312523118887/d528867ddefa14a.htm"
+     },
+     {
+      "page_age": null,
+      "title": "DEF 14A 1 d112084ddef14a.htm DEF 14A DEF 14A",
+      "url": "https://www.sec.gov/Archives/edgar/data/1596967/000119312521122985/d112084ddef14a.htm"
+     },
+     {
+      "page_age": null,
+      "title": "DEF 14A 1 d825910ddef14a.htm DEF 14A DEF 14A",
+      "url": "https://www.sec.gov/Archives/edgar/data/1596967/000119312520115063/d825910ddef14a.htm"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"Moelis & Company\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1596967/000119312526076747/mc-20251231.htm\", \"quote\": \"Moelis & Company (Exact name of registrant as specified in its charter)\"},\n  \"country\": {\"value\": \"United States\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1596967/000119312526076747/mc-20251231.htm\", \"quote\": \"we mean Moelis & Company, a Delaware corporation (incorporated in January 2014), and its consolidated subsidiaries.\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1596967/000119312526076747/mc-20251231.htm\", \"quote\": \"we mean Moelis & Company, a Delaware corporation (incorporated in January 2014), and its consolidated subsidiaries.\"},\n  \"equity_listed\": {\"value\": \"yes\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1596967/000119312526076747/mc-20251231.htm\", \"quote\": \"Class A common stock \u00b7 MC \u00b7 New York Stock Exchange (NYSE)\"},\n  \"exchange\": {\"value\": \"New York Stock Exchange (NYSE)\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1596967/000119312526076747/mc-20251231.htm\", \"quote\": \"Class A common stock \u00b7 MC \u00b7 New York Stock Exchange (NYSE)\"},\n  \"ticker\": {\"value\": \"MC\", \"url\": \"https://stockhouse.com/news/press-releases/2026/10/15/moelis-company-to-announce-third-quarter-2026-financial-results-and-host-a\", \"quote\": \"Moelis & Company (NYSE: MC), a leading global independent investment bank\"},\n  \"market_segment\": {\"value\": \"main\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1596967/000119312526076747/mc-20251231.htm\", \"quote\": \"Class A common stock \u00b7 MC \u00b7 New York Stock Exchange (NYSE)\"},\n  \"debt_listed\": {\"value\": \"no\", \"url\": \"https://www.tradingview.com/news/tradingview:e0bd3e1ed72e4:0-moelis-co-sec-10-k-report/\", \"quote\": \"with no borrowings under these facilities as of December 31, 2025.\"},\n  \"is_subsidiary\": {\"value\": \"no\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1596967/000119312526193242/d79640ddef14a.htm\", \"quote\": \"which is no longer a \u201ccontrolled company\u201d under NYSE rules\"},\n  \"parent_name\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"parent_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"events\": [],\n  \"note\": \"Entity chosen: Moelis & Company, the Delaware holding company whose Class A shares trade on the NYSE. I did not choose its subsidiaries, such as Moelis & Company Group LP or Moelis & Company LLC. Two caveats. (1) The 2026 annual meeting was held on 2026-06-25, not 2026-06-18, according to the 2026 proxy statement and the 8-K voting results. The listing facts above should still hold on 2026-06-18. (2) I found no listing, delisting, demerger or takeover events for June 2023 to June 2026 in my searches. The events list is empty because I found none, which is not proof that none occurred. The IPO was in April 2014, outside the window. For debt_listed, I found no listed bonds or notes. The 10-K describes only two revolving credit facilities, and a summary of the 10-K says the company has zero debt. Ken Moelis controls the Class B shares through Partner Holdings. That is not a parent-subsidiary relationship, so parent_name is null.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:23:19+00:00",
+  "inputs": {
+   "as_of": "2026-06-18",
+   "org_key": "moelis-and-company"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 72605,
+   "output_tokens": 1972,
+   "web_search_requests": 4
+  }
+ }
+}

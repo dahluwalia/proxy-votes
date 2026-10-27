@@ -1,0 +1,61 @@
+# Severn Trent NED (1) + Lloyds Banking Group (1) + Man Group (1) = 3. CH also shows Lloyds
+# Bank plc and Bank of Scotland plc, which the notice doesn't mention: undisclosed seats in
+# the Lloyds group, which list only debt, so they collapse into the group seat. Hafren Dyfrdwy
+# is Severn Trent's own subsidiary. Man Group (Jersey) is not on CH, which never means
+# "not listed". Hang Seng is past.
+name: Sarah Legg
+case: [H6, H8, H9, H17]
+roster:
+  - {meeting: severn-trent, resolution_no: 10, name: Sarah Legg,
+     role_text_at_issuer: Independent Non-Executive Director,
+     role_type_at_issuer: non_executive_director, coverage: structured}
+seats:
+  - {meeting: severn-trent, org_name: Severn Trent Plc, role_text: Independent Non-Executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: severn-trent, org_name: Hafren Dyfrdwy, role_text: Chair, role_type: chair,
+     board_seat: "yes", chair: "yes", executive: "no", current: "yes"}
+  - {meeting: severn-trent, org_name: Lloyds Banking Group Plc, role_text: Non-Executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: severn-trent, org_name: Man Group Plc, role_text: Non-Executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: severn-trent, org_name: Hang Seng Bank Limited, role_text: Non-Executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "no"}
+ch:
+  - officer_id: fx-legg
+    name: LEGG, Sarah Catherine
+    appointments:
+      - {company_number: "02366619", company_name: SEVERN TRENT PLC, company_type: plc,
+         role: director, appointed_on: 2020-12-01}
+      - {company_number: "02366777", company_name: HAFREN DYFRDWY CYFYNGEDIG, company_type: ltd,
+         role: director, appointed_on: 2021-01-01}
+      - {company_number: SC095000, company_name: LLOYDS BANKING GROUP PLC, company_type: plc,
+         role: director, appointed_on: 2019-03-01}
+      - {company_number: "00002065", company_name: LLOYDS BANK PLC, company_type: plc,
+         role: director, appointed_on: 2019-03-01}
+      - {company_number: SC327000, company_name: BANK OF SCOTLAND PLC, company_type: plc,
+         role: director, appointed_on: 2019-03-01}
+orgs:
+  - {canonical_name: Hafren Dyfrdwy Cyfyngedig, org_key: hafren-dyfrdwy, org_type: company,
+     listed: "no", equity_listing: "no", parent_name: Severn Trent Plc}
+  - {canonical_name: Lloyds Banking Group plc, org_type: company, listed: "yes", equity_listing: "yes",
+     market: LSE Main Market}
+  - {canonical_name: Lloyds Bank plc, org_type: company, listed: "yes", equity_listing: "no",
+     market: LSE (debt securities), parent_name: Lloyds Banking Group plc}
+  - {canonical_name: Bank of Scotland plc, org_type: company, listed: "yes", equity_listing: "no",
+     market: LSE (debt securities), parent_name: Lloyds Banking Group plc}
+  - {canonical_name: Man Group plc, org_type: company, listed: "yes", equity_listing: "yes", market: LSE Main Market}
+  - {canonical_name: Hang Seng Bank Limited, org_type: company, listed: "yes", equity_listing: "yes", market: HKEX,
+     parent_name: HSBC Holdings plc}
+# Their roles come from Lloyds' own site (group NEDs also sit on the ring-fenced bank boards),
+# so with debt-only listings counting they add nothing beyond the group's one point.
+positions:
+  - {seat_id: "seat:fx-legg:00002065", board_seat: "yes", chair: "no", executive: "no",
+     current: "yes", role_type: non_executive_director}
+  - {seat_id: "seat:fx-legg:SC327000", board_seat: "yes", chair: "no", executive: "no",
+     current: "yes", role_type: non_executive_director}
+expect:
+  severn-trent: {vote: FOR, points: [3, 3]}

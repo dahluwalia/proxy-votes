@@ -1,0 +1,11 @@
+.env
+pennant.db
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+*.egg-info/
+eval/out/
+logs/
+CLAUDE.md

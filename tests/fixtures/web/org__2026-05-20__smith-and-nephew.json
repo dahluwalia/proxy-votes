@@ -1,0 +1,310 @@
+{
+ "key": "95d3c4e1106e0a79332c369184e26a5b52110a10120095cfd55ea6c2d1e39c56",
+ "payload": {
+  "content": [
+   {
+    "query": "Smith & Nephew plc London Stock Exchange SN. main market NYSE SNN",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Smith & Nephew AGM 2026 results of annual general meeting 20 May 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Smith & Nephew plc incorporated in England and Wales registered number 2060715 notes bonds listed",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Smith %26 Nephew",
+      "url": "https://en.wikipedia.org/wiki/Smith_%26_Nephew"
+     },
+     {
+      "page_age": "725 days ago",
+      "title": "Smith & Nephew plc",
+      "url": "https://www.tradingview.com/symbols/LSE-SN./"
+     },
+     {
+      "page_age": "725 days ago",
+      "title": "Smith & Nephew Share Price. SN. - Stock Quote, Charts, Trade History, Share Chat, SN. Values. Smith & Nephew Plc Ord Usd0.20",
+      "url": "https://www.lse.co.uk/SharePrice.html?shareprice=SN.&share=Smith--Nephew"
+     },
+     {
+      "page_age": "586 days ago",
+      "title": "Smith & Nephew Plc Stock (SN.) - Quote London S.E.- MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/SMITH-NEPHEW-PLC-9590181/"
+     },
+     {
+      "page_age": "279 days ago",
+      "title": "Smith&Nephew Stock Price Today",
+      "url": "https://www.investing.com/equities/smith-and-nephew"
+     },
+     {
+      "page_age": "73 days ago",
+      "title": "Smith & Nephew plc (SNN) Stock Price, News, Quote & History - Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/SNN/"
+     },
+     {
+      "page_age": "209 days ago",
+      "title": "Smith & Nephew (SNN) Stock Price & Overview",
+      "url": "https://stockanalysis.com/stocks/snn/"
+     },
+     {
+      "page_age": "972 days ago",
+      "title": "Shareholder Resources",
+      "url": "https://www.smith-nephew.com/en/who-we-are/investors/shareholder-resources"
+     },
+     {
+      "page_age": null,
+      "title": "smith nephew plc nysesnn sees significant increase in short interest 2025 06 16",
+      "url": "https://www.marketbeat.com/instant-alerts/smith-nephew-plc-nysesnn-sees-significant-increase-in-short-interest-2025-06-16"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "SMITH & NEPHEW PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/845982/000110465926028261/snn-20260331xex99d1.htm"
+     },
+     {
+      "page_age": "173 days ago",
+      "title": "Result of AGM",
+      "url": "https://www.investegate.co.uk/announcement/rns/smith-nephew--sn./result-of-agm/9555393"
+     },
+     {
+      "page_age": null,
+      "title": "SMITH & NEPHEW PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000845982/000165495426004395/a2839d.htm"
+     },
+     {
+      "page_age": null,
+      "title": "SMITH & NEPHEW PLC - Form 20-F - FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/845982/000110465926028258/snn-20251231x20f.htm"
+     },
+     {
+      "page_age": "172 days ago",
+      "title": "Smith & Nephew AGM Approves All Resolutions Amid Pushback on Pay Plans - The Globe and Mail",
+      "url": "https://www.theglobeandmail.com/investing/markets/markets-news/Tipranks/1775933/smith-nephew-agm-approves-all-resolutions-amid-pushback-on-pay-plans/"
+     },
+     {
+      "page_age": "173 days ago",
+      "title": "Smith & Nephew AGM Approves All Resolutions Amid Pushback on Pay Plans - TipRanks.com",
+      "url": "https://www.tipranks.com/news/company-announcements/smith-nephew-agm-approves-all-resolutions-amid-pushback-on-pay-plans"
+     },
+     {
+      "page_age": null,
+      "title": "SMITH & NEPHEW PLC - Form 20-F - FY2022",
+      "url": "https://www.sec.gov/Archives/edgar/data/845982/000155837023002847/snn-20221231x20f.htm"
+     },
+     {
+      "page_age": "972 days ago",
+      "title": "Shareholder Resources",
+      "url": "https://www.smith-nephew.com/en/who-we-are/investors/shareholder-resources"
+     },
+     {
+      "page_age": null,
+      "title": "Annual General Meeting",
+      "url": "https://www.smith-nephew.com/en/who-we-are/investors/annual-general-meeting"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "595 days ago",
+      "title": "Smith & Nephew plc_December 31, 2024",
+      "url": "https://www.sec.gov/Archives/edgar/data/845982/000155837025002550/snn-20241231x20f.htm"
+     },
+     {
+      "page_age": null,
+      "title": "20-F",
+      "url": "https://www.sec.gov/Archives/edgar/data/845982/000119312516492258/d52214d20f.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Form 20-F",
+      "url": "https://www.sec.gov/Archives/edgar/data/845982/000095013103002299/d20f.htm"
+     },
+     {
+      "page_age": null,
+      "title": "SMITH & NEPHEW PLC - Form 6-K - FY2024",
+      "url": "https://www.sec.gov/Archives/edgar/data/845982/000095010324003803/dp208361_6k.htm"
+     },
+     {
+      "page_age": "956 days ago",
+      "title": "a7842g",
+      "url": "https://www.sec.gov/Archives/edgar/data/845982/000165495424003104/a7842g.htm"
+     },
+     {
+      "page_age": "31 days ago",
+      "title": "Smith & Nephew PLC Company Details & Registry Data",
+      "url": "https://zavia.ai/companies/smith-nephew-plc-gb-17846101/"
+     },
+     {
+      "page_age": "3346 days ago",
+      "title": "Smith & Nephew Plc",
+      "url": "https://www.encyclopedia.com/social-sciences-and-law/economics-business-and-labor/businesses-and-occupations/smith-nephew-plc"
+     },
+     {
+      "page_age": "223 days ago",
+      "title": "Base Prospectus dated 17 March 2026 Smith & Nephew plc",
+      "url": "https://smith-nephew.stylelabs.cloud/api/public/content/80866ebbfd2a42a797b41d878b374f70?v=a80c272c"
+     },
+     {
+      "page_age": null,
+      "title": "Company Registration No. 681251 (England and Wales)",
+      "url": "https://smith-nephew.stylelabs.cloud/api/public/content/4524fdad8a5e40feb8ecf2dd59c9299a?v=02df4212&download=true"
+     },
+     {
+      "page_age": null,
+      "title": "8-A12B 1 dp208591_8a12b.htm FORM 8-A12B",
+      "url": "https://www.sec.gov/Archives/edgar/data/845982/000095010324004060/dp208591_8a12b.htm"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Smith+Nephew shares admitted to trading London Stock Exchange main market equity shares (commercial companies) FTSE 100",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Smith & Nephew 2026 takeover bid OR demerger OR delisting OR listing change",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "156 days ago",
+      "title": "Smith & Nephew Admits Additional Shares From Employee Schemes to London Market - The Globe and Mail",
+      "url": "https://www.theglobeandmail.com/investing/markets/stocks/SNN/pressreleases/2102652/smith-nephew-admits-additional-shares-from-employee-schemes-to-london-market/"
+     },
+     {
+      "page_age": "38 days ago",
+      "title": "Admission to Trading",
+      "url": "https://www.investegate.co.uk/announcement/rns/smith-nephew--sn./admission-to-trading/9780312"
+     },
+     {
+      "page_age": "157 days ago",
+      "title": "Smith & Nephew Admits Additional Shares From Employee Schemes to London Market - TipRanks.com",
+      "url": "https://www.tipranks.com/news/company-announcements/smith-nephew-admits-additional-shares-from-employee-schemes-to-london-market"
+     },
+     {
+      "page_age": null,
+      "title": "SMITH & NEPHEW PLC SN. Our story - Stock",
+      "url": "https://www.londonstockexchange.com/stock/SN./smith-nephew-plc/our-story"
+     },
+     {
+      "page_age": null,
+      "title": "SMITH & NEPHEW PLC - Form 6-K - FY2024",
+      "url": "https://www.sec.gov/Archives/edgar/data/845982/000155837024002868/tmb-20240311xex99d1.htm"
+     },
+     {
+      "page_age": "116 days ago",
+      "title": "Block Admission Application",
+      "url": "https://www.investegate.co.uk/announcement/rns/smith-nephew--sn./block-admission-application/9649467"
+     },
+     {
+      "page_age": null,
+      "title": "Smith & Nephew plc (SN.) Lists 16,274 New Ordinary Shares on London Stock Exchange via Employee Share Schemes",
+      "url": "https://kalkinemedia.com/uk/news/announcements/smith-nephew-plc-sn-lists-16274-new-ordinary-shares-on-london-stock-exchange-via-employee-share-schemes"
+     },
+     {
+      "page_age": "972 days ago",
+      "title": "Shareholder Resources",
+      "url": "https://www.smith-nephew.com/en/who-we-are/investors/shareholder-resources"
+     },
+     {
+      "page_age": null,
+      "title": "SMITH & NEPHEW PLC - Form 20-F - FY2022",
+      "url": "https://www.sec.gov/Archives/edgar/data/845982/000155837023002847/snn-20221231x20f.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Smith %26 Nephew",
+      "url": "https://en.wikipedia.org/wiki/Smith_%26_Nephew"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "20 days ago",
+      "title": "Smith & Nephew PLC Removes 5.150% Notes Due 2027 from NYSE Listing",
+      "url": "https://kalkinemedia.com/us/news/announcements/smith-nephew-plc-removes-5150-notes-due-2027-from-nyse-listing"
+     },
+     {
+      "page_age": "4353 days ago",
+      "title": "Smith & Nephew Up on Possible Takeover Bid by Stryker - Analyst Blog - Nasdaq.com",
+      "url": "https://www.nasdaq.com/article/smith-nephew-up-on-possible-takeover-bid-by-stryker-analyst-blog-cm417244"
+     },
+     {
+      "page_age": "4319 days ago",
+      "title": "Rumors of Stryker Acquisition of Smith & Nephew Resurface - ODT",
+      "url": "https://www.odtmag.com/breaking-news/rumors-of-stryker-acquisition-of-smith-nephe/"
+     },
+     {
+      "page_age": null,
+      "title": "Smith & Nephew Rejects $11 Billion Bid from Johnson & Johnson \u2022 CHEManager is the market-leading medium for the management of the chemical and pharmaceutical industry",
+      "url": "https://chemanager-online.com/en/news/smith-nephew-rejects-11-billion-bid-from-johnson-johnson"
+     },
+     {
+      "page_age": "97 days ago",
+      "title": "Smith & Nephew Executives Acquire American Depositary Shares via Employee Stock Purchase Plan on July 10, 2026",
+      "url": "https://kalkinemedia.com/uk/news/announcements/smith-nephew-executives-acquire-american-depositary-shares-via-employee-stock-purchase-plan-on-july-10-2026"
+     },
+     {
+      "page_age": "2 days ago",
+      "title": "Smith & Nephew orthopaedics deal talks with J&J fail over CEO choice, source says",
+      "url": "https://live.euronext.com/en/financial-news/smith-nephew-orthopaedics-deal-talks-jj-fail-over-ceo-choice-source-says"
+     },
+     {
+      "page_age": "1105 days ago",
+      "title": "Stryker Could Buy Smith & Nephew Later, Not Sooner",
+      "url": "https://www.mddionline.com/business/stryker-could-buy-smith-nephew-later-not-sooner"
+     },
+     {
+      "page_age": "3 days ago",
+      "title": "Smith & Nephew And Johnson & Johnson Merger Talks Hit A Leadership Wall - Finimize",
+      "url": "https://finimize.com/content/smith-nephew-and-johnson-johnson-merger-talks-hit-a-leadership-wall"
+     },
+     {
+      "page_age": null,
+      "title": "share research",
+      "url": "https://www.hl.co.uk/shares/shares-search-results/s/smith-and-nephew-plc-ordinary-usd0.20/share-research"
+     },
+     {
+      "page_age": null,
+      "title": "Smith & Nephew And Stryker Shares Surge Following Report Of Takeover Bid",
+      "url": "https://www.benzinga.com/news/14/12/5103549/smith-nephew-stryker-shares-surge-following-report-of-takeover-bid"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"Smith & Nephew plc\", \"url\": \"https://smith-nephew.stylelabs.cloud/api/public/content/80866ebbfd2a42a797b41d878b374f70?v=a80c272c\", \"quote\": \"(incorporated with limited liability in England and Wales with registered number 00324357)\"},\n  \"country\": {\"value\": \"United Kingdom\", \"url\": \"https://smith-nephew.stylelabs.cloud/api/public/content/80866ebbfd2a42a797b41d878b374f70?v=a80c272c\", \"quote\": \"(incorporated with limited liability in England and Wales with registered number 00324357)\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://www.sec.gov/Archives/edgar/data/845982/000155837025002550/snn-20241231x20f.htm\", \"quote\": \"public limited company incorporated in England and Wales\"},\n  \"equity_listed\": {\"value\": \"yes\", \"url\": \"https://www.theglobeandmail.com/investing/markets/stocks/SNN/pressreleases/2102652/smith-nephew-admits-additional-shares-from-employee-schemes-to-london-market/\", \"quote\": \"ordinary shares of USD 0.20 each on the Main Market of the London Stock Exchange\"},\n  \"exchange\": {\"value\": \"London Stock Exchange (primary listing); ADSs also on the New York Stock Exchange\", \"url\": \"https://www.smith-nephew.com/en/who-we-are/investors/shareholder-resources\", \"quote\": \"Smith & Nephew plc is quoted on the London Stock Exchange (symbol SN).\"},\n  \"ticker\": {\"value\": \"SN (London); SNN (NYSE ADS)\", \"url\": \"https://www.smith-nephew.com/en/who-we-are/investors/shareholder-resources\", \"quote\": \"Smith & Nephew plc is quoted on the London Stock Exchange (symbol SN).\"},\n  \"market_segment\": {\"value\": \"main\", \"url\": \"https://www.theglobeandmail.com/investing/markets/stocks/SNN/pressreleases/2102652/smith-nephew-admits-additional-shares-from-employee-schemes-to-london-market/\", \"quote\": \"ordinary shares of USD 0.20 each on the Main Market of the London Stock Exchange\"},\n  \"debt_listed\": {\"value\": \"yes\", \"url\": \"https://www.sec.gov/Archives/edgar/data/845982/000155837025002550/snn-20241231x20f.htm\", \"quote\": \"American Depositary Shares and bonds are listed on the New York Stock Exchange (NYSE)\"},\n  \"is_subsidiary\": {\"value\": \"no\", \"url\": \"https://www.marketscreener.com/quote/stock/SMITH-NEPHEW-PLC-9590181/\", \"quote\": \"Free-Float | 96.01%\"},\n  \"parent_name\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"parent_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"events\": [\n    {\"date\": \"2024-03-20\", \"event\": \"Registration on the NYSE of the 5.150% Notes due 2027 and 5.400% Notes due 2034 (new debt listing). No equity listing, delisting, demerger or takeover of Smith & Nephew itself was found in the three years before 2026-05-20.\", \"url\": \"https://www.sec.gov/Archives/edgar/data/845982/000095010324004060/dp208591_8a12b.htm\", \"quote\": \"5.150% Notes due 2027\"}\n  ],\n  \"note\": \"Smith & Nephew plc (company No. 00324357) was chosen, not a subsidiary or foundation. The 2026 AGM was held on 6 May 2026, not 20 May. Main Market listing is shown by announcements dated 22 May 2026 and later. LSE data gives the Smith & Nephew plc ticker as SN. and the FCA category as equity shares (commercial companies). ADSs (SNN) trade on the NYSE, each representing two ordinary shares. is_subsidiary 'no' rests on the 96% free float and the absence of any parent in the sources. No source states directly that the company has no parent, so parent_listed is unknown. The 5.150% 2027 notes were delisted from the NYSE in October 2026, after the date in question. In October 2026 the press reported failed merger talks with J&J. They are not an event before 2026-05-20.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:24:27+00:00",
+  "inputs": {
+   "as_of": "2026-05-20",
+   "org_key": "smith-and-nephew"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 79428,
+   "output_tokens": 3660,
+   "web_search_requests": 5
+  }
+ }
+}

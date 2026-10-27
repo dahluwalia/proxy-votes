@@ -1,0 +1,140 @@
+{
+ "key": "62889790f7e9441cb9e64c07c6241cfb9b864f68bdea5cd900eb6192ba85ef58",
+ "payload": {
+  "content": [
+   {
+    "query": "rws.com Graham Cooke RWS Holdings board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "rws.com board of directors RWS Holdings plc non-executive director",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "300 days ago",
+      "title": "Our Board - RWS",
+      "url": "https://www.rws.com/about/investors/our-board/"
+     },
+     {
+      "page_age": null,
+      "title": "Corporate Governance Code Compliance - RWS",
+      "url": "https://www.rws.com/about/investors/Copy_of_corporate-governance/"
+     },
+     {
+      "page_age": "684 days ago",
+      "title": "For immediate release 12 December 2024 RWS Holdings plc",
+      "url": "https://www.rws.com/media/images/RWS-FY24-Results-Statement%20final-241211vv_tcm228-264775.pdf"
+     },
+     {
+      "page_age": "1009 days ago",
+      "title": "RWS HOLDINGS PLC NOTICE OF ANNUAL GENERAL ...",
+      "url": "https://www.rws.com/media/images/RWS-2024-AGM-Notice_tcm228-237008.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "The Board & Committees - RWS",
+      "url": "https://www.rws.com/about/corporate-sustainability/corporate-governance/the-board-and-committees/"
+     },
+     {
+      "page_age": null,
+      "title": "RWS Holdings plc - AIM Rule 26 Information",
+      "url": "https://www.rws.com/about/investors/aim-rule-26-information/"
+     },
+     {
+      "page_age": "320 days ago",
+      "title": "RWS Holdings plc Results for the year ended 30 ...",
+      "url": "https://www.rws.com/media/tw/Images/RNS-Results-Statement-FY25-251210_tcm252-287758.pdf"
+     },
+     {
+      "page_age": "138 days ago",
+      "title": "RWS Holdings plc Half Year Report for the Six Months ...",
+      "url": "https://www.rws.com/media/images/RWS-HY26-Results-Statement-Final-260610_tcm228-298858.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "RWS-2023-Notice-of-AGM-Final_tcm228-214264.pdf",
+      "url": "https://www.rws.com/media/images/RWS-2023-Notice-of-AGM-Final_tcm228-214264.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "1 THIS DOCUMENT IS IMPORTANT AND REQUIRES YOUR IMMEDIATE ATTENTION.",
+      "url": "https://www.rws.com/media/images/Notice-of-AGM-2022_tcm228-200190.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "3353 days ago",
+      "title": "Appointment of Non-Executive Director",
+      "url": "https://www.rws.com/about/news/2017/appointment-of-non-executive-director/"
+     },
+     {
+      "page_age": "1009 days ago",
+      "title": "RWS HOLDINGS PLC NOTICE OF ANNUAL GENERAL ...",
+      "url": "https://www.rws.com/media/images/RWS-2024-AGM-Notice_tcm228-237008.pdf"
+     },
+     {
+      "page_age": "300 days ago",
+      "title": "Our Board - RWS",
+      "url": "https://www.rws.com/about/investors/our-board/"
+     },
+     {
+      "page_age": "684 days ago",
+      "title": "For immediate release 12 December 2024 RWS Holdings plc",
+      "url": "https://www.rws.com/media/images/RWS-FY24-Results-Statement%20final-241211vv_tcm228-264775.pdf"
+     },
+     {
+      "page_age": "2147 days ago",
+      "title": "For immediate release 10 December 2020 RWS Holdings plc",
+      "url": "https://www.rws.com/media/images/201210-RNS-RWS-Final-results-announcement-2020-final_tcm228-183335.pdf"
+     },
+     {
+      "page_age": "1413 days ago",
+      "title": "RWS Holdings plc Results for the year ended 30 September 2022",
+      "url": "https://www.rws.com/media/images/RWS-FY22-Results-Full-Statement_tcm228-212982.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "1 RWS \u2014 Annual Report 2019 rws.com Annual Report 2019",
+      "url": "https://www.rws.com/media/tw/Images/RWS_AR_19_interactive_tcm252-183393.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "RWS-2023-Notice-of-AGM-Final_tcm228-214264.pdf",
+      "url": "https://www.rws.com/media/images/RWS-2023-Notice-of-AGM-Final_tcm228-214264.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "1 THIS DOCUMENT IS IMPORTANT AND REQUIRES YOUR IMMEDIATE ATTENTION.",
+      "url": "https://www.rws.com/media/images/Notice-of-AGM-2022_tcm228-200190.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\n    \"value\": \"yes\",\n    \"url\": \"https://www.rws.com/about/investors/our-board/\",\n    \"quote\": \"Graham Cooke joined RWS as a Non-executive Director in January 2024.\"\n  },\n  \"capacity\": {\n    \"value\": \"non_executive_director\",\n    \"url\": \"https://www.rws.com/about/investors/our-board/\",\n    \"quote\": \"Graham Cooke joined RWS as a Non-executive Director in January 2024.\"\n  },\n  \"start_date\": {\n    \"value\": \"2024-01-01\",\n    \"url\": \"https://www.rws.com/media/images/RWS-FY24-Results-Statement%20final-241211vv_tcm228-264775.pdf\",\n    \"quote\": \"Paul Abbott and Graham Cooke joined RWS as Independent Non-executive Directors with effect from 1 January 2024.\"\n  },\n  \"end_date\": {\n    \"value\": null,\n    \"url\": null,\n    \"quote\": null\n  },\n  \"note\": \"The board is that of RWS Holdings plc itself. No parent group board appears on the site. The rws.com 'Our Board' page lists Graham Cooke as an independent Non-executive Director. That page was updated after October 2026, because it also shows Patrick De Smedt appointed Chair in October 2026. His start date of 1 January 2024 is more than six months before 2026-05-07. I found no end date or departure announcement, so no role change within six months of the AGM is shown. I did not find a board list dated exactly 2026-05-07. The 'Our Board' page is the nearest list, and it post-dates the AGM. It shows him still on the board then and no departure.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:56:05+00:00",
+  "inputs": {
+   "as_of": "2026-05-07",
+   "domain": "rws.com",
+   "org_key": "rws-holdings",
+   "person": "graham-cooke"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 25391,
+   "output_tokens": 923,
+   "web_search_requests": 2
+  }
+ }
+}

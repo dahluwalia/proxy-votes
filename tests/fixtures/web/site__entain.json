@@ -1,0 +1,78 @@
+{
+ "key": "18a394ab1427ecdd4c0830c2ebb8ee968259be6d767a8e648dd1966fbcded38e",
+ "payload": {
+  "content": [
+   {
+    "query": "Entain plc corporate website board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Entain plc: Governance, Directors and Executives & Committees - MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/ENTAIN-PLC-4005005/company-governance/"
+     },
+     {
+      "page_age": "181 days ago",
+      "title": "In this section 103 Governance 104 Chair\u2019s Governance Overview",
+      "url": "https://www.entaingroup.com/annualreport2025/documents/Entain_Annual-Report_2025_GovernanceReport.pdf"
+     },
+     {
+      "page_age": "595 days ago",
+      "title": "Entain plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/ENTAIN-PLC-4005005/company/"
+     },
+     {
+      "page_age": null,
+      "title": "Entain - Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q25103691"
+     },
+     {
+      "page_age": "546 days ago",
+      "title": "Appointment of Chief Executive Officer",
+      "url": "https://www.entaingroup.com/news-insights/latest-news/2025/appointment-of-chief-executive-officer/"
+     },
+     {
+      "page_age": null,
+      "title": "Entain Plc (GMVH.Y) Leadership & Management Team Analysis - Simply Wall St",
+      "url": "https://simplywall.st/stocks/us/consumer-services/otc-gmvh.y/entain/management"
+     },
+     {
+      "page_age": "958 days ago",
+      "title": "Entain Plc (ENT.L) Company Profile & Facts - Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/ENT.L/profile/"
+     },
+     {
+      "page_age": "320 days ago",
+      "title": "Group Chief Financial Officer succession",
+      "url": "https://www.entaingroup.com/news-insights/latest-news/2025/group-chief-financial-officer-succession/"
+     },
+     {
+      "page_age": null,
+      "title": "Entain",
+      "url": "https://en.wikipedia.org/wiki/Entain"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.entaingroup.com\",\n    \"url\": \"https://www.entaingroup.com/news-insights/latest-news/2025/appointment-of-chief-executive-officer/\",\n    \"quote\": \"Entain plc (LSE: ENT), the global sports betting and gaming group, announces that Stella David has been appointed as permanent Chief Executive Officer\"\n  },\n  \"note\": \"The entaingroup.com page itself refers to www.entaingroup.com as the Group's website. Wikipedia and Wikidata also list it as the official site. Companies House number FC037925 was not checked against a registry page. Entain plc is an Isle of Man-headquartered company.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:50:17+00:00",
+  "inputs": {
+   "org_key": "entain"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 13367,
+   "output_tokens": 298,
+   "web_search_requests": 1
+  }
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "key": "6b30e3f97ecfd1a2ef0f3fd903c244c86c0923618e005f4234bdc97454475b0b",
+ "payload": {
+  "content": [
+   {
+    "query": "RWS Holdings plc investor relations board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "RWS Investor Relations - RWS Holdings PLC - Alpha Spread",
+      "url": "https://www.alphaspread.com/security/lse/rws/investor-relations"
+     },
+     {
+      "page_age": "497 days ago",
+      "title": "RWS Holdings plc Half Year Report for the Six Months ...",
+      "url": "https://www.rws.com/media/images/RWS_HY25_Results_Statement_250616_Final_tcm228-277208.pdf"
+     },
+     {
+      "page_age": "608 days ago",
+      "title": "RWS Holdings plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/RWS-HOLDINGS-PLC-21342343/company/"
+     },
+     {
+      "page_age": null,
+      "title": "Our Board - RWS",
+      "url": "https://rws.com/about/investors/directors/directors"
+     },
+     {
+      "page_age": "300 days ago",
+      "title": "Our Board - RWS",
+      "url": "https://www.rws.com/about/investors/our-board/"
+     },
+     {
+      "page_age": null,
+      "title": "RWS Holdings PLC Executive & Employee Information - GlobalData",
+      "url": "https://www.globaldata.com/company-profile/rws-holdings-plc/executives/"
+     },
+     {
+      "page_age": null,
+      "title": "RWS Holdings PLC - Company Profile and News - Bloomberg Markets",
+      "url": "https://www.bloomberg.com/profile/company/RWJ:GR"
+     },
+     {
+      "page_age": "1051 days ago",
+      "title": "Lsegissuerservices",
+      "url": "https://assets.lsegissuerservices.com/original-75861794-f13c-489f-bb21-3a0a4ed8d4fa.pdf"
+     },
+     {
+      "page_age": "285 days ago",
+      "title": "Who Owns RWS Holdings Company?",
+      "url": "https://portersfiveforce.com/blogs/owners/rws"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.rws.com\",\n    \"url\": \"https://www.rws.com/about/investors/our-board/\",\n    \"quote\": \"Find out more about the members of RWS's Board of Directors, including key experience and career highlights.\"\n  },\n  \"note\": \"rws.com is the company's own site. It hosts the investor pages, the board page and RWS Holdings plc's published results, including the half-year report PDF. A third-party profile (Alpha Spread) also lists www.rws.com as the company's website. The Companies House number was not checked on the site itself.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:49:12+00:00",
+  "inputs": {
+   "org_key": "rws-holdings"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 14762,
+   "output_tokens": 463,
+   "web_search_requests": 1
+  }
+ }
+}

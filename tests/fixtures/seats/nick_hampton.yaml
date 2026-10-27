@@ -1,0 +1,35 @@
+# Severn Trent senior independent director and Tate & Lyle chief executive (CH confirms the
+# directorship): executive rule, AGAINST. Great Portland Estates ended in April 2025 (past).
+name: Nick Hampton
+case: [H6, H14]
+roster:
+  - {meeting: severn-trent, resolution_no: 8, name: Nick Hampton,
+     role_text_at_issuer: Senior Independent Non-Executive Director,
+     role_type_at_issuer: non_executive_director, coverage: structured}
+seats:
+  - {meeting: severn-trent, org_name: Severn Trent Plc,
+     role_text: Senior Independent Non-Executive Director, role_type: non_executive_director,
+     board_seat: "yes", chair: "no", executive: "no", current: "yes"}
+  - {meeting: severn-trent, org_name: Tate & Lyle PLC, role_text: Chief Executive,
+     role_type: officer_title, board_seat: unknown, chair: "no", executive: "yes", current: "yes"}
+  - {meeting: severn-trent, org_name: Tate & Lyle PLC, role_text: Chief Financial Officer,
+     role_type: officer_title, board_seat: unknown, chair: "no", executive: "yes", current: "no"}
+  - {meeting: severn-trent, org_name: Great Portland Estates Plc,
+     role_text: Senior Independent Director, role_type: non_executive_director, board_seat: "yes",
+     chair: "no", executive: "no", current: "no"}
+ch:
+  - officer_id: fx-hampton
+    name: HAMPTON, Nicholas
+    appointments:
+      - {company_number: "02366619", company_name: SEVERN TRENT PLC, company_type: plc,
+         role: director, appointed_on: 2025-04-04}
+      - {company_number: "00076535", company_name: TATE & LYLE PLC, company_type: plc,
+         role: director, appointed_on: 2014-09-01}
+      - {company_number: "00596137", company_name: GREAT PORTLAND ESTATES P.L.C.,
+         company_type: plc, role: director, appointed_on: 2016-10-01, resigned_on: 2025-04-30}
+orgs:
+  - {canonical_name: Tate & Lyle PLC, org_type: company, listed: "yes", equity_listing: "yes", market: LSE Main Market}
+  - {canonical_name: Great Portland Estates plc, org_type: company, listed: "yes", equity_listing: "yes",
+     market: LSE Main Market}
+expect:
+  severn-trent: {vote: AGAINST, points: [2, 2]}

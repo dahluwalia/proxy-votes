@@ -1,0 +1,169 @@
+{
+ "key": "d32bc1f0fbfb630053ba936b89e11f002a51e31a729457ae440627baa358151c",
+ "payload": {
+  "content": [
+   {
+    "query": "essentraplc.com Sharmila Nebhrajani board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Board of Directors",
+      "url": "https://www.essentraplc.com/about-us/board-of-directors"
+     },
+     {
+      "page_age": null,
+      "title": "Group Executive Committee - About Us - Essentra plc",
+      "url": "https://www.essentraplc.com/en/about-us/group-executive--committee"
+     },
+     {
+      "page_age": null,
+      "title": "Board Responsibility",
+      "url": "https://www.essentraplc.com/investors/corporate-governance/board-responsibility"
+     },
+     {
+      "page_age": null,
+      "title": "OUR PURPOSE, VALUES AND GOALS - About Us - Essentra plc",
+      "url": "https://www.essentraplc.com/en/about-us/our-purpose-values-and-goals"
+     },
+     {
+      "page_age": null,
+      "title": "Group Executive Committee & Leadership Team",
+      "url": "https://www.essentraplc.com/about-us/group-executive-committee"
+     },
+     {
+      "page_age": null,
+      "title": "Risk Review - Corporate Governance - Investors & Media - Essentra plc",
+      "url": "https://www.essentraplc.com/en/investors/corporate-governance/risk-review"
+     },
+     {
+      "page_age": null,
+      "title": "overview - about-us - Essentra plc",
+      "url": "https://www.essentraplc.com/pl-PL/about-us/overview"
+     },
+     {
+      "page_age": null,
+      "title": "Internal Control - Corporate Governance - Investors & Media",
+      "url": "https://www.essentraplc.com/investors/corporate-governance/internal-control"
+     },
+     {
+      "page_age": null,
+      "title": "Board Diversity",
+      "url": "https://www.essentraplc.com/investors/corporate-governance/board-diversity"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Essentra Sharmila Nebhrajani appointed Non-Executive Director date",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Remuneration Committee",
+      "url": "https://www.essentraplc.com/investors/corporate-governance/remuneration-committee"
+     },
+     {
+      "page_age": null,
+      "title": "STRATEGIC UPDATE AND DIRECTORATE CHANGE - Essentra PLC",
+      "url": "https://www.essentraplc.com/investors/company-news/2021/strategic-update-and-directorate-change"
+     },
+     {
+      "page_age": null,
+      "title": "company-news - investors - Essentra plc",
+      "url": "https://www.essentraplc.com/fr-FR/investors/company-news?load=4&category=all&year=Recent"
+     },
+     {
+      "page_age": null,
+      "title": "Notice and Invitation to Full Year 2025 results",
+      "url": "https://www.essentraplc.com/investors/company-news/2026/notice-and-invitation-to-full-year-2025-results"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Essentra plc 2026 AGM results of annual general meeting directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "General Meetings",
+      "url": "https://www.essentraplc.com/investors/shareholder-services/general-meetings"
+     },
+     {
+      "page_age": null,
+      "title": "Publication of Annual Report And Accounts And Notice of AGM",
+      "url": "https://www.essentraplc.com/investors/company-news/2026/publication-of-annual-report-and-accounts-and-notice-of-agm"
+     },
+     {
+      "page_age": null,
+      "title": "Investors and Media Centre",
+      "url": "https://www.essentraplc.com/investors"
+     },
+     {
+      "page_age": null,
+      "title": "2026 AGM trading update",
+      "url": "https://www.essentraplc.com/investors/company-news/2026/2026-agm-trading-update"
+     },
+     {
+      "page_age": null,
+      "title": "Notice and Invitation to Full Year 2025 results",
+      "url": "https://www.essentraplc.com/investors/company-news/2026/notice-and-invitation-to-full-year-2025-results"
+     },
+     {
+      "page_age": null,
+      "title": "Financial Data",
+      "url": "https://www.essentraplc.com/investors/company-information/financial-data"
+     },
+     {
+      "page_age": null,
+      "title": "Notice and Invitation to Half Year 2026 results",
+      "url": "https://www.essentraplc.com/investors/company-news/2026/notice-and-invitation-to-half-year-2026-results"
+     },
+     {
+      "page_age": null,
+      "title": "AGM 2025 Trading Update",
+      "url": "https://www.essentraplc.com/investors/company-news/2025/agm-2025-trading-update"
+     },
+     {
+      "page_age": null,
+      "title": "Notice of General Meeting - Essentra PLC",
+      "url": "https://www.essentraplc.com/investors/company-news/2023/notice-of-general-meeting"
+     },
+     {
+      "page_age": null,
+      "title": "AGM 2024 Trading Update - Essentra PLC",
+      "url": "https://www.essentraplc.com/investors/company-news/2024/agm-2024-trading-update"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\"value\": \"yes\", \"url\": \"https://www.essentraplc.com/about-us/board-of-directors\", \"quote\": \"Sharmila Nebhrajani OBENon-Executive Director.\"},\n  \"capacity\": {\"value\": \"non_executive_director\", \"url\": \"https://www.essentraplc.com/about-us/board-of-directors\", \"quote\": \"Sharmila Nebhrajani OBENon-Executive Director.\"},\n  \"start_date\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"end_date\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"note\": \"The Essentra plc Board of Directors page lists her as a Non-Executive Director. The search snippet gave no appointment or departure date, and I could not tell when the page was last updated. It may show the board as it is today (2026-10-27) rather than on 2026-07-09, so I could not confirm the list was current on the AGM date. Because no start or end date was found, I could not check whether her role began or ended within six months of 2026-07-09. I found no sign of a change between 2026-07-09 and today, but I also found no page that rules one out. I did not read the 2026 AGM notice or the annual report, which could confirm her seat and dates.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:46:32+00:00",
+  "inputs": {
+   "as_of": "2026-07-09",
+   "domain": "essentraplc.com",
+   "org_key": "essentra",
+   "person": "sharmila-nebhrajani-obe"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 35291,
+   "output_tokens": 872,
+   "web_search_requests": 3
+  }
+ }
+}

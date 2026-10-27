@@ -1,0 +1,48 @@
+# Chair of Severn Trent and of Whitbread: exactly 4 points. Standard Chartered is past
+# ("was previously"); if it were wrongly read as current she would be at 5 (test_score).
+name: Christine Hodgson
+case: [H2, H6, H12]
+roster:
+  - {meeting: severn-trent, resolution_no: 5, name: Christine Hodgson CBE, role_text_at_issuer: Chair,
+     role_type_at_issuer: chair, coverage: structured}
+seats:
+  - {meeting: severn-trent, org_name: Severn Trent Plc, role_text: Chair, role_type: chair,
+     board_seat: "yes", chair: "yes", executive: "no", current: "yes"}
+  - {meeting: severn-trent, org_name: Severn Trent Plc, role_text: Independent Non-Executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "no"}
+  - {meeting: severn-trent, org_name: Whitbread PLC, role_text: Chair, role_type: chair,
+     board_seat: "yes", chair: "yes", executive: "no", current: "yes"}
+  - {meeting: severn-trent, org_name: Newton Group Holdings Limited, role_text: Chair,
+     role_type: chair, board_seat: "yes", chair: "yes", executive: "no", current: "yes"}
+  - {meeting: severn-trent, org_name: Spencer Stuart, role_text: Non-Executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: severn-trent, org_name: Standard Chartered PLC, role_text: Senior Independent Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "no"}
+  - {meeting: severn-trent, org_name: Capgemini UK Plc, role_text: Executive Chair,
+     role_type: executive_chair, board_seat: "yes", chair: "yes", executive: "yes", current: "no"}
+ch:
+  - officer_id: fx-hodgson
+    name: HODGSON, Christine Margaret
+    appointments:
+      - {company_number: "02366619", company_name: SEVERN TRENT PLC, company_type: plc,
+         role: director, appointed_on: 2020-01-01}
+      - {company_number: "00029423", company_name: WHITBREAD PLC, company_type: plc,
+         role: director, appointed_on: 2023-03-01}
+      - {company_number: "07125566", company_name: NEWTON GROUP HOLDINGS LIMITED, company_type: ltd,
+         role: director, appointed_on: 2022-06-01}
+      - {company_number: "00966425", company_name: STANDARD CHARTERED PLC, company_type: plc,
+         role: director, appointed_on: 2013-09-01, resigned_on: 2025-05-08}
+      - {company_number: "00943935", company_name: CAPGEMINI UK PLC, company_type: plc,
+         role: director, appointed_on: 1997-06-01, resigned_on: 2020-03-31}
+orgs:
+  - {canonical_name: Whitbread PLC, org_type: company, listed: "yes", equity_listing: "yes", market: LSE Main Market}
+  - {canonical_name: Newton Group Holdings Limited, org_type: company, listed: "no", equity_listing: "no"}
+  - {canonical_name: Spencer Stuart, org_type: partnership, listed: "no", equity_listing: "no"}
+  - {canonical_name: Standard Chartered PLC, org_type: company, listed: "yes", equity_listing: "yes",
+     market: LSE Main Market}
+  - {canonical_name: Capgemini UK Plc, org_type: company, listed: "no", equity_listing: "no", parent_name: Capgemini SE}
+expect:
+  severn-trent: {vote: FOR, points: [4, 4]}

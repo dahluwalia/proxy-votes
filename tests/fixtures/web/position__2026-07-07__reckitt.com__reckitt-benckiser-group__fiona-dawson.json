@@ -1,0 +1,145 @@
+{
+ "key": "180cf960a88c17c3c792b7782fd5542133d650f4c218f411b7a74e5a20590042",
+ "payload": {
+  "content": [
+   {
+    "query": "reckitt.com Fiona Dawson non-executive director board",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "218 days ago",
+      "title": "Our leadership",
+      "url": "https://www.reckitt.com/our-company/our-leadership/"
+     },
+     {
+      "page_age": null,
+      "title": "Fiona Dawson, CBE",
+      "url": "https://www.reckitt.com/our-company/our-leadership/fiona-dawson-cbe/"
+     },
+     {
+      "page_age": "601 days ago",
+      "title": "Strategic report Governance Financial statements Other information",
+      "url": "https://www.reckitt.com/media/igydugdj/governance-report.pdf"
+     },
+     {
+      "page_age": "1322 days ago",
+      "title": "Kris Licht",
+      "url": "https://www.reckitt.com/our-company/our-leadership/kris-licht/"
+     },
+     {
+      "page_age": null,
+      "title": "Sir Jeremy Darroch",
+      "url": "https://www.reckitt.com/our-company/our-leadership/sir-jeremy-darroch/"
+     },
+     {
+      "page_age": "236 days ago",
+      "title": "Reckitt Benckiser Group PLC Directorate Change",
+      "url": "https://www.reckitt.com/news/reckitt-benckiser-group-plc-directorate-change/"
+     },
+     {
+      "page_age": "214 days ago",
+      "title": "Corporate governance",
+      "url": "https://www.reckitt.com/investors/corporate-governance/"
+     },
+     {
+      "page_age": "39 days ago",
+      "title": "Contact Us",
+      "url": "https://www.reckitt.com/contact-us/"
+     },
+     {
+      "page_age": "210 days ago",
+      "title": "Investor contacts & FAQs",
+      "url": "https://www.reckitt.com/investors/investor-contacts-faqs/"
+     },
+     {
+      "page_age": "49 days ago",
+      "title": "Our strategy",
+      "url": "https://www.reckitt.com/our-company/our-strategy/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Reckitt 2026 AGM results Fiona Dawson re-elected",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "158 days ago",
+      "title": "Annual General Meeting 2026",
+      "url": "https://www.reckitt.com/news/annual-general-meeting-2026/"
+     },
+     {
+      "page_age": "231 days ago",
+      "title": "Annual general meetings",
+      "url": "https://www.reckitt.com/investors/annual-general-meetings/"
+     },
+     {
+      "page_age": null,
+      "title": "Fiona Dawson, CBE",
+      "url": "https://www.reckitt.com/our-company/our-leadership/fiona-dawson-cbe/"
+     },
+     {
+      "page_age": "601 days ago",
+      "title": "Strategic report Governance Financial statements Other information",
+      "url": "https://www.reckitt.com/media/igydugdj/governance-report.pdf"
+     },
+     {
+      "page_age": "218 days ago",
+      "title": "Our leadership",
+      "url": "https://www.reckitt.com/our-company/our-leadership/"
+     },
+     {
+      "page_age": "0 days ago",
+      "title": "Q3 Results 2026",
+      "url": "https://www.reckitt.com/news/q3-results-2026/"
+     },
+     {
+      "page_age": "90 days ago",
+      "title": "Half Year Results 2026",
+      "url": "https://www.reckitt.com/news/half-year-results-2026/"
+     },
+     {
+      "page_age": "188 days ago",
+      "title": "Q1 Results 2026",
+      "url": "https://www.reckitt.com/news/q1-2026-trading-update/"
+     },
+     {
+      "page_age": "537 days ago",
+      "title": "Annual General Meeting 2025",
+      "url": "https://www.reckitt.com/news/annual-general-meeting-2025/"
+     },
+     {
+      "page_age": "215 days ago",
+      "title": "General Meeting 2026",
+      "url": "https://www.reckitt.com/investors/general-meeting-2026/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\"value\": \"yes\", \"url\": \"https://www.reckitt.com/our-company/our-leadership/fiona-dawson-cbe/\", \"quote\": \"Fiona Dawson was appointed as Non-Executive Director in June 2024 and Chair Designate for the Remuneration Committee.\"},\n  \"capacity\": {\"value\": \"non_executive_director\", \"url\": \"https://www.reckitt.com/our-company/our-leadership/\", \"quote\": \"Fiona Dawson, CBE Non-Executive Director\"},\n  \"start_date\": {\"value\": \"2024-06-01\", \"url\": \"https://www.reckitt.com/media/igydugdj/governance-report.pdf\", \"quote\": \"Fiona Dawson joined the Board as a Non-Executive Director on 1 June 2024.\"},\n  \"end_date\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"note\": \"The role began in June 2024, well over six months before 2026-07-07, and no end date appears on the site. The Reckitt leadership page lists her as a Non-Executive Director on a board that it says comprises the CEO, CFO and Non-Executive Directors. The search result for that page was about 218 days old, so roughly March 2026. I found no later board list and no departure announcement. The site shows Reckitt's 2026 AGM was held on 21 May 2026, not 7 July 2026. The 5 March 2026 directorate-change announcement covers other directors and does not mention her leaving. Her role as of 2026-07-07 is inferred from these pages, not confirmed by a list dated on or near that day. Reckitt Benckiser Group plc is the top-level company, so this is its own board.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:47:29+00:00",
+  "inputs": {
+   "as_of": "2026-07-07",
+   "domain": "reckitt.com",
+   "org_key": "reckitt-benckiser-group",
+   "person": "fiona-dawson"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 27398,
+   "output_tokens": 1038,
+   "web_search_requests": 2
+  }
+ }
+}

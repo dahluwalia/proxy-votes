@@ -1,0 +1,78 @@
+{
+ "key": "75030166537ae95f3e7df49410a1ea772986ddbb9e44b18d8b4965b530a28634",
+ "payload": {
+  "content": [
+   {
+    "query": "Convatec Group Plc board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Convatec Group Plc: Governance, Directors and Executives & Committees - MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/CONVATEC-GROUP-PLC-33339454/company-governance/"
+     },
+     {
+      "page_age": "677 days ago",
+      "title": "ConvaTec Group Plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/CONVATEC-GROUP-PLC-31714623/company/"
+     },
+     {
+      "page_age": null,
+      "title": "Convatec Group PLC (2CVU) Leadership & Management Team Analysis - Simply Wall St",
+      "url": "https://simplywall.st/stocks/de/healthcare/fra-2cvu/convatec-group-shares/management"
+     },
+     {
+      "page_age": "449 days ago",
+      "title": "Convatec Leadership Team",
+      "url": "https://www.convatecgroup.com/about-us/board-of-directors/"
+     },
+     {
+      "page_age": null,
+      "title": "Convatec Group PLC (CNVV.Y) Leadership & Management Team Analysis - Simply Wall St",
+      "url": "https://simplywall.st/stocks/us/healthcare/otc-cnvv.y/convatec-group/management"
+     },
+     {
+      "page_age": null,
+      "title": "Convatec Group PLC (CNVV.F) Leadership & Management Team Analysis - Simply Wall St",
+      "url": "https://simplywall.st/stocks/us/healthcare/otc-cnvv.f/convatec-group/management"
+     },
+     {
+      "page_age": null,
+      "title": "ConvaTec",
+      "url": "https://theorg.com/org/convatec"
+     },
+     {
+      "page_age": null,
+      "title": "Convatec",
+      "url": "https://en.wikipedia.org/wiki/Convatec"
+     },
+     {
+      "page_age": null,
+      "title": "Governance",
+      "url": "https://www.convatecgroup.com/about-us/governance/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.convatecgroup.com\",\n    \"url\": \"https://www.convatecgroup.com/about-us/board-of-directors/\",\n    \"quote\": \"Jonny joined Convatec on 31 January 2022 and was appointed CFO from 12 March 2022 when he joined the Board of Directors.\"\n  },\n  \"note\": \"convatecgroup.com is Convatec's own corporate site. It has board of directors and governance pages. Wikipedia also lists it as the company's website. The quoted page says 'Convatec' and does not use the full legal name 'Convatec Group plc'. I did not check the Companies House number 10361298 against the site.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:53:27+00:00",
+  "inputs": {
+   "org_key": "convatec-group"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 13402,
+   "output_tokens": 437,
+   "web_search_requests": 1
+  }
+ }
+}

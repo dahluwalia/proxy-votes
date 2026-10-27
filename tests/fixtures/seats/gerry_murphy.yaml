@@ -1,0 +1,35 @@
+# Chair of Tesco and of Burberry: exactly 4 points. The Burberry Foundation trusteeship,
+# the Perella Weinberg senior-adviser role and the mentoring role score 0.
+name: Gerry Murphy
+case: [H2, H7, H8, H12]
+roster:
+  - {meeting: tesco, resolution_no: 10, name: Dr Gerry Murphy, role_text_at_issuer: Chair,
+     role_type_at_issuer: chair, coverage: structured}
+seats:
+  - {meeting: tesco, org_name: Tesco PLC, role_text: Chair, role_type: chair,
+     board_seat: "yes", chair: "yes", executive: "no", current: "yes"}
+  - {meeting: tesco, org_name: Burberry Group plc, role_text: Chair, role_type: chair,
+     board_seat: "yes", chair: "yes", executive: "no", current: "yes"}
+  - {meeting: tesco, org_name: The Burberry Foundation, role_text: Trustee, role_type: trustee,
+     board_seat: "no", chair: "no", executive: "no", current: "yes"}
+  - {meeting: tesco, org_name: Perella Weinberg Partners, role_text: Senior Advisor,
+     role_type: adviser, board_seat: "no", chair: "no", executive: "no", current: "yes"}
+  - {meeting: tesco, org_name: Chair Mentors International, role_text: Mentor, role_type: adviser,
+     board_seat: "no", chair: "no", executive: "no", current: "yes"}
+ch:
+  - officer_id: fx-gmurphy
+    name: MURPHY, Gerard Martin
+    appointments:
+      - {company_number: "00445790", company_name: TESCO PLC, company_type: plc, role: director,
+         appointed_on: 2023-09-01}
+      - {company_number: "03458224", company_name: BURBERRY GROUP PLC, company_type: plc,
+         role: director, appointed_on: 2018-05-02}
+      - {company_number: "08305566", company_name: THE BURBERRY FOUNDATION,
+         company_type: private-limited-guarant-nsc, role: director, appointed_on: 2018-05-02}
+orgs:
+  - {canonical_name: Burberry Group plc, org_type: company, listed: "yes", equity_listing: "yes", market: LSE Main Market}
+  - {canonical_name: The Burberry Foundation, org_type: charity, listed: "no", equity_listing: "no"}
+  - {canonical_name: Perella Weinberg Partners, org_type: company, listed: "yes", equity_listing: "yes", market: Nasdaq}
+  - {canonical_name: Chair Mentors International, org_type: company, listed: "no", equity_listing: "no"}
+expect:
+  tesco: {vote: FOR, points: [4, 4]}

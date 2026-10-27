@@ -1,0 +1,315 @@
+{
+ "key": "58c83edeb93f4c76da815a2723d4b480bbd07eb312891f6ecfd57cf1dc98a542",
+ "payload": {
+  "content": [
+   {
+    "query": "Pearson plc London Stock Exchange main market ticker PSON",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Pearson plc Annual General Meeting 2026 results of AGM 20 May 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Pearson plc listed bonds notes admitted to trading London Stock Exchange",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Pearson plc FTSE 100 delisting NYSE ADR secondary listing 2023 2024 2025",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "285 days ago",
+      "title": "Pearson Share Price. PSON - Stock Quote, Charts, Trade History, Share Chat, PSON Values. Pearson Plc Ord 25p",
+      "url": "https://www.lse.co.uk/SharePrice.html?shareprice=PSON&share=PEARSON"
+     },
+     {
+      "page_age": "508 days ago",
+      "title": "Pearson (LON:PSON) Stock Price & Overview",
+      "url": "https://stockanalysis.com/quote/lon/PSON/"
+     },
+     {
+      "page_age": null,
+      "title": "LSE:PSON - Pearson PLC",
+      "url": "https://www.tradingview.com/symbols/LSE-PSON/"
+     },
+     {
+      "page_age": "609 days ago",
+      "title": "Pearson plc Stock (PSON) - Quote London S.E.- MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/PEARSON-PLC-4000637/"
+     },
+     {
+      "page_age": null,
+      "title": "Check out Pearson PLC's stock price (PSON-GB) in real time",
+      "url": "https://www.cnbc.com/quotes/PSON-GB"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 20-F - FY2024",
+      "url": "https://www.sec.gov/Archives/edgar/data/938323/000119312525054371/d854846d20f.htm"
+     },
+     {
+      "page_age": "374 days ago",
+      "title": "Pearson PLC Stock Price Today",
+      "url": "https://www.investing.com/equities/pearson"
+     },
+     {
+      "page_age": "584 days ago",
+      "title": "PSON: Pearson PLC Stock Price Quote - London - Bloomberg",
+      "url": "https://www.bloomberg.com/quote/PSON:LN"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 20-F - FY2023",
+      "url": "https://www.sec.gov/Archives/edgar/data/938323/000119312524067358/d605808d20f.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Pearson plc",
+      "url": "https://en.wikipedia.org/wiki/Pearson_plc"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/938323/000165495426002785/a2843y.htm"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000938323/000165495426004242/a8561c.htm"
+     },
+     {
+      "page_age": "178 days ago",
+      "title": "Result of AGM",
+      "url": "https://www.investegate.co.uk/announcement/rns/pearson--pson/result-of-agm/9549747"
+     },
+     {
+      "page_age": "178 days ago",
+      "title": "Results of AGM 2026 - Pearson plc",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/2026-05/results-of-agm-2026.pdf"
+     },
+     {
+      "page_age": "214 days ago",
+      "title": "Notice of Annual General Meeting 2026 - Pearson plc",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/2026-03/Pearson-plc-Notice-of-Meeting-2026.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Annual General Meetings",
+      "url": "https://plc.pearson.com/en-GB/investors/shareholders/meetings"
+     },
+     {
+      "page_age": "178 days ago",
+      "title": "Pearson : AGM Resolutions",
+      "url": "https://www.marketscreener.com/news/pearson-agm-resolutions-ce7f58d9dd8df425"
+     },
+     {
+      "page_age": "104 days ago",
+      "title": "Pearson PLC Share News, Key Dates and Documents",
+      "url": "https://www.fidelity.co.uk/factsheet-data/factsheet/GB0006776081-pearson/news-key-dates-and-documents"
+     },
+     {
+      "page_age": "214 days ago",
+      "title": "Pearson : 2026 Notice of Meeting",
+      "url": "https://www.marketscreener.com/news/pearson-2026-notice-of-meeting-ce7e51dada88fe26"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/938323/000165495426001615/a6205u.htm"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Pearson Funding plc Registered Number: 8422787",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/pearson/uk-group-company-reports/pearson-funding-plc-2024.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 20-F - FY2024",
+      "url": "https://www.sec.gov/Archives/edgar/data/938323/000119312525054371/d854846d20f.htm"
+     },
+     {
+      "page_age": "186 days ago",
+      "title": "Issuance of Medium Term Notes",
+      "url": "https://www.investegate.co.uk/announcement/rns/pearson--pson/issuance-of-medium-term-notes/9535730"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 20-F - FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/938323/000119312526104945/d33885d20f.htm"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K/A - FY2024",
+      "url": "https://www.sec.gov/Archives/edgar/data/938323/000165495424000717/a1957a.htm"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2006",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000938323/000119163806001586/pson200607066k.txt"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2006",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000938323/000119163806002949/pson200612126k.txt"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2022",
+      "url": "https://www.sec.gov/Archives/edgar/data/938323/000165495422008969/a5111q.htm"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2018",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000938323/000165495418007342/a6128t.htm"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2024",
+      "url": "https://www.sec.gov/Archives/edgar/data/938323/000165495424000708/a1547a.htm"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Pearson plc",
+      "url": "https://en.wikipedia.org/wiki/Pearson_plc"
+     },
+     {
+      "page_age": "96 days ago",
+      "title": "Pearson PLC (PSO) Stock Price & News - Google Finance",
+      "url": "https://www.google.com/finance/beta/quote/PSO:NYSE"
+     },
+     {
+      "page_age": null,
+      "title": "Pearson plc - Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1916402"
+     },
+     {
+      "page_age": null,
+      "title": "LSE:PSON - Pearson PLC",
+      "url": "https://www.tradingview.com/symbols/LSE-PSON/"
+     },
+     {
+      "page_age": "10 days ago",
+      "title": "Pearson plc (PSON.L) Stock Price, News, Quote & History - Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/PSON.L/"
+     },
+     {
+      "page_age": "150 days ago",
+      "title": "Pearson plc stock: FTSE 100 weakness and Friday valuation focus",
+      "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/pearson-plc-stock-ftse-100-weakness-and-friday-valuation-focus/69443927"
+     },
+     {
+      "page_age": null,
+      "title": "6-K 1 MainDocument.htm 6-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776967/000155485524000028/MainDocument.htm"
+     },
+     {
+      "page_age": null,
+      "title": "pearson pso reports solid q3 013041791",
+      "url": "https://finance.yahoo.com/news/pearson-pso-reports-solid-q3-013041791.html?.tsrc=rss"
+     },
+     {
+      "page_age": null,
+      "title": "London Risks Losing FTSE Giant Pearson to New York",
+      "url": "https://www.bloomberg.com/news/articles/2023-12-15/pearson-told-to-ditch-london-for-new-york-by-activist-cevian"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Pearson plc block listing 2026 main market London Stock Exchange admission",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/938323/000165495426002230/a6425w.htm"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000938323/000165495426008708/a2072x.htm"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000938323/000165495426007124/a9690o.htm"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000938323/000165495426005573/a4483g.htm"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000938323/000165495426004214/a6803c.htm"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000938323/000165495426008011/a7310s.htm"
+     },
+     {
+      "page_age": "25 days ago",
+      "title": "Issue of Equity",
+      "url": "https://www.investegate.co.uk/announcement/rns/pearson--pson/issue-of-equity/9801610"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000938323/000165495426003852/a7288b.htm"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/938323/000165495426000404/a2787p.htm"
+     },
+     {
+      "page_age": "25 days ago",
+      "title": "Pearson plc Issues 74,167 Ordinary Shares Under Save for Shares Plan in September 2026",
+      "url": "https://kalkinemedia.com/us/news/announcements/pearson-plc-issues-74167-ordinary-shares-under-save-for-shares-plan-in-september-2026"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"Pearson plc\", \"url\": \"https://www.marketscreener.com/news/pearson-agm-resolutions-ce7f58d9dd8df425\", \"quote\": \"Company Number 00053723 The Companies Act 2006 Company Limited by Shares ORDINARY AND SPECIAL RESOLUTIONS of PEARSON PLC\"},\n  \"country\": {\"value\": \"United Kingdom\", \"url\": \"https://en.wikipedia.org/wiki/Pearson_plc\", \"quote\": \"Pearson is a British multinational education and assessment company headquartered in London.\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://www.marketscreener.com/news/pearson-agm-resolutions-ce7f58d9dd8df425\", \"quote\": \"Company Number 00053723 The Companies Act 2006 Company Limited by Shares\"},\n  \"equity_listed\": {\"value\": \"yes\", \"url\": \"https://www.sec.gov/Archives/edgar/data/0000938323/000165495426005573/a4483g.htm\", \"quote\": \"have been admitted to trading on the London Stock Exchange Main Market under the Company's existing block admission\"},\n  \"exchange\": {\"value\": \"London Stock Exchange\", \"url\": \"https://www.sec.gov/Archives/edgar/data/938323/000119312525054371/d854846d20f.htm\", \"quote\": \"The principal trading market for the Group\u2019s ordinary shares is the London Stock Exchange which trade under the symbol \u2018PSON\u2019.\"},\n  \"ticker\": {\"value\": \"PSON\", \"url\": \"https://www.sec.gov/Archives/edgar/data/938323/000119312525054371/d854846d20f.htm\", \"quote\": \"The principal trading market for the Group\u2019s ordinary shares is the London Stock Exchange which trade under the symbol \u2018PSON\u2019.\"},\n  \"market_segment\": {\"value\": \"main\", \"url\": \"https://www.sec.gov/Archives/edgar/data/0000938323/000165495426005573/a4483g.htm\", \"quote\": \"have been admitted to trading on the London Stock Exchange Main Market under the Company's existing block admission\"},\n  \"debt_listed\": {\"value\": \"yes\", \"url\": \"https://www.sec.gov/Archives/edgar/data/938323/000119312526104945/d33885d20f.htm\", \"quote\": \"In 2024, the Group issued a new \u00a3 350m 5.375% GBP denominated Education Bond. The bond was admitted to trading on the London Stock Exchange.\"},\n  \"is_subsidiary\": {\"value\": \"no\", \"url\": \"https://www.cnbc.com/quotes/PSON-GB\", \"quote\": \"Pearson Discloses Increased 12.02% Stake Held by Artisan Partners\"},\n  \"parent_name\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"parent_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"events\": [\n    {\"date\": \"2024-09-05\", \"event\": \"Debt listing: Pearson Funding plc (Pearson plc subsidiary, guaranteed by Pearson plc) issued \u00a3350m 5.375% notes due 2034, admitted to trading on the LSE International Securities Market\", \"url\": \"https://plc.pearson.com/sites/pearson-corp/files/pearson/uk-group-company-reports/pearson-funding-plc-2024.pdf\", \"quote\": \"The Notes were admitted to trading on the International Securities Market of the London Stock Exchange.\"},\n    {\"date\": \"2026-04-23\", \"event\": \"Debt listing: Pearson Funding plc priced \u00a3350m 6.375% guaranteed notes due 2036 for admission to the LSE International Securities Market (settlement expected 2026-04-28)\", \"url\": \"https://www.investegate.co.uk/announcement/rns/pearson--pson/issuance-of-medium-term-notes/9535730\", \"quote\": \"The Notes will be admitted to trading on the International Securities Market of the London Stock Exchange.\"}\n  ],\n  \"note\": \"I found no equity listing, delisting, demerger or takeover of Pearson plc in the three years before 2026-05-20, so the events list holds only debt admissions by its financing subsidiary. This is an absence of evidence, not a positive confirmation. The ordinary shares have a primary listing on the LSE Main Market (ticker PSON). ADSs also trade on the NYSE as PSO, but those are depositary receipts, and the NYSE listing was not confirmed with a source dated close to 2026-05-20. The 2026 AGM was held on 1 May 2026, not 20 May 2026; the 2026-05-20 date appears only as a Total Voting Rights / PDMR announcement date. Shares were still being admitted to trading on the Main Market in May 2026, and no source shows a delisting. Debt: the bonds are issued by Pearson Funding plc, guaranteed by Pearson plc, and admitted to the LSE International Securities Market. is_subsidiary 'no' rests on indirect evidence: a widely held FTSE 100 company whose largest disclosed holder had about 12%. I found no source stating outright that it has no parent. parent_listed is 'unknown' because there is no parent. The country value is inferred from UK Companies Act incorporation and London headquarters, and no source quoted 'England and Wales'. The chosen entity is the group parent Pearson plc, not Pearson Funding plc or Pearson Education.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:32:38+00:00",
+  "inputs": {
+   "as_of": "2026-05-20",
+   "org_key": "pearson"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 81309,
+   "output_tokens": 4158,
+   "web_search_requests": 5
+  }
+ }
+}

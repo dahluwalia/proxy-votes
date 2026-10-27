@@ -1,0 +1,305 @@
+{
+ "key": "6015c0611b0c6386d20e94379af0171ece8964370750d24558a38bf5549c1a61",
+ "payload": {
+  "content": [
+   {
+    "query": "Entain plc London Stock Exchange ticker ENT main market",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Entain annual general meeting 2026 results of AGM",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Entain Limited Isle of Man",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "497 days ago",
+      "title": "Entain Share Price. ENT - Stock Quote, Charts, Trade History, Share Chat, ENT Values. Entain Plc Ord Eur0.01",
+      "url": "https://www.lse.co.uk/SharePrice.html?shareprice=ENT&share=Entain"
+     },
+     {
+      "page_age": null,
+      "title": "Entain",
+      "url": "https://en.wikipedia.org/wiki/Entain"
+     },
+     {
+      "page_age": null,
+      "title": "Entain PLC stock - Saxo Bank",
+      "url": "https://www.home.saxo/markets/stocks/ent-xlon"
+     },
+     {
+      "page_age": "157 days ago",
+      "title": "Entain PLC (ENT) Stock Price & News - Google Finance",
+      "url": "https://www.google.com/finance/beta/quote/ENT:LON"
+     },
+     {
+      "page_age": "136 days ago",
+      "title": "Entain (LON:ENT) Stock Price & Overview",
+      "url": "https://stockanalysis.com/quote/lon/ENT/"
+     },
+     {
+      "page_age": "193 days ago",
+      "title": "GVC Hldgs Stock Price Today - Entain PLC (ENT)",
+      "url": "https://www.investing.com/equities/gvc-holdings-plc"
+     },
+     {
+      "page_age": "136 days ago",
+      "title": "ENT: Entain PLC Stock Price Quote - London - Bloomberg",
+      "url": "https://www.bloomberg.com/quote/ENT:LN"
+     },
+     {
+      "page_age": "792 days ago",
+      "title": "Entain Share Price, Forecast & Financials (LON:ENT)",
+      "url": "https://www.stockopedia.com/share-prices/entain-LON:ENT/"
+     },
+     {
+      "page_age": "0 days ago",
+      "title": "Entain PLC TR1: Notification of Major Holdings - ADVFN",
+      "url": "https://uk.advfn.com/stock-market/london/entain-ENT/share-news/Entain-PLC-TR1-Notification-of-Major-Holdings/99558471"
+     },
+     {
+      "page_age": null,
+      "title": "Entain PLCEntain PLCEntain PLC",
+      "url": "https://in.tradingview.com/symbols/LSE-ENT"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "180 days ago",
+      "title": "2026 Annual General Meeting (\u201cAGM\u201d) Results",
+      "url": "https://www.entaingroup.com/news-insights/latest-news/2026/2026-annual-general-meeting-agm-results/"
+     },
+     {
+      "page_age": "180 days ago",
+      "title": "Result of AGM",
+      "url": "https://www.investegate.co.uk/announcement/rns/entain--ent/result-of-agm/9544545"
+     },
+     {
+      "page_age": "220 days ago",
+      "title": "Notice of Annual General Meeting 2026",
+      "url": "https://www.entaingroup.com/media/gwqfoz5w/entain_ar26_notice_of_meeting.pdf"
+     },
+     {
+      "page_age": "220 days ago",
+      "title": "Entain Releases 2025 Annual Report and Sets Date for 2026 AGM - TipRanks.com",
+      "url": "https://www.tipranks.com/news/company-announcements/entain-releases-2025-annual-report-and-sets-date-for-2026-agm"
+     },
+     {
+      "page_age": null,
+      "title": "AGA Publication of 2026 Annual General Meeting results",
+      "url": "https://www.sec.gov/Archives/edgar/data/1973832/000197383226000084/agapublicationof2026annual.htm"
+     },
+     {
+      "page_age": "180 days ago",
+      "title": "In this section 103 Governance 104 Chair\u2019s Governance Overview",
+      "url": "https://www.entaingroup.com/annualreport2025/documents/Entain_Annual-Report_2025_GovernanceReport.pdf"
+     },
+     {
+      "page_age": "195 days ago",
+      "title": "Results of the Stellantis 2026 Annual General Meeting",
+      "url": "https://www.stellantis.com/en/news/press-releases/2026/april/results-of-the-stellantis-2026-annual-general-meeting"
+     },
+     {
+      "page_age": "235 days ago",
+      "title": "2025 Full Year Results",
+      "url": "https://www.entaingroup.com/news-insights/latest-news/2026/2025-full-year-results/"
+     },
+     {
+      "page_age": null,
+      "title": "Entain plc (ENT) Eur0.01",
+      "url": "https://www.hl.co.uk/shares/shares-search-results/e/entain-plc-eur0.01/share-news"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Entain (IOM) Limited",
+      "url": "https://opencorporates.com/companies/im/011447V"
+     },
+     {
+      "page_age": "1981 days ago",
+      "title": "Entain PLC",
+      "url": "https://www.cmcmarkets.com/en-gb/instruments/entain-plc"
+     },
+     {
+      "page_age": null,
+      "title": "ENTAIN LIMITED overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC037925"
+     },
+     {
+      "page_age": "79 days ago",
+      "title": "Entain - Overview, News & Similar companies",
+      "url": "https://www.zoominfo.com/c/entain-plc/534290608"
+     },
+     {
+      "page_age": "1264 days ago",
+      "title": "Shareholder information",
+      "url": "https://www.entaingroup.com/investor-relations/shareholder-information/"
+     },
+     {
+      "page_age": "15 days ago",
+      "title": "Entain share price",
+      "url": "https://research-centre.barclays.co.uk/shares/entain/company-information/"
+     },
+     {
+      "page_age": null,
+      "title": "Entain",
+      "url": "https://en.wikipedia.org/wiki/Entain"
+     },
+     {
+      "page_age": "4 days ago",
+      "title": "ENTAIN LIMITED: UBO, Shareholders & Group Structure (United Kingdom)",
+      "url": "https://zavia.ai/companies/entain-limited-gb-1143052547/"
+     },
+     {
+      "page_age": "1700 days ago",
+      "title": "Contact us",
+      "url": "https://www.entaingroup.com/contact-us/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Entain senior secured notes admitted to trading Euronext Dublin OR TISE Entain Finance",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Entain plc takeover offer OR demerger OR acquisition completion 2025 2026 announcement",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "International Game Technology PLC - Form 6-K - FY2021",
+      "url": "https://www.sec.gov/Archives/edgar/data/1619762/000161976221000016/a6-klaunch.htm"
+     },
+     {
+      "page_age": null,
+      "title": "International Game Technology PLC - Form 6-K - FY2020",
+      "url": "https://www.sec.gov/Archives/edgar/data/1619762/000161976220000046/a6-kpricing.htm"
+     },
+     {
+      "page_age": null,
+      "title": "International Game Technology PLC - Form 6-K - FY2021",
+      "url": "https://www.sec.gov/Archives/edgar/data/1619762/000161976221000016/ex99-1.htm"
+     },
+     {
+      "page_age": null,
+      "title": "International Game Technology PLC - Form 6-K - FY2024",
+      "url": "https://www.sec.gov/Archives/edgar/data/1619762/000161976224000101/projectbreaker-newsrelea.htm"
+     },
+     {
+      "page_age": null,
+      "title": "International Game Technology PLC - Form 6-K - FY2019",
+      "url": "https://www.sec.gov/Archives/edgar/data/1619762/000161976219000023/form6-kpricingx9sept2019.htm"
+     },
+     {
+      "page_age": null,
+      "title": "International Game Technology PLC - Form 6-K - FY2019",
+      "url": "https://www.sec.gov/Archives/edgar/data/1619762/000161976219000023/exhibit991form6-kpricing9s.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Entain PLC",
+      "url": "https://tisegroup.com/market/companies/ENTPLC"
+     },
+     {
+      "page_age": "132 days ago",
+      "title": "BASE PROSPECTUS TRAFIGURA FUNDING S.A.",
+      "url": "https://www.trafigura.com/media/4pwnih2h/trafigura-emtn-base-prospectus-2026-final.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Euroclear EMTN - Base Prospectus",
+      "url": "https://www.euroclear.com/content/dam/euroclear/investor-relations/debtinvestors/Euroclear%20EMTN%20-%20Base%20Prospectus.pdf"
+     },
+     {
+      "page_age": "761 days ago",
+      "title": "White & Case advises International Game Technology on \u20ac500 million high yield senior secured notes issuance",
+      "url": "https://www.whitecase.com/news/press-release/white-case-advises-international-game-technology-eu500-million-high-yield-senior"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "1231 days ago",
+      "title": "Entain to Seek Acquisitions",
+      "url": "https://uk.marketscreener.com/quote/stock/ENTAIN-PLC-4005005/news/Entain-to-Seek-Acquisitions-44148127/"
+     },
+     {
+      "page_age": "1231 days ago",
+      "title": "1 THIS ANNOUNCEMENT AND THE INFORMATION CONTAINED HEREIN IS",
+      "url": "https://www.entaingroup.com/media/rauft252/20230613-ap-acquisition-announcement.pdf"
+     },
+     {
+      "page_age": "123 days ago",
+      "title": "Entain launches phased exit of Entain CEE with initial 20% divestment agreed",
+      "url": "https://www.entaingroup.com/news-insights/latest-news/2026/entain-launches-phased-exit-of-entain-cee-with-initial-20-divestment-agreed/"
+     },
+     {
+      "page_age": "0 days ago",
+      "title": "REG - Entain PLC Barclays PLC - TR1: Notification of Major Holdings \u2014 TradingView News",
+      "url": "https://www.tradingview.com/news/reuters.com,2026-10-26:newsml_RSZ4959Aa:0-reg-entain-plc-barclays-plc-tr1-notification-of-major-holdings/"
+     },
+     {
+      "page_age": null,
+      "title": "Entain",
+      "url": "https://en.wikipedia.org/wiki/Entain"
+     },
+     {
+      "page_age": "1162 days ago",
+      "title": "Entain completes tender offer to STS Holdings shareholders",
+      "url": "https://www.marketscreener.com/quote/stock/ENTAIN-PLC-4005005/news/Entain-completes-tender-offer-to-STS-Holdings-shareholders-44662732/"
+     },
+     {
+      "page_age": "123 days ago",
+      "title": "Entain to divest 20% of its CEE business with full exit planned - M&A - iGB",
+      "url": "https://igamingbusiness.com/strategy/ma/entain-to-divest-20-of-its-cee-business-with-full-exit-planned/"
+     },
+     {
+      "page_age": "118 days ago",
+      "title": "Dentons - Dentons advises EMMA Capital on acquisition of controlling stake in Entain CEE",
+      "url": "https://www.dentons.com/en/about-dentons/news-events-and-awards/news/2026/june/dentons-advises-emma-capital-on-acquisition-of-controlling-stake-in-entain-cee"
+     },
+     {
+      "page_age": "1861 days ago",
+      "title": "Entain confirms takeover offer from DraftKings, reported to be worth $20bn",
+      "url": "https://www.proactiveinvestors.com/companies/news/960917/entain-surges-on-reports-of-us20bn-bid-from-draftkings-960917.html"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"Entain plc\", \"url\": \"https://www.entaingroup.com/investor-relations/shareholder-information/\", \"quote\": \"Full name \u00b7 Entain plc\"},\n  \"country\": {\"value\": \"Isle of Man\", \"url\": \"https://www.entaingroup.com/investor-relations/shareholder-information/\", \"quote\": \"Country of incorporation \u00b7 Isle of Man\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://find-and-update.company-information.service.gov.uk/company/FC037925\", \"quote\": \"Legal form**: Public Limited Company\"},\n  \"equity_listed\": {\"value\": \"yes\", \"url\": \"https://www.entaingroup.com/news-insights/latest-news/2026/2026-annual-general-meeting-agm-results/\", \"quote\": \"Entain plc (LSE: ENT), the global sports betting and gaming group, announces that, at its AGM which was held today\"},\n  \"exchange\": {\"value\": \"London Stock Exchange\", \"url\": \"https://www.entaingroup.com/investor-relations/shareholder-information/\", \"quote\": \"The Company's shares are quoted on the Official List of the Main Market of the London Stock Exchange\"},\n  \"ticker\": {\"value\": \"ENT\", \"url\": \"https://www.entaingroup.com/investor-relations/shareholder-information/\", \"quote\": \"EPIC \u00b7 ENT\"},\n  \"market_segment\": {\"value\": \"main\", \"url\": \"https://research-centre.barclays.co.uk/shares/entain/company-information/\", \"quote\": \"Market Sector: MAIN\"},\n  \"debt_listed\": {\"value\": \"yes\", \"url\": \"https://tisegroup.com/market/companies/ENTPLC\", \"quote\": \"Entain PLC EUR500,000,000 4.875% Senior Secured Notes due 2031\"},\n  \"is_subsidiary\": {\"value\": \"no\", \"url\": \"https://www.entaingroup.com/investor-relations/shareholder-information/\", \"quote\": \"As a company traded on the London Stock Exchange and incorporated in the Isle of Man, Entain plc is subject to the UK City Code on Takeovers and Mergers.\"},\n  \"parent_name\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"parent_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"events\": [\n    {\"date\": \"2023-06-13\", \"event\": \"Entain (as acquirer, via Entain CEE) announced a tender offer for 100% of STS Holding S.A. This did not change Entain's own listing.\", \"url\": \"https://www.entaingroup.com/media/rauft252/20230613-ap-acquisition-announcement.pdf\", \"quote\": \"is launching a tender offer (the \u201cOffer\u201d) to acquire 100% of STS Holding S.A. (\u201cSTS\u201d)\"}\n  ],\n  \"note\": \"The name 'ENTAIN LIMITED' matches Companies House overseas-company entry FC037925, the UK establishment of the Isle of Man company with registration number 004685V. Entain's own investor pages name that company 'Entain plc', so I answered for Entain plc. Companies House shows the name Entain Limited from 23 Sep 2025, and I could not check the Isle of Man register to resolve this. No search result found any takeover, delisting, listing or demerger of Entain itself in the three years before 2026-05-07, so the events list is limited to the STS acquisition. The AGM was held on 29 Apr 2026, not 7 May. Shares were still on the LSE Main Market after that date. Barclays page and Entain's shareholder page show Main Market. The shareholder page is undated and old. The TISE notes page is undated, so debt_listed on 2026-05-07 is likely but not date-verified. is_subsidiary is 'no' because no source shows a parent or controlling shareholder. No source states this directly.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:31:07+00:00",
+  "inputs": {
+   "as_of": "2026-05-07",
+   "org_key": "entain"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 76118,
+   "output_tokens": 3369,
+   "web_search_requests": 5
+  }
+ }
+}

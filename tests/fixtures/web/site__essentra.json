@@ -1,0 +1,78 @@
+{
+ "key": "6ea6429836c05fccb172d14a900cc579c5e1c7a6dda3c46d485ec893709d937b",
+ "payload": {
+  "content": [
+   {
+    "query": "Essentra plc investor relations board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Essentra plc: Governance, Directors and Executives & Committees - MarketScreener India",
+      "url": "https://in.marketscreener.com/quote/stock/ESSENTRA-PLC-21683383/company-governance/"
+     },
+     {
+      "page_age": null,
+      "title": "Essentra plc: Governance, Directors and Executives & Committees - MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/ESSENTRA-PLC-21683383/company-governance/"
+     },
+     {
+      "page_age": "630 days ago",
+      "title": "Essentra plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/ESSENTRA-PLC-9590211/company/"
+     },
+     {
+      "page_age": null,
+      "title": "ESNT Investor Relations - Essentra PLC - Alpha Spread",
+      "url": "https://www.alphaspread.com/security/lse/esnt/investor-relations"
+     },
+     {
+      "page_age": null,
+      "title": "Essentra plc (FLRA.F) Leadership & Management Team Analysis - Simply Wall St",
+      "url": "https://simplywall.st/stocks/us/materials/otc-flra.f/essentra/management"
+     },
+     {
+      "page_age": null,
+      "title": "Board Responsibility",
+      "url": "https://www.essentraplc.com/investors/corporate-governance/board-responsibility"
+     },
+     {
+      "page_age": null,
+      "title": "Group Executive Committee - About Us - Essentra plc",
+      "url": "https://www.essentraplc.com/en/about-us/group-executive--committee"
+     },
+     {
+      "page_age": "2062 days ago",
+      "title": "Building for the future Annual Report 2020",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/E/LSE_ESNT_2020.pdf"
+     },
+     {
+      "page_age": "1309 days ago",
+      "title": "Annual Report & Accounts 2022 Accelerating our potential as a pure-play",
+      "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/E/LSE_ESNT_2022.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.essentraplc.com\",\n    \"url\": \"https://www.essentraplc.com/investors/corporate-governance/board-responsibility\",\n    \"quote\": \"The Board provides leadership to the Company and has overall responsibility for the business and management of Essentra.\"\n  },\n  \"note\": \"essentraplc.com is Essentra plc's own corporate and investor site. It has Investors/Corporate Governance pages and a Group Executive Committee page titled 'About Us - Essentra plc'. I did not check the Companies House number 05444653 against the site. The results I found didn't show any sign of a different organisation using this domain.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:46:22+00:00",
+  "inputs": {
+   "org_key": "essentra"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 13533,
+   "output_tokens": 403,
+   "web_search_requests": 1
+  }
+ }
+}

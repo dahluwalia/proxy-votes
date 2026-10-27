@@ -1,0 +1,132 @@
+{
+ "key": "41f7eb8bf2498492b37c7e66e7103259359645d90715b94ce5417959de90d8ee",
+ "payload": {
+  "content": [
+   {
+    "query": "Marks and Spencer Group plc corporate website board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "495 days ago",
+      "title": "Marks & Spencer Group plc: Governance, Directors and Executives & Committees - MarketScreener UK",
+      "url": "https://uk.marketscreener.com/quote/stock/MARKS-SPENCER-GROUP-PLC-9590119/company-governance/"
+     },
+     {
+      "page_age": "403 days ago",
+      "title": "MARKS AND SPENCER PLC FINANCIAL STATEMENTS 2025 REGISTERED NUMBER 00214436",
+      "url": "https://corporate.marksandspencer.com/sites/marksandspencer/files/09-2025/SIGNED%20Financial%20Statements%20-%20Marks%20and%20Spencer%20plc%20FY25.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Marks & Spencer Group plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/MARKS-SPENCER-GROUP-PLC-120788262/company/"
+     },
+     {
+      "page_age": "615 days ago",
+      "title": "Marks & Spencer Group: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/MARKS-SPENCER-GROUP-29422737/company/"
+     },
+     {
+      "page_age": null,
+      "title": "Marks & Spencer Group: Governance, Directors and Executives & Committees - MarketScreener UK",
+      "url": "https://uk.marketscreener.com/quote/stock/MARKS-SPENCER-GROUP-29422737/company-governance/"
+     },
+     {
+      "page_age": null,
+      "title": "Marks and Spencer Group plc (MAKS.Y) Leadership & Management Team Analysis - Simply Wall St",
+      "url": "https://simplywall.st/stocks/us/consumer-retailing/otc-maks.y/marks-and-spencer-group/management"
+     },
+     {
+      "page_age": "344 days ago",
+      "title": "Our Leadership - Marks & Spencer - M&S",
+      "url": "https://corporate.marksandspencer.com/about-us/our-leadership"
+     },
+     {
+      "page_age": "23 days ago",
+      "title": "Marks & Spencer",
+      "url": "https://en.wikipedia.org/wiki/Marks_&_Spencer"
+     },
+     {
+      "page_age": "348 days ago",
+      "title": "Who Owns Marks & Spencer Group Company?",
+      "url": "https://matrixbcg.com/blogs/owners/marksandspencer"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "corporate.marksandspencer.com Marks and Spencer Group plc board governance",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "2706 days ago",
+      "title": "34 MARKS AND SPENCER GROUP PLC BOARD ACTIVITIES",
+      "url": "https://corporate.marksandspencer.com/sites/marksandspencer/files/marks-spencer/results-reports-webcasts-and-presentation/governance.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "1 CORPORATE GOVERNANCE STATEMENT 2025",
+      "url": "https://corporate.marksandspencer.com/sites/marksandspencer/files/06-2025/Corporate%20Governance%20Statement%202025%20FINAL.pdf"
+     },
+     {
+      "page_age": "878 days ago",
+      "title": "GOVERNANCE 72 Marks and Spencer Group plc CHAIRMAN\u2019S GOVERNANCE OVERVIEW \u201c",
+      "url": "https://corporate.marksandspencer.com/sites/marksandspencer/files/2024-06/M-and-S_AR24_Chairmans_Governance_Overview.pdf"
+     },
+     {
+      "page_age": "403 days ago",
+      "title": "MARKS AND SPENCER PLC FINANCIAL STATEMENTS 2025 REGISTERED NUMBER 00214436",
+      "url": "https://corporate.marksandspencer.com/sites/marksandspencer/files/09-2025/SIGNED%20Financial%20Statements%20-%20Marks%20and%20Spencer%20plc%20FY25.pdf"
+     },
+     {
+      "page_age": "696 days ago",
+      "title": "Marks and Spencer : Governance 2022",
+      "url": "https://www.marketscreener.com/quote/stock/MARKS-SPENCER-GROUP-PLC-9590119/news/Marks-and-Spencer-Governance-2022-40657780/"
+     },
+     {
+      "page_age": "544 days ago",
+      "title": "CHAIRMAN\u2019S GOVERNANCE OVERVIEW The Board has played a crucial role in holding",
+      "url": "https://corporate.marksandspencer.com/sites/marksandspencer/files/2025-05/M-and-S-Chairman-Governance-Overview-2025.pdf"
+     },
+     {
+      "page_age": "495 days ago",
+      "title": "Marks & Spencer Group plc: Governance, Directors and Executives & Committees - MarketScreener UK",
+      "url": "https://uk.marketscreener.com/quote/stock/MARKS-SPENCER-GROUP-PLC-9590119/company-governance/"
+     },
+     {
+      "page_age": "1484 days ago",
+      "title": "Governance Framework - Marks & Spencer - M&S",
+      "url": "https://corporate.marksandspencer.com/about-us/corporate-governance/governance-framework"
+     },
+     {
+      "page_age": "348 days ago",
+      "title": "Who Owns Marks & Spencer Group Company?",
+      "url": "https://matrixbcg.com/blogs/owners/marksandspencer"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://corporate.marksandspencer.com\",\n    \"url\": \"https://corporate.marksandspencer.com/sites/marksandspencer/files/06-2025/Corporate%20Governance%20Statement%202025%20FINAL.pdf\",\n    \"quote\": \"The following statement is for Marks and Spencer Group plc (\u2018Marks & Spencer\u2019; \u2018M&S\u2019; the \u2018Company\u2019)\"\n  },\n  \"note\": \"The M&S corporate site is corporate.marksandspencer.com. It hosts the Group's governance framework, board pages and annual report documents. M&S's own filings point to it as 'our corporate website'. I did not find the Companies House number 04256886 on any page, so I matched the organisation by name. The quote comes from the 2025 Corporate Governance Statement PDF, which is hosted on that site.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:44:30+00:00",
+  "inputs": {
+   "org_key": "marks-and-spencer-group"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 32015,
+   "output_tokens": 590,
+   "web_search_requests": 2
+  }
+ }
+}

@@ -1,0 +1,34 @@
+# Severn Trent CFO (an executive director of the company holding the vote) who is also a
+# non-executive of Breedon Group plc: executive rule, AGAINST. Water Plus is a private JV.
+name: Helen Miles
+case: [H8, H14]
+roster:
+  - {meeting: severn-trent, resolution_no: 7, name: Helen Miles,
+     role_text_at_issuer: Chief Financial Officer, role_type_at_issuer: officer_title,
+     coverage: structured}
+seats:
+  - {meeting: severn-trent, org_name: Severn Trent Plc, role_text: Chief Financial Officer,
+     role_type: officer_title, board_seat: unknown, chair: "no", executive: "yes", current: "yes"}
+  - {meeting: severn-trent, org_name: Breedon Group plc, role_text: Non-Executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: severn-trent, org_name: Water Plus Limited, role_text: Director,
+     role_type: director_unspecified, board_seat: "yes", chair: "no", executive: unknown,
+     current: "yes"}
+  - {meeting: severn-trent, org_name: Openreach, role_text: Chief Financial Officer,
+     role_type: officer_title, board_seat: unknown, chair: "no", executive: "yes", current: "no"}
+ch:
+  - officer_id: fx-miles
+    name: MILES, Helen Elizabeth
+    appointments:
+      - {company_number: "02366619", company_name: SEVERN TRENT PLC, company_type: plc,
+         role: director, appointed_on: 2023-07-06}
+      - {company_number: "14587381", company_name: BREEDON GROUP PLC, company_type: plc,
+         role: director, appointed_on: 2023-03-01}
+      - {company_number: "10095866", company_name: WATER PLUS LIMITED, company_type: ltd,
+         role: director, appointed_on: 2023-07-06}
+orgs:
+  - {canonical_name: Breedon Group plc, org_type: company, listed: "yes", equity_listing: "yes", market: LSE Main Market}
+  - {canonical_name: Water Plus Limited, org_type: company, listed: "no", equity_listing: "no"}
+expect:
+  severn-trent: {vote: AGAINST, points: [2, 2]}

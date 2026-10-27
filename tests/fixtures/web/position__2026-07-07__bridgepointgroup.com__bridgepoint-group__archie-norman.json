@@ -1,0 +1,86 @@
+{
+ "key": "1d4b385e6f65da01258860317067e57460f051b938dd393b19bcbc63e698d7c0",
+ "payload": {
+  "content": [
+   {
+    "query": "bridgepointgroup.com Archie Norman board of directors Bridgepoint Group plc",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "102 days ago",
+      "title": "Bridgepoint Group plc (the \u201cGroup\u201d or the \u201cCompany\u201d)",
+      "url": "https://www.bridgepointgroup.com/content/dam/bridgepoint/corporate2022/documents/financial-information/results_reports_presentations/2026/bridgepoint-group-interim-results-2026-announcement.pdf.downloadasset.pdf"
+     },
+     {
+      "page_age": "466 days ago",
+      "title": "Bridgepoint Group plc Interim Report 2025",
+      "url": "https://www.bridgepointgroup.com/content/dam/bridgepoint/corporate2022/documents/financial-information/results_reports_presentations/2025/bridgepoint-group-2025-hy-report.pdf.downloadasset.pdf"
+     },
+     {
+      "page_age": "580 days ago",
+      "title": "2025 Notice of Annual General Meeting",
+      "url": "https://www.bridgepointgroup.com/content/dam/bridgepoint/corporate2022/documents/financial-information/annual-report-2024/notice-of-agm-2025.pdf.downloadasset.pdf"
+     },
+     {
+      "page_age": "603 days ago",
+      "title": "Governance - Bridgepoint",
+      "url": "https://www.bridgepointgroup.com/shareholders/governance"
+     },
+     {
+      "page_age": "1629 days ago",
+      "title": "William Jackson Chairman Raoul Hughes Chief Executive Appointment",
+      "url": "https://www.bridgepointgroup.com/content/dam/bridgepoint/corporate2022/documents/financial-information/annual-report-2023/annual-report-and-accounts-2023-governance-report.pdf.downloadasset.pdf"
+     },
+     {
+      "page_age": "922 days ago",
+      "title": "Notice of Annual General Meeting",
+      "url": "https://www.bridgepointgroup.com/content/dam/bridgepoint/corporate2022/documents/agm/Notice-of-AGM-2024.pdf.downloadasset.pdf"
+     },
+     {
+      "page_age": "1313 days ago",
+      "title": "Notice of Annual General Meeting 2023",
+      "url": "https://www.bridgepointgroup.com/content/dam/bridgepoint/corporate2022/documents/agm/Notice-of-2023-AGM.pdf.downloadasset.pdf"
+     },
+     {
+      "page_age": "1190 days ago",
+      "title": "Bridgepoint Group plc Robust first half performance in a volatile market",
+      "url": "https://www.bridgepointgroup.com/content/dam/bridgepoint/corporate2022/documents/financial-information/results_reports_presentations/2023/Interim-Results-Announcement-2023.pdf.downloadasset.pdf"
+     },
+     {
+      "page_age": "1190 days ago",
+      "title": "2023 Bridgepoint Group plc Interim Report",
+      "url": "https://www.bridgepointgroup.com/content/dam/bridgepoint/corporate2022/documents/financial-information/results_reports_presentations/2023/acquisition-of-ecp/bridgepoint-2023-interim-results.pdf.downloadasset.pdf"
+     },
+     {
+      "page_age": "216 days ago",
+      "title": "2026 Notice of Annual General Meeting",
+      "url": "https://www.bridgepointgroup.com/content/dam/bridgepoint/corporate2022/documents/agm/bridgepoint-2026-notice-of-annual-general-meeting.pdf.downloadasset.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\n    \"value\": \"yes\",\n    \"url\": \"https://www.bridgepointgroup.com/content/dam/bridgepoint/corporate2022/documents/agm/bridgepoint-2026-notice-of-annual-general-meeting.pdf.downloadasset.pdf\",\n    \"quote\": \"Archie Norman (Independent Non-Executive Director and Senior Independent Director)\"\n  },\n  \"capacity\": {\n    \"value\": \"non_executive_director\",\n    \"url\": \"https://www.bridgepointgroup.com/content/dam/bridgepoint/corporate2022/documents/agm/bridgepoint-2026-notice-of-annual-general-meeting.pdf.downloadasset.pdf\",\n    \"quote\": \"Archie Norman (Independent Non-Executive Director and Senior Independent Director)\"\n  },\n  \"start_date\": {\n    \"value\": null,\n    \"url\": null,\n    \"quote\": null\n  },\n  \"end_date\": {\n    \"value\": null,\n    \"url\": null,\n    \"quote\": null\n  },\n  \"note\": \"The 2026 AGM notice lists him on the Bridgepoint Group plc board as an Independent Non-Executive Director and Senior Independent Director, and the 17 July 2026 interim results list him among the directors (https://www.bridgepointgroup.com/content/dam/bridgepoint/corporate2022/documents/financial-information/results_reports_presentations/2026/bridgepoint-group-interim-results-2026-announcement.pdf.downloadasset.pdf). Resolution 11 of the notice proposes his re-election. That list is dated 10 days after 2026-07-07, so he was very likely a director on the AGM date. I found no stated start or end date on the site. A 2023 annual report table shows 25 June 2021 next to his name. It is not labelled as an appointment date, so I did not treat it as one. Either way it falls well outside six months of 2026-07-07. I found no sign of any change in his role between 2026-07-07 and today, but I did not find a board page dated after 17 July 2026.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:52:43+00:00",
+  "inputs": {
+   "as_of": "2026-07-07",
+   "domain": "bridgepointgroup.com",
+   "org_key": "bridgepoint-group",
+   "person": "archie-norman"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 18717,
+   "output_tokens": 1095,
+   "web_search_requests": 1
+  }
+ }
+}

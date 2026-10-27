@@ -1,0 +1,138 @@
+{
+ "key": "f26378f518f5f45c6b4d962850df30650fc1b9b4511d09620f820240345ce065",
+ "payload": {
+  "content": [
+   {
+    "query": "Ofcom Office of Communications statutory corporation Communications Act 2003 about Ofcom",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Ofcom annual report 2025-26 accountability to Parliament sponsor department DSIT",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Ofcom",
+      "url": "https://en.wikipedia.org/wiki/Ofcom"
+     },
+     {
+      "page_age": "103 days ago",
+      "title": "Ofcom Empowering UK\u2019s Broadcasting & Telecom",
+      "url": "https://stl.tech/blog/how-ofcom-empowers-uks-broadcasting-telecom-industry/"
+     },
+     {
+      "page_age": "150 days ago",
+      "title": "Ofcom",
+      "url": "https://www.instituteforgovernment.org.uk/explainer/ofcom"
+     },
+     {
+      "page_age": null,
+      "title": "Communications Act 2003",
+      "url": "https://en.wikipedia.org/wiki/Communications_Act_2003"
+     },
+     {
+      "page_age": null,
+      "title": "We use essential cookies to make our site work.",
+      "url": "https://committees.parliament.uk/writtenevidence/126905/html/"
+     },
+     {
+      "page_age": "320 days ago",
+      "title": "The Office of Communications (Ofcom)",
+      "url": "https://www.lexisnexis.co.uk/legal/guidance/the-office-of-communications-ofcom"
+     },
+     {
+      "page_age": null,
+      "title": "Ofcom's UK statutory functions and powers: electronic communications, spectrum, broadcasting and competition, including the Online Safety Act 2023 regime, Brexit changes and co-regulatory arrangements - Legal Guidance - LexisNexis UK",
+      "url": "https://www.lexisnexis.com/en-gb/legal/guidance/the-office-of-communications-ofcom"
+     },
+     {
+      "page_age": "81 days ago",
+      "title": "Ofcom - Wikiwand",
+      "url": "https://www.wikiwand.com/en/Ofcom"
+     },
+     {
+      "page_age": "68 days ago",
+      "title": "What Does Ofcom Regulate? Telecoms, Media and Online ...",
+      "url": "https://bratby.law/what-does-ofcom-regulate/"
+     },
+     {
+      "page_age": "158 days ago",
+      "title": "Communications Act 2003 \u2014 UK Legislation",
+      "url": "https://uklawreference.com/legislation/communications-act-2003"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Ofcom Annual Report 2024/25 Summary",
+      "url": "https://www.scribd.com/document/947276363/Ofcom-Annual-Report-and-Accounts-2024-2025"
+     },
+     {
+      "page_age": "111 days ago",
+      "title": "The Office of Communications Section 400 Licence Fees and Penalties Accounts",
+      "url": "https://www.ofcom.org.uk/siteassets/resources/documents/about-ofcom/annual-reports/2025-26/ofcom-section-400-licence-fees-and-penalties-accounts-2025-2026.pdf?v=422333"
+     },
+     {
+      "page_age": "573 days ago",
+      "title": "Ofcom Annual Report and Accounts 2025-2026",
+      "url": "https://assets.publishing.service.gov.uk/media/6a4e92bb43f694ee291df854/Ofcom_Annual_Report_and_Accounts_2025-2026_optimised_A.pdf"
+     },
+     {
+      "page_age": "129 days ago",
+      "title": "Office for Budget Responsibility Annual report and accounts 2025-26 HC 261",
+      "url": "https://assets.publishing.service.gov.uk/media/6abd142126660e5f62a7f172/E03598728_OBR_ARA_25-26_Accessible.pdf"
+     },
+     {
+      "page_age": "649 days ago",
+      "title": "Open letter How Ofcom contributes to UK growth",
+      "url": "https://www.ofcom.org.uk/siteassets/resources/documents/about-ofcom/public-correspondence/2025/open-letter-how-ofcom-contributes-to-uk-growth.pdf?v=395523"
+     },
+     {
+      "page_age": "104 days ago",
+      "title": "DSIT annual report and accounts 2025 to 2026 - GOV.UK",
+      "url": "https://www.gov.uk/government/publications/dsit-annual-report-and-accounts-2025-to-2026/dsit-annual-report-and-accounts-2025-to-2026"
+     },
+     {
+      "page_age": "133 days ago",
+      "title": "June progress statement: letter from DSIT Secretary of State to Ofcom Chair and CEO - GOV.UK",
+      "url": "https://www.gov.uk/government/publications/june-progress-statement-letter-from-dsit-secretary-of-state-to-ofcom-chair-and-ceo/june-progress-statement-letter-from-dsit-secretary-of-state-to-ofcom-chair-and-ceo"
+     },
+     {
+      "page_age": null,
+      "title": "Ofcom Annual Report and Accounts 2024 2025",
+      "url": "https://assets.publishing.service.gov.uk/media/686d22c410d550c668de3c61/Ofcom_Annual_Report_and_Accounts_2024_2025.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "DSIT 2023 24 annual report and accounts hi res print crops",
+      "url": "https://assets.publishing.service.gov.uk/media/66e07029a325829f6a5e266b/DSIT_2023-24_annual_report_and_accounts_hi-res_print_crops.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"The Office of Communications\", \"url\": \"https://assets.publishing.service.gov.uk/media/6a4e92bb43f694ee291df854/Ofcom_Annual_Report_and_Accounts_2025-2026_optimised_A.pdf\", \"quote\": \"Presented to Parliament pursuant to Paragraphs 11 and 12 of Schedule 1 to the Office of Communications Act 2002\"},\n  \"country\": {\"value\": \"United Kingdom\", \"url\": \"https://www.instituteforgovernment.org.uk/explainer/ofcom\", \"quote\": \"The Office of Communications (Ofcom) is the UK communications regulator\"},\n  \"org_type\": {\"value\": \"public_body\", \"url\": \"https://assets.publishing.service.gov.uk/media/6a4e92bb43f694ee291df854/Ofcom_Annual_Report_and_Accounts_2025-2026_optimised_A.pdf\", \"quote\": \"We are an independent public authority and accountable to Parliament and through the courts\"},\n  \"equity_listed\": {\"value\": \"no\", \"url\": \"https://committees.parliament.uk/writtenevidence/126905/html/\", \"quote\": \"Ofcom is an independent regulator, established as a statutory corporation by the Office of Communications Act 2002\"},\n  \"exchange\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"ticker\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"market_segment\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"debt_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"is_subsidiary\": {\"value\": \"no\", \"url\": \"https://committees.parliament.uk/writtenevidence/126905/html/\", \"quote\": \"Ofcom is an independent regulator, established by the Office of Communications Act 2002, and our duties are set out in statute.\"},\n  \"parent_name\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"parent_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"events\": [],\n  \"note\": \"Ofcom is a UK statutory corporation created by the Office of Communications Act 2002. It is not a company and has no shares. Its sponsoring department is DSIT, but it is not a subsidiary of any company, so no parent is named. I found no listing, delisting, demerger or takeover events, so the events list is empty. I found no source that addresses listed debt either way, so debt_listed is 'unknown'. The market_segment and parent_listed fields are 'unknown' because they don't apply and no source addresses them. The equity_listed answer of 'no' rests on Ofcom's statutory-corporation status. No source says outright that it has no traded shares.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:23:40+00:00",
+  "inputs": {
+   "as_of": "2026-05-20",
+   "org_key": "ofcom"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 24414,
+   "output_tokens": 1837,
+   "web_search_requests": 2
+  }
+ }
+}

@@ -1,0 +1,310 @@
+{
+ "key": "6443f747e8fbc6d9b13e677a4088d96060e2df54a0950cb1a8c396919844432a",
+ "payload": {
+  "content": [
+   {
+    "query": "Bank of Scotland plc annual report 2025 wholly owned subsidiary Lloyds Banking Group",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Bank of Scotland plc debt securities admitted to trading London Stock Exchange",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "lbk-20241231_d2",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167831/000116010625000012/lbk-20241231_d2.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Sainsbury%27s Bank",
+      "url": "https://en.wikipedia.org/wiki/Sainsbury%27s_Bank"
+     },
+     {
+      "page_age": null,
+      "title": "lbk-20251231_d2",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167831/000116783126000007/lbk-20251231_d2.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Scottish Widows",
+      "url": "https://en.wikipedia.org/wiki/Scottish_Widows"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group",
+      "url": "https://en.wikipedia.org/wiki/Lloyds_Banking_Group"
+     },
+     {
+      "page_age": null,
+      "title": "HBOS",
+      "url": "https://en.wikipedia.org/wiki/HBOS"
+     },
+     {
+      "page_age": null,
+      "title": "Halifax (Ireland)",
+      "url": "https://en.wikipedia.org/wiki/Halifax_(Ireland)"
+     },
+     {
+      "page_age": null,
+      "title": "TSB Bank (United Kingdom)",
+      "url": "https://en.wikipedia.org/wiki/TSB_Bank_(United_Kingdom)"
+     },
+     {
+      "page_age": null,
+      "title": "UK Financial Investments",
+      "url": "https://en.wikipedia.org/wiki/UK_Financial_Investments"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Sec",
+      "url": "https://www.sec.gov/Archives/edgar/data/729153/000095010312005038/dp33197_424b2.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Document",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167831/000116783126000007/lloydsbankplcexhibit1112025.htm"
+     },
+     {
+      "page_age": null,
+      "title": "UK - SCOTLAND Investment rules of the world DOWNLOADED: 18 JUL 2026",
+      "url": "https://www.dlapiperintelligence.com/investmentrules/countries/handbook.pdf?c=GB-SCT"
+     },
+     {
+      "page_age": "4 days ago",
+      "title": "Admission to Trading",
+      "url": "https://investegate.co.uk/announcement/rns/hsbc-bank-plc--48cf/admission-to-trading/9836371"
+     },
+     {
+      "page_age": null,
+      "title": "Investing for tomorrow? Explore your choices today. Investing",
+      "url": "https://www.bankofscotland.co.uk/assets/pdf/sharedealing/pdf/Share_Dealing_Brochure.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "THE ROYAL BANK OF SCOTLAND plc fully and ...",
+      "url": "https://www.sec.gov/Archives/edgar/data/729153/000095010310001492/dp17682_424b2.pdf"
+     },
+     {
+      "page_age": "12 days ago",
+      "title": "Share Dealing",
+      "url": "https://www.bankofscotland.co.uk/investing.html"
+     },
+     {
+      "page_age": null,
+      "title": "Research the Investment Market",
+      "url": "https://www.investments.bankofscotland.co.uk/"
+     },
+     {
+      "page_age": null,
+      "title": "The Royal Bank of Scotland Plc Member firm information sheets 2012/095 106",
+      "url": "https://www.londonstockexchange.com/information-sheet/royal-bank-scotland-plc/2012/095"
+     },
+     {
+      "page_age": "39 days ago",
+      "title": "Important Information",
+      "url": "https://www.bankofscotland.co.uk/investing/help-and-guidance/important-information.html"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Bank of Scotland plc SC327000 registered Scotland HBOS plc parent company",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Bank of Scotland plc notes listed London Stock Exchange Euro Medium Term Note programme",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Halifax Bank of Scotland integration into Lloyds Bank 2026 ring-fenced transfer",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "490 days ago",
+      "title": "Legal Information",
+      "url": "https://www.bankofscotland.co.uk/helpcentre/legal-information.html"
+     },
+     {
+      "page_age": null,
+      "title": "HBOS",
+      "url": "https://en.wikipedia.org/wiki/HBOS"
+     },
+     {
+      "page_age": "31 days ago",
+      "title": "BANK OF SCOTLAND PLC: UBO, Shareholders & Group Structure (United Kingdom)",
+      "url": "https://zavia.ai/companies/bank-of-scotland-plc-gb-35274273/"
+     },
+     {
+      "page_age": null,
+      "title": "Bank of Scotland",
+      "url": "https://en.wikipedia.org/wiki/Bank_of_Scotland"
+     },
+     {
+      "page_age": null,
+      "title": "Capital Bank plc",
+      "url": "https://en.wikipedia.org/wiki/Capital_Bank_plc"
+     },
+     {
+      "page_age": "1089 days ago",
+      "title": "BANK OF SCOTLAND PLC - LEI: OQ3T05P7YR8P5YJEVI93",
+      "url": "https://www.legalentityidentifier.co.uk/leicert/OQ3T05P7YR8P5YJEVI93/"
+     },
+     {
+      "page_age": null,
+      "title": "Bank of Scotland plc Details",
+      "url": "https://www.askfin.co.uk/lender-details/bank-of-scotland-plc"
+     },
+     {
+      "page_age": "374 days ago",
+      "title": "HBOS facts for kids",
+      "url": "https://kids.kiddle.co/HBOS"
+     },
+     {
+      "page_age": "1329 days ago",
+      "title": "Bank of Scotland plc Report and Accounts 2022 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/bank-of-scotland-plc/2022/full-year/2022-bos-annual-report.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "4889 days ago",
+      "title": "LLOYDS TSB BANK plc - RNS Submit",
+      "url": "https://www.rns-pdf.londonstockexchange.com/rns/6095G_-2013-6-7.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "i Important Notice THIS OFFERING IS AVAILABLE ONLY ...",
+      "url": "https://www.nationalgrid.com/document/147686/download"
+     },
+     {
+      "page_age": "2160 days ago",
+      "title": "NatWest Group plc - RNS Submit - London Stock Exchange",
+      "url": "https://www.rns-pdf.londonstockexchange.com/rns/7654G_1-2020-11-27.pdf"
+     },
+     {
+      "page_age": "584 days ago",
+      "title": "PROSPECTUS Dated 21 March 2025 LLOYDS BANKING GROUP PLC",
+      "url": "https://www.rns-pdf.londonstockexchange.com/rns/7380B_1-2025-3-21.pdf"
+     },
+     {
+      "page_age": "508 days ago",
+      "title": "BASE PROSPECTUS DATED 5 June 2025 TSB Banking Group plc",
+      "url": "https://www.rns-pdf.londonstockexchange.com/rns/6477L_1-2025-6-5.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "BASE PROSPECTUS DATED 8 AUGUST 2017 THE BRITISH LAND COMPANY PLC",
+      "url": "https://www.rns-pdf.londonstockexchange.com/rns/4228N_-2017-8-8.pdf"
+     },
+     {
+      "page_age": "4585 days ago",
+      "title": "PROSPECTUS Dated 7 April 2014 LLOYDS BANK plc",
+      "url": "https://www.rns-pdf.londonstockexchange.com/rns/3007E_-2014-4-8.pdf"
+     },
+     {
+      "page_age": "689 days ago",
+      "title": "Prospectus dated 6 December 2024 NATWEST MARKETS PLC",
+      "url": "https://www.rns-pdf.londonstockexchange.com/rns/2082P_1-2024-12-6.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "current Royal Bank of Scotland banknotes - Exchange yours now",
+      "url": "https://www.leftovercurrency.com/exchange/scottish-pounds/current-royal-bank-of-scotland-banknotes/"
+     },
+     {
+      "page_age": "237 days ago",
+      "title": "The Royal Bank of Scotland plc 5 Pounds - Exchange yours for cash",
+      "url": "https://www.leftovercurrency.com/exchange/scottish-pounds/withdrawn-royal-bank-of-scotland-banknotes/the-royal-bank-of-scotland-plc-5-pounds-banknote/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "HBOS",
+      "url": "https://en.wikipedia.org/wiki/HBOS"
+     },
+     {
+      "page_age": null,
+      "title": "List of banks in the United Kingdom",
+      "url": "https://en.wikipedia.org/wiki/List_of_banks_in_the_United_Kingdom"
+     },
+     {
+      "page_age": null,
+      "title": "Halifax (bank)",
+      "url": "https://en.wikipedia.org/wiki/Halifax_(bank)"
+     },
+     {
+      "page_age": "116 days ago",
+      "title": "Lloyds confirms plan to scrap 173-year-old Halifax brand",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lloyds-confirms-plan-scrap-173-114749924.html"
+     },
+     {
+      "page_age": "117 days ago",
+      "title": "Halifax to become Lloyds: what customers need to know",
+      "url": "https://hotminute.co.uk/2026/07/01/goodbye-halifax/"
+     },
+     {
+      "page_age": "7 days ago",
+      "title": "Halifax Moving to Lloyds: What to Do, and the Traps to Avoid",
+      "url": "https://thefintechmag.com/halifax-moving-to-lloyds/"
+     },
+     {
+      "page_age": "117 days ago",
+      "title": "Lloyds Banking Group announces Halifax to rebrand to Lloyds - Lloyds Banking Group plc",
+      "url": "https://www.lloydsbankinggroup.com/media/press-releases/2026/lloyds-banking-group/halifax-rebrand-to-lloyds.html"
+     },
+     {
+      "page_age": "117 days ago",
+      "title": "Lloyds Banking Group announces Halifax to rebrand to Lloyds \u2022",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/media/press-releases/2026-press-releases/lloyds-banking-group/01.07.2026-halifax-rebrand-to-lloyds.pdf"
+     },
+     {
+      "page_age": "103 days ago",
+      "title": "Our brands: Halifax - Lloyds Banking Group plc",
+      "url": "https://www.lloydsbankinggroup.com/who-we-are/our-brands/halifax-bank.html"
+     },
+     {
+      "page_age": "103 days ago",
+      "title": "The history of Halifax - Lloyds Banking Group plc",
+      "url": "https://www.lloydsbankinggroup.com/who-we-are/our-heritage/halifax-bank.html"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"Bank of Scotland plc\", \"url\": \"https://www.bankofscotland.co.uk/helpcentre/legal-information.html\", \"quote\": \"Bank of Scotland plc is registered with company number SC327000.\"},\n  \"country\": {\"value\": \"United Kingdom\", \"url\": \"https://www.bankofscotland.co.uk/helpcentre/legal-information.html\", \"quote\": \"Registered in Scotland No.\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://www.bankofscotland.co.uk/helpcentre/legal-information.html\", \"quote\": \"Bank of Scotland plc is registered with company number SC327000.\"},\n  \"equity_listed\": {\"value\": \"no\", \"url\": \"https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/bank-of-scotland-plc/2022/full-year/2022-bos-annual-report.pdf\", \"quote\": \"The Bank is a wholly owned subsidiary of HBOS plc, which holds all of the Bank\u2019s issued ordinary share capital.\"},\n  \"exchange\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"ticker\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"market_segment\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"debt_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"is_subsidiary\": {\"value\": \"yes\", \"url\": \"https://www.legalentityidentifier.co.uk/leicert/OQ3T05P7YR8P5YJEVI93/\", \"quote\": \"HBOS PLC (Direct parent) LLOYDS BANKING GROUP PLC (Ultimate Parent)\"},\n  \"parent_name\": {\"value\": \"Lloyds Banking Group plc\", \"url\": \"https://www.legalentityidentifier.co.uk/leicert/OQ3T05P7YR8P5YJEVI93/\", \"quote\": \"HBOS PLC (Direct parent) LLOYDS BANKING GROUP PLC (Ultimate Parent)\"},\n  \"parent_listed\": {\"value\": \"yes\", \"url\": \"https://en.wikipedia.org/wiki/Lloyds_Banking_Group\", \"quote\": \"Traded as: LSE: LLOY; NYSE: LYG; FTSE 100 component;\"},\n  \"events\": [],\n  \"note\": \"I chose the entity Bank of Scotland plc (company no. SC327000, Edinburgh). It is a wholly owned subsidiary of HBOS plc, which is in turn owned by Lloyds Banking Group plc. Its own shares are not listed. The listing of the parent, Lloyds Banking Group plc, comes from a Wikipedia infobox, so it is not a primary source. The ownership chain is from the 2022 annual report and a 2026 Companies House aggregator. I found no listing, delisting, demerger or takeover of Bank of Scotland plc in the three years to 2026-07-09. The Halifax brand change announced on 2026-07-01 is a rebrand, and Lloyds said Bank of Scotland is unaffected. Debt_listed is unknown. A Lloyds Banking Group dealing policy (approved 2025-12-08) says its group companies, including Bank of Scotland plc, have securities admitted to trading on exchanges such as the London Stock Exchange. It does not name any Bank of Scotland plc debt issue, and I found no listing of such an issue. Country is the United Kingdom, with registration in Scotland.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:30:23+00:00",
+  "inputs": {
+   "as_of": "2026-07-09",
+   "org_key": "bank-of-scotland"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 65384,
+   "output_tokens": 2471,
+   "web_search_requests": 5
+  }
+ }
+}

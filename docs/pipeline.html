@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The pipeline in diagrams</title>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --fg: #1f2328;
+        --muted: #59636e;
+        --line: #d1d9e0;
+        --code: #f6f8fa;
+        --link: #0969da;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0d1117;
+          --fg: #e6edf3;
+          --muted: #9198a1;
+          --line: #3d444d;
+          --code: #161b22;
+          --link: #4493f8;
+        }
+      }
+      body {
+        background: var(--bg);
+        color: var(--fg);
+        margin: 0;
+        font:
+          16px/1.55 -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      main {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 32px 16px 80px;
+      }
+      h1 {
+        font-size: 2rem;
+        margin-top: 0;
+      }
+      h2 {
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 0.3em;
+        margin-top: 2.2em;
+      }
+      a {
+        color: var(--link);
+      }
+      code {
+        background: var(--code);
+        padding: 0.1em 0.35em;
+        border-radius: 4px;
+        font-size: 0.9em;
+      }
+      hr {
+        border: 0;
+        border-top: 1px solid var(--line);
+        margin: 2.5em 0;
+      }
+      .diagram {
+        background: #ffffff;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 16px;
+        margin: 1.2em 0;
+        overflow-x: auto;
+      }
+      .diagram pre.mermaid {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+      .diagram svg {
+        max-width: 100%;
+        height: auto;
+      }
+      .note {
+        color: var(--muted);
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 id="the-pipeline-in-diagrams">The pipeline in diagrams</h1>
+      <p>
+        One overview, then a zoomed-in diagram per stage. Each diagram says
+        where its code is. The diagrams are drawn with
+        <a href="https://mermaid.js.org/">Mermaid</a> when the page opens in a
+        browser.
+      </p>
+      <p>Conventions in every diagram:</p>
+      <ul>
+        <li>
+          <strong>Rounded boxes</strong> are steps,
+          <strong>diamonds</strong> are decisions,
+          <strong>cylinders</strong> are stored data.
+        </li>
+        <li>
+          Every fact is <strong>yes / no / unknown</strong>. A step that can't
+          decide leaves <code>unknown</code> and writes a
+          <strong>review item</strong>; nothing defaults to "no".
+        </li>
+        <li>
+          Every external call goes through
+          <strong>one cache</strong> (<code>core/cache.py</code>), so a re-run
+          is free and gives the same answer.
+        </li>
+      </ul>
+      <p>Contents:</p>
+      <ol>
+        <li><a href="#1-overview">Overview</a></li>
+        <li>
+          <a href="#2-extraction"
+            >Extraction: notice PDFs to roster and seats</a
+          >
+        </li>
+        <li>
+          <a href="#3-companies-house"
+            >Companies House: fetching officer records</a
+          >
+        </li>
+        <li>
+          <a href="#4-deduplication">Deduplication: mentions to people</a>
+        </li>
+        <li>
+          <a href="#5-classification"
+            >Classification: roles and organisations</a
+          >
+        </li>
+        <li><a href="#6-web-search">Web search: one cited question</a></li>
+        <li>
+          <a href="#7-recommendations">Recommendations: reconcile and score</a>
+        </li>
+        <li>
+          <a href="#8-evidence-freshness"
+            >Evidence freshness: is each fact recent enough?</a
+          >
+        </li>
+        <li><a href="#9-gates-and-publishing">Gates and publishing</a></li>
+        <li>
+          <a href="#10-modifications">Modifications: analyst decisions</a>
+        </li>
+        <li>
+          <a href="#11-caching-logging-and-the-nightly-run"
+            >Caching, logging and the nightly run</a
+          >
+        </li>
+      </ol>
+      <hr />
+      <h2 id="1-overview">1. Overview</h2>
+      <div class="diagram">
+        <pre class="mermaid">
+flowchart TD
+    pdfs[(&quot;Notice PDFs&lt;br/&gt;data/notices/&quot;)]
+    policy[(&quot;config/policy.yaml&quot;)]
+    dec[(&quot;Analyst decisions&lt;br/&gt;append-only&quot;)]
+
+    subgraph run[&quot;One run: state/pipeline.py&quot;]
+        direction LR
+        ex(&quot;1 Extract&lt;br/&gt;roster, seats&quot;) --&gt; ch(&quot;2 Companies House&lt;br/&gt;officer records&quot;)
+        ch --&gt; dd(&quot;3 Deduplicate&lt;br/&gt;mentions to people&quot;)
+        dd --&gt; cl(&quot;4 Classify&lt;br/&gt;roles, listings, firm-site roles&quot;)
+        cl --&gt; sc(&quot;5 Score&lt;br/&gt;FOR / AGAINST / REVIEW&quot;)
+        sc --&gt; fr(&quot;6 Evidence freshness&lt;br/&gt;dates every citation, flags stale ones&quot;)
+        fr --&gt; gates{&quot;Gates&lt;br/&gt;G1 to G4&quot;}
+    end
+
+    pdfs --&gt; ex
+    policy --&gt; sc
+    dec --&gt; dd
+    dec --&gt; sc
+
+    llx([&quot;LlamaExtract&quot;]) -.-&gt; ex
+    chapi([&quot;Companies House API&quot;]) -.-&gt; ch
+    chapi -.-&gt; dd
+    claude([&quot;Claude + web search&quot;]) -.-&gt; cl
+
+    gates --&gt;|&quot;all pass&quot;| staged[&quot;staged&quot;]
+    gates --&gt;|&quot;any fails&quot;| held[&quot;held&quot;]
+    staged --&gt;|&quot;--publish&quot;| pub[(&quot;Published run&lt;br/&gt;pointer&quot;)]
+    held -.-&gt;|&quot;pointer unchanged:&lt;br/&gt;last votes stand&quot;| pub
+
+    pub --&gt; cli(&quot;pennant votes / show /&lt;br/&gt;review / history&quot;)
+    pub --&gt; evalx(&quot;pennant eval&lt;br/&gt;vs eval/gold/&quot;)
+    cli --&gt; mods(&quot;merge / split /&lt;br/&gt;set-fact / undo&quot;)
+    mods --&gt; dec</pre
+        >
+      </div>
+      <p>
+        Each run writes its own rows (<code>run_outputs</code>) and never edits
+        an earlier run, so any two runs can be diffed (<code>pennant diff</code
+        >) and a bad run never replaces published votes. Section 9 covers the
+        analyst loop at the bottom; section 11 covers the cache, logs and
+        nightly job.
+      </p>
+      <hr />
+      <h2 id="2-extraction">2. Extraction</h2>
+      <p>
+        Code: <code>extract/validate.py</code> (stage),
+        <code>extract/llamaextract.py</code> (the job),
+        <code>extract/meeting.py</code> (cross-checks),
+        <code>evidence/grounding.py</code> (quotes on pages). Card M1.
+      </p>
+      <div class="diagram">
+        <pre class="mermaid">
+flowchart TD
+    start([&quot;For each PDF in data/notices/&quot;]) --&gt; key(&quot;Meeting key from the filename&lt;br/&gt;Tesco_2026_Notice_of_AGM.pdf to tesco&quot;)
+    key --&gt; cache{&quot;LlamaExtract answer cached?&lt;br/&gt;key: PDF hash + schema + config&quot;}
+    cache --&gt;|&quot;yes&quot;| job[(&quot;Job JSON&lt;br/&gt;fields + page citations&quot;)]
+    cache --&gt;|&quot;no, recording in tests/fixtures&quot;| seedc(&quot;Seed cache from the recording&quot;) --&gt; job
+    cache --&gt;|&quot;no, offline&quot;| none[&quot;No extract: stage error, review item&quot;]
+    cache --&gt;|&quot;no, live&quot;| budget{&quot;Already recorded once?&quot;}
+    budget --&gt;|&quot;yes&quot;| stop[&quot;BudgetError: ask expert&lt;br/&gt;no second paid run&quot;]
+    budget --&gt;|&quot;no&quot;| live(&quot;Run one agentic job&lt;br/&gt;cite_sources: true&quot;) --&gt; job
+    live -.-&gt; calls[(&quot;model_calls&lt;br/&gt;prompt, response, credits&quot;)]
+
+    job --&gt; parse(&quot;Parse: meeting, directors,&lt;br/&gt;appointments, each with page citations&quot;)
+    parse --&gt; pages(&quot;Read PDF text per page&lt;br/&gt;PyMuPDF&quot;)
+    pages --&gt; meet{&quot;Company number and AGM date&lt;br/&gt;found in the PDF text?&quot;}
+    meet --&gt;|&quot;no&quot;| merr[&quot;Stage error&quot;]
+    meet --&gt;|&quot;yes&quot;| gap{&quot;Resolution numbers&lt;br/&gt;contiguous?&quot;}
+    gap --&gt;|&quot;no&quot;| g1[&quot;Problem for gate G1&quot;]
+    gap --&gt;|&quot;yes&quot;| ground(&quot;Ground every quote on its cited page&lt;br/&gt;then the pages either side:&lt;br/&gt;exact, normalised, fuzzy 95+&quot;)
+    ground --&gt; found{&quot;Quote found?&quot;}
+    found --&gt;|&quot;no&quot;| drop[&quot;Drop the appointment&lt;br/&gt;review item: ungrounded&quot;]
+    found --&gt;|&quot;yes&quot;| keep(&quot;Keep it, with notice evidence:&lt;br/&gt;doc, page, quote&quot;)
+    keep --&gt; out[(&quot;Outputs: meeting, roster entry per director,&lt;br/&gt;seat per appointment, plus the issuer seat&quot;)]</pre
+        >
+      </div>
+      <p>
+        Rules worth knowing: only people named in election or re-election
+        resolutions are on the roster; "Chair: Barratt Redrow plc and ICE Clear
+        Europe" is two appointments; <code>tense</code> (past, current, future)
+        comes from the notice's wording.
+      </p>
+      <hr />
+      <h2 id="3-companies-house">3. Companies House</h2>
+      <p>
+        Code: <code>ch/client.py</code> (client and stage),
+        <code>ch/parse.py</code> (parsers). Card M3.
+      </p>
+      <div class="diagram">
+        <pre class="mermaid">
+flowchart TD
+    start([&quot;For each meeting&quot;]) --&gt; ol(&quot;GET /company/number/officers&lt;br/&gt;every page&quot;)
+    ol --&gt; ok{&quot;Officer list ok?&quot;}
+    ok --&gt;|&quot;no: outage&quot;| una[&quot;Review item ch_unavailable&lt;br/&gt;gate G2 will hold the run&quot;]
+    ok --&gt;|&quot;yes&quot;| each(&quot;Each director on the list&quot;)
+    each --&gt; inoff{&quot;In office on the AGM date?&quot;}
+    inoff --&gt;|&quot;resigned in the year before&quot;| recent(&quot;Keep the issuer record only&lt;br/&gt;explains an unmatched name&quot;)
+    inoff --&gt;|&quot;older or not a director&quot;| skip[&quot;Ignore&quot;]
+    inoff --&gt;|&quot;yes&quot;| apps(&quot;GET /officers/id/appointments&lt;br/&gt;every page&quot;)
+    apps --&gt; types(&quot;Company profile for each appointment&lt;br/&gt;live since the earliest AGM:&lt;br/&gt;its company type&quot;)
+    types --&gt; out[(&quot;officer outputs&lt;br/&gt;name, DOB month and year, appointments&quot;)]
+    recent --&gt; out
+
+    subgraph http[&quot;Every CH request&quot;]
+        direction TB
+        c{&quot;Cached and still fresh?&lt;br/&gt;good until 23:59 that day&quot;} --&gt;|&quot;yes&quot;| hit[&quot;Use it&quot;]
+        c --&gt;|&quot;no&quot;| get(&quot;GET, at most 2 per second&quot;) --&gt; st{&quot;Status&quot;}
+        st --&gt;|&quot;200 / 404&quot;| store[&quot;Cache it: ok / not_found&lt;br/&gt;same answer only moves last_fetched&quot;]
+        st --&gt;|&quot;429 / 5xx&quot;| retry[&quot;Retry with backoff, 5 tries&quot;]
+        retry --&gt;|&quot;still failing&quot;| down[&quot;unavailable: never cached,&lt;br/&gt;never an exception&quot;]
+    end</pre
+        >
+      </div>
+      <p>
+        An outage becomes <code>unavailable</code>, never "no seats": a director
+        whose records can't be read scores REVIEW, and gate G2 holds the run.
+      </p>
+      <hr />
+      <h2 id="4-deduplication">4. Deduplication</h2>
+      <p>
+        Code: <code>dedup/cluster.py</code> (stage),
+        <code>dedup/anchor.py</code> (anchor and expand),
+        <code>dedup/names.py</code>, <code>dedup/tfidf.py</code>. Card M4.
+        Target: 50 notice mentions become 47 people.
+      </p>
+      <div class="diagram">
+        <pre class="mermaid">
+flowchart TD
+    m([&quot;Each roster entry: a name in one notice&quot;]) --&gt; rank(&quot;Rank the issuer&#x27;s directors in office on the AGM date&lt;br/&gt;same surname, titles and honours stripped,&lt;br/&gt;first names scored by 3-gram TF-IDF&quot;)
+    rank --&gt; win{&quot;Clear winner?&lt;br/&gt;score and margin&quot;}
+    win --&gt;|&quot;yes&quot;| anchor[&quot;Anchor: mention to CH officer&lt;br/&gt;with CH evidence&quot;]
+    win --&gt;|&quot;close race&quot;| psp[&quot;Review item&lt;br/&gt;possible_same_person&quot;]
+    win --&gt;|&quot;nobody in office&quot;| former{&quot;A former director&lt;br/&gt;clearly matches?&quot;}
+    former --&gt;|&quot;yes&quot;| fanchor[&quot;Anchor to that record&lt;br/&gt;review item not_in_office&lt;br/&gt;seat will reconcile as stale&quot;]
+    former --&gt;|&quot;no&quot;| unanch[&quot;Review item unanchored&quot;]
+
+    anchor --&gt; search(&quot;Officer search on the CH name&lt;br/&gt;pages read until past the namesakes&quot;)
+    fanchor --&gt; search
+    search --&gt; dob{&quot;Same DOB month and year?&quot;}
+    dob --&gt;|&quot;no&quot;| ign[&quot;Ignore&quot;]
+    dob --&gt;|&quot;yes&quot;| nm{&quot;Name match&quot;}
+    nm --&gt;|&quot;exact&quot;| link[&quot;Link the other record&lt;br/&gt;load its appointments&quot;]
+    nm --&gt;|&quot;variant or initial&quot;| rv[&quot;Review item&lt;br/&gt;possible_same_person&quot;]
+
+    link --&gt; uf
+    anchor --&gt; uf
+    fanchor --&gt; uf
+    subgraph uf[&quot;Cluster: union-find over mentions and officers&quot;]
+        direction TB
+        a1(&quot;Apply analyst must-links first&quot;) --&gt; a2(&quot;Apply links in a fixed order&quot;)
+        a2 --&gt; a3{&quot;Would join a&lt;br/&gt;cannot-link pair?&quot;}
+        a3 --&gt;|&quot;yes&quot;| ref[&quot;Refuse the union&lt;br/&gt;review item&quot;]
+        a3 --&gt;|&quot;no&quot;| join[&quot;Join&quot;]
+    end
+    uf --&gt; people[(&quot;person outputs&lt;br/&gt;person_id = p: + smallest mention id&quot;)]</pre
+        >
+      </div>
+      <p>
+        There is no model here: identity comes from the issuer's officer list
+        and the date of birth, and anything ambiguous goes to the analyst.
+      </p>
+      <hr />
+      <h2 id="5-classification">5. Classification</h2>
+      <p>
+        Code: <code>classify/stage.py</code> (stage),
+        <code>classify/roles.py</code> (rules),
+        <code>classify/research.py</code> (organisation questions),
+        <code>classify/positions.py</code> (roles on firms' own sites). Card M5.
+      </p>
+      <div class="diagram">
+        <pre class="mermaid">
+flowchart TD
+    subgraph A[&quot;Step 1: role rules, free&quot;]
+        direction TB
+        r1(&quot;Each notice seat&#x27;s role title&quot;) --&gt; r2(&quot;M5.1 table: chair, NED, executive director,&lt;br/&gt;job title such as CEO, adviser, trustee&quot;)
+        r2 --&gt; r3(&quot;board seat, chair, executive&lt;br/&gt;yes / no / unknown;&lt;br/&gt;tense: current yes, past no&quot;)
+    end
+
+    subgraph B[&quot;Step 2: organisations&quot;]
+        direction TB
+        o1(&quot;Every org on a seat, plus CH appointments&lt;br/&gt;live on the AGM date&quot;) --&gt; o2{&quot;CH company type private?&lt;br/&gt;ltd, llp and similar&quot;}
+        o2 --&gt;|&quot;yes&quot;| o3[&quot;listed: no&lt;br/&gt;parent from cached research if any&quot;]
+        o2 --&gt;|&quot;no current board seat there&quot;| o4[&quot;Not researched&quot;]
+        o2 --&gt;|&quot;otherwise&quot;| o5(&quot;Web question org_v1:&lt;br/&gt;listed on the AGM date? market?&lt;br/&gt;bonds only? parent?&lt;br/&gt;see section 6&quot;)
+        o5 --&gt; o6[(&quot;org outputs: listed, market, parent&quot;)]
+        o3 --&gt; o6
+    end
+
+    subgraph C[&quot;Step 3: listed status onto seats&quot;]
+        direction TB
+        l1(&quot;Org facts plus policy flags:&lt;br/&gt;AIM counts? bonds only count?&quot;) --&gt; l2(&quot;Each seat&#x27;s listed: yes / no / unknown&lt;br/&gt;an analyst&#x27;s org override wins&quot;)
+    end
+
+    subgraph D[&quot;Step 4: roles still unknown, firm&#x27;s own site only&quot;]
+        direction TB
+        p1(&quot;Seats that could count:&lt;br/&gt;current, listed not no,&lt;br/&gt;board seat, chair or executive unknown&quot;) --&gt; p2(&quot;site_v1: find the firm&#x27;s own website&lt;br/&gt;cited page must be on it and name the firm;&lt;br/&gt;never a news, data or registry site&quot;)
+        p2 --&gt; p3{&quot;Own site found?&quot;}
+        p3 --&gt;|&quot;no&quot;| p4[&quot;Review item site_not_found&lt;br/&gt;role stays unknown&quot;]
+        p3 --&gt;|&quot;yes&quot;| p5(&quot;position_v2: role on the AGM date,&lt;br/&gt;search limited to that site;&lt;br/&gt;facts citing other sites dropped&quot;)
+        p5 --&gt; p6[(&quot;position outputs&lt;br/&gt;used by scoring, section 7&quot;)]
+    end
+
+    A --&gt; B --&gt; C --&gt; D</pre
+        >
+      </div>
+      <p>
+        A person's role is never looked up anywhere but the firm's own site, and
+        a job title alone is never a board seat.
+      </p>
+      <hr />
+      <h2 id="6-web-search">6. Web search</h2>
+      <p>
+        Code: <code>classify/websearch.py</code> (<code>ask</code>,
+        <code>validate</code>), <code>classify/backends.py</code> (provider),
+        <code>classify/prompts.md</code> (prompts), <code>calllog.py</code> (the
+        call record).
+      </p>
+      <div class="diagram">
+        <pre class="mermaid">
+flowchart TD
+    q([&quot;A question: kind, prompt version, inputs&quot;]) --&gt; k(&quot;Cache key: prompt version + model + inputs&quot;)
+    k --&gt; c{&quot;Cached answer&lt;br/&gt;under 7 days old?&quot;}
+    c --&gt;|&quot;yes&quot;| ans[(&quot;Answer&quot;)]
+    c --&gt;|&quot;no, offline&quot;| off[&quot;No answer: unknown&lt;br/&gt;review item&quot;]
+    c --&gt;|&quot;no, live&quot;| model(&quot;Call the model with web search&lt;br/&gt;max 5 searches;&lt;br/&gt;site-limited for role questions&quot;)
+    model --&gt; rec[(&quot;model_calls: prompt, response,&lt;br/&gt;outcome, latency, tokens&quot;)]
+    model --&gt; res{&quot;Result&quot;}
+    res --&gt;|&quot;rate limit, network, 5xx&quot;| unav[&quot;unavailable: unknown&lt;br/&gt;review item, not cached&quot;]
+    res --&gt;|&quot;bad key, search disabled&quot;| raise[&quot;Run fails: expert fixes it&quot;]
+    res --&gt;|&quot;search error or no JSON&quot;| rej[&quot;rejected: unknown&lt;br/&gt;review item, not cached&quot;]
+    res --&gt;|&quot;usable&quot;| store(&quot;Cache it&quot;) --&gt; ans
+
+    ans --&gt; v(&quot;validate: for each fact in the JSON&quot;)
+    v --&gt; v1{&quot;Has a quote, and its URL is one&lt;br/&gt;the search returned in this response?&quot;}
+    v1 --&gt;|&quot;no&quot;| dropf[&quot;Drop it: unknown&lt;br/&gt;review item web_unsourced&quot;]
+    v1 --&gt;|&quot;yes&quot;| v2{&quot;Role question: page on&lt;br/&gt;the firm&#x27;s own site?&quot;}
+    v2 --&gt;|&quot;no&quot;| dropf
+    v2 --&gt;|&quot;yes or not a role question&quot;| keepf[&quot;Keep it, with web evidence:&lt;br/&gt;URL, title, quote&quot;]</pre
+        >
+      </div>
+      <p>
+        Validation runs every time an answer is read, so a stricter rule applies
+        to every cached answer without asking again. The quote itself is not
+        checked against the page text: only that the page came back from the
+        search.
+      </p>
+      <hr />
+      <h2 id="7-recommendations">7. Recommendations</h2>
+      <p>
+        Code: <code>policy/stage.py</code> (stage),
+        <code>policy/reconcile.py</code> (seats against CH),
+        <code>policy/score.py</code> (points and rules),
+        <code>core/tri.py</code> (three-valued logic). Card M6.
+      </p>
+      <div class="diagram">
+        <pre class="mermaid">
+flowchart TD
+    p([&quot;Each person at each of their meetings&quot;]) --&gt; rc(&quot;Reconcile notice seats with CH on the AGM date&quot;)
+    rc --&gt; st{&quot;Seat status&quot;}
+    st --&gt;|&quot;notice current, CH active&quot;| s1[&quot;confirmed: board seat yes&quot;]
+    st --&gt;|&quot;CH resigned before the AGM&quot;| s2[&quot;stale: current unknown&quot;]
+    st --&gt;|&quot;no CH appointment&quot;| s3[&quot;contradiction: current unknown&quot;]
+    st --&gt;|&quot;non-UK org&quot;| s4[&quot;ch_invisible: notice + web facts&quot;]
+    st --&gt;|&quot;notice says past&quot;| s5[&quot;past: never counts&quot;]
+    st --&gt;|&quot;CH-only directorship&quot;| s6[&quot;undisclosed: board yes,&lt;br/&gt;chair and executive unknown&quot;]
+    s1 &amp; s2 &amp; s3 &amp; s4 &amp; s5 &amp; s6 --&gt; pos(&quot;Fill unknown role facts from the&lt;br/&gt;firm&#x27;s own site, section 5 step 4&quot;)
+    pos --&gt; sf(&quot;Apply analyst set-facts last&quot;)
+    sf --&gt; cnt(&quot;counted = board seat AND current&lt;br/&gt;AND listed AND identity&quot;)
+    cnt --&gt; pts(&quot;Points: 1 per counted seat, 2 per chair;&lt;br/&gt;one corporate group counts once, its best seat;&lt;br/&gt;an interval when facts are unknown&quot;)
+    pts --&gt; pr(&quot;points rule = non-executive here&lt;br/&gt;AND points over 4&quot;)
+    cnt --&gt; er(&quot;executive rule = executive at a listed board&lt;br/&gt;AND a counted seat in another group&quot;)
+    pr &amp; er --&gt; v{&quot;points rule OR executive rule&quot;}
+    v --&gt;|&quot;yes&quot;| ag[&quot;AGAINST&quot;]
+    v --&gt;|&quot;no&quot;| fo[&quot;FOR&quot;]
+    v --&gt;|&quot;unknown&quot;| rv[&quot;REVIEW, listing the single facts&lt;br/&gt;that would settle it&quot;]</pre
+        >
+      </div>
+      <p>
+        The vote is FOR or AGAINST only if every way of filling in the unknowns
+        agrees; that is why a REVIEW can always say which fact would settle it
+        (<code>pennant show</code>, <code>pennant review</code>).
+      </p>
+      <hr />
+      <h2 id="8-evidence-freshness">8. Evidence freshness</h2>
+      <p>Code: <code>evidence/freshness.py</code>. Runs after scoring.</p>
+      <div class="diagram">
+        <pre class="mermaid">
+flowchart TD
+    s([&quot;Every Companies House and web citation&lt;br/&gt;on this run&#x27;s people, seats and organisations&quot;]) --&gt; d(&quot;Date it: when the answer was last confirmed&lt;br/&gt;CH: the cache row&#x27;s last fetch;&lt;br/&gt;web: its fetch date&quot;)
+    d --&gt; need(&quot;Date it must be checked on or after:&lt;br/&gt;today if the AGM is still ahead;&lt;br/&gt;the AGM date if it has been held;&lt;br/&gt;a record used at two meetings is held to the later&quot;)
+    need --&gt; q{&quot;Last confirmed before that date?&quot;}
+    q --&gt;|&quot;yes&quot;| flag[&quot;Review item stale_evidence&lt;br/&gt;the vote does not change&quot;]
+    q --&gt;|&quot;no&quot;| ok[&quot;Fresh&quot;]
+    note([&quot;Notice and analyst citations&lt;br/&gt;are never stale&quot;])</pre
+        >
+      </div>
+      <p>
+        A stale citation is a prompt to re-run live before relying on the vote;
+        it never changes the vote by itself.
+      </p>
+      <hr />
+      <h2 id="9-gates-and-publishing">9. Gates and publishing</h2>
+      <p>Code: <code>state/pipeline.py</code>. Card M7.1.</p>
+      <div class="diagram">
+        <pre class="mermaid">
+flowchart TD
+    r([&quot;Stages done&quot;]) --&gt; exc{&quot;Any stage raised?&quot;}
+    exc --&gt;|&quot;yes&quot;| failed[&quot;failed&quot;]
+    exc --&gt;|&quot;no&quot;| g1{&quot;G1 extraction:&lt;br/&gt;resolutions contiguous, and every quote&lt;br/&gt;behind an AGAINST still grounds&quot;}
+    g1 --&gt; g2{&quot;G2 Companies House:&lt;br/&gt;no outage, every issuer has officers&quot;}
+    g2 --&gt; g3{&quot;G3 churn, nightly runs only:&lt;br/&gt;no FOR to AGAINST flip without&lt;br/&gt;a changed input for that person&quot;}
+    g3 --&gt; g4{&quot;G4 completeness:&lt;br/&gt;every roster entry has a vote,&lt;br/&gt;every decision honoured&quot;}
+    g4 --&gt; all{&quot;All pass?&quot;}
+    all --&gt;|&quot;yes&quot;| staged[&quot;staged&quot;]
+    all --&gt;|&quot;no&quot;| held[&quot;held&quot;]
+    staged --&gt;|&quot;--publish&quot;| pub[(&quot;Published pointer moves&quot;)]
+    held --&gt; keep[&quot;Pointer stays:&lt;br/&gt;yesterday&#x27;s votes stand&quot;]
+    failed --&gt; keep
+    pub --&gt; diff(&quot;Diff against the previous published run:&lt;br/&gt;each change tagged with its cause:&lt;br/&gt;a decision, a cache entry, a policy change&quot;)</pre
+        >
+      </div>
+      <p>
+        A run's status is set once. Only a staged run, or an earlier published
+        one for a rollback, can be published; database triggers refuse anything
+        else.
+      </p>
+      <hr />
+      <h2 id="10-modifications">10. Modifications</h2>
+      <p>
+        Code: <code>cli.py</code> and <code>cli_changes.py</code> (commands),
+        <code>state/decisions.py</code> (append-only decisions),
+        <code>state/history.py</code>. Card M8.
+      </p>
+      <div class="diagram">
+        <pre class="mermaid">
+flowchart TD
+    a([&quot;Analyst: merge, split, set-fact or undo&quot;]) --&gt; prev(&quot;Preview: what will be recorded,&lt;br/&gt;who it affects, their current vote&quot;)
+    prev --&gt; conf{&quot;Record it? y/N&lt;br/&gt;-y skips the question&quot;}
+    conf --&gt;|&quot;no&quot;| nothing[&quot;Nothing recorded&quot;]
+    conf --&gt;|&quot;yes&quot;| chk{&quot;Contradicts an active decision?&lt;br/&gt;a must-link against a cannot-link&quot;}
+    chk --&gt;|&quot;yes&quot;| refused[&quot;Refused&quot;]
+    chk --&gt;|&quot;no&quot;| app[(&quot;Append the decision&lt;br/&gt;with author and reason&quot;)]
+    app --&gt; rerun(&quot;Re-run offline from the cache, in seconds&lt;br/&gt;author = analyst, so G3 is skipped&quot;)
+    rerun --&gt; gates{&quot;Gates pass?&quot;}
+    gates --&gt;|&quot;yes&quot;| pub[&quot;Published, diff printed:&lt;br/&gt;names the decision&quot;]
+    gates --&gt;|&quot;no&quot;| held[&quot;held: the decision can&#x27;t be honoured&lt;br/&gt;e.g. merging two people standing at one AGM&quot;]
+    pub --&gt; undo(&quot;pennant undo appends a revoke;&lt;br/&gt;nothing is ever deleted&quot;)
+    undo --&gt; app
+    pub --&gt; hist(&quot;pennant history: every vote change&lt;br/&gt;for one director and why&quot;)</pre
+        >
+      </div>
+      <p>
+        Decisions replay on every run, nightly included: dedup applies
+        must-links and cannot-links, and scoring applies set-facts last, over
+        everything the pipeline found.
+      </p>
+      <hr />
+      <h2 id="11-caching-logging-and-the-nightly-run">
+        11. Caching, logging and the nightly run
+      </h2>
+      <p>
+        Code: <code>core/cache.py</code>, <code>core/db.py</code>,
+        <code>logs.py</code>, <code>calllog.py</code>,
+        <code>scripts/nightly.sh</code>.
+      </p>
+      <div class="diagram">
+        <pre class="mermaid">
+flowchart LR
+    subgraph db[&quot;pennant.db: append-only by database triggers&quot;]
+        cache[(&quot;cache&lt;br/&gt;llamaextract: once per notice&lt;br/&gt;ch: until 23:59 that day&lt;br/&gt;web: 7 days&quot;)]
+        runs[(&quot;runs + run_outputs&lt;br/&gt;every run&#x27;s results&quot;)]
+        decs[(&quot;decisions&quot;)]
+        mc[(&quot;model_calls&lt;br/&gt;every live model call&quot;)]
+    end
+    night([&quot;launchd, 02:00 nightly&quot;]) --&gt; nrun(&quot;pennant run --publish, live&quot;)
+    nrun --&gt; cache
+    nrun --&gt; runs
+    nrun --&gt; mc
+    nrun --&gt; log[(&quot;logs/pennant-run-N.log&lt;br/&gt;stage times, errors with tracebacks,&lt;br/&gt;pages, CH requests, AI tokens&quot;)]
+    runs --&gt; plog(&quot;pennant log: what a run did&quot;)
+    mc --&gt; pcalls(&quot;pennant calls: per prompt and model,&lt;br/&gt;or exported as JSONL&quot;)</pre
+        >
+      </div>
+      <p>
+        A refetch that returns the same answer only moves the cache row's
+        <code>last_fetched</code> date, so an unchanged night adds no rows and
+        publishes an identical snapshot.
+      </p>
+      <p class="note">
+        Generated from the pipeline's code layout; diagrams drawn by Mermaid 11
+        when the page opens (needs internet the first time).
+      </p>
+    </main>
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: "default",
+        flowchart: { htmlLabels: true },
+      });
+    </script>
+  </body>
+</html>

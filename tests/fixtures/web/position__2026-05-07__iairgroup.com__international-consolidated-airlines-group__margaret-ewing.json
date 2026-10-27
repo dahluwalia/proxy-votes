@@ -1,0 +1,86 @@
+{
+ "key": "446bf1cb7defc8b64d894154fcd1c00a146ad74bd3cd2a6b589cd2590432f478",
+ "payload": {
+  "content": [
+   {
+    "query": "iairgroup.com board of directors Margaret Ewing",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "531 days ago",
+      "title": "Board of Directors",
+      "url": "https://www.iairgroup.com/governance/board-of-directors/"
+     },
+     {
+      "page_age": "593 days ago",
+      "title": "Resolutions proposed by the board of directors of International Consolidated",
+      "url": "https://www.iairgroup.com/media/lraiyqqj/proposed-resolutions-agm-2026.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "INTERNATIONAL CONSOLIDATED AIRLINES GROUP, S.A.",
+      "url": "https://www.iairgroup.com/media/sepcnd2a/resolutions.pdf"
+     },
+     {
+      "page_age": "2427 days ago",
+      "title": "86 Chairman\u2019s introduction to corporate governance 88 Board of Directors 90",
+      "url": "https://www.iairgroup.com/media/vnupwdvf/uk-corporate-governance-english.pdf"
+     },
+     {
+      "page_age": "601 days ago",
+      "title": "1 Annual Corporate Governance Report 2024",
+      "url": "https://www.iairgroup.com/media/lkzhy5oz/corporate-governance-report-2024.pdf"
+     },
+     {
+      "page_age": "2070 days ago",
+      "title": "ANNUAL REPORT ON UK CORPORATE GOVERNANCE 1",
+      "url": "https://www.iairgroup.com/media/fn3jynik/uk_corporate_governance_report_2020.pdf"
+     },
+     {
+      "page_age": "1031 days ago",
+      "title": "INTERNATIONAL AIRLINES GROUP Directors\u2019 Remuneration Report 2023",
+      "url": "https://www.iairgroup.com/media/pjdptd5o/directors-remuneration-report-2023.pdf"
+     },
+     {
+      "page_age": "1328 days ago",
+      "title": "INTERNATIONAL AIRLINES GROUP ANNUAL CORPORATE GOVERNANCE REPORT 2022",
+      "url": "https://www.iairgroup.com/media/3gai2odz/uk_corporate_governance_report.pdf"
+     },
+     {
+      "page_age": "173 days ago",
+      "title": "2026 Annual Shareholders\u2019 Meeting Call Notice International Consolidated",
+      "url": "https://www.iairgroup.com/media/erodtaa5/call-notice-agm-2026.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "1 Directors\u2019 Remuneration Report 2024",
+      "url": "https://www.iairgroup.com/media/yasffc3v/iag-directors-remuneration-report-2024.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\n    \"value\": \"yes\",\n    \"url\": \"https://www.iairgroup.com/media/proposed-resolutions-agm-2026.pdf\",\n    \"quote\": \"all the current members of the Board of Directors of the Company except for Ms Nicola Shaw): Mr Javier Ferr\u00e1n, Mr Luis Gallego, Ms Eva Castillo, Ms Margaret Ewing\"\n  },\n  \"capacity\": {\n    \"value\": \"non_executive_director\",\n    \"url\": \"https://www.iairgroup.com/governance/board-of-directors/\",\n    \"quote\": \"Margaret Ewing Non-Executive Director\"\n  },\n  \"start_date\": {\n    \"value\": \"2019-06-20\",\n    \"url\": \"https://www.iairgroup.com/media/lraiyqqj/proposed-resolutions-agm-2026.pdf\",\n    \"quote\": \"Ms Margaret Ewing was appointed as non-executive independent director for the first time on 20 June 2019\"\n  },\n  \"end_date\": {\n    \"value\": null,\n    \"url\": null,\n    \"quote\": null\n  },\n  \"note\": \"She was first appointed on 2019-06-20, which is far more than six months before 2026-05-07. The pages show no end date. The 2026 AGM notice proposes her re-election as non-executive independent director for a one-year term. The board page also gives a 'last appointment' date of 18/06/2026, which differs from the 2026-05-07 meeting date in the question. If she was re-elected then, that would be a renewal, not a new start or an end. I could not confirm the outcome of the 2026 vote from the pages returned. The first URL (proposed-resolutions-agm-2026.pdf) was given without the '/lraiyqqj/' path segment. The full URL as returned in search is https://www.iairgroup.com/media/lraiyqqj/proposed-resolutions-agm-2026.pdf. Quotes are lightly condensed from the PDF text.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:50:12+00:00",
+  "inputs": {
+   "as_of": "2026-05-07",
+   "domain": "iairgroup.com",
+   "org_key": "international-consolidated-airlines-group",
+   "person": "margaret-ewing"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 22576,
+   "output_tokens": 1182,
+   "web_search_requests": 1
+  }
+ }
+}

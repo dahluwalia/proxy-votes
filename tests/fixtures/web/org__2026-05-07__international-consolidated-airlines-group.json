@@ -1,0 +1,256 @@
+{
+ "key": "f91c919ddafe3368c4622d6567c7cb5fa5da631725bdce4dc8118d033b89f146",
+ "payload": {
+  "content": [
+   {
+    "query": "International Consolidated Airlines Group S.A. shares admitted to trading London Stock Exchange Spanish Stock Exchanges ticker IAG",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "IAG annual general meeting 7 May 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "IAG bonds notes admitted to trading Euronext Dublin International Consolidated Airlines Group",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "IAG TAP Air Portugal acquisition OR Air Europa OR Air Europa OR Gatwick OR Spain Spanish stock exchange 2025 2026 news",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "59 days ago",
+      "title": "International Consolidated Airlns Grp SA (IAG) Stock Price & News - Google Finance",
+      "url": "https://www.google.com/finance/quote/IAG:LON"
+     },
+     {
+      "page_age": null,
+      "title": "International Consolidated Airlines Group SA - GBP (IAG) Stock Price Quote Today & Current Price Chart",
+      "url": "https://capital.com/en-int/markets/shares/international-consolidated-airlines-group-sa-gbp-share-price-1"
+     },
+     {
+      "page_age": "168 days ago",
+      "title": "International Airlines Share Price. IAG - Stock Quote, Charts, Trade History, Share Chat, IAG Values. International Consolidated Airlines Group S.a. Ord Eur0.10 (cdi)",
+      "url": "https://www.lse.co.uk/SharePrice.html?shareprice=IAG&share=International-airlines"
+     },
+     {
+      "page_age": "3581 days ago",
+      "title": "IAG Share Price",
+      "url": "https://uk.investing.com/equities/intl.-cons.-air-grp"
+     },
+     {
+      "page_age": null,
+      "title": "International Airlines Group",
+      "url": "https://en.wikipedia.org/wiki/International_Airlines_Group"
+     },
+     {
+      "page_age": "5754 days ago",
+      "title": "Homepage",
+      "url": "https://www.iairgroup.com/"
+     },
+     {
+      "page_age": "238 days ago",
+      "title": "Shares INTERNATIONAL CONSOLIDAT.AIRLINES GROUP today",
+      "url": "https://www.bolsasymercados.es/bme-exchange/en/Prices-and-Markets/Shares/Main-Market/Details/International-Consolidat-Airlines-Group-ES0177542018"
+     },
+     {
+      "page_age": null,
+      "title": "Shareholders",
+      "url": "https://www.iairgroup.com/investors-and-shareholders/shareholders/"
+     },
+     {
+      "page_age": "5 days ago",
+      "title": "IAG launches EUR 500 million buyback: what it means for IAG stock",
+      "url": "https://ad-hoc-news.de/boerse/news/corporate-news/iag-launches-eur-500-million-buyback-what-it-means-for-iag-stock/70380785"
+     },
+     {
+      "page_age": "4 days ago",
+      "title": "J.P. Morgan keeps Buy rating for International Airlines Group stock",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/j-p-morgan-keeps-buy-rating-for-international-airlines-group-stock/70392581"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "2025 Annual General Meeting (\u201cAGM\u201d)",
+      "url": "https://icg.ie/investors/general-meetings/"
+     },
+     {
+      "page_age": null,
+      "title": "IAMGOLD Announces Results of Annual General Meeting of Shareholders",
+      "url": "https://www.newsfilecorp.com/release/296088"
+     },
+     {
+      "page_age": "202 days ago",
+      "title": "Notice of AGM",
+      "url": "https://uk.finance.yahoo.com/news/notice-agm-140000139.html"
+     },
+     {
+      "page_age": "38 days ago",
+      "title": "2026 Notice of Annual General Meeting 1 2026 Notice of Annual General Meeting",
+      "url": "https://announcements.asx.com.au/asxpdf/20260918/pdf/0747pr07n893d6.pdf"
+     },
+     {
+      "page_age": "172 days ago",
+      "title": "2026 Annual Shareholders\u2019 Meeting Call Notice International Consolidated",
+      "url": "https://www.iairgroup.com/media/erodtaa5/call-notice-agm-2026.pdf"
+     },
+     {
+      "page_age": "38 days ago",
+      "title": "IAG releases 2026 AGM notice and shareholder materials - TipRanks.com",
+      "url": "https://www.tipranks.com/news/company-announcements/iag-releases-2026-agm-notice-and-shareholder-materials"
+     },
+     {
+      "page_age": "168 days ago",
+      "title": "International Consolidated Airlines Group Publishes 2026 AGM Notice and Resolutions - TipRanks.com",
+      "url": "https://www.tipranks.com/news/company-announcements/international-consolidated-airlines-group-publishes-2026-agm-notice-and-resolutions"
+     },
+     {
+      "page_age": "172 days ago",
+      "title": "Result of AGM",
+      "url": "https://www.globenewswire.com/news-release/2026/05/07/3290272/0/en/Result-of-AGM.html"
+     },
+     {
+      "page_age": "1359 days ago",
+      "title": "Events",
+      "url": "https://iag.global/iag-events"
+     },
+     {
+      "page_age": "38 days ago",
+      "title": "Insurance Australia Group Releases 2026 AGM Notice with Five Items of Business",
+      "url": "https://kalkine.com.au/news/announcements/insurance-australia-group-releases-2026-agm-notice-with-five-items-of-business"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "151 days ago",
+      "title": "Full settlement of bonds",
+      "url": "https://www.investegate.co.uk/announcement/rns/international-consolidated-airlines-group-sa-cdi---iag/full-settlement-of-bonds-/9590479"
+     },
+     {
+      "page_age": null,
+      "title": "Issue of two tranches of senior unsecured bonds",
+      "url": "https://www.investegate.co.uk/announcement/rns/international-consolidated-airlines-group-sa-cdi---iag/issue-of-two-tranches-of-senior-unsecured-bonds/36148"
+     },
+     {
+      "page_age": "159 days ago",
+      "title": "Issue of senior unsecured bonds",
+      "url": "https://www.investegate.co.uk/announcement/rns/international-consolidated-airlines-group-sa-cdi---iag/issue-of-senior-unsecured-bonds-/9577651"
+     },
+     {
+      "page_age": "149 days ago",
+      "title": "IAG Raises \u20ac1 Billion Through Dual Bond Issue on Euronext Dublin - The Globe and Mail",
+      "url": "https://www.theglobeandmail.com/investing/markets/markets-news/Tipranks/2200814/iag-raises-eur1-billion-through-dual-bond-issue-on-euronext-dublin/"
+     },
+     {
+      "page_age": "2047 days ago",
+      "title": "i INTERNATIONAL CONSOLIDATED AIRLINES GROUP, S.A.",
+      "url": "https://www.iairgroup.com/media/1bahbvif/prospectus-19-march-2021.pdf"
+     },
+     {
+      "page_age": "151 days ago",
+      "title": "IAG completes \u20ac1 billion dual-tranche bond offering By Investing.com",
+      "url": "https://www.investing.com/news/company-news/iag-completes-1-billion-dualtranche-bond-offering-93CH-4714585"
+     },
+     {
+      "page_age": "159 days ago",
+      "title": "IAG Taps Institutional Debt Markets With \u20ac1 Billion Dual-Tranche Bond Issue - TipRanks.com",
+      "url": "https://www.tipranks.com/news/company-announcements/iag-taps-institutional-debt-markets-with-e1-billion-dual-tranche-bond-issue"
+     },
+     {
+      "page_age": "785 days ago",
+      "title": "Debtholders",
+      "url": "https://www.iairgroup.com/investors-and-shareholders/debtholders/"
+     },
+     {
+      "page_age": "151 days ago",
+      "title": "IAG completes \u20ac1 billion dual-tranche bond offering By Investing.com",
+      "url": "https://ca.investing.com/news/stock-market-news/iag-completes-1-billion-dualtranche-bond-offering-93CH-4664129"
+     },
+     {
+      "page_age": "410 days ago",
+      "title": "INTERNATIONAL CONSOLIDATED AIRLINES GROUP, S.A.",
+      "url": "https://ise-prodnr-eu-west-1-data-integration.s3-eu-west-1.amazonaws.com/202509/96ca705c-c36e-4330-adcd-d1762e4c9d17.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "578 days ago",
+      "title": "IAG will consider selling 20% stake in Air Europa - CEO",
+      "url": "https://www.rte.ie/news/business/2025/0327/1504391-iag-will-consider-selling-20-stake-in-air-europa-ceo/"
+     },
+     {
+      "page_age": "645 days ago",
+      "title": "IAG Reiterates Interest In TAP Air Portugal & Eyes Majority Stake",
+      "url": "https://simpleflying.com/iag-reiterates-interest-tap-air-portugal-majority-stake/"
+     },
+     {
+      "page_age": "577 days ago",
+      "title": "IAG Weighs Selling Air Europa Stake And Eyes TAP Acquisition - Finimize",
+      "url": "https://finimize.com/content/iag-weighs-selling-air-europa-stake-and-eyes-tap-acquisition"
+     },
+     {
+      "page_age": "201 days ago",
+      "title": "IAG ends TAP interest as Portugal studies proposals - FlightGlobal",
+      "url": "https://www.flightglobal.com/strategy/2026/04/iag-ends-tap-interest-as-portugal-studies-proposals/"
+     },
+     {
+      "page_age": "212 days ago",
+      "title": "IAG Share Price: Comprehensive 2026 Investor Guide - Manchester Reporter",
+      "url": "https://manchesterreporter.co.uk/iag-share-price/"
+     },
+     {
+      "page_age": "360 days ago",
+      "title": "TAP Air Portugal sale: These companies are in the running to buy",
+      "url": "https://aerospaceglobalnews.com/news/tap-air-portugal-sale-who-will-buy/"
+     },
+     {
+      "page_age": "219 days ago",
+      "title": "IAG rumoured to withdraw from TAP Air Portugal sale",
+      "url": "https://aerospaceglobalnews.com/news/tap-sale-conditions-iag-rumoured-withdraw/"
+     },
+     {
+      "page_age": null,
+      "title": "British Airways parent IAG drops bid for Air Europa",
+      "url": "https://gulfnews.com/business/aviation/british-airways-parent-iag-drops-bid-for-air-europa-1.1722541640170"
+     },
+     {
+      "page_age": null,
+      "title": "British Airways parent IAG drops bid for Air Europa",
+      "url": "https://gulfnews.com/amp/business/aviation/british-airways-parent-iag-drops-bid-for-air-europa-1.1722541640170"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"International Consolidated Airlines Group, S.A.\", \"url\": \"https://www.iairgroup.com/media/erodtaa5/call-notice-agm-2026.pdf\", \"quote\": \"Shareholders\u2019 Meeting of International Consolidated Airlines Group, S.A.\"},\n  \"country\": {\"value\": \"Spain\", \"url\": \"https://www.iairgroup.com/\", \"quote\": \"It is a Spanish registered company with shares trading on the London and Spanish stock exchanges.\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://www.iairgroup.com/\", \"quote\": \"It is a Spanish registered company with shares trading on the London and Spanish stock exchanges.\"},\n  \"equity_listed\": {\"value\": \"yes\", \"url\": \"https://www.iairgroup.com/investors-and-shareholders/shareholders/\", \"quote\": \"IAG shares are traded on the London Stock Exchange and on the stock exchanges of Madrid, Barcelona, Bilbao and Valencia\"},\n  \"exchange\": {\"value\": \"London Stock Exchange (also the Spanish stock exchanges: Madrid, Barcelona, Bilbao, Valencia)\", \"url\": \"https://www.iairgroup.com/investors-and-shareholders/shareholders/\", \"quote\": \"IAG shares are traded on the London Stock Exchange and on the stock exchanges of Madrid, Barcelona, Bilbao and Valencia\"},\n  \"ticker\": {\"value\": \"IAG\", \"url\": \"https://capital.com/en-int/markets/shares/international-consolidated-airlines-group-sa-gbp-share-price-1\", \"quote\": \"IAG\u2019s shares are traded on both the London and Madrid Stock Exchanges under the ticker symbol IAG.\"},\n  \"market_segment\": {\"value\": \"main\", \"url\": \"https://www.google.com/finance/quote/IAG:LON\", \"quote\": \"It is a constituent of the FTSE 100\"},\n  \"debt_listed\": {\"value\": \"yes\", \"url\": \"https://www.iairgroup.com/investors-and-shareholders/debtholders/\", \"quote\": \"Listing: Euronext Dublin.\"},\n  \"is_subsidiary\": {\"value\": \"no\", \"url\": \"https://uk.investing.com/equities/intl.-cons.-air-grp\", \"quote\": \"IAG itself is a publicly listed company with no single controlling shareholder\"},\n  \"parent_name\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"parent_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"events\": [],\n  \"note\": \"The legal entity is the listed Spanish holding company, not British Airways, Iberia or any other subsidiary. Its equity is on the London Stock Exchange (shown as CDIs, FTSE 100 constituent, so Main Market) and the Spanish exchanges (Mercado Continuo, IBEX 35). Debt: senior unsecured bonds are on the regulated market of Euronext Dublin, including the 2027 bonds and the 2030 bonds issued Sept 2025. I found no listing, delisting, demerger or takeover of IAG itself between 2023-05-07 and 2026-05-07, so the events list is empty. IAG ended its planned Air Europa acquisition in 2024 and kept a 20% stake. I could not confirm the exact date from the sources, and that was IAG acquiring, not being acquired. I did not find a source dated on or near 2026-05-07 that confirms trading on that exact day. The 2026 AGM call notice I found refers to a date in June 2026, not 7 May, so the AGM date given in the question could not be confirmed for IAG. The listing evidence comes from pages dated close to that period and from 2026 news. parent_listed is 'unknown' only because there is no parent.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:31:30+00:00",
+  "inputs": {
+   "as_of": "2026-05-07",
+   "org_key": "international-consolidated-airlines-group"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 40904,
+   "output_tokens": 3004,
+   "web_search_requests": 4
+  }
+ }
+}

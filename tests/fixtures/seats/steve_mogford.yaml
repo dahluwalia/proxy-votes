@@ -1,0 +1,44 @@
+# Intertek NED who becomes Chair at the conclusion of the 2026 AGM. The policy flag
+# chair_designate_counts_as_chair decides whether Intertek is 1 or 2 points: 3-4 in total,
+# FOR either way.
+name: Steve Mogford
+case: [H13]
+roster:
+  - {meeting: intertek, resolution_no: 12, name: Steve Mogford,
+     role_text_at_issuer: Non-Executive Director, role_type_at_issuer: non_executive_director,
+     coverage: structured}
+seats:
+  - {meeting: intertek, org_name: Intertek Group plc, role_text: Non-Executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: intertek, org_name: Intertek Group plc,
+     role_text: Chair from the conclusion of the 2026 AGM, role_type: chair, board_seat: "yes",
+     chair: "yes", executive: "no", current: unknown}
+  - {meeting: intertek, org_name: Costain Group PLC, role_text: Non-Executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: intertek, org_name: QinetiQ Group plc, role_text: Senior Independent Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: intertek, org_name: United Utilities Group PLC, role_text: Chief Executive Officer,
+     role_type: officer_title, board_seat: unknown, chair: "no", executive: "yes", current: "no"}
+  - {meeting: intertek, org_name: G4S plc, role_text: Senior Independent Non-Executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "no"}
+ch:
+  - officer_id: fx-mogford
+    name: MOGFORD, Stephen Robert
+    appointments:
+      - {company_number: "04267576", company_name: INTERTEK GROUP PLC, company_type: plc,
+         role: director, appointed_on: 2025-01-01}
+      - {company_number: "01393773", company_name: COSTAIN GROUP PLC, company_type: plc,
+         role: director, appointed_on: 2024-01-01}
+      - {company_number: "04586941", company_name: QINETIQ GROUP PLC, company_type: plc,
+         role: director, appointed_on: 2022-03-01}
+      - {company_number: "06559020", company_name: UNITED UTILITIES GROUP PLC, company_type: plc,
+         role: director, appointed_on: 2011-01-01, resigned_on: 2023-03-31}
+orgs:
+  - {canonical_name: Costain Group PLC, org_type: company, listed: "yes", equity_listing: "yes", market: LSE Main Market}
+  - {canonical_name: QinetiQ Group plc, org_type: company, listed: "yes", equity_listing: "yes", market: LSE Main Market}
+expect:
+  intertek: {vote: FOR, points: [3, 3]}  # chair_designate_counts_as_chair "no": 1 pt at Intertek

@@ -1,0 +1,138 @@
+{
+ "key": "b82a9532ffd6f02749ddfa95e93aac6aa1c8c19ad3ed9ba8c2bda6d8e098e3b2",
+ "payload": {
+  "content": [
+   {
+    "query": "Asthma + Lung UK registered charity company limited by guarantee",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Asthma + Lung UK annual report trustees registered charity number company number",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "671 days ago",
+      "title": "Asthma + Lung UK",
+      "url": "https://www.asthmaandlung.org.uk/"
+     },
+     {
+      "page_age": "3217 days ago",
+      "title": "Asthma + Lung UK",
+      "url": "https://www.amrc.org.uk/asthma-lung-uk"
+     },
+     {
+      "page_age": null,
+      "title": "ASTHMA UK AND BRITISH LUNG PARTNERSHIP LIMITED overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/13549370"
+     },
+     {
+      "page_age": null,
+      "title": "Asthma + Lung UK - JustGiving",
+      "url": "https://www.justgiving.com/asthmalunguk"
+     },
+     {
+      "page_age": null,
+      "title": "Asthma and Lung UK - 326730 - Charity Commission",
+      "url": "https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/326730/full-print"
+     },
+     {
+      "page_age": null,
+      "title": "Asthma and Lung UK",
+      "url": "https://www.oscr.org.uk/about-charities/search-the-register/charity-details?number=SC038415"
+     },
+     {
+      "page_age": null,
+      "title": "Asthma UK",
+      "url": "https://www.oscr.org.uk/about-charities/search-the-register/charity-details?number=SC039322"
+     },
+     {
+      "page_age": null,
+      "title": "Asthma %2B Lung UK",
+      "url": "https://en.wikipedia.org/wiki/Asthma_%2B_Lung_UK"
+     },
+     {
+      "page_age": null,
+      "title": "Asthma + Lung UK : Home",
+      "url": "https://join.aluk.org.uk/"
+     },
+     {
+      "page_age": null,
+      "title": "Asthma and Lung UK \u2014 Fundraiso",
+      "url": "https://www.fundraiso.com/en/organisations/asthma-and-lung-uk"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Asthma UK Trustees\u2019 Annual Report and Financial Statements 2019-20 Page 1",
+      "url": "https://www.asthmaandlung.org.uk/sites/default/files/2023-02/a201-auk-annual-report-and-financial-statements-website-upload.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Annual Report 2019\u201320\b 1 Annual Report 2019\u201320",
+      "url": "https://www.asthmaandlung.org.uk/sites/default/files/2023-02/AUKBLF_AR_website_upload.pdf"
+     },
+     {
+      "page_age": "4395 days ago",
+      "title": "Company number: 1863614 Charity number: 326730 Charity no. Scotland SC038415",
+      "url": "https://www.asthmaandlung.org.uk/sites/default/files/BLF-annual-report-and-financial-statements-2014-FINAL-v14.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Annual reports + accounts",
+      "url": "https://www.asthmaandlung.org.uk/about-us/annual-reports-accounts"
+     },
+     {
+      "page_age": null,
+      "title": "2021\u201322 Annual report and financial statements",
+      "url": "https://www.asthmaandlung.org.uk/sites/default/files/2023-03/A+LUK%202021-22%20Annual%20Report%20and%20financial%20statements.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Asthma and Lung UK",
+      "url": "https://www.fundraisingregulator.org.uk/directory/asthma-and-lung-uk"
+     },
+     {
+      "page_age": null,
+      "title": "Privacy policy",
+      "url": "https://www.asthmaandlung.org.uk/policies/privacy-policy"
+     },
+     {
+      "page_age": "2675 days ago",
+      "title": "DRF 1 Company number England & Wales: 01863614",
+      "url": "https://www.asthmaandlung.org.uk/sites/default/files/2023-02/BLF_accounts_for_the_year_ending_30_June_2019.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Find that Charity",
+      "url": "https://findthatcharity.uk/orgid/GB-CHC-326730"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"Asthma and Lung UK\", \"url\": \"https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/326730/full-print\", \"quote\": \"Asthma and Lung UK - 326730 - Charity Commission\"},\n  \"country\": {\"value\": \"United Kingdom\", \"url\": \"https://www.asthmaandlung.org.uk/\", \"quote\": \"Asthma and Lung UK is a company limited by guarantee 01863614 (England and Wales).\"},\n  \"org_type\": {\"value\": \"charity\", \"url\": \"https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/326730/full-print\", \"quote\": \"Organisation type: Charitable company\"},\n  \"equity_listed\": {\"value\": \"no\", \"url\": \"https://www.asthmaandlung.org.uk/\", \"quote\": \"Asthma and Lung UK is a company limited by guarantee 01863614 (England and Wales).\"},\n  \"exchange\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"ticker\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"market_segment\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"debt_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"is_subsidiary\": {\"value\": \"no\", \"url\": \"https://www.asthmaandlung.org.uk/sites/default/files/2023-03/A+LUK%202021-22%20Annual%20Report%20and%20financial%20statements.pdf\", \"quote\": \"Asthma + Lung UK has four wholly owned subsidiaries: BLF Services Limited, Asthma Enterprises, Asthma UK\"},\n  \"parent_name\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"parent_listed\": {\"value\": \"no\", \"url\": null, \"quote\": null},\n  \"events\": [],\n  \"note\": \"I chose the charitable company Asthma and Lung UK (company 01863614; charity 326730 in England and Wales, SC038415 in Scotland, 1177 in the Isle of Man). The brand is 'Asthma + Lung UK'. A separate dormant entity, 'Asthma UK and British Lung Partnership Limited' (company 13549370), is a different organisation. The charity is a company limited by guarantee, so it has no share capital and no listed equity. Exchange, ticker and market segment do not apply. It is the parent of its trading subsidiaries and is not itself a subsidiary. It has no parent, so parent_listed 'no' means there is no listed parent. I found no listing, delisting, demerger or takeover events in the three years before 2026-05-20. The charity merger of 1 January 2020 and the 2022 rename are outside that window and are not listing events. I found no source on debt securities, so debt_listed is 'unknown'. The sources are not dated close to 2026-05-20, but the legal structure is stable.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:21:12+00:00",
+  "inputs": {
+   "as_of": "2026-05-20",
+   "org_key": "asthma-lung-uk"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 22393,
+   "output_tokens": 1782,
+   "web_search_requests": 2
+  }
+ }
+}

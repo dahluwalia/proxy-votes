@@ -1,0 +1,300 @@
+{
+ "key": "0d8f57aed6f800b2cd99877c1daf0635440ce9107912640bfb918310bfed7d7f",
+ "payload": {
+  "content": [
+   {
+    "query": "Lloyds Banking Group plc annual general meeting 2026 results of AGM",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Lloyds Banking Group share information London Stock Exchange LLOY ticker",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Lloyds Banking Group acquisition Curve OR Schroders Personal Wealth OR Tusker completed",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "165 days ago",
+      "title": "Result of AGM",
+      "url": "https://www.investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/result-of-agm/9569184"
+     },
+     {
+      "page_age": "165 days ago",
+      "title": "Lloyds Banking : AGM 2026 Resolutions Passed",
+      "url": "https://www.marketscreener.com/news/lloyds-banking-agm-2026-resolutions-passed-ce7f5bdddc8ff127"
+     },
+     {
+      "page_age": "187 days ago",
+      "title": "Lloyds Banking Group PLC Share News, Key Dates and Documents",
+      "url": "https://www.fidelity.co.uk/factsheet-data/factsheet/GB0008706128-lloyds-banking-group/news-key-dates-and-documents"
+     },
+     {
+      "page_age": "227 days ago",
+      "title": "Lloyds Banking : Notice of AGM",
+      "url": "https://www.marketscreener.com/news/lloyds-banking-notice-of-agm-ce7e5fd3d88ffe2d"
+     },
+     {
+      "page_age": "165 days ago",
+      "title": "Lloyds Banking Group AGM resolutions approved",
+      "url": "https://www.stocktitan.net/sec-filings/LYG/6-k-lloyds-banking-group-plc-current-report-foreign-issuer-af240e42ec32.html"
+     },
+     {
+      "page_age": "227 days ago",
+      "title": "Lloyds Banking Group PLC - Notice of Annual General Meeting 2026",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/shareholder-information/shareholder-meetings/2026-agm/2026-lbg-notice-of-agm.pdf"
+     },
+     {
+      "page_age": "172 days ago",
+      "title": "2026 Annual General Meeting (\u2018AGM\u2019) Lloyds Banking Group (the \u2018Company\u2019)",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/shareholder-information/shareholder-meetings/2026-agm/2026-lbg-shareholder-faq.pdf"
+     },
+     {
+      "page_age": "14 days ago",
+      "title": "Financial calendar - Lloyds Banking Group plc",
+      "url": "https://www.lloydsbankinggroup.com/investors/shareholder-information/financial-calendar.html"
+     },
+     {
+      "page_age": null,
+      "title": "lloyds banking group schedules 2024 agm",
+      "url": "https://www.tipranks.com/news/company-announcements/lloyds-banking-group-schedules-2024-agm"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "14 days ago",
+      "title": "Lloyds Share Price. LLOY - Stock Quote, Charts, Trade History, Share Chat, LLOY Values. Lloyds Banking Group Plc Ord 10p",
+      "url": "https://www.lse.co.uk/SharePrice.html?shareprice=LLOY&share=lloyds"
+     },
+     {
+      "page_age": "187 days ago",
+      "title": "Lloyds Banking Share Price, Forecast & Financials (LON:LLOY)",
+      "url": "https://www.stockopedia.com/share-prices/lloyds-banking-LON:LLOY/"
+     },
+     {
+      "page_age": "447 days ago",
+      "title": "Lloyds Banking Group plc - Stocks",
+      "url": "https://www.tradingview.com/symbols/LSE-LLOY/"
+     },
+     {
+      "page_age": "2075 days ago",
+      "title": "LLOYDS BANKING GROUP PLC LLOY Stock",
+      "url": "https://www.londonstockexchange.com/stock/LLOY/lloyds-banking-group-plc/company-page?lang=en"
+     },
+     {
+      "page_age": "3581 days ago",
+      "title": "Lloyds Share Price",
+      "url": "https://uk.investing.com/equities/lloyds-banking-grp"
+     },
+     {
+      "page_age": "0 days ago",
+      "title": "Lloyds Banking Share Price. LLOY - Stock Quote, Charts, Trade History, Share Chat, Financials. Lloyds Banking Group Plc",
+      "url": "https://uk.advfn.com/stock-market/london/lloyds-banking-LLOY/share-price"
+     },
+     {
+      "page_age": "0 days ago",
+      "title": "RBC cuts target for Lloyds Banking stock to GBp 115.00",
+      "url": "https://ad-hoc-news.de/boerse/news/corporate-news/rbc-cuts-target-for-lloyds-banking-stock-to-gbp-115-00/70415326"
+     },
+     {
+      "page_age": "14 days ago",
+      "title": "Shareholder information - Lloyds Banking Group plc",
+      "url": "https://www.lloydsbankinggroup.com/investors/shareholder-information.html"
+     },
+     {
+      "page_age": "0 days ago",
+      "title": "Lloyds reported GBP 1,666 million Q3 profit. Lloyds Banking stock gains 1.67 percent",
+      "url": "https://ad-hoc-news.de/boerse/news/corporate-news/lloyds-reported-gbp-1-666-million-q3-profit-lloyds-banking-stock-gains-1-67-percent/70413671"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group plc Company Information",
+      "url": "https://simplywall.st/stocks/ch/banks/brn-lloy/lloyds-banking-group-shares/information"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "382 days ago",
+      "title": "Lloyds banking group acquires remaining stake in Schroders personal wealth",
+      "url": "https://www.cityam.com/lloyds-banking-group-acquires-remaining-stake-in-schroders-personal-wealth/"
+     },
+     {
+      "page_age": "382 days ago",
+      "title": "Schroders Personal Wealth Acquisition",
+      "url": "https://www.investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/schroders-personal-wealth-acquisition/9160785"
+     },
+     {
+      "page_age": "382 days ago",
+      "title": "Lloyds Banking Group takes full ownership of Schroders Personal Wealth",
+      "url": "https://www.marketscreener.com/news/lloyds-banking-group-takes-full-ownership-of-schroders-personal-wealth-ce7d5bd3de8ff527"
+     },
+     {
+      "page_age": "382 days ago",
+      "title": "Lloyds Banking Group takes over full ownership of Schroders Personal Wealth",
+      "url": "https://www.moneymarketing.co.uk/news/lloyds-banking-group-takes-over-full-ownership-of-schroders-personal-wealth/"
+     },
+     {
+      "page_age": "251 days ago",
+      "title": "Lloyds Takes Full Control of Schroders Personal Wealth, to Rebrand as Lloyds Wealth - Asian Wealth Management and Asian Private Banking",
+      "url": "https://hubbis.com/news/lloyds-takes-full-control-of-schroders-personal-wealth-to-rebrand-as-lloyds-wealth"
+     },
+     {
+      "page_age": "55 days ago",
+      "title": "List of 5 Acquisitions by Lloyds Banking Group (Sep 2026) - Tracxn",
+      "url": "https://tracxn.com/d/acquisitions/acquisitions-by-lloyds-banking-group/__Zcu_z4nLlqJt-hopvBxDO9zx9zrlLACoq7L6S-DAp3Q"
+     },
+     {
+      "page_age": "89 days ago",
+      "title": "2026 half year results News release",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/lloyds-banking-group-plc/2026/q2/2026-lbg-hy-results.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "lloyds banking group completes acquisition of schroders personal wealth",
+      "url": "https://www.tipranks.com/news/company-announcements/lloyds-banking-group-completes-acquisition-of-schroders-personal-wealth"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group, Schroders to Reportedly Abandon Wealth Management Joint Venture",
+      "url": "https://www.itiger.com/news/2572554517"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Lloyds Banking Group completes acquisition of Curve 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Lloyds Banking Group plc incorporated in Scotland registered office Edinburgh debt securities listed London Stock Exchange NYSE",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group plc - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001160106/000165495426006988/a4589o.htm"
+     },
+     {
+      "page_age": "341 days ago",
+      "title": "Lloyds Bank completes controversial acquisition of Curve",
+      "url": "https://www.finextra.com/newsarticle/46934/lloyds-bank-completes-controversial-acquisition-of-curve"
+     },
+     {
+      "page_age": "341 days ago",
+      "title": "Curve Acquisition",
+      "url": "https://www.investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/curve-acquisition/9242567"
+     },
+     {
+      "page_age": "148 days ago",
+      "title": "Lloyds Banking Group plc acquired Curve UK Limited.",
+      "url": "https://www.marketscreener.com/news/lloyds-banking-group-plc-acquired-curve-uk-limited-ce7f50ddd98df22d"
+     },
+     {
+      "page_age": "340 days ago",
+      "title": "Lloyds to acquire Curve to enhance digital wallet platform",
+      "url": "https://finance.yahoo.com/news/lloyds-acquire-curve-enhance-digital-101342502.html"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group plc - Form 6-K - FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160106/000165495425013245/a0067i.htm"
+     },
+     {
+      "page_age": "340 days ago",
+      "title": "Lloyds buys fintech Curve; Global Payments teams with Uber",
+      "url": "https://www.americanbanker.com/payments/news/lloyds-buys-fintech-curve-global-payments-teams-with-uber"
+     },
+     {
+      "page_age": null,
+      "title": "Curve (payment card)",
+      "url": "https://en.wikipedia.org/wiki/Curve_(payment_card)"
+     },
+     {
+      "page_age": "342 days ago",
+      "title": "Lloyds Completes Curve Purchase Amid Shareholder Disputes Over Valuation",
+      "url": "https://www.bitget.com/news/detail/12560605069054"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "LLOYDS BANKING GROUP plc",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160106/000093041320000534/c95250_20f.htm"
+     },
+     {
+      "page_age": "3798 days ago",
+      "title": "PROSPECTUS LLOYDS BANKING GROUP plc DEBT SECURITIES CAPITAL SECURITIES",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160106/000095010316013906/crt_dp65916-f3asr.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group plc - Form 424B2 - FY2018",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001160106/000095010318003437/dp88849_424b2.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group plc is registered in Scotland ...",
+      "url": "https://committees.parliament.uk/publications/47786/documents/249652/default/"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group plc - Form 424B2 - FY2018",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001160106/000095010318003374/dp88174_424b2.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group plc - Form 424B2 - FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160106/000095010325013643/dp230026_424b2.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group",
+      "url": "https://en.wikipedia.org/wiki/Lloyds_Banking_Group"
+     },
+     {
+      "page_age": "110 days ago",
+      "title": "\u200b\u200bLegal entities",
+      "url": "https://www.lloydsbank.com/help-guidance/legal-information/legal-entities.html"
+     },
+     {
+      "page_age": "206 days ago",
+      "title": "Lloyds Banking Group PLC (LYG) Stock Price & News - Google Finance",
+      "url": "https://www.google.com/finance/quote/LYG:NYSE?hl=en"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"Lloyds Banking Group plc\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1160106/000093041320000534/c95250_20f.htm\", \"quote\": \"Lloyds Banking Group plc was incorporated as a public limited company and registered in Scotland under the UK Companies Act 1985\"},\n  \"country\": {\"value\": \"United Kingdom\", \"url\": \"https://committees.parliament.uk/publications/47786/documents/249652/default/\", \"quote\": \"Lloyds Banking Group plc is registered in Scotland no.\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1160106/000093041320000534/c95250_20f.htm\", \"quote\": \"Lloyds Banking Group plc was incorporated as a public limited company\"},\n  \"equity_listed\": {\"value\": \"yes\", \"url\": \"https://www.lloydsbankinggroup.com/investors/shareholder-information.html\", \"quote\": \"The stock symbol (ticker code) for Lloyds Banking Group plc on the London Stock Exchange is LLOY.\"},\n  \"exchange\": {\"value\": \"London Stock Exchange\", \"url\": \"https://www.lloydsbankinggroup.com/investors/shareholder-information.html\", \"quote\": \"The stock symbol (ticker code) for Lloyds Banking Group plc on the London Stock Exchange is LLOY.\"},\n  \"ticker\": {\"value\": \"LLOY\", \"url\": \"https://www.lloydsbankinggroup.com/investors/shareholder-information.html\", \"quote\": \"The stock symbol (ticker code) for Lloyds Banking Group plc on the London Stock Exchange is LLOY.\"},\n  \"market_segment\": {\"value\": \"main\", \"url\": \"https://www.londonstockexchange.com/stock/LLOY/lloyds-banking-group-plc/company-page?lang=en\", \"quote\": \"Main Market\"},\n  \"debt_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"is_subsidiary\": {\"value\": \"no\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1160106/000093041320000534/c95250_20f.htm\", \"quote\": \"Lloyds Banking Group plc acts as a holding company which also issues capital and other securities to capitalise and fund the activities of the Group.\"},\n  \"parent_name\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"parent_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"events\": [\n    {\"date\": \"2025-10-09\", \"event\": \"Lloyds acquired the remaining 49.9% of Schroders Personal Wealth (now Lloyds Wealth), taking full ownership. This was a deal by Lloyds, not a takeover of Lloyds.\", \"url\": \"https://www.investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/schroders-personal-wealth-acquisition/9160785\", \"quote\": \"From the date of the acquisition, 9 October, SPW will be a fully owned subsidiary of the Group\"},\n    {\"date\": \"2025-11-19\", \"event\": \"Lloyds announced it would acquire Curve, a fintech digital wallet business\", \"url\": \"https://www.investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/curve-acquisition/9242567\", \"quote\": \"Lloyds Banking Group is today announcing the acquisition of Curve, a London based fintech operating an innovative digital wallet platform.\"},\n    {\"date\": \"2026-05\", \"event\": \"Lloyds completed the Curve acquisition. The day in May 2026 was not found in the sources.\", \"url\": \"https://www.sec.gov/Archives/edgar/data/0001160106/000165495426006988/a4589o.htm\", \"quote\": \"The acquisition of Curve, completed in May 2026, utilised 7 basis points of capital.\"}\n  ],\n  \"note\": \"The legal name is Lloyds Banking Group plc, the listed parent company. Its registered office is in Edinburgh and it is registered in Scotland, so the country is given as United Kingdom. The 2026 AGM was held on 14 May 2026, not 9 July 2026 (source: https://www.investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/result-of-agm/9569184). Equity was listed on the LSE Main Market on 2026-07-09. That rests on LSE and company pages from Oct 2026, with no sign of any delisting. The ordinary shares are also a US-listed ADR on the NYSE (LYG), and several preference shares trade on the LSE. debt_listed is unknown because no source in my results confirmed a specific listed bond or note as at 2026-07-09. An aggregator page from 2024 shows a subordinated note listed on the LSE, but I did not rely on it. is_subsidiary is 'no' because the group describes itself as the holding company and no parent appears in any source. I did not find a source that says outright that it has no parent. The events list covers only acquisitions I found. I did not find or search for any listing, delisting, demerger or takeover of Lloyds itself in the three years to 2026-07-09. I did not check other smaller deals, such as Embark.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:16:30+00:00",
+  "inputs": {
+   "as_of": "2026-07-09",
+   "org_key": "lloyds-banking-group"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 80722,
+   "output_tokens": 3757,
+   "web_search_requests": 5
+  }
+ }
+}

@@ -1,0 +1,305 @@
+{
+ "key": "3d61767fe43c4781b906825cf1e4423903df7bc157064a83cf1799ef042fc850",
+ "payload": {
+  "content": [
+   {
+    "query": "HBOS plc wholly owned subsidiary Lloyds Banking Group annual report",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "HBOS plc debt securities listed London Stock Exchange preference shares",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "HBOS",
+      "url": "https://en.wikipedia.org/wiki/HBOS"
+     },
+     {
+      "page_age": "606 days ago",
+      "title": "HBOS PLC Lloyds Banking Group - 2024 Annual Report ...",
+      "url": "https://www.stockopedia.com/share-prices/lloyds-banking-LON:LLOY/news/reg-hbos-plc-lloyds-banking-group-2024-annual-report-and-accounts-urn:newsml:reuters.com:20250227:nRSa7153Ya/"
+     },
+     {
+      "page_age": "970 days ago",
+      "title": "HBOS plc Report and Accounts 2023 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2023/q4/2023-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "2055 days ago",
+      "title": "HBOS plc Report and Accounts 2020 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2020/2020-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "1706 days ago",
+      "title": "HBOS plc Report and Accounts 2021 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2021/full-year/2021-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "606 days ago",
+      "title": "HBOS plc Report and Accounts 2024 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2024/q4/2024-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "242 days ago",
+      "title": "HBOS plc Report and Accounts 2025 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q4/2025-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "1329 days ago",
+      "title": "HBOS plc Report and Accounts 2022 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2022/full-year/2022-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "2491 days ago",
+      "title": "Classification: Public HBOS FINANCIAL SERVICES LIMITED ANNUAL REPORT AND",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/other-subsidiaries/2019/2019-hbos-fs-annual-report.pdf"
+     },
+     {
+      "page_age": "5359 days ago",
+      "title": "HBOS plc Report and Accounts 2011 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/archive/2011/2011-hbos-ra.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group plc",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160106/000095010321019569/dp163469_424b2.htm"
+     },
+     {
+      "page_age": "6087 days ago",
+      "title": "EliScholar",
+      "url": "https://elischolar.library.yale.edu/cgi/viewcontent.cgi?article=5130&context=ypfs-documents2"
+     },
+     {
+      "page_age": "1811 days ago",
+      "title": "LBG-0001 John Banes +1 212 450 4116 john.banes@davispolk.com davispolk.com",
+      "url": "https://www.sec.gov/files/lloyds-banking-group-plc-incoming-letter-111021.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160106/000093041309002523/c57184_20f.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Hbos 6%33(regs) Share Price. 64KQ - Stock Quote, Charts, Trade History, Share Chat, 64KQ Values. Hbos Plc 6.00% Sub Nts 01/11/33 $ (regs)",
+      "url": "https://www.lse.co.uk/SharePrice.html?shareprice=64KQ&share=Hbos-Plc"
+     },
+     {
+      "page_age": "2258 days ago",
+      "title": "HBOS plc Stock (HBOS) - Quote London S.E.- MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/HBOS-PLC-4003592/"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group",
+      "url": "https://en.wikipedia.org/wiki/Lloyds_Banking_Group"
+     },
+     {
+      "page_age": null,
+      "title": "Hbos Share Dividend history for HBOS - ADVFN UK",
+      "url": "https://uk.advfn.com/stock-market/london/hbos-HBOS/dividends"
+     },
+     {
+      "page_age": "6549 days ago",
+      "title": "Preference Shares",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/fixed-income-investors/capital-issuance/preference-shares/usg5533waa56-us539439ac38.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "HBOS plc 2025 annual report debt securities admitted to trading London Stock Exchange subordinated notes outstanding",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "HBOS plc Companies House registered office Edinburgh company number SC218813 plc",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group plc",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160106/000095010321019569/dp163469_424b2.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Document",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160106/000116010622000008/lbgexhibit2d2021.htm"
+     },
+     {
+      "page_age": "6740 days ago",
+      "title": "PROSPECTUS HBOS plc as Issuer and Guarantor Bank of Scotland plc",
+      "url": "https://www.rns-pdf.londonstockexchange.com/rns/4044U_1-2008-5-14.pdf"
+     },
+     {
+      "page_age": "167 days ago",
+      "title": "a0359e",
+      "url": "https://www.sec.gov/Archives/edgar/data/1089113/000165495426004696/a0359e.htm"
+     },
+     {
+      "page_age": "242 days ago",
+      "title": "HBOS plc Report and Accounts 2025 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q4/2025-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "581 days ago",
+      "title": "a8579b",
+      "url": "https://www.sec.gov/Archives/edgar/data/1089113/000165495425003195/a8579b.htm"
+     },
+     {
+      "page_age": "459 days ago",
+      "title": "HBOS plc 2025 Half-Year Results 24 July 2025 Member of the Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q2/2025-hbos-hy-results.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "6-K 1 a2424a.htm ISSUANCE OF SUBORDINATED UNSECURED NOTES a2424a",
+      "url": "https://www.sec.gov/Archives/edgar/data/1089113/000165495425002578/a2424a.htm"
+     },
+     {
+      "page_age": null,
+      "title": "EX-10.9 13 dp160844_ex1009.htm EXHIBIT 10.9",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160106/000095010321017609/dp160844_ex1009.htm"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "HBOSi 19 January 2009 r1Trj \\tL The Mound Edinburgh EHI IYZ United States",
+      "url": "https://www.sec.gov/Archives/edgar/vprr/0904/09045724.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Hbos Plc - Company Profile - Endole",
+      "url": "https://open.endole.co.uk/insight/company/SC218813-hbos-plc"
+     },
+     {
+      "page_age": null,
+      "title": "HBOS",
+      "url": "https://en.wikipedia.org/wiki/HBOS"
+     },
+     {
+      "page_age": null,
+      "title": "Hbos Plc",
+      "url": "https://companieshouse.report/Company/Hbos+Plc-SC218813"
+     },
+     {
+      "page_age": null,
+      "title": "HBOS PLC - Payment Practices",
+      "url": "https://wp.paymentcheck.co.uk/company-search/SC218813/hbos-plc"
+     },
+     {
+      "page_age": "1329 days ago",
+      "title": "HBOS plc Report and Accounts 2022 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2022/full-year/2022-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "970 days ago",
+      "title": "HBOS plc Report and Accounts 2023 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2023/q4/2023-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "1706 days ago",
+      "title": "HBOS plc Report and Accounts 2021 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2021/full-year/2021-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "242 days ago",
+      "title": "HBOS plc Report and Accounts 2025 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q4/2025-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "459 days ago",
+      "title": "HBOS plc 2025 Half-Year Results 24 July 2025 Member of the Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q2/2025-hbos-hy-results.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "HBOS plc 2026 half-year results OR annual report 2025 listed debt securities Official List",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "88 days ago",
+      "title": "2026 half year results",
+      "url": "https://www.investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/2026-half-year-results/9696395"
+     },
+     {
+      "page_age": "88 days ago",
+      "title": "REG - HBOS PLC Lloyds Banking Group - 2026 half year results \u2014 TradingView News",
+      "url": "https://www.tradingview.com/news/reuters.com,2026-07-30:newsml_RSd5713Oa:0-reg-hbos-plc-lloyds-banking-group-2026-half-year-results/"
+     },
+     {
+      "page_age": "88 days ago",
+      "title": "REG - Bank of Scotland Plc Lloyds Banking Group Bank of Scotland Halifax PLC HBOS Treas Serv - 2026 half year results \u2014 TradingView News",
+      "url": "https://www.tradingview.com/news/reuters.com,2026-07-30:newsml_RSd5720Oa:0-reg-bank-of-scotland-plc-lloyds-banking-group-bank-of-scotland-halifax-plc-hbos-treas-serv-2026-half-year-results/"
+     },
+     {
+      "page_age": "459 days ago",
+      "title": "HBOS plc 2025 Half-Year Results 24 July 2025 Member of the Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q2/2025-hbos-hy-results.pdf"
+     },
+     {
+      "page_age": "242 days ago",
+      "title": "HBOS plc Report and Accounts 2025 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q4/2025-hbos-annual-report.pdf"
+     },
+     {
+      "page_age": "33 days ago",
+      "title": "Financial downloads - Lloyds Banking Group plc",
+      "url": "https://www.lloydsbankinggroup.com/investors/financial-downloads.html"
+     },
+     {
+      "page_age": null,
+      "title": "6-K 1 a3253s.htm 2025 HALF-YEAR RESULTS a3253s",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160106/000165495425008460/a3253s.htm"
+     },
+     {
+      "page_age": null,
+      "title": "6-K 1 a7413x.htm 2024 HALF-YEAR RESULTS - PART 2 OF 2 a7413x",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160106/000165495424009406/a7413x.htm"
+     },
+     {
+      "page_age": null,
+      "title": "6-K 1 a8401t.htm 2022 HALF-YEAR RESULTS - PART 2 OF 2 a8401t",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160106/000165495422010094/a8401t.htm"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"HBOS plc\", \"url\": \"https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q2/2025-hbos-hy-results.pdf\", \"quote\": \"HBOS plc (the Company) and its subsidiaries (together, the Group) provide a wide range of banking and financial\"},\n  \"country\": {\"value\": \"United Kingdom\", \"url\": \"https://companieshouse.report/Company/Hbos+Plc-SC218813\", \"quote\": \"Country of Origin \u00b7 United Kingdom\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://companieshouse.report/Company/Hbos+Plc-SC218813\", \"quote\": \"Public Limited Company Active\"},\n  \"equity_listed\": {\"value\": \"no\", \"url\": \"https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q4/2025-hbos-annual-report.pdf\", \"quote\": \"The Company is a wholly owned subsidiary of Lloyds Bank plc, which holds all\"},\n  \"exchange\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"ticker\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"market_segment\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"debt_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"is_subsidiary\": {\"value\": \"yes\", \"url\": \"https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q4/2025-hbos-annual-report.pdf\", \"quote\": \"The Company is a wholly owned subsidiary within the Lloyds Banking Group group of companies.\"},\n  \"parent_name\": {\"value\": \"Lloyds Banking Group plc\", \"url\": \"https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/hbos-plc/2025/q2/2025-hbos-hy-results.pdf\", \"quote\": \"The Company\u2019s ultimate parent undertaking and controlling party is Lloyds Banking Group plc which is incorporated in Scotland.\"},\n  \"parent_listed\": {\"value\": \"yes\", \"url\": \"https://en.wikipedia.org/wiki/Lloyds_Banking_Group\", \"quote\": \"LSE: LLOY; NYSE: LYG; FTSE 100 component;\"},\n  \"events\": [],\n  \"note\": \"Entity chosen: HBOS plc (Companies House no. SC218813, registered in Scotland, registered office The Mound, Edinburgh). It is an intermediate holding company. Lloyds Bank plc holds all of its ordinary shares, and Lloyds Banking Group plc is the ultimate parent. Its ordinary shares were delisted on 19 January 2009 (Yale-hosted HBOS 2009 report: admission to trading on the London Stock Exchange was cancelled), which is outside the 3-year window. I found no listing, delisting, demerger or takeover events for HBOS plc between 2023-07-09 and 2026-07-09, so the events list is empty. Debt listing is unknown. A 2021 SEC filing said HBOS plc 6.00% Subordinated Notes due 2033 were admitted to the FCA Official List and traded on the LSE Regulated Market. HBOS plc still publishes results through RNS. I found no source confirming that any HBOS plc debt was still admitted to trading on 2026-07-09. Its subordinated liabilities fell sharply in H1 2026, so some notes may have been redeemed. Market segment is not applicable because the equity is unlisted. Parent_listed refers to Lloyds Banking Group plc (LSE: LLOY, per Wikipedia, a secondary source).\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:31:33+00:00",
+  "inputs": {
+   "as_of": "2026-07-09",
+   "org_key": "hbos"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 105353,
+   "output_tokens": 3754,
+   "web_search_requests": 5
+  }
+ }
+}

@@ -1,0 +1,137 @@
+{
+ "key": "9fc09c8b1a2005dbe579ae521abfb8b7e9e3d2ae982f27d4c8512ad09917aa60",
+ "payload": {
+  "content": [
+   {
+    "query": "British American Business Inc. of New York and London",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "FC022630 British American Business Inc Companies House",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "British American Business INC. Of New York And London - Company Profile - Endole",
+      "url": "https://open.endole.co.uk/insight/company/FC022630-british-american-business-inc-of-new-york-and-london"
+     },
+     {
+      "page_age": null,
+      "title": "BRITISH AMERICAN BUSINESS INC. OF NEW YORK AND LONDON - UK Establishments - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC022630/ukestablishments"
+     },
+     {
+      "page_age": null,
+      "title": "BritishAmerican Business - Brand Profile - Endole",
+      "url": "https://open.endole.co.uk/insight/brand/58770-britishamerican-business"
+     },
+     {
+      "page_age": null,
+      "title": "British American Business Inc. of New York And London Company Profile",
+      "url": "https://www.dnb.com/business-directory/company-profiles.british_american_business_inc_of_new_york_and_london.6134ed7dd3da815b7fc15d79786acd15.html"
+     },
+     {
+      "page_age": null,
+      "title": "BritishAmerican Business, Inc. of New York & London (A Not-For- ...",
+      "url": "https://www.babinc.org/wp-content/uploads/2025-British-American-Business-FS-FINAL.pdf"
+     },
+     {
+      "page_age": "36 days ago",
+      "title": "BritishAmerican Business",
+      "url": "https://www.babinc.org/"
+     },
+     {
+      "page_age": "383 days ago",
+      "title": "US Membership - BritishAmerican Business",
+      "url": "https://www.babinc.org/us-membership/"
+     },
+     {
+      "page_age": "105 days ago",
+      "title": "Our Team - BritishAmerican Business",
+      "url": "https://www.babinc.org/our-team/"
+     },
+     {
+      "page_age": "143 days ago",
+      "title": "BRITISH AMERICAN BUSINESS INC. OF NEW YORK AND LONDON (FC022630) - UK Business Directory",
+      "url": "https://www.gbrbusiness.com/company/British-American-Business-Inc-Of-New-York-And-London"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "BRITISH AMERICAN BUSINESS INC. OF NEW YORK AND LONDON overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC022630"
+     },
+     {
+      "page_age": null,
+      "title": "BRITISH AMERICAN BUSINESS INC. OF NEW YORK AND LONDON - UK Establishments - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC022630/ukestablishments"
+     },
+     {
+      "page_age": null,
+      "title": "BRITISH AMERICAN BUSINESS INC. OF NEW YORK AND LONDON filing history - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC022630/filing-history"
+     },
+     {
+      "page_age": "214 days ago",
+      "title": "Privacy Policy - BritishAmerican Business",
+      "url": "https://www.babinc.org/privacy-policy/"
+     },
+     {
+      "page_age": null,
+      "title": "British American Business INC. Of New York And London - Company Profile - Endole",
+      "url": "https://open.endole.co.uk/insight/company/FC022630-british-american-business-inc-of-new-york-and-london"
+     },
+     {
+      "page_age": null,
+      "title": "Sean Liam DOYLE personal appointments - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/officers/lRWjHoz26x-b8oFYlzaXRXnpWds/appointments"
+     },
+     {
+      "page_age": null,
+      "title": "British American Business Inc. of New York And London Company Profile",
+      "url": "https://www.dnb.com/business-directory/company-profiles.british_american_business_inc_of_new_york_and_london.6134ed7dd3da815b7fc15d79786acd15.html"
+     },
+     {
+      "page_age": null,
+      "title": "British American Business Inc. of New York and London \u00b7 52 Vanderbilt Avenue, 20th Floor, New York, UNITED STATES",
+      "url": "https://opengovuk.com/company/FC022630"
+     },
+     {
+      "page_age": "143 days ago",
+      "title": "BRITISH AMERICAN BUSINESS INC. OF NEW YORK AND LONDON (FC022630) - UK Business Directory",
+      "url": "https://www.gbrbusiness.com/company/British-American-Business-Inc-Of-New-York-And-London"
+     },
+     {
+      "page_age": null,
+      "title": "British American Business Inc. Of New York And London, 52 Vanderbilt Avenue, 20th Floor, New York, Ny10017 Usa, United States",
+      "url": "https://company-datas.com/companies/british-american-business-inc-of-new-york-and-london"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.babinc.org\",\n    \"url\": \"https://www.babinc.org/privacy-policy/\",\n    \"quote\": \"BritishAmerican Business (BRITISH AMERICAN BUSINES INC OF NEW YORK AND LONDON) is the data controller responsible for your personal data.\"\n  },\n  \"note\": \"The privacy policy on babinc.org gives Companies House number FC022630, which matches. The quote copies the page's own spelling, 'BUSINES'. Directory sites such as Endole and D&B also list babinc.org as the organisation's website.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:51:55+00:00",
+  "inputs": {
+   "org_key": "british-american-business-inc-of-new-york-and-london"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 20067,
+   "output_tokens": 326,
+   "web_search_requests": 2
+  }
+ }
+}

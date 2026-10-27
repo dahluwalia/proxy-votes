@@ -1,0 +1,78 @@
+{
+ "key": "b3246cdd70526ebed515d9976146d2e1b10831f9aa2f2f2a74f552f6c6c8171a",
+ "payload": {
+  "content": [
+   {
+    "query": "Reckitt Benckiser Group plc board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "756 days ago",
+      "title": "Reckitt Benckiser Group plc: Governance, Directors and Executives & Committees - MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/RECKITT-BENCKISER-GROUP-P-9590106/company-governance/"
+     },
+     {
+      "page_age": null,
+      "title": "Reckitt Benckiser Group plc: Governance, Directors and Executives & Committees - MarketScreener India",
+      "url": "https://in.marketscreener.com/quote/stock/RECKITT-BENCKISER-GROUP-P-9590106/company-governance/"
+     },
+     {
+      "page_age": "236 days ago",
+      "title": "Reckitt Benckiser Group PLC Directorate Change",
+      "url": "https://www.reckitt.com/news/reckitt-benckiser-group-plc-directorate-change/"
+     },
+     {
+      "page_age": "619 days ago",
+      "title": "Reckitt Benckiser Group plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/RECKITT-BENCKISER-GROUP-P-9590106/company/"
+     },
+     {
+      "page_age": "132 days ago",
+      "title": "Reckitt appoints two new non-executive directors",
+      "url": "https://boardagenda.com/2026/06/17/reckitt-appoints-two-new-non-executive-directors/"
+     },
+     {
+      "page_age": null,
+      "title": "RECKITT BENCKISER GROUP PLC - Form F-6EF - FY2020",
+      "url": "https://www.sec.gov/Archives/edgar/data/1420798/000119380520001191/e619954_f6ef-rbg.htm"
+     },
+     {
+      "page_age": "699 days ago",
+      "title": "Reckitt Benckiser Group Plc Strengthens Board With NED Appointments",
+      "url": "https://www.directorstalkinterviews.com/reckitt-benckiser-group-plc-strengthens-board-with-ned-appointments/4121179101"
+     },
+     {
+      "page_age": null,
+      "title": "RECKITT BENCKISER GROUP PLC - Companies House directors, PSC & filings",
+      "url": "https://registrum.co.uk/company/06270876"
+     },
+     {
+      "page_age": null,
+      "title": "Board of Directors - Reckitt Benckiser",
+      "url": "https://www.yumpu.com/en/document/view/39677163/board-of-directors-reckitt-benckiser"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.reckitt.com\",\n    \"url\": \"https://www.reckitt.com/news/reckitt-benckiser-group-plc-directorate-change/\",\n    \"quote\": \"Reckitt Benckiser Group plc (the \u201cCompany\u201d or \u201cReckitt\u201d) today announces the appointment of Harry Kirsch\"\n  },\n  \"note\": \"reckitt.com is Reckitt's own corporate site. The quoted page is a Reckitt press release on its board changes. I did not check the Companies House number against reckitt.com. The only source that listed the number was a registry page for the same company name.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:47:20+00:00",
+  "inputs": {
+   "org_key": "reckitt-benckiser-group"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 13143,
+   "output_tokens": 276,
+   "web_search_requests": 1
+  }
+ }
+}

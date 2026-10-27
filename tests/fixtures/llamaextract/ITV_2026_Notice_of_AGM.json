@@ -1,0 +1,1775 @@
+{
+  "cache_key": "6d163caaf33f9a0aeabbf983878e4550a9feb0914673a3f9f988851895ba9735",
+  "config": {
+    "cite_sources": true,
+    "extraction_target": "per_doc",
+    "system_prompt": "You are reading a UK company's Notice of Annual General Meeting to record which directors stand for election and what other appointments the document says they hold.\n\n1. Directors are only the people named in director election or re-election resolutions; use the resolution number. Ignore people stepping down, company secretaries and anyone else named (the chair signing a letter, a shareholder advocate, a retiring or departing director, a successor who is not standing).\n2. One appointment per organisation and role: \"Chair: Barratt Redrow plc and ICE Clear Europe\" is two appointments.\n3. tense: past for previously, formerly, until, retired, was; future for will, from the conclusion of the AGM; current otherwise.\n4. section: current_appointments under headings like \"Key current appointments\" (also \"Other key appointments\", \"Current principal external appointments\", \"External appointments\"); otherwise narrative.\n5. coverage: structured if there is a current-appointments list (even one that says \"None\"); prose for narrative only; none if there is no biography in this document (for example, when it points to the Annual Report instead).\n6. quote: copy the exact words from the document. Never paraphrase, and never infer an organisation or role that isn't written.\n\nAlso:\n- Appointments are roles at organisations other than the company holding this AGM. The director's own board and committee roles at that company go in role_at_company, not in appointments. Do include named subsidiaries, joint ventures and other group companies.\n- Include appointments the biography says the director held in the past (tense past), as well as current and future ones.\n- A heading followed by \"None\" means no appointments; never invent one.\n- For a compound list, each appointment's quote is the whole line that names it: Barratt Redrow and ICE Clear Europe both get \"Chair: Barratt Redrow plc and ICE Clear Europe\". For narrative, quote the sentence or clause that names the role.\n- name: as written in the resolution, including titles and honours.\n- role_at_company: the role at the company holding this AGM as written in this document (e.g. \"Independent Non-executive Director\", \"Group CFO and COO\"); null if the document does not state it.\n- company_number: the registered number as printed. agm_date: YYYY-MM-DD.\n",
+    "tier": "agentic",
+    "version": "2026-10-26"
+  },
+  "doc": "ITV_2026_Notice_of_AGM.pdf",
+  "pdf_sha256": "98e716db1e63d1406d3d50a4dd56864c9b9becc4d9c9907eff321d95be18965f",
+  "recorded_at": "2026-10-26T21:11:57+00:00",
+  "response": {
+    "configuration": {
+      "advanced_citations": true,
+      "cite_sources": true,
+      "confidence_scores": false,
+      "data_schema": {
+        "properties": {
+          "agm_date": {
+            "description": "Date of the Annual General Meeting as YYYY-MM-DD.",
+            "type": "string"
+          },
+          "company_name": {
+            "description": "Name of the company holding the AGM, e.g. 'Tesco PLC'.",
+            "type": "string"
+          },
+          "company_number": {
+            "description": "Companies House registered number as printed, e.g. '00445790'.",
+            "type": "string"
+          },
+          "directors": {
+            "description": "Only people named in director election or re-election resolutions.",
+            "items": {
+              "properties": {
+                "appointments": {
+                  "description": "Roles at other organisations, current, past or future. One entry per organisation and role.",
+                  "items": {
+                    "properties": {
+                      "organisation": {
+                        "description": "One organisation, exactly as named, e.g. 'Barratt Redrow plc'.",
+                        "type": "string"
+                      },
+                      "quote": {
+                        "description": "The exact words from the document that state this appointment, copied verbatim (the whole line for a compound list).",
+                        "type": "string"
+                      },
+                      "role": {
+                        "description": "The role held there, as written, e.g. 'Chair', 'Non-executive director', 'Chief executive officer', 'Trustee'.",
+                        "type": "string"
+                      },
+                      "section": {
+                        "description": "current_appointments if listed under a heading like 'Key current appointments'; otherwise narrative.",
+                        "enum": [
+                          "current_appointments",
+                          "narrative"
+                        ],
+                        "type": "string"
+                      },
+                      "tense": {
+                        "description": "past for previously/formerly/until/retired/was; future for will/from the conclusion of the AGM; current otherwise.",
+                        "enum": [
+                          "current",
+                          "past",
+                          "future"
+                        ],
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "organisation",
+                      "role",
+                      "tense",
+                      "section",
+                      "quote"
+                    ],
+                    "type": "object"
+                  },
+                  "type": "array"
+                },
+                "coverage": {
+                  "description": "structured if the biography has a current-appointments list (even 'None'); prose if narrative only; none if no biography in this document.",
+                  "enum": [
+                    "structured",
+                    "prose",
+                    "none"
+                  ],
+                  "type": "string"
+                },
+                "name": {
+                  "description": "Name as written in the resolution, including titles and honours.",
+                  "type": "string"
+                },
+                "resolution_no": {
+                  "description": "Number of the resolution electing or re-electing this director.",
+                  "type": "integer"
+                },
+                "role_at_company": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "description": "Role at the company holding this AGM, as written in this document; null if not stated."
+                }
+              },
+              "required": [
+                "resolution_no",
+                "name",
+                "role_at_company",
+                "coverage",
+                "appointments"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "company_name",
+          "company_number",
+          "agm_date",
+          "directors"
+        ],
+        "type": "object"
+      },
+      "disable_cache": false,
+      "extract_version": "2.6",
+      "extraction_target": "per_doc",
+      "granular_bboxes": [],
+      "max_pages": null,
+      "model_policy": null,
+      "parse_config_id": null,
+      "parse_tier": null,
+      "sheet_names": null,
+      "spreadsheet_mode": false,
+      "system_prompt": "You are reading a UK company's Notice of Annual General Meeting to record which directors stand for election and what other appointments the document says they hold.\n\n1. Directors are only the people named in director election or re-election resolutions; use the resolution number. Ignore people stepping down, company secretaries and anyone else named (the chair signing a letter, a shareholder advocate, a retiring or departing director, a successor who is not standing).\n2. One appointment per organisation and role: \"Chair: Barratt Redrow plc and ICE Clear Europe\" is two appointments.\n3. tense: past for previously, formerly, until, retired, was; future for will, from the conclusion of the AGM; current otherwise.\n4. section: current_appointments under headings like \"Key current appointments\" (also \"Other key appointments\", \"Current principal external appointments\", \"External appointments\"); otherwise narrative.\n5. coverage: structured if there is a current-appointments list (even one that says \"None\"); prose for narrative only; none if there is no biography in this document (for example, when it points to the Annual Report instead).\n6. quote: copy the exact words from the document. Never paraphrase, and never infer an organisation or role that isn't written.\n\nAlso:\n- Appointments are roles at organisations other than the company holding this AGM. The director's own board and committee roles at that company go in role_at_company, not in appointments. Do include named subsidiaries, joint ventures and other group companies.\n- Include appointments the biography says the director held in the past (tense past), as well as current and future ones.\n- A heading followed by \"None\" means no appointments; never invent one.\n- For a compound list, each appointment's quote is the whole line that names it: Barratt Redrow and ICE Clear Europe both get \"Chair: Barratt Redrow plc and ICE Clear Europe\". For narrative, quote the sentence or clause that names the role.\n- name: as written in the resolution, including titles and honours.\n- role_at_company: the role at the company holding this AGM as written in this document (e.g. \"Independent Non-executive Director\", \"Group CFO and COO\"); null if the document does not state it.\n- company_number: the registered number as printed. agm_date: YYYY-MM-DD.\n",
+      "target_pages": null,
+      "tier": "agentic",
+      "validators": null,
+      "version": "2.6"
+    },
+    "configuration_id": null,
+    "created_at": "2026-10-26T21:10:41.081711Z",
+    "document_input_value": "ef3c2bc9-69ab-415a-a4b2-ace68045100d",
+    "error_message": null,
+    "extract_metadata": {
+      "field_metadata": {
+        "document_metadata": {
+          "agm_date": {
+            "citation": [
+              {
+                "bounding_boxes": [
+                  {
+                    "h": 6.819999999999993,
+                    "w": 40.57000000000001,
+                    "x": 90.98,
+                    "y": 137.61
+                  }
+                ],
+                "matching_text": "7 May 2026",
+                "page": 3,
+                "page_dimensions": {
+                  "height": 841.332,
+                  "width": 594.835
+                }
+              }
+            ]
+          },
+          "company_name": {
+            "citation": [
+              {
+                "bounding_boxes": [
+                  {
+                    "h": 7.1200000000000045,
+                    "w": 24.480000000000004,
+                    "x": 96.13,
+                    "y": 117.31
+                  }
+                ],
+                "matching_text": "ITV plc",
+                "page": 3,
+                "page_dimensions": {
+                  "height": 841.332,
+                  "width": 594.835
+                }
+              }
+            ]
+          },
+          "company_number": {
+            "citation": [
+              {
+                "bounding_boxes": [
+                  {
+                    "h": 5.419999999999959,
+                    "w": 35.04999999999998,
+                    "x": 103.9,
+                    "y": 793.26
+                  }
+                ],
+                "matching_text": "04967001",
+                "page": 2,
+                "page_dimensions": {
+                  "height": 841.332,
+                  "width": 594.835
+                }
+              }
+            ]
+          },
+          "directors": [
+            {
+              "appointments": [
+                {
+                  "organisation": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 5.710000000000036,
+                            "w": 39.72000000000003,
+                            "x": 228.12,
+                            "y": 419.81
+                          }
+                        ],
+                        "matching_text": "Haleon PLC",
+                        "page": 10,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  },
+                  "quote": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 29.046065472364425,
+                            "w": 241.0045599332452,
+                            "x": 31.36209830703214,
+                            "y": 418.8943963623047
+                          }
+                        ],
+                        "matching_text": "She is currently Chief Financial Officer at Haleon PLC where she has been heavily involved in developing the global strategy, digital capabilities and processes.",
+                        "page": 10,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  },
+                  "role": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 5.7099999999999795,
+                            "w": 77.10999999999999,
+                            "x": 140.65,
+                            "y": 419.81
+                          }
+                        ],
+                        "matching_text": "Chief Financial Officer",
+                        "page": 10,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "coverage": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 86.23652999999993,
+                        "w": 246.66455791335105,
+                        "x": 32.08217064544651,
+                        "y": 389.11605000000003
+                      }
+                    ],
+                    "matching_text": "directors.0.coverage",
+                    "page": 10,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 5.7099999999999795,
+                        "w": 38.019999999999996,
+                        "x": 94.98,
+                        "y": 312.3
+                      }
+                    ],
+                    "matching_text": "Dawn Allen",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 5.199999999999989,
+                        "w": 4.799999999999997,
+                        "x": 97.11,
+                        "y": 301.46
+                      }
+                    ],
+                    "matching_text": "4",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "role_at_company": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 26.291625,
+                        "w": 144.10679929266135,
+                        "x": 32.08217064544651,
+                        "y": 348.101115
+                      }
+                    ],
+                    "matching_text": "directors.0.role_at_company",
+                    "page": 10,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "coverage": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 59.94490500000003,
+                        "w": 233.51612732095492,
+                        "x": 32.08217064544651,
+                        "y": 527.4099974999999
+                      }
+                    ],
+                    "matching_text": "directors.1.coverage",
+                    "page": 10,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 5.7099999999999795,
+                        "w": 46.280000000000015,
+                        "x": 84.3,
+                        "y": 338.55
+                      }
+                    ],
+                    "matching_text": "Helen Ashton",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 5.300000000000011,
+                        "w": 3.980000000000004,
+                        "x": 97.17,
+                        "y": 327.71
+                      }
+                    ],
+                    "matching_text": "5",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "role_at_company": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 7.486940995931625,
+                        "w": 88.48275642499328,
+                        "x": 31.888036721963438,
+                        "y": 493.8255376417637
+                      }
+                    ],
+                    "matching_text": "Non-executive Director",
+                    "page": 10,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "coverage": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 65.20323,
+                        "w": 246.66455791335105,
+                        "x": 32.08217064544651,
+                        "y": 634.153995
+                      }
+                    ],
+                    "matching_text": "directors.2.coverage",
+                    "page": 10,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 5.7099999999999795,
+                        "w": 81.14999999999999,
+                        "x": 94.98,
+                        "y": 364.8
+                      }
+                    ],
+                    "matching_text": "Edward Bonham Carter",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 5.420000000000016,
+                        "w": 4.060000000000002,
+                        "x": 97.26,
+                        "y": 353.85
+                      }
+                    ],
+                    "matching_text": "6",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "role_at_company": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 8.801502187013625,
+                        "w": 107.41648618012667,
+                        "x": 31.62506751449779,
+                        "y": 601.3582879035473
+                      }
+                    ],
+                    "matching_text": "Senior Independent Director",
+                    "page": 10,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "appointments": [
+                {
+                  "organisation": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 6.309990000000005,
+                            "w": 27.87467285587973,
+                            "x": 401.81603890362516,
+                            "y": 218.48340375
+                          }
+                        ],
+                        "matching_text": "directors.3.appointments.0.organisation",
+                        "page": 10,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  },
+                  "quote": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 29.046065472364425,
+                            "w": 240.741608453244,
+                            "x": 289.5972595204413,
+                            "y": 217.76347514176368
+                          }
+                        ],
+                        "matching_text": "He is the founder of Qubit, the leading provider of e-commerce personalisation technology, and prior to founding Qubit, spent five years working at Google.",
+                        "page": 10,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  },
+                  "role": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 5.710000000000008,
+                            "w": 27.70999999999998,
+                            "x": 364.72,
+                            "y": 218.54
+                          }
+                        ],
+                        "matching_text": "founder",
+                        "page": 10,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  },
+                  "tense": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 6.309990000000005,
+                            "w": 15.252179487179435,
+                            "x": 373.9413660477454,
+                            "y": 218.48340375
+                          }
+                        ],
+                        "matching_text": "directors.3.appointments.0.tense",
+                        "page": 10,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "coverage": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 38.122856249999984,
+                        "w": 245.34971485411143,
+                        "x": 289.79141025641024,
+                        "y": 236.624625
+                      }
+                    ],
+                    "matching_text": "directors.3.coverage",
+                    "page": 10,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 5.7099999999999795,
+                        "w": 52.08000000000001,
+                        "x": 94.63,
+                        "y": 391.05
+                      }
+                    ],
+                    "matching_text": "Graham Cooke",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 5.199999999999989,
+                        "w": 3.6700000000000017,
+                        "x": 97.09,
+                        "y": 380.21
+                      }
+                    ],
+                    "matching_text": "7",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "role_at_company": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 37.071191250000005,
+                        "w": 120.4396242263484,
+                        "x": 289.79141025641024,
+                        "y": 106.74399749999999
+                      }
+                    ],
+                    "matching_text": "directors.3.role_at_company",
+                    "page": 10,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "coverage": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 85.44778125,
+                        "w": 238.77549955791335,
+                        "x": 289.79141025641024,
+                        "y": 334.69238625
+                      }
+                    ],
+                    "matching_text": "directors.4.coverage",
+                    "page": 10,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 5.7099999999999795,
+                        "w": 58.31000000000002,
+                        "x": 94.42,
+                        "y": 417.29
+                      }
+                    ],
+                    "matching_text": "Andrew Cosslett",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 5.420000000000016,
+                        "w": 4.099999999999994,
+                        "x": 97.26,
+                        "y": 406.34
+                      }
+                    ],
+                    "matching_text": "8",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "role_at_company": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 36.54535875000001,
+                        "w": 136.21774093722368,
+                        "x": 289.79141025641024,
+                        "y": 283.4237175
+                      }
+                    ],
+                    "matching_text": "directors.4.role_at_company",
+                    "page": 10,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "appointments": [
+                {
+                  "organisation": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 6.649999999999977,
+                            "w": 42.870000000000005,
+                            "x": 343.41,
+                            "y": 501.04
+                          }
+                        ],
+                        "matching_text": "Deloitte LLP",
+                        "page": 10,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  },
+                  "quote": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 49.027706490039826,
+                            "w": 242.31942369803787,
+                            "x": 289.33429031297567,
+                            "y": 470.1630851712227
+                          }
+                        ],
+                        "matching_text": "Margaret has the wide-ranging skills and expertise across financial and capital markets that has come with previous roles, including being a FTSE 100 CFO, an executive member of the Board of Deloitte LLP, and a member (and chair) of Audit Committees at several FTSE 100 and other high-profile companies.",
+                        "page": 10,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  },
+                  "role": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 18.792397916793824,
+                            "w": 240.47863924577834,
+                            "x": 289.5972595204413,
+                            "y": 490.1446760416031
+                          }
+                        ],
+                        "matching_text": "executive member of the Board",
+                        "page": 10,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "coverage": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 116.73481500000003,
+                        "w": 242.72002873563224,
+                        "x": 289.79141025641024,
+                        "y": 429.6051525
+                      }
+                    ],
+                    "matching_text": "directors.5.coverage",
+                    "page": 10,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 7.139999999999986,
+                        "w": 53.42999999999999,
+                        "x": 94.98,
+                        "y": 443.63
+                      }
+                    ],
+                    "matching_text": "Margaret Ewing",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 5.420000000000016,
+                        "w": 4.079999999999998,
+                        "x": 97.21,
+                        "y": 432.59
+                      }
+                    ],
+                    "matching_text": "9",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "role_at_company": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 7.486940995931625,
+                        "w": 88.7457610873878,
+                        "x": 289.860228727907,
+                        "y": 438.87603737998006
+                      }
+                    ],
+                    "matching_text": "Non-executive Director",
+                    "page": 10,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "appointments": [
+                {
+                  "organisation": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 6.961096460580825,
+                            "w": 42.98920762568712,
+                            "x": 490.24232163012033,
+                            "y": 616.8703506653309
+                          }
+                        ],
+                        "matching_text": "directors.6.appointments.0.organisation",
+                        "page": 10,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  },
+                  "quote": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 38.773988787174225,
+                            "w": 243.89723894283176,
+                            "x": 289.33429031297567,
+                            "y": 596.3628651123047
+                          }
+                        ],
+                        "matching_text": "Marjorie has extensive brand, content and audience strategy experience and brings 20 years’ experience as a senior executive in the global media industry at Discovery, now Warner Bros Discovery.",
+                        "page": 10,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  },
+                  "role": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 5.6200000000000045,
+                            "w": 55.950000000000045,
+                            "x": 290.4,
+                            "y": 617.37
+                          }
+                        ],
+                        "matching_text": "senior executive",
+                        "page": 10,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  },
+                  "tense": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 7.098738749999988,
+                            "w": 28.663578691423478,
+                            "x": 475.9731874447392,
+                            "y": 619.16776875
+                          }
+                        ],
+                        "matching_text": "directors.6.appointments.0.tense",
+                        "page": 10,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "coverage": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 56.789910000000006,
+                        "w": 249.29424403183023,
+                        "x": 289.79141025641024,
+                        "y": 598.13446875
+                      }
+                    ],
+                    "matching_text": "directors.6.coverage",
+                    "page": 10,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 7.1200000000000045,
+                        "w": 53.67999999999999,
+                        "x": 94.98,
+                        "y": 469.79
+                      }
+                    ],
+                    "matching_text": "Marjorie Kaplan",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 5.420000000000016,
+                        "w": 8.450000000000003,
+                        "x": 97.17,
+                        "y": 458.84
+                      }
+                    ],
+                    "matching_text": "10",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "role_at_company": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 7.486940995931625,
+                        "w": 88.7457610873878,
+                        "x": 289.860228727907,
+                        "y": 565.0758173210621
+                      }
+                    ],
+                    "matching_text": "Non-executive Director",
+                    "page": 10,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "coverage": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 48.90242250000008,
+                        "w": 238.77549955791335,
+                        "x": 289.79141025641024,
+                        "y": 703.0380524999999
+                      }
+                    ],
+                    "matching_text": "directors.7.coverage",
+                    "page": 10,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 5.7099999999999795,
+                        "w": 37.620000000000005,
+                        "x": 94.63,
+                        "y": 496.04
+                      }
+                    ],
+                    "matching_text": "Gidon Katz",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 5.199999999999989,
+                        "w": 7.709999999999994,
+                        "x": 97.17,
+                        "y": 485.2
+                      }
+                    ],
+                    "matching_text": "11",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "role_at_company": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 7.486940995931625,
+                        "w": 88.48279187992216,
+                        "x": 289.860228727907,
+                        "y": 671.2940063917637
+                      }
+                    ],
+                    "matching_text": "Non-executive Director",
+                    "page": 10,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "appointments": [
+                {
+                  "organisation": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 5.199999999999989,
+                            "w": 14.230000000000004,
+                            "x": 104.04,
+                            "y": 168.97
+                          }
+                        ],
+                        "matching_text": "EMI",
+                        "page": 11,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  },
+                  "quote": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 39.03687344437837,
+                            "w": 246.26394408255817,
+                            "x": 53.97739918261767,
+                            "y": 137.57402641385792
+                          }
+                        ],
+                        "matching_text": "Chris has a strong track record in financial leadership at three previous FTSE 100 companies and a great media background having held senior management positions over a 17-year career at EMI.",
+                        "page": 11,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  },
+                  "role": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 7.139999999999986,
+                            "w": 103.55000000000001,
+                            "x": 162.44,
+                            "y": 158.65
+                          }
+                        ],
+                        "matching_text": "senior management positions",
+                        "page": 11,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  },
+                  "section": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 9.064424454689027,
+                            "w": 238.11189865112306,
+                            "x": 53.97739918261767,
+                            "y": 167.54647540354728
+                          }
+                        ],
+                        "matching_text": "directors.8.appointments.0.section",
+                        "page": 11,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  },
+                  "tense": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 7.887487499999995,
+                            "w": 79.67948938992045,
+                            "x": 165.670225464191,
+                            "y": 157.2239175
+                          }
+                        ],
+                        "matching_text": "directors.8.appointments.0.tense",
+                        "page": 11,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "coverage": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 97.66718515902758,
+                        "w": 246.26394408255817,
+                        "x": 53.97739918261767,
+                        "y": 137.57402641385792
+                      }
+                    ],
+                    "matching_text": "directors.8.coverage",
+                    "page": 11,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 7.1200000000000045,
+                        "w": 50.16,
+                        "x": 94.63,
+                        "y": 522.29
+                      }
+                    ],
+                    "matching_text": "Chris Kennedy",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 5.310000000000002,
+                        "w": 8.090000000000003,
+                        "x": 97.17,
+                        "y": 511.33
+                      }
+                    ],
+                    "matching_text": "12",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "role_at_company": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 8.801514723837375,
+                        "w": 76.3861994727701,
+                        "x": 54.24036839008332,
+                        "y": 116.54072139912843
+                      }
+                    ],
+                    "matching_text": "Group CFO and COO",
+                    "page": 11,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "coverage": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 76.50862875,
+                        "w": 244.0348717948718,
+                        "x": 54.69747126436782,
+                        "y": 274.74748124999996
+                      }
+                    ],
+                    "matching_text": "directors.9.coverage",
+                    "page": 11,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 7.1200000000000045,
+                        "w": 52.920000000000016,
+                        "x": 94.63,
+                        "y": 548.53
+                      }
+                    ],
+                    "matching_text": "Carolyn McCall",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 5.2999999999999545,
+                        "w": 8.14,
+                        "x": 97.17,
+                        "y": 537.69
+                      }
+                    ],
+                    "matching_text": "13",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "role_at_company": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 7.486915922284126,
+                        "w": 59.55620564989746,
+                        "x": 54.24036839008332,
+                        "y": 252.7313343858719
+                      }
+                    ],
+                    "matching_text": "Chief Executive",
+                    "page": 11,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "appointments": [
+                {
+                  "organisation": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 6.649999999999977,
+                            "w": 41.339999999999975,
+                            "x": 224.44,
+                            "y": 472.3
+                          }
+                        ],
+                        "matching_text": "Wilton Park",
+                        "page": 11,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  },
+                  "quote": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 28.783143204689026,
+                            "w": 227.85613501489163,
+                            "x": 53.97739918261767,
+                            "y": 471.4776463623047
+                          }
+                        ],
+                        "matching_text": "Sharmila was previously chief executive at Wilton Park, an executive agency of the FCO, and prior to that held various roles in public health and medical research.",
+                        "page": 11,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  },
+                  "role": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 5.7099999999999795,
+                            "w": 51.599999999999994,
+                            "x": 162.74,
+                            "y": 472.3
+                          }
+                        ],
+                        "matching_text": "chief executive",
+                        "page": 11,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  },
+                  "section": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 18.792347769498825,
+                            "w": 227.59316580742598,
+                            "x": 54.24036839008332,
+                            "y": 481.4684417974949
+                          }
+                        ],
+                        "matching_text": "directors.10.appointments.0.section",
+                        "page": 11,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  },
+                  "tense": {
+                    "citation": [
+                      {
+                        "bounding_boxes": [
+                          {
+                            "h": 8.801552334308624,
+                            "w": 200.82295721530915,
+                            "x": 75.75119283288717,
+                            "y": 471.4776463623047
+                          }
+                        ],
+                        "matching_text": "directors.10.appointments.0.tense",
+                        "page": 11,
+                        "page_dimensions": {
+                          "height": 841.332,
+                          "width": 594.835
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "coverage": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 86.49944625000002,
+                        "w": 246.13862068965523,
+                        "x": 54.69747126436782,
+                        "y": 411.98976375
+                      }
+                    ],
+                    "matching_text": "directors.10.coverage",
+                    "page": 11,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 7.1200000000000045,
+                        "w": 70.07000000000002,
+                        "x": 94.6,
+                        "y": 574.78
+                      }
+                    ],
+                    "matching_text": "Sharmila Nebhrajani",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 5.2000000000000455,
+                        "w": 8.769999999999996,
+                        "x": 97.17,
+                        "y": 563.94
+                      }
+                    ],
+                    "matching_text": "14",
+                    "page": 3,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              },
+              "role_at_company": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 17.477761504769326,
+                        "w": 143.4431966930628,
+                        "x": 54.24036839008332,
+                        "y": 368.9403188917637
+                      }
+                    ],
+                    "matching_text": "directors.10.role_at_company",
+                    "page": 11,
+                    "page_dimensions": {
+                      "height": 841.332,
+                      "width": 594.835
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "page_metadata": null,
+        "row_metadata": null
+      },
+      "parse_job_id": "pjb-rl1o9cys0xtkec44s46puo5dpt37",
+      "parse_tier": "agentic"
+    },
+    "extract_result": {
+      "agm_date": "2026-05-07",
+      "company_name": "ITV plc",
+      "company_number": "04967001",
+      "directors": [
+        {
+          "appointments": [
+            {
+              "organisation": "Haleon PLC",
+              "quote": "She is currently Chief Financial Officer at Haleon PLC where she has been heavily involved in developing the global strategy, digital capabilities and processes.",
+              "role": "Chief Financial Officer",
+              "section": "narrative",
+              "tense": "current"
+            }
+          ],
+          "coverage": "prose",
+          "name": "Dawn Allen",
+          "resolution_no": 4,
+          "role_at_company": "Non-executive Director, Chair of the Audit and Risk Committee"
+        },
+        {
+          "appointments": [],
+          "coverage": "prose",
+          "name": "Helen Ashton",
+          "resolution_no": 5,
+          "role_at_company": "Non-executive Director"
+        },
+        {
+          "appointments": [],
+          "coverage": "prose",
+          "name": "Edward Bonham Carter",
+          "resolution_no": 6,
+          "role_at_company": "Senior Independent Director"
+        },
+        {
+          "appointments": [
+            {
+              "organisation": "Qubit",
+              "quote": "He is the founder of Qubit, the leading provider of e-commerce personalisation technology, and prior to founding Qubit, spent five years working at Google.",
+              "role": "founder",
+              "section": "narrative",
+              "tense": "current"
+            }
+          ],
+          "coverage": "prose",
+          "name": "Graham Cooke",
+          "resolution_no": 7,
+          "role_at_company": "Non-executive Director, Workforce Engagement Director"
+        },
+        {
+          "appointments": [],
+          "coverage": "prose",
+          "name": "Andrew Cosslett",
+          "resolution_no": 8,
+          "role_at_company": "Chair, independent on appointment, Chair of Nominations Committee"
+        },
+        {
+          "appointments": [
+            {
+              "organisation": "Deloitte LLP",
+              "quote": "Margaret has the wide-ranging skills and expertise across financial and capital markets that has come with previous roles, including being a FTSE 100 CFO, an executive member of the Board of Deloitte LLP, and a member (and chair) of Audit Committees at several FTSE 100 and other high-profile companies.",
+              "role": "executive member of the Board",
+              "section": "narrative",
+              "tense": "past"
+            }
+          ],
+          "coverage": "prose",
+          "name": "Margaret Ewing",
+          "resolution_no": 9,
+          "role_at_company": "Non-executive Director"
+        },
+        {
+          "appointments": [
+            {
+              "organisation": "Discovery",
+              "quote": "Marjorie has extensive brand, content and audience strategy experience and brings 20 years’ experience as a senior executive in the global media industry at Discovery, now Warner Bros Discovery.",
+              "role": "senior executive",
+              "section": "narrative",
+              "tense": "past"
+            }
+          ],
+          "coverage": "prose",
+          "name": "Marjorie Kaplan",
+          "resolution_no": 10,
+          "role_at_company": "Non-executive Director"
+        },
+        {
+          "appointments": [],
+          "coverage": "prose",
+          "name": "Gidon Katz",
+          "resolution_no": 11,
+          "role_at_company": "Non-executive Director"
+        },
+        {
+          "appointments": [
+            {
+              "organisation": "EMI",
+              "quote": "Chris has a strong track record in financial leadership at three previous FTSE 100 companies and a great media background having held senior management positions over a 17-year career at EMI.",
+              "role": "senior management positions",
+              "section": "narrative",
+              "tense": "past"
+            }
+          ],
+          "coverage": "prose",
+          "name": "Chris Kennedy",
+          "resolution_no": 12,
+          "role_at_company": "Group CFO and COO"
+        },
+        {
+          "appointments": [],
+          "coverage": "prose",
+          "name": "Carolyn McCall",
+          "resolution_no": 13,
+          "role_at_company": "Chief Executive"
+        },
+        {
+          "appointments": [
+            {
+              "organisation": "Wilton Park",
+              "quote": "Sharmila was previously chief executive at Wilton Park, an executive agency of the FCO, and prior to that held various roles in public health and medical research.",
+              "role": "chief executive",
+              "section": "narrative",
+              "tense": "past"
+            }
+          ],
+          "coverage": "prose",
+          "name": "Sharmila Nebhrajani",
+          "resolution_no": 14,
+          "role_at_company": "Non-executive Director, Chair of the Remuneration Committee"
+        }
+      ]
+    },
+    "file_input": "ef3c2bc9-69ab-415a-a4b2-ace68045100d",
+    "grounded_items": null,
+    "id": "ext-aoslm5gpv5gf7x8q3r8hmz1mcw2z",
+    "metadata": null,
+    "project_id": "62bd7334-6bc8-4283-8a2c-64abceddeb6f",
+    "status": "COMPLETED",
+    "updated_at": "2026-10-26T21:11:49.726877Z",
+    "usage": {
+      "credits": 300.0,
+      "extract_credits": 180.0,
+      "parse_credits": 120.0
+    }
+  },
+  "schema_sha": "f9fdf2bfe3c57f51",
+  "schema_version": "v1"
+}

@@ -1,0 +1,132 @@
+{
+ "key": "7b8d003715fc2f241e276ac11010eb30f76329a5e162bf8fd8b01be14941a838",
+ "payload": {
+  "content": [
+   {
+    "query": "St. James's Place plc investor relations board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "593 days ago",
+      "title": "St. James's Place plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/ST-JAMES-S-PLACE-PLC-9590172/company/"
+     },
+     {
+      "page_age": null,
+      "title": "STJ Investor Relations - St James's Place PLC - Alpha Spread",
+      "url": "https://www.alphaspread.com/security/lse/stj/investor-relations"
+     },
+     {
+      "page_age": "2035 days ago",
+      "title": "St. James's Place plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://uk.marketscreener.com/quote/stock/ST-JAMES-S-PLACE-PLC-120960715/company/"
+     },
+     {
+      "page_age": null,
+      "title": "St. James's Place plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://in.marketscreener.com/quote/stock/ST-JAMES-S-PLACE-PLC-9590172/company/"
+     },
+     {
+      "page_age": null,
+      "title": "St. James's Place plc (STJ.L) Company Profile & Facts - Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/STJ.L/profile/"
+     },
+     {
+      "page_age": null,
+      "title": "St. James's Place plc (STJP.F) Leadership & Management Team Analysis - Simply Wall St",
+      "url": "https://simplywall.st/stocks/us/diversified-financials/otc-stjp.f/st-jamess-place/management"
+     },
+     {
+      "page_age": "244 days ago",
+      "title": "St. James's Place Full Year Results 2025",
+      "url": "https://www.sjp.co.uk/shareholders/corporate-news/st-jamess-place-full-year-results-2025"
+     },
+     {
+      "page_age": "599 days ago",
+      "title": "St James Place : Annual Report and Accounts 2024",
+      "url": "https://www.marketscreener.com/quote/stock/ST-JAMES-S-PLACE-PLC-9590172/news/St-James-Place-Annual-Report-and-Accounts-2024-49260476/"
+     },
+     {
+      "page_age": null,
+      "title": "St. James%27s Place plc",
+      "url": "https://en.wikipedia.org/wiki/St._James%27s_Place_plc"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "sjp.co.uk shareholders corporate governance board of directors St. James's Place",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "1338 days ago",
+      "title": "Governance Board of Directors 102 Corporate governance report",
+      "url": "https://www.sjp.co.uk/sites/sjp-corp/files/SJP/shareholders/2022-in-review/SJP_AR2022_Governance.pdf"
+     },
+     {
+      "page_age": "608 days ago",
+      "title": "Governance Corporate governance report 54 Board of Directors 55",
+      "url": "https://www.sjp.co.uk/sites/sjp-corp/files/SJP/shareholders/2024-in-review/SJP_AR_2024_Governance.pdf"
+     },
+     {
+      "page_age": "229 days ago",
+      "title": "St James Place : Annual Report and Accounts 2025",
+      "url": "https://www.marketscreener.com/news/st-james-place-annual-report-and-accounts-2025-ce7e5fdcde89f02c"
+     },
+     {
+      "page_age": "482 days ago",
+      "title": "Directors",
+      "url": "https://www.sjp.co.uk/shareholders/about-us/directors"
+     },
+     {
+      "page_age": "686 days ago",
+      "title": "St. James's Place plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://uk.marketscreener.com/quote/stock/ST-JAMES-S-PLACE-PLC-9590172/company/"
+     },
+     {
+      "page_age": null,
+      "title": "St. James's Place plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://in.marketscreener.com/quote/stock/ST-JAMES-S-PLACE-PLC-9590172/company/"
+     },
+     {
+      "page_age": null,
+      "title": "St. James's Place plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/ST-JAMES-S-PLACE-PLC-120792361/company/"
+     },
+     {
+      "page_age": null,
+      "title": "St. James%27s Place plc",
+      "url": "https://en.wikipedia.org/wiki/St._James%27s_Place_plc"
+     },
+     {
+      "page_age": "757 days ago",
+      "title": "Who owns St James\u2019s Place Wealth Management? - Good Money Guide",
+      "url": "https://goodmoneyguide.com/investing/st-jamess-place-ownership/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.sjp.co.uk\",\n    \"url\": \"https://www.sjp.co.uk/shareholders/about-us/directors\",\n    \"quote\": \"Caroline is currently serving as Chief Financial Officer of St. James\u2019s Place Plc\"\n  },\n  \"note\": \"sjp.co.uk is the company's own site. Its shareholder pages sit under /shareholders/, and its annual report PDFs on sjp.co.uk are headed 'St. James\u2019s Place plc'. Yahoo Finance and Wikipedia also list www.sjp.co.uk as the company website. I did not find a source showing the Companies House number 03183415 on the site. The match rests on the name, the plc status, and the Cirencester head office.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:53:18+00:00",
+  "inputs": {
+   "org_key": "st-james-s-place"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 36415,
+   "output_tokens": 574,
+   "web_search_requests": 2
+  }
+ }
+}

@@ -1,0 +1,137 @@
+{
+ "key": "a1f5fae4729edbd2e2b78910cce5955fd399de376a5a27e872e88ee8b4d71348",
+ "payload": {
+  "content": [
+   {
+    "query": "Bank of Scotland plc board of directors Lloyds Banking Group",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Bank of Scotland plc SC327000",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "1554 days ago",
+      "title": "Document",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167831/000116010623000019/lloydsbankplcex4bxxii2022.htm"
+     },
+     {
+      "page_age": "2306 days ago",
+      "title": "EXHIBIT 4 (b) (xxv)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1160106/000116010621000011/lbgexhibit4bxxv.htm"
+     },
+     {
+      "page_age": "5 days ago",
+      "title": "Board Change",
+      "url": "https://www.investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/board-change/9836547"
+     },
+     {
+      "page_age": "591 days ago",
+      "title": "Lloyds Banking Group plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/LLOYDS-BANKING-GROUP-PLC-4000786/company/"
+     },
+     {
+      "page_age": "603 days ago",
+      "title": "Our heritage",
+      "url": "https://www.bankofscotland.co.uk/about-us/our-heritage.html"
+     },
+     {
+      "page_age": "2218 days ago",
+      "title": "LLOYDS BANKING GROUP PLC people - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/SC095000/officers?page=3"
+     },
+     {
+      "page_age": null,
+      "title": "Lloyds Banking Group PLC directors and officers",
+      "url": "https://governanceregister.com/company/SC095000"
+     },
+     {
+      "page_age": "19 days ago",
+      "title": "Directors - Lloyds Banking Group plc",
+      "url": "https://www.lloydsbankinggroup.com/who-we-are/group-overview/directors-and-governance.html"
+     },
+     {
+      "page_age": "104 days ago",
+      "title": "Our brands: Bank of Scotland - Lloyds Banking Group plc",
+      "url": "https://www.lloydsbankinggroup.com/who-we-are/our-brands/bank-of-scotland.html"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "BANK OF SCOTLAND PLC",
+      "url": "https://www.thegazette.co.uk/company/SC327000"
+     },
+     {
+      "page_age": "85 days ago",
+      "title": "Important Information",
+      "url": "https://business.bankofscotland.co.uk/business-home/legal/important-information.html"
+     },
+     {
+      "page_age": "491 days ago",
+      "title": "Legal Information",
+      "url": "https://www.bankofscotland.co.uk/helpcentre/legal-information.html"
+     },
+     {
+      "page_age": null,
+      "title": "BANK OF SCOTLAND PLC",
+      "url": "http://companycheck.co.uk/company/SC327000/BANK-OF-SCOTLAND-PLC"
+     },
+     {
+      "page_age": "31 days ago",
+      "title": "BANK OF SCOTLAND PLC: UBO, Shareholders & Group Structure (United Kingdom)",
+      "url": "https://zavia.ai/companies/bank-of-scotland-plc-gb-35274273/"
+     },
+     {
+      "page_age": null,
+      "title": "Bank of Scotland (United Kingdom) - Bank Profile",
+      "url": "https://thebanks.eu/banks/14490"
+     },
+     {
+      "page_age": null,
+      "title": "Bank of Scotland plc Details",
+      "url": "https://www.askfin.co.uk/lender-details/bank-of-scotland-plc"
+     },
+     {
+      "page_age": null,
+      "title": "BANK OF SCOTLAND PLC trading as Halifax - Banks - A business based in United Kingdom registered with Companies House",
+      "url": "http://www.datalog.co.uk/browse/detail.php/CompanyNumber/SC327000/CompanyName/BANK+OF+SCOTLAND+PLC"
+     },
+     {
+      "page_age": null,
+      "title": "Credit Rating \u00a3: BANK OF SCOTLAND PLC",
+      "url": "https://www.firstreport.co.uk/Company/SC327000/BANK-OF-SCOTLAND-PLC"
+     },
+     {
+      "page_age": "971 days ago",
+      "title": "Bank of Scotland plc - Annual Report and Accounts 2023 ...",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/bank-of-scotland-plc/2023/q4/2023-bos-annual-report.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.lloydsbankinggroup.com\",\n    \"url\": \"https://www.lloydsbankinggroup.com/who-we-are/group-overview/directors-and-governance.html\",\n    \"quote\": \"Additional Non-Executive Directors of Lloyds Bank plc and Bank of Scotland plc and their biographical profiles.\"\n  },\n  \"note\": \"Bank of Scotland plc is a Lloyds Banking Group subsidiary, and the group site has a board page that covers it. That page also says the group's directors serve on the Lloyds Bank plc and Bank of Scotland plc boards. The bank's own customer site, https://www.bankofscotland.co.uk, quotes company number SC327000 but is a retail site, not a governance one. I used the group site because the analyst wants board information.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:48:57+00:00",
+  "inputs": {
+   "org_key": "bank-of-scotland"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 20522,
+   "output_tokens": 522,
+   "web_search_requests": 2
+  }
+ }
+}

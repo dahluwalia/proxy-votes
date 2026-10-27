@@ -1,0 +1,137 @@
+{
+ "key": "bac44aaf966eddb33d6ff548a2374ef8a57f2522a6f20d24717248dfecaf3001",
+ "payload": {
+  "content": [
+   {
+    "query": "HSBC UK Bank plc 09928412",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "HSBC UK Bank plc board of directors hsbc.com",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Website Terms and Conditions",
+      "url": "https://www.business.hsbc.uk/en-gb/corporate/regulations/legal-page-site-terms-and-privacy-statement"
+     },
+     {
+      "page_age": null,
+      "title": "Contact us - HSBC Group",
+      "url": "https://insight.business.hsbc.com/TrailblazerData"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC Uk Bank PLC",
+      "url": "https://www.creditsafe.com/business-index/en-ie/company/hsbc-uk-bank-plc-uk14697955"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC UK BANK PLC",
+      "url": "https://companycheck.co.uk/company/09928412/HSBC-UK-BANK-PLC/companies-house-data"
+     },
+     {
+      "page_age": "31 days ago",
+      "title": "HSBC UK BANK PLC: UBO, Shareholders & Group Structure (United Kingdom)",
+      "url": "https://zavia.ai/companies/hsbc-uk-bank-plc-gb-30360477/"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC UK Bank Plc (United Kingdom) - Bank Profile",
+      "url": "https://thebanks.eu/banks/19008"
+     },
+     {
+      "page_age": null,
+      "title": "Hsbc UK Bank PLC \u2014 company number 09928412",
+      "url": "https://www.publiclimitedcompany.co.uk/company/hsbc-uk-bank-plc-09928412/"
+     },
+     {
+      "page_age": "9 days ago",
+      "title": "HSBC UK Bank Plc Corporate Intelligence Profile",
+      "url": "https://www.corp-intel.co.uk/blog/hsbc-uk-bank-plc-corporate-intelligence-profile"
+     },
+     {
+      "page_age": "19 days ago",
+      "title": "HSBC UK BANK PLC: parent company, subsidiaries and LEI",
+      "url": "https://assetcensus.com/company/hsbc-uk-bank-plc-21380081EP12LC86CB82"
+     },
+     {
+      "page_age": null,
+      "title": "Hsbc Uk Bank Plc - 1 Centenary Square, Birmingham, B1 1HQ, UNITED KINGDOM",
+      "url": "https://opengovuk.com/company/09928412"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "HSBC Holdings plc - Executive Bio, Top Executies, and Transitions - Equilar ExecAtlas",
+      "url": "https://people.equilar.com/bio/org/hsbc-holdings-plc/7328"
+     },
+     {
+      "page_age": "299 days ago",
+      "title": "Senior management",
+      "url": "https://www.hsbc.com/who-we-are/our-people/senior-management"
+     },
+     {
+      "page_age": "174 days ago",
+      "title": "Board and Committee Composition",
+      "url": "https://www.investegate.co.uk/announcement/rns/hsbc-holdings--hsba/board-and-committee-composition/9554736"
+     },
+     {
+      "page_age": "200 days ago",
+      "title": "HSBC Holdings plc: Governance, Directors and Executives & Committees - MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/HSBC-HOLDINGS-PLC-16896790/company-governance/"
+     },
+     {
+      "page_age": "245 days ago",
+      "title": "HSBC UK Bank plc Annual Report and Accounts 2025",
+      "url": "https://www.hsbc.com/-/files/hsbc/investors/hsbc-results/2025/annual/pdfs/hsbc-uk-bank-plc/260225-annual-report-and-accounts-2025.pdf"
+     },
+     {
+      "page_age": "622 days ago",
+      "title": "HSBC HOLDINGS: Governance, Directors and Executives & Committees - MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/HSBC-HOLDINGS-4001224/company-governance/"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC BANK PLC people - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00014259/officers"
+     },
+     {
+      "page_age": "1609 days ago",
+      "title": "HSBC Org Chart + Executive Team",
+      "url": "https://www.theofficialboard.com/org-chart/hsbc"
+     },
+     {
+      "page_age": null,
+      "title": "6-K 1 a6459j.htm DIRECTOR DECLARATION a6459j",
+      "url": "https://www.sec.gov/Archives/edgar/data/1089113/000165495425005980/a6459j.htm"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.hsbc.com\",\n    \"url\": \"https://www.hsbc.com/who-we-are/our-people/senior-management\",\n    \"quote\": \"David Lindberg CEO of HSBC UK Bank plc\"\n  },\n  \"note\": \"HSBC UK Bank plc is a subsidiary of HSBC Holdings plc, so I used the group site, hsbc.com. That site also hosts the bank's own Annual Report and Accounts 2025 (www.hsbc.com/-/files/hsbc/investors/hsbc-results/2025/annual/pdfs/hsbc-uk-bank-plc/260225-annual-report-and-accounts-2025.pdf), which has board information. The bank also runs customer-facing sites (hsbc.co.uk, business.hsbc.uk). Its terms page says the site is operated by HSBC UK Bank plc, number 09928412. Those sites are mainly retail and business banking, so hsbc.com is the better place for board and governance pages.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:52:15+00:00",
+  "inputs": {
+   "org_key": "hsbc-uk-bank"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 21203,
+   "output_tokens": 571,
+   "web_search_requests": 2
+  }
+ }
+}

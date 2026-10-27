@@ -1,0 +1,83 @@
+{
+ "key": "21041ac0e15b172b375c7bc086c81a6d44b9ddc4fdf9185d0745291bd9f65294",
+ "payload": {
+  "content": [
+   {
+    "query": "FedEx Corporation investor relations board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "FEDEX CORP - Form ARS - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001048911/000110465926097845/tm2617164d3_ars.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "FEDEX CORP - Form ARS - FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/1048911/000110465925079806/tm2512722d3_ars.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "FEDEX CORP - Form 10-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001048911/000104891126000105/fdx-20260531.htm"
+     },
+     {
+      "page_age": "601 days ago",
+      "title": "FedEx Corporation: Governance, Directors and Executives & Committees - MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/FEDEX-CORPORATION-12585/company-governance/"
+     },
+     {
+      "page_age": "129 days ago",
+      "title": "Board of directors",
+      "url": "https://investors.fedex.com/governance/board-of-directors/default.aspx"
+     },
+     {
+      "page_age": "167 days ago",
+      "title": "FedEx Board of Directors Approves Spin-off of FedEx Freight",
+      "url": "https://investors.fedex.com/news-and-events/investor-news/investor-news-details/2026/FedEx-Board-of-Directors-Approves-Spin-off-of-FedEx-Freight/default.aspx"
+     },
+     {
+      "page_age": null,
+      "title": "FEDEX CORP - Form ARS - FY2023",
+      "url": "https://www.sec.gov/Archives/edgar/data/1048911/000130817923000963/fdx4194041-ars.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "FEDEX CORP - Form ARS - FY2024",
+      "url": "https://www.sec.gov/Archives/edgar/data/1048911/000130817924000698/fdx4341171-ars.pdf"
+     },
+     {
+      "page_age": "284 days ago",
+      "title": "FedEx Announces Board of Directors for Future Independent FedEx Freight",
+      "url": "https://investors.fedex.com/news-and-events/investor-news/investor-news-details/2026/FedEx-Announces-Board-of-Directors-for-Future-Independent-FedEx-Freight/default.aspx"
+     },
+     {
+      "page_age": "672 days ago",
+      "title": "FDX Investor Relations - FedEx Corp - Alpha Spread",
+      "url": "https://www.alphaspread.com/security/nyse/fdx/investor-relations"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://investors.fedex.com\",\n    \"url\": \"https://investors.fedex.com/governance/board-of-directors/default.aspx\",\n    \"quote\": \"Martin serves as the executive chairman and chairman of the Board of Directors of FedEx Corporation\"\n  },\n  \"note\": \"This is FedEx Corporation's own investor-relations site. FedEx's SEC filings (the FY2026 Form 10-K and annual report) say its Investor Relations page is at investors.fedex.com. The board page is on that site. The main corporate site is fedex.com.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:46:05+00:00",
+  "inputs": {
+   "org_key": "fedex"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 14551,
+   "output_tokens": 415,
+   "web_search_requests": 1
+  }
+ }
+}

@@ -1,0 +1,3046 @@
+# Evidence behind every gold label. build_gold.py attaches it to seats.yaml and fails the
+# build if a seat, or an organisation a countable seat depends on, has none.
+#
+# ch_records:    person -> Companies House officer records: the issuer's record for them, plus
+#                any record with the same name and the same birth month and year.
+# notice_quotes: seat id -> the notice line(s) the spreadsheet row was read from (PDF page).
+# roles:         seat id (or ch:<person>:<company number>) -> sources for a role the notice
+#                and CH don't state.
+# orgs:          organisation (as named in overrides.yaml) -> sources for type, listing and parent.
+#
+# Web sources carry a verbatim quote from the fetched page.
+
+ch_records:
+  alison-dolan:
+  - NtEjRLqBMJFlrhE0-U3mm8wh_C8
+  andre-lacroix:
+  - SFObcHV_Fmcfayx37tkki45Jtlk
+  - xwGZxXNK3ZUD2zpXiYfiZHJU-nI
+  andrew-cosslett:
+  - SUpOYvJ0x-UH7YCAryG7JmA6RRo
+  - k50JYtR9H8InJAk_VdxFo_n3xKs
+  apurvi-sheth:
+  - YRPVzDZ4tcuNk1ThsIJSo87MX1Q
+  archie-norman:
+  - 0JGb23enoYCKnAnZpPvRbVwQnsM
+  - YDOjKqfzLxfjWi6q1lCC10QCpII
+  - ei0AdnWZzDCeYW2L4qtjkPySJi4
+  - xgbquA_qiz_a1q1-VHZjt5KCpDc
+  - xmp_PS9vUuXFEQI6UhhIfdzlhmM
+  bertrand-bodson:
+  - f9PhcbKsx58mbxK3FbrjxQUg3Z0
+  - i4-DBrP10YuSc6pscv-b3MCQPQ8
+  caroline-silver:
+  - sYzrAgP05-XBMuExY4hjznwnRxc
+  carolyn-fairbairn:
+  - FCKW7gCut0B1_r6G1kOUB5QCtWE
+  - QNQS7Vfx9bP5uk4fDVyqAcvGHWY
+  - fGiix1UL8Uiu_t_XnmsfqSU-cvs
+  - omOakD01MpDTqJX8h5ElSNbAAPU
+  - qGYPZxoTQydJzxo2tvm5REqiQdc
+  - s3v8niAiGdCxK4jx7Vw6lgbvNlk
+  carolyn-mccall:
+  - 1YbMwTHC8npxMpdmfuCe29IVCHc
+  - 7NK8UpcMxJj8JuQLvlgw0pS-oV4
+  - Nc2BdiHMAknzZ0uI0FvH1zX1-EU
+  - Q_2_AYGHkKk_o5Zxd1EKkj6z3EY
+  - _NFshvADJiowqnkDc9NFOPKu0dA
+  - q0YQp1PAiebWVHsfUR5mpnF7FDA
+  - q26xgx3uurwYk8h2I2GHEHb3Ods
+  - y69lz7Mjvm9HUQjpOj4PR_yotHY
+  chris-kennedy:
+  - nl5gWmJeUwbVDowwCP_lBoP7jfI
+  christine-hodgson:
+  - tHpXuMRCwxV1B14yWXt-O5mPZ2w
+  dawn-allen:
+  - P-QbCKgaHCcuVkosTlfnVlJLFBQ
+  edward-bonham-carter:
+  - 3JT6Cw_szwT-Y0lM6Hl1QSEYKf4
+  evelyn-bourke:
+  - 7s33QkZ6ADXLjBh1ZK-HUBe7rBE
+  - Bj9NqPnZSuxKf55NIyxpFtQpkhY
+  - kxSpaQ9HptcDvQ1Heh4cizAeCIY
+  - zZTsHsi1r9fNLpKGMPWrpRPce3c
+  fiona-dawson:
+  - EoQkhE77kW-0Bu8r10mUDQEj-cc
+  gerry-murphy:
+  - nUofvk2Vc7eMDjESc09DW7s1oHI
+  gidon-katz:
+  - KAgTgMD3hTIewaiq4RNHCQ_Iz88
+  - oh2Vmymm3U9iKRInKJ9xG0WIGho
+  - tT1sEdTWFkZEpzPqLSPa6FDCTPU
+  graham-allan:
+  - MhbNxtAlg3aRuep5c4-gXlZPxKg
+  - stnfDrK7vsbshK70lGiyrVUSenM
+  graham-cooke:
+  - YWIXUqZSdGIBYJwRc4LRpLO00jE
+  - dKsKecauXQOPRW1Bnx12Cn1sucI
+  helen-ashton:
+  - 3ESDdHs___5vJGmi6fQBStsWh1Q
+  - QC78ahuW7idKm2T_WBS1bx_6VvE
+  - cNagdG2C0Hj7LwSPv5mokyXHkTE
+  - e1winWaQbcwwPHk3pM55PUp6ELY
+  - lTO5Nr0tIeYuNsLZj5q5WPeBAlE
+  - nTEDzUD5W1MoECJNOaT2kWCdWP4
+  - rRdZrn-uoX36HrJgtPeNv0shsGU
+  helen-miles:
+  - KgxAArlIctj9JZcSnHqXU54FrNU
+  hilde-merete-aasheim:
+  - RARNRpsT15oeFQVBH9Vol4MXkH0
+  - o-7hW-ckHoY7axMbL7-z65SGcXs
+  - s8M10Q8o0f9l-XjJ_diJDqtU8LA
+  imran-nawaz:
+  - -8n4-Ctsi6TOgxR0XirDsMIVgLc
+  - RTRRYl2Iur-ZAYwTgFGlMAe3G0Q
+  james-jesic:
+  - 3iApNAmGpljfGOvM8ioJEDmukRM
+  jean-michel-valette:
+  - PEVkKZNHXtd1zctj69XLxkG3dPw
+  - XrR_KaF7ZW5mjukCuj3Yb39GDDY
+  jez-maiden:
+  - EFG6MpdIaXPLABlHCfMMVDV1SmM
+  - ILV5lRyId_yC21yCNpF1d0DOfdU
+  - upwViKH8Qig5x6SP_yUZm3S5Rdg
+  karen-whitworth:
+  - pJ9xDas11jWYd8H92aBrgm9sdJ4
+  - zwbLDTdcWulvWY9A6I6rDCUovWY
+  kawal-preet:
+  - Fov5EJaCr_3OcPXLrnlsuGY2D5A
+  - s0iKq3luyv3wHLZXAQsy3I7MtpU
+  ken-murphy:
+  - BzNXyLfYN8zKe9rodemHm9GuKvU
+  - e_BLnLCsvQ9SDSPVV2Z797IhB2k
+  - mNJapaOxmblQiJZN4Gr-3vxWMHk
+  - o9mN4jyupjURdSx-al0RK3uqsnc
+  laura-crespi:
+  - M6oS_adMTykf5Z6XZmUCP6OYq1I
+  - hGs3juQ1t790y6wp6RI6BFlibvs
+  margaret-ewing:
+  - 4NNIfzYxvElCIWSyyKHlzm7W6io
+  - ExjmOSHxzTb02T-S9tWnr1iZOe0
+  - HQMwQ-TmEOD3rY2ijWHSKGOhanI
+  - SfbsuK_q21XrC6S3gsKsU9r909M
+  - b6V9F4DvB673U7hOOZEP7F195sQ
+  - e6mCgaUJyVHD_MA5ycYIyQMO44Q
+  - kY3IgC7NQmnwl5oB3xhEZDEshA4
+  - kiuyVqazbzsMVnrb-PZ48euBYNs
+  - qNONLFdtPn_Y2VXPPG12QDRS6TA
+  - wYlzRHVaD-1-dq0ELcHlYU75Z5A
+  - y_7rsadWDsdkPlNwJNdmTNUzYDo
+  - zgQjl5hVCFoMR1e-n0yxArBCfYA
+  marjorie-kaplan:
+  - jrMW7PezTNZRAAM5sQaDf5cG12w
+  melissa-bethell:
+  - BpbGCO65jEExI5rewLoe1oBZOaA
+  - aqrS_F-2zIvSaMNtl1opqDV4-w0
+  - t2HL3v2UG3jgPLSgoVwIi4QGJO8
+  nick-hampton:
+  - GWiKt0vrN7SMuz_Ru_x-_leV6rI
+  richard-taylor:
+  - IHubvl_hLJF_sQhZbavLbkx8uGQ
+  robin-freestone:
+  - 3RweXxdYEhrX0B4iQoibmbfnHoo
+  - fO3odGgpPW0_-juxMh8RhEgRzII
+  - hxAGH_NLE580yslR0evInxMXqPI
+  - qRlAxVC30BXHkybbSkzsV7kGg54
+  - sbFPzZBGPscQE4psviL5XEWtyNs
+  - tJqZJJOBnYjc-qdoVBJlnJ3Mhk8
+  roger-burnley:
+  - 1A8pEbi9WksBvdyfU3Yq8KazcLQ
+  - 7J_5OJEvBoOqyzGVMVrAySr4d8s
+  - iy5Pkxm2Bosp9XtvmwpT5kwxtUo
+  - x3UbqoHolFS2bsSnw9PN5p2sDMI
+  - y5CDxorCGXyrjeTQITDe5wGMSsg
+  sapna-sood:
+  - 10t9tvJGEubOymRrChLfhSx-NDY
+  sarah-legg:
+  - QfBR3NmISzEusrexrXk9m8SLYMY
+  - WUZQdNqixjjzDhBIv8wzgkIWH98
+  sean-doyle:
+  - -GqXOfLwBqNw7aYRPLL4IkBSj3s
+  - lRWjHoz26x-b8oFYlzaXRXnpWds
+  sharmila-nebhrajani:
+  - -A0-iiopZsWl7Bz6c5gP0sKHOk8
+  - 0u65Xayp-A3RMNxPX68nTv45lU8
+  - MhT-CrdCrP_E_D9uYscYSaNiJIk
+  - hNQwEyAaiCzZYdiSBdz9MWMGT5U
+  steve-mogford:
+  - AEQLQW7Z6k0aSoyUVmWrciBJwKs
+  - Sjrc5jratgydJB-Mt6Nhh7JHKuc
+  - XxG22idbtxgStVa3HDg8sUMUIFg
+  - haWdlCwhlxXDEIBw9RUHGOtmagc
+  - ozqa2sbE3LGG5Pmn712W9241wO8
+  - x46oGb-EXJZOdNCwvYMe8l688h0
+  stewart-gilliland:
+  - bbSqbwoVf6bJbUat-bbtgaI_lV4
+  - fJ0tMhiiHmOaju5PJ5fw0RGAvm8
+  - lHwUJcPx4RvLm9w9JPENKJPmHjU
+  stuart-machin:
+  - A4czjaYDU4d1WgoezgBICX4smQQ
+  - obBE-0TTIEKM7leI3N9ZpgIAW9s
+  tamara-ingram:
+  - O_nDbsF-amV2SP17bB7DwJd21QE
+  - QBaztOyItqdChgcHvunPMsRwsOg
+  - a8qsyMKywg_wJDKb5nLx5wNipco
+  - vUNJ5k_XOOmQN5IGbOvbA-KmsW8
+  thierry-garnier:
+  - WnytyEoBEEno7UhOqQ-tsXfC5zk
+  tom-delay:
+  - 3foiCz6Hg_2s4JTbIRFd01JBwG4
+notice_quotes:
+  S002:
+  - notice: Intertek
+    page: 4
+    quote: Intertek Group plc Notice of 2026 Annual General Meeting 3
+  S003:
+  - notice: Intertek
+    page: 4
+    quote: 'Director at ECOnnect Energy AS and Outokumpu Oyj. Committee membership: Audit Committee'
+  S004:
+  - notice: Intertek
+    page: 4
+    quote: held senior positions in Elkem ASA from 1986-2005, including Head of the Silicon Division and a member of the Corporate Management Board.
+  S005:
+  - notice: Intertek
+    page: 4
+    quote: Hilde is the former President & CEO of Norsk Hydro ASA, one of Norway’s largest companies, and brings profound executive experience having
+  S006:
+  - notice: Intertek
+    page: 4
+    quote: Hilde is the former President & CEO of Norsk Hydro ASA, one of Norway’s largest companies, and brings profound executive experience having
+  S007:
+  - notice: Intertek
+    page: 4
+    quote: of Yara International ASA, Norsk Industri and Veidekke ASA. Hilde is a Certified Public Accountant and holds a master’s degree in
+  S008:
+  - notice: Intertek
+    page: 4
+    quote: 'Director at ECOnnect Energy AS and Outokumpu Oyj. Committee membership: Audit Committee'
+  S009:
+  - notice: Intertek
+    page: 4
+    quote: of Yara International ASA, Norsk Industri and Veidekke ASA. Hilde is a Certified Public Accountant and holds a master’s degree in
+  S010:
+  - notice: Intertek
+    page: 4
+    quote: of Yara International ASA, Norsk Industri and Veidekke ASA. Hilde is a Certified Public Accountant and holds a master’s degree in
+  S011:
+  - notice: Intertek
+    page: 4
+    quote: Intertek Group plc Notice of 2026 Annual General Meeting 3
+  S012:
+  - notice: Intertek
+    page: 4
+    quote: Non-Executive Director of Associated British Foods plc and Americana Restaurants International plc and a director of Ikano Retail Pte Ltd
+  S013:
+  - notice: Intertek
+    page: 4
+    quote: Non-Executive Director of Associated British Foods plc and Americana Restaurants International plc and a director of Ikano Retail Pte Ltd
+  S014:
+  - notice: Intertek
+    page: 4
+    quote: (privately owned). Chair of Bata International, a private footwear company, and Chair of Nando’s Group Holdings Limited.
+  S015:
+  - notice: Intertek
+    page: 4
+    quote: Graham was Group Chief Executive of Dairy Farm International Holdings Ltd, an Asian retailer headquartered in Hong Kong, from 2012 to 2017. In 1992, he
+  S016:
+  - notice: Intertek
+    page: 4
+    quote: 'Ltd in China and a Commissioner of Hero Group, an Indonesian retailer. Length of service at the AGM: 8.5 years'
+  S017:
+  - notice: Intertek
+    page: 4
+    quote: Restaurants International plc and a director of Ikano Retail Pte Ltd (privately owned). Chair of Bata International, a private footwear company,
+  S018:
+  - notice: Intertek
+    page: 4
+    quote: Non-Executive Director of InterContinental Hotels Group plc, Non-Executive Director of Associated British Foods plc and Americana
+  S019:
+  - notice: Intertek
+    page: 4
+    quote: tenure at Yum! Restaurants, he worked as a consultant including at McKinsey & Co Inc. He was previously a Non-Executive Director of Yonghui Superstores Co.
+  S020:
+  - notice: Intertek
+    page: 4
+    quote: 'and Chair of Nando’s Group Holdings Limited. Committee membership: Nomination Committee and Remuneration'
+  S021:
+  - notice: Intertek
+    page: 4
+    quote: Co Inc. He was previously a Non-Executive Director of Yonghui Superstores Co. Ltd in China and a Commissioner of Hero Group, an Indonesian retailer.
+  S022:
+  - notice: Intertek
+    page: 4
+    quote: joined Yum! Restaurants International (formerly PepsiCo Restaurants International), where he held several senior positions before assuming the role
+  S023:
+  - notice: ITV
+    page: 10
+    quote: the Audit and Risk Committee at ITV plc in March 2026; her extensive financial, commercial and international experience make her ideally
+  S024:
+  - notice: ITV
+    page: 10
+    quote: 25-year career. She is currently Chief Financial Officer at Haleon PLC where she has been heavily involved in developing the global strategy,
+  S025:
+  - notice: ITV
+    page: 10
+    quote: the Audit and Risk Committee at ITV plc in March 2026; her extensive financial, commercial and international experience make her ideally
+  S026:
+  - notice: Intertek
+    page: 1
+    quote: Intertek Group plc NOTICE OF 2026
+  S027:
+  - notice: Tesco
+    page: 9
+    quote: Tesco PLC Notice of Annual General Meeting 2026 09
+  S028:
+  - notice: Tesco
+    page: 9
+    quote: 'Senior advisor: Atairos Director: Ocean Outdoor'
+  S029:
+  - notice: Tesco
+    page: 9
+    quote: 'Non-executive director: Diageo PLC, Exor N.V., Brillio LLC, The Magnum Ice Cream Company N.V.'
+  S030:
+  - notice: Tesco
+    page: 9
+    quote: 'Non-executive director: Diageo PLC, Exor N.V., Brillio LLC, The Magnum Ice Cream Company N.V.'
+  S031:
+  - notice: Tesco
+    page: 9
+    quote: 'Non-executive director: Diageo PLC, Exor N.V., Brillio LLC, The Magnum Ice Cream Company N.V.'
+  S032:
+  - notice: Tesco
+    page: 9
+    quote: 'Director: Ocean Outdoor R'
+  S033:
+  - notice: Tesco
+    page: 9
+    quote: 'The Magnum Ice Cream Company N.V. Senior advisor: Atairos'
+  S034:
+  - notice: Tesco
+    page: 9
+    quote: Tesco PLC Notice of Annual General Meeting 2026 09
+  S035:
+  - notice: Tesco
+    page: 9
+    quote: 'Chief executive officer: Keywords Studios Ltd N'
+  S036:
+  - notice: M&S
+    page: 1
+    quote: Marks and Spencer Group plc Annual Report and Financial Statements 2026 190
+  S037:
+  - notice: M&S
+    page: 1
+    quote: Marks and Spencer Group plc Annual Report and Financial Statements 2026 190
+  S038:
+  - notice: ITV
+    page: 10
+    quote: the Audit and Risk Committee at ITV plc in March 2026; her extensive financial, commercial and international experience make her ideally
+  S039:
+  - notice: ITV
+    page: 10
+    quote: the Audit and Risk Committee at ITV plc in March 2026; her extensive financial, commercial and international experience make her ideally
+  S040:
+  - notice: ITV
+    page: 10
+    quote: spent five years working at Google. Additionally, Graham took on the role of Workforce Engagement Director in June 2023, and acts as the
+  S041:
+  - notice: ITV
+    page: 10
+    quote: proposition. He is the founder of Qubit, the leading provider of e-commerce personalisation technology, and prior to founding Qubit,
+  S042:
+  - notice: ITV
+    page: 10
+    quote: the Audit and Risk Committee at ITV plc in March 2026; her extensive financial, commercial and international experience make her ideally
+  S043:
+  - notice: Intertek
+    page: 3
+    quote: Intertek Group plc Notice of 2026 Annual General Meeting 2
+  S044:
+  - notice: Intertek
+    page: 3
+    quote: Intertek Group plc Notice of 2026 Annual General Meeting 2
+  S045:
+  - notice: Intertek
+    page: 3
+    quote: Intertek Group plc Notice of 2026 Annual General Meeting 2
+  S046:
+  - notice: Intertek
+    page: 3
+    quote: leadership roles within finance. Laura began her career at Deloitte LLP, where she qualified as a Chartered Accountant (ACA).
+  S047:
+  - notice: Intertek
+    page: 3
+    quote: twelve years at RELX plc and held a variety of commercial and reporting leadership roles within finance. Laura began her career at Deloitte LLP,
+  S048:
+  - notice: M&S
+    page: 1
+    quote: Marks and Spencer Group plc Annual Report and Financial Statements 2026 190
+  S049:
+  - notice: Severn Trent
+    page: 12
+    quote: Severn Trent Plc Notice of Meeting 2026 11
+  S050:
+  - notice: Severn Trent
+    page: 12
+    quote: Energy Practice of AT Kearney. In 2018, Tom was appointed Commander of the Order
+  S051:
+  - notice: Severn Trent
+    page: 12
+    quote: Tom was Chief Executive of the Carbon Trust from 2001 until March 2024. During that time, he grew
+  S052:
+  - notice: Severn Trent
+    page: 12
+    quote: • Chair and Non-Executive Director of Chapter Zero C
+  S053:
+  - notice: Severn Trent
+    page: 12
+    quote: moving into management consultancy with McKinsey and Company and then as a Principal with the Global
+  S054:
+  - notice: Severn Trent
+    page: 12
+    quote: energy sector, Tom worked for Shell for 16 years in a variety of commercial and operational roles before
+  S055:
+  - notice: M&S
+    page: 1
+    quote: Marks and Spencer Group plc Annual Report and Financial Statements 2026 190
+  S056:
+  - notice: M&S
+    page: 1
+    quote: Marks and Spencer Group plc Annual Report and Financial Statements 2026 190
+  S057:
+  - notice: ITV
+    page: 10
+    quote: the Audit and Risk Committee at ITV plc in March 2026; her extensive financial, commercial and international experience make her ideally
+  S058:
+  - notice: ITV
+    page: 10
+    quote: the Audit and Risk Committee at ITV plc in March 2026; her extensive financial, commercial and international experience make her ideally
+  S059:
+  - notice: ITV
+    page: 10
+    quote: of the Board of Deloitte LLP, and a member (and chair) of Audit Committees at several FTSE 100 and other high-profile companies.
+  S060:
+  - notice: ITV
+    page: 10
+    quote: previous roles, including being a FTSE 100 CFO, an executive member of the Board of Deloitte LLP, and a member (and chair) of Audit
+  S061:
+  - notice: ITV
+    page: 10
+    quote: Committees at several FTSE 100 and other high-profile companies. She stepped down from her role as Audit and Risk Committee chair at
+  S062:
+  - notice: Tesco
+    page: 8
+    quote: Tesco PLC Notice of Annual General Meeting 2026 08
+  S063:
+  - notice: Tesco
+    page: 8
+    quote: 'Advisory council member: Frontier Economics S'
+  S064:
+  - notice: Tesco
+    page: 8
+    quote: 'Honorary fellow: Gonville and Caius College, Cambridge, and of Nuffield College, Oxford'
+  S065:
+  - notice: Tesco
+    page: 8
+    quote: 'Non-executive director: HSBC Holdings plc Honorary fellow: Gonville and Caius College, Cambridge, and of'
+  S066:
+  - notice: Tesco
+    page: 8
+    quote: 'Nuffield College, Oxford Advisory council member: Frontier Economics'
+  S067:
+  - notice: Intertek
+    page: 4
+    quote: Intertek Group plc Notice of 2026 Annual General Meeting 3
+  S068:
+  - notice: Intertek
+    page: 4
+    quote: industrial sector (1985-2004) with ICI plc, Amersham International plc and Henkel Ltd where he was the Chief Financial Officer. He subsequently joined
+  S069:
+  - notice: Intertek
+    page: 4
+    quote: Risk Committee, of Aston Martin Lagonda Global Holdings PLC, from which he retired in February 2025. Robin is a qualified chartered accountant.
+  S070:
+  - notice: Intertek
+    page: 4
+    quote: Committee of Cable & Wireless Communications plc. Until 31 December 2024, Robin led the Board at Mony Group plc (formerly Moneysupermarket.com)
+  S071:
+  - notice: Intertek
+    page: 4
+    quote: 'Current principal external appointments: Lead Director of Capri Holdings Limited (formerly Michael Kors Holdings Limited).'
+  S072:
+  - notice: Intertek
+    page: 4
+    quote: Henkel Ltd where he was the Chief Financial Officer. He subsequently joined the publishing company Pearson plc in 2004, the last nine years of which he
+  S073:
+  - notice: Intertek
+    page: 4
+    quote: industrial sector (1985-2004) with ICI plc, Amersham International plc and Henkel Ltd where he was the Chief Financial Officer. He subsequently joined
+  S074:
+  - notice: Intertek
+    page: 4
+    quote: Robin led the Board at Mony Group plc (formerly Moneysupermarket.com) where, as Chair of the Board and their Nomination Committee, he brought
+  S075:
+  - notice: Intertek
+    page: 4
+    quote: the publishing company Pearson plc in 2004, the last nine years of which he served as its Chief Financial Officer.
+  S076:
+  - notice: Intertek
+    page: 4
+    quote: Non-Executive Director at Smith & Nephew plc, eChem Limited, Chair of the 100 Group and Senior Independent Director and Chair of the Audit
+  S077:
+  - notice: Intertek
+    page: 4
+    quote: the 100 Group and Senior Independent Director and Chair of the Audit Committee of Cable & Wireless Communications plc. Until 31 December 2024,
+  S078:
+  - notice: Intertek
+    page: 4
+    quote: Non-Executive Director at Smith & Nephew plc, eChem Limited, Chair of the 100 Group and Senior Independent Director and Chair of the Audit
+  S079:
+  - notice: Severn Trent
+    page: 1
+    quote: If you have recently sold or transferred all of your shares in Severn Trent Plc, please forward this document to your bank, stockbroker or other agent through or to whom the sale or transfer
+      was
+  S080:
+  - notice: Tesco
+    page: 9
+    quote: Tesco PLC Notice of Annual General Meeting 2026 09
+  S081:
+  - notice: Tesco
+    page: 9
+    quote: 'Chief executive officer: Kingfisher plc S'
+  S082:
+  - notice: Tesco
+    page: 9
+    quote: Tesco PLC Notice of Annual General Meeting 2026 09
+  S083:
+  - notice: Tesco
+    page: 9
+    quote: 'Interim executive chair: IG Design Group plc S'
+  S084:
+  - notice: Tesco
+    page: 9
+    quote: 'Chair: Nature’s Way Foods Ltd Interim executive chair: IG Design Group plc'
+  S085:
+  - notice: Severn Trent
+    page: 13
+    quote: Severn Trent Plc Notice of Meeting 2026
+  S086:
+  - notice: Severn Trent
+    page: 13
+    quote: Severn Trent Plc Notice of Meeting 2026
+  S087:
+  - notice: Severn Trent
+    page: 13
+    quote: the Senior Independent Director of Great Portland Estates Plc, where he had served on the Board
+  S088:
+  - notice: Severn Trent
+    page: 13
+    quote: over a 20-year career at PepsiCo, including Senior Vice President and Chief Financial Officer, Europe
+  S089:
+  - notice: Severn Trent
+    page: 13
+    quote: over a 20-year career at PepsiCo, including Senior Vice President and Chief Financial Officer, Europe
+  S090:
+  - notice: Severn Trent
+    page: 13
+    quote: Nick was appointed Chief Executive of Tate & Lyle Plc in April 2018, having joined the Company in September
+  S091:
+  - notice: Severn Trent
+    page: 13
+    quote: Nick was appointed Chief Executive of Tate & Lyle Plc in April 2018, having joined the Company in September
+  S092:
+  - notice: Severn Trent
+    page: 11
+    quote: Severn Trent Plc Notice of Meeting 2026
+  S093:
+  - notice: Severn Trent
+    page: 11
+    quote: Severn Trent Plc Notice of Meeting 2026
+  S094:
+  - notice: Severn Trent
+    page: 11
+    quote: Board, Christine was the Executive Chair of Capgemini UK Plc. Christine joined Capgemini in 1997 and built her
+  S095:
+  - notice: Severn Trent
+    page: 11
+    quote: Board, Christine was the Executive Chair of Capgemini UK Plc. Christine joined Capgemini in 1997 and built her
+  S096:
+  - notice: Severn Trent
+    page: 11
+    quote: Board, Christine was the Executive Chair of Capgemini UK Plc. Christine joined Capgemini in 1997 and built her
+  S097:
+  - notice: Severn Trent
+    page: 11
+    quote: Board, Christine was the Executive Chair of Capgemini UK Plc. Christine joined Capgemini in 1997 and built her
+  S098:
+  - notice: Severn Trent
+    page: 11
+    quote: Board, Christine was the Executive Chair of Capgemini UK Plc. Christine joined Capgemini in 1997 and built her
+  S099:
+  - notice: Severn Trent
+    page: 11
+    quote: "• \aChair of Newton Group Holdings Limited • Non-Executive Director of Spencer Stuart"
+  S100:
+  - notice: Severn Trent
+    page: 11
+    quote: • Non-Executive Director of Spencer Stuart James Jesic
+  S101:
+  - notice: Severn Trent
+    page: 11
+    quote: Standard Chartered Plc. In January 2020, Christine was appointed Commander
+  S102:
+  - notice: Severn Trent
+    page: 11
+    quote: "• \aChair of Whitbread Plc • \aChair of Newton Group Holdings Limited"
+  S103:
+  - notice: Intertek
+    page: 4
+    quote: Intertek Group plc Notice of 2026 Annual General Meeting 3
+  S104:
+  - notice: M&S
+    page: 1
+    quote: Marks and Spencer Group plc Annual Report and Financial Statements 2026 190
+  - notice: Intertek
+    page: 4
+    quote: Marsh & McLennan Companies, Inc., Marks and Spencer Group plc and Reckitt Benckiser Group plc. Deputy Chair of Ofcom.
+  S105:
+  - notice: Intertek
+    page: 4
+    quote: 'Chair of the Almeida Theatre Board of Trustees. Length of service at the AGM: 5.5 years'
+  S106:
+  - notice: Intertek
+    page: 4
+    quote: to the Board. She is Chair of Asthma + Lung UK, Chair of The 10 Group and Chair of the Almeida Theatre Board of Trustees.
+  S107:
+  - notice: Intertek
+    page: 4
+    quote: and senior roles at Kantar Group, McCann Erickson and Saatchi & Saatchi UK, where she held the roles of CEO and Executive Chair.
+  S108:
+  - notice: Intertek
+    page: 4
+    quote: Marsh & McLennan Companies, Inc., Marks and Spencer Group plc and Reckitt Benckiser Group plc. Deputy Chair of Ofcom.
+  S109:
+  - notice: Intertek
+    page: 4
+    quote: and senior roles at Kantar Group, McCann Erickson and Saatchi & Saatchi UK, where she held the roles of CEO and Executive Chair.
+  S110:
+  - notice: Intertek
+    page: 4
+    quote: 'Reckitt Benckiser Group plc. Deputy Chair of Ofcom. Committee membership: Nomination Committee and Remuneration'
+  S111:
+  - notice: Intertek
+    page: 4
+    quote: 'Reckitt Benckiser Group plc. Deputy Chair of Ofcom. Committee membership: Nomination Committee and Remuneration'
+  S112:
+  - notice: Intertek
+    page: 4
+    quote: and senior roles at Kantar Group, McCann Erickson and Saatchi & Saatchi UK, where she held the roles of CEO and Executive Chair.
+  S113:
+  - notice: Intertek
+    page: 4
+    quote: Tamara was previously a Non-Executive Director of Sage Group plc and Serco Group plc and Chair of Wunderman Thompson, a subsidiary of WPP plc.
+  S114:
+  - notice: Intertek
+    page: 4
+    quote: Serco Group plc and Chair of Wunderman Thompson, a subsidiary of WPP plc. Her executive experience includes leadership roles within WPP from 2002
+  S115:
+  - notice: Intertek
+    page: 4
+    quote: to the Board. She is Chair of Asthma + Lung UK, Chair of The 10 Group and Chair of the Almeida Theatre Board of Trustees.
+  S116:
+  - notice: Intertek
+    page: 4
+    quote: Serco Group plc and Chair of Wunderman Thompson, a subsidiary of WPP plc. Her executive experience includes leadership roles within WPP from 2002
+  S117:
+  - notice: Intertek
+    page: 4
+    quote: Serco Group plc and Chair of Wunderman Thompson, a subsidiary of WPP plc. Her executive experience includes leadership roles within WPP from 2002
+  S118:
+  - notice: Severn Trent
+    page: 11
+    quote: Severn Trent Plc Notice of Meeting 2026
+  S119:
+  - notice: Severn Trent
+    page: 11
+    quote: Severn Trent Plc Notice of Meeting 2026
+  S120:
+  - notice: Severn Trent
+    page: 11
+    quote: Severn Trent Plc Notice of Meeting 2026
+  S121:
+  - notice: Severn Trent
+    page: 11
+    quote: Severn Trent Plc Notice of Meeting 2026
+  S122:
+  - notice: Severn Trent
+    page: 11
+    quote: of Hafren Dyfrdwy, Severn Trent’s licensed entity in Wales, in 2020.
+  S123:
+  - notice: ITV
+    page: 10
+    quote: the Audit and Risk Committee at ITV plc in March 2026; her extensive financial, commercial and international experience make her ideally
+  S124:
+  - notice: ITV
+    page: 10
+    quote: senior executive in the global media industry at Discovery, now Warner Bros Discovery. She has substantial experience in both the US and
+  S125:
+  - notice: ITV
+    page: 10
+    quote: the Audit and Risk Committee at ITV plc in March 2026; her extensive financial, commercial and international experience make her ideally
+  S126:
+  - notice: ITV
+    page: 10
+    quote: transformation of Now TV in the UK and the development and highly successful launch of Peacock.
+  S127:
+  - notice: ITV
+    page: 10
+    quote: successful launch of Peacock. Directors’ biographies
+  S128:
+  - notice: Tesco
+    page: 10
+    quote: 'Chief financial officer and chief operating officer: ITV plc Trustee: EMI Group Archive Trust'
+  - notice: ITV
+    page: 10
+    quote: the Audit and Risk Committee at ITV plc in March 2026; her extensive financial, commercial and international experience make her ideally
+  S129:
+  - notice: ITV
+    page: 10
+    quote: the Audit and Risk Committee at ITV plc in March 2026; her extensive financial, commercial and international experience make her ideally
+  S130:
+  - notice: Tesco
+    page: 10
+    quote: Tesco PLC Notice of Annual General Meeting 2026 10
+  S131:
+  - notice: ITV
+    page: 11
+    quote: year career at EMI. He also has a deep understanding of the workings of investors and of the City of London. His experience in executing and
+  S132:
+  - notice: Tesco
+    page: 10
+    quote: 'Trustee: EMI Group Archive Trust N'
+  S133:
+  - notice: ITV
+    page: 11
+    quote: financial leadership at three previous FTSE 100 companies and a great media background having held senior management positions over a 17-
+  S134:
+  - notice: Intertek
+    page: 3
+    quote: Intertek Group plc Notice of 2026 Annual General Meeting 2
+  S135:
+  - notice: Intertek
+    page: 3
+    quote: Burger King International whilst part of Diageo. As President of Burger King International’s operations from 2001 to 2003, he was responsible for all
+  S136:
+  - notice: Intertek
+    page: 3
+    quote: PepsiCo, Inc. and previously also worked for Colgate-Palmolive Company. He was also formerly the Senior Independent Non-Executive Director of
+  S137:
+  - notice: Intertek
+    page: 3
+    quote: André was previously Chair and Chief Executive Officer of Euro Disney S.C.A. from 2003 until 2005. During his tenure he initiated a long-term,
+  S138:
+  - notice: Intertek
+    page: 3
+    quote: From 2005 to 2015, André was Group Chief Executive of Inchcape plc, a £9.3 billion revenue global automotive services group operating in 32 countries.
+  S139:
+  - notice: Intertek
+    page: 3
+    quote: PepsiCo, Inc. and previously also worked for Colgate-Palmolive Company. He was also formerly the Senior Independent Non-Executive Director of
+  S140:
+  - notice: Intertek
+    page: 3
+    quote: Reckitt Benckiser Group plc from 2008 to 2018. André has consistently succeeded in driving growth and performance
+  S141:
+  - notice: Severn Trent
+    page: 13
+    quote: Severn Trent Plc Notice of Meeting 2026
+  S142:
+  - notice: Severn Trent
+    page: 13
+    quote: with HSBC in various finance leadership roles. She has been the Group Financial Controller, a Group
+  S143:
+  - notice: Severn Trent
+    page: 13
+    quote: with HSBC in various finance leadership roles. She has been the Group Financial Controller, a Group
+  S144:
+  - notice: Severn Trent
+    page: 13
+    quote: with HSBC in various finance leadership roles. She has been the Group Financial Controller, a Group
+  S145:
+  - notice: Severn Trent
+    page: 13
+    quote: Sarah also serves as the Chair of Hafren Dyfrdwy, the Group’s Welsh regulated entity.
+  S146:
+  - notice: Severn Trent
+    page: 13
+    quote: of Hang Seng Bank Limited, a Hong Kong listed bank. Sarah also serves as the Chair of Hafren Dyfrdwy, the
+  S147:
+  - notice: Severn Trent
+    page: 13
+    quote: • Non-Executive Director of Lloyds Banking Group Plc • Non-Executive Director of Man Group Plc
+  S148:
+  - notice: Severn Trent
+    page: 13
+    quote: • Non-Executive Director of Man Group Plc • Chair of Hafren Dyfrdwy
+  S149:
+  - notice: M&S
+    page: 1
+    quote: Marks and Spencer Group plc Annual Report and Financial Statements 2026 190
+  S150:
+  - notice: Intertek
+    page: 4
+    quote: Intertek Group plc Notice of 2026 Annual General Meeting 3
+  S151:
+  - notice: Intertek
+    page: 5
+    quote: plc and Chief Financial Officer at British Vita plc. He was previously the Senior Independent Director, Chair of the Audit Committee and a member
+  S152:
+  - notice: Intertek
+    page: 5
+    quote: Until April 2023, Jez was the Group Finance Director for Croda International plc, the FTSE100 global specialty chemicals company, a position he had held
+  S153:
+  - notice: Intertek
+    page: 5
+    quote: National Express Group plc, the Group Finance Director at Northern Foods plc and Chief Financial Officer at British Vita plc. He was previously the
+  S154:
+  - notice: Intertek
+    page: 5
+    quote: National Express Group plc, the Group Finance Director at Northern Foods plc and Chief Financial Officer at British Vita plc. He was previously the
+  S155:
+  - notice: Intertek
+    page: 5
+    quote: and Remuneration Committees at PZ Cussons plc. He is a Fellow of the Chartered Institute of Management Accountants.
+  S156:
+  - notice: Intertek
+    page: 4
+    quote: Non-Executive Director at Smith & Nephew plc, eChem Limited, Chair of the 100 Group and Senior Independent Director and Chair of the Audit
+  S157:
+  - notice: Intertek
+    page: 5
+    quote: of the Nomination and Remuneration Committees at Synthomer plc and Chair of the Audit & Risk Committee and a member of the Nomination
+  S158:
+  - notice: Intertek
+    page: 5
+    quote: 'Travis Perkins plc. Non-Executive Director of Smith & Nephew plc. Committee membership: Audit Committee'
+  S159:
+  - notice: Intertek
+    page: 1
+    quote: Intertek Group plc NOTICE OF 2026
+  S160:
+  - notice: ITV
+    page: 10
+    quote: the Audit and Risk Committee at ITV plc in March 2026; her extensive financial, commercial and international experience make her ideally
+  S161:
+  - notice: Severn Trent
+    page: 12
+    quote: Severn Trent Plc Notice of Meeting 2026 11
+  S162:
+  - notice: Severn Trent
+    page: 12
+    quote: Severn Trent Plc Notice of Meeting 2026 11
+  S163:
+  - notice: Severn Trent
+    page: 12
+    quote: Severn Trent Plc Notice of Meeting 2026 11
+  S164:
+  - notice: Severn Trent
+    page: 12
+    quote: Severn Trent Plc Notice of Meeting 2026 11
+  S165:
+  - notice: Severn Trent
+    page: 12
+    quote: 'Bass Taverns, Barclays Bank and Compass Group. Other key appointments:'
+  S166:
+  - notice: Severn Trent
+    page: 12
+    quote: 'Bass Taverns, Barclays Bank and Compass Group. Other key appointments:'
+  S167:
+  - notice: Severn Trent
+    page: 12
+    quote: • Non-Executive Director of Breedon Group Plc • Director of Water Plus Limited
+  S168:
+  - notice: Severn Trent
+    page: 12
+    quote: 'Bass Taverns, Barclays Bank and Compass Group. Other key appointments:'
+  S169:
+  - notice: Severn Trent
+    page: 12
+    quote: Openreach, part of the BT Group. Prior to the BT Group, Helen worked in a variety of organisations including
+  S170:
+  - notice: Severn Trent
+    page: 12
+    quote: • Director of Water Plus Limited Tom Delay CBE
+  S171:
+  - notice: Intertek
+    page: 5
+    quote: Intertek Group plc Notice of 2026 Annual General Meeting 4
+  S172:
+  - notice: Intertek
+    page: 5
+    quote: Intertek Group plc Notice of 2026 Annual General Meeting 4
+  S173:
+  - notice: Intertek
+    page: 5
+    quote: he spent 30 years at BAE Systems plc, where he held various senior positions, including Chief Operating Officer and board member; he then
+  S174:
+  - notice: Intertek
+    page: 5
+    quote: 'Nomination and Remuneration Committees of Costain Group plc. Committee membership: Nomination Committee (Chair) (following his'
+  S175:
+  - notice: Intertek
+    page: 5
+    quote: served as Chief Executive of Finmeccanica (now Leonardo S.p.A.), Italy’s principal defence and security company. Additionally, Steve has served as
+  S176:
+  - notice: Intertek
+    page: 5
+    quote: 'the Senior Independent Non-Executive Director of G4S plc. Length of service at the AGM: 1.5 years'
+  S177:
+  - notice: Intertek
+    page: 5
+    quote: QinetiQ Group plc and a Non-Executive Director and member of the Audit, Nomination and Remuneration Committees of Costain Group plc.
+  S178:
+  - notice: Intertek
+    page: 5
+    quote: the Chief Executive Officer of United Utilities Group plc from 2011 until March 2023, leading the company through significant growth. Prior to this,
+  S179:
+  - notice: Tesco
+    page: 8
+    quote: Tesco PLC Notice of Annual General Meeting 2026 08
+  S180:
+  - notice: Tesco
+    page: 8
+    quote: 'Chair: Burberry Group plc Trustee: The Burberry Foundation'
+  S181:
+  - notice: Tesco
+    page: 8
+    quote: 'Mentor: Chair Mentors International Imran Nawaz,'
+  S182:
+  - notice: Tesco
+    page: 8
+    quote: 'Senior advisor: Perella Weinberg Partners Mentor: Chair Mentors International'
+  S183:
+  - notice: Tesco
+    page: 8
+    quote: 'Trustee: The Burberry Foundation Senior advisor: Perella Weinberg Partners'
+  S184:
+  - notice: Tesco
+    page: 8
+    quote: Tesco PLC Notice of Annual General Meeting 2026 08
+  S185:
+  - notice: Tesco
+    page: 8
+    quote: Tesco PLC Notice of Annual General Meeting 2026 08
+  S186:
+  - notice: Severn Trent
+    page: 14
+    quote: • Non-Executive Director of ITV Plc • Non-Executive Director of Halma Plc
+  - notice: ITV
+    page: 10
+    quote: the Audit and Risk Committee at ITV plc in March 2026; her extensive financial, commercial and international experience make her ideally
+  S187:
+  - notice: Severn Trent
+    page: 14
+    quote: Severn Trent Plc Notice of Meeting 2026 13
+  S188:
+  - notice: Severn Trent
+    page: 14
+    quote: at the BBC, latterly as Chief Operating Officer for BBC Future Media and Technology, and was
+  S189:
+  - notice: Severn Trent
+    page: 14
+    quote: '• Non-Executive Director of Halma Plc Appointed:'
+  S190:
+  - notice: Severn Trent
+    page: 14
+    quote: Human Fertilisation and Embryology Authority and Chairman of the Human Tissue Authority, and
+  S191:
+  - notice: Severn Trent
+    page: 14
+    quote: and Chairman of the Human Tissue Authority, and she also has served on the board of the Pension
+  S192:
+  - notice: Severn Trent
+    page: 14
+    quote: • Chairman of the National Institute for Health and Care Excellence
+  S193:
+  - notice: Severn Trent
+    page: 14
+    quote: she also has served on the board of the Pension Protection Fund. Sharmila was appointed Officer
+  S194:
+  - notice: ITV
+    page: 11
+    quote: public health and medical research.
+  S195:
+  - notice: Severn Trent
+    page: 14
+    quote: previously Chief Executive at Wilton Park. Previous Non-Executive roles include Deputy Chair of the
+  - notice: ITV
+    page: 11
+    quote: fields. Sharmila was previously chief executive at Wilton Park, an executive agency of the FCO, and prior to that held various roles in
+  S196:
+  - notice: M&S
+    page: 1
+    quote: Marks and Spencer Group plc Annual Report and Financial Statements 2026 190
+  S197:
+  - notice: Tesco
+    page: 1
+    quote: The 2026 Annual General Meeting (AGM) of Tesco PLC will be held via the Lumi Global platform and held at, and broadcast from, the Heart building, Shire Park, Welwyn Garden City, AL7 1TW
+  S198:
+  - notice: Intertek
+    page: 5
+    quote: Intertek Group plc Notice of 2026 Annual General Meeting 4
+  S199:
+  - notice: Intertek
+    page: 5
+    quote: Kawal was previously a Non-Executive Director of Asia Airfreight Terminal Co. Ltd from 2016 to 2020.
+  S200:
+  - notice: Intertek
+    page: 5
+    quote: After a career of over 25 years at FedEx Express in various roles spanning service quality assurance, ground operations, and planning and engineering
+  S201:
+  - notice: Intertek
+    page: 5
+    quote: After a career of over 25 years at FedEx Express in various roles spanning service quality assurance, ground operations, and planning and engineering
+  S202:
+  - notice: Intertek
+    page: 5
+    quote: After a career of over 25 years at FedEx Express in various roles spanning service quality assurance, ground operations, and planning and engineering
+  S203:
+  - notice: Intertek
+    page: 5
+    quote: strategies. After working for Tata Motors as a Graduate Engineer Trainee in India, Kawal joined FedEx Express in 1997 as an Associate Engineer in
+  S204:
+  - notice: Intertek
+    page: 5
+    quote: Intertek Group plc Notice of 2026 Annual General Meeting 4
+  S205:
+  - notice: Intertek
+    page: 5
+    quote: and as Marketing Director of India at Coca-Cola and has held various roles at Nestle SA. She previously served as a Non-Executive Director of Heineken
+  S206:
+  - notice: Intertek
+    page: 5
+    quote: Asia at Diageo plc. Apurvi has also served as Marketing Director, APAC at PepsiCo International,
+  S207:
+  - notice: Intertek
+    page: 5
+    quote: Nestle SA. She previously served as a Non-Executive Director of Heineken Malaysia BHD.
+  S208:
+  - notice: Intertek
+    page: 5
+    quote: Nestle SA. She previously served as a Non-Executive Director of Heineken Malaysia BHD.
+  S209:
+  - notice: Intertek
+    page: 5
+    quote: Apurvi has also served as Marketing Director, APAC at PepsiCo International, and as Marketing Director of India at Coca-Cola and has held various roles at
+  S210:
+  - notice: Intertek
+    page: 5
+    quote: 'Director of SSP Group plc. Committee membership: Audit Committee'
+  S211:
+  - notice: Intertek
+    page: 5
+    quote: 'Current principal external appointments: Strategic Advisor to various companies in Southeast Asia and India'
+  S212:
+  - notice: Tesco
+    page: 10
+    quote: Tesco PLC Notice of Annual General Meeting 2026 10
+  S213:
+  - notice: Tesco
+    page: 10
+    quote: 'Other: International Advisory Board of Adobe Inc, board of trustees of V&A Foundation, Moelis & Company'
+  S214:
+  - notice: Tesco
+    page: 10
+    quote: 'Chair: Barratt Redrow plc and ICE Clear Europe Non-executive director: Intercontinental Exchange, Inc.'
+  S215:
+  - notice: Tesco
+    page: 10
+    quote: 'Chair: Barratt Redrow plc and ICE Clear Europe Non-executive director: Intercontinental Exchange, Inc.'
+  S216:
+  - notice: Tesco
+    page: 10
+    quote: 'Non-executive director: Intercontinental Exchange, Inc. Chair of audit committee: National Film and Television School'
+  S217:
+  - notice: Tesco
+    page: 10
+    quote: of V&A Foundation, Moelis & Company N
+  S218:
+  - notice: Tesco
+    page: 10
+    quote: 'Chair of audit committee: National Film and Television School Other: International Advisory Board of Adobe Inc, board of trustees'
+  S219:
+  - notice: Tesco
+    page: 10
+    quote: of V&A Foundation, Moelis & Company N
+  S220:
+  - notice: M&S
+    page: 1
+    quote: Marks and Spencer Group plc Annual Report and Financial Statements 2026 190
+  S221:
+  - notice: Severn Trent
+    page: 14
+    quote: Severn Trent Plc Notice of Meeting 2026 13
+  S222:
+  - notice: Severn Trent
+    page: 14
+    quote: spent nearly 11 years at Bank of America Merrill Lynch, where he was Head of UK and Ireland Corporate and
+  S223:
+  - notice: Severn Trent
+    page: 14
+    quote: Investment Banking at Barclays Plc, where he had been since 2011. Prior to joining Barclays, Richard
+  S224:
+  - notice: Severn Trent
+    page: 14
+    quote: Greenhill & Co International, an investment bank focused on providing financial advice globally on
+  S225:
+  - notice: Intertek
+    page: 5
+    quote: Intertek Group plc Notice of 2026 Annual General Meeting 4
+  S226:
+  - notice: Intertek
+    page: 6
+    quote: 'DripDrop Hydration Inc (both private US companies). Committee membership: Audit Committee (Chair)'
+  S227:
+  - notice: Intertek
+    page: 5
+    quote: Chief Executive Officer of Franciscan Estates, Inc., a premium wine company. He was also the Lead Director, Non-Executive Director and
+  S228:
+  - notice: Intertek
+    page: 6
+    quote: 'Current principal external appointments: Chair of Huneeus Vintners and DripDrop Hydration Inc (both private US companies).'
+  S229:
+  - notice: Intertek
+    page: 5
+    quote: From 2004 to 2012, Jean-Michel was Chair of Peet’s Coffee and Tea, Inc., a US beverage company which was listed at the time. He was also
+  S230:
+  - notice: Intertek
+    page: 5
+    quote: appointed as Managing Director at the Robert Mondavi Winery before becoming Chair. In his earlier career, Jean-Michel was President and
+  S231:
+  - notice: Intertek
+    page: 5
+    quote: Jean-Michel serves as an independent adviser in the US to select branded consumer companies and has more than 30 years’ experience
+  S232:
+  - notice: Intertek
+    page: 5
+    quote: Chair of Sleep Number Corporation until 2022 , and was a Director of The Boston Beer Company until he retired from that role in May 2025.
+  S233:
+  - notice: Intertek
+    page: 5
+    quote: Boston Beer Company until he retired from that role in May 2025. Jean-Michel serves as an independent adviser in the US to select
+  S234:
+  - notice: Tesco
+    page: 10
+    quote: Tesco PLC Notice of Annual General Meeting 2026 10
+  S235:
+  - notice: Tesco
+    page: 10
+    quote: 'Non-executive director: Nuffield Health S'
+  S236:
+  - notice: Tesco
+    page: 10
+    quote: 'Senior independent director: The Rank Group plc and Tritax Big Box REIT plc'
+  S237:
+  - notice: Tesco
+    page: 10
+    quote: 'Senior independent director: The Rank Group plc and Tritax Big Box REIT plc'
+roles:
+  S196:
+    evidence:
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: 'Chair and Executive Directors ... Archie Norman Chairman ... Appointed: September 2017'
+      page_date: '2026-05-19'
+    - source: web
+      url: https://corporate.marksandspencer.com/about-us/our-leadership
+      quote: 'Archie Norman: Chairman'
+  S149:
+    evidence:
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: 'Stuart Machin Chief Executive Officer ... Appointed: May 2022'
+      page_date: '2026-05-19'
+  S055:
+    evidence:
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: 'Alison Dolan Chief Financial Officer ... Appointed: January 2025'
+      page_date: '2026-05-19'
+  S048:
+    evidence:
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: 'Fiona Dawson Senior Independent Director ... Appointed: May 2021'
+      page_date: '2026-05-19'
+  S036:
+    evidence:
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: 'Evelyn Bourke Non-Executive Director ... Appointed: February 2021'
+      page_date: '2026-05-19'
+  S104:
+    evidence:
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: 'Tamara Ingram Non-Executive Director ... Appointed: June 2020'
+      page_date: '2026-05-19'
+  S220:
+    evidence:
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: 'Sapna Sood Non-Executive Director ... Appointed: June 2020'
+      page_date: '2026-05-19'
+  S037:
+    evidence:
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: 'Roger Burnley Non-Executive Director ... Appointed: December 2025'
+      page_date: '2026-05-19'
+    - source: web
+      url: https://www.ticker.app/lse/PETS/rns/2025-10-30/change-in-directors-details/5170F
+      quote: as a Non-Executive Director with effect from 1 December 2025
+      page_date: '2025-10-30'
+  S056:
+    evidence:
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: 'Sean Doyle Non-Executive Director ... Appointed: December 2025'
+      page_date: '2026-05-19'
+    - source: ch
+      url: https://find-and-update.company-information.service.gov.uk/officers/lRWjHoz26x-b8oFYlzaXRXnpWds/appointments
+      quote: MARKS AND SPENCER GROUP P.L.C. (04256886) ... Director ... Appointed on 1 December 2025
+  W01:
+    evidence:
+    - source: web
+      url: https://mgroupltd.com/news-insights/m-group-services-announces-appointment-of-archie-norman-as-non-executive-chairman/
+      quote: M Group Services is pleased to announce the appointment of Archie Norman as non-executive Chairman.
+      page_date: '2024-12-12'
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: Chairman of M Group.
+      page_date: '2026-05-19'
+  W02:
+    evidence:
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: Senior Independent Director of Bridgepoint Group plc.
+      page_date: '2026-05-19'
+    - source: web
+      url: https://www.fidelity.co.uk/factsheet-data/factsheet/GB00BND88V85-bridgepoint-group-plc/profile
+      quote: Mr. Archie Norman | Non-Executive Director, Senior Independent Director
+  W03:
+    evidence:
+    - source: web
+      url: https://corporate.marksandspencer.com/about-us/our-leadership
+      quote: Chairman of M Group, Senior Independent Director at Bridgepoint Group plc and Adviser to Coles Group.
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: Deputy Chairman of Coles Limited.
+      page_date: '2026-05-19'
+  W04:
+    evidence:
+    - source: web
+      url: https://ocadoretail.com/our-board/
+      quote: 'Stuart Machin: Non-Executive Director'
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: Director of M&S' JV with Ocado, Ocado Retail Limited.
+      page_date: '2026-05-19'
+  W05:
+    evidence:
+    - source: web
+      url: https://plc.pearson.com/en-GB/node/2531
+      quote: Non-Executive Director ... Member of the Audit and Remuneration Committees ... Appointed 1 June 2023
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: Non-Executive Director of Pearson plc.
+      page_date: '2026-05-19'
+  W06:
+    evidence:
+    - source: web
+      url: https://www.kerry.com/about/news-and-media/2026/chair-succession-and-board-update
+      quote: Fiona will succeed Tom as Chair at the conclusion of the 2026 AGM and will be independent on appointment.
+      page_date: '2026-02-17'
+    - source: web
+      url: https://www.farmersjournal.ie/news/dealer/new-chair-in-at-kerry-group-925657
+      quote: Fiona Dawson replaced Tom Moran, former secretary general at the Department of Agriculture, at the end of April.
+      page_date: '2026-07-29'
+    - source: web
+      url: https://www.investegate.co.uk/announcement/rns/kerry-group-a-shares-cdi---kyga/change-in-director-responsibilities/9694424
+      quote: Genevieve Berger will succeed Fiona Dawson as Chair of the Company's Sustainability Committee with effect from 31 July 2026.
+      page_date: '2026-07-29'
+  W07:
+    evidence:
+    - source: web
+      url: https://www.reckitt.com/our-company/our-leadership/fiona-dawson-cbe
+      quote: Appointed as Non-Executive Director in June 2024.
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: Non-Executive Director and Chair of the Remuneration Committee of Reckitt Benckiser Group plc.
+      page_date: '2026-05-19'
+  W08:
+    evidence:
+    - source: web
+      url: https://www.lego.com/en-us/aboutus/news/2026/may/vincent-warnery-appointed-to-lego-group-board-of-directors
+      quote: In connection to the LEGO A/S Board's annual general assembly, Fiona Dawson and Ilkka Paananen have decided to step down.
+      page_date: '2026-05-12'
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: 'Prior experience: ... Non-Executive Director of LEGO.'
+      page_date: '2026-05-19'
+  W09:
+    evidence:
+    - source: web
+      url: https://www.managers.org.uk/?p=340
+      quote: The Board of Trustees is the governing body of CMI, meeting 6 times a year under the chairship of the President.
+    - source: web
+      url: https://www.managers.org.uk/about-cmi/media-centre/press-releases/fiona-dawson-named-chartered-management-institutes-next-president/
+      quote: will become its next President, taking over from Lord Mark Price at the end of his term in October.
+      page_date: '2023-10-03'
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: President of the Chartered Management Institute.
+      page_date: '2026-05-19'
+  W10:
+    evidence:
+    - source: web
+      url: https://www.socialmobility.org.uk/trustee/fiona-dawson
+      quote: Trustee
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: Trustee of The Social Mobility Foundation.
+      page_date: '2026-05-19'
+  W11:
+    evidence:
+    - source: web
+      url: https://www.ticker.app/lse/STJ/rns/2026-02-05/Directorate-change/9103R
+      quote: the appointment of Evelyn Bourke as an Independent Non-executive Director with effect from 1 March 2026.
+      page_date: '2026-02-05'
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: Non-Executive Director of St James's Place plc.
+      page_date: '2026-05-19'
+  W12:
+    evidence:
+    - source: web
+      url: https://www.marketscreener.com/news/director-declaration-ce7e5adbd18ff62d
+      quote: Independent Non-Executive Director of Admiral
+      page_date: '2026-02-05'
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: Non-Executive Director of Admiral plc.
+      page_date: '2026-05-19'
+  W13:
+    evidence:
+    - source: web
+      url: https://genesiscare.com/uk/our-board-profiles
+      quote: Chair of the UK Board
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: Chair of the UK Board of GenesisCare and Non-Executive Director of GenesisCare Cayman.
+      page_date: '2026-05-19'
+  W14:
+    evidence:
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: President, Adecco APAC.
+      page_date: '2026-05-19'
+    - source: web
+      url: https://www.aap.com.au/aapreleases/cision20260225ae94766
+      quote: Rachel Duan, Martine Ferland, Stefano Grassi, Sandhya Venugopal and Regula Wallimann
+      page_date: '2026-02-25'
+  W15:
+    evidence:
+    - source: web
+      url: https://www.ticker.app/lse/PETS/rns/2025-10-30/change-in-directors-details/5170F
+      quote: Roger Burnley CBE, a Non-Executive Director, Chair of the Remuneration Committee and member of the Audit and Risk Committee,
+      page_date: '2025-10-30'
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: Non-Executive Director and Chair of the Remuneration Committee of Pets at Home plc.
+      page_date: '2026-05-19'
+  W16:
+    evidence:
+    - source: web
+      url: https://corporate.marksandspencer.com/about-us/our-leadership
+      quote: Roger currently is an advisor with Accenture
+  W17:
+    evidence:
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: Chief Executive and Chairman of British Airways.
+      page_date: '2026-05-19'
+    - source: ch
+      url: https://find-and-update.company-information.service.gov.uk/officers/lRWjHoz26x-b8oFYlzaXRXnpWds/appointments
+      quote: BRITISH AIRWAYS PLC (01777777) ... Director ... Appointed on 12 October 2020
+    - source: web
+      url: https://www.babinc.org/board-of-directors/
+      quote: Vice-Chair Sean Doyle, Chairman and Chief Executive
+  W18:
+    evidence:
+    - source: web
+      url: https://www.babinc.org/board-of-directors/
+      quote: Vice-Chair Sean Doyle, Chairman and Chief Executive
+    - source: ch
+      url: https://find-and-update.company-information.service.gov.uk/officers/lRWjHoz26x-b8oFYlzaXRXnpWds/appointments
+      quote: BRITISH AMERICAN BUSINESS INC. OF NEW YORK AND LONDON (FC022630) ... Appointed on 23 October 2024
+  W19:
+    evidence:
+    - source: ch
+      url: https://find-and-update.company-information.service.gov.uk/officers/lRWjHoz26x-b8oFYlzaXRXnpWds/appointments
+      quote: THE IRELAND FUND OF GREAT BRITAIN (07614886) ... Director ... Appointed on 16 July 2025
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: Director of The Ireland Fund of Great Britain.
+      page_date: '2026-05-19'
+  ch:carolyn-fairbairn:09928412:
+    capacity: chair
+    evidence:
+    - source: web
+      url: https://www.hsbc.com/-/files/hsbc/investors/results-and-announcements/stock-exchange-announcements/2026/may/sea-060526-hsbc-holdings-plc-board-and-committee-composition.pdf
+      quote: "Dame Carolyn Fairbairn assumed the role of independent non-executive Chair of HSBC UK Bank plc (‘HSBC UK’) on 30 April 2026."
+      page_date: '2026-05-06'
+  ch:carolyn-mccall:11443992:
+    capacity: non_executive_director
+    evidence:
+    - source: web
+      url: https://www.fidelity.co.uk/factsheet-data/factsheet/GB00BND88V85-bridgepoint-group-plc/profile
+      quote: Dame Carolyn J McCall DBE | Non-Executive Director
+  ch:helen-ashton:FC037925:
+    capacity: non_executive_director
+    evidence:
+    - source: web
+      url: https://www.investegate.co.uk/announcement/rns/entain--ent/directorate-changes/9689263
+      quote: Helen Ashton, Independent Non-Executive Director and Chair of the Audit & Risk Committee.
+      page_date: '2026-07-27'
+  ch:graham-cooke:03002645:
+    capacity: non_executive_director
+    evidence:
+    - source: web
+      url: https://investegate.co.uk/announcement/rns/rws-holdings--rws/appointment-of-non-executive-directors/7941156
+      quote: the appointment of Paul Abbott and Graham Cooke as independent Non-executive Directors with effect from 1 January 2024
+      page_date: '2023-12-14'
+    - source: web
+      url: https://www.ticker.app/lse/RWS/rns/2025-12-11/Directorate-change/0966L
+      quote: the appointments of Paul Abbott and Graham Cooke which extended the Board to five independent non-executive directors.
+      page_date: '2025-12-11'
+  ch:andrew-cosslett:00033774:
+    capacity: chair
+    evidence:
+    - source: web
+      url: https://matthey.com/documents/161599/7603892/JMA017_Chair's statement-260608.pdf
+      quote: I took up the role of Chair in July 2025 and I consider it a privilege to be part of the great history of this organisation.
+      page_date: '2026-06-04'
+  ch:sharmila-nebhrajani:05444653:
+    capacity: non_executive_director
+    evidence:
+    - source: web
+      url: https://www.investegate.co.uk/announcement/rns/essentra--esnt/directorate-change/9619524
+      quote: the appointment of Sharmila Nebhrajani OBE to the Board of Directors ... with effect from 29 June 2026.
+      page_date: '2026-06-16'
+    - source: web
+      url: https://www.investegate.co.uk/announcement/rns/essentra--esnt/directorate-change/9619524
+      quote: will succeed Mary Reilly as Chair of the Audit and Risk Committee and Senior Independent Director on 1 January 2027.
+      page_date: '2026-06-16'
+  W20:
+    evidence:
+    - source: web
+      url: https://www.fidelity.co.uk/factsheet-data/factsheet/GB00BD3VFW73-convatec-group-plc/profile
+      quote: Non-Executive Director, Senior Independent Director
+    - source: web
+      url: https://www.convatecgroup.com/media/press-releases/2026/chief-financial-officer-succession-and-non-executive-director-appointment/
+      quote: succeeding Margaret Ewing, who will step down from that role
+      page_date: '2026-07-15'
+  W21:
+    evidence:
+    - source: web
+      url: https://fidelity.co.uk/factsheet-data/factsheet/ES0177542018-international-consolidated-airline/profile
+      quote: Non-Executive Director
+    - source: web
+      url: https://www.ticker.app/lse/ITV/rns/2026-01-21/Directorate-change/8144P
+      quote: She will continue as a member of the Committee and in her other Board roles.
+      page_date: '2026-01-21'
+  ch:sarah-legg:00002065:
+    capacity: non_executive_director
+    evidence:
+    - source: web
+      url: https://www.investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/non-executive-board-changes/5892134
+      quote: As with other Group NEDs, both will also serve as Non-Executive Directors of the Group's Ring-Fenced Bank Boards.
+      page_date: '2019-10-31'
+    - source: ch
+      url: https://find-and-update.company-information.service.gov.uk/company/00002065/persons-with-significant-control
+      quote: 'Lloyds Banking Group plc: ownership of shares 75 to 100 percent, voting rights 75 to 100 percent'
+  ch:sarah-legg:SC327000:
+    capacity: non_executive_director
+    evidence:
+    - source: web
+      url: https://www.investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/non-executive-board-changes/5892134
+      quote: As with other Group NEDs, both will also serve as Non-Executive Directors of the Group's Ring-Fenced Bank Boards.
+      page_date: '2019-10-31'
+    - source: ch
+      url: https://find-and-update.company-information.service.gov.uk/company/SC327000/officers
+      quote: LEGG, Sarah Catherine ... Director ... Appointed on 1 December 2019
+    - source: ch
+      url: https://find-and-update.company-information.service.gov.uk/company/SC218813/officers
+      quote: LEGG, Sarah Catherine ... Director ... Appointed on 1 December 2019
+    - source: ch
+      url: https://find-and-update.company-information.service.gov.uk/company/SC218813/persons-with-significant-control
+      quote: Lloyds Bank Plc ... Ownership of shares – 75% or more
+    - source: web
+      url: https://www.lloydsbankfoundation.org.uk/about-us/meet-us/sarah-legg/
+      quote: Sarah is an Independent Non-Executive Director of Lloyds Banking Group and joined the Foundation Board in July 2021.
+  ch:sarah-legg:SC218813:
+    capacity: non_executive_director
+    evidence:
+    - source: web
+      url: https://www.investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/non-executive-board-changes/5892134
+      quote: As with other Group NEDs, both will also serve as Non-Executive Directors of the Group's Ring-Fenced Bank Boards.
+      page_date: '2019-10-31'
+    - source: ch
+      url: https://find-and-update.company-information.service.gov.uk/company/SC327000/officers
+      quote: LEGG, Sarah Catherine ... Director ... Appointed on 1 December 2019
+    - source: ch
+      url: https://find-and-update.company-information.service.gov.uk/company/SC218813/officers
+      quote: LEGG, Sarah Catherine ... Director ... Appointed on 1 December 2019
+    - source: ch
+      url: https://find-and-update.company-information.service.gov.uk/company/SC218813/persons-with-significant-control
+      quote: Lloyds Bank Plc ... Ownership of shares – 75% or more
+    - source: web
+      url: https://www.lloydsbankfoundation.org.uk/about-us/meet-us/sarah-legg/
+      quote: Sarah is an Independent Non-Executive Director of Lloyds Banking Group and joined the Foundation Board in July 2021.
+  ch:archie-norman:FC041696:
+    capacity: chair
+    evidence:
+    - source: ch
+      url: https://find-and-update.company-information.service.gov.uk/company/FC041696
+      quote: Holding company to facilitate the acquisition of m group services a uk provider.
+    - source: ch
+      url: https://find-and-update.company-information.service.gov.uk/company/FC041696/officers
+      quote: NORMAN, Archibald John ... Director ... 31 October 2024
+    - source: web
+      url: https://mgroupltd.com/news-insights/m-group-services-announces-appointment-of-archie-norman-as-non-executive-chairman/
+      quote: M Group Services is pleased to announce the appointment of Archie Norman as non-executive Chairman.
+      page_date: '2024-12-12'
+  ch:melissa-bethell:FC040033:
+    capacity: non_executive_director
+    evidence:
+    - source: ch
+      url: https://find-and-update.company-information.service.gov.uk/company/FC040033
+      quote: Outdoor advertising services
+    - source: ch
+      url: https://find-and-update.company-information.service.gov.uk/company/FC040033/officers
+      quote: BETHELL, Melissa, Lady ... Director ... 21 November 2022
+    - source: web
+      url: https://persportaal.anp.nl/artikel/CSN-030624048/-ocean-outdoor-announces-group-ceo-succession-plan
+      quote: Melissa Bethell, current Board Chair of Ocean
+      page_date: '2024-06-03'
+    - source: web
+      url: https://persportaal.anp.nl/artikel/CSN-030624048/-ocean-outdoor-announces-group-ceo-succession-plan
+      quote: Tim Bleakley who will become Chairman of Ocean's Board of Directors upon the transition.
+      page_date: '2024-06-03'
+  ch:kawal-preet:FC015149:
+    capacity: executive_director
+    evidence:
+    - source: ch
+      url: https://find-and-update.company-information.service.gov.uk/company/FC015149/officers
+      quote: PREET, Kawal ... Director ... 1 October 2025
+    - source: web
+      url: https://cargonewswire.com/fedex-appoints-kawal-preet-as-executive-vice-president-planning-engineering-and-transformation/
+      quote: Executive Vice President (EVP), Planning, Engineering, and Transformation ... October 1, 2025
+      page_date: '2025-10-07'
+  ch:laura-crespi:FC032164:
+    capacity: executive_director
+    evidence:
+    - source: ch
+      url: https://find-and-update.company-information.service.gov.uk/company/FC032164/officers
+      quote: CRESPI, Laura ... Director ... 8 May 2026
+    - source: web
+      url: https://preview.intertek.com.pe/siteassets/investors/2026/ara/intertek-financial-report-2025.pdf
+      quote: Youngever Holdings Ltd ... Luna Tower, Waterfront Drive, Road Town, Tortola, VG 1110, British Virgin Islands
+      page_date: '2025-12-31'
+    - source: web
+      url: https://www.intertek.com/about/executive-committee/
+      quote: Appointed to the Board as Chief Financial Officer in April 2026.
+  S200:
+    evidence:
+    - source: web
+      url: https://www.sec.gov/Archives/edgar/data/0001048911/000110465925079800/tm2512613-2_def14a.htm
+      quote: Silvia Davila; Marvin R. Ellison; Stephen E. Gorman; ... Rajesh Subramaniam; Paul S. Walsh (13 nominees, 2025 annual meeting)
+      page_date: '2025-08-18'
+    - source: web
+      url: https://www.sec.gov/Archives/edgar/data/0001048911/000110465926097836/tm2531093-3_def14a.htm
+      quote: Mark A. Edmunds, first appointed to the Board in June 2026
+      page_date: '2026-08-17'
+    - source: web
+      url: https://cargonewswire.com/fedex-appoints-kawal-preet-as-executive-vice-president-planning-engineering-and-transformation/
+      quote: Executive Vice President (EVP), Planning, Engineering, and Transformation
+      page_date: '2025-10-07'
+  S217:
+    evidence:
+    - source: web
+      url: https://www.moelis.com/team/caroline-silver/
+      quote: Caroline Silver is a Senior Advisor at Moelis & Company, having previously served as a Managing Director until 2020.
+    - source: web
+      url: https://www.boardroomalpha.com/sec/mc-defa14a-2026-04-30-0001193125-26-193248
+      quote: Kenneth Moelis, Navid Mahmoodzadegan, Eric Cantor, Thorold Barker, Louise Mirrer, Kenneth L. Shropshire, Laila J. Worrell
+      page_date: '2026-04-30'
+  W22:
+    evidence:
+    - source: web
+      url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+      quote: Chair of the UK Board of GenesisCare and Non-Executive Director of GenesisCare Cayman.
+      page_date: '2026-05-19'
+orgs:
+  HSBC UK Bank plc:
+  - source: web
+    url: https://www.hsbc.com/-/files/hsbc/investors/hsbc-results/2025/annual/pdfs/hsbc-uk-bank-plc/260225-annual-report-and-accounts-2025.pdf
+    quote: "HSBC UK Bank plc is a public limited company with debt securities traded on the London Stock Exchange."
+    supports: debt_listed
+    page_date: '2026-02-25'
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/09928412/persons-with-significant-control
+    quote: 'HSBC Holdings plc: ownership of shares 75 to 100 percent, voting rights 75 to 100 percent'
+    supports: parent
+  Lloyds Bank plc:
+  - source: web
+    url: https://www.investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/admission-of-covered-bonds-to-trading/9739433
+    quote: "LLOYDS BANK PLC ... The Covered Bonds have been admitted to the Official List of the Financial Conduct Authority and to trading on the regulated market of the London Stock Exchange"
+    supports: debt_listed
+    page_date: '2026-08-25'
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/00002065/persons-with-significant-control
+    quote: 'Lloyds Banking Group plc: ownership of shares 75 to 100 percent, voting rights 75 to 100 percent'
+    supports: parent
+  HBOS plc:
+  - source: web
+    url: https://sharesmagazine.co.uk/news/market/LSE20250217090521_5540928/notification-of-redemption
+    quote: "all of the above Notes will be redeemed by HBOS plc on 18 March 2025"
+    supports: debt_listed
+    note: its one London-listed note found was redeemed in March 2025; no current listing found, so debt_listed is unknown
+    page_date: '2025-02-17'
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/SC218813/persons-with-significant-control
+    quote: 'Lloyds Bank plc: ownership of shares 75 to 100 percent, voting rights 75 to 100 percent'
+    supports: parent
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/SC218813
+    quote: Public limited Company
+    supports: type
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/SC218813/persons-with-significant-control
+    quote: Lloyds Bank Plc
+    supports: parent
+    page_date: '2016-04-06'
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/SC218813/persons-with-significant-control
+    quote: Ownership of shares – 75% or more
+    supports: parent
+    page_date: '2016-04-06'
+  - source: web
+    url: https://investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/group-corporate-structure-cha/1940178
+    quote: will own HBOS indirectly, as Lloyds TSB will be the immediate parent of HBOS.
+    supports: parent
+    page_date: '2009-12-23'
+  Bank of Scotland plc:
+  - source: web
+    url: https://www.onvista.de/anleihen/BK-SCOTLAND-91-UND-Anleihe-GB0000394915
+    quote: "Bank of Scotland PLC ... GB0000394915 ... London Stock Exchange ... Ist Ewige Anleihe: Ja"
+    supports: debt_listed
+    page_date: '2026-10-26'
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/SC327000/persons-with-significant-control
+    quote: 'HBOS plc: ownership of shares 75 to 100 percent, voting rights 75 to 100 percent'
+    supports: parent
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/SC327000
+    quote: BANK OF SCOTLAND PLC ... Active ... Public limited Company
+    supports: type
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/SC327000/persons-with-significant-control
+    quote: Hbos Plc ... Ownership of shares – 75% or more
+    supports: parent
+  - source: web
+    url: https://www.investegate.co.uk/announcement/rns/lloyds-banking-group--lloy/2026-half-year-results/9696396
+    quote: The Bank's ultimate parent undertaking and controlling party is Lloyds Banking Group plc which is incorporated in Scotland.
+    supports: parent
+    page_date: '2026-07-30'
+  Tesco Corporate Treasury Services PLC:
+  - source: web
+    url: https://www.tescoplc.com/media/norpawpj/tesco-corporate-treasury-services-plc-2025-final-signed.pdf
+    quote: "All MTNs are listed and guaranteed by the ultimate parent company Tesco PLC."
+    supports: debt_listed
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/08629715/persons-with-significant-control
+    quote: 'Tesco plc: ownership of shares 75 to 100 percent, voting rights 75 to 100 percent'
+    supports: parent
+  Intertek Finance plc:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/03226960/persons-with-significant-control
+    quote: 'Intertek Testing Services Holdings Limited: ownership of shares 75 to 100 percent'
+    supports: parent
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/03227453/persons-with-significant-control
+    quote: Intertek Group plc (PSC of Intertek Testing Services Holdings Limited)
+    supports: parent
+  Intertek Group plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/intertek-group/company-information
+    quote: 'EPIC: ITRK ... Market Sector: MAIN ... Date Listed: 29-05-2002 ... Main Indices: FTSE 100, FTSE 350, FTSE All-Share'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://www.londonstockexchange.com/stock/ITRK/intertek-group-plc/company-page
+    quote: INTERTEK GROUP PLC (ITRK) Equity Price and Quote
+    supports: market
+  Marks and Spencer Group plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/marks-spencer-group/company-information
+    quote: 'EPIC: MKS ... Market Sector: MAIN ... Date Listed: 19-03-2002 ... Main Indices: FTSE 100, FTSE 350, FTSE All-Share'
+    supports: listed
+    page_date: '2026-10-26'
+  Outokumpu Oyj:
+  - source: web
+    url: https://news.cision.com/outokumpu-oyj/r/outokumpu-publishes-its-january-june-2026-half-year-report-and-arranges-a-webcast-on-july-30--2026,c4367437
+    quote: Our shares are listed on Nasdaq Helsinki.
+    supports: listed
+    page_date: '2026-07-16'
+  - source: web
+    url: https://www.inderes.fi/en/releases/outokumpu-half-year-report-january-june-2026-improved-profitability-while-progressing-on-evolve-growth-strategy
+    quote: OUT1V
+    supports: market
+    page_date: '2026-07-30'
+  Bata International:
+  - source: web
+    url: https://kyodonewsprwire.jp/release/202409196674
+    quote: Founded in 1894, the family-owned business operates in over 56 countries across five continents.
+    supports: listed
+    page_date: '2024-09-19'
+  Nando's Group Holdings Limited:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/06451677
+    quote: NANDO'S GROUP HOLDINGS LIMITED ... Active ... Private limited Company
+    supports: listed
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/06451677/persons-with-significant-control
+    quote: Mr Leslie Perlman ... Ownership of voting rights - 75% or more ... Right to appoint or remove directors
+    supports: parent
+  Brillio LLC:
+  - source: web
+    url: https://www.privateequitywire.co.uk/bain-capital-acquire-brillio/
+    quote: Bain Capital Private Equity is to acquire a majority stake in Brillio
+    supports: listed
+    page_date: '2019-01-16'
+  - source: web
+    url: https://www.privateequitywire.co.uk/bain-capital-acquire-brillio/
+    quote: Financial terms of the private transaction were not disclosed.
+    supports: listed
+    page_date: '2019-01-16'
+  Ocean Outdoor:
+  - source: web
+    url: https://www.ogier.com/news-and-insights/deals/ogier-advises-atairos-in-landmark-us-580-million-take-private/
+    quote: Ogier has acted as BVI and Cayman counsel for the Atairos group in a ground-breaking US$580 million take private of Ocean Outdoor Limited
+    supports: listed
+    page_date: '2022-07-07'
+  - source: web
+    url: https://aws.oceanoutdoor.com/website/wp-content/uploads/2022/08/Merger-Circular-Online-Publication.pdf
+    quote: WILL RESULT IN THE CANCELLATION OF THE LISTING OF OCEAN SHARES ON THE OFFICIAL LIST AND OF TRADING OF OCEAN SHARES
+    supports: listed
+    page_date: '2022-05-17'
+  - source: web
+    url: https://www.ogier.com/news-and-insights/deals/ogier-advises-atairos-in-landmark-us-580-million-take-private/
+    quote: of Ocean Outdoor Limited by way of a BVI statutory merger
+    supports: parent
+    page_date: '2022-07-07'
+  Qubit:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/07116058
+    quote: COVEO EMEA LTD ... Private limited Company ... QUBIT DIGITAL LTD 05 Jan 2010 - 01 Apr 2026
+    supports: listed
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/07116058/persons-with-significant-control
+    quote: Coveo Solutions Uk Limited ... Ownership of shares – 75% or more ... Notified on 14 October 2021
+    supports: parent
+  - source: web
+    url: https://ir.coveo.com/en/news-events/press-releases/detail/211/coveo-acquires-qubit
+    quote: today announced the acquisition of Qubit, a leader in AI-powered personalization technology for merchandising teams
+    supports: parent
+    page_date: '2021-10-15'
+  Gonville and Caius College, Cambridge:
+  - source: web
+    url: https://www.cai.cam.ac.uk/sites/default/files/accounts%2021-22.pdf
+    quote: 'The College is a registered charity (Charity Registration Number: 1137536) and is subject to regulation by the Charity Commission for England and Wales.'
+    supports: type
+    page_date: '2022'
+  - source: web
+    url: https://www.cai.cam.ac.uk/sites/default/files/accounts%2021-22.pdf
+    quote: The College is constituted under the provisions of the Universities of Oxford and Cambridge Act 1923 and is a registered charity.
+    supports: listed
+    page_date: '2022'
+  Capri Holdings Limited:
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/0001530721/000153072126000047/cpri-20260328.htm
+    quote: Ordinary Shares, no par value | CPRI | New York Stock Exchange
+    supports: listed
+    page_date: '2026-03-28'
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/0001530721/000153072126000047/cpri-20260328.htm
+    quote: British Virgin Islands
+    supports: type
+    page_date: '2026-03-28'
+  Nature's Way Foods Ltd:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/02896421
+    quote: NATURES WAY FOODS LIMITED ... Active ... Private limited Company
+    supports: listed
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/02896421/persons-with-significant-control
+    quote: Natures Way Foods Investment Company Limited ... Ownership of shares – 75% or more ... Notified on 17 November 2023
+    supports: parent
+  Spencer Stuart:
+  - source: web
+    url: https://www.spencerstuart.com/-/media/2019/June/SpencerStuartFirmFactSheet-0619
+    quote: Today, we are the leading privately held firm owned and governed by its partners.
+    supports: listed
+    page_date: 2019-06
+  - source: web
+    url: https://www.spencerstuart.com/-/media/2019/June/SpencerStuartFirmFactSheet-0619
+    quote: Privately held since 1956
+    supports: listed
+    page_date: 2019-06
+  Asthma + Lung UK:
+  - source: web
+    url: https://asthmaandlung.org.uk/about-us
+    quote: Registered charity in England and Wales (326730), Scotland (SC038415) and the Isle of Man (1177).
+    supports: type
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/01863614
+    quote: ASTHMA AND LUNG UK ... Active ... Private company limited by guarantee without share capital
+    supports: listed
+  Reckitt Benckiser Group plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/reckitt-benckiser-group/company-information
+    quote: 'EPIC: RKT ... Market Sector: MAIN ... Main Indices: FTSE 100, FTSE 350, FTSE All-Share'
+    supports: listed
+    page_date: '2026-10-26'
+  EMI Group Archive Trust:
+  - source: web
+    url: https://www.emiarchivetrust.org/the-emi-archive-trust/
+    quote: The EMI Archive Trust is a UK registered charity, number 1056254.
+    supports: type
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/03197688
+    quote: EMI ARCHIVE TRUST ... Private Limited Company by guarantee without share capital ... EMI GROUP ARCHIVE TRUST, 29 May 1996 - 10 Jul 1996
+    supports: listed
+  - source: web
+    url: https://charitylens.co.uk/charity/emi-archive-trust-1056254
+    quote: 'EMI ARCHIVE TRUST ... #1056254 ... Registered'
+    supports: type
+  Smith & Nephew plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/smith-nephew/company-information
+    quote: 'EPIC: SN. ... Market Sector: MAIN ... Main Indices: techMARK, FTSE 100, FTSE 350, FTSE All-Share'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://www.smith-nephew.com/who-we-are/investors/shareholder-resources
+    quote: Smith & Nephew plc is quoted on the London Stock Exchange (symbol SN).
+    supports: market
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/845982/000110465926028258/snn-20251231x20f.htm
+    quote: American Depositary Shares ... New York Stock Exchange
+    supports: market
+    page_date: '2025-12-31'
+  Water Plus Limited:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/04141390
+    quote: WATER PLUS LIMITED ... Active ... Private limited Company
+    supports: listed
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/04141390/persons-with-significant-control
+    quote: Water Plus Group Limited ... Ownership of shares – 75% or more
+    supports: parent
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/10012579/persons-with-significant-control
+    quote: Severn Trent Services International (Overseas Holdings) Limited ... United Utilities Plc ... More than 25% but not more than 50%
+    supports: parent
+  - source: web
+    url: https://www.unitedutilities.com/corporate/newsroom/2016-news-archive/united-utilities-and-severn-trent-given-cma-approval-to-merge-retail-businesses/
+    quote: to form a 50/50 Joint Venture targeting the business retail market
+    supports: parent
+    page_date: '2016-05-04'
+  Burberry Group plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/burberry-group/company-information
+    quote: BRBY ... MAIN ... 18-07-2002 ... FTSE 100, FTSE 350, FTSE All-Share
+    supports: listed
+    page_date: '2026-10-26'
+  The Burberry Foundation:
+  - source: web
+    url: https://charitylens.co.uk/charity/the-burberry-foundation-1154468
+    quote: 'THE BURBERRY FOUNDATION ... #1154468 ... Registered'
+    supports: type
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/08731570
+    quote: THE BURBERRY FOUNDATION ... Private Limited Company by guarantee without share capital use of 'Limited' exemption
+    supports: listed
+  FedEx:
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/0001048911/000104891126000105/fdx-20260531.htm
+    quote: Common Stock, par value $0.10 per share | FDX | New York Stock Exchange
+    supports: listed
+    page_date: '2026-05-31'
+  Adobe Inc.:
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm
+    quote: Common Stock, $0.0001 par value per share | ADBE | NASDAQ
+    supports: listed
+    page_date: '2025-11-28'
+  Intercontinental Exchange, Inc.:
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/1571949/000157194926000004/ice-20251231.htm
+    quote: Common Stock, $0.01 par value per share | ICE | New York Stock Exchange
+    supports: listed
+    page_date: '2025-12-31'
+  V&A Foundation:
+  - source: web
+    url: https://www.vam.ac.uk/info/the-vas-charitable-status
+    quote: 'The V&A also has a related charity: the V&A Foundation, registered with the number 1144508.'
+    supports: type
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/07788681
+    quote: THE V&A FOUNDATION ... Private Limited Company by guarantee without share capital use of 'Limited' exemption
+    supports: listed
+  Huneeus Vintners:
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/16918/000001691804000057/ex-99.htm
+    quote: is a privately held wine company in Napa, Calif.
+    supports: listed
+    page_date: '2004-12-20'
+  - source: web
+    url: https://www.huneeuswines.com/
+    quote: Wines of the Huneeus Family
+    supports: listed
+    page_date: '2026'
+  The Rank Group plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/rank-group/company-information
+    quote: RNK ... MAIN ... 07-10-1996 ... FTSE 250, FTSE 350, FTSE All-Share
+    supports: listed
+    page_date: '2026-10-26'
+  Bridgepoint Group plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/bridgepoint-group-reg-s/company-information
+    quote: 'EPIC: BPT ... Market Sector: MAIN ... Main Indices: FTSE 250, FTSE 350, FTSE All-Share'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/bridgepoint-group-reg-s/company-information/
+    quote: 'EPIC: BPT'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/bridgepoint-group-reg-s/company-information/
+    quote: 'Exchange: London stock exchange'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/bridgepoint-group-reg-s/company-information/
+    quote: 'Market Sector: MAIN'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/bridgepoint-group-reg-s/company-information/
+    quote: 'Date Listed: n/a'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/bridgepoint-group-reg-s/company-information/
+    quote: 'Main Indices: FTSE 250, FTSE 350, FTSE All-Share'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://www.stblaw.com/about-us/news/view/2021/07/30/bridgepoint-completes-initial-public-offering
+    quote: admission to the Official List in the U.K. and to trading on the London Stock Exchange
+    supports: listed
+    page_date: '2021-07-30'
+  Pearson plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/pearson/company-information
+    quote: PSON ... MAIN ... 13-08-1969 ... FTSE 100, FTSE 350, FTSE All-Share
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/938323/000119312526104945/d33885d20f.htm
+    quote: American Depositary Shares, each Representing One Ordinary Share, 25p per Ordinary Share ... New York Stock Exchange
+    supports: market
+    page_date: '2025-12-31'
+  Chartered Management Institute:
+  - source: web
+    url: https://www.managers.org.uk/about-cmi/royal-charter/
+    quote: The Royal Charter was granted by the Privy Council on 12 February 2002 and came into effect on 1 April 2002.
+    supports: listed
+  - source: web
+    url: https://charitylens.co.uk/charity/chartered-management-institute-1091035
+    quote: 'CHARTERED MANAGEMENT INSTITUTE ... #1091035 ... Registered'
+    supports: type
+  Admiral Group plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/admiral-group/company-information
+    quote: 'EPIC: ADM ... Market Sector: MAIN ... Date Listed: 28-09-2004 ... Main Indices: FTSE 100, FTSE 350, FTSE All-Share'
+    supports: listed
+    page_date: '2026-10-26'
+  Pets at Home Group plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/pets-at-home-group/company-information
+    quote: 'EPIC: PETS ... Market Sector: MAIN ... Date Listed: 12-03-2014 ... Main Indices: FTSE 250, FTSE 350, FTSE All-Share'
+    supports: listed
+    page_date: '2026-10-26'
+  BritishAmerican Business:
+  - source: web
+    url: https://www.babinc.org/?p=96731
+    quote: BAB is a US 501(c)6.
+    supports: type
+  - source: web
+    url: https://www.babinc.org/?p=96731
+    quote: It is a not-for-profit members’ association.
+    supports: listed
+  International Consolidated Airlines Group, S.A.:
+  - source: web
+    url: https://iairgroup.com/investors-and-shareholders/the-iag-share
+    quote: IAG shares are traded on the Spanish Stock Exchanges of Madrid, Barcelona, Bilbao and Valencia,
+    supports: market
+  - source: web
+    url: https://iairgroup.com/investors-and-shareholders/the-iag-share
+    quote: and the London Stock Exchange's main market for listed securities.
+    supports: market
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/international-consolidated-airlines-group-sa-cdi/company-information
+    quote: 'EPIC: IAG ... Market Sector: MAIN ... Main Indices: FTSE 100, FTSE 350, FTSE All-Share'
+    supports: listed
+    page_date: '2026-10-26'
+  RWS Holdings plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/rws-holdings/company-information
+    quote: RWS ... AIM ... AMSM ... 11-11-2003 ... FTSE AIM All-Share, FTSE AIM 50, FTSE AIM 100
+    supports: listed
+    page_date: '2026-10-26'
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/03002645
+    quote: RWS HOLDINGS PLC ... Active ... Public limited Company
+    supports: type
+  Youngever Holdings Ltd.:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/FC032164
+    quote: YOUNGEVER HOLDINGS LTD. ... Overseas company ... VIRGIN ISLANDS ... Private Limited Company
+    supports: listed
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/FC032164
+    quote: To carry on the business of an investment company
+    supports: type
+  - source: web
+    url: https://preview.intertek.com.pe/siteassets/investors/2026/ara/intertek-financial-report-2025.pdf
+    quote: Youngever Holdings Ltd ... Luna Tower, Waterfront Drive, Road Town, Tortola, VG 1110, British Virgin Islands
+    page_date: '2025-12-31'
+  - source: web
+    url: https://www.intertek.com/about/executive-committee/
+    quote: Appointed to the Board as Chief Financial Officer in April 2026.
+  ITV plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/itv/company-information/
+    quote: 'EPIC: ITV'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/itv/company-information/
+    quote: 'Exchange: London stock exchange'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/itv/company-information/
+    quote: 'Market Sector: MAIN'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/itv/company-information/
+    quote: 'Date Listed: 02-02-2004'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/itv/company-information/
+    quote: 'Main Indices: FTSE 250, FTSE 350, FTSE All-Share'
+    supports: market
+    page_date: '2026-10-26'
+  Severn Trent Plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/severn-trent/company-information/
+    quote: 'EPIC: SVT'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/severn-trent/company-information/
+    quote: 'Exchange: London stock exchange'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/severn-trent/company-information/
+    quote: 'Market Sector: MAIN'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/severn-trent/company-information/
+    quote: 'Date Listed: 12-12-1989'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/severn-trent/company-information/
+    quote: 'Main Indices: FTSE 100, FTSE 350, FTSE All-Share'
+    supports: market
+    page_date: '2026-10-26'
+  Americana Restaurants International plc:
+  - source: web
+    url: https://www.zawya.com/en/press-release/companies-news/americana-restaurants-delivers-strong-h1-2026-performance-413713
+    quote: '(ADX symbol: AMR/ ISIN: AEE01135A222) (Saudi Stock Exchange symbol: 6015)'
+    supports: listed
+    page_date: '2026-07-29'
+  - source: web
+    url: https://www.argaam.com/en/article/articledetail/id/1608461
+    quote: Shares of Americana Restaurants International will start trading on the Saudi Exchange (Tadawul) today, Dec. 12
+    supports: market
+    page_date: '2022-12-12'
+  - source: web
+    url: https://www.argaam.com/en/article/articledetail/id/1608461
+    quote: in a dual IPO on Tadawul and Abu Dhabi Securities Exchange (ADX)
+    supports: market
+    page_date: '2022-12-12'
+  Ikano Retail Pte Ltd:
+  - source: web
+    url: https://group.ikano/stories/ikano-retail/
+    quote: We are the only franchisee owned by the family of Ingvar Kamprad, who founded IKEA in 1943.
+    supports: listed
+  - source: web
+    url: https://group.ikano/organisation/
+    quote: Ikano Group is a privately held international group of companies with the parent company Ikano S.A. based in Luxembourg.
+    supports: parent
+  - source: web
+    url: data/notices/Intertek_2026_Notice_of_AGM.pdf (p.4)
+    quote: a director of Ikano Retail Pte Ltd (privately owned)
+    supports: listed
+    page_date: '2026'
+  Haleon PLC:
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/0001900304/000165495426004476/a4808d.htm
+    quote: 'Haleon (LSE/NYSE: HLN) is a consumer company that is solely focused on better everyday health.'
+    supports: listed
+    page_date: '2026-05-07'
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/1900304/000110465926027443/hln-20251231x20f.htm
+    quote: Haleon is a foreign private issuer (FPI) with American Depositary Shares (ADSs) listed on the New York Stock Exchange
+    supports: market
+    page_date: '2026-03-13'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/indices/ftse-100/?page=3
+    quote: HLN | Haleon
+    supports: market
+  Diageo PLC:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/diageo/company-information/
+    quote: 'EPIC: DGE'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/diageo/company-information/
+    quote: 'Exchange: London stock exchange'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/diageo/company-information/
+    quote: 'Market Sector: MAIN'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/diageo/company-information/
+    quote: 'Date Listed: 06-05-1952'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/diageo/company-information/
+    quote: 'Main Indices: FTSE 100, FTSE 350, FTSE All-Share'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/835403/000095010326003219/dp241928_f3asr.htm
+    quote: listed on the New York Stock Exchange under the symbol "DEO".
+    supports: market
+    page_date: '2026-03-04'
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/835403/000095010326003219/dp241928_f3asr.htm
+    quote: also listed on the Euronext Paris and the Irish Stock Exchange.
+    supports: market
+    page_date: '2026-03-04'
+  The Magnum Ice Cream Company N.V.:
+  - source: web
+    url: https://www.euronext.com/en/about/media/euronext-press-releases/magnum-ice-cream-company-lists-euronext
+    quote: 'on its listing on Euronext Amsterdam (ticker code: MICC)'
+    supports: listed
+    page_date: '2025-12-08'
+  - source: web
+    url: https://www.euronext.com/en/about/media/euronext-press-releases/magnum-ice-cream-company-lists-euronext
+    quote: The company will be listed on Euronext Amsterdam, the London Stock Exchange and the New York Stock Exchange
+    supports: market
+    page_date: '2025-12-08'
+  Chapter Zero:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/12062028
+    quote: Private company limited by guarantee without share capital
+    supports: listed
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/12062028
+    quote: 94990 - Activities of other membership organisations not elsewhere classified
+    supports: type
+  - source: web
+    url: https://www.chapterzero.org.uk/
+    quote: Chapter Zero Limited is registered in the United Kingdom as a company limited by guarantee
+    supports: type
+  - source: web
+    url: https://www.chapterzero.org.uk/
+    quote: Welcome to the Directors' Climate Forum.
+    supports: type
+  HSBC Holdings plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/hsbc-holdings/company-information/
+    quote: 'EPIC: HSBA'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/hsbc-holdings/company-information/
+    quote: 'Exchange: London stock exchange'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/hsbc-holdings/company-information/
+    quote: 'Market Sector: MAIN'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/hsbc-holdings/company-information/
+    quote: 'Date Listed: 08-04-1991'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/hsbc-holdings/company-information/
+    quote: 'Main Indices: FTSE 100, FTSE 350, FTSE All-Share'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://www.hsbc.com/investors/investing-in-hsbc
+    quote: HSBC Holdings plc, the holding company of the Group, is listed in London, Hong Kong, New York and Bermuda.
+    supports: market
+    page_date: '2026-07-14'
+  Kingfisher plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/kingfisher/company-information/
+    quote: 'EPIC: KGF'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/kingfisher/company-information/
+    quote: 'Exchange: London stock exchange'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/kingfisher/company-information/
+    quote: 'Market Sector: MAIN'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/kingfisher/company-information/
+    quote: 'Date Listed: 24-11-1982'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/kingfisher/company-information/
+    quote: 'Main Indices: FTSE 100, FTSE 350, FTSE All-Share'
+    supports: market
+    page_date: '2026-10-26'
+  Tate & Lyle Plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/tate-lyle/company-information/
+    quote: 'EPIC: TATE'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/tate-lyle/company-information/
+    quote: 'Exchange: London stock exchange'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/tate-lyle/company-information/
+    quote: 'Market Sector: MAIN'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/tate-lyle/company-information/
+    quote: 'Date Listed: 09-12-1938'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/tate-lyle/company-information/
+    quote: 'Main Indices: FTSE 250, FTSE 350, FTSE All-Share'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/0001046257/000104625726000230/ingr-20260728.htm
+    quote: The Acquisition is expected to be completed in the second half of 2027
+    supports: listed
+    page_date: '2026-07-28'
+  Whitbread Plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/whitbread/company-information/
+    quote: 'EPIC: WTB'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/whitbread/company-information/
+    quote: 'Exchange: London stock exchange'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/whitbread/company-information/
+    quote: 'Market Sector: MAIN'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/whitbread/company-information/
+    quote: 'Date Listed: 09-07-1948'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/whitbread/company-information/
+    quote: 'Main Indices: FTSE 100, FTSE 350, FTSE All-Share'
+    supports: market
+    page_date: '2026-10-26'
+  Marsh & McLennan Companies, Inc.:
+  - source: web
+    url: https://www.marsh.com/en/corp/about/news/marsh-mclennan-to-change-nyse-symbol-to-mrsh.html
+    quote: it will be changing its New York Stock Exchange (NYSE) ticker symbol from “MMC” to “MRSH”
+    supports: market
+    page_date: '2025-12-29'
+  - source: web
+    url: https://www.marsh.com/en/corp/about/news/marsh-mclennan-to-change-nyse-symbol-to-mrsh.html
+    quote: Trading under the new brand name and stock ticker symbol will take effect on January 14, 2026.
+    supports: listed
+    page_date: '2025-12-29'
+  The 10 Group:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/06998865
+    quote: Private limited Company
+    supports: listed
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/06998865/officers
+    quote: INGRAM, Tamara | Director (Active) | 6 April 2022
+    supports: type
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/06998865/persons-with-significant-control
+    quote: 10 Group Holdco Limited
+    supports: parent
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/09278348
+    quote: Private limited Company
+    supports: listed
+  - source: web
+    url: https://allindependentagencies.org/directory/general/the-10-group/
+    quote: an integrated, digital first marketing and communications agency
+    supports: type
+  Lloyds Banking Group Plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/lloyds-banking-group/company-information/
+    quote: 'EPIC: LLOY'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/lloyds-banking-group/company-information/
+    quote: 'Exchange: London stock exchange'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/lloyds-banking-group/company-information/
+    quote: 'Market Sector: MAIN'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/lloyds-banking-group/company-information/
+    quote: 'Date Listed: 08-10-1986'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/lloyds-banking-group/company-information/
+    quote: 'Main Indices: FTSE 100, FTSE 350, FTSE All-Share'
+    supports: market
+    page_date: '2026-10-26'
+  Travis Perkins plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/travis-perkins/company-information/
+    quote: 'EPIC: TPK'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/travis-perkins/company-information/
+    quote: 'Exchange: London stock exchange'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/travis-perkins/company-information/
+    quote: 'Market Sector: MAIN'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/travis-perkins/company-information/
+    quote: 'Date Listed: 19-09-1986'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/travis-perkins/company-information/
+    quote: 'Main Indices: FTSE 250, FTSE 350, FTSE All-Share'
+    supports: market
+    page_date: '2026-10-26'
+  Costain Group plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/costain-group/company-information/
+    quote: 'EPIC: COST'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/costain-group/company-information/
+    quote: 'Exchange: London stock exchange'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/costain-group/company-information/
+    quote: 'Market Sector: MAIN'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/costain-group/company-information/
+    quote: 'Date Listed: 03-01-1979'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/costain-group/company-information/
+    quote: 'Main Indices: FTSE Small Cap, FTSE All-Share'
+    supports: market
+    page_date: '2026-10-26'
+  Chair Mentors International:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/07947858
+    quote: Private limited Company
+    supports: listed
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/07947858/persons-with-significant-control
+    quote: Global Mentors Group Limited
+    supports: parent
+  - source: web
+    url: https://www.topofminds.com/en/companies/cmi
+    quote: Founded in 2005, Chair Mentors International (CMi) is on a mission to empower senior leaders.
+    supports: type
+  Halma Plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/halma/company-information/
+    quote: 'EPIC: HLMA'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/halma/company-information/
+    quote: 'Exchange: London stock exchange'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/halma/company-information/
+    quote: 'Market Sector: MAIN'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/halma/company-information/
+    quote: 'Date Listed: 18-01-1972'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/halma/company-information/
+    quote: 'Main Indices: FTSE 100, FTSE 350, FTSE All-Share'
+    supports: market
+    page_date: '2026-10-26'
+  SSP Group plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/ssp-group/company-information/
+    quote: 'EPIC: SSPG'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/ssp-group/company-information/
+    quote: 'Exchange: London stock exchange'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/ssp-group/company-information/
+    quote: 'Market Sector: MAIN'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/ssp-group/company-information/
+    quote: 'Date Listed: n/a'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/ssp-group/company-information/
+    quote: 'Main Indices: FTSE 250, FTSE 350, FTSE All-Share'
+    supports: market
+    page_date: '2026-10-26'
+  Barratt Redrow plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/barratt-redrow/company-information/
+    quote: 'EPIC: BTRW'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/barratt-redrow/company-information/
+    quote: 'Exchange: London stock exchange'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/barratt-redrow/company-information/
+    quote: 'Market Sector: MAIN'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/barratt-redrow/company-information/
+    quote: 'Date Listed: 04-12-1968'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/barratt-redrow/company-information/
+    quote: 'Main Indices: FTSE 100, FTSE 350, FTSE All-Share'
+    supports: market
+    page_date: '2026-10-26'
+  Moelis & Company:
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/1596967/000119312526324296/mc-20260630.htm
+    quote: Class A Common Stock | MC | New York Stock Exchange (NYSE)
+    supports: listed
+    page_date: '2026-06-30'
+  Greenhill & Co. International LLP:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/OC332045
+    quote: Limited liability partnership
+    supports: listed
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/OC332045/persons-with-significant-control
+    quote: Greenhill & Co. Europe Holdings Limited
+    supports: parent
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/03688817/persons-with-significant-control
+    quote: Mizuho Financial Group, Inc
+    supports: parent
+    page_date: '2023-11-30'
+  - source: web
+    url: https://www.mizuhogroup.com/news-release/20231201-2release-eng
+    quote: Mizuho Americas has completed the acquisition of Greenhill.
+    supports: parent
+    page_date: '2023-12-01'
+  Select US branded consumer companies (not named):
+  - source: web
+    url: data/notices/Intertek_2026_Notice_of_AGM.pdf (p.5)
+    quote: Jean-Michel serves as an independent adviser in the US to select branded consumer companies
+    supports: type
+    page_date: '2026'
+  Tritax Big Box REIT plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/tritax-big-box-reit/company-information/
+    quote: 'EPIC: BBOX'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/tritax-big-box-reit/company-information/
+    quote: 'Exchange: London stock exchange'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/tritax-big-box-reit/company-information/
+    quote: 'Market Sector: MAIN'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/tritax-big-box-reit/company-information/
+    quote: 'Date Listed: n/a'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/tritax-big-box-reit/company-information/
+    quote: 'Main Indices: FTSE 250, FTSE 350, FTSE All-Share'
+    supports: market
+    page_date: '2026-10-26'
+  Coles Group:
+  - source: web
+    url: https://www.colesgroup.com.au/investors
+    quote: 'Current share price (ASX: COL)'
+    supports: listed
+    page_date: '2026-10-27'
+  Kerry Group plc:
+  - source: web
+    url: https://www.kerry.com/investors/faq
+    quote: Kerry Group is listed on the Dublin and London Stock Exchanges.
+    supports: listed
+  - source: web
+    url: https://www.kerry.com/investors/faq
+    quote: Its ticker symbol is KYGa.I for Dublin and KYGa.L for London.
+    supports: market
+  - source: web
+    url: https://www.ticker.app/lse/KYGA/rns/2026-02-24/Transaction-in-Own-Shares/0732U
+    quote: on Euronext Dublin from J&E Davy.
+    supports: market
+    page_date: '2026-02-24'
+  Social Mobility Foundation:
+  - source: web
+    url: https://www.socialmobility.org.uk/
+    quote: 'Charity Number: 1115888 (England & Wales) | SC051842 (Scotland)'
+    supports: type
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/05488354
+    quote: Private Limited Company by guarantee without share capital use of 'Limited' exemption
+    supports: listed
+  GenesisCare (UK board):
+  - &id001
+    source: web
+    url: https://genesiscare.com/uk/news/genesiscare-completes-reorganisation-emerges-chapter-11
+    quote: 'GenesisCare now consists of three distinct businesses: GenesisCare Australia, GenesisCare UK, and GenesisCare Spain.'
+    supports: type
+    page_date: '2024-02-16'
+  - &id002
+    source: web
+    url: https://genesiscare.com/uk/news/genesiscare-completes-reorganisation-emerges-chapter-11
+    quote: Each business will have its own governance structures, including a separate Board of Directors.
+    supports: type
+    page_date: '2024-02-16'
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/09605635
+    quote: Private limited Company
+    supports: listed
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/15432503/persons-with-significant-control
+    quote: Genesis Specialist Care Holding Uk Limited
+    supports: parent
+  Accenture:
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/1467373/000146737325000222/acn-20251130.htm
+    quote: Class A ordinary shares, par value $0.0000225 per share | ACN | New York Stock Exchange
+    supports: listed
+    page_date: '2025-11-30'
+  The Ireland Fund of Great Britain:
+  - source: web
+    url: https://irelandfunds.org/chapters/great-britain-2/
+    quote: Registered Charity 327889.
+    supports: type
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/07614886
+    quote: Private Limited Company by guarantee without share capital use of 'Limited' exemption
+    supports: listed
+  Johnson Matthey plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/johnson-matthey/company-information/
+    quote: 'EPIC: JMAT'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/johnson-matthey/company-information/
+    quote: 'Exchange: London stock exchange'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/johnson-matthey/company-information/
+    quote: 'Market Sector: MAIN'
+    supports: market
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/johnson-matthey/company-information/
+    quote: 'Date Listed: 09-09-1942'
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/johnson-matthey/company-information/
+    quote: 'Main Indices: FTSE 250, FTSE 350, FTSE All-Share'
+    supports: market
+    page_date: '2026-10-26'
+  Midas Topco Limited:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/FC041696
+    quote: Overseas company
+    supports: type
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/FC041696
+    quote: JERSEY
+    supports: type
+  - source: web
+    url: https://mgroupltd.com/media/jdnfqgr2/midas-midco-limited-31-march-2025-signed-v2.pdf
+    quote: M Group Limited (formerly Midas Midco Limited) is a UK incorporated company which is owned by Midas Topco Limited.
+    supports: type
+    page_date: '2025-03-31'
+  - source: web
+    url: https://mgroupltd.com/media/jdnfqgr2/midas-midco-limited-31-march-2025-signed-v2.pdf
+    quote: Midas Topco Limited indirectly controlled by the indirect majority shareholder CVC Capital Partners IX (A) L.P.
+    supports: listed
+    page_date: '2025-03-31'
+  Tesco PLC:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/tesco/company-information
+    quote: EPIC TSCO ... Exchange London stock exchange ... Market Sector MAIN ... Main Indices FTSE 100, FTSE 350, FTSE All-Share
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://www.londonstockexchange.com/stock/TSCO/tesco-plc/company-page
+    quote: TESCO PLC (TSCO) Equity Price and Quote | London Stock Exchange
+    supports: market
+  ECOnnect Energy AS:
+  - source: web
+    url: https://data.brreg.no/enhetsregisteret/api/enheter?navn=ECONNECT%20ENERGY
+    quote: ECONNECT ENERGY AS ... 999017762 ... AS / Aksjeselskap ... 2012-10-17 ... OSLO
+    supports: type
+  - source: web
+    url: https://www.norwep.com/partners/company-bd27a98f-7b6b-428e-9bfc-138a3b58714e
+    quote: ECONNECT Energy was founded in 2012 driven by the belief that clean energy should be accessible and affordable.
+    supports: type
+  Associated British Foods plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/associated-british-foods/company-information
+    quote: EPIC ABF ... ISIN GB0006731235 ... Exchange London stock exchange ... Market Sector MAIN ... FTSE 100
+    supports: listed
+    page_date: '2026-10-26'
+  InterContinental Hotels Group plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/intercontinental-hotels-group/company-information
+    quote: EPIC IHG ... ISIN GB00BHJYC057 ... Exchange London stock exchange ... Market Sector MAIN ... FTSE 100
+    supports: listed
+    page_date: '2026-10-26'
+  - source: web
+    url: https://www.ihgplc.com/en/investors/shareholder-centre/adr-holders
+    quote: The Company's ordinary shares are listed on the New York Stock Exchange in the form of American Depositary Shares
+    supports: market
+    page_date: '2026-10-26'
+  Atairos:
+  - source: web
+    url: https://uk.news.yahoo.com/uks-ocean-outdoor-inks-580-085841145.html
+    quote: Atoll Bidco, a unit of private investment company Atairos,
+    supports: listed
+    page_date: '2022-05-03'
+  Exor N.V.:
+  - source: web
+    url: https://www.exor.com/sites/default/files/press-releases/2022-08/Exor_PR_Listing%20Amsterdam%20and%20request%20for%20delisting%20Milan.pdf
+    quote: its ordinary shares were admitted to listing and trading at 09:00 Central European Time today, 12 August 2022, on Euronext Amsterdam, under the symbol “EXO”
+    supports: market
+    page_date: '2022-08-12'
+  - source: web
+    url: https://live.euronext.com/en/product/equities/NL0012059018-XAMS
+    quote: EXOR NV ... Exor Press Release - Buyback Second Tranche Launch (26/10/2026)
+    supports: listed
+    page_date: '2026-10-26'
+  Keywords Studios Ltd:
+  - source: web
+    url: https://eqtgroup.com/news/eqt-together-with-cpp-investments-and-temasek-and-keywords-studios-announce-acquisition-completion
+    quote: Keywords Studios’ ordinary shares have now ceased trading on the AIM market
+    supports: listed
+    page_date: '2024-10-24'
+  - source: web
+    url: https://eqtgroup.com/news/eqt-together-with-cpp-investments-and-temasek-and-keywords-studios-announce-acquisition-completion
+    quote: the company has been delisted from the London Stock Exchange
+    supports: listed
+    page_date: '2024-10-24'
+  Frontier Economics:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/03752719
+    quote: FRONTIER ECONOMICS LIMITED ... Company status Active ... Company type Private limited Company
+    supports: listed
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/03752719/persons-with-significant-control
+    quote: The company knows or has reasonable cause to believe that there is no registrable person
+    supports: parent
+  Nuffield College, Oxford:
+  - source: web
+    url: https://www.nuffield.ox.ac.uk/
+    quote: Nuffield is a graduate college of the University of Oxford that specializes in the social sciences.
+    supports: type
+  - source: web
+    url: https://www.nuffield.ox.ac.uk/
+    quote: Charity Registration No. 1137506
+    supports: listed
+  IG Design Group plc:
+  - source: web
+    url: https://kalkinemedia.com/uk/news/announcements/ig-design-group-completes-620000-share-buyback-over-five-trading-days-in-july-2026
+    quote: IG Design Group plc is listed on the London Stock Exchange's AIM, a market for smaller and growing companies.
+    supports: market
+    page_date: '2026-07-20'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/ig-design-group/company-information
+    quote: EPIC IGR ... Exchange London stock exchange ... Market Sector AIM ... Market Segment ASQ1 ... FTSE AIM All-Share
+    supports: market
+    page_date: '2026-10-26'
+  Newton Group Holdings Limited:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/13664692
+    quote: NEWTON GROUP HOLDINGS LIMITED ... Company status Active ... Company type Private limited Company ... Incorporated on 6 October 2021
+    supports: listed
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/13664692/persons-with-significant-control
+    quote: Mr Andrew Marcus Hawes ... Ownership of shares – More than 25% but not more than 50% ... Active
+    supports: parent
+  Almeida Theatre:
+  - source: web
+    url: https://almeida.co.uk/
+    quote: © Copyright 2026 Almeida Theatre, London N1 1TA. Registered Charity No. 282167
+    supports: type
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/01546033
+    quote: ALMEIDA THEATRE COMPANY LIMITED ... Company type Private company limited by guarantee without share capital
+    supports: listed
+  Ofcom:
+  - source: web
+    url: https://www.gov.uk/government/organisations/ofcom
+    quote: Ofcom is the regulator and competition authority for the UK communications industries.
+    supports: type
+  Hafren Dyfrdwy:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/03527628
+    quote: HAFREN DYFRDWY CYFYNGEDIG ... Company status Active ... Company type Private limited Company
+    supports: listed
+  - source: web
+    url: https://www.hdcymru.co.uk/content/dam/hdcymru/regulatory-documents/hd-ara-2025.pdf
+    quote: The ultimate parent undertaking and controlling party is Severn Trent Plc
+    supports: parent
+    page_date: '2025-03-31'
+  - source: web
+    url: https://www.hdcymru.co.uk/content/dam/hdcymru/regulatory-documents/hd-ara-2025.pdf
+    quote: Hafren Dyfrdwy is a wholly owned subsidiary of Severn Trent Draycote Limited, part of the Severn Trent Plc Group
+    supports: parent
+    page_date: '2025-03-31'
+  Man Group Plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/man-group/company-information
+    quote: EPIC EMG ... Exchange London stock exchange ... Market Sector MAIN ... Country of register Jersey ... AGM 07/05/2026
+    supports: listed
+    page_date: '2026-10-26'
+  Breedon Group Plc:
+  - source: web
+    url: https://www.theconstructionindex.co.uk/news/view/breedon-graduates-to-main-market
+    quote: from AIM to the premium listing segment of the official list
+    supports: market
+    page_date: '2023-05-17'
+  - source: web
+    url: https://www.hl.co.uk/shares/shares-search-results/b/breedon-group-plc-ord-gbp0.01/company-information
+    quote: EPIC BREE ... Exchange London Stock Exchange (LON) ... FTSE All Share Index, Britain-FTSE250-Index
+    supports: listed
+    page_date: '2026-10-26'
+  QinetiQ Group plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/qinetiq-group/company-information
+    quote: EPIC QQ. ... ISIN GB00B0WMWD03 ... Exchange London stock exchange ... Market Sector MAIN ... FTSE 250
+    supports: listed
+    page_date: '2026-10-26'
+  Perella Weinberg Partners:
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/0001777835/000162828026059853/perellaweinberg-424b7.htm
+    quote: Our Class A common stock is traded on the Nasdaq Global Select Market (the "Nasdaq") under the symbol "PWP."
+    supports: market
+    page_date: '2026-09-01'
+  National Institute for Health and Care Excellence (NICE):
+  - source: web
+    url: https://www.gov.uk/government/organisations/national-institute-for-clinical-excellence
+    quote: an executive non-departmental public body, sponsored by the Department of Health and Social Care
+    supports: type
+  Various companies (SE Asia & India, unnamed): []
+  ICE Clear Europe:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/06219884
+    quote: ICE CLEAR EUROPE LIMITED ... Company status Active ... Company type Private limited Company
+    supports: listed
+  - source: web
+    url: https://www.ice.com/publicdocs/clear_europe/ICE_Clear_Europe_Limited_Statutory_Accounts_2022_US_GAAP.pdf
+    quote: The Company is a wholly-owned subsidiary of IntercontinentalExchange Holdings, whose ultimate parent and controlling entity is Intercontinental Exchange, Inc.
+    supports: parent
+    page_date: '2022-12-31'
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/06219884/persons-with-significant-control
+    quote: Intercontinentalexchange Holdings ... Ownership of shares – 75% or more ... Active
+    supports: parent
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/1571949/000157194926000004/ice-20251231.htm
+    quote: Common Stock, $0.01 par value per share ICE New York Stock Exchange NYSE Texas
+    supports: parent
+    page_date: '2025-12-31'
+  National Film and Television School:
+  - source: web
+    url: https://charitylens.co.uk/charity/the-national-film-and-television-school-313429
+    quote: 'THE NATIONAL FILM AND TELEVISION SCHOOL ... #313429 ... Charitable company'
+    supports: type
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/00981908
+    quote: NATIONAL FILM AND TELEVISION SCHOOL(THE) ... Company type Private Limited Company by guarantee without share capital use of 'Limited' exemption
+    supports: listed
+  DripDrop Hydration Inc:
+  - source: web
+    url: https://en.wikipedia.org/wiki/DripDrop_ORS
+    quote: Type Private
+    supports: listed
+  Nuffield Health:
+  - source: web
+    url: https://www.nuffieldhealth.com/about-us/our-organisation
+    quote: 'A Registered Charity Number: 205533 (England & Wales)'
+    supports: type
+  - source: web
+    url: https://www.nuffieldhealth.com/about-us/our-organisation
+    quote: Nuffield Health is a not-for-profit organisation limited by guarantee, without share capital.
+    supports: listed
+  M Group:
+  - source: web
+    url: https://www.paipartners.com/case-study/m-group-services
+    quote: The sale of M Group Services to CVC completed in September 2024.
+    supports: listed
+  Ocado Retail Limited:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/03875000
+    quote: OCADO RETAIL LIMITED ... Company status Active ... Company type Private limited Company
+    supports: listed
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/03875000/persons-with-significant-control
+    quote: Marks And Spencer Holdings Limited ... Ownership of shares – More than 25% but not more than 50% ... Active
+    supports: parent
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/03875000/persons-with-significant-control
+    quote: Ocado Holdings Limited ... Ownership of shares – More than 25% but not more than 50% ... Active
+    supports: parent
+  LEGO Group A/S:
+  - source: web
+    url: https://www.lego.com/en-gb/aboutus/lego-group/ownership
+    quote: The LEGO Group is owned by LEGO Holding, which is owned by KIRKBI A/S, the Kirk Kristiansen family's holding company (75%)
+    supports: parent
+  - source: web
+    url: https://www.lego.com/en-gb/aboutus/lego-group/ownership
+    quote: and the LEGO Foundation (25%).
+    supports: listed
+  St. James's Place plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/st-jamess-place/company-information
+    quote: EPIC STJ ... ISIN GB0007669376 ... Exchange London stock exchange ... Market Sector MAIN ... FTSE 100
+    supports: listed
+    page_date: '2026-10-26'
+  The Adecco Group (APAC):
+  - source: web
+    url: https://www.adeccogroup.com/-/media/project/adecco-group/adeccogroup/investor-pdfs/2017/release_announcements_22nov.pdf
+    quote: Ian Lee will take up the role of Regional Head of Asia Pacific (APAC), which will include India.
+    supports: type
+    page_date: '2017-11-22'
+  - source: web
+    url: https://www.adeccogroup.com/-/media/project/adecco-group/adeccogroup/investor-pdfs/2017/release_announcements_22nov.pdf
+    quote: 'Adecco Group AG is registered in Switzerland (ISIN: CH0012138605) and listed on the SIX Swiss Exchange (ADEN).'
+    supports: parent
+    page_date: '2017-11-22'
+  - source: web
+    url: https://www.six-group.com/en/market-data/shares/share-explorer/share-details.CH0012138605CHF4.html
+    quote: ADECCO N Stock Price - ADEN | SIX
+    supports: parent
+    page_date: '2026-10-16'
+  British Airways Plc:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/01777777
+    quote: BRITISH AIRWAYS PLC ... Company status Active ... Company type Public limited Company
+    supports: type
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/01777777/persons-with-significant-control
+    quote: International Consolidated Airlines Group S.A ... Ownership of shares – 75% or more ... Right to appoint or remove directors ... Active
+    supports: parent
+  Convatec Group plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/convatec-group/company-information
+    quote: EPIC CTEC ... ISIN GB00BD3VFW73 ... Exchange London stock exchange ... Market Sector MAIN ... FTSE 100
+    supports: listed
+    page_date: '2026-10-26'
+  Entain plc:
+  - source: web
+    url: https://www.entaingroup.com/investor-relations/shareholder-information/
+    quote: quoted on the Official List of the Main Market of the London Stock Exchange
+    supports: market
+    page_date: '2026-10-02'
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/entain/company-information
+    quote: Entain plc ... EPIC ENT ... ISIN IM00B5VQMV65 ... Market Sector MAIN ... Country of register Isle OF Man
+    supports: listed
+    page_date: '2026-10-26'
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/FC037925
+    quote: ENTAIN LIMITED ... Company type Overseas company ... ISLE OF MAN ... Registration number 004685V
+    supports: type
+  Essentra plc:
+  - source: web
+    url: https://research-centre.barclays.co.uk/shares/essentra/company-information
+    quote: Essentra plc ... EPIC ESNT ... ISIN GB00B0744359 ... Exchange London stock exchange ... Market Sector MAIN ... FTSE Small Cap
+    supports: listed
+    page_date: '2026-10-26'
+  Federal Express Corporation:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/FC015149
+    quote: FEDERAL EXPRESS CORPORATION ... Overseas company ... Legal form Private Corporation With Limited Liability ... Governing law Delaware Usa
+    supports: listed
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/0000230211/000095012310065733/c03154e10vk.htm
+    quote: FedEx Express is a wholly owned subsidiary of FedEx, and there is no market for FedEx Express's common stock.
+    supports: parent
+    page_date: '2010-05-31'
+  - source: web
+    url: https://www.sec.gov/Archives/edgar/data/0001048911/000104891126000105/fdx-20260531.htm
+    quote: FedEx Corporation (“FedEx”) was incorporated in Delaware on October 2, 1997 to serve as the parent holding company
+    supports: parent
+    page_date: '2026-05-31'
+  Atoll Holdco Ltd.:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/FC040033
+    quote: ATOLL HOLDCO LTD. ... Overseas company ... CAYMAN ISLANDS ... Legal form Private Company Limited By Shares ... Outdoor advertising services
+    supports: listed
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/FC040033/officers
+    quote: BETHELL, Melissa, Lady ... Director ... Appointed 21 November 2022
+    supports: parent
+  - source: web
+    url: https://uk.news.yahoo.com/uks-ocean-outdoor-inks-580-085841145.html
+    quote: Atoll Bidco, a unit of private investment company Atairos,
+    supports: parent
+    page_date: '2022-05-03'
+  Intertek Testing Services Pacific Limited:
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/FC028088
+    quote: INTERTEK TESTING SERVICES PACIFIC LIMITED ... Overseas company ... HONG KONG ... Company Limited By Shares
+    supports: type
+  - source: ch
+    url: https://find-and-update.company-information.service.gov.uk/company/FC028088/officers
+    quote: CRESPI, Laura ... C/O Intertek Group Plc, 33 Cavendish Square, London, United Kingdom, W1G 0PS
+    supports: parent
+  GenesisCare Cayman:
+  - source: web
+    url: https://corporate.marksandspencer.com/sites/marksandspencer/files/marksandspencer/annual-report/m-and-s-annual-report-and-financial-statements-2026.pdf
+    quote: Chair of the UK Board of GenesisCare and Non-Executive Director of GenesisCare Cayman.
+    page_date: '2026-05-19'
+  - *id001
+  - *id002
+withdrawn:
+  Tesco#7:
+  - source: web
+    url: https://www.investegate.co.uk/announcement/rns/tesco--tsco/directorate-change/9554573
+    quote: Thierry has resigned as a Director of the Company with immediate effect.
+    page_date: '2026-05-06'
+  - source: web
+    url: https://www.investegate.co.uk/announcement/rns/tesco--tsco/directorate-change/9554573
+    quote: its supervisory board has nominated Thierry Garnier for appointment as a member of its management board.
+    page_date: '2026-05-06'
+  - source: web
+    url: https://www.marketscreener.com/news/tesco-plc-announces-resignation-of-thierry-garnier-as-director-remuneration-committee-nominations-ce7f5bdbd989f422
+    quote: the Company confirms that the resolution to re-elect Thierry Garnier as a Director of the Company ... is withdrawn.
+    page_date: '2026-05-06'
+  - source: web
+    url: https://www.ticker.app/lse/TSCO/rns/2026-06-18/result-of-agm/8998I
+    quote: To re-elect Thierry Garnier as a Director - RESOLUTION WITHDRAWN
+    page_date: '2026-06-18'

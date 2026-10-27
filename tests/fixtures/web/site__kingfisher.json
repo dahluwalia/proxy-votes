@@ -1,0 +1,78 @@
+{
+ "key": "4073a908616b9d6a002a668b00e0264b18eaf935fd06b46268a496baec3ee38d",
+ "payload": {
+  "content": [
+   {
+    "query": "Kingfisher plc corporate website board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Kingfisher plc: Governance, Directors and Executives & Committees - MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/KINGFISHER-PLC-456739/company-governance/"
+     },
+     {
+      "page_age": null,
+      "title": "Kingfisher plc Corporate Governance Statement",
+      "url": "https://www.kingfisher.com/~/media/Files/K/Kingfisher-Plc/Universal/investors/corporate-governance/corporate-governance-statements/2025/Corporate-Governance-Website-Statement-2024-25.pdf"
+     },
+     {
+      "page_age": "592 days ago",
+      "title": "Kingfisher plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/KINGFISHER-PLC-9590115/company/"
+     },
+     {
+      "page_age": null,
+      "title": "Kingfisher: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/KINGFISHER-55993339/company/"
+     },
+     {
+      "page_age": "218 days ago",
+      "title": "Annual Report and Accounts 2025/26",
+      "url": "https://www.kingfisher.com/~/media/Files/K/Kingfisher-Plc/Universal/investors/result-reports-presentation/2026/2526-annual-report-and-accounts.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Kingfisher plc (KGFH.F) Leadership & Management Team Analysis - Simply Wall St",
+      "url": "https://simplywall.st/stocks/us/retail/otc-kgfh.f/kingfisher/management"
+     },
+     {
+      "page_age": null,
+      "title": "Corporate governance",
+      "url": "https://www.kingfisher.com/investors/corporate-governance/corporate-governance"
+     },
+     {
+      "page_age": null,
+      "title": "Kingfisher - Profiles & Contacts",
+      "url": "https://www.crunchbase.com/organization/kingfisher-plc/people"
+     },
+     {
+      "page_age": null,
+      "title": "Geoffrey Mulcahy",
+      "url": "https://en.wikipedia.org/wiki/Geoffrey_Mulcahy"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.kingfisher.com\",\n    \"url\": \"https://www.kingfisher.com/investors/corporate-governance/corporate-governance\",\n    \"quote\": \"supporting delivery of Kingfisher\u2019s strategy for the benefit of the Company, our shareholders, and wider\"\n  },\n  \"note\": \"kingfisher.com is Kingfisher plc's own corporate and investor site. The company's Annual Report 2025/26, hosted on that site, lists it as 'Our corporate website'. The Companies House number was not needed.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:44:02+00:00",
+  "inputs": {
+   "org_key": "kingfisher"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 13086,
+   "output_tokens": 457,
+   "web_search_requests": 1
+  }
+ }
+}

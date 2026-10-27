@@ -1,0 +1,705 @@
+{
+  "cache_key": "13b4e5a5f41b5b08b7f0f5f48ceaa3ce6f46d5abb569ec849eec58592893de2d",
+  "config": {
+    "cite_sources": true,
+    "extraction_target": "per_doc",
+    "system_prompt": "You are reading a UK company's Notice of Annual General Meeting to record which directors stand for election and what other appointments the document says they hold.\n\n1. Directors are only the people named in director election or re-election resolutions; use the resolution number. Ignore people stepping down, company secretaries and anyone else named (the chair signing a letter, a shareholder advocate, a retiring or departing director, a successor who is not standing).\n2. One appointment per organisation and role: \"Chair: Barratt Redrow plc and ICE Clear Europe\" is two appointments.\n3. tense: past for previously, formerly, until, retired, was; future for will, from the conclusion of the AGM; current otherwise.\n4. section: current_appointments under headings like \"Key current appointments\" (also \"Other key appointments\", \"Current principal external appointments\", \"External appointments\"); otherwise narrative.\n5. coverage: structured if there is a current-appointments list (even one that says \"None\"); prose for narrative only; none if there is no biography in this document (for example, when it points to the Annual Report instead).\n6. quote: copy the exact words from the document. Never paraphrase, and never infer an organisation or role that isn't written.\n\nAlso:\n- Appointments are roles at organisations other than the company holding this AGM. The director's own board and committee roles at that company go in role_at_company, not in appointments. Do include named subsidiaries, joint ventures and other group companies.\n- Include appointments the biography says the director held in the past (tense past), as well as current and future ones.\n- A heading followed by \"None\" means no appointments; never invent one.\n- For a compound list, each appointment's quote is the whole line that names it: Barratt Redrow and ICE Clear Europe both get \"Chair: Barratt Redrow plc and ICE Clear Europe\". For narrative, quote the sentence or clause that names the role.\n- name: as written in the resolution, including titles and honours.\n- role_at_company: the role at the company holding this AGM as written in this document (e.g. \"Independent Non-executive Director\", \"Group CFO and COO\"); null if the document does not state it.\n- company_number: the registered number as printed. agm_date: YYYY-MM-DD.\n",
+    "tier": "agentic",
+    "version": "2026-10-26"
+  },
+  "doc": "Marks_and_Spencer_2026_Notice_of_AGM.pdf",
+  "pdf_sha256": "c6a006409174c20fd07884497c3b9ae5e90f8d89355afc917ad4f43719f8cc1f",
+  "recorded_at": "2026-10-26T21:16:04+00:00",
+  "response": {
+    "configuration": {
+      "advanced_citations": true,
+      "cite_sources": true,
+      "confidence_scores": false,
+      "data_schema": {
+        "properties": {
+          "agm_date": {
+            "description": "Date of the Annual General Meeting as YYYY-MM-DD.",
+            "type": "string"
+          },
+          "company_name": {
+            "description": "Name of the company holding the AGM, e.g. 'Tesco PLC'.",
+            "type": "string"
+          },
+          "company_number": {
+            "description": "Companies House registered number as printed, e.g. '00445790'.",
+            "type": "string"
+          },
+          "directors": {
+            "description": "Only people named in director election or re-election resolutions.",
+            "items": {
+              "properties": {
+                "appointments": {
+                  "description": "Roles at other organisations, current, past or future. One entry per organisation and role.",
+                  "items": {
+                    "properties": {
+                      "organisation": {
+                        "description": "One organisation, exactly as named, e.g. 'Barratt Redrow plc'.",
+                        "type": "string"
+                      },
+                      "quote": {
+                        "description": "The exact words from the document that state this appointment, copied verbatim (the whole line for a compound list).",
+                        "type": "string"
+                      },
+                      "role": {
+                        "description": "The role held there, as written, e.g. 'Chair', 'Non-executive director', 'Chief executive officer', 'Trustee'.",
+                        "type": "string"
+                      },
+                      "section": {
+                        "description": "current_appointments if listed under a heading like 'Key current appointments'; otherwise narrative.",
+                        "enum": [
+                          "current_appointments",
+                          "narrative"
+                        ],
+                        "type": "string"
+                      },
+                      "tense": {
+                        "description": "past for previously/formerly/until/retired/was; future for will/from the conclusion of the AGM; current otherwise.",
+                        "enum": [
+                          "current",
+                          "past",
+                          "future"
+                        ],
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "organisation",
+                      "role",
+                      "tense",
+                      "section",
+                      "quote"
+                    ],
+                    "type": "object"
+                  },
+                  "type": "array"
+                },
+                "coverage": {
+                  "description": "structured if the biography has a current-appointments list (even 'None'); prose if narrative only; none if no biography in this document.",
+                  "enum": [
+                    "structured",
+                    "prose",
+                    "none"
+                  ],
+                  "type": "string"
+                },
+                "name": {
+                  "description": "Name as written in the resolution, including titles and honours.",
+                  "type": "string"
+                },
+                "resolution_no": {
+                  "description": "Number of the resolution electing or re-electing this director.",
+                  "type": "integer"
+                },
+                "role_at_company": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "description": "Role at the company holding this AGM, as written in this document; null if not stated."
+                }
+              },
+              "required": [
+                "resolution_no",
+                "name",
+                "role_at_company",
+                "coverage",
+                "appointments"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "company_name",
+          "company_number",
+          "agm_date",
+          "directors"
+        ],
+        "type": "object"
+      },
+      "disable_cache": false,
+      "extract_version": "2.6",
+      "extraction_target": "per_doc",
+      "granular_bboxes": [],
+      "max_pages": null,
+      "model_policy": null,
+      "parse_config_id": null,
+      "parse_tier": null,
+      "sheet_names": null,
+      "spreadsheet_mode": false,
+      "system_prompt": "You are reading a UK company's Notice of Annual General Meeting to record which directors stand for election and what other appointments the document says they hold.\n\n1. Directors are only the people named in director election or re-election resolutions; use the resolution number. Ignore people stepping down, company secretaries and anyone else named (the chair signing a letter, a shareholder advocate, a retiring or departing director, a successor who is not standing).\n2. One appointment per organisation and role: \"Chair: Barratt Redrow plc and ICE Clear Europe\" is two appointments.\n3. tense: past for previously, formerly, until, retired, was; future for will, from the conclusion of the AGM; current otherwise.\n4. section: current_appointments under headings like \"Key current appointments\" (also \"Other key appointments\", \"Current principal external appointments\", \"External appointments\"); otherwise narrative.\n5. coverage: structured if there is a current-appointments list (even one that says \"None\"); prose for narrative only; none if there is no biography in this document (for example, when it points to the Annual Report instead).\n6. quote: copy the exact words from the document. Never paraphrase, and never infer an organisation or role that isn't written.\n\nAlso:\n- Appointments are roles at organisations other than the company holding this AGM. The director's own board and committee roles at that company go in role_at_company, not in appointments. Do include named subsidiaries, joint ventures and other group companies.\n- Include appointments the biography says the director held in the past (tense past), as well as current and future ones.\n- A heading followed by \"None\" means no appointments; never invent one.\n- For a compound list, each appointment's quote is the whole line that names it: Barratt Redrow and ICE Clear Europe both get \"Chair: Barratt Redrow plc and ICE Clear Europe\". For narrative, quote the sentence or clause that names the role.\n- name: as written in the resolution, including titles and honours.\n- role_at_company: the role at the company holding this AGM as written in this document (e.g. \"Independent Non-executive Director\", \"Group CFO and COO\"); null if the document does not state it.\n- company_number: the registered number as printed. agm_date: YYYY-MM-DD.\n",
+      "target_pages": null,
+      "tier": "agentic",
+      "validators": null,
+      "version": "2.6"
+    },
+    "configuration_id": null,
+    "created_at": "2026-10-26T21:14:37.779054Z",
+    "document_input_value": "5339a2d7-83c1-427d-906d-67c07776328d",
+    "error_message": null,
+    "extract_metadata": {
+      "field_metadata": {
+        "document_metadata": {
+          "agm_date": {
+            "citation": [
+              {
+                "bounding_boxes": [
+                  {
+                    "h": 8.02000000000001,
+                    "w": 48.81,
+                    "x": 92.0,
+                    "y": 135.35
+                  }
+                ],
+                "matching_text": "7 July 2026",
+                "page": 7,
+                "page_dimensions": {
+                  "height": 595.276,
+                  "width": 841.89
+                }
+              }
+            ]
+          },
+          "company_name": {
+            "citation": [
+              {
+                "bounding_boxes": [
+                  {
+                    "h": 9.857400997959077,
+                    "w": 129.7231060284376,
+                    "x": 53.476607651934025,
+                    "y": 94.2401282031536
+                  }
+                ],
+                "matching_text": "Marks and Spencer Group plc",
+                "page": 7,
+                "page_dimensions": {
+                  "height": 595.276,
+                  "width": 841.89
+                }
+              }
+            ]
+          },
+          "company_number": {
+            "citation": [
+              {
+                "bounding_boxes": [
+                  {
+                    "h": 7.753000185489654,
+                    "w": 37.746634718701245,
+                    "x": 97.67582813568413,
+                    "y": 377.0159699509143
+                  }
+                ],
+                "matching_text": "4256886",
+                "page": 9,
+                "page_dimensions": {
+                  "height": 595.276,
+                  "width": 841.89
+                }
+              }
+            ]
+          },
+          "directors": [
+            {
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 8.016057909965514,
+                        "w": 64.5818779668957,
+                        "x": 67.15731965012849,
+                        "y": 369.65063751530647
+                      }
+                    ],
+                    "matching_text": "directors.0.name",
+                    "page": 7,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 7.753035666704177,
+                        "w": 7.754294436201453,
+                        "x": 53.739698026031256,
+                        "y": 369.9136597585678
+                      }
+                    ],
+                    "matching_text": "5",
+                    "page": 7,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 8.016057909965514,
+                        "w": 59.58314831390977,
+                        "x": 67.42041002422572,
+                        "y": 384.6443246297836
+                      }
+                    ],
+                    "matching_text": "directors.1.name",
+                    "page": 7,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 7.753000185489654,
+                        "w": 8.017384810298681,
+                        "x": 53.476607651934025,
+                        "y": 384.9073823542595
+                      }
+                    ],
+                    "matching_text": "6",
+                    "page": 7,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 8.016093391180037,
+                        "w": 54.58442493349314,
+                        "x": 67.42041002422572,
+                        "y": 399.6380117442608
+                      }
+                    ],
+                    "matching_text": "directors.2.name",
+                    "page": 7,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 7.753035666704177,
+                        "w": 6.701932939812541,
+                        "x": 53.476607651934025,
+                        "y": 399.90106946873664
+                      }
+                    ],
+                    "matching_text": "7",
+                    "page": 7,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 8.016093391180037,
+                        "w": 58.530786817520855,
+                        "x": 67.94659077242017,
+                        "y": 414.63169885873793
+                      }
+                    ],
+                    "matching_text": "directors.3.name",
+                    "page": 7,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 7.753035666704177,
+                        "w": 7.754294436201453,
+                        "x": 53.739698026031256,
+                        "y": 414.8947565832138
+                      }
+                    ],
+                    "matching_text": "8",
+                    "page": 7,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 9.594333294391632,
+                        "w": 60.63550981029868,
+                        "x": 67.94659077242017,
+                        "y": 429.6254214544296
+                      }
+                    ],
+                    "matching_text": "directors.4.name",
+                    "page": 7,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 7.753035666704177,
+                        "w": 7.754294436201453,
+                        "x": 53.476607651934025,
+                        "y": 429.88844369769095
+                      }
+                    ],
+                    "matching_text": "9",
+                    "page": 7,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 9.331275569915771,
+                        "w": 61.68788385182619,
+                        "x": 67.42041002422572,
+                        "y": 444.8821662933826
+                      }
+                    ],
+                    "matching_text": "directors.5.name",
+                    "page": 7,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 7.753000185489654,
+                        "w": 10.64829482384026,
+                        "x": 53.476607651934025,
+                        "y": 444.8821662933826
+                      }
+                    ],
+                    "matching_text": "10",
+                    "page": 7,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 9.594368775606155,
+                        "w": 48.79643670335412,
+                        "x": 67.42041002422572,
+                        "y": 459.6127956833839
+                      }
+                    ],
+                    "matching_text": "directors.6.name",
+                    "page": 7,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 7.753000185489654,
+                        "w": 8.28047518439591,
+                        "x": 53.476607651934025,
+                        "y": 459.8758534078598
+                      }
+                    ],
+                    "matching_text": "11",
+                    "page": 7,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 9.594359905302523,
+                        "w": 61.16171564877033,
+                        "x": 315.7779489845037,
+                        "y": 109.49686417180298
+                      }
+                    ],
+                    "matching_text": "directors.7.name",
+                    "page": 7,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 7.753026796400547,
+                        "w": 10.911385197937488,
+                        "x": 302.8865143811703,
+                        "y": 109.75991302597522
+                      }
+                    ],
+                    "matching_text": "12",
+                    "page": 7,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              },
+              "role_at_company": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 8.154465753424624,
+                        "w": 73.66537500000001,
+                        "x": 303.0804,
+                        "y": 315.9197861246133
+                      }
+                    ],
+                    "matching_text": "directors.7.role_at_company",
+                    "page": 4,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 9.594359905302523,
+                        "w": 60.63552235543728,
+                        "x": 302.8865143811703,
+                        "y": 124.49056015658378
+                      }
+                    ],
+                    "matching_text": "directors.8.name",
+                    "page": 7,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              },
+              "resolution_no": {
+                "citation": [
+                  {
+                    "bounding_boxes": [
+                      {
+                        "h": 6.23899999999999,
+                        "w": 9.12700000000001,
+                        "x": 303.962,
+                        "y": 125.414
+                      }
+                    ],
+                    "matching_text": "13",
+                    "page": 7,
+                    "page_dimensions": {
+                      "height": 595.276,
+                      "width": 841.89
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "page_metadata": null,
+        "row_metadata": null
+      },
+      "parse_job_id": "pjb-m1mvv4an512wz4b83llh06erw4ex",
+      "parse_tier": "agentic"
+    },
+    "extract_result": {
+      "agm_date": "2026-07-07",
+      "company_name": "Marks and Spencer Group plc",
+      "company_number": "4256886",
+      "directors": [
+        {
+          "appointments": [],
+          "coverage": "none",
+          "name": "Archie Norman",
+          "resolution_no": 5,
+          "role_at_company": null
+        },
+        {
+          "appointments": [],
+          "coverage": "none",
+          "name": "Stuart Machin",
+          "resolution_no": 6,
+          "role_at_company": null
+        },
+        {
+          "appointments": [],
+          "coverage": "none",
+          "name": "Alison Dolan",
+          "resolution_no": 7,
+          "role_at_company": null
+        },
+        {
+          "appointments": [],
+          "coverage": "none",
+          "name": "Fiona Dawson",
+          "resolution_no": 8,
+          "role_at_company": null
+        },
+        {
+          "appointments": [],
+          "coverage": "none",
+          "name": "Evelyn Bourke",
+          "resolution_no": 9,
+          "role_at_company": null
+        },
+        {
+          "appointments": [],
+          "coverage": "none",
+          "name": "Tamara Ingram",
+          "resolution_no": 10,
+          "role_at_company": null
+        },
+        {
+          "appointments": [],
+          "coverage": "none",
+          "name": "Sapna Sood",
+          "resolution_no": 11,
+          "role_at_company": null
+        },
+        {
+          "appointments": [],
+          "coverage": "none",
+          "name": "Roger Burnley",
+          "resolution_no": 12,
+          "role_at_company": "Non-Executive Director"
+        },
+        {
+          "appointments": [],
+          "coverage": "none",
+          "name": "Sean Doyle",
+          "resolution_no": 13,
+          "role_at_company": "Non-Executive Director"
+        }
+      ]
+    },
+    "file_input": "5339a2d7-83c1-427d-906d-67c07776328d",
+    "grounded_items": null,
+    "id": "ext-x9qbc42rjhfeh7qf8vxioavaubsg",
+    "metadata": null,
+    "project_id": "62bd7334-6bc8-4283-8a2c-64abceddeb6f",
+    "status": "COMPLETED",
+    "updated_at": "2026-10-26T21:16:02.340784Z",
+    "usage": {
+      "credits": 275.0,
+      "extract_credits": 165.0,
+      "parse_credits": 110.0
+    }
+  },
+  "schema_sha": "f9fdf2bfe3c57f51",
+  "schema_version": "v1"
+}

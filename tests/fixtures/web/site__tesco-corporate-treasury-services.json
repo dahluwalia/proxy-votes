@@ -1,0 +1,132 @@
+{
+ "key": "38b3ace0ce121872dd488f10d693b06dac8f2ad93091bab37a991305ee8ab324",
+ "payload": {
+  "content": [
+   {
+    "query": "Tesco Corporate Treasury Services PLC",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Tesco Corporate Treasury Services PLC 08629715",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Tesco Corporate Treasury Services Plc - Company Profile - Endole",
+      "url": "https://open.endole.co.uk/insight/company/08629715-tesco-corporate-treasury-services-plc"
+     },
+     {
+      "page_age": null,
+      "title": "Tesco Corporate Treasury Services PLC - Company Profile and News - Bloomberg Markets",
+      "url": "https://www.bloomberg.com/profile/company/0860287D:LN"
+     },
+     {
+      "page_age": null,
+      "title": "TESCO CORPORATE TREASURY SERVICES PLC overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/08629715"
+     },
+     {
+      "page_age": null,
+      "title": "TESCO CORPORATE TREASURY SERVICES PLC Company Profile",
+      "url": "https://www.dnb.com/business-directory/company-profiles.tesco_corporate_treasury_services_plc.45ac375eb4ccd88c1900d456cf558084.html"
+     },
+     {
+      "page_age": "852 days ago",
+      "title": "TESCO CORPORATE TREASURY SERVICES PLC ANNUAL REPORT AND FINANCIAL STATEMENTS",
+      "url": "https://www.tescoplc.com/media/zeygjjhz/tesco-corporate-treasury-services-financial-statements-2024-searchable.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "TESCO CORPORATE TREASURY SERVICES PLC Section 172(1) Statement",
+      "url": "https://www.tescoplc.com/media/4jdpwsmg/tesco-corporate-treasury-services-plc.pdf"
+     },
+     {
+      "page_age": "487 days ago",
+      "title": "1 TESCO CORPORATE TREASURY SERVICES PLC ANNUAL REPORT AND FINANCIAL STATEMENTS",
+      "url": "https://www.tescoplc.com/media/norpawpj/tesco-corporate-treasury-services-plc-2025-final-signed.pdf"
+     },
+     {
+      "page_age": "1609 days ago",
+      "title": "Debt Investors",
+      "url": "https://www.tescoplc.com/investors/debt-investors/overview"
+     },
+     {
+      "page_age": "536 days ago",
+      "title": "Tesco PLC - Annual Financial Report",
+      "url": "https://www.investegate.co.uk/announcement/rns/tesco--tsco/tesco-plc-annual-financial-report/8868422"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Tesco Corporate Treasury Services Plc - Company Profile - Endole",
+      "url": "https://open.endole.co.uk/insight/company/08629715-tesco-corporate-treasury-services-plc"
+     },
+     {
+      "page_age": null,
+      "title": "TESCO CORPORATE TREASURY SERVICES PLC Section 172(1) Statement",
+      "url": "https://www.tescoplc.com/media/4jdpwsmg/tesco-corporate-treasury-services-plc.pdf"
+     },
+     {
+      "page_age": "852 days ago",
+      "title": "TESCO CORPORATE TREASURY SERVICES PLC ANNUAL REPORT AND FINANCIAL STATEMENTS",
+      "url": "https://www.tescoplc.com/media/zeygjjhz/tesco-corporate-treasury-services-financial-statements-2024-searchable.pdf"
+     },
+     {
+      "page_age": "487 days ago",
+      "title": "1 TESCO CORPORATE TREASURY SERVICES PLC ANNUAL REPORT AND FINANCIAL STATEMENTS",
+      "url": "https://www.tescoplc.com/media/norpawpj/tesco-corporate-treasury-services-plc-2025-final-signed.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "TESCO CORPORATE TREASURY SERVICES PLC. Free business summary taken from official companies house information. Free alerts. Registered as 08629715",
+      "url": "https://companycheck.co.uk/company/08629715/TESCO-CORPORATE-TREASURY-SERVICES-PLC/companies-house-data"
+     },
+     {
+      "page_age": null,
+      "title": "Tesco PLC, Search & Find Any Company Or Director",
+      "url": "https://companycheck.co.uk/search?term=tesco+PLC"
+     },
+     {
+      "page_age": null,
+      "title": "LEI of TESCO CORPORATE TREASURY SERVICES PLC",
+      "url": "https://lei.info/21380018AJDKNF3A6712"
+     },
+     {
+      "page_age": "678 days ago",
+      "title": "TESCO CORPORATE TREASURY SERVICES PLC - LEI: 21380018AJDKNF3A6712",
+      "url": "https://www.lei-lookup.com/record/21380018AJDKNF3A6712/"
+     },
+     {
+      "page_age": null,
+      "title": "TESCO CORPORATE TREASURY SERVICES PLC (Public Limited Company) \u2014 United Kingdom Company Registry & Financials \u2014 Rekvi.app",
+      "url": "https://rekvi.app/company/gb/08629715/tesco-corporate-treasury-services-plc"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.tescoplc.com\",\n    \"url\": \"https://www.tescoplc.com/investors/debt-investors/overview\",\n    \"quote\": \"TCTS is a finance vehicle for members of the Tesco Group (\\\"The Group\\\"), its joint ventures and associates.\"\n  },\n  \"note\": \"Tesco Corporate Treasury Services PLC is a subsidiary of Tesco PLC. It has no separate website. The Tesco PLC corporate site covers it on a Debt Investors page and hosts its annual reports and its section 172 statement. The quote is from that page, which names the company in full as \\\"Tesco Corporate Treasury Services PLC (\u201cTCTS\u201d)\\\" in its heading.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:43:38+00:00",
+  "inputs": {
+   "org_key": "tesco-corporate-treasury-services"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 21867,
+   "output_tokens": 379,
+   "web_search_requests": 2
+  }
+ }
+}

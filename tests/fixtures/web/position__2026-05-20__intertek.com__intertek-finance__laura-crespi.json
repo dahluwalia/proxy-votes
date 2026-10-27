@@ -1,0 +1,145 @@
+{
+ "key": "cb5d237161282829d98b758936d33e7615d9ded26b9d7bf54a84d75a6f3dbc86",
+ "payload": {
+  "content": [
+   {
+    "query": "intertek.com Laura Crespi Intertek Finance PLC director",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "intertek.com board of directors Intertek Group plc",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "560 days ago",
+      "title": "Board of Directors",
+      "url": "https://www.intertek.com/investors/board/"
+     },
+     {
+      "page_age": null,
+      "title": "Group Executive Committee",
+      "url": "https://www.intertek.com/about/executive-committee/"
+     },
+     {
+      "page_age": "167 days ago",
+      "title": "Intertek Group plc NOTICE OF 2026 ANNUAL GENERAL MEETING",
+      "url": "https://www.intertek.com/siteassets/investors/2026/notice-of-2026-annual-general-meeting.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Roles and Responsibilities",
+      "url": "https://www.intertek.com/investors/corporate-governance/roles-and-responsibilities/"
+     },
+     {
+      "page_age": "88 days ago",
+      "title": "Intertek",
+      "url": "https://www.intertek.com/siteassets/investors/2026/intertek-2026-half-year-results-announcement.pdf"
+     },
+     {
+      "page_age": "196 days ago",
+      "title": "Strategic Review Initiation & Trading Update 2026 Script",
+      "url": "https://www.intertek.com/siteassets/investors/2026/intertek-strategic-review-initiation--trading-update-2026-script.pdf"
+     },
+     {
+      "page_age": "228 days ago",
+      "title": "Directors' report Contents 2.50 Chair\u2019s introduction",
+      "url": "https://www.intertek.com/siteassets/investors/2026/ara/intertek-sustainability-report-2025---directors-report.pdf"
+     },
+     {
+      "page_age": "1317 days ago",
+      "title": "Intertek Group plc announces its new Group Executive Committee and Board Change",
+      "url": "https://www.intertek.com/news/2023/03-20-new-group-executive-committee-and-board-change/"
+     },
+     {
+      "page_age": "2035 days ago",
+      "title": "Intertek Group plc - Directorate changes",
+      "url": "https://www.intertek.com/news/2021/04-01-directorate-changes/"
+     },
+     {
+      "page_age": "603 days ago",
+      "title": "Annual Report & Accounts 2024 the power of amazing Financial Report",
+      "url": "https://www.intertek.com/siteassets/investors/2024/intertek-financial-report-2024.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "560 days ago",
+      "title": "Board of Directors",
+      "url": "https://www.intertek.com/investors/board/"
+     },
+     {
+      "page_age": "228 days ago",
+      "title": "Directors' report Contents 2.50 Chair\u2019s introduction",
+      "url": "https://www.intertek.com/siteassets/investors/2026/ara/intertek-sustainability-report-2025---directors-report.pdf"
+     },
+     {
+      "page_age": "1317 days ago",
+      "title": "Intertek Group plc announces its new Group Executive Committee and Board Change",
+      "url": "https://www.intertek.com/news/2023/03-20-new-group-executive-committee-and-board-change/"
+     },
+     {
+      "page_age": "131 days ago",
+      "title": "NOT FOR RELEASE, PUBLICATION OR DISTRIBUTION, IN WHOLE OR IN",
+      "url": "https://www.intertek.com/siteassets/investors/offer/rule-2.7-announcement-dated-18-june-2026.pdf"
+     },
+     {
+      "page_age": "167 days ago",
+      "title": "Intertek Group plc NOTICE OF 2026 ANNUAL GENERAL MEETING",
+      "url": "https://www.intertek.com/siteassets/investors/2026/notice-of-2026-annual-general-meeting.pdf"
+     },
+     {
+      "page_age": "585 days ago",
+      "title": "Intertek Group plc NOTICE OF 2025 ANNUAL GENERAL MEETING",
+      "url": "https://www.intertek.com/siteassets/investors/2025/notice-of-2025-annual-general-meeting.pdf"
+     },
+     {
+      "page_age": "2146 days ago",
+      "title": "Intertek Group plc - Appointment of a new Chairman and directorate changes",
+      "url": "https://www.intertek.com/news/2020/12-11-appointment-of-new-chairman-and-directorate-changes/"
+     },
+     {
+      "page_age": "3892 days ago",
+      "title": "DIRECTORS\u2019 REPORT INTERTEK GROUP PLC ANNUAL REPORT AND ACCOUNTS 2015 52",
+      "url": "https://cdn.intertek.com/www-intertek-com/media/investors/2016/2015AR/assets/pdf/Intertek_Directors_Report_2015.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "1 INTERTEK GROUP PLC 1. Membership 1.1",
+      "url": "https://www.intertek.com/siteassets/investors/2025/nomination-committee-terms-of-reference-february-2025.pdf"
+     },
+     {
+      "page_age": "606 days ago",
+      "title": "Modern Slavery Statement 2024",
+      "url": "https://www.intertek.com/siteassets/investors/2025/modern-slavery-act-statement-2024.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\n    \"value\": \"yes\",\n    \"url\": \"https://www.intertek.com/siteassets/investors/2026/notice-of-2026-annual-general-meeting.pdf\",\n    \"quote\": \"Laura Crespi was appointed to the Board as Director and Chief Financial Officer on 10 April 2026.\"\n  },\n  \"capacity\": {\n    \"value\": \"executive_director\",\n    \"url\": \"https://www.intertek.com/investors/board/\",\n    \"quote\": \"Chief Financial Officer Appointed to the Board as Chief Financial Officer in April 2026.\"\n  },\n  \"start_date\": {\n    \"value\": \"2026-04-10\",\n    \"url\": \"https://www.intertek.com/siteassets/investors/2026/notice-of-2026-annual-general-meeting.pdf\",\n    \"quote\": \"Laura Crespi was appointed to the Board as Director and Chief Financial Officer on 10 April 2026.\"\n  },\n  \"end_date\": {\n    \"value\": null,\n    \"url\": null,\n    \"quote\": null\n  },\n  \"note\": \"The website does not show a board list for INTERTEK FINANCE PLC itself. It only names it as a subsidiary (England, 'Finance') in the 2024 annual report. This answer is therefore for the board of its parent, Intertek Group plc. Crespi was appointed on 10 April 2026, about 40 days before the 2026-05-20 AGM, so the start falls within six months of that date. She stood for election at that AGM (Resolution 5). The board page lists her as CFO with 'Independent: No'. The 'executive_director' capacity is inferred from that CFO board role; no page uses the words 'executive director' for her. No end date appears on the website. A Rule 2.7 announcement of 18 June 2026 describes an acquisition of Intertek by Isotope Bidco (EQT). It says the non-executive directors are intended to resign when the acquisition becomes effective, and it says nothing about her. Her status after 2026-05-20 could therefore change, but I found no page saying that it has.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:50:41+00:00",
+  "inputs": {
+   "as_of": "2026-05-20",
+   "domain": "intertek.com",
+   "org_key": "intertek-finance",
+   "person": "laura-crespi"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 31547,
+   "output_tokens": 1063,
+   "web_search_requests": 2
+  }
+ }
+}

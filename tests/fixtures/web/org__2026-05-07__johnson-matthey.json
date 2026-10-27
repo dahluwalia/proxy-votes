@@ -1,0 +1,300 @@
+{
+ "key": "f99579543783c8ede946af54353678722a381b98fa14c72c6492a4a4b4cd3fb3",
+ "payload": {
+  "content": [
+   {
+    "query": "Johnson Matthey Plc London Stock Exchange main market ticker JMAT",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Johnson Matthey Catalyst Technologies Honeywell sale completion",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Johnson Matthey AGM 2026 results of annual general meeting 7 May 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Johnson Matthey Medical Device Components Altaris; PGM Services Heraeus sale completion",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "245 days ago",
+      "title": "Johnson Matthey Share Price. JMAT - Stock Quote, Charts, Trade History, Share Chat, JMAT Values. Johnson Matthey Plc Ord 147 143/159p",
+      "url": "https://www.lse.co.uk/SharePrice.html?shareprice=JMAT&share=Johnson-matthey"
+     },
+     {
+      "page_age": "713 days ago",
+      "title": "Johnson Matthey Plc Stock (JMAT) - Quote London S.E.- MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/JOHNSON-MATTHEY-PLC-25600218/"
+     },
+     {
+      "page_age": "565 days ago",
+      "title": "Johnson Matthey (LON:JMAT) Stock Price & Overview",
+      "url": "https://stockanalysis.com/quote/lon/JMAT/"
+     },
+     {
+      "page_age": null,
+      "title": "LSE:JMAT - Johnson Matthey Plc",
+      "url": "https://www.tradingview.com/symbols/LSE-JMAT/"
+     },
+     {
+      "page_age": null,
+      "title": "Johnson Matthey Plc: Performance & Quotes, JMAT Stock Price on London S.E. Exchange",
+      "url": "https://www.marketscreener.com/quote/stock/JOHNSON-MATTHEY-PLC-25600218/quotes/"
+     },
+     {
+      "page_age": "1151 days ago",
+      "title": "JMAT: Johnson Matthey PLC Stock Price Quote - London - Bloomberg",
+      "url": "https://www.bloomberg.com/quote/JMAT:LN"
+     },
+     {
+      "page_age": "3583 days ago",
+      "title": "Johnson Matthey PLC Stock Price Today",
+      "url": "https://www.investing.com/equities/johnson-matthey"
+     },
+     {
+      "page_age": "17 days ago",
+      "title": "Johnson Matthey Share Price, Forecast & Financials (LON:JMAT)",
+      "url": "https://www.stockopedia.com/share-prices/johnson-matthey-LON:JMAT/"
+     },
+     {
+      "page_age": "0 days ago",
+      "title": "Johnson Matthey PLC Transaction in Own Shares - ADVFN",
+      "url": "https://uk.advfn.com/stock-market/london/johnson-matthey-JMAT/share-news/Johnson-Matthey-PLC-Transaction-in-Own-Shares/99558837"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "101 days ago",
+      "title": "Johnson Matthey completes Catalyst Technologies sale to Honeywell By Investing.com",
+      "url": "https://www.investing.com/news/company-news/johnson-matthey-completes-catalyst-technologies-sale-to-honeywell-93CH-4797666"
+     },
+     {
+      "page_age": "98 days ago",
+      "title": "Johnson Matthey completes sale of its Catalyst Technologies business to Honeywell",
+      "url": "https://www.hydrocarbonengineering.com/refining/20072026/johnson-matthey-completes-sale-of-its-catalyst-technologies-business-to-honeywell/"
+     },
+     {
+      "page_age": "101 days ago",
+      "title": "CT Honeywell completion",
+      "url": "https://matthey.com/media/2026/ct-honeywell-completion"
+     },
+     {
+      "page_age": "91 days ago",
+      "title": "Honeywell completes $1.76bn acquisition of Johnson Matthey\u2019s Catalyst Technologies",
+      "url": "https://www.gasworld.com/story/honeywell-completes-1-76bn-acquisition-of-johnson-mattheys-catalyst-technologies/2255052.article/"
+     },
+     {
+      "page_age": "66 days ago",
+      "title": "Honeywell Completes Johnson Matthey Catalyst Technologies Acquisition",
+      "url": "https://pgjonline.com/news/2026/july/honeywell-completes-johnson-matthey-catalyst-technologies-acquisition"
+     },
+     {
+      "page_age": "101 days ago",
+      "title": "Johnson Matthey completes sale of Catalyst Technologies to Honeywell",
+      "url": "https://www.indianchemicalnews.com/technology/johnson-matthey-completes-sale-of-catalyst-technologies-to-honeywell-31150"
+     },
+     {
+      "page_age": "101 days ago",
+      "title": "Honeywell completes \u00a31.325bn acquisition of Johnson Matthey's Catalyst Technologies business",
+      "url": "https://www.safinvestor.com/news/150068/honeywell-completes-1-325bn-acquisition-of-johnson-mattheys-catalyst-technologies-business/"
+     },
+     {
+      "page_age": "95 days ago",
+      "title": "Honeywell Technologies completes acquisition of Johnson Matthey\u2019s catalyst technologies business",
+      "url": "https://ethanolproducer.com/articles/honeywell-technologies-completes-acquisition-of-johnson-mattheys-catalyst-technologies-business"
+     },
+     {
+      "page_age": "101 days ago",
+      "title": "Johnson Matthey Completes \u00a31.325bn Sale of Catalyst Technologies Business to Honeywell",
+      "url": "https://kalkine.co.uk/news/announcements/johnson-matthey-completes-1325bn-sale-of-catalyst-technologies-business-to-honeywell"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "151 days ago",
+      "title": "Issued by: Johnson Matthey Plc 5th Floor, 2 Gresham Street, EC2V 7AD 1",
+      "url": "https://matthey.com/documents/d/guest/johnson-matthey-fy-2025-26-results"
+     },
+     {
+      "page_age": "711 days ago",
+      "title": "Johnson Matthey RNS Announcements",
+      "url": "https://www.investegate.co.uk/company/JMAT"
+     },
+     {
+      "page_age": "76 days ago",
+      "title": "Correction: Result of General Meeting",
+      "url": "https://www.investegate.co.uk/announcement/rns/johnson-matthey--jmat/correction-result-of-general-meeting/9716571"
+     },
+     {
+      "page_age": null,
+      "title": "JOHNSON & JOHNSON - Form DEF 14A - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000063/jnj2026proxycourtesy.pdf"
+     },
+     {
+      "page_age": "151 days ago",
+      "title": "Johnson Matthey Full Year Results",
+      "url": "https://www.investegate.co.uk/announcement/rns/johnson-matthey--jmat/johnson-matthey-full-year-results-/9588672"
+     },
+     {
+      "page_age": null,
+      "title": "JOHNSON & JOHNSON - Form 8-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000200406/000020040626000089/jnj-20260423.htm"
+     },
+     {
+      "page_age": "91 days ago",
+      "title": "General Meeting 2026",
+      "url": "https://matthey.com/investors/shareholder-services/shareholder-meetings/general-meeting-2026"
+     },
+     {
+      "page_age": null,
+      "title": "Annual Report and Accounts 2026",
+      "url": "https://matthey.com/investors/financial-results-and-reports/report-archive/annual-report-26"
+     },
+     {
+      "page_age": "151 days ago",
+      "title": "Johnson Matthey (JMAT) H2 2026 Summary",
+      "url": "https://quartr.com/events/johnson-matthey-plc-jmat-h2-2026_oCEZwczJ"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "847 days ago",
+      "title": "Johnson Matthey announces completion of Medical Device ...",
+      "url": "https://matthey.com/documents/161599/3452828/Johnson+Matthey+-+completion+of+Medical+Device+Components+sale.pdf/317001c0-b7b6-3416-a703-07dc31b2e775?t=1719842147474"
+     },
+     {
+      "page_age": "410 days ago",
+      "title": "Johnson Matthey closes Medical Device Components sale to Montagu",
+      "url": "https://www.medicaldesignandoutsourcing.com/montagu-buys-medical-device-components-johnson-matthey/"
+     },
+     {
+      "page_age": "1774 days ago",
+      "title": "Johnson Matthey To Sell Its Health Business To Altaris Capital Partners",
+      "url": "https://www.directorstalkinterviews.com/johnson-matthey-to-sell-its-health-business-to-altaris-capital-partners/4121039288"
+     },
+     {
+      "page_age": "1608 days ago",
+      "title": "Johnson Matthey announces completion of Health sale",
+      "url": "https://matthey.com/health-22"
+     },
+     {
+      "page_age": "950 days ago",
+      "title": "Johnson Matthey signs agreement to sell its Medical Device Components business for US$700m",
+      "url": "https://matthey.com/media/2024/mdc"
+     },
+     {
+      "page_age": "944 days ago",
+      "title": "Johnson Matthey (JMPLY) Sells Medical Device Unit for $700M",
+      "url": "https://finance.yahoo.com/news/johnson-matthey-jmply-sells-medical-140200239.html"
+     },
+     {
+      "page_age": "950 days ago",
+      "title": "Johnson Matthey signs agreement to sell its Medical ...",
+      "url": "https://matthey.com/documents/161599/348557/Johnson+Matthey+signs+agreement+to+sell+Medical+Device+Components+-+March+2023.pdf/fd8fc12b-f7f7-6d1b-0638-06ea3188c3b9?t=1710918818970"
+     },
+     {
+      "page_age": "950 days ago",
+      "title": "Slaughter and May is advising Johnson Matthey Plc on the sale of its Medical Device Components business",
+      "url": "https://www.slaughterandmay.com/recent-work/johnson-matthey-plc-on-the-sale-of-its-medical-device-components-business/"
+     },
+     {
+      "page_age": "950 days ago",
+      "title": "Johnson Matthey signs agreement to sell its Medical Device Components business for US$700m",
+      "url": "https://www.prnewswire.com/news-releases/johnson-matthey-signs-agreement-to-sell-its-medical-device-components-business-for-us700m-302094466.html"
+     },
+     {
+      "page_age": null,
+      "title": "Veranova",
+      "url": "https://en.wikipedia.org/wiki/Veranova"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Johnson Matthey Plc Euro Medium Term Note programme notes admitted to trading London Stock Exchange",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "2922 days ago",
+      "title": "LSEG OFFERING CIRCULAR DATED 26 OCTOBER 2018 London Stock Exchange Group plc",
+      "url": "https://www.lseg.com/content/dam/lseg/en_us/documents/investor-relations/global-medium-term-notes/lseg-euro-medium-term-note-programme-offer-circular-26oct2018.pdf"
+     },
+     {
+      "page_age": "382 days ago",
+      "title": "Issued by: Johnson Matthey Plc 5th Floor, 2 Gresham Street, EC2V 7AD 1",
+      "url": "https://matthey.com/documents/d/guest/johnson-matthey-financial-reporting-structure-and-trading-update-october-2025-pdf"
+     },
+     {
+      "page_age": "711 days ago",
+      "title": "Johnson Matthey RNS Announcements",
+      "url": "https://www.investegate.co.uk/company/JMAT"
+     },
+     {
+      "page_age": "689 days ago",
+      "title": "Prospectus dated 6 December 2024 NATWEST MARKETS PLC",
+      "url": "https://www.rns-pdf.londonstockexchange.com/rns/2082P_1-2024-12-6.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Johnson Matthey Regulatory News. Live JMAT RNS. Regulatory News Articles for Johnson Matthey Plc Ord 147 143/159p",
+      "url": "https://www.lse.co.uk/rns/JMAT/transaction-in-own-shares-7la797oyeampnxb.html"
+     },
+     {
+      "page_age": null,
+      "title": "JOHNSON MATTHEY PLC JMAT Our story - Stock",
+      "url": "https://www.londonstockexchange.com/stock/JMAT/johnson-matthey-plc/our-story"
+     },
+     {
+      "page_age": "698 days ago",
+      "title": "Johnson Matthey half year results - 07:00:08 27 Nov 2024 - JMAT News article",
+      "url": "https://www.londonstockexchange.com/news-article/JMAT/johnson-matthey-half-year-results/16783319"
+     },
+     {
+      "page_age": "0 days ago",
+      "title": "Johnson Matthey PLC Transaction in Own Shares - ADVFN",
+      "url": "https://uk.advfn.com/stock-market/london/johnson-matthey-JMAT/share-news/Johnson-Matthey-PLC-Transaction-in-Own-Shares/99558837"
+     },
+     {
+      "page_age": null,
+      "title": "lseg euro medium term note programme prospectus 11oct2012",
+      "url": "https://www.lseg.com/content/dam/lseg/en_us/documents/investor-relations/global-medium-term-notes/lseg-euro-medium-term-note-programme-prospectus-11oct2012.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"Johnson Matthey Plc\", \"url\": \"https://www.lse.co.uk/rns/JMAT/transaction-in-own-shares-7la797oyeampnxb.html\", \"quote\": \"Johnson Matthey Plc is listed on the London Stock Exchange (JMAT).\"},\n  \"country\": {\"value\": \"United Kingdom\", \"url\": \"https://www.lse.co.uk/rns/JMAT/transaction-in-own-shares-7la797oyeampnxb.html\", \"quote\": \"Registered in England & Wales number: 00033774\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://www.lse.co.uk/rns/JMAT/transaction-in-own-shares-7la797oyeampnxb.html\", \"quote\": \"Registered in England & Wales number: 00033774\"},\n  \"equity_listed\": {\"value\": \"yes\", \"url\": \"https://matthey.com/documents/d/guest/johnson-matthey-financial-reporting-structure-and-trading-update-october-2025-pdf\", \"quote\": \"Johnson Matthey Plc is listed on the London Stock Exchange (JMAT)\"},\n  \"exchange\": {\"value\": \"London Stock Exchange\", \"url\": \"https://matthey.com/documents/d/guest/johnson-matthey-financial-reporting-structure-and-trading-update-october-2025-pdf\", \"quote\": \"Johnson Matthey Plc is listed on the London Stock Exchange (JMAT)\"},\n  \"ticker\": {\"value\": \"JMAT\", \"url\": \"https://www.londonstockexchange.com/stock/JMAT/johnson-matthey-plc/our-story\", \"quote\": \"JOHNSON MATTHEY PLC JMAT Our story - Stock\"},\n  \"market_segment\": {\"value\": \"main\", \"url\": \"https://www.investegate.co.uk/announcement/rns/johnson-matthey--jmat/correction-result-of-general-meeting/9716571\", \"quote\": \"Application has been made to the Official List of the Financial Conduct Authority and to trade on the London Stock Exchange's main market for listed securities\"},\n  \"debt_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"is_subsidiary\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"parent_name\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"parent_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"events\": [\n    {\"date\": \"2024-03-20\", \"event\": \"Johnson Matthey signed an agreement to sell its Medical Device Components business to Montagu Private Equity for US$700m.\", \"url\": \"https://www.prnewswire.com/news-releases/johnson-matthey-signs-agreement-to-sell-its-medical-device-components-business-for-us700m-302094466.html\", \"quote\": \"announces that it has signed a definitive agreement to sell 100% of its Medical Device Components business (MDC) to Montagu Private Equity\"},\n    {\"date\": \"2024-07-01\", \"event\": \"Johnson Matthey completed the sale of its Medical Device Components business to Montagu Private Equity.\", \"url\": \"https://matthey.com/documents/161599/3452828/Johnson+Matthey+-+completion+of+Medical+Device+Components+sale.pdf/317001c0-b7b6-3416-a703-07dc31b2e775?t=1719842147474\", \"quote\": \"it has today completed the sale of its Medical Device Components business\"},\n    {\"date\": \"2025-05-22\", \"event\": \"Johnson Matthey announced an agreement to sell its Catalyst Technologies business to Honeywell International Inc. (completed 2026-07-17, after the question date).\", \"url\": \"https://matthey.com/documents/d/guest/johnson-matthey-financial-reporting-structure-and-trading-update-october-2025-pdf\", \"quote\": \"As announced on 22nd May 2025, we have agreed the sale of our Catalyst Technologies business\"}\n  ],\n  \"note\": \"Johnson Matthey Plc is a UK-incorporated public company (England & Wales no. 00033774) with a main-market London Stock Exchange listing under ticker JMAT. The sources show it as listed throughout 2025-2026, and its shares were still listed after the Catalyst Technologies sale closed on 2026-07-17. No source dated close to 2026-05-07 gave the segment explicitly. The main-market statement comes from an RNS dated 11 Aug 2026. The country of incorporation is shown as England & Wales, which is in the United Kingdom. Sources show the 2026 AGM was held on 16 July 2026 (results RNS of that date), not on 7 May 2026. Debt listing was not found in the searches, so it is 'unknown'. The company is not shown to be a subsidiary in any source and appears to be an independent listed issuer, but I found no source that states this outright, so is_subsidiary is 'unknown'. The Catalyst Technologies completion on 2026-07-17 falls after 2026-05-07, so it is not listed as an event in the window. I found no other listing, delisting or demerger events in the three-year window. I did not check every possible disposal, such as the Battery Systems sale, and found no source for it.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:31:59+00:00",
+  "inputs": {
+   "as_of": "2026-05-07",
+   "org_key": "johnson-matthey"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 85120,
+   "output_tokens": 3364,
+   "web_search_requests": 5
+  }
+ }
+}

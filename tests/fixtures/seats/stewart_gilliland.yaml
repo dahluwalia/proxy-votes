@@ -1,0 +1,32 @@
+# Interim executive chair of IG Design Group plc, which is quoted on AIM. Whether that is a
+# listed seat is the policy flag aim_counts_as_listed: yes -> executive rule AGAINST,
+# no -> FOR at 1 point, unknown (the default) -> REVIEW.
+name: Stewart Gilliland
+case: [H13]
+roster:
+  - {meeting: tesco, resolution_no: 8, name: Stewart Gilliland,
+     role_text_at_issuer: Independent Non-executive Director,
+     role_type_at_issuer: non_executive_director, coverage: structured}
+seats:
+  - {meeting: tesco, org_name: Tesco PLC, role_text: Independent Non-executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: tesco, org_name: IG Design Group plc, role_text: Interim Executive Chair,
+     role_type: executive_chair, board_seat: "yes", chair: "yes", executive: "yes", current: "yes"}
+  - {meeting: tesco, org_name: Nature's Way Foods Ltd, role_text: Chair, role_type: chair,
+     board_seat: "yes", chair: "yes", executive: "no", current: "yes"}
+ch:
+  - officer_id: fx-gilliland
+    name: GILLILAND, Stewart Charles
+    appointments:
+      - {company_number: "00445790", company_name: TESCO PLC, company_type: plc, role: director,
+         appointed_on: 2018-03-01}
+      - {company_number: "01700255", company_name: IG DESIGN GROUP PLC, company_type: plc,
+         role: director, appointed_on: 2020-06-01}
+      - {company_number: "04155426", company_name: NATURE'S WAY FOODS LIMITED, company_type: ltd,
+         role: director, appointed_on: 2019-01-01}
+orgs:
+  - {canonical_name: IG Design Group plc, org_type: company, listed: "yes", equity_listing: "yes", market: AIM}
+  - {canonical_name: Nature's Way Foods Limited, org_type: company, listed: "no", equity_listing: "no"}
+expect:
+  tesco: {vote: AGAINST, points: [3, 3]}  # aim_counts_as_listed "yes": IG Design is listed

@@ -1,0 +1,86 @@
+{
+ "key": "7d733be847e739341c2e3f10f8719245320d7b3bf5f61b14cf86ed8c1110b4f6",
+ "payload": {
+  "content": [
+   {
+    "query": "lloydsbankinggroup.com Sarah Legg Lloyds Bank plc board director",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "19 days ago",
+      "title": "Directors - Lloyds Banking Group plc",
+      "url": "https://www.lloydsbankinggroup.com/who-we-are/group-overview/directors-and-governance.html"
+     },
+     {
+      "page_age": "2409 days ago",
+      "title": "Bank of Scotland plc Report and Accounts 2019 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/bank-of-scotland-plc/2019/2019-bos-annual-report.pdf"
+     },
+     {
+      "page_age": "2056 days ago",
+      "title": "Bank of Scotland plc Report and Accounts 2020 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/bank-of-scotland-plc/2020/2020-bos-annual-report.pdf"
+     },
+     {
+      "page_age": "2056 days ago",
+      "title": "Lloyds Bank plc Report and Accounts 2020 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/lloyds-bank-plc/2020/2020-lb-annual-report.pdf"
+     },
+     {
+      "page_age": "2281 days ago",
+      "title": "Bank of Scotland plc 2020 Half-Year Results Member of the Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/bank-of-scotland-plc/2020/2020-bos-hy-results.pdf"
+     },
+     {
+      "page_age": "971 days ago",
+      "title": "Bank of Scotland plc Annual Report and Accounts 2023",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/bank-of-scotland-plc/2023/q4/2023-bos-annual-report.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Supporting our purpose Lloyds Banking Group ESG Report 2021",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/who-we-are/responsible-business/downloads/2021-reporting/lbg-esg-report-2021-interactive-final.pdf"
+     },
+     {
+      "page_age": "2442 days ago",
+      "title": "Annual Report and Accounts 2019",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/annual-report/2019-download-links/2019_lbg_annual_report.pdf"
+     },
+     {
+      "page_age": "2350 days ago",
+      "title": "2023 Directors\u2019 Remuneration Policy",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/who-we-are/responsible-business/downloads/group-codes-and-policies/2023-lbg-annual-report.pdf"
+     },
+     {
+      "page_age": "243 days ago",
+      "title": "Lloyds Bank plc Annual Report and Accounts 2025 Member of Lloyds Banking Group",
+      "url": "https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/lloyds-bank-plc/2025/q4/2025-lb-annual-report.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\n    \"value\": \"yes\",\n    \"url\": \"https://www.lloydsbankinggroup.com/assets/pdfs/investors/financial-performance/lloyds-bank-plc/2025/q4/2025-lb-annual-report.pdf\",\n    \"quote\": \"Sarah Legg\"\n  },\n  \"capacity\": {\n    \"value\": \"non_executive_director\",\n    \"url\": \"https://www.lloydsbankinggroup.com/who-we-are/group-overview/directors-and-governance.html\",\n    \"quote\": \"Sarah Legg Independent non-executive director\"\n  },\n  \"start_date\": {\n    \"value\": \"2019-12\",\n    \"url\": \"https://www.lloydsbankinggroup.com/who-we-are/group-overview/directors-and-governance.html\",\n    \"quote\": \"Appointed: December 2019\"\n  },\n  \"end_date\": {\n    \"value\": null,\n    \"url\": null,\n    \"quote\": null\n  },\n  \"note\": \"The Lloyds Bank plc Annual Report 2025 lists her under 'Non-executive directors'. It is the most recent Lloyds Bank plc board list I found, and it is dated before 2026-07-09. The Lloyds Banking Group directors page (about 19 days old) also lists her as an independent non-executive director, appointed December 2019. That is the group board page, not a Lloyds Bank plc page. The Lloyds Bank plc and Bank of Scotland plc boards have overlapping membership. Earlier Bank of Scotland and Lloyds Bank reports show she joined the Lloyds Banking Group and bank boards on 1 December 2019, which is well outside six months of the AGM date. No end date appears. I found no page dated near 2026-07-09 that lists the Lloyds Bank plc board itself. A change between the 2025 report and 2026-07-09 is unlikely given the current page, but I did not confirm it from a Lloyds Bank plc page.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:48:45+00:00",
+  "inputs": {
+   "as_of": "2026-07-09",
+   "domain": "lloydsbankinggroup.com",
+   "org_key": "lloyds-bank",
+   "person": "sarah-legg"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 17488,
+   "output_tokens": 1433,
+   "web_search_requests": 1
+  }
+ }
+}

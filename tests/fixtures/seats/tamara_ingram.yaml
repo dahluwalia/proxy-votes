@@ -1,0 +1,63 @@
+# One person in two notices. Intertek (1) + Marks and Spencer (1) + Reckitt (1) + Marsh &
+# McLennan (1, NYSE) = 4 at both meetings: FOR. The M&S notice gives no role, but her
+# Intertek biography says she is an M&S non-executive. Charity chairs and Ofcom are unlisted.
+name: Tamara Ingram
+case: [H4, H11, H12]
+roster:
+  - {meeting: ms, resolution_no: 10, name: Tamara Ingram, role_text_at_issuer: null,
+     role_type_at_issuer: null, coverage: none}
+  - {meeting: intertek, resolution_no: 10, name: Tamara Ingram,
+     role_text_at_issuer: Non-Executive Director, role_type_at_issuer: non_executive_director,
+     coverage: structured}
+seats:
+  - {meeting: ms, org_name: Marks and Spencer Group plc, role_text: null, role_type: other,
+     board_seat: unknown, chair: unknown, executive: unknown, current: "yes"}
+  - {meeting: intertek, org_name: Intertek Group plc, role_text: Non-Executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: intertek, org_name: Marks and Spencer Group plc, role_text: Non-Executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: intertek, org_name: Reckitt Benckiser Group plc, role_text: Non-Executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: intertek, org_name: "Marsh & McLennan Companies, Inc.",
+     role_text: Non-Executive Director, role_type: non_executive_director, board_seat: "yes",
+     chair: "no", executive: "no", current: "yes"}
+  - {meeting: intertek, org_name: Almeida Theatre, role_text: "Chair, Board of Trustees",
+     role_type: trustee, board_seat: "no", chair: "no", executive: "no", current: "yes"}
+  - {meeting: intertek, org_name: Asthma + Lung UK, role_text: Chair, role_type: chair,
+     board_seat: "yes", chair: "yes", executive: "no", current: "yes"}
+  - {meeting: intertek, org_name: Ofcom, role_text: Deputy Chair, role_type: deputy_chair,
+     board_seat: "yes", chair: "no", executive: "no", current: "yes"}
+  - {meeting: intertek, org_name: The 10 Group, role_text: Chair, role_type: chair,
+     board_seat: "yes", chair: "yes", executive: "no", current: "yes"}
+  - {meeting: intertek, org_name: Sage Group plc, role_text: Non-Executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "no"}
+ch:
+  - officer_id: fx-ingram
+    name: INGRAM, Tamara Jane
+    appointments:
+      - {company_number: "04267576", company_name: INTERTEK GROUP PLC, company_type: plc,
+         role: director, appointed_on: 2021-07-01}
+      - {company_number: "04256886", company_name: MARKS AND SPENCER GROUP P.L.C.,
+         company_type: plc, role: director, appointed_on: 2020-06-01}
+      - {company_number: "06270876", company_name: RECKITT BENCKISER GROUP PLC, company_type: plc,
+         role: director, appointed_on: 2023-10-01}
+      - {company_number: "00326683", company_name: ASTHMA + LUNG UK,
+         company_type: private-limited-guarant-nsc, role: director, appointed_on: 2022-01-01}
+orgs:
+  - {canonical_name: Marks and Spencer Group plc, org_type: company, listed: "yes", equity_listing: "yes",
+     market: LSE Main Market}
+  - {canonical_name: Reckitt Benckiser Group plc, org_type: company, listed: "yes", equity_listing: "yes",
+     market: LSE Main Market}
+  - {canonical_name: "Marsh & McLennan Companies, Inc.", org_type: company, listed: "yes", equity_listing: "yes",
+     market: NYSE}
+  - {canonical_name: Almeida Theatre, org_type: charity, listed: "no", equity_listing: "no"}
+  - {canonical_name: Asthma + Lung UK, org_type: charity, listed: "no", equity_listing: "no"}
+  - {canonical_name: Ofcom, org_type: public body, listed: "no", equity_listing: "no"}
+  - {canonical_name: The 10 Group, org_type: company, listed: "no", equity_listing: "no"}
+expect:
+  ms: {vote: FOR, points: [4, 4]}
+  intertek: {vote: FOR, points: [4, 4]}

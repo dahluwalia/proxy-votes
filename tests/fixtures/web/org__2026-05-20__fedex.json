@@ -1,0 +1,197 @@
+{
+ "key": "989979cda1a853fbc1d6e0712d78f0ac711f44d192f8befd566bb1beca155147",
+ "payload": {
+  "content": [
+   {
+    "query": "FedEx Corporation 10-K NYSE FDX Delaware",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "FedEx Freight spin-off completed June 2026 NYSE FDXF",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "FedEx senior notes listed New York Stock Exchange 0.450% notes due 2029",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "FEDEX CORP - Form 10-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001048911/000104891126000105/fdx-20260531.htm"
+     },
+     {
+      "page_age": null,
+      "title": "FEDEX CORP - Form 10-K - FY2021",
+      "url": "https://www.sec.gov/Archives/edgar/data/1048911/000156459021037031/fdx-10k_20210531.htm"
+     },
+     {
+      "page_age": null,
+      "title": "FEDEX CORP - Form 10-K - FY2020",
+      "url": "https://www.sec.gov/Archives/edgar/data/1048911/000156459020032775/fdx-10k_20200531.htm"
+     },
+     {
+      "page_age": null,
+      "title": "FEDEX CORP - Form 10-K - FY2015",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001048911/000119312515252494/d48165d10k.htm"
+     },
+     {
+      "page_age": null,
+      "title": "FEDEX CORP - Form 10-K - FY2006",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001048911/000110465906046980/a06-14845_110k.htm"
+     },
+     {
+      "page_age": "462 days ago",
+      "title": "UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549",
+      "url": "https://s21.q4cdn.com/665674268/files/doc_financials/2025/q4/FedEX-10K-Form.pdf"
+     },
+     {
+      "page_age": "462 days ago",
+      "title": "Annual Report - FedEx Corp",
+      "url": "https://s21.q4cdn.com/665674268/files/doc_financials/2025/ar/Annual-Report.pdf"
+     },
+     {
+      "page_age": "2659 days ago",
+      "title": "FedEx Corporation Annual Report 2019 Form 10-K (NYSE:FDX)",
+      "url": "https://stocklight.com/stocks/us/nyse-fdx/fedex-corporation/annual-reports/nyse-fdx-2019-10K-19957372.pdf"
+     },
+     {
+      "page_age": "98 days ago",
+      "title": "UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549",
+      "url": "https://fortune.com/company-assets/1574/quartr/annual-report-10-k-b4ff7b98557a53957d01fae3bbd8c27f-2026-07-20-20-15-41.pdf"
+     },
+     {
+      "page_age": "2905 days ago",
+      "title": "Investor FAQs",
+      "url": "https://investors.fedex.com/shareowner-services/investor-faqs/default.aspx"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "FedEx Freight Holding Company, Inc. - Form 10-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0002082247/000162828026053359/fdxf-20260531.htm"
+     },
+     {
+      "page_age": null,
+      "title": "FedEx Freight Holding Company, Inc. - Form 8-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0002082247/000110465926068521/tm2615735d1_ex99-1.htm"
+     },
+     {
+      "page_age": "147 days ago",
+      "title": "FedEx Completes Spin-Off of FedEx Freight",
+      "url": "https://newsroom.fedex.com/newsroom/global-english/fedex-completes-spin-off-of-fedex-freight"
+     },
+     {
+      "page_age": "147 days ago",
+      "title": "The Board of FedEx Corporation completed the spin-off of FedEx Freight, Inc.",
+      "url": "https://www.marketscreener.com/news/the-board-of-fedex-corporation-completed-the-spin-off-of-fedex-freight-inc-ce7f5ddedf8ff42d"
+     },
+     {
+      "page_age": "147 days ago",
+      "title": "FedEx Freight Completes Spin-Off and Begins Trading on the New York Stock Exchange",
+      "url": "https://www.businesswire.com/news/home/20260531601524/en/FedEx-Freight-Completes-Spin-Off-and-Begins-Trading-on-the-New-York-Stock-Exchange"
+     },
+     {
+      "page_age": "147 days ago",
+      "title": "FedEx Freight Completes Spin-Off and Begins Trading on the New York Stock Exchange :: FedEx Freight Holding Company, Inc. (FDXF)",
+      "url": "https://ir.fedexfreight.com/news-events/press-releases/detail/183/fedex-freight-completes-spin-off-and-begins-trading-on-the-new-york-stock-exchange"
+     },
+     {
+      "page_age": "152 days ago",
+      "title": "Announcement",
+      "url": "https://www.solactive.com/announcements/64195"
+     },
+     {
+      "page_age": "166 days ago",
+      "title": "FedEx Board of Directors Approves Spin-off of FedEx Freight",
+      "url": "https://investors.fedex.com/news-and-events/investor-news/investor-news-details/2026/FedEx-Board-of-Directors-Approves-Spin-off-of-FedEx-Freight/default.aspx"
+     },
+     {
+      "page_age": "147 days ago",
+      "title": "FedEx Completes Spin-Off of FedEx Freight",
+      "url": "https://investors.fedex.com/news-and-events/investor-news/investor-news-details/2026/FedEx-Completes-Spin-Off-of-FedEx-Freight/default.aspx"
+     },
+     {
+      "page_age": "144 days ago",
+      "title": "FedEx Freight Spinoff: FDXF Valuation and the Remaining FedEx Stub",
+      "url": "https://www.stockspinoffs.com/2026/06/04/fedex-freight-spinoff-fdxf/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "166 days ago",
+      "title": "FedEx Corporation",
+      "url": "https://www.sec.gov/Archives/edgar/data/1048911/000110465926060233/tm2520565d17_8k.htm"
+     },
+     {
+      "page_age": null,
+      "title": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1048911/000119312525022292/d934991d8k.htm"
+     },
+     {
+      "page_age": null,
+      "title": "FEDEX CORP - Form S-4 - FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/1048911/000110465925080319/tm2523231-1_s4.htm"
+     },
+     {
+      "page_age": null,
+      "title": "FEDEX CORP - Form 8-K - FY2021",
+      "url": "https://www.sec.gov/Archives/edgar/data/1048911/000110465921060945/tm2114231d2_8k.htm"
+     },
+     {
+      "page_age": "607 days ago",
+      "title": "FEDEX CORP (Form: 8-K, Received: 02/26/2025 17:10:57)",
+      "url": "https://content.edgar-online.com/ExternalLink/EDGAR/0001193125-25-036894.html?hash=b474f9790df6b1fee7630a75cb3fce821d121b1e5e43668c948f1bee35789cd9&dest=d924486dex41_htm"
+     },
+     {
+      "page_age": "221 days ago",
+      "title": "UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549",
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001048911/0231126f-c6cf-4c0d-9490-42b4710e95f6.pdf"
+     },
+     {
+      "page_age": "98 days ago",
+      "title": "FedEx Corp - Annual Report",
+      "url": "https://s21.q4cdn.com/665674268/files/doc_financials/2026/ar/FedEx-Corp-FY26-Annual-Report.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "New York Stock Exchange 11 Wall Street New York, NY 10005 May 4, 2021",
+      "url": "https://www.sec.gov/Archives/edgar/data/230211/000087666121000633/FDX2933050421.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Exhibit 4.1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000105/fdx-exx41fy2026q4.htm"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"FedEx Corporation\", \"url\": \"https://www.sec.gov/Archives/edgar/data/0001048911/000104891126000105/fdx-20260531.htm\", \"quote\": \"FedEx Corporation (\u201cFedEx\u201d) was incorporated in Delaware on October 2, 1997\"},\n  \"country\": {\"value\": \"United States\", \"url\": \"https://www.sec.gov/Archives/edgar/data/0001048911/000104891126000105/fdx-20260531.htm\", \"quote\": \"FedEx Corporation (\u201cFedEx\u201d) was incorporated in Delaware on October 2, 1997\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://www.sec.gov/Archives/edgar/data/0001048911/000104891126000105/fdx-20260531.htm\", \"quote\": \"to serve as the parent holding company and provide strategic direction to the FedEx portfolio of companies\"},\n  \"equity_listed\": {\"value\": \"yes\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1048911/000110465926060233/tm2520565d17_8k.htm\", \"quote\": \"Common Stock, par value $0.10 per share \u00b7 FDX \u00b7 New York Stock Exchange\"},\n  \"exchange\": {\"value\": \"New York Stock Exchange\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1048911/000110465926060233/tm2520565d17_8k.htm\", \"quote\": \"Common Stock, par value $0.10 per share \u00b7 FDX \u00b7 New York Stock Exchange\"},\n  \"ticker\": {\"value\": \"FDX\", \"url\": \"https://newsroom.fedex.com/newsroom/global-english/fedex-completes-spin-off-of-fedex-freight\", \"quote\": \"FedEx Corp. (NYSE: FDX, \u201cFedEx\u201d) today announced the completion of its spin-off\"},\n  \"market_segment\": {\"value\": \"main\", \"url\": \"https://s21.q4cdn.com/665674268/files/doc_financials/2026/ar/FedEx-Corp-FY26-Annual-Report.pdf\", \"quote\": \"FedEx\u2019s common stock is listed on the New York Stock Exchange under the symbol \u201cFDX.\u201d\"},\n  \"debt_listed\": {\"value\": \"yes\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1048911/000110465926060233/tm2520565d17_8k.htm\", \"quote\": \"0\\\\.450% Notes due 2029 \u00b7 FDX 29B \u00b7 New York Stock Exchange\"},\n  \"is_subsidiary\": {\"value\": \"no\", \"url\": \"https://www.sec.gov/Archives/edgar/data/0001048911/000104891126000105/fdx-20260531.htm\", \"quote\": \"to serve as the parent holding company and provide strategic direction to the FedEx portfolio of companies\"},\n  \"parent_name\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"parent_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"events\": [\n    {\"date\": \"2024-12-19\", \"event\": \"FedEx announced its plan to spin off FedEx Freight into an independent, publicly traded company\", \"url\": \"https://www.sec.gov/Archives/edgar/data/0002082247/000162828026053359/fdxf-20260531.htm\", \"quote\": \"On December 19, 2024, FedEx announced its plan to spin-off FedEx Freight into an independent, publicly traded company.\"},\n    {\"date\": \"2026-05-13\", \"event\": \"FedEx Board approved the FedEx Freight separation and declared a pro rata dividend of 80.1% of FedEx Freight shares. The record date was 2026-05-15 and trading was set to begin 2026-06-01 on the NYSE as FDXF.\", \"url\": \"https://investors.fedex.com/news-and-events/investor-news/investor-news-details/2026/FedEx-Board-of-Directors-Approves-Spin-off-of-FedEx-Freight/default.aspx\", \"quote\": \"has approved the previously announced separation of the FedEx Freight business.\"}\n  ],\n  \"note\": \"I chose FedEx Corporation, the NYSE-listed holding company (not FedEx Freight Holding Company or Federal Express Corporation). FedEx has no parent company. It is the top-level holding company, and I found no source naming a parent, so parent_name is null and parent_listed is unknown because it does not apply. The FedEx Freight spin-off completed on 2026-06-01, after the 2026-05-20 date. On that day FedEx Freight Holding Company began trading on the NYSE as FDXF, and FedEx distributed 80.1% of its shares (https://www.sec.gov/Archives/edgar/data/0002082247/000110465926068521/tm2615735d1_ex99-1.htm). On 2026-05-20 FedEx still owned FedEx Freight. The 8-K dated 2026-05-11 lists the notes on the NYSE, which supports debt_listed as yes. I labelled the NYSE as 'main'. The sources do not use that word, so this is my classification. I found no listing, delisting or takeover events for FedEx itself in the three years before 2026-05-20.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:16:10+00:00",
+  "inputs": {
+   "as_of": "2026-05-20",
+   "org_key": "fedex"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 32445,
+   "output_tokens": 2904,
+   "web_search_requests": 3
+  }
+ }
+}

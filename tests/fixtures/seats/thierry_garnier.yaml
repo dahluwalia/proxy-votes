@@ -1,0 +1,28 @@
+# The executive rule on the facts as the Tesco notice states them: a Tesco NED who is CEO of
+# Kingfisher plc, where Companies House confirms the directorship, so AGAINST. (In fact Tesco
+# withdrew his re-election on 6 May 2026, so the gold set has no vote for him; this fixture
+# tests the scoring logic, not that outcome.)
+name: Thierry Garnier
+case: [H14]
+roster:
+  - {meeting: tesco, resolution_no: 7, name: Thierry Garnier,
+     role_text_at_issuer: Independent Non-executive Director,
+     role_type_at_issuer: non_executive_director, coverage: structured}
+seats:
+  - {meeting: tesco, org_name: Tesco PLC, role_text: Independent Non-executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: tesco, org_name: Kingfisher plc, role_text: Chief Executive Officer,
+     role_type: officer_title, board_seat: unknown, chair: "no", executive: "yes", current: "yes"}
+ch:
+  - officer_id: fx-garnier
+    name: GARNIER, Thierry
+    appointments:
+      - {company_number: "00445790", company_name: TESCO PLC, company_type: plc, role: director,
+         appointed_on: 2023-05-01}
+      - {company_number: "01664812", company_name: KINGFISHER PLC, company_type: plc,
+         role: director, appointed_on: 2019-09-25}
+orgs:
+  - {canonical_name: Kingfisher plc, org_type: company, listed: "yes", equity_listing: "yes", market: LSE Main Market}
+expect:
+  tesco: {vote: AGAINST, points: [2, 2]}

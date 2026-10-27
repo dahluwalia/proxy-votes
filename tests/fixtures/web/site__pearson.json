@@ -1,0 +1,78 @@
+{
+ "key": "3fb2fe28be7ac7402a810b14d5898d40f31c3a6d06cb540cb2d22f70660ca4ad",
+ "payload": {
+  "content": [
+   {
+    "query": "Pearson plc board of directors corporate website",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Our Board of Directors",
+      "url": "https://plc.pearson.com/en-GB/company/governance/the-board"
+     },
+     {
+      "page_age": "229 days ago",
+      "title": "Governance & Remuneration - Pearson",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/annual-reports/2025/governance-and-remuneration-2025.pdf"
+     },
+     {
+      "page_age": "215 days ago",
+      "title": "Notice of Annual General Meeting 2026 - Pearson plc",
+      "url": "https://plc.pearson.com/sites/pearson-corp/files/2026-03/Pearson-plc-Notice-of-Meeting-2026.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 20-F - FY2019",
+      "url": "https://www.sec.gov/Archives/edgar/data/938323/000119312520094164/d875085d20f.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Pearson plc: Governance, Directors and Executives & Committees - MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/PEARSON-PLC-120781397/company-governance/"
+     },
+     {
+      "page_age": "626 days ago",
+      "title": "Pearson plc: Shareholders Board Members Managers and Company Profile",
+      "url": "https://www.marketscreener.com/quote/stock/PEARSON-PLC-4000637/company/"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form F-1 - FY2000",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000938323/000091205700035038/f-1.txt"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form F-1/A - FY2000",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000938323/000091205700035294/f-1a.txt"
+     },
+     {
+      "page_age": null,
+      "title": "PEARSON PLC - Form 424B2 - FY2000",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000938323/000091205700036133/a424b2.txt"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://plc.pearson.com\",\n    \"url\": \"https://plc.pearson.com/en-GB/company/governance/the-board\",\n    \"quote\": \"Our Board of Directors | Pearson plc\"\n  },\n  \"note\": \"This is Pearson plc's corporate and investor site. Its 2026 AGM notice, hosted on the same domain, gives the registered company number as 53723, which matches 00053723. The notice also refers to the Pearson website at plc.pearson.com. The quote is the page title, taken from the search result text.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:47:34+00:00",
+  "inputs": {
+   "org_key": "pearson"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 13965,
+   "output_tokens": 316,
+   "web_search_requests": 1
+  }
+ }
+}

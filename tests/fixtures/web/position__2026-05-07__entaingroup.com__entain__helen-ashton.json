@@ -1,0 +1,145 @@
+{
+ "key": "811d0166ae264ccadaf26b97914da2c688276d2b0c00102d4d6e31c349ea1d69",
+ "payload": {
+  "content": [
+   {
+    "query": "entaingroup.com Helen Ashton board of directors Entain",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "841 days ago",
+      "title": "Board Appointment",
+      "url": "https://www.entaingroup.com/news-insights/latest-news/2024/board-appointment-2/"
+     },
+     {
+      "page_age": null,
+      "title": "Board committees",
+      "url": "https://www.entaingroup.com/about-entain/corporate-governance/board-committees/"
+     },
+     {
+      "page_age": "585 days ago",
+      "title": "Notice of Annual General Meeting 2025",
+      "url": "https://www.entaingroup.com/media/3ycpwgmn/entain-plc-notice-of-agm-2025.pdf"
+     },
+     {
+      "page_age": "181 days ago",
+      "title": "In this section 103 Governance 104 Chair\u2019s Governance Overview",
+      "url": "https://www.entaingroup.com/annualreport2025/documents/Entain_Annual-Report_2025_GovernanceReport.pdf"
+     },
+     {
+      "page_age": "1281 days ago",
+      "title": "Governance In this section 89 90 91 95 104 108 114 118 142 Governance",
+      "url": "https://www.entaingroup.com/AnnualReport2024/documents/Entain_Annual_Report_2024_Governance.pdf"
+     },
+     {
+      "page_age": "221 days ago",
+      "title": "Notice of Annual General Meeting 2026",
+      "url": "https://www.entaingroup.com/media/gwqfoz5w/entain_ar26_notice_of_meeting.pdf"
+     },
+     {
+      "page_age": "546 days ago",
+      "title": "Appointment of Chief Executive Officer",
+      "url": "https://www.entaingroup.com/news-insights/latest-news/2025/appointment-of-chief-executive-officer/"
+     },
+     {
+      "page_age": "552 days ago",
+      "title": "2025 Annual General Meeting (\u201cAGM\u201d) Results",
+      "url": "https://www.entaingroup.com/news-insights/latest-news/2025/2025-annual-general-meeting-agm-results/"
+     },
+     {
+      "page_age": "221 days ago",
+      "title": "FORM OF PROXY",
+      "url": "https://www.entaingroup.com/media/xdrhbflt/entain_ar26_proxy_fop_ecomms.pdf"
+     },
+     {
+      "page_age": "235 days ago",
+      "title": "Group Chief Financial Officer succession",
+      "url": "https://www.entaingroup.com/news-insights/latest-news/2026/group-chief-financial-officer-succession/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Entain board change Helen Ashton step down 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "181 days ago",
+      "title": "In this section 103 Governance 104 Chair\u2019s Governance Overview",
+      "url": "https://www.entaingroup.com/annualreport2025/documents/Entain_Annual-Report_2025_GovernanceReport.pdf"
+     },
+     {
+      "page_age": "841 days ago",
+      "title": "Board Appointment",
+      "url": "https://www.entaingroup.com/news-insights/latest-news/2024/board-appointment-2/"
+     },
+     {
+      "page_age": "221 days ago",
+      "title": "Notice of Annual General Meeting 2026",
+      "url": "https://www.entaingroup.com/media/gwqfoz5w/entain_ar26_notice_of_meeting.pdf"
+     },
+     {
+      "page_age": "585 days ago",
+      "title": "It\u2019s your game This document is important and requires",
+      "url": "https://www.entaingroup.com/media/3ycpwgmn/entain-plc-notice-of-agm-2025.pdf"
+     },
+     {
+      "page_age": "1281 days ago",
+      "title": "Governance In this section 89 90 91 95 104 108 114 118 142 Governance",
+      "url": "https://www.entaingroup.com/AnnualReport2024/documents/Entain_Annual_Report_2024_Governance.pdf"
+     },
+     {
+      "page_age": "235 days ago",
+      "title": "Group Chief Financial Officer succession",
+      "url": "https://www.entaingroup.com/news-insights/latest-news/2026/group-chief-financial-officer-succession/"
+     },
+     {
+      "page_age": "181 days ago",
+      "title": "2026 Annual General Meeting (\u201cAGM\u201d) Results",
+      "url": "https://www.entaingroup.com/news-insights/latest-news/2026/2026-annual-general-meeting-agm-results/"
+     },
+     {
+      "page_age": "221 days ago",
+      "title": "FORM OF PROXY",
+      "url": "https://www.entaingroup.com/media/xdrhbflt/entain_ar26_proxy_fop_ecomms.pdf"
+     },
+     {
+      "page_age": "546 days ago",
+      "title": "Appointment of Chief Executive Officer",
+      "url": "https://www.entaingroup.com/news-insights/latest-news/2025/appointment-of-chief-executive-officer/"
+     },
+     {
+      "page_age": "1281 days ago",
+      "title": "Directors\u2019 Remuneration report Annual statement from the Chair",
+      "url": "https://www.entaingroup.com/AnnualReport2024/documents/Entain_Annual_Report_2024_Remuneration.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"board_member\": {\n    \"value\": \"yes\",\n    \"url\": \"https://www.entaingroup.com/media/gwqfoz5w/entain_ar26_notice_of_meeting.pdf\",\n    \"quote\": \"Helen Ashton (Independent Non-Executive Director)\"\n  },\n  \"capacity\": {\n    \"value\": \"non_executive_director\",\n    \"url\": \"https://www.entaingroup.com/media/gwqfoz5w/entain_ar26_notice_of_meeting.pdf\",\n    \"quote\": \"Helen Ashton: Independent Non-Executive Director, Chair of the Audit & Risk Committee, member of the Capital Allocation\"\n  },\n  \"start_date\": {\n    \"value\": \"2024-07-08\",\n    \"url\": \"https://www.entaingroup.com/annualreport2025/documents/Entain_Annual-Report_2025_GovernanceReport.pdf\",\n    \"quote\": \"Helen Ashton joined the Board on 8 July 2024.\"\n  },\n  \"end_date\": {\n    \"value\": null,\n    \"url\": null,\n    \"quote\": null\n  },\n  \"note\": \"The 2026 AGM notice (dated 20 March 2026) lists her as an Independent Non-Executive Director and proposes her re-election. The 2026 AGM results page says her re-election passed (99.48% for). I did not open the results page to confirm the AGM date was 2026-05-07. The 8 July 2024 start is almost two years before the AGM, so the role did not begin within six months of it. I found no end date or departure announcement on entaingroup.com. The latest board list I found is dated 6 March 2026, and it still includes her. Her role could have changed after 2026-05-07, but I found no sign that it did. The board shown is Entain plc's own board. I found no parent-group board.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:50:27+00:00",
+  "inputs": {
+   "as_of": "2026-05-07",
+   "domain": "entaingroup.com",
+   "org_key": "entain",
+   "person": "helen-ashton"
+  },
+  "kind": "position",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "position_v2",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 53300,
+   "output_tokens": 808,
+   "web_search_requests": 2
+  }
+ }
+}

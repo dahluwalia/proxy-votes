@@ -1,0 +1,19 @@
+# Tesco's Group Chief Executive with no other appointments: 1 point, and the executive
+# rule needs a second listed seat: FOR.
+name: Ken Murphy
+case: [H1]
+roster:
+  - {meeting: tesco, resolution_no: 11, name: Ken Murphy, role_text_at_issuer: Group Chief Executive,
+     role_type_at_issuer: officer_title, coverage: structured}
+seats:
+  - {meeting: tesco, org_name: Tesco PLC, role_text: Group Chief Executive, role_type: officer_title,
+     board_seat: unknown, chair: "no", executive: "yes", current: "yes"}
+ch:
+  - officer_id: fx-kmurphy
+    name: MURPHY, Kenneth
+    appointments:
+      - {company_number: "00445790", company_name: TESCO PLC, company_type: plc, role: director,
+         appointed_on: 2020-10-01}
+orgs: []
+expect:
+  tesco: {vote: FOR, points: [1, 1]}

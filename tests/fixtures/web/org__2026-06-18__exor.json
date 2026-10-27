@@ -1,0 +1,256 @@
+{
+ "key": "91cbde6bd1a7ae8dc2e01e220a7b728e5367847ace1bdb8b7045a987c36e124b",
+ "payload": {
+  "content": [
+   {
+    "query": "Exor N.V. annual general meeting 18 June 2026",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Exor N.V. Euronext Milan EXO ordinary shares listed Euronext Amsterdam",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Exor bonds listed Euronext Dublin notes Exor N.V.",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Exor Ferrari Stellantis Iveco Philips stake 2025 2026 sale delisting",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Exor N.V. Hildegard von Bingenstraat 38 1081 LH Amsterdam, the Netherlands",
+      "url": "https://www.exor.com/sites/default/files/2026/meetings/Exor%20NV%202026%20AGM%20-%20Agenda%20and%20Explanatory%20Notes.pdf"
+     },
+     {
+      "page_age": "159 days ago",
+      "title": "Exor Press Release - 2026 AGM",
+      "url": "https://uk.finance.yahoo.com/news/exor-press-release-2026-agm-153000218.html"
+     },
+     {
+      "page_age": "159 days ago",
+      "title": "EXOR N.V. Hildegard von Bingenstraat 38 1081LH Amsterdam The Netherlands",
+      "url": "https://exor.com/sites/default/files/press-releases/2026-05/Exor%20Press%20Release%20-%202026%20AGM.pdf"
+     },
+     {
+      "page_age": "269 days ago",
+      "title": "EXOR N.V. Gustav Mahlerplein 25, 1082 MS Amsterdam, The Netherlands",
+      "url": "https://www.exor.com/sites/default/files/press-releases/2026-01/Exor%20Press%20Release%20-%202026%20Corporate%20Calendar.pdf"
+     },
+     {
+      "page_age": "269 days ago",
+      "title": "Exor Press Release - 2026 Corporate Calendar",
+      "url": "https://finance.yahoo.com/news/exor-press-release-2026-corporate-100000416.html"
+     },
+     {
+      "page_age": "1244 days ago",
+      "title": "Exor 2023 Annual General Meeting approved all the resolutions; Nitin Nohria appointed Chairman of the Company",
+      "url": "https://www.globenewswire.com/news-release/2023/05/31/2679689/0/en/Exor-2023-Annual-General-Meeting-approved-all-the-resolutions-Nitin-Nohria-appointed-Chairman-of-the-Company.html"
+     },
+     {
+      "page_age": "522 days ago",
+      "title": "Exor N : Shareholders Approve All Resolutions at AGM",
+      "url": "https://www.marketscreener.com/quote/stock/EXOR-N-V-142350737/news/Exor-N-Shareholders-Approve-All-Resolutions-at-AGM-50040408/"
+     },
+     {
+      "page_age": null,
+      "title": "| EXOR",
+      "url": "https://www.exor.com/node"
+     },
+     {
+      "page_age": "1288 days ago",
+      "title": "FREQUENTLY ASKED QUESTIONS",
+      "url": "https://www.exor.com/pages/frequently-asked-questions"
+     },
+     {
+      "page_age": "1729 days ago",
+      "title": "Corporate calendar",
+      "url": "https://exor.com/pages/investors-media/events-and-presentations/corporate-calendar"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "1490 days ago",
+      "title": "Delisting of Exor\u2019s Ordinary Shares From Euronext Milan",
+      "url": "https://www.marketscreener.com/quote/stock/EXOR-N-V-32464938/news/Delisting-of-Exor-s-Ordinary-Shares-From-Euronext-Milan-41865445/"
+     },
+     {
+      "page_age": "1536 days ago",
+      "title": "EXOR N.V. Gustav Mahlerplein 25, 1082 MS Amsterdam, The Netherlands",
+      "url": "https://www.exor.com/sites/default/files/2022/document-documents/Exor_PR_Delisting%20from%20Euronext%20Milan%20with%20effect%20from%2027%20september%202022.pdf"
+     },
+     {
+      "page_age": "1550 days ago",
+      "title": "Exor to transition its stock exchange listing to Euronext Amsterdam to align with the company\u2019s dutch legal structure",
+      "url": "https://exor.com/press-releases/2022-07-29/exor-transition-its-stock-exchange-listing-euronext-amsterdam-align"
+     },
+     {
+      "page_age": "1536 days ago",
+      "title": "Delisting of Exor\u2019s ordinary shares from Euronext Milan with effect from 27 September 2022",
+      "url": "https://www.exor.com/press-releases/2022-08-12/delisting-exors-ordinary-shares-euronext-milan-effect-27-september-2022"
+     },
+     {
+      "page_age": "1536 days ago",
+      "title": "Admission to listing and trading on Euronext Amsterdam request of delisting from Euronext Milan",
+      "url": "https://www.exor.com/press-releases/2022-08-12/admission-listing-and-trading-euronext-amsterdam-request-delisting"
+     },
+     {
+      "page_age": "1490 days ago",
+      "title": "Delisting of Exor\u2019s ordinary shares from Euronext Milan",
+      "url": "https://exor.com/press-releases/2022-09-27/delisting-exors-ordinary-shares-euronext-milan"
+     },
+     {
+      "page_age": "1288 days ago",
+      "title": "FREQUENTLY ASKED QUESTIONS",
+      "url": "https://www.exor.com/pages/frequently-asked-questions"
+     },
+     {
+      "page_age": "1505 days ago",
+      "title": "Delisting of Exor\u2019s ordinary shares from Euronext Milan with effect from 27 September 2022",
+      "url": "https://exor.com/press-releases/2022-09-12/delisting-exors-ordinary-shares-euronext-milan-effect-27-september-2022"
+     },
+     {
+      "page_age": null,
+      "title": "Approval by Euronext of admission to listing and trading",
+      "url": "https://www.exor.com/press-releases/2022-08-03/approval-euronext-admission-listing-and-trading"
+     },
+     {
+      "page_age": null,
+      "title": "Exor (company)",
+      "url": "https://en.wikipedia.org/wiki/Exor_(company)"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "1540 days ago",
+      "title": "EXOR N.V. Direct listing on Euronext",
+      "url": "https://live.euronext.com/en/ipo-showcase/exor-nv"
+     },
+     {
+      "page_age": "579 days ago",
+      "title": "Exor Press Release - FY24 Results",
+      "url": "https://live.euronext.com/en/products/equities/company-news/2025-03-26-exor-press-release-fy24-results"
+     },
+     {
+      "page_age": "145 days ago",
+      "title": "Exor N.V. (AMS:EXO) Stock Price & Overview",
+      "url": "https://stockanalysis.com/quote/ams/EXO/"
+     },
+     {
+      "page_age": "362 days ago",
+      "title": "Exor Press Release - Pricing Announcement",
+      "url": "https://live.euronext.com/en/products/equities/company-news/2025-10-29-exor-press-release-pricing-announcement"
+     },
+     {
+      "page_age": null,
+      "title": "EXOR Merger on Euronext",
+      "url": "https://live.euronext.com/en/ipo-showcase/exor"
+     },
+     {
+      "page_age": null,
+      "title": "International bonds: Exor NV, 2.5% 8oct2024, EUR (FIGI BBG0077VKLK7, XS1119021357, WKN A1ZQW2)",
+      "url": "https://cbonds.com/bonds/91433/"
+     },
+     {
+      "page_age": "2567 days ago",
+      "title": "EXOR N.V. (incorporated in The Netherlands as a public ...",
+      "url": "https://dl.bourse.lu/dl?v=2OSHWb3EcT2b+mRXjEyOQ2DnjWbhyn3xhqaNM7%2F5tdJOaElTzXqqVTuJsdXHbqLX2k1Mh10f4PDtPe7yxV7XuqU8zH2nNeuSgTBXtCeZK4A4taIItunby35RmhmBbZvQfNk7gHIar0h+oQm4GyqA2+8%2FJJxZi+HYosK0ugDZQLc%3D"
+     },
+     {
+      "page_age": null,
+      "title": "Exor (company)",
+      "url": "https://en.wikipedia.org/wiki/Exor_(company)"
+     },
+     {
+      "page_age": null,
+      "title": "Exor NV (EXO) Stock Price & News - Google Finance",
+      "url": "https://www.google.com/finance/quote/EXO:AMS"
+     },
+     {
+      "page_age": "94 days ago",
+      "title": "EXOR N.V. Bonds \u2014 Corporate Bond Rates \u2014 TradingView",
+      "url": "https://www.tradingview.com/symbols/DUS-EYX/bonds/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Stellantis N.V. - Form 20-F - FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/1605484/000160548426000021/stellantis-20251231.htm"
+     },
+     {
+      "page_age": null,
+      "title": "Stellantis N.V. - Form 6-K - FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/1605484/000160548425000059/stellantisnv20250630semi-a.htm"
+     },
+     {
+      "page_age": "579 days ago",
+      "title": "Amsterdam, 26 March 2025 EXOR DELIVERS 9% NAV PER SHARE GROWTH IN 2024",
+      "url": "https://exor.com/sites/default/files/press-releases/2025-03/Exor%20Press%20Release%20-%20FY2024%20Results.pdf"
+     },
+     {
+      "page_age": "605 days ago",
+      "title": "Common-sense arbitrage by Exor, which is selling a 4% stake in Ferrari",
+      "url": "https://www.marketscreener.com/quote/stock/EXOR-N-V-142350737/news/Common-sense-arbitrage-by-Exor-which-is-selling-a-4-stake-in-Ferrari-49199917/"
+     },
+     {
+      "page_age": "607 days ago",
+      "title": "Exor Sells 4% of Ferrari for 3 Billion Euros as It Plans New Acquisition",
+      "url": "https://money.usnews.com/investing/news/articles/2025-02-26/exor-sells-4-of-ferrari-for-3-billion-euros-as-it-plans-new-acquisition"
+     },
+     {
+      "page_age": "606 days ago",
+      "title": "Agnellis cut Ferrari stake to raise 3 billion euros for new deals By Reuters",
+      "url": "https://www.investing.com/news/stock-market-news/exor-sells-4-of-ferrari-for-3-billion-euros-as-it-plans-new-acquisition-3895107"
+     },
+     {
+      "page_age": null,
+      "title": "Exor (company)",
+      "url": "https://en.wikipedia.org/wiki/Exor_(company)"
+     },
+     {
+      "page_age": "450 days ago",
+      "title": "Agnelli Family Shifts Gears: Iveco Sale Marks End Of Fiat Truck Era - MoparInsiders",
+      "url": "https://moparinsiders.com/agnelli-family-shifts-gears-iveco-sale-marks-end-of-fiat-truck-era/"
+     },
+     {
+      "page_age": "606 days ago",
+      "title": "Exor sells 4% of Ferrari for 3 billion euros as it plans new acquisition",
+      "url": "https://www.marketscreener.com/quote/stock/EXOR-N-V-142350737/news/Exor-sells-4-of-Ferrari-for-3-billion-euros-as-it-plans-new-acquisition-49180365/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"Exor N.V.\", \"url\": \"https://www.exor.com/sites/default/files/2026/meetings/Exor%20NV%202026%20AGM%20-%20Agenda%20and%20Explanatory%20Notes.pdf\", \"quote\": \"Exor N.V. Hildegard von Bingenstraat 38 1081 LH Amsterdam, the Netherlands\"},\n  \"country\": {\"value\": \"Netherlands\", \"url\": \"https://www.exor.com/pages/frequently-asked-questions\", \"quote\": \"Exor is a Dutch company with its registered office and headquarters at Hildegard von Bingenstraat 38, 1081 LH Amsterdam, The Netherlands.\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://dl.bourse.lu/dl?v=2OSHWb3EcT2b+mRXjEyOQ2DnjWbhyn3xhqaNM7%2F5tdJOaElTzXqqVTuJsdXHbqLX2k1Mh10f4PDtPe7yxV7XuqU8zH2nNeuSgTBXtCeZK4A4taIItunby35RmhmBbZvQfNk7gHIar0h+oQm4GyqA2+8%2FJJxZi+HYosK0ugDZQLc%3D\", \"quote\": \"incorporated in The Netherlands as a public limited liability company (naamloze vennootschap)\"},\n  \"equity_listed\": {\"value\": \"yes\", \"url\": \"https://exor.com/sites/default/files/press-releases/2026-05/Exor%20Press%20Release%20-%202026%20AGM.pdf\", \"quote\": \"Exor N.V. (AEX: EXO) has been building great companies since its foundation by the Agnelli Family.\"},\n  \"exchange\": {\"value\": \"Euronext Amsterdam\", \"url\": \"https://www.exor.com/pages/frequently-asked-questions\", \"quote\": \"Exor shares are listed on the Euronext Amsterdam and trade under the ticker symbol EXO.\"},\n  \"ticker\": {\"value\": \"EXO\", \"url\": \"https://live.euronext.com/en/ipo-showcase/exor-nv\", \"quote\": \"Listing EXOR N.V. on Euronext Amsterdam.\"},\n  \"market_segment\": {\"value\": \"main\", \"url\": \"https://www.exor.com/press-releases/2022-08-03/approval-euronext-admission-listing-and-trading\", \"quote\": \"a regulated market organised and managed by Euronext Amsterdam N.V.\"},\n  \"debt_listed\": {\"value\": \"yes\", \"url\": \"https://live.euronext.com/en/products/equities/company-news/2025-03-26-exor-press-release-fy24-results\", \"quote\": \"The notes are listed on the Luxembourg Stock Exchange, admitted for trading on the Euro MTF Market\"},\n  \"is_subsidiary\": {\"value\": \"yes\", \"url\": \"https://en.wikipedia.org/wiki/Exor_(company)\", \"quote\": \"controlled through the privately held company Giovanni Agnelli BV\"},\n  \"parent_name\": {\"value\": \"Giovanni Agnelli B.V.\", \"url\": \"https://www.exor.com/pages/frequently-asked-questions\", \"quote\": \"Exor is majority owned and controlled by Giovanni Agnelli B.V.\"},\n  \"parent_listed\": {\"value\": \"no\", \"url\": \"https://en.wikipedia.org/wiki/Exor_(company)\", \"quote\": \"controlled through the privately held company Giovanni Agnelli BV\"},\n  \"events\": [],\n  \"note\": \"The question gives 2026-06-18 as the AGM date, but Exor's own sources show its 2026 AGM was held on 20 May 2026, so the date does not match. Exor's shares were still listed on Euronext Amsterdam at that time and a company press release is dated 18 June 2026. Exor's shares moved from Euronext Milan to Euronext Amsterdam in 2022 (admitted 2022-08-12, Milan delisting effective 2022-09-27), which is outside the three-year window. I found no listing, delisting, demerger or takeover of Exor itself between 2023-06-18 and 2026-06-18, so events is empty. Exor's disposals of its holdings, such as Ferrari and Iveco, are not events of Exor itself and are excluded. The is_subsidiary answer reflects majority control (about 57% per Wikipedia) by the private Giovanni Agnelli B.V., not full ownership. This is a judgement call, so treat it with care. Exor's debt is listed on the Luxembourg Stock Exchange Euro MTF market; I did not find a separate bond listing elsewhere. Market segment 'main' is inferred from Euronext Amsterdam being a regulated market, where Exor is in Compartment A.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:22:20+00:00",
+  "inputs": {
+   "as_of": "2026-06-18",
+   "org_key": "exor"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 41832,
+   "output_tokens": 3523,
+   "web_search_requests": 4
+  }
+ }
+}

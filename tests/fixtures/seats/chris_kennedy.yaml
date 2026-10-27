@@ -1,0 +1,40 @@
+# One person in two notices: Tesco NED and ITV's CFO and COO. The executive rule applies at
+# both meetings: AGAINST at Tesco and at ITV.
+name: Chris Kennedy
+case: [H4, H14]
+roster:
+  - {meeting: tesco, resolution_no: 9, name: Chris Kennedy,
+     role_text_at_issuer: Independent Non-executive Director,
+     role_type_at_issuer: non_executive_director, coverage: structured}
+  - {meeting: itv, resolution_no: 12, name: Chris Kennedy,
+     role_text_at_issuer: Chief Financial and Operating Officer,
+     role_type_at_issuer: officer_title, coverage: prose}
+seats:
+  - {meeting: tesco, org_name: Tesco PLC, role_text: Independent Non-executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: tesco, org_name: ITV plc, role_text: Group Chief Financial and Operating Officer,
+     role_type: officer_title, board_seat: unknown, chair: "no", executive: "yes", current: "yes"}
+  - {meeting: tesco, org_name: EMI Group Archive Trust, role_text: Trustee, role_type: trustee,
+     board_seat: "no", chair: "no", executive: "no", current: "yes"}
+  - {meeting: itv, org_name: ITV plc, role_text: Chief Financial and Operating Officer,
+     role_type: officer_title, board_seat: unknown, chair: "no", executive: "yes", current: "yes"}
+ch:
+  - officer_id: fx-kennedy
+    name: KENNEDY, Christopher
+    dob_month: 6
+    dob_year: 1964
+    appointments:
+      - {company_number: "00445790", company_name: TESCO PLC, company_type: plc, role: director,
+         appointed_on: 2025-02-01}
+      - {company_number: "04967001", company_name: ITV PLC, company_type: plc, role: director,
+         appointed_on: 2019-08-01}
+orgs:
+  - {canonical_name: Tesco PLC, org_key: tesco, org_type: company, listed: "yes", equity_listing: "yes",
+     market: LSE Main Market}
+  - {canonical_name: ITV plc, org_key: itv, org_type: company, listed: "yes", equity_listing: "yes",
+     market: LSE Main Market}
+  - {canonical_name: EMI Group Archive Trust, org_type: charity, listed: "no", equity_listing: "no"}
+expect:
+  tesco: {vote: AGAINST, points: [2, 2]}
+  itv: {vote: AGAINST, points: [2, 2]}

@@ -1,0 +1,305 @@
+{
+ "key": "6daf2169acce007b7939f07b577d6ccf8b8ba29091d80c7e2614144c24a4eee1",
+ "payload": {
+  "content": [
+   {
+    "query": "Intertek USA Finance LLC",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Intertek Group plc notes guaranteed Intertek USA Finance LLC bonds",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "INTERTEK USA FINANCE LLC overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC029295"
+     },
+     {
+      "page_age": null,
+      "title": "INTERTEK USA FINANCE LLC people - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC029295/officers"
+     },
+     {
+      "page_age": null,
+      "title": "INTERTEK USA FINANCE LLC filing history - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC029295/filing-history"
+     },
+     {
+      "page_age": "602 days ago",
+      "title": "Annual Report & Accounts 2024 the power of amazing Financial Report",
+      "url": "https://www.intertek.com/siteassets/investors/2024/intertek-financial-report-2024.pdf"
+     },
+     {
+      "page_age": "966 days ago",
+      "title": "Intertek",
+      "url": "https://cdn.intertek.com/www-intertek-com/media/investors/2024/ar/pdf/Intertek-Financial-Report-2023.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Intertek USA Inc. Company Profile",
+      "url": "https://www.dnb.com/business-directory/company-profiles.intertek_usa_inc.1b821e4bac767a58f88e044143d6dbd1.html"
+     },
+     {
+      "page_age": "238 days ago",
+      "title": "intertek-financial-report-2025.pdf",
+      "url": "https://www.intertek.com/siteassets/investors/2026/ara/intertek-financial-report-2025.pdf"
+     },
+     {
+      "page_age": "1630 days ago",
+      "title": "Intertek USA Inc - Company Profile and News - Bloomberg Markets",
+      "url": "https://www.bloomberg.com/profile/company/0322334Z:US"
+     },
+     {
+      "page_age": null,
+      "title": "Intertek - Company Profile and News - Bloomberg Markets",
+      "url": "https://www.bloomberg.com/profile/company/0989736D:US"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "doc1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1030557/000102123102000087/intertek20f.htm"
+     },
+     {
+      "page_age": "2065 days ago",
+      "title": "135 Intertek Group plc Annual Report and Accounts 2020 Financial statements",
+      "url": "https://cdn.intertek.com/www-intertek-com/media/investors/2021/Intertek-AR-2020-Full-Financials.pdf"
+     },
+     {
+      "page_age": "602 days ago",
+      "title": "Annual Report & Accounts 2024 the power of amazing Financial Report",
+      "url": "https://www.intertek.com/siteassets/investors/2024/intertek-financial-report-2024.pdf"
+     },
+     {
+      "page_age": "238 days ago",
+      "title": "intertek-financial-report-2025.pdf",
+      "url": "https://www.intertek.com/siteassets/investors/2026/ara/intertek-financial-report-2025.pdf"
+     },
+     {
+      "page_age": "1701 days ago",
+      "title": "F I N A N C I A L A For\u001b for G\u0017d",
+      "url": "https://intertek-cdn.s3.amazonaws.com/ar2021/assets/pdf/Intertek_ARA21_Financial_Report.pdf"
+     },
+     {
+      "page_age": "966 days ago",
+      "title": "Intertek",
+      "url": "https://cdn.intertek.com/www-intertek-com/media/investors/2024/ar/pdf/Intertek-Financial-Report-2023.pdf"
+     },
+     {
+      "page_age": "105 days ago",
+      "title": "Intertek Group plc (ITRK.L) Stock Price, News, Quote & History - Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/ITRK.L/"
+     },
+     {
+      "page_age": "17 days ago",
+      "title": "Intertek Group (ITRK) Secures Over $5 Billion Financing Package for Recommended Cash Buyout by Isotope Bidco",
+      "url": "https://kalkinemedia.com/uk/news/announcements/intertek-group-itrk-secures-over-5-billion-financing-package-for-recommended-cash-buyout-by-isotope-bidco"
+     },
+     {
+      "page_age": null,
+      "title": "Intertek Group plc - Form F-6EF - FY2015",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001444714/000119380515001553/e614100_f6ef-intertek.htm"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Intertek Isotope Bidco recommended cash offer announcement Rule 2.7",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "Intertek Group plc London Stock Exchange Main Market ITRK FTSE 100",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "130 days ago",
+      "title": "rule-2.7-announcement-dated-18-june-2026.pdf",
+      "url": "https://www.intertek.com/siteassets/investors/offer/rule-2.7-announcement-dated-18-june-2026.pdf"
+     },
+     {
+      "page_age": "130 days ago",
+      "title": "Recommended Final Cash Offer",
+      "url": "https://www.investegate.co.uk/announcement/rns/intertek-group--itrk/recommended-final-cash-offer/9625392"
+     },
+     {
+      "page_age": "39 days ago",
+      "title": "Offer Update - Lender Presentation",
+      "url": "https://www.investegate.co.uk/announcement/rns/intertek-group--itrk/offer-update-lender-presentation-/9777997"
+     },
+     {
+      "page_age": "103 days ago",
+      "title": "PUBLICATION OF SCHEME DOCUMENT",
+      "url": "https://www.investegate.co.uk/announcement/rns/intertek-group--itrk/publication-of-scheme-document/9668964"
+     },
+     {
+      "page_age": "81 days ago",
+      "title": "Results of Court Meeting and General Meeting",
+      "url": "https://www.investegate.co.uk/announcement/rns/intertek-group--itrk/results-of-court-meeting-and-general-meeting/9709222"
+     },
+     {
+      "page_age": "130 days ago",
+      "title": "Freshfields advises EQT on recommended \u00a39.5 billion cash offer for Intertek",
+      "url": "https://www.freshfields.com/en/our-thinking/news/news-search/2026/06/freshfields-advises-eqt-on-recommended-9.5-billion-cash-offer-for-intertek"
+     },
+     {
+      "page_age": "130 days ago",
+      "title": "EQT strikes \u00a39.5 billion deal to acquire Intertek",
+      "url": "https://ca.finance.yahoo.com/news/eqt-strikes-9-5-billion-100025721.html"
+     },
+     {
+      "page_age": null,
+      "title": "To: Isotope Midco S.\u00e0 r.l.(Midco) a private limited liability ...",
+      "url": "https://www.intertek.com/siteassets/investors/offer/equity-commitment-letter---nexus-eltif-ecl.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "EX-99.1 2 d333082dex991.htm RULE 2.7 ANNOUNCEMENT Rule 2.7 Announcement",
+      "url": "https://www.sec.gov/Archives/edgar/data/912513/000119312512159753/d333082dex991.htm"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "Intertek",
+      "url": "https://en.wikipedia.org/wiki/Intertek"
+     },
+     {
+      "page_age": null,
+      "title": "INTERTEK GROUP PLC ITRK Stock",
+      "url": "https://www.londonstockexchange.com/stock/ITRK/intertek-group-plc"
+     },
+     {
+      "page_age": null,
+      "title": "INTERTEK GROUP PLC ITRK Trade recap - Stock",
+      "url": "https://www.londonstockexchange.com/stock/ITRK/intertek-group-plc/trade-recap"
+     },
+     {
+      "page_age": "161 days ago",
+      "title": "Intertek Group plc (ITRK) Stock Price & News - Google Finance",
+      "url": "https://www.google.com/finance/beta/quote/ITRK:LON"
+     },
+     {
+      "page_age": null,
+      "title": "Intertek Group Share Price. ITRK - Stock Quote, Charts, Trade History, Share Chat, ITRK Values. Intertek Group Plc Ord 1p",
+      "url": "https://www.lse.co.uk/SharePrice.html?shareprice=ITRK&share=Intertek-group"
+     },
+     {
+      "page_age": "105 days ago",
+      "title": "Intertek Group plc (ITRK.L) Stock Price, News, Quote & History - Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/ITRK.L/"
+     },
+     {
+      "page_age": "518 days ago",
+      "title": "Intertek Stock Price Today",
+      "url": "https://www.investing.com/equities/intertek-testing-services"
+     },
+     {
+      "page_age": null,
+      "title": "Intertek Group PLC Share Price (LSE:ITRK)",
+      "url": "https://www.ajbell.co.uk/market-research/LSE:ITRK"
+     },
+     {
+      "page_age": "80 days ago",
+      "title": "Intertek Share Price, Forecast & Financials (LON:ITRK)",
+      "url": "https://www.stockopedia.com/share-prices/intertek-LON:ITRK/"
+     },
+     {
+      "page_age": "1 days ago",
+      "title": "JPMorgan reports 6.67 percent position in Intertek stock",
+      "url": "https://ad-hoc-news.de/boerse/news/corporate-news/jpmorgan-reports-6-67-percent-position-in-intertek-stock/70408633"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "Intertek USA Finance LLC accounts 2024 immediate parent Intertek Group plc ultimate parent",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "966 days ago",
+      "title": "Intertek",
+      "url": "https://cdn.intertek.com/www-intertek-com/media/investors/2024/ar/pdf/Intertek-Financial-Report-2023.pdf"
+     },
+     {
+      "page_age": "238 days ago",
+      "title": "Annual Report & Accounts 2025 Financial Report",
+      "url": "https://www.intertek.com/siteassets/investors/2026/ara/intertek-financial-report-2025.pdf"
+     },
+     {
+      "page_age": "602 days ago",
+      "title": "Annual Report & Accounts 2024 the power of amazing Financial Report",
+      "url": "https://www.intertek.com/siteassets/investors/2024/intertek-financial-report-2024.pdf"
+     },
+     {
+      "page_age": "584 days ago",
+      "title": "Intertek : Report (intertek financial report 2024)",
+      "url": "https://www.marketscreener.com/quote/stock/INTERTEK-GROUP-PLC-4003872/news/Intertek-Report-intertek-financial-report-2024-49397846/"
+     },
+     {
+      "page_age": "584 days ago",
+      "title": "Annual Financial Report",
+      "url": "https://www.investegate.co.uk/announcement/rns/intertek-group--itrk/annual-financial-report/8791293"
+     },
+     {
+      "page_age": null,
+      "title": "INTERTEK USA FINANCE LLC overview - Find and update company information - GOV.UK",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/FC029295"
+     },
+     {
+      "page_age": "602 days ago",
+      "title": "Annual Report & Accounts 2024 the power of amazing Strategic Report",
+      "url": "https://www.intertek.com/siteassets/investors/2024/intertek-annual-report-2024.pdf"
+     },
+     {
+      "page_age": "31 days ago",
+      "title": "Intertek Group PLC: Directors, Shareholders & Company Details",
+      "url": "https://zavia.ai/companies/intertek-group-plc-gb-22924792/"
+     },
+     {
+      "page_age": "3240 days ago",
+      "title": "Intertek Group 2026 Company Profile: Stock Performance & Earnings",
+      "url": "https://pitchbook.com/profiles/company/13412-89"
+     },
+     {
+      "page_age": "214 days ago",
+      "title": "Intertek \u2014 Grokipedia",
+      "url": "https://grokipedia.com/page/Intertek"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"INTERTEK USA FINANCE LLC\", \"url\": \"https://find-and-update.company-information.service.gov.uk/company/FC029295\", \"quote\": \"INTERTEK USA FINANCE LLC\"},\n  \"country\": {\"value\": \"United States\", \"url\": \"https://find-and-update.company-information.service.gov.uk/company/FC029295\", \"quote\": \"Incorporated in: UNITED STATES\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://find-and-update.company-information.service.gov.uk/company/FC029295\", \"quote\": \"Legal form: Limited Liability Company\"},\n  \"equity_listed\": {\"value\": \"no\", \"url\": \"https://www.intertek.com/siteassets/investors/2026/ara/intertek-financial-report-2025.pdf\", \"quote\": \"Unless otherwise stated, these entities are wholly owned indirect\"},\n  \"exchange\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"ticker\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"market_segment\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"debt_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"is_subsidiary\": {\"value\": \"yes\", \"url\": \"https://www.intertek.com/siteassets/investors/2026/ara/intertek-financial-report-2025.pdf\", \"quote\": \"All the subsidiaries shown were consolidated with Intertek Group plc as at 31 December 2025.\"},\n  \"parent_name\": {\"value\": \"Intertek Group plc\", \"url\": \"https://www.intertek.com/siteassets/investors/2026/ara/intertek-financial-report-2025.pdf\", \"quote\": \"All the subsidiaries shown were consolidated with Intertek Group plc as at 31 December 2025.\"},\n  \"parent_listed\": {\"value\": \"yes\", \"url\": \"https://www.londonstockexchange.com/stock/ITRK/intertek-group-plc/trade-recap\", \"quote\": \"Listing / Admission to trading 29 May 2002 Market Main Market\"},\n  \"events\": [],\n  \"note\": \"The entity is a Nevada LLC registered as an overseas company in the UK (Companies House FC029295). It is an intermediate finance holding subsidiary, so its own equity is not listed. The pages I found do not say whether it has listed debt, so debt_listed is unknown. The Group's disclosed borrowings are private placement notes. I did not confirm which Intertek entity is the LLC's immediate parent, so Intertek Group plc is named as the consolidating parent and ultimate parent on that basis. Intertek Group plc was listed on the LSE Main Market (ticker ITRK, FTSE 100) on 2026-05-20. On 2026-05-20 it was in an offer period: the Rule 2.7 announcement refers to 15 April 2026 as the last business day before the offer period began. The recommended final cash acquisition by Isotope Bidco Limited (EQT-led) was announced on 2026-06-18 (https://www.intertek.com/siteassets/investors/offer/rule-2.7-announcement-dated-18-june-2026.pdf). Shareholders approved it on 2026-08-06. That is after the question date, so it is not listed in events. The parent's shares were still trading as of the Oct 2026 pages. I found no listing, delisting, demerger or takeover events for the LLC itself in the three years before 2026-05-20.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:31:55+00:00",
+  "inputs": {
+   "as_of": "2026-05-20",
+   "org_key": "intertek-usa-finance"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 95872,
+   "output_tokens": 2542,
+   "web_search_requests": 5
+  }
+ }
+}

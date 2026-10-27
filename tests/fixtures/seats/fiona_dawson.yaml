@@ -1,0 +1,20 @@
+# M&S: the notice names the directors but has no biographies (Annual Report pp. 51-52), so
+# the role at the meeting is unknown and the M&S seat is 1 or 2 points. Below the threshold
+# whatever the role: FOR. No outside seats are invented.
+name: Fiona Dawson
+case: [H11]
+roster:
+  - {meeting: ms, resolution_no: 8, name: Fiona Dawson, role_text_at_issuer: null,
+     role_type_at_issuer: null, coverage: none}
+seats:
+  - {meeting: ms, org_name: Marks and Spencer Group plc, role_text: null, role_type: other,
+     board_seat: unknown, chair: unknown, executive: unknown, current: "yes"}
+ch:
+  - officer_id: fx-dawson
+    name: DAWSON, Fiona Mary
+    appointments:
+      - {company_number: "04256886", company_name: MARKS AND SPENCER GROUP P.L.C.,
+         company_type: plc, role: director, appointed_on: 2022-03-01}
+orgs: []
+expect:
+  ms: {vote: FOR, points: [1, 2]}

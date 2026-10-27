@@ -1,0 +1,78 @@
+{
+ "key": "f91eb8132652e4ea8379ed2f4f3571c4542dcc97d186a63158f2f8c13fd6f4ce",
+ "payload": {
+  "content": [
+   {
+    "query": "Bridgepoint Group plc investor relations board of directors",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "951 days ago",
+      "title": "Bridgepoint Group plc Annual Report & Accounts 2023",
+      "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000092331/NI-000092331.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Bridgepoint Group plc: Governance, Directors and Executives & Committees - MarketScreener UK",
+      "url": "https://uk.marketscreener.com/quote/stock/BRIDGEPOINT-GROUP-PLC-125138116/company-governance/"
+     },
+     {
+      "page_age": null,
+      "title": "Bridgepoint Group plc - Executive Bio, Top Executies, and Transitions - Equilar ExecAtlas",
+      "url": "https://people.equilar.com/bio/org/bridgepoint-group-plc/4874367"
+     },
+     {
+      "page_age": "466 days ago",
+      "title": "Bridgepoint Group plc Interim Report 2025",
+      "url": "https://www.bridgepointgroup.com/content/dam/bridgepoint/corporate2022/documents/financial-information/results_reports_presentations/2025/bridgepoint-group-2025-hy-report.pdf.downloadasset.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "BPT Investor Relations - Bridgepoint Group PLC - Alpha Spread",
+      "url": "https://www.alphaspread.com/security/lse/bpt/investor-relations"
+     },
+     {
+      "page_age": "580 days ago",
+      "title": "Bridgepoint Group plc - Annual Report & Accounts 2024",
+      "url": "https://www.bridgepointgroup.com/content/dam/bridgepoint/corporate2022/documents/financial-information/annual-report-2024/annual-report-2024.pdf.downloadasset.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "Bridgepoint Group",
+      "url": "https://www.privateequityinternational.com/institution-profiles/bridgepoint-group.html"
+     },
+     {
+      "page_age": "4433 days ago",
+      "title": "Bridgepoint Group",
+      "url": "https://uk.linkedin.com/company/bridgepoint"
+     },
+     {
+      "page_age": null,
+      "title": "William Jackson (businessman)",
+      "url": "https://en.wikipedia.org/wiki/William_Jackson_(businessman)"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"website\": {\n    \"value\": \"https://www.bridgepointgroup.com\",\n    \"url\": \"https://www.bridgepointgroup.com/content/dam/bridgepoint/corporate2022/documents/financial-information/annual-report-2024/annual-report-2024.pdf.downloadasset.pdf\",\n    \"quote\": \"Bridgepoint Group plc Annual Report & Accounts 2024\"\n  },\n  \"note\": \"bridgepointgroup.com hosts the company's own annual report and interim report, which name Bridgepoint Group plc and include board and governance sections. I did not match the Companies House number 11443992 against any page. I identified the company by its name and its position as a listed plc.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-27T12:52:33+00:00",
+  "inputs": {
+   "org_key": "bridgepoint-group"
+  },
+  "kind": "site",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "site_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 14018,
+   "output_tokens": 466,
+   "web_search_requests": 1
+  }
+ }
+}

@@ -1,0 +1,25 @@
+# ITV NED whose prose biography says she is Haleon's CFO. CH shows her on Haleon's board,
+# so the executive rule applies: AGAINST.
+name: Dawn Allen
+case: [H7, H14]
+roster:
+  - {meeting: itv, resolution_no: 4, name: Dawn Allen, role_text_at_issuer: Non-executive Director,
+     role_type_at_issuer: non_executive_director, coverage: prose}
+seats:
+  - {meeting: itv, org_name: ITV plc, role_text: Non-executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - {meeting: itv, org_name: Haleon plc, role_text: Chief Financial Officer,
+     role_type: officer_title, board_seat: unknown, chair: "no", executive: "yes", current: "yes"}
+ch:
+  - officer_id: fx-allen
+    name: ALLEN, Dawn
+    appointments:
+      - {company_number: "04967001", company_name: ITV PLC, company_type: plc, role: director,
+         appointed_on: 2024-09-01}
+      - {company_number: "13691224", company_name: HALEON PLC, company_type: plc, role: director,
+         appointed_on: 2024-10-01}
+orgs:
+  - {canonical_name: Haleon plc, org_type: company, listed: "yes", equity_listing: "yes", market: LSE Main Market}
+expect:
+  itv: {vote: AGAINST, points: [2, 2]}

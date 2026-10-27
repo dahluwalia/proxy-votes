@@ -1,0 +1,39 @@
+# Intertek NED who is an EVP of FedEx. A job title is not a board seat: position research
+# found FedEx's board list without her, so board_seat is "no" and the vote is FOR at 1.
+name: Kawal Preet
+case: [H7]
+roster:
+  - {meeting: intertek, resolution_no: 13, name: Kawal Preet,
+     role_text_at_issuer: Non-Executive Director, role_type_at_issuer: non_executive_director,
+     coverage: structured}
+seats:
+  - {meeting: intertek, org_name: Intertek Group plc, role_text: Non-Executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "yes"}
+  - meeting: intertek
+    org_name: FedEx
+    role_text: Executive Vice President, Planning, Engineering and Transformation
+    role_type: officer_title
+    board_seat: "no"
+    chair: "no"
+    executive: "yes"
+    current: "yes"
+    evidence:
+      - {source: web, ref: "https://investors.fedex.com/governance/board-of-directors",
+         title: FedEx Board of Directors, quote: "Board of Directors"}
+  - {meeting: intertek, org_name: FedEx, role_text: "Regional President, Asia Pacific",
+     role_type: officer_title, board_seat: unknown, chair: "no", executive: "yes", current: "no"}
+  - {meeting: intertek, org_name: Asia Airfreight Terminal Co. Ltd, role_text: Non-Executive Director,
+     role_type: non_executive_director, board_seat: "yes", chair: "no", executive: "no",
+     current: "no"}
+ch:
+  - officer_id: fx-preet
+    name: PREET, Kawal
+    appointments:
+      - {company_number: "04267576", company_name: INTERTEK GROUP PLC, company_type: plc,
+         role: director, appointed_on: 2024-01-01}
+orgs:
+  - {canonical_name: FedEx Corporation, org_key: fedex, org_type: company, listed: "yes", equity_listing: "yes",
+     market: NYSE}
+expect:
+  intertek: {vote: FOR, points: [1, 1]}

@@ -1,0 +1,310 @@
+{
+ "key": "47e48423984764964bcaf4f6aa351d5167671c5545ff92dc31608706d57100fe",
+ "payload": {
+  "content": [
+   {
+    "query": "HSBC Holdings plc shares listed London Hong Kong New York Bermuda ticker HSBA 0005",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "HSBC Holdings plc Hang Seng Bank privatisation 2026 completion delisting",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "HSBC Holdings plc annual general meeting 2026 results of AGM",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "717 days ago",
+      "title": "Investor FAQs - investor relations",
+      "url": "https://www.hsbc.com/investors/shareholder-and-dividend-information/investor-faqs"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC Holdings PLC Hong Kong Stock Price Today",
+      "url": "https://www.investing.com/equities/hsbc-holdings?cid=8545"
+     },
+     {
+      "page_age": "31 days ago",
+      "title": "Share analytics",
+      "url": "https://www.hsbc.com/investors/shareholder-and-dividend-information"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC Holdings PLC - GBP (HSBA) Stock Price Quote Today & Current Price Chart",
+      "url": "https://capital.com/en-int/markets/shares/hsbc-holdings-plc-gbp-share-price"
+     },
+     {
+      "page_age": "616 days ago",
+      "title": "HSBC Holdings plc Stock (HSBA) - Quote London S.E.- MarketScreener",
+      "url": "https://www.marketscreener.com/quote/stock/HSBC-HOLDINGS-PLC-16896790/"
+     },
+     {
+      "page_age": "159 days ago",
+      "title": "HSBC Stock Price Today",
+      "url": "https://www.investing.com/equities/hsbc-holdings"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC",
+      "url": "https://en.wikipedia.org/wiki/HSBC"
+     },
+     {
+      "page_age": "311 days ago",
+      "title": "HSBC Holdings PLC (HSBA)",
+      "url": "https://in.investing.com/equities/hsbc-holdings"
+     },
+     {
+      "page_age": "1539 days ago",
+      "title": "HSBC Holdings PLC (HSBA) Stock Price, News & Insights",
+      "url": "https://www.fpmarkets.com/en-gb/hsbc-share-price/"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC Holdings PLC (#HSBA) Stock Price, Live Chart & Analysis",
+      "url": "https://www.litefinance.org/trading/trading-instruments/cfd-london-lse/hsba/"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "273 days ago",
+      "title": "HSBC Completes Court-Approved Privatisation of Hang Seng Bank and Delisting in Hong Kong - TipRanks.com",
+      "url": "https://www.tipranks.com/news/company-announcements/hsbc-completes-court-approved-privatisation-of-hang-seng-bank-and-delisting-in-hong-kong"
+     },
+     {
+      "page_age": "48 days ago",
+      "title": "HSBC completes privatisation of Hang Seng Bank",
+      "url": "https://www.hsbc.com/investors/hsbc-proposal-to-privatise-hang-seng-bank"
+     },
+     {
+      "page_age": "271 days ago",
+      "title": "Hang Seng Bank delisted from Hong Kong Stock Exchange as HSBC completes privatisation - MARKETECH APAC",
+      "url": "https://marketech-apac.com/hang-seng-bank-delisted-from-hong-kong-stock-exchange-as-hsbc-completes-privatisation/"
+     },
+     {
+      "page_age": "363 days ago",
+      "title": "January 2026 newsletter",
+      "url": "https://www.hsbc.com/investors/investing-in-hsbc/hsbc-shareholder-updates/2026/january"
+     },
+     {
+      "page_age": "97 days ago",
+      "title": "HSBC and Hang Seng Bank announce despatch of Scheme Document on proposed privatisation of Hang Seng Bank",
+      "url": "https://www.hsbc.com/news-and-views/news/media-releases/2025/hsbc-and-hang-seng-bank-announce-despatch-of-scheme-document-on-proposed-privatisation"
+     },
+     {
+      "page_age": "276 days ago",
+      "title": "HSBC Wins Court Approval to Privatise Hang Seng Bank and Delist Shares - TipRanks.com",
+      "url": "https://www.tipranks.com/news/company-announcements/hsbc-wins-court-approval-to-privatise-hang-seng-bank-and-delist-shares"
+     },
+     {
+      "page_age": "270 days ago",
+      "title": "Slaughter and May advised on the privatisation of Hang Seng Bank Limited",
+      "url": "https://www.slaughterandmay.com/recent-work/the-privatisation-of-hang-seng-bank-limited/"
+     },
+     {
+      "page_age": "197 days ago",
+      "title": "HSBC completes HK$ privatisation of Hang Seng Bank",
+      "url": "https://filingreader.com/news-wire/hongkong/2026-01-26/hsbc-completes-privatisation-of-hang-seng-bank"
+     },
+     {
+      "page_age": null,
+      "title": "hsbc and hang seng bank announce despatch of scheme document on proposed privatisation of hang sen ce7d50d8de80fe25",
+      "url": "https://ae.marketscreener.com/news/hsbc-and-hang-seng-bank-announce-despatch-of-scheme-document-on-proposed-privatisation-of-hang-sen-ce7d50d8de80fe25"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": "110 days ago",
+      "title": "AGM and shareholder meetings",
+      "url": "https://www.hsbc.com/investors/shareholder-and-dividend-information/agm-and-shareholder-meetings"
+     },
+     {
+      "page_age": "171 days ago",
+      "title": "Result of AGM",
+      "url": "https://www.investegate.co.uk/announcement/rns/hsbc-holdings--hsba/result-of-agm/9559961"
+     },
+     {
+      "page_age": "171 days ago",
+      "title": "HSBC : 2026 AGM results announcement",
+      "url": "https://www.marketscreener.com/news/hsbc-2026-agm-results-announcement-a-english-ce7f5bdbdd8df225"
+     },
+     {
+      "page_age": "171 days ago",
+      "title": "HSBC Holdings plc Registered Office and Group Head Office:",
+      "url": "https://www.hsbc.com/-/files/hsbc/investors/results-and-announcements/stock-exchange-announcements/2026/may/sea-080526-result-of-agm.pdf?download=1"
+     },
+     {
+      "page_age": "171 days ago",
+      "title": "AGM Statements",
+      "url": "https://www.investegate.co.uk/announcement/rns/hsbc-holdings--hsba/agm-statements/9559495"
+     },
+     {
+      "page_age": "171 days ago",
+      "title": "HSBC : 2026 AGM Special Business Resolutions",
+      "url": "https://www.marketscreener.com/news/hsbc-2026-agm-special-business-resolutions-ce7f5bdbdd89f421"
+     },
+     {
+      "page_age": "56 days ago",
+      "title": "May 2026 newsletter",
+      "url": "https://www.hsbc.com/investors/investing-in-hsbc/hsbc-shareholder-updates/2026/may"
+     },
+     {
+      "page_age": null,
+      "title": "This news release is issued by HSBC Holdings plc",
+      "url": "https://content.bsx.com/CompanyDocuments/1077223879/2026-05-08%20AGM%20statements%20FINAL.pdf"
+     },
+     {
+      "page_age": "171 days ago",
+      "title": "HSBC shareholders back 2026 AGM resolutions",
+      "url": "https://www.stocktitan.net/sec-filings/HSBC/6-k-hsbc-holdings-plc-current-report-foreign-issuer-d06f99dc747c.html"
+     },
+     {
+      "page_age": "171 days ago",
+      "title": "HSBC Holdings plc Stock (GB0005405286): 2026 AGM Results and Dividend Update",
+      "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/hsbc-holdings-plc-stock-gb0005405286-2026-agm-results-and-dividend/69293366"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "query": "HSBC Holdings plc notes admitted to trading London Stock Exchange regulated market debt securities Annual Report 2025 listed",
+    "type": "server_tool_use"
+   },
+   {
+    "query": "HSBC completes sale of HSBC Bank Canada to RBC 1 March 2024",
+    "type": "server_tool_use"
+   },
+   {
+    "results": [
+     {
+      "page_age": "167 days ago",
+      "title": "a0359e",
+      "url": "https://www.sec.gov/Archives/edgar/data/1089113/000165495426004696/a0359e.htm"
+     },
+     {
+      "page_age": "167 days ago",
+      "title": "Issuance of senior unsecured notes and admission to trading",
+      "url": "https://www.hsbc.com/-/files/hsbc/investors/results-and-announcements/stock-exchange-announcements/2026/may/sea-130526-issuance-of-senior-unsecured-notes-and-admission-to-trading.pdf"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC HOLDINGS PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001089113/000165495426007688/a9940q.htm"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC HOLDINGS PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001089113/000165495426007932/a6379s.htm"
+     },
+     {
+      "page_age": "210 days ago",
+      "title": "10330768941-v41 - i- 70-41104188 BASE PROSPECTUS DATED 30 MARCH 2026",
+      "url": "https://www.hsbc.com/-/files/hsbc/investors/fixed-income-investors/issuance-programmes/hsbc-holdings/2026/260330-hsbc-holdings-plc-base-prospectus-dated-30-march-2026.pdf"
+     },
+     {
+      "page_age": "59 days ago",
+      "title": "Issuance of senior notes and admission to trading",
+      "url": "https://www.investegate.co.uk/announcement/rns/hsbc-holdings--hsba/issuance-of-senior-notes-and-admission-to-trading/9745862"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC HOLDINGS PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001089113/000165495426004696/a0359e.htm"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC HOLDINGS PLC - Form 6-K - FY2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001089113/000165495426008508/a8471v.htm"
+     },
+     {
+      "page_age": "244 days ago",
+      "title": "HSBC UK Bank plc Annual Report and Accounts 2025",
+      "url": "https://www.hsbc.com/-/files/hsbc/investors/hsbc-results/2025/annual/pdfs/hsbc-uk-bank-plc/260225-annual-report-and-accounts-2025.pdf"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "results": [
+     {
+      "page_age": null,
+      "title": "HSBC HOLDINGS PLC - Form 6-K - FY2024",
+      "url": "https://www.sec.gov/Archives/edgar/data/1089113/000165495424004074/a8211i.htm"
+     },
+     {
+      "page_age": "941 days ago",
+      "title": "HSBC completes sale of Canadian unit to RBC - SWI swissinfo.ch",
+      "url": "https://www.swissinfo.ch/eng/hsbc-completes-sale-of-canadian-unit-to-rbc/74536689"
+     },
+     {
+      "page_age": "941 days ago",
+      "title": "Completion of the sale of HSBC Bank Canada to RBC",
+      "url": "https://www.hsbc.com/-/files/hsbc/investors/results-and-announcements/stock-exchange-announcements/2024/april/sea-240401-e-completion-of-the-sale-of-hsbc-bank-canada-to-rbc.pdf"
+     },
+     {
+      "page_age": "941 days ago",
+      "title": "HSBC completes sale of Canadian unit to RBC",
+      "url": "https://finance.yahoo.com/news/hsbc-completes-sale-canadian-unit-053425379.html"
+     },
+     {
+      "page_age": "941 days ago",
+      "title": "UPDATE 1-HSBC completes sale of Canadian unit to RBC",
+      "url": "https://finance.yahoo.com/news/1-hsbc-completes-sale-canadian-060516292.html"
+     },
+     {
+      "page_age": "940 days ago",
+      "title": "HSBC completes sale of Canadian unit to RBC - The Globe and Mail",
+      "url": "https://www.theglobeandmail.com/business/article-hsbc-completes-sale-of-canadian-unit-to-rbc/"
+     },
+     {
+      "page_age": "942 days ago",
+      "title": "Sale of Canada Banking Operations\uff5cFAQs - HSBC International",
+      "url": "https://internationalservices.hsbc.com/international-banking/hsbc-canada-sale/"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC Bank Canada",
+      "url": "https://en.wikipedia.org/wiki/HSBC_Bank_Canada"
+     },
+     {
+      "page_age": null,
+      "title": "HSBC HOLDINGS PLC - Form 6-K - FY2023",
+      "url": "https://www.sec.gov/Archives/edgar/data/1089113/000165495423015903/a6998x.htm"
+     },
+     {
+      "page_age": null,
+      "title": "hsbc finalizes sale of canadian division to rbc",
+      "url": "https://www.tipranks.com/news/company-announcements/hsbc-finalizes-sale-of-canadian-division-to-rbc"
+     }
+    ],
+    "type": "web_search_tool_result"
+   },
+   {
+    "text": "```json\n{\n  \"legal_name\": {\"value\": \"HSBC Holdings plc\", \"url\": \"https://www.marketscreener.com/news/hsbc-2026-agm-special-business-resolutions-ce7f5bdbdd89f421\", \"quote\": \"THE UK COMPANIES ACT 2006 PUBLIC COMPANY LIMITED BY SHARES RESOLUTIONS OF HSBC HOLDINGS PLC\"},\n  \"country\": {\"value\": \"United Kingdom\", \"url\": \"https://www.slaughterandmay.com/recent-work/the-privatisation-of-hang-seng-bank-limited/\", \"quote\": \"HSBC Holdings is a company incorporated in England and Wales with limited liability\"},\n  \"org_type\": {\"value\": \"company\", \"url\": \"https://www.marketscreener.com/news/hsbc-2026-agm-special-business-resolutions-ce7f5bdbdd89f421\", \"quote\": \"THE UK COMPANIES ACT 2006 PUBLIC COMPANY LIMITED BY SHARES RESOLUTIONS OF HSBC HOLDINGS PLC\"},\n  \"equity_listed\": {\"value\": \"yes\", \"url\": \"https://www.hsbc.com/investors/shareholder-and-dividend-information\", \"quote\": \"HSBC has a primary share listing on the UK\u2019s London Stock Exchange and branch listings on the Hong Kong Stock Exchange and Bermuda Stock Exchange.\"},\n  \"exchange\": {\"value\": \"London Stock Exchange\", \"url\": \"https://www.hsbc.com/investors/shareholder-and-dividend-information\", \"quote\": \"HSBC has a primary share listing on the UK\u2019s London Stock Exchange and branch listings on the Hong Kong Stock Exchange and Bermuda Stock Exchange.\"},\n  \"ticker\": {\"value\": \"HSBA\", \"url\": \"https://www.hsbc.com/investors/shareholder-and-dividend-information/investor-faqs\", \"quote\": \"UK: \u00b7 HSBA\"},\n  \"market_segment\": {\"value\": \"main\", \"url\": \"https://en.wikipedia.org/wiki/HSBC\", \"quote\": \"It is a constituent of the Hang Seng Index and the FTSE 100 Index.\"},\n  \"debt_listed\": {\"value\": \"yes\", \"url\": \"https://www.sec.gov/Archives/edgar/data/1089113/000165495426004696/a0359e.htm\", \"quote\": \"HSBC Holdings plc notifies the market that the Notes have been listed on the Official List of the FCA and admitted to trading on the Main Market\"},\n  \"is_subsidiary\": {\"value\": \"no\", \"url\": \"https://ae.marketscreener.com/news/hsbc-and-hang-seng-bank-announce-despatch-of-scheme-document-on-proposed-privatisation-of-hang-sen-ce7d50d8de80fe25\", \"quote\": \"HSBC Holdings plc, the parent company of HSBC, is headquartered in London.\"},\n  \"parent_name\": {\"value\": null, \"url\": null, \"quote\": null},\n  \"parent_listed\": {\"value\": \"unknown\", \"url\": null, \"quote\": null},\n  \"events\": [\n    {\"date\": \"2024-03-28\", \"event\": \"HSBC Holdings completed the sale of its subsidiary HSBC Bank Canada to Royal Bank of Canada (a divestment by HSBC; no change to HSBC Holdings' own listing)\", \"url\": \"https://www.hsbc.com/-/files/hsbc/investors/results-and-announcements/stock-exchange-announcements/2024/april/sea-240401-e-completion-of-the-sale-of-hsbc-bank-canada-to-rbc.pdf\", \"quote\": \"HSBC Holdings plc (\u2018HSBC\u2019) completed the sale of HSBC Bank Canada (\u2018HSBC Canada\u2019) and its subsidiaries\"},\n    {\"date\": \"2026-01-26\", \"event\": \"Privatisation of listed subsidiary Hang Seng Bank became effective; Hang Seng Bank shares delisted from the Hong Kong Stock Exchange on 2026-01-27 (HSBC Holdings' own shares were unaffected)\", \"url\": \"https://www.hsbc.com/investors/hsbc-proposal-to-privatise-hang-seng-bank\", \"quote\": \"HSBC\u2019s privatisation of Hang Seng Bank became effective on 26 January 2026 and Hang Seng Bank shares were delisted from the Hong Kong Stock Exchange on 27 January 2026.\"}\n  ],\n  \"note\": \"Entity chosen: HSBC Holdings plc, the ultimate parent holding company of the HSBC Group, not a subsidiary such as HSBC UK Bank plc. Equity listings: primary on the London Stock Exchange (HSBA), with branch listings in Hong Kong (stock code 5) and Bermuda (HSBC.BH), plus NYSE ADRs (HSBC). The sources do not say outright that the London equity listing is on the Main Market. I inferred \\\"main\\\" from its FTSE 100 membership (AIM companies are not eligible). Its notes are expressly admitted to the LSE Main Market. HSBC's 2026 AGM was held on 8 May 2026, not 18 June 2026; I answered for the status on 2026-06-18. I found no listing, delisting, demerger or takeover affecting HSBC Holdings' own shares in the three years before that date. The events above are subsidiary-level. The search results did not cover other disposals, such as HSBC France retail, HSBC Argentina or HSBC Malta.\"\n}\n```",
+    "type": "text"
+   }
+  ],
+  "fetched_at": "2026-10-26T21:22:36+00:00",
+  "inputs": {
+   "as_of": "2026-06-18",
+   "org_key": "hsbc-holdings"
+  },
+  "kind": "org",
+  "model": "claude-sonnet-5-5",
+  "prompt_version": "org_v1",
+  "stop_reason": "end_turn",
+  "usage": {
+   "input_tokens": 82502,
+   "output_tokens": 3660,
+   "web_search_requests": 5
+  }
+ }
+}

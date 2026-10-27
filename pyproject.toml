@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pennant"
+version = "0.1.0"
+description = "Board-commitments voting pipeline for UK AGM notices"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.7",
+    "httpx>=0.27",
+    "rapidfuzz>=3.9",
+    "pyyaml>=6.0",
+    "pymupdf>=1.24",
+    "llama-cloud>=2.0",
+    "anthropic>=0.40",
+    "typer>=0.12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6", "openpyxl>=3.1"]  # openpyxl: rebuild eval/gold from its sheet
+
+[project.scripts]
+pennant = "pennant.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["pennant*"]
+
+[tool.setuptools.package-data]
+pennant = ["classify/prompts/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "--import-mode=importlib --strict-markers"
+markers = ["live: calls Companies House, LlamaExtract or Claude (needs keys in .env)"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["data", "tests/fixtures", "eval/gold"]  # eval/gold: the gold set's own scripts
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["B008"]  # typer.Option(...) defaults
